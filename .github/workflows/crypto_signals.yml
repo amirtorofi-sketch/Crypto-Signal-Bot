@@ -9,6 +9,11 @@ on:
 permissions:
   contents: write
 
+# جلوگیری از اجرای هم‌زمان چند run با هم (رفع خطای push conflict)
+concurrency:
+  group: crypto-signal-bot
+  cancel-in-progress: false
+
 jobs:
   run-bot:
     runs-on: ubuntu-latest
@@ -31,11 +36,14 @@ jobs:
         run: python signal_bot.py
 
       - name: Commit updated state.json
-             - name: Commit updated state.json
         run: |
           git config user.name "signal-bot"
           git config user.email "signal-bot@users.noreply.github.com"
-          git pull --rebase
           git add state.json
-          git diff --staged --quiet || git commit -m "update signal state [skip ci]"
-          git push
+          if ! git diff --staged --quiet; then
+            git commit -m "update signal state [skip ci]"
+            git pull --rebase origin main
+            git push
+          else
+            echo "تغییری در state.json نبود، نیازی به کامیت نیست."
+          fi
