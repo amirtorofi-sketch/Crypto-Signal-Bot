@@ -2,9 +2,9 @@
 ربات سیگنال خرید/فروش کریپتو -> تلگرام
 بدون نیاز به API پولی TradingView. داده از API رایگان بایننس گرفته می‌شود.
 
-دو استراتژی پیاده‌سازی شده (معادل پایتونیِ همان اندیکاتورهای Pine Script):
-    1) EMA(9/21) Cross + RSI + MACD + Volume
-    2) Supertrend + ADX + EMA200
+دو استراتژی پیاده‌سازی شده (معادل پایتونیِ اندیکاتورهای Pine Script):
+    1) Supertrend + ADX + EMA200
+    2) ICT/SMC Scalp Pro - Confluence Score System (Order Block + FVG + Liquidity Sweep + ...)
 
 نحوه اجرا:
     - محلی: python signal_bot.py
@@ -25,38 +25,48 @@ SYMBOLS = [
     "BTCUSDT", "ETHUSDT", "SOLUSDT", "BNBUSDT", "DOGEUSDT",
     "CRVUSDT", "ROSEUSDT", "CHZUSDT", "ONEUSDT", "VETUSDT",
     "MASKUSDT", "MANAUSDT", "GALAUSDT",
-] # نمادهای مورد نظر (فرمت بایننس)
-TIMEFRAME = "15m"                              # تایم‌فریم (مطابق چیزی که روی TradingView استفاده می‌کردی)
+]   # نمادهای مورد نظر (فرمت بایننس)
+# نکته: KDAUSDT عمداً اضافه نشده چون Kadena (KDA) از بایننس دیلیست شده (اکتبر ۲۰۲۵)
+
+TIMEFRAME = "15m"                              # تایم‌فریم اصلی
 KLINES_LIMIT = 300                             # تعداد کندل تاریخی برای محاسبه اندیکاتورها
 
-# --- استراتژی ۱: EMA + RSI + MACD ---
-EMA_FAST_LEN = 9
-EMA_SLOW_LEN = 21
-RSI_LEN = 14
-RSI_OVERBOUGHT = 70
-RSI_OVERSOLD = 30
-MACD_FAST = 12
-MACD_SLOW = 26
-MACD_SIGNAL = 9
-VOL_MA_LEN = 20
-USE_VOL_FILTER_S1 = True
-
-# --- استراتژی ۲: Supertrend + ADX ---
+# --- استراتژی ۱: Supertrend + ADX ---
 ATR_PERIOD = 10
 ST_FACTOR = 3.0
 ADX_LEN = 14
 DI_LEN = 14
-ADX_THRESHOLD = 20
-USE_VOL_FILTER_S2 = True
-USE_EMA_FILTER_S2 = True
+ADX_THRESHOLD = 15          # <-- طبق درخواست از ۲۰ به ۱۵ تغییر کرد
+USE_VOL_FILTER_S1 = True
+VOL_MA_LEN = 20
+USE_EMA_FILTER_S1 = True
 EMA_TREND_LEN = 200
+
+# --- استراتژی ۲: ICT/SMC Scalp Pro (Confluence Score System) ---
+SWING_LEN = 3
+OB_SEARCH_LOOKBACK = 15
+OB_MAX_COUNT = 3
+USE_DISPLACEMENT_FILTER = True
+DISPLACEMENT_MULT = 1.3
+ATR_LEN_S2 = 14
+FVG_MAX_COUNT = 6
+SWEEP_LOOKBACK = 8
+VOL_SPIKE_MULT = 1.2
+RSI_LEN = 14
+MIN_SCORE = 5                # <-- طبق درخواست روی ۵ از ۷ تنظیم شد
+USE_PREMIUM_DISCOUNT = True
+USE_HTF_BIAS = True
+HTF_TIMEFRAME = "1h"
+HTF_EMA_LEN = 50
+SL_ATR_MULT = 1.0
+TP1_RR = 1.5
+TP2_RR = 3.0
 
 # --- تلگرام ---
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 
 STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "state.json")
-
 BINANCE_KLINES_URL = "https://api.binance.com/api/v3/klines"
 
 
@@ -93,12 +103,6 @@ def rsi(series: pd.Series, length: int) -> pd.Series:
     rs = avg_gain / avg_loss.replace(0, np.nan)
     out = 100 - (100 / (1 + rs))
     return out.fillna(50)
-
-
-def macd(series: pd.Series, fast: int, slow: int, signal: int):
-    macd_line = ema(series, fast) - ema(series, slow)
-    signal_line = ema(macd_line, signal)
-    return macd_line, signal_line
 
 
 def atr(df: pd.DataFrame, length: int) -> pd.Series:
@@ -190,46 +194,34 @@ def adx_dmi(df: pd.DataFrame, di_len: int, adx_len: int):
     return di_plus.fillna(0), di_minus.fillna(0), adx_val.fillna(0)
 
 
-# =====================================================================
-# استراتژی ۱: EMA + RSI + MACD
-# =====================================================================
-def check_strategy_1(df: pd.DataFrame):
-    df = df.copy()
-    df["ema_fast"] = ema(df["close"], EMA_FAST_LEN)
-    df["ema_slow"] = ema(df["close"], EMA_SLOW_LEN)
-    df["rsi"] = rsi(df["close"], RSI_LEN)
-    macd_line, signal_line = macd(df["close"], MACD_FAST, MACD_SLOW, MACD_SIGNAL)
-    df["macd"] = macd_line
-    df["macd_signal"] = signal_line
-    df["vol_ma"] = df["volume"].rolling(VOL_MA_LEN).mean()
+def find_pivots(values: np.ndarray, left: int, right: int, mode: str):
+    n = len(values)
+    out = [np.nan] * n
+    for i in range(left, n - right):
+        window = values[i - left:i + right + 1]
+        if mode == "high":
+            if values[i] == np.max(window):
+                out[i] = values[i]
+        else:
+            if values[i] == np.min(window):
+                out[i] = values[i]
+    return out
 
-    i = -2  # آخرین کندل کاملاً بسته‌شده (آخرین ردیف = کندل درحال شکل‌گیری است)
-    prev = i - 1
 
-    ema_cross_up = df["ema_fast"].iloc[prev] <= df["ema_slow"].iloc[prev] and df["ema_fast"].iloc[i] > df["ema_slow"].iloc[i]
-    ema_cross_down = df["ema_fast"].iloc[prev] >= df["ema_slow"].iloc[prev] and df["ema_fast"].iloc[i] < df["ema_slow"].iloc[i]
-
-    macd_bull = df["macd"].iloc[i] > df["macd_signal"].iloc[i]
-    macd_bear = df["macd"].iloc[i] < df["macd_signal"].iloc[i]
-
-    rsi_val = df["rsi"].iloc[i]
-    rsi_bull_ok = RSI_OVERSOLD < rsi_val < RSI_OVERBOUGHT and rsi_val > 40
-    rsi_bear_ok = RSI_OVERSOLD < rsi_val < RSI_OVERBOUGHT and rsi_val < 60
-
-    vol_ok = (df["volume"].iloc[i] > df["vol_ma"].iloc[i]) if USE_VOL_FILTER_S1 else True
-
-    buy = bool(ema_cross_up and macd_bull and rsi_bull_ok and vol_ok)
-    sell = bool(ema_cross_down and macd_bear and rsi_bear_ok and vol_ok)
-
-    candle_time = df["open_time"].iloc[i]
-    price = df["close"].iloc[i]
-    return buy, sell, candle_time, price
+def shift_confirm(arr, right: int):
+    n = len(arr)
+    out = [np.nan] * n
+    for i in range(n):
+        src = i - right
+        if src >= 0:
+            out[i] = arr[src]
+    return out
 
 
 # =====================================================================
-# استراتژی ۲: Supertrend + ADX
+# استراتژی ۱: Supertrend + ADX
 # =====================================================================
-def check_strategy_2(df: pd.DataFrame):
+def check_strategy_supertrend(df: pd.DataFrame):
     df = df.copy()
     st_val, st_dir = supertrend(df, ATR_PERIOD, ST_FACTOR)
     df["st_dir"] = st_dir
@@ -247,9 +239,9 @@ def check_strategy_2(df: pd.DataFrame):
     flip_bear = df["st_dir"].iloc[prev] == -1 and df["st_dir"].iloc[i] == 1
 
     strong_trend = df["adx"].iloc[i] > ADX_THRESHOLD
-    vol_ok = (df["volume"].iloc[i] > df["vol_ma"].iloc[i]) if USE_VOL_FILTER_S2 else True
-    ema_up_ok = (df["close"].iloc[i] > df["ema_trend"].iloc[i]) if USE_EMA_FILTER_S2 else True
-    ema_down_ok = (df["close"].iloc[i] < df["ema_trend"].iloc[i]) if USE_EMA_FILTER_S2 else True
+    vol_ok = (df["volume"].iloc[i] > df["vol_ma"].iloc[i]) if USE_VOL_FILTER_S1 else True
+    ema_up_ok = (df["close"].iloc[i] > df["ema_trend"].iloc[i]) if USE_EMA_FILTER_S1 else True
+    ema_down_ok = (df["close"].iloc[i] < df["ema_trend"].iloc[i]) if USE_EMA_FILTER_S1 else True
 
     buy = bool(flip_bull and strong_trend and df["di_plus"].iloc[i] > df["di_minus"].iloc[i] and vol_ok and ema_up_ok)
     sell = bool(flip_bear and strong_trend and df["di_minus"].iloc[i] > df["di_plus"].iloc[i] and vol_ok and ema_down_ok)
@@ -257,6 +249,194 @@ def check_strategy_2(df: pd.DataFrame):
     candle_time = df["open_time"].iloc[i]
     price = df["close"].iloc[i]
     return buy, sell, candle_time, price
+
+
+# =====================================================================
+# استراتژی ۲: ICT/SMC Scalp Pro - Confluence Score System
+# =====================================================================
+def get_htf_bias(symbol: str):
+    df_htf = get_klines(symbol, HTF_TIMEFRAME, 100)
+    close_htf = df_htf["close"]
+    ema_htf = ema(close_htf, HTF_EMA_LEN)
+    last_close = close_htf.iloc[-2]
+    last_ema = ema_htf.iloc[-2]
+    return bool(last_close > last_ema), bool(last_close < last_ema)
+
+
+def check_strategy_smc(df: pd.DataFrame, htf_bullish: bool, htf_bearish: bool):
+    df = df.copy().reset_index(drop=True)
+    n = len(df)
+
+    atr_series = atr(df, ATR_LEN_S2).values
+    rsi_series = rsi(df["close"], RSI_LEN).values
+    vol_ma_series = df["volume"].rolling(VOL_MA_LEN).mean().values
+
+    high = df["high"].values
+    low = df["low"].values
+    close = df["close"].values
+    open_ = df["open"].values
+    volume = df["volume"].values
+
+    ph_raw = find_pivots(high, SWING_LEN, SWING_LEN, "high")
+    pl_raw = find_pivots(low, SWING_LEN, SWING_LEN, "low")
+    ph_confirmed = shift_confirm(ph_raw, SWING_LEN)
+    pl_confirmed = shift_confirm(pl_raw, SWING_LEN)
+
+    trend = 0
+    structure_high = None
+    structure_low = None
+    last_swing_high = None
+    last_swing_low = None
+    last_bull_sweep_idx = None
+    last_bear_sweep_idx = None
+    bull_obs, bear_obs = [], []
+    bull_fvgs, bear_fvgs = [], []
+
+    target_i = n - 2
+    result = None
+
+    for j in range(n):
+        prev_close = close[j - 1] if j > 0 else close[j]
+
+        if not np.isnan(ph_confirmed[j]):
+            last_swing_high = ph_confirmed[j]
+        if not np.isnan(pl_confirmed[j]):
+            last_swing_low = pl_confirmed[j]
+
+        bullish_bos = bullish_choch = bearish_bos = bearish_choch = False
+        if last_swing_high is not None and close[j] > last_swing_high and prev_close <= last_swing_high:
+            if trend <= 0:
+                bullish_choch = True
+            else:
+                bullish_bos = True
+            trend = 1
+            structure_high = last_swing_high
+            structure_low = last_swing_low if last_swing_low is not None else structure_low
+        if last_swing_low is not None and close[j] < last_swing_low and prev_close >= last_swing_low:
+            if trend >= 0:
+                bearish_choch = True
+            else:
+                bearish_bos = True
+            trend = -1
+            structure_low = last_swing_low
+            structure_high = last_swing_high if last_swing_high is not None else structure_high
+
+        bullish_sweep = last_swing_low is not None and low[j] < last_swing_low and close[j] > last_swing_low
+        bearish_sweep = last_swing_high is not None and high[j] > last_swing_high and close[j] < last_swing_high
+        if bullish_sweep:
+            last_bull_sweep_idx = j
+        if bearish_sweep:
+            last_bear_sweep_idx = j
+        recent_bull_sweep = last_bull_sweep_idx is not None and (j - last_bull_sweep_idx) <= SWEEP_LOOKBACK
+        recent_bear_sweep = last_bear_sweep_idx is not None and (j - last_bear_sweep_idx) <= SWEEP_LOOKBACK
+
+        bar_range = high[j] - low[j]
+        cur_atr = atr_series[j] if not np.isnan(atr_series[j]) else 0
+        displacement_ok = bar_range > cur_atr * DISPLACEMENT_MULT
+
+        if (bullish_bos or bullish_choch) and (not USE_DISPLACEMENT_FILTER or displacement_ok):
+            ob_idx = None
+            for k in range(1, OB_SEARCH_LOOKBACK + 1):
+                idx = j - k
+                if idx < 0:
+                    break
+                if close[idx] < open_[idx]:
+                    ob_idx = idx
+                    break
+            if ob_idx is not None:
+                bull_obs.append({"top": high[ob_idx], "bottom": low[ob_idx]})
+                if len(bull_obs) > OB_MAX_COUNT:
+                    bull_obs.pop(0)
+
+        if (bearish_bos or bearish_choch) and (not USE_DISPLACEMENT_FILTER or displacement_ok):
+            ob_idx2 = None
+            for k in range(1, OB_SEARCH_LOOKBACK + 1):
+                idx = j - k
+                if idx < 0:
+                    break
+                if close[idx] > open_[idx]:
+                    ob_idx2 = idx
+                    break
+            if ob_idx2 is not None:
+                bear_obs.append({"top": high[ob_idx2], "bottom": low[ob_idx2]})
+                if len(bear_obs) > OB_MAX_COUNT:
+                    bear_obs.pop(0)
+
+        bull_obs = [ob for ob in bull_obs if close[j] >= ob["bottom"]]
+        bear_obs = [ob for ob in bear_obs if close[j] <= ob["top"]]
+
+        if j >= 2:
+            if low[j] > high[j - 2]:
+                bull_fvgs.append({"top": low[j], "bottom": high[j - 2]})
+                if len(bull_fvgs) > FVG_MAX_COUNT:
+                    bull_fvgs.pop(0)
+            if high[j] < low[j - 2]:
+                bear_fvgs.append({"top": low[j - 2], "bottom": high[j]})
+                if len(bear_fvgs) > FVG_MAX_COUNT:
+                    bear_fvgs.pop(0)
+
+        bull_fvgs = [f for f in bull_fvgs if close[j] >= f["bottom"]]
+        bear_fvgs = [f for f in bear_fvgs if close[j] <= f["top"]]
+
+        bull_zone_tapped = False
+        if trend == 1:
+            for ob in bull_obs:
+                if low[j] <= ob["top"] and low[j] >= ob["bottom"]:
+                    bull_zone_tapped = True
+            for f in bull_fvgs:
+                if low[j] <= f["top"] and low[j] >= f["bottom"]:
+                    bull_zone_tapped = True
+
+        bear_zone_tapped = False
+        if trend == -1:
+            for ob in bear_obs:
+                if high[j] >= ob["bottom"] and high[j] <= ob["top"]:
+                    bear_zone_tapped = True
+            for f in bear_fvgs:
+                if high[j] >= f["bottom"] and high[j] <= f["top"]:
+                    bear_zone_tapped = True
+
+        if j == target_i:
+            candle_range = high[j] - low[j]
+            strong_bull_rej = close[j] > open_[j] and candle_range > 0 and (close[j] - low[j]) >= candle_range * 0.66
+            strong_bear_rej = close[j] < open_[j] and candle_range > 0 and (high[j] - close[j]) >= candle_range * 0.66
+
+            cur_rsi = rsi_series[j]
+            prev_rsi = rsi_series[j - 1] if j > 0 else cur_rsi
+            rsi_bull_ok = cur_rsi > 45 and cur_rsi > prev_rsi
+            rsi_bear_ok = cur_rsi < 55 and cur_rsi < prev_rsi
+
+            cur_vol_ma = vol_ma_series[j] if not np.isnan(vol_ma_series[j]) else 0
+            vol_spike = (volume[j] > cur_vol_ma * VOL_SPIKE_MULT) if cur_vol_ma > 0 else False
+
+            eq_level = (structure_high + structure_low) / 2 if (structure_high is not None and structure_low is not None) else None
+            discount_zone = eq_level is not None and close[j] < eq_level
+            premium_zone = eq_level is not None and close[j] > eq_level
+
+            bull_score = (
+                (1 if recent_bull_sweep else 0) + (1 if vol_spike else 0) + (1 if strong_bull_rej else 0)
+                + (1 if (not USE_HTF_BIAS or htf_bullish) else 0)
+                + (1 if (not USE_PREMIUM_DISCOUNT or discount_zone) else 0)
+                + (1 if rsi_bull_ok else 0) + (1 if len(bull_fvgs) > 0 else 0)
+            )
+            bear_score = (
+                (1 if recent_bear_sweep else 0) + (1 if vol_spike else 0) + (1 if strong_bear_rej else 0)
+                + (1 if (not USE_HTF_BIAS or htf_bearish) else 0)
+                + (1 if (not USE_PREMIUM_DISCOUNT or premium_zone) else 0)
+                + (1 if rsi_bear_ok else 0) + (1 if len(bear_fvgs) > 0 else 0)
+            )
+
+            buy = bull_zone_tapped and bull_score >= MIN_SCORE
+            sell = bear_zone_tapped and bear_score >= MIN_SCORE
+
+            result = {
+                "buy": buy, "sell": sell,
+                "bull_score": bull_score, "bear_score": bear_score,
+                "candle_time": df["open_time"].iloc[j], "price": close[j],
+                "atr": cur_atr,
+            }
+
+    return result
 
 
 # =====================================================================
@@ -310,43 +490,63 @@ def main():
             print(f"داده کافی برای {symbol} نیست، رد شد.")
             continue
 
-        # --- استراتژی ۱ ---
-        buy1, sell1, candle_time1, price1 = check_strategy_1(df)
-        key_buy1 = f"{symbol}_s1_buy"
-        key_sell1 = f"{symbol}_s1_sell"
+        # --- استراتژی ۱: Supertrend + ADX ---
+        buy1, sell1, ct1, price1 = check_strategy_supertrend(df)
+        key_buy1 = f"{symbol}_st_buy"
+        key_sell1 = f"{symbol}_st_sell"
 
-        if buy1 and state.get(key_buy1) != str(candle_time1):
-            msg = (f"🟢 <b>سیگنال خرید</b> | استراتژی EMA+RSI+MACD\n"
-                   f"نماد: <b>{symbol}</b>\nتایم‌فریم: {TIMEFRAME}\n"
-                   f"قیمت: {price1:.4f}\nزمان کندل: {candle_time1}")
-            send_telegram_message(msg)
-            state[key_buy1] = str(candle_time1)
-
-        if sell1 and state.get(key_sell1) != str(candle_time1):
-            msg = (f"🔴 <b>سیگنال فروش</b> | استراتژی EMA+RSI+MACD\n"
-                   f"نماد: <b>{symbol}</b>\nتایم‌فریم: {TIMEFRAME}\n"
-                   f"قیمت: {price1:.4f}\nزمان کندل: {candle_time1}")
-            send_telegram_message(msg)
-            state[key_sell1] = str(candle_time1)
-
-        # --- استراتژی ۲ ---
-        buy2, sell2, candle_time2, price2 = check_strategy_2(df)
-        key_buy2 = f"{symbol}_s2_buy"
-        key_sell2 = f"{symbol}_s2_sell"
-
-        if buy2 and state.get(key_buy2) != str(candle_time2):
+        if buy1 and state.get(key_buy1) != str(ct1):
             msg = (f"🟢 <b>سیگنال خرید</b> | استراتژی Supertrend+ADX\n"
                    f"نماد: <b>{symbol}</b>\nتایم‌فریم: {TIMEFRAME}\n"
-                   f"قیمت: {price2:.4f}\nزمان کندل: {candle_time2}")
+                   f"قیمت: {price1:.6f}\nزمان کندل: {ct1}")
             send_telegram_message(msg)
-            state[key_buy2] = str(candle_time2)
+            state[key_buy1] = str(ct1)
 
-        if sell2 and state.get(key_sell2) != str(candle_time2):
+        if sell1 and state.get(key_sell1) != str(ct1):
             msg = (f"🔴 <b>سیگنال فروش</b> | استراتژی Supertrend+ADX\n"
                    f"نماد: <b>{symbol}</b>\nتایم‌فریم: {TIMEFRAME}\n"
-                   f"قیمت: {price2:.4f}\nزمان کندل: {candle_time2}")
+                   f"قیمت: {price1:.6f}\nزمان کندل: {ct1}")
             send_telegram_message(msg)
-            state[key_sell2] = str(candle_time2)
+            state[key_sell1] = str(ct1)
+
+        # --- استراتژی ۲: ICT/SMC Scalp Pro ---
+        try:
+            htf_bullish, htf_bearish = get_htf_bias(symbol)
+        except Exception as e:
+            print(f"خطا در دریافت بایاس HTF برای {symbol}: {e}")
+            htf_bullish, htf_bearish = True, True  # در صورت خطا، فیلتر HTF را خنثی می‌کند
+
+        res = check_strategy_smc(df, htf_bullish, htf_bearish)
+        if res is not None:
+            key_buy2 = f"{symbol}_smc_buy"
+            key_sell2 = f"{symbol}_smc_sell"
+            ct2 = res["candle_time"]
+            price2 = res["price"]
+            atr2 = res["atr"]
+
+            if res["buy"] and state.get(key_buy2) != str(ct2):
+                sl = price2 - atr2 * SL_ATR_MULT
+                risk = price2 - sl
+                tp1 = price2 + risk * TP1_RR
+                tp2 = price2 + risk * TP2_RR
+                msg = (f"🟢 <b>سیگنال خرید</b> | ICT/SMC Scalp Pro (امتیاز: {res['bull_score']}/7)\n"
+                       f"نماد: <b>{symbol}</b>\nتایم‌فریم: {TIMEFRAME}\n"
+                       f"قیمت: {price2:.6f}\nSL: {sl:.6f}\nTP1: {tp1:.6f}\nTP2: {tp2:.6f}\n"
+                       f"زمان کندل: {ct2}")
+                send_telegram_message(msg)
+                state[key_buy2] = str(ct2)
+
+            if res["sell"] and state.get(key_sell2) != str(ct2):
+                sl = price2 + atr2 * SL_ATR_MULT
+                risk = sl - price2
+                tp1 = price2 - risk * TP1_RR
+                tp2 = price2 - risk * TP2_RR
+                msg = (f"🔴 <b>سیگنال فروش</b> | ICT/SMC Scalp Pro (امتیاز: {res['bear_score']}/7)\n"
+                       f"نماد: <b>{symbol}</b>\nتایم‌فریم: {TIMEFRAME}\n"
+                       f"قیمت: {price2:.6f}\nSL: {sl:.6f}\nTP1: {tp1:.6f}\nTP2: {tp2:.6f}\n"
+                       f"زمان کندل: {ct2}")
+                send_telegram_message(msg)
+                state[key_sell2] = str(ct2)
 
         time.sleep(0.5)  # رعایت رِیت‌لیمیت API بایننس
 
