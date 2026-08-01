@@ -21,7 +21,11 @@ import numpy as np
 # =====================================================================
 # تنظیمات قابل تغییر
 # =====================================================================
-SYMBOLS = ["BTCUSDT", "ETHUSDT", "SOLUSDT"]   # نمادهای مورد نظر (فرمت بایننس)
+SYMBOLS = [
+    "BTCUSDT", "ETHUSDT", "SOLUSDT", "BNBUSDT", "DOGEUSDT",
+    "CRVUSDT", "ROSEUSDT", "CHZUSDT", "ONEUSDT", "VETUSDT",
+    "MASKUSDT", "MANAUSDT", "GALAUSDT",
+] # نمادهای مورد نظر (فرمت بایننس)
 TIMEFRAME = "15m"                              # تایم‌فریم (مطابق چیزی که روی TradingView استفاده می‌کردی)
 KLINES_LIMIT = 300                             # تعداد کندل تاریخی برای محاسبه اندیکاتورها
 
