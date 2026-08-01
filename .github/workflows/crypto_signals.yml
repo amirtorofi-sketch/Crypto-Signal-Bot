@@ -31,9 +31,11 @@ jobs:
         run: python signal_bot.py
 
       - name: Commit updated state.json
+             - name: Commit updated state.json
         run: |
           git config user.name "signal-bot"
           git config user.email "signal-bot@users.noreply.github.com"
+          git pull --rebase
           git add state.json
           git diff --staged --quiet || git commit -m "update signal state [skip ci]"
           git push
