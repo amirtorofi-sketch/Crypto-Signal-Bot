@@ -492,6 +492,11 @@ def main():
 
         # --- استراتژی ۱: Supertrend + ADX ---
         buy1, sell1, ct1, price1 = check_strategy_supertrend(df)
+        st_dbg = df.copy()
+        st_val_dbg, st_dir_dbg = supertrend(st_dbg, ATR_PERIOD, ST_FACTOR)
+        _, _, adx_dbg = adx_dmi(st_dbg, DI_LEN, ADX_LEN)
+        print(f"[{symbol}] Supertrend+ADX -> ADX={adx_dbg.iloc[-2]:.1f} (آستانه={ADX_THRESHOLD}) | "
+              f"جهت={'صعودی' if st_dir_dbg.iloc[-2] == -1 else 'نزولی'} | buy={buy1} sell={sell1}")
         key_buy1 = f"{symbol}_st_buy"
         key_sell1 = f"{symbol}_st_sell"
 
@@ -518,6 +523,8 @@ def main():
 
         res = check_strategy_smc(df, htf_bullish, htf_bearish)
         if res is not None:
+            print(f"[{symbol}] ICT/SMC -> امتیاز خرید={res['bull_score']}/7  امتیاز فروش={res['bear_score']}/7 "
+                  f"(آستانه لازم={MIN_SCORE}) | buy={res['buy']} sell={res['sell']}")
             key_buy2 = f"{symbol}_smc_buy"
             key_sell2 = f"{symbol}_smc_sell"
             ct2 = res["candle_time"]
