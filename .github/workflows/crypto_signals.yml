@@ -2,8 +2,8 @@ name: Crypto Signal Bot
 
 on:
   schedule:
-    # هر ۱۵ دقیقه اجرا می‌شود (زمان UTC)
-    - cron: "*/15 * * * *"
+    # هر ۱۵ دقیقه، ولی روی دقیقه‌های فرد (نه ۰۰/۱۵/۳۰/۴۵) تا کمتر توی صف شلوغ گیت‌هاب بیفته
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch: {}   # امکان اجرای دستی از تب Actions
 
 permissions:
