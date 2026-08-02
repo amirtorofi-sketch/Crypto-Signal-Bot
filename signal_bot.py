@@ -67,7 +67,10 @@ TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 
 STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "state.json")
-BINANCE_KLINES_URL = "https://api.binance.com/api/v3/klines"
+# نکته: از data-api.binance.vision به‌جای api.binance.com استفاده می‌کنیم چون
+# این یکی مخصوص داده‌ی عمومی بازاره و روی سرورهای GitHub Actions (که در آمریکا هستن)
+# با خطای 451 (محدودیت جغرافیایی بایننس) مواجه نمی‌شه.
+BINANCE_KLINES_URL = "https://data-api.binance.vision/api/v3/klines"
 
 
 # =====================================================================
