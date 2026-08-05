@@ -1,25 +1,6 @@
 {
-  "balance": 969.6048317206055,
+  "balance": 932.1978573058599,
   "positions": {
-    "ETHUSDT": {
-      "entry_price": 1868.92,
-      "sl_price": 1865.411010802504,
-      "tp1_price": 1874.1834837962442,
-      "tp2_price": 1879.4469675924881,
-      "qty_total": 0.008026025726087793,
-      "cost": 14.999999999999998,
-      "lot_a": {
-        "qty": 0.004013012863043897,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.004013012863043897,
-        "target": "tp2",
-        "status": "open"
-      },
-      "source": "ICT/SMC Scalp Pro"
-    },
     "MANAUSDT": {
       "entry_price": 0.0668,
       "sl_price": 0.06662389560106868,
@@ -30,10 +11,86 @@
       "lot_a": {
         "qty": 112.27544910179641,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 112.27544910179641,
+        "target": "tp2",
+        "status": "open"
+      },
+      "source": "ICT/SMC Scalp Pro"
+    },
+    "BTCUSDT": {
+      "entry_price": 64515.81,
+      "sl_price": 64396.04164175288,
+      "tp1_price": 64695.462537370666,
+      "tp2_price": 64875.11507474134,
+      "qty_total": 0.00023250114971818536,
+      "cost": 15.0,
+      "lot_a": {
+        "qty": 0.00011625057485909268,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.00011625057485909268,
+        "target": "tp2",
+        "status": "open"
+      },
+      "source": "ICT/SMC Scalp Pro"
+    },
+    "SOLUSDT": {
+      "entry_price": 74.28,
+      "sl_price": 74.0952949718084,
+      "tp1_price": 74.5570575422874,
+      "tp2_price": 74.8341150845748,
+      "qty_total": 0.20193861066235863,
+      "cost": 15.0,
+      "lot_a": {
+        "qty": 0.10096930533117932,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.10096930533117932,
+        "target": "tp2",
+        "status": "open"
+      },
+      "source": "ICT/SMC Scalp Pro"
+    },
+    "BNBUSDT": {
+      "entry_price": 599.5,
+      "sl_price": 598.1568226363772,
+      "tp1_price": 601.5147660454342,
+      "tp2_price": 603.5295320908683,
+      "qty_total": 0.025020850708924104,
+      "cost": 15.0,
+      "lot_a": {
+        "qty": 0.012510425354462052,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.012510425354462052,
+        "target": "tp2",
+        "status": "open"
+      },
+      "source": "ICT/SMC Scalp Pro"
+    },
+    "VETUSDT": {
+      "entry_price": 0.004667,
+      "sl_price": 0.004657007921848516,
+      "tp1_price": 0.004681988117227226,
+      "tp2_price": 0.004696976234454452,
+      "qty_total": 3214.056138847225,
+      "cost": 15.0,
+      "lot_a": {
+        "qty": 1607.0280694236126,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 1607.0280694236126,
         "target": "tp2",
         "status": "open"
       },
