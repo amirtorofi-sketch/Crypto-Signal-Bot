@@ -28,7 +28,8 @@ from signal_bot import atr as calc_atr
 # =====================================================================
 # تنظیمات
 # =====================================================================
-RISK_PER_TRADE = 0.10          # ۱۰٪ ریسک از سرمایه به‌ازای هر معامله (بر پایه فاصله تا SL)
+RISK_PER_TRADE = 0.10          # (دیگر استفاده نمی‌شود؛ برای مرجع نگه داشته شده)
+FIXED_TRADE_AMOUNT = 15.0      # مبلغ ثابت ورودی به هر معامله (دلار مجازی)
 STARTING_BALANCE = 1000.0      # موجودی فرضی اولیه (دلار مجازی)
 
 POSITIONS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "positions.json")
@@ -58,14 +59,12 @@ def save_state(state: dict):
 
 
 # =====================================================================
-# محاسبه حجم معامله بر پایه ریسک
+# محاسبه حجم معامله بر پایه مبلغ ثابت ورودی
 # =====================================================================
 def calculate_position_size(entry_price: float, sl_price: float, balance: float):
-    risk_amount = balance * RISK_PER_TRADE
-    sl_distance = entry_price - sl_price
-    if sl_distance <= 0:
+    if entry_price <= 0:
         return 0.0
-    return risk_amount / sl_distance
+    return FIXED_TRADE_AMOUNT / entry_price
 
 
 # =====================================================================
@@ -164,6 +163,7 @@ def main():
         last_low = df["low"].iloc[-2]
 
         if symbol in state["positions"]:
+            print(f"[{symbol}] پوزیشن باز موجود است -> بررسی وضعیت SL/TP...")
             check_open_position(state, symbol, state["positions"][symbol], last_high, last_low)
             continue
 
@@ -173,6 +173,7 @@ def main():
         # --- استراتژی ۱: Supertrend + ADX ---
         buy1, _, _, price1 = check_strategy_supertrend(df)
         if buy1:
+            print(f"[{symbol}] سیگنال خرید Supertrend+ADX فعال شد -> تلاش برای باز کردن پوزیشن...")
             sl = price1 - current_atr * SL_ATR_MULT
             risk = price1 - sl
             tp1 = price1 + risk * TP1_RR
@@ -188,6 +189,7 @@ def main():
 
         res = check_strategy_smc(df, htf_bullish, htf_bearish)
         if res is not None and res["buy"]:
+            print(f"[{symbol}] سیگنال خرید ICT/SMC فعال شد (امتیاز={res['bull_score']}/7) -> تلاش برای باز کردن پوزیشن...")
             price2 = res["price"]
             atr2 = res["atr"]
             sl = price2 - atr2 * SL_ATR_MULT
@@ -195,6 +197,10 @@ def main():
             tp1 = price2 + risk * TP1_RR
             tp2 = price2 + risk * TP2_RR
             open_position(state, symbol, price2, sl, tp1, tp2, source="ICT/SMC Scalp Pro")
+        elif res is not None:
+            print(f"[{symbol}] بدون پوزیشن باز، بدون سیگنال خرید (امتیاز SMC خرید={res['bull_score']}/7, Supertrend buy=False)")
+        else:
+            print(f"[{symbol}] بدون پوزیشن باز، بدون سیگنال خرید")
 
         time.sleep(0.3)
 
