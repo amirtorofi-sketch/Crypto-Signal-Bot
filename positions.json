@@ -1,25 +1,6 @@
 {
-  "balance": 961.1105089896147,
+  "balance": 961.0812270150643,
   "positions": {
-    "GALAUSDT": {
-      "entry_price": 0.00179,
-      "sl_price": 0.0017830113687406436,
-      "tp1_price": 0.0018004829468890344,
-      "tp2_price": 0.0018109658937780688,
-      "qty_total": 8379.888268156425,
-      "cost": 15.0,
-      "lot_a": {
-        "qty": 4189.944134078212,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 4189.944134078212,
-        "target": "tp2",
-        "status": "open"
-      },
-      "source": "ICT/SMC Scalp Pro"
-    },
     "BNBUSDT": {
       "direction": "short",
       "entry_price": 594.57,
@@ -75,6 +56,26 @@
       },
       "lot_b": {
         "qty": 1616.3793103448277,
+        "target": "tp2",
+        "status": "open"
+      },
+      "source": "Supertrend+ADX"
+    },
+    "MANAUSDT": {
+      "direction": "short",
+      "entry_price": 0.0665,
+      "sl_price": 0.06670050073557969,
+      "tp1_price": 0.06619924889663048,
+      "tp2_price": 0.06589849779326094,
+      "qty_total": 225.56390977443607,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 112.78195488721803,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 112.78195488721803,
         "target": "tp2",
         "status": "open"
       },
