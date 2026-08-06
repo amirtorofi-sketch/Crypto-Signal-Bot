@@ -1,5 +1,5 @@
 {
-  "balance": 968.4470779028585,
+  "balance": 960.9873324447294,
   "positions": {
     "GALAUSDT": {
       "entry_price": 0.00179,
@@ -49,10 +49,29 @@
       "lot_a": {
         "qty": 576.036866359447,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 576.036866359447,
+        "target": "tp2",
+        "status": "open"
+      },
+      "source": "ICT/SMC Scalp Pro"
+    },
+    "CRVUSDT": {
+      "entry_price": 0.2105,
+      "sl_price": 0.20968740888061815,
+      "tp1_price": 0.21171888667907274,
+      "tp2_price": 0.2129377733581455,
+      "qty_total": 71.25890736342043,
+      "cost": 15.0,
+      "lot_a": {
+        "qty": 35.62945368171022,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 35.62945368171022,
         "target": "tp2",
         "status": "open"
       },
