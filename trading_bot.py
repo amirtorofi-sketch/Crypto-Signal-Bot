@@ -118,7 +118,6 @@ def check_open_position(state: dict, symbol: str, pos: dict, last_high: float, l
             hit_tp = last_low <= target_price
 
         if hit_sl:
-            # محافظه‌کارانه: اگر هر دو در یک کندل برخورد کرده باشند، SL را ملاک می‌گیریم
             exit_price = sl_price
             pnl = lot["qty"] * (exit_price - pos["entry_price"]) * (1 if is_long else -1)
             state["balance"] += pnl
@@ -132,8 +131,7 @@ def check_open_position(state: dict, symbol: str, pos: dict, last_high: float, l
             lot["status"] = "closed_tp"
             changed = True
             send_telegram_message(f"🟢 <b>{lot_key}</b> برای <b>{symbol}</b> با حد سود بسته شد. (سود/ضرر: {pnl:+.2f}$)")
-            
-            # --- منطق جدید: انتقال حد ضرر به نقطه ورود (Breakeven) ---
+
             if lot_key == "lot_a" and pos["lot_b"]["status"] == "open":
                 pos["sl_price"] = pos["entry_price"]
                 send_telegram_message(
@@ -176,12 +174,10 @@ def main():
         atr_series = calc_atr(df, ATR_PERIOD)
         current_atr = atr_series.iloc[-2]
 
-        # --- استراتژی ۱: Supertrend + ADX ---
-        # اصلاح: دریافت ۵ متغیر به جای ۴ متغیر برای جلوگیری از خطای پایتون
         buy1, sell1, _, price1, st_line = check_strategy_supertrend(df)
         if buy1:
             print(f"[{symbol}] سیگنال خرید Supertrend+ADX فعال شد -> تلاش برای باز کردن پوزیشن Long...")
-            sl = st_line  # استفاده از خط سوپرترند به عنوان حد ضرر
+            sl = st_line
             risk = abs(price1 - sl)
             tp1 = price1 + risk * ST_TP1_RR
             tp2 = price1 + risk * ST_TP2_RR
@@ -189,14 +185,13 @@ def main():
             continue
         elif sell1:
             print(f"[{symbol}] سیگنال فروش Supertrend+ADX فعال شد -> تلاش برای باز کردن پوزیشن Short...")
-            sl = st_line  # استفاده از خط سوپرترند به عنوان حد ضرر
+            sl = st_line
             risk = abs(sl - price1)
             tp1 = price1 - risk * ST_TP1_RR
             tp2 = price1 - risk * ST_TP2_RR
             open_position(state, symbol, "short", price1, sl, tp1, tp2, source="Supertrend+ADX")
             continue
 
-        # --- استراتژی ۲: ICT/SMC Scalp Pro ---
         try:
             htf_bullish, htf_bearish = get_htf_bias(symbol)
         except Exception:
