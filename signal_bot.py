@@ -41,6 +41,8 @@ USE_VOL_FILTER_S1 = True
 VOL_MA_LEN = 20
 USE_EMA_FILTER_S1 = True
 EMA_TREND_LEN = 200
+ST_TP1_RR = 1.5             # نسبت ریسک/ریوارد هدف اول (بر پایه فاصله تا خط Supertrend)
+ST_TP2_RR = 3.0             # نسبت ریسک/ریوارد هدف دوم
 
 # --- استراتژی ۲: ICT/SMC Scalp Pro (Confluence Score System) ---
 SWING_LEN = 3
@@ -251,7 +253,8 @@ def check_strategy_supertrend(df: pd.DataFrame):
 
     candle_time = df["open_time"].iloc[i]
     price = df["close"].iloc[i]
-    return buy, sell, candle_time, price
+    st_line = st_val.iloc[i]
+    return buy, sell, candle_time, price, st_line
 
 
 # =====================================================================
@@ -449,13 +452,16 @@ def send_telegram_message(text: str):
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
         print("توکن یا چت‌آیدی تلگرام تنظیم نشده. پیام ارسال نشد:\n", text)
         return
+    # پشتیبانی از چند گیرنده: چند Chat ID را با کاما از هم جدا کن
+    chat_ids = [cid.strip() for cid in TELEGRAM_CHAT_ID.split(",") if cid.strip()]
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    payload = {"chat_id": TELEGRAM_CHAT_ID, "text": text, "parse_mode": "HTML"}
-    try:
-        r = requests.post(url, data=payload, timeout=15)
-        r.raise_for_status()
-    except Exception as e:
-        print("خطا در ارسال پیام تلگرام:", e)
+    for chat_id in chat_ids:
+        payload = {"chat_id": chat_id, "text": text, "parse_mode": "HTML"}
+        try:
+            r = requests.post(url, data=payload, timeout=15)
+            r.raise_for_status()
+        except Exception as e:
+            print(f"خطا در ارسال پیام تلگرام به {chat_id}:", e)
 
 
 # =====================================================================
@@ -494,7 +500,7 @@ def main():
             continue
 
         # --- استراتژی ۱: Supertrend + ADX ---
-        buy1, sell1, ct1, price1 = check_strategy_supertrend(df)
+        buy1, sell1, ct1, price1, _st_line1 = check_strategy_supertrend(df)
         st_dbg = df.copy()
         st_val_dbg, st_dir_dbg = supertrend(st_dbg, ATR_PERIOD, ST_FACTOR)
         _, _, adx_dbg = adx_dmi(st_dbg, DI_LEN, ADX_LEN)
