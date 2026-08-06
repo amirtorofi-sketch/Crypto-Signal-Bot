@@ -68,39 +68,40 @@ def calculate_position_size(entry_price: float, sl_price: float, balance: float)
 
 
 # =====================================================================
-# باز کردن پوزیشن فرضی جدید
+# باز کردن پوزیشن فرضی جدید (Long یا Short)
 # =====================================================================
-def open_position(state: dict, symbol: str, entry_price: float, sl_price: float,
+def open_position(state: dict, symbol: str, direction: str, entry_price: float, sl_price: float,
                    tp1_price: float, tp2_price: float, source: str):
-    balance = state["balance"]
-    qty_total = calculate_position_size(entry_price, sl_price, balance)
-    cost = qty_total * entry_price
+    qty_total = calculate_position_size(entry_price, sl_price, state["balance"])
+    notional = qty_total * entry_price
 
-    if qty_total <= 0 or cost > balance or cost < 5:
-        print(f"[{symbol}] حجم/هزینه معامله نامعتبر (qty={qty_total:.6f}, cost={cost:.2f}), رد شد.")
+    if qty_total <= 0 or notional < 5:
+        print(f"[{symbol}] حجم/ارزش معامله نامعتبر (qty={qty_total:.6f}, notional={notional:.2f}), رد شد.")
         return
 
     qty_half = qty_total / 2
+    direction_label = "خرید (Long)" if direction == "long" else "فروش (Short)"
 
-    state["balance"] -= cost
     state["positions"][symbol] = {
+        "direction": direction,
         "entry_price": entry_price,
         "sl_price": sl_price,
         "tp1_price": tp1_price,
         "tp2_price": tp2_price,
         "qty_total": qty_total,
-        "cost": cost,
+        "notional": notional,
         "lot_a": {"qty": qty_half, "target": "tp1", "status": "open"},
         "lot_b": {"qty": qty_total - qty_half, "target": "tp2", "status": "open"},
         "source": source,
     }
     save_state(state)
 
+    emoji = "🟢" if direction == "long" else "🔴"
     send_telegram_message(
-        f"🟢 <b>پوزیشن فرضی باز شد (Paper Trading)</b> | {source}\n"
-        f"نماد: <b>{symbol}</b>\nحجم: {qty_total:.6f}\nهزینه: {cost:.2f}$\n"
+        f"{emoji} <b>پوزیشن فرضی {direction_label} باز شد (Paper Trading)</b> | {source}\n"
+        f"نماد: <b>{symbol}</b>\nحجم: {qty_total:.6f}\nارزش ورودی: {notional:.2f}$\n"
         f"ورود: {entry_price:.6f}\nSL: {sl_price:.6f}\nTP1: {tp1_price:.6f}\nTP2: {tp2_price:.6f}\n"
-        f"موجودی باقی‌مانده: {state['balance']:.2f}$"
+        f"موجودی فعلی: {state['balance']:.2f}$"
     )
 
 
@@ -110,6 +111,8 @@ def open_position(state: dict, symbol: str, entry_price: float, sl_price: float,
 def check_open_position(state: dict, symbol: str, pos: dict, last_high: float, last_low: float):
     changed = False
     sl_price = pos["sl_price"]
+    direction = pos.get("direction", "long")
+    is_long = direction == "long"
 
     for lot_key in ("lot_a", "lot_b"):
         lot = pos[lot_key]
@@ -117,22 +120,29 @@ def check_open_position(state: dict, symbol: str, pos: dict, last_high: float, l
             continue
 
         target_price = pos["tp1_price"] if lot["target"] == "tp1" else pos["tp2_price"]
-        hit_sl = last_low <= sl_price
-        hit_tp = last_high >= target_price
+
+        if is_long:
+            hit_sl = last_low <= sl_price
+            hit_tp = last_high >= target_price
+        else:
+            hit_sl = last_high >= sl_price
+            hit_tp = last_low <= target_price
 
         if hit_sl:
             # محافظه‌کارانه: اگر هر دو در یک کندل برخورد کرده باشند، SL را ملاک می‌گیریم
-            proceeds = lot["qty"] * sl_price
-            state["balance"] += proceeds
+            exit_price = sl_price
+            pnl = lot["qty"] * (exit_price - pos["entry_price"]) * (1 if is_long else -1)
+            state["balance"] += pnl
             lot["status"] = "closed_sl"
             changed = True
-            send_telegram_message(f"🔴 <b>{lot_key}</b> برای <b>{symbol}</b> با حد ضرر بسته شد. (+{proceeds:.2f}$)")
+            send_telegram_message(f"🔴 <b>{lot_key}</b> برای <b>{symbol}</b> با حد ضرر بسته شد. (سود/ضرر: {pnl:+.2f}$)")
         elif hit_tp:
-            proceeds = lot["qty"] * target_price
-            state["balance"] += proceeds
+            exit_price = target_price
+            pnl = lot["qty"] * (exit_price - pos["entry_price"]) * (1 if is_long else -1)
+            state["balance"] += pnl
             lot["status"] = "closed_tp"
             changed = True
-            send_telegram_message(f"🟢 <b>{lot_key}</b> برای <b>{symbol}</b> با حد سود بسته شد. (+{proceeds:.2f}$)")
+            send_telegram_message(f"🟢 <b>{lot_key}</b> برای <b>{symbol}</b> با حد سود بسته شد. (سود/ضرر: {pnl:+.2f}$)")
 
     if changed:
         if pos["lot_a"]["status"] != "open" and pos["lot_b"]["status"] != "open":
@@ -171,14 +181,22 @@ def main():
         current_atr = atr_series.iloc[-2]
 
         # --- استراتژی ۱: Supertrend + ADX ---
-        buy1, _, _, price1 = check_strategy_supertrend(df)
+        buy1, sell1, _, price1 = check_strategy_supertrend(df)
         if buy1:
-            print(f"[{symbol}] سیگنال خرید Supertrend+ADX فعال شد -> تلاش برای باز کردن پوزیشن...")
+            print(f"[{symbol}] سیگنال خرید Supertrend+ADX فعال شد -> تلاش برای باز کردن پوزیشن Long...")
             sl = price1 - current_atr * SL_ATR_MULT
             risk = price1 - sl
             tp1 = price1 + risk * TP1_RR
             tp2 = price1 + risk * TP2_RR
-            open_position(state, symbol, price1, sl, tp1, tp2, source="Supertrend+ADX")
+            open_position(state, symbol, "long", price1, sl, tp1, tp2, source="Supertrend+ADX")
+            continue
+        elif sell1:
+            print(f"[{symbol}] سیگنال فروش Supertrend+ADX فعال شد -> تلاش برای باز کردن پوزیشن Short...")
+            sl = price1 + current_atr * SL_ATR_MULT
+            risk = sl - price1
+            tp1 = price1 - risk * TP1_RR
+            tp2 = price1 - risk * TP2_RR
+            open_position(state, symbol, "short", price1, sl, tp1, tp2, source="Supertrend+ADX")
             continue
 
         # --- استراتژی ۲: ICT/SMC Scalp Pro ---
@@ -189,18 +207,27 @@ def main():
 
         res = check_strategy_smc(df, htf_bullish, htf_bearish)
         if res is not None and res["buy"]:
-            print(f"[{symbol}] سیگنال خرید ICT/SMC فعال شد (امتیاز={res['bull_score']}/7) -> تلاش برای باز کردن پوزیشن...")
+            print(f"[{symbol}] سیگنال خرید ICT/SMC فعال شد (امتیاز={res['bull_score']}/7) -> تلاش برای باز کردن پوزیشن Long...")
             price2 = res["price"]
             atr2 = res["atr"]
             sl = price2 - atr2 * SL_ATR_MULT
             risk = price2 - sl
             tp1 = price2 + risk * TP1_RR
             tp2 = price2 + risk * TP2_RR
-            open_position(state, symbol, price2, sl, tp1, tp2, source="ICT/SMC Scalp Pro")
+            open_position(state, symbol, "long", price2, sl, tp1, tp2, source="ICT/SMC Scalp Pro")
+        elif res is not None and res["sell"]:
+            print(f"[{symbol}] سیگنال فروش ICT/SMC فعال شد (امتیاز={res['bear_score']}/7) -> تلاش برای باز کردن پوزیشن Short...")
+            price2 = res["price"]
+            atr2 = res["atr"]
+            sl = price2 + atr2 * SL_ATR_MULT
+            risk = sl - price2
+            tp1 = price2 - risk * TP1_RR
+            tp2 = price2 - risk * TP2_RR
+            open_position(state, symbol, "short", price2, sl, tp1, tp2, source="ICT/SMC Scalp Pro")
         elif res is not None:
-            print(f"[{symbol}] بدون پوزیشن باز، بدون سیگنال خرید (امتیاز SMC خرید={res['bull_score']}/7, Supertrend buy=False)")
+            print(f"[{symbol}] بدون پوزیشن باز، بدون سیگنال (امتیاز خرید={res['bull_score']}/7, امتیاز فروش={res['bear_score']}/7, Supertrend buy/sell=False)")
         else:
-            print(f"[{symbol}] بدون پوزیشن باز، بدون سیگنال خرید")
+            print(f"[{symbol}] بدون پوزیشن باز، بدون سیگنال")
 
         time.sleep(0.3)
 
