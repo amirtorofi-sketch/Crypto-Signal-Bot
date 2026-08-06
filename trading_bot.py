@@ -1,16 +1,5 @@
 """
 شبیه‌ساز معامله‌گر خودکار (Paper Trading) - کاملاً محلی، بدون نیاز به هیچ صرافی یا حساب کاربری
-
-چون دسترسی به صرافی‌های بزرگ (بایننس و ...) برای برخی کاربران محدود است، این نسخه به‌جای
-وصل‌شدن به یک صرافی واقعی، معاملات را به‌صورت کاملاً فرضی (Paper Trading) شبیه‌سازی می‌کند:
-    - از همان داده‌ی رایگان و عمومی قیمت (بدون نیاز به حساب) استفاده می‌شود
-    - یک موجودی مجازی (پیش‌فرض ۱۰۰۰ دلار) در فایل نگه‌داری می‌شود
-    - ورود/خروج معاملات و برخورد به SL/TP با بررسی High/Low کندل‌های بسته‌شده شبیه‌سازی می‌شود
-    - هیچ پول واقعی جابه‌جا نمی‌شود و به هیچ صرافی نیازی نیست
-
-نکته درباره دقت شبیه‌سازی: چون فقط از High/Low کندل استفاده می‌کنیم (نه دنباله‌ی دقیق تیک‌به‌تیک
-قیمت)، اگر در یک کندل هم به SL و هم به TP رسیده باشد، به‌صورت محافظه‌کارانه فرض می‌کنیم SL زودتر
-اصابت کرده (رویکرد استاندارد در بک‌تست‌ها برای جلوگیری از خوش‌بینی کاذب).
 """
 
 import os
@@ -20,7 +9,7 @@ import time
 from signal_bot import (
     SYMBOLS, TIMEFRAME, KLINES_LIMIT,
     get_klines, check_strategy_supertrend, check_strategy_smc, get_htf_bias,
-    SL_ATR_MULT, TP1_RR, TP2_RR, ATR_PERIOD,
+    SL_ATR_MULT, TP1_RR, TP2_RR, ATR_PERIOD, ST_TP1_RR, ST_TP2_RR,
     send_telegram_message,
 )
 from signal_bot import atr as calc_atr
@@ -71,7 +60,7 @@ def calculate_position_size(entry_price: float, sl_price: float, balance: float)
 # باز کردن پوزیشن فرضی جدید (Long یا Short)
 # =====================================================================
 def open_position(state: dict, symbol: str, direction: str, entry_price: float, sl_price: float,
-                   tp1_price: float, tp2_price: float, source: str):
+                  tp1_price: float, tp2_price: float, source: str):
     qty_total = calculate_position_size(entry_price, sl_price, state["balance"])
     notional = qty_total * entry_price
 
@@ -143,6 +132,13 @@ def check_open_position(state: dict, symbol: str, pos: dict, last_high: float, l
             lot["status"] = "closed_tp"
             changed = True
             send_telegram_message(f"🟢 <b>{lot_key}</b> برای <b>{symbol}</b> با حد سود بسته شد. (سود/ضرر: {pnl:+.2f}$)")
+            
+            # --- منطق جدید: انتقال حد ضرر به نقطه ورود (Breakeven) ---
+            if lot_key == "lot_a" and pos["lot_b"]["status"] == "open":
+                pos["sl_price"] = pos["entry_price"]
+                send_telegram_message(
+                    f"🛡 <b>حد ضرر پوزیشن {symbol} به نقطه ورود ({pos['entry_price']:.6f}) منتقل شد (Risk-Free).</b>"
+                )
 
     if changed:
         if pos["lot_a"]["status"] != "open" and pos["lot_b"]["status"] != "open":
@@ -181,21 +177,22 @@ def main():
         current_atr = atr_series.iloc[-2]
 
         # --- استراتژی ۱: Supertrend + ADX ---
-        buy1, sell1, _, price1 = check_strategy_supertrend(df)
+        # اصلاح: دریافت ۵ متغیر به جای ۴ متغیر برای جلوگیری از خطای پایتون
+        buy1, sell1, _, price1, st_line = check_strategy_supertrend(df)
         if buy1:
             print(f"[{symbol}] سیگنال خرید Supertrend+ADX فعال شد -> تلاش برای باز کردن پوزیشن Long...")
-            sl = price1 - current_atr * SL_ATR_MULT
-            risk = price1 - sl
-            tp1 = price1 + risk * TP1_RR
-            tp2 = price1 + risk * TP2_RR
+            sl = st_line  # استفاده از خط سوپرترند به عنوان حد ضرر
+            risk = abs(price1 - sl)
+            tp1 = price1 + risk * ST_TP1_RR
+            tp2 = price1 + risk * ST_TP2_RR
             open_position(state, symbol, "long", price1, sl, tp1, tp2, source="Supertrend+ADX")
             continue
         elif sell1:
             print(f"[{symbol}] سیگنال فروش Supertrend+ADX فعال شد -> تلاش برای باز کردن پوزیشن Short...")
-            sl = price1 + current_atr * SL_ATR_MULT
-            risk = sl - price1
-            tp1 = price1 - risk * TP1_RR
-            tp2 = price1 - risk * TP2_RR
+            sl = st_line  # استفاده از خط سوپرترند به عنوان حد ضرر
+            risk = abs(sl - price1)
+            tp1 = price1 - risk * ST_TP1_RR
+            tp2 = price1 - risk * ST_TP2_RR
             open_position(state, symbol, "short", price1, sl, tp1, tp2, source="Supertrend+ADX")
             continue
 
