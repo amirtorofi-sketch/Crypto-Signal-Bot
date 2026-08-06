@@ -1,5 +1,5 @@
 {
-  "balance": 961.2442337425825,
+  "balance": 961.2119722665664,
   "positions": {
     "GALAUSDT": {
       "entry_price": 0.00179,
@@ -39,21 +39,41 @@
       },
       "source": "ICT/SMC Scalp Pro"
     },
-    "SOLUSDT": {
-      "direction": "short",
-      "entry_price": 73.87,
-      "sl_price": 74.02887701555447,
-      "tp1_price": 73.63168447666831,
-      "tp2_price": 73.3933689533366,
-      "qty_total": 0.2030594287261405,
+    "ETHUSDT": {
+      "direction": "long",
+      "entry_price": 1916.26,
+      "sl_price": 1911.9580090192287,
+      "tp1_price": 1922.712986471157,
+      "tp2_price": 1929.1659729423138,
+      "qty_total": 0.007827747800402868,
       "notional": 15.0,
       "lot_a": {
-        "qty": 0.10152971436307025,
+        "qty": 0.003913873900201434,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 0.10152971436307025,
+        "qty": 0.003913873900201434,
+        "target": "tp2",
+        "status": "open"
+      },
+      "source": "ICT/SMC Scalp Pro"
+    },
+    "MANAUSDT": {
+      "direction": "long",
+      "entry_price": 0.067,
+      "sl_price": 0.06682653164507293,
+      "tp1_price": 0.06726020253239061,
+      "tp2_price": 0.06752040506478121,
+      "qty_total": 223.88059701492537,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 111.94029850746269,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 111.94029850746269,
         "target": "tp2",
         "status": "open"
       },
