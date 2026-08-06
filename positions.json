@@ -1,5 +1,5 @@
 {
-  "balance": 961.0454976091203,
+  "balance": 960.9677628388794,
   "positions": {
     "MANAUSDT": {
       "direction": "short",
@@ -21,26 +21,6 @@
       },
       "source": "Supertrend+ADX"
     },
-    "GALAUSDT": {
-      "direction": "short",
-      "entry_price": 0.001777,
-      "sl_price": 0.001783115980467862,
-      "tp1_price": 0.001767826029298207,
-      "tp2_price": 0.001758652058596414,
-      "qty_total": 8441.193021947101,
-      "notional": 14.999999999999998,
-      "lot_a": {
-        "qty": 4220.596510973551,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 4220.596510973551,
-        "target": "tp2",
-        "status": "open"
-      },
-      "source": "ICT/SMC Scalp Pro"
-    },
     "MASKUSDT": {
       "direction": "long",
       "entry_price": 0.356,
@@ -61,21 +41,41 @@
       },
       "source": "ICT/SMC Scalp Pro"
     },
-    "ETHUSDT": {
-      "direction": "short",
-      "entry_price": 1906.86,
-      "sl_price": 1913.460492209843,
-      "tp1_price": 1896.959261685235,
-      "tp2_price": 1887.0585233704703,
-      "qty_total": 0.007866335231742237,
-      "notional": 15.000000000000002,
+    "BTCUSDT": {
+      "direction": "long",
+      "entry_price": 64810.31,
+      "sl_price": 64640.25595241956,
+      "tp1_price": 65065.39107137066,
+      "tp2_price": 65320.47214274131,
+      "qty_total": 0.0002314446574935377,
+      "notional": 15.0,
       "lot_a": {
-        "qty": 0.003933167615871118,
+        "qty": 0.00011572232874676885,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 0.003933167615871118,
+        "qty": 0.00011572232874676885,
+        "target": "tp2",
+        "status": "open"
+      },
+      "source": "Supertrend+ADX"
+    },
+    "SOLUSDT": {
+      "direction": "short",
+      "entry_price": 73.54,
+      "sl_price": 73.75426455874482,
+      "tp1_price": 73.21860316188278,
+      "tp2_price": 72.89720632376556,
+      "qty_total": 0.20397062822953493,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 0.10198531411476747,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.10198531411476747,
         "target": "tp2",
         "status": "open"
       },
