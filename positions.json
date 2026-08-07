@@ -1,5 +1,5 @@
 {
-  "balance": 999.6107417527039,
+  "balance": 999.4215532864646,
   "positions": {
     "MASKUSDT__ST": {
       "trade_id": 3,
@@ -66,29 +66,6 @@
       },
       "lot_b": {
         "qty": 0.10229132569558103,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "CHZUSDT__ST": {
-      "trade_id": 21,
-      "symbol": "CHZUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-08-07 17:15:00",
-      "direction": "short",
-      "entry_price": 0.01269,
-      "sl_price": 0.012850053442438449,
-      "tp1_price": 0.012449919836342326,
-      "tp2_price": 0.012209839672684653,
-      "qty_total": 1182.033096926714,
-      "notional": 15.000000000000002,
-      "lot_a": {
-        "qty": 591.016548463357,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 591.016548463357,
         "target": "tp2",
         "status": "open"
       }
@@ -161,7 +138,30 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CHZUSDT__ST": {
+      "trade_id": 29,
+      "symbol": "CHZUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-08-07 21:30:00",
+      "direction": "long",
+      "entry_price": 0.0129,
+      "sl_price": 0.012721746890856611,
+      "tp1_price": 0.013167379663715083,
+      "tp2_price": 0.013434759327430166,
+      "qty_total": 1162.7906976744187,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 581.3953488372093,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 581.3953488372093,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 29
+  "next_trade_id": 30
 }
