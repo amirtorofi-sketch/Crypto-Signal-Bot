@@ -1,5 +1,5 @@
 {
-  "balance": 999.845586212122,
+  "balance": 999.7983324186584,
   "positions": {
     "MASKUSDT__ST": {
       "trade_id": 3,
@@ -31,7 +31,7 @@
       "candle_time": "2026-08-07 15:00:00",
       "direction": "long",
       "entry_price": 0.364,
-      "sl_price": 0.36290792987061,
+      "sl_price": 0.364,
       "tp1_price": 0.365638105194085,
       "tp2_price": 0.36727621038817,
       "qty_total": 41.20879120879121,
@@ -39,33 +39,10 @@
       "lot_a": {
         "qty": 20.604395604395606,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 20.604395604395606,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "ROSEUSDT__SMC": {
-      "trade_id": 17,
-      "symbol": "ROSEUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-07 15:15:00",
-      "direction": "short",
-      "entry_price": 0.00565,
-      "sl_price": 0.005680512245281464,
-      "tp1_price": 0.005604231632077803,
-      "tp2_price": 0.005558463264155607,
-      "qty_total": 2654.8672566371683,
-      "notional": 15.0,
-      "lot_a": {
-        "qty": 1327.4336283185842,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 1327.4336283185842,
         "target": "tp2",
         "status": "open"
       }
