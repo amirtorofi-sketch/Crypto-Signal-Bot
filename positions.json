@@ -1,5 +1,5 @@
 {
-  "balance": 960.8399869135038,
+  "balance": 960.9129240223454,
   "positions": {
     "CRVUSDT": {
       "direction": "long",
@@ -24,7 +24,7 @@
     "MASKUSDT": {
       "direction": "long",
       "entry_price": 0.362,
-      "sl_price": 0.35863834291154556,
+      "sl_price": 0.362,
       "tp1_price": 0.3670424856326816,
       "tp2_price": 0.3720849712653633,
       "qty_total": 41.43646408839779,
@@ -32,7 +32,7 @@
       "lot_a": {
         "qty": 20.718232044198896,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 20.718232044198896,
@@ -101,21 +101,41 @@
       },
       "source": "Supertrend+ADX"
     },
-    "VETUSDT": {
+    "BNBUSDT": {
       "direction": "short",
-      "entry_price": 0.004597,
-      "sl_price": 0.004606664205240908,
-      "tp1_price": 0.004582503692138638,
-      "tp2_price": 0.0045680073842772765,
-      "qty_total": 3262.997607135088,
+      "entry_price": 590.36,
+      "sl_price": 594.9092381535235,
+      "tp1_price": 583.5361427697148,
+      "tp2_price": 576.7122855394297,
+      "qty_total": 0.02540822548953181,
       "notional": 15.0,
       "lot_a": {
-        "qty": 1631.498803567544,
+        "qty": 0.012704112744765905,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 1631.498803567544,
+        "qty": 0.012704112744765905,
+        "target": "tp2",
+        "status": "open"
+      },
+      "source": "Supertrend+ADX"
+    },
+    "MANAUSDT": {
+      "direction": "short",
+      "entry_price": 0.0657,
+      "sl_price": 0.06597281085597542,
+      "tp1_price": 0.06529078371603686,
+      "tp2_price": 0.06488156743207371,
+      "qty_total": 228.31050228310505,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 114.15525114155253,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 114.15525114155253,
         "target": "tp2",
         "status": "open"
       },
