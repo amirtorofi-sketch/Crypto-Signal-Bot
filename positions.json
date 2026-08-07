@@ -1,5 +1,5 @@
 {
-  "balance": 960.944520826658,
+  "balance": 960.9084584172625,
   "positions": {
     "ROSEUSDT": {
       "direction": "long",
@@ -21,26 +21,6 @@
       },
       "source": "ICT/SMC Scalp Pro"
     },
-    "SOLUSDT": {
-      "direction": "short",
-      "entry_price": 72.63,
-      "sl_price": 72.80461418629346,
-      "tp1_price": 72.3680787205598,
-      "tp2_price": 72.10615744111959,
-      "qty_total": 0.20652622883106156,
-      "notional": 15.0,
-      "lot_a": {
-        "qty": 0.10326311441553078,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.10326311441553078,
-        "target": "tp2",
-        "status": "open"
-      },
-      "source": "ICT/SMC Scalp Pro"
-    },
     "CRVUSDT": {
       "direction": "long",
       "entry_price": 0.2162,
@@ -56,6 +36,26 @@
       },
       "lot_b": {
         "qty": 34.69010175763182,
+        "target": "tp2",
+        "status": "open"
+      },
+      "source": "Supertrend+ADX"
+    },
+    "MASKUSDT": {
+      "direction": "long",
+      "entry_price": 0.362,
+      "sl_price": 0.35863834291154556,
+      "tp1_price": 0.3670424856326816,
+      "tp2_price": 0.3720849712653633,
+      "qty_total": 41.43646408839779,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 20.718232044198896,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 20.718232044198896,
         "target": "tp2",
         "status": "open"
       },
