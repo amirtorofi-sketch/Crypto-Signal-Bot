@@ -1,10 +1,10 @@
 {
-  "balance": 960.9081090548498,
+  "balance": 960.9779101525509,
   "positions": {
     "ROSEUSDT": {
       "direction": "long",
       "entry_price": 0.00576,
-      "sl_price": 0.005724261837977051,
+      "sl_price": 0.00576,
       "tp1_price": 0.005813607243034424,
       "tp2_price": 0.005867214486068848,
       "qty_total": 2604.1666666666665,
@@ -12,7 +12,7 @@
       "lot_a": {
         "qty": 1302.0833333333333,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 1302.0833333333333,
@@ -60,6 +60,26 @@
         "status": "open"
       },
       "source": "ICT/SMC Scalp Pro"
+    },
+    "CRVUSDT": {
+      "direction": "long",
+      "entry_price": 0.2162,
+      "sl_price": 0.21313012619662633,
+      "tp1_price": 0.22080481070506053,
+      "tp2_price": 0.22540962141012102,
+      "qty_total": 69.38020351526364,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 34.69010175763182,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 34.69010175763182,
+        "target": "tp2",
+        "status": "open"
+      },
+      "source": "Supertrend+ADX"
     }
   }
 }
