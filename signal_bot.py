@@ -33,7 +33,7 @@ KLINES_LIMIT = 300                             # تعداد کندل تاریخ�
 
 # --- استراتژی ۱: Supertrend + ADX ---
 ATR_PERIOD = 10
-ST_FACTOR = 3.0
+ST_FACTOR = 3.5              # <-- از ۳.۰ به ۳.۵ افزایش یافت تا حد ضرر (خط Supertrend) بازتر بشه
 ADX_LEN = 14
 DI_LEN = 14
 ADX_THRESHOLD = 15          # <-- طبق درخواست از ۲۰ به ۱۵ تغییر کرد
@@ -60,7 +60,7 @@ USE_PREMIUM_DISCOUNT = True
 USE_HTF_BIAS = True
 HTF_TIMEFRAME = "1h"
 HTF_EMA_LEN = 50
-SL_ATR_MULT = 1.0
+SL_ATR_MULT = 1.8           # <-- از ۱.۰ به ۱.۸ افزایش یافت تا کمتر با نویز بازار SL بخوریم
 TP1_RR = 1.5
 TP2_RR = 3.0
 
