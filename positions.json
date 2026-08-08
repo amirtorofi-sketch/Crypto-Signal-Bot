@@ -1,5 +1,5 @@
 {
-  "balance": 999.3717558033877,
+  "balance": 999.3921232471819,
   "positions": {
     "MASKUSDT__ST": {
       "trade_id": 3,
@@ -123,7 +123,7 @@
       "candle_time": "2026-08-08 00:30:00",
       "direction": "long",
       "entry_price": 73.68,
-      "sl_price": 73.54660682144402,
+      "sl_price": 73.68,
       "tp1_price": 73.880089767834,
       "tp2_price": 74.08017953566798,
       "qty_total": 0.2035830618892508,
@@ -131,7 +131,7 @@
       "lot_a": {
         "qty": 0.1017915309446254,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.1017915309446254,
@@ -230,7 +230,53 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "DOGEUSDT__SMC": {
+      "trade_id": 40,
+      "symbol": "DOGEUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-08 01:30:00",
+      "direction": "long",
+      "entry_price": 0.07001,
+      "sl_price": 0.06987372537535,
+      "tp1_price": 0.070214411936975,
+      "tp2_price": 0.07041882387395001,
+      "qty_total": 214.2551064133695,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 107.12755320668475,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 107.12755320668475,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "GALAUSDT__SMC": {
+      "trade_id": 41,
+      "symbol": "GALAUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-08 01:30:00",
+      "direction": "long",
+      "entry_price": 0.00178,
+      "sl_price": 0.001773430614348312,
+      "tp1_price": 0.0017898540784775318,
+      "tp2_price": 0.0017997081569550639,
+      "qty_total": 8426.966292134832,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 4213.483146067416,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 4213.483146067416,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 40
+  "next_trade_id": 42
 }
