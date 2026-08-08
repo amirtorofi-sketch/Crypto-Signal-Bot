@@ -1,5 +1,5 @@
 {
-  "balance": 998.8050449339358,
+  "balance": 998.9560860297639,
   "positions": {
     "MASKUSDT__ST": {
       "trade_id": 3,
@@ -93,29 +93,6 @@
         "status": "open"
       }
     },
-    "GALAUSDT__SMC": {
-      "trade_id": 44,
-      "symbol": "GALAUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-08 02:30:00",
-      "direction": "long",
-      "entry_price": 0.001774,
-      "sl_price": 0.001774,
-      "tp1_price": 0.0017833344006524478,
-      "tp2_price": 0.0017926688013048956,
-      "qty_total": 8455.467869222097,
-      "notional": 15.0,
-      "lot_a": {
-        "qty": 4227.733934611048,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 4227.733934611048,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "VETUSDT__SMC": {
       "trade_id": 53,
       "symbol": "VETUSDT",
@@ -169,7 +146,7 @@
       "candle_time": "2026-08-08 08:45:00",
       "direction": "long",
       "entry_price": 0.07042,
-      "sl_price": 0.070211842892342,
+      "sl_price": 0.07042,
       "tp1_price": 0.07073223566148698,
       "tp2_price": 0.07104447132297398,
       "qty_total": 213.00766827605796,
@@ -177,7 +154,7 @@
       "lot_a": {
         "qty": 106.50383413802898,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 106.50383413802898,
@@ -255,51 +232,74 @@
       }
     },
     "BTCUSDT__SMC": {
-      "trade_id": 68,
+      "trade_id": 70,
       "symbol": "BTCUSDT",
       "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-08 14:00:00",
+      "candle_time": "2026-08-08 14:15:00",
       "direction": "long",
-      "entry_price": 65058.69,
-      "sl_price": 65006.75855998247,
-      "tp1_price": 65136.587160026305,
-      "tp2_price": 65214.48432005261,
-      "qty_total": 0.0002305610518748533,
+      "entry_price": 65136.69,
+      "sl_price": 65074.15923428925,
+      "tp1_price": 65230.48614856614,
+      "tp2_price": 65324.28229713227,
+      "qty_total": 0.00023028495921423086,
       "notional": 15.0,
       "lot_a": {
-        "qty": 0.00011528052593742665,
+        "qty": 0.00011514247960711543,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 0.00011528052593742665,
+        "qty": 0.00011514247960711543,
         "target": "tp2",
         "status": "open"
       }
     },
     "BNBUSDT__SMC": {
-      "trade_id": 69,
+      "trade_id": 71,
       "symbol": "BNBUSDT",
       "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-08 14:00:00",
+      "candle_time": "2026-08-08 14:15:00",
       "direction": "long",
-      "entry_price": 599.68,
-      "sl_price": 598.087247235938,
-      "tp1_price": 602.0691291460929,
-      "tp2_price": 604.4582582921859,
-      "qty_total": 0.025013340448239062,
+      "entry_price": 607.16,
+      "sl_price": 604.382443862311,
+      "tp1_price": 611.3263342065334,
+      "tp2_price": 615.4926684130669,
+      "qty_total": 0.024705184794782266,
       "notional": 15.0,
       "lot_a": {
-        "qty": 0.012506670224119531,
+        "qty": 0.012352592397391133,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 0.012506670224119531,
+        "qty": 0.012352592397391133,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "GALAUSDT__SMC": {
+      "trade_id": 72,
+      "symbol": "GALAUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-08 14:15:00",
+      "direction": "long",
+      "entry_price": 0.001798,
+      "sl_price": 0.00178871882475694,
+      "tp1_price": 0.0018119217628645898,
+      "tp2_price": 0.0018258435257291798,
+      "qty_total": 8342.602892102337,
+      "notional": 15.000000000000002,
+      "lot_a": {
+        "qty": 4171.301446051169,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 4171.301446051169,
         "target": "tp2",
         "status": "open"
       }
     }
   },
-  "next_trade_id": 70
+  "next_trade_id": 73
 }
