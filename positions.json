@@ -1,5 +1,5 @@
 {
-  "balance": 999.4363765141508,
+  "balance": 999.4599694006829,
   "positions": {
     "MASKUSDT__ST": {
       "trade_id": 3,
@@ -31,7 +31,7 @@
       "candle_time": "2026-08-08 08:00:00",
       "direction": "long",
       "entry_price": 0.00568,
-      "sl_price": 0.005575897690954869,
+      "sl_price": 0.00568,
       "tp1_price": 0.005836153463567697,
       "tp2_price": 0.005992306927135395,
       "qty_total": 2640.845070422535,
@@ -39,7 +39,7 @@
       "lot_a": {
         "qty": 1320.4225352112676,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 1320.4225352112676,
@@ -66,29 +66,6 @@
       },
       "lot_b": {
         "qty": 20.107238605898125,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "VETUSDT__SMC": {
-      "trade_id": 89,
-      "symbol": "VETUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-09 04:00:00",
-      "direction": "long",
-      "entry_price": 0.004814,
-      "sl_price": 0.004789837556219316,
-      "tp1_price": 0.004850243665671025,
-      "tp2_price": 0.00488648733134205,
-      "qty_total": 3115.9119235562944,
-      "notional": 15.0,
-      "lot_a": {
-        "qty": 1557.9559617781472,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 1557.9559617781472,
         "target": "tp2",
         "status": "open"
       }
@@ -135,29 +112,6 @@
       },
       "lot_b": {
         "qty": 0.09827044025157233,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "CHZUSDT__SMC": {
-      "trade_id": 93,
-      "symbol": "CHZUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-09 06:30:00",
-      "direction": "long",
-      "entry_price": 0.0134,
-      "sl_price": 0.013304138526994922,
-      "tp1_price": 0.013543792209507619,
-      "tp2_price": 0.013687584419015237,
-      "qty_total": 1119.402985074627,
-      "notional": 15.000000000000002,
-      "lot_a": {
-        "qty": 559.7014925373135,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 559.7014925373135,
         "target": "tp2",
         "status": "open"
       }
