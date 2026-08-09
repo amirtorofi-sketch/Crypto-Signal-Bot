@@ -1,28 +1,6 @@
 {
-  "balance": 1000.0,
+  "balance": 999.9678269486585,
   "positions": {
-    "VETUSDT": {
-      "trade_id": 1,
-      "symbol": "VETUSDT",
-      "direction": "long",
-      "candle_time": "2026-08-09 17:00:00",
-      "entry_price": 0.004777,
-      "sl_price": 0.004766753955582762,
-      "tp1_price": 0.004792369066625857,
-      "tp2_price": 0.004807738133251715,
-      "qty_total": 3140.046054008792,
-      "notional": 15.0,
-      "lot_a": {
-        "qty": 1570.023027004396,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 1570.023027004396,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "MANAUSDT": {
       "trade_id": 2,
       "symbol": "MANAUSDT",
@@ -44,7 +22,73 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "BTCUSDT": {
+      "trade_id": 3,
+      "symbol": "BTCUSDT",
+      "direction": "long",
+      "candle_time": "2026-08-09 18:15:00",
+      "entry_price": 65213.78,
+      "sl_price": 65178.33271767312,
+      "tp1_price": 65266.95092349032,
+      "tp2_price": 65320.12184698064,
+      "qty_total": 0.00023001273657193312,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 0.00011500636828596656,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.00011500636828596656,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "ETHUSDT": {
+      "trade_id": 4,
+      "symbol": "ETHUSDT",
+      "direction": "long",
+      "candle_time": "2026-08-09 18:15:00",
+      "entry_price": 1922.16,
+      "sl_price": 1920.29594907862,
+      "tp1_price": 1924.9560763820703,
+      "tp2_price": 1927.7521527641404,
+      "qty_total": 0.007803720814084155,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 0.0039018604070420776,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0039018604070420776,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "SOLUSDT": {
+      "trade_id": 5,
+      "symbol": "SOLUSDT",
+      "direction": "long",
+      "candle_time": "2026-08-09 18:15:00",
+      "entry_price": 77.19,
+      "sl_price": 77.0066682682196,
+      "tp1_price": 77.46499759767059,
+      "tp2_price": 77.7399951953412,
+      "qty_total": 0.194325689856199,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 0.0971628449280995,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0971628449280995,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 3
+  "next_trade_id": 6
 }
