@@ -1,28 +1,72 @@
 {
   "balance": 1000.1111441545672,
   "positions": {
-    "CRVUSDT": {
-      "trade_id": 9,
-      "symbol": "CRVUSDT",
+    "ETHUSDT": {
+      "trade_id": 12,
+      "symbol": "ETHUSDT",
       "direction": "long",
-      "candle_time": "2026-08-09 20:00:00",
-      "entry_price": 0.238,
-      "sl_price": 0.238,
-      "tp1_price": 0.23975443377799294,
-      "tp2_price": 0.24150886755598586,
-      "qty_total": 63.02521008403362,
-      "notional": 15.0,
+      "candle_time": "2026-08-09 22:30:00",
+      "entry_price": 1919.29,
+      "sl_price": 1915.489191582529,
+      "tp1_price": 1924.9912126262066,
+      "tp2_price": 1930.692425252413,
+      "qty_total": 0.0078153900661182,
+      "notional": 14.999999999999998,
       "lot_a": {
-        "qty": 31.51260504201681,
+        "qty": 0.0039076950330591,
         "target": "tp1",
-        "status": "closed_tp"
+        "status": "open"
       },
       "lot_b": {
-        "qty": 31.51260504201681,
+        "qty": 0.0039076950330591,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "SOLUSDT": {
+      "trade_id": 13,
+      "symbol": "SOLUSDT",
+      "direction": "long",
+      "candle_time": "2026-08-09 22:30:00",
+      "entry_price": 77.06,
+      "sl_price": 76.85317491520422,
+      "tp1_price": 77.37023762719367,
+      "tp2_price": 77.68047525438735,
+      "qty_total": 0.19465351674020243,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 0.09732675837010121,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.09732675837010121,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "VETUSDT": {
+      "trade_id": 14,
+      "symbol": "VETUSDT",
+      "direction": "long",
+      "candle_time": "2026-08-09 22:30:00",
+      "entry_price": 0.004761,
+      "sl_price": 0.0047505882042818606,
+      "tp1_price": 0.004776617693577208,
+      "tp2_price": 0.004792235387154417,
+      "qty_total": 3150.5986137366103,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 1575.2993068683052,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 1575.2993068683052,
         "target": "tp2",
         "status": "open"
       }
     }
   },
-  "next_trade_id": 12
+  "next_trade_id": 15
 }
