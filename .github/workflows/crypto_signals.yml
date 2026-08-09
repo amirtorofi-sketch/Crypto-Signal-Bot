@@ -32,26 +32,38 @@ jobs:
       - name: Run signal bot
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
         run: python signal_bot.py
 
       - name: Run trading bot (Binance Testnet)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
           BINANCE_TESTNET_API_KEY: ${{ secrets.BINANCE_TESTNET_API_KEY }}
           BINANCE_TESTNET_API_SECRET: ${{ secrets.BINANCE_TESTNET_API_SECRET }}
         run: python trading_bot.py
+
+      - name: Run signal bot v2 (strategy 3, second Telegram bot)
+        env:
+          TELEGRAM_BOT_TOKEN_2: ${{ secrets.TELEGRAM_BOT_TOKEN_2 }}
+          TELEGRAM_CHAT_ID_2: ${{ vars.TELEGRAM_CHAT_ID_2 }}
+        run: python signal_bot_v2.py
+
+      - name: Run trading bot v2 (strategy 3, paper trading)
+        env:
+          TELEGRAM_BOT_TOKEN_2: ${{ secrets.TELEGRAM_BOT_TOKEN_2 }}
+          TELEGRAM_CHAT_ID_2: ${{ vars.TELEGRAM_CHAT_ID_2 }}
+        run: python trading_bot_v2.py
 
       - name: Commit updated state.json and positions.json
         run: |
           git config user.name "signal-bot"
           git config user.email "signal-bot@users.noreply.github.com"
-          git add state.json positions.json
+          git add state.json positions.json state_v2.json positions_v2.json
           if ! git diff --staged --quiet; then
             git commit -m "update signal state [skip ci]"
             git pull --rebase origin main
             git push
           else
-            echo "تغییری در state.json/positions.json نبود، نیازی به کامیت نیست."
+            echo "تغییری در فایل‌های وضعیت نبود، نیازی به کامیت نیست."
           fi
