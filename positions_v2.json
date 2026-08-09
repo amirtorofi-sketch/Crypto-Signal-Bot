@@ -1,35 +1,13 @@
 {
-  "balance": 1000.0523103189445,
+  "balance": 1000.1610361955388,
   "positions": {
-    "SOLUSDT": {
-      "trade_id": 5,
-      "symbol": "SOLUSDT",
-      "direction": "long",
-      "candle_time": "2026-08-09 18:15:00",
-      "entry_price": 77.19,
-      "sl_price": 77.19,
-      "tp1_price": 77.46499759767059,
-      "tp2_price": 77.7399951953412,
-      "qty_total": 0.194325689856199,
-      "notional": 15.0,
-      "lot_a": {
-        "qty": 0.0971628449280995,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 0.0971628449280995,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "CRVUSDT": {
       "trade_id": 9,
       "symbol": "CRVUSDT",
       "direction": "long",
       "candle_time": "2026-08-09 20:00:00",
       "entry_price": 0.238,
-      "sl_price": 0.23683037748133803,
+      "sl_price": 0.238,
       "tp1_price": 0.23975443377799294,
       "tp2_price": 0.24150886755598586,
       "qty_total": 63.02521008403362,
@@ -37,14 +15,36 @@
       "lot_a": {
         "qty": 31.51260504201681,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 31.51260504201681,
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ROSEUSDT": {
+      "trade_id": 11,
+      "symbol": "ROSEUSDT",
+      "direction": "long",
+      "candle_time": "2026-08-09 22:00:00",
+      "entry_price": 0.00578,
+      "sl_price": 0.005760774933545613,
+      "tp1_price": 0.005808837599681581,
+      "tp2_price": 0.005837675199363163,
+      "qty_total": 2595.1557093425604,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 1297.5778546712802,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 1297.5778546712802,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 11
+  "next_trade_id": 12
 }
