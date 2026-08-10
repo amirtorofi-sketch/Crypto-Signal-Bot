@@ -1,5 +1,5 @@
 {
-  "balance": 998.0563937455358,
+  "balance": 997.8612000380444,
   "positions": {
     "DOGEUSDT__ST": {
       "trade_id": 133,
@@ -300,29 +300,6 @@
         "status": "open"
       }
     },
-    "MASKUSDT__ST": {
-      "trade_id": 178,
-      "symbol": "MASKUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-08-10 15:00:00",
-      "direction": "short",
-      "entry_price": 0.364,
-      "sl_price": 0.36873670063512337,
-      "tp1_price": 0.3568949490473149,
-      "tp2_price": 0.34978989809462985,
-      "qty_total": 41.20879120879121,
-      "notional": 15.0,
-      "lot_a": {
-        "qty": 20.604395604395606,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 20.604395604395606,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "CRVUSDT__SMC": {
       "trade_id": 180,
       "symbol": "CRVUSDT",
@@ -391,7 +368,30 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "MASKUSDT__ST": {
+      "trade_id": 183,
+      "symbol": "MASKUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-08-10 17:00:00",
+      "direction": "long",
+      "entry_price": 0.372,
+      "sl_price": 0.3644652984779932,
+      "tp1_price": 0.3833020522830102,
+      "tp2_price": 0.3946041045660204,
+      "qty_total": 40.32258064516129,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 20.161290322580644,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 20.161290322580644,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 183
+  "next_trade_id": 184
 }
