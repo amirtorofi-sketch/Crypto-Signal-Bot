@@ -1,5 +1,28 @@
 {
   "balance": 998.7351258479802,
-  "positions": {},
-  "next_trade_id": 53
+  "positions": {
+    "GALAUSDT": {
+      "trade_id": 53,
+      "symbol": "GALAUSDT",
+      "direction": "short",
+      "candle_time": "2026-08-10 20:30:00",
+      "entry_price": 0.001804,
+      "sl_price": 0.0018106871400524508,
+      "tp1_price": 0.0017939692899213238,
+      "tp2_price": 0.0017839385798426477,
+      "qty_total": 8314.855875831485,
+      "notional": 14.999999999999998,
+      "lot_a": {
+        "qty": 4157.427937915742,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 4157.427937915742,
+        "target": "tp2",
+        "status": "open"
+      }
+    }
+  },
+  "next_trade_id": 54
 }

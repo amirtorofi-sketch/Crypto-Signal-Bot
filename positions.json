@@ -93,29 +93,6 @@
         "status": "open"
       }
     },
-    "SOLUSDT__SMC": {
-      "trade_id": 166,
-      "symbol": "SOLUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-10 13:30:00",
-      "direction": "short",
-      "entry_price": 76.36,
-      "sl_price": 76.36,
-      "tp1_price": 75.81462744878417,
-      "tp2_price": 75.26925489756833,
-      "qty_total": 0.1964379256155055,
-      "notional": 15.0,
-      "lot_a": {
-        "qty": 0.09821896280775275,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 0.09821896280775275,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "ONEUSDT__SMC": {
       "trade_id": 170,
       "symbol": "ONEUSDT",
@@ -322,7 +299,30 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "MANAUSDT__ST": {
+      "trade_id": 188,
+      "symbol": "MANAUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-08-10 20:30:00",
+      "direction": "long",
+      "entry_price": 0.0672,
+      "sl_price": 0.0664022591158361,
+      "tp1_price": 0.06839661132624585,
+      "tp2_price": 0.0695932226524917,
+      "qty_total": 223.21428571428572,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 111.60714285714286,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 111.60714285714286,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 188
+  "next_trade_id": 189
 }
