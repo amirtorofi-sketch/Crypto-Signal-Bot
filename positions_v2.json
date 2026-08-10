@@ -1,5 +1,5 @@
 {
-  "balance": 999.1434096963281,
+  "balance": 999.2105719065754,
   "positions": {
     "ROSEUSDT": {
       "trade_id": 41,
@@ -7,7 +7,7 @@
       "direction": "long",
       "candle_time": "2026-08-10 12:30:00",
       "entry_price": 0.00578,
-      "sl_price": 0.005745493548868544,
+      "sl_price": 0.00578,
       "tp1_price": 0.005831759676697185,
       "tp2_price": 0.005883519353394369,
       "qty_total": 2595.1557093425604,
@@ -15,7 +15,7 @@
       "lot_a": {
         "qty": 1297.5778546712802,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 1297.5778546712802,
@@ -66,7 +66,29 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "DOGEUSDT": {
+      "trade_id": 45,
+      "symbol": "DOGEUSDT",
+      "direction": "short",
+      "candle_time": "2026-08-10 14:00:00",
+      "entry_price": 0.06997,
+      "sl_price": 0.07013507203657898,
+      "tp1_price": 0.06972239194513154,
+      "tp2_price": 0.06947478389026307,
+      "qty_total": 214.37759039588394,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 107.18879519794197,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 107.18879519794197,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 45
+  "next_trade_id": 46
 }
