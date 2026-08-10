@@ -1,28 +1,50 @@
 {
-  "balance": 999.2994573196546,
+  "balance": 999.1871925839515,
   "positions": {
-    "CRVUSDT": {
-      "trade_id": 46,
-      "symbol": "CRVUSDT",
-      "direction": "long",
-      "candle_time": "2026-08-10 14:30:00",
-      "entry_price": 0.2414,
-      "sl_price": 0.2395932861867506,
-      "tp1_price": 0.24411007071987412,
-      "tp2_price": 0.2468201414397482,
-      "qty_total": 62.13753106876553,
+    "ONEUSDT": {
+      "trade_id": 47,
+      "symbol": "ONEUSDT",
+      "direction": "short",
+      "candle_time": "2026-08-10 15:30:00",
+      "entry_price": 0.00124,
+      "sl_price": 0.0012509955688863007,
+      "tp1_price": 0.001223506646670549,
+      "tp2_price": 0.001207013293341098,
+      "qty_total": 12096.774193548386,
       "notional": 15.0,
       "lot_a": {
-        "qty": 31.068765534382766,
+        "qty": 6048.387096774193,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 31.068765534382766,
+        "qty": 6048.387096774193,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "MASKUSDT": {
+      "trade_id": 48,
+      "symbol": "MASKUSDT",
+      "direction": "short",
+      "candle_time": "2026-08-10 15:30:00",
+      "entry_price": 0.365,
+      "sl_price": 0.36600837389216456,
+      "tp1_price": 0.36348743916175313,
+      "tp2_price": 0.3619748783235063,
+      "qty_total": 41.09589041095891,
+      "notional": 15.000000000000002,
+      "lot_a": {
+        "qty": 20.547945205479454,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 20.547945205479454,
         "target": "tp2",
         "status": "open"
       }
     }
   },
-  "next_trade_id": 47
+  "next_trade_id": 49
 }
