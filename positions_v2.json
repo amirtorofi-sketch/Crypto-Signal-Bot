@@ -1,5 +1,5 @@
 {
-  "balance": 999.4768068414444,
+  "balance": 999.4353452387902,
   "positions": {
     "MASKUSDT": {
       "trade_id": 32,
@@ -19,28 +19,6 @@
       },
       "lot_b": {
         "qty": 20.32520325203252,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "SOLUSDT": {
-      "trade_id": 35,
-      "symbol": "SOLUSDT",
-      "direction": "long",
-      "candle_time": "2026-08-10 08:30:00",
-      "entry_price": 76.84,
-      "sl_price": 76.62760603013717,
-      "tp1_price": 77.15859095479425,
-      "tp2_price": 77.4771819095885,
-      "qty_total": 0.1952108276939094,
-      "notional": 15.0,
-      "lot_a": {
-        "qty": 0.0976054138469547,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0976054138469547,
         "target": "tp2",
         "status": "open"
       }
@@ -66,7 +44,29 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ONEUSDT": {
+      "trade_id": 39,
+      "symbol": "ONEUSDT",
+      "direction": "long",
+      "candle_time": "2026-08-10 09:45:00",
+      "entry_price": 0.00127,
+      "sl_price": 0.0012602538708690846,
+      "tp1_price": 0.0012846191936963735,
+      "tp2_price": 0.0012992383873927467,
+      "qty_total": 11811.023622047243,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 5905.511811023622,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 5905.511811023622,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 39
+  "next_trade_id": 40
 }
