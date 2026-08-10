@@ -1,5 +1,5 @@
 {
-  "balance": 999.7276185058291,
+  "balance": 999.6635847555496,
   "positions": {
     "MASKUSDT": {
       "trade_id": 32,
@@ -45,28 +45,50 @@
         "status": "open"
       }
     },
-    "CHZUSDT": {
-      "trade_id": 34,
-      "symbol": "CHZUSDT",
+    "SOLUSDT": {
+      "trade_id": 35,
+      "symbol": "SOLUSDT",
       "direction": "long",
-      "candle_time": "2026-08-10 08:15:00",
-      "entry_price": 0.01323,
-      "sl_price": 0.013173522232253428,
-      "tp1_price": 0.01331471665161986,
-      "tp2_price": 0.013399433303239717,
-      "qty_total": 1133.7868480725624,
-      "notional": 15.000000000000002,
+      "candle_time": "2026-08-10 08:30:00",
+      "entry_price": 76.84,
+      "sl_price": 76.62760603013717,
+      "tp1_price": 77.15859095479425,
+      "tp2_price": 77.4771819095885,
+      "qty_total": 0.1952108276939094,
+      "notional": 15.0,
       "lot_a": {
-        "qty": 566.8934240362812,
+        "qty": 0.0976054138469547,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 566.8934240362812,
+        "qty": 0.0976054138469547,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "DOGEUSDT": {
+      "trade_id": 36,
+      "symbol": "DOGEUSDT",
+      "direction": "long",
+      "candle_time": "2026-08-10 08:30:00",
+      "entry_price": 0.06995,
+      "sl_price": 0.06977190972009618,
+      "tp1_price": 0.07021713541985572,
+      "tp2_price": 0.07048427083971144,
+      "qty_total": 214.43888491779845,
+      "notional": 15.000000000000002,
+      "lot_a": {
+        "qty": 107.21944245889922,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 107.21944245889922,
         "target": "tp2",
         "status": "open"
       }
     }
   },
-  "next_trade_id": 35
+  "next_trade_id": 37
 }
