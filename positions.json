@@ -1,5 +1,5 @@
 {
-  "balance": 997.925292867524,
+  "balance": 998.0563937455358,
   "positions": {
     "DOGEUSDT__ST": {
       "trade_id": 133,
@@ -146,7 +146,7 @@
       "candle_time": "2026-08-10 14:45:00",
       "direction": "short",
       "entry_price": 0.01314,
-      "sl_price": 0.01323522733550175,
+      "sl_price": 0.01314,
       "tp1_price": 0.012997158996747377,
       "tp2_price": 0.012854317993494752,
       "qty_total": 1141.552511415525,
@@ -154,7 +154,7 @@
       "lot_a": {
         "qty": 570.7762557077625,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 570.7762557077625,
@@ -169,7 +169,7 @@
       "candle_time": "2026-08-10 14:45:00",
       "direction": "short",
       "entry_price": 0.004686,
-      "sl_price": 0.004706647817672375,
+      "sl_price": 0.004686,
       "tp1_price": 0.004655028273491438,
       "tp2_price": 0.004624056546982876,
       "qty_total": 3201.0243277848913,
@@ -177,7 +177,7 @@
       "lot_a": {
         "qty": 1600.5121638924456,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 1600.5121638924456,
@@ -368,7 +368,30 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ROSEUSDT__ST": {
+      "trade_id": 182,
+      "symbol": "ROSEUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-08-10 16:45:00",
+      "direction": "short",
+      "entry_price": 0.00571,
+      "sl_price": 0.005856609156366392,
+      "tp1_price": 0.005490086265450412,
+      "tp2_price": 0.005270172530900824,
+      "qty_total": 2626.970227670753,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 1313.4851138353765,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 1313.4851138353765,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 182
+  "next_trade_id": 183
 }
