@@ -1,5 +1,5 @@
 {
-  "balance": 999.2245686116594,
+  "balance": 999.1434096963281,
   "positions": {
     "ROSEUSDT": {
       "trade_id": 41,
@@ -29,7 +29,7 @@
       "direction": "short",
       "candle_time": "2026-08-10 12:30:00",
       "entry_price": 0.0671,
-      "sl_price": 0.06730879670002228,
+      "sl_price": 0.0671,
       "tp1_price": 0.0667868049499666,
       "tp2_price": 0.06647360989993319,
       "qty_total": 223.54694485842023,
@@ -37,7 +37,7 @@
       "lot_a": {
         "qty": 111.77347242921012,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 111.77347242921012,
@@ -63,28 +63,6 @@
       },
       "lot_b": {
         "qty": 566.8934240362812,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "ONEUSDT": {
-      "trade_id": 44,
-      "symbol": "ONEUSDT",
-      "direction": "short",
-      "candle_time": "2026-08-10 13:30:00",
-      "entry_price": 0.00125,
-      "sl_price": 0.0012596804844684226,
-      "tp1_price": 0.0012354792732973661,
-      "tp2_price": 0.0012209585465947322,
-      "qty_total": 12000.0,
-      "notional": 15.0,
-      "lot_a": {
-        "qty": 6000.0,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 6000.0,
         "target": "tp2",
         "status": "open"
       }
