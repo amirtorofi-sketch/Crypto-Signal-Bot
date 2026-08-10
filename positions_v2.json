@@ -1,28 +1,204 @@
 {
-  "balance": 1000.0563254233332,
+  "balance": 1000.000053700534,
   "positions": {
-    "MANAUSDT": {
-      "trade_id": 16,
-      "symbol": "MANAUSDT",
+    "BTCUSDT": {
+      "trade_id": 17,
+      "symbol": "BTCUSDT",
       "direction": "short",
-      "candle_time": "2026-08-09 23:45:00",
-      "entry_price": 0.0667,
-      "sl_price": 0.06695022159404691,
-      "tp1_price": 0.06632466760892962,
-      "tp2_price": 0.06594933521785924,
-      "qty_total": 224.88755622188907,
+      "candle_time": "2026-08-10 00:00:00",
+      "entry_price": 65144.67,
+      "sl_price": 65264.99474401479,
+      "tp1_price": 64964.18288397782,
+      "tp2_price": 64783.69576795563,
+      "qty_total": 0.00023025675009175731,
       "notional": 15.0,
       "lot_a": {
-        "qty": 112.44377811094454,
+        "qty": 0.00011512837504587866,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 112.44377811094454,
+        "qty": 0.00011512837504587866,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "ETHUSDT": {
+      "trade_id": 18,
+      "symbol": "ETHUSDT",
+      "direction": "short",
+      "candle_time": "2026-08-10 00:00:00",
+      "entry_price": 1921.68,
+      "sl_price": 1926.9712599924299,
+      "tp1_price": 1913.7431100113554,
+      "tp2_price": 1905.8062200227107,
+      "qty_total": 0.007805670038716123,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 0.0039028350193580615,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0039028350193580615,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "SOLUSDT": {
+      "trade_id": 19,
+      "symbol": "SOLUSDT",
+      "direction": "short",
+      "candle_time": "2026-08-10 00:00:00",
+      "entry_price": 76.78,
+      "sl_price": 77.05642389394376,
+      "tp1_price": 76.36536415908436,
+      "tp2_price": 75.95072831816873,
+      "qty_total": 0.1953633758791352,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 0.0976816879395676,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0976816879395676,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "BNBUSDT": {
+      "trade_id": 20,
+      "symbol": "BNBUSDT",
+      "direction": "short",
+      "candle_time": "2026-08-10 00:00:00",
+      "entry_price": 605.77,
+      "sl_price": 607.3156354261332,
+      "tp1_price": 603.4515468608001,
+      "tp2_price": 601.1330937216003,
+      "qty_total": 0.024761873318256106,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 0.012380936659128053,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.012380936659128053,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "DOGEUSDT": {
+      "trade_id": 21,
+      "symbol": "DOGEUSDT",
+      "direction": "short",
+      "candle_time": "2026-08-10 00:00:00",
+      "entry_price": 0.06971,
+      "sl_price": 0.06996788812121124,
+      "tp1_price": 0.06932316781818312,
+      "tp2_price": 0.06893633563636625,
+      "qty_total": 215.17716253048346,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 107.58858126524173,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 107.58858126524173,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "CRVUSDT": {
+      "trade_id": 22,
+      "symbol": "CRVUSDT",
+      "direction": "short",
+      "candle_time": "2026-08-10 00:00:00",
+      "entry_price": 0.2399,
+      "sl_price": 0.24128476884218783,
+      "tp1_price": 0.23782284673671827,
+      "tp2_price": 0.23574569347343652,
+      "qty_total": 62.52605252188412,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 31.26302626094206,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 31.26302626094206,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "CHZUSDT": {
+      "trade_id": 23,
+      "symbol": "CHZUSDT",
+      "direction": "short",
+      "candle_time": "2026-08-10 00:00:00",
+      "entry_price": 0.01314,
+      "sl_price": 0.013195644392192264,
+      "tp1_price": 0.013056533411711604,
+      "tp2_price": 0.01297306682342321,
+      "qty_total": 1141.552511415525,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 570.7762557077625,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 570.7762557077625,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "VETUSDT": {
+      "trade_id": 24,
+      "symbol": "VETUSDT",
+      "direction": "short",
+      "candle_time": "2026-08-10 00:00:00",
+      "entry_price": 0.00473,
+      "sl_price": 0.004743077548506547,
+      "tp1_price": 0.004710383677240179,
+      "tp2_price": 0.004690767354480359,
+      "qty_total": 3171.247357293869,
+      "notional": 14.999999999999998,
+      "lot_a": {
+        "qty": 1585.6236786469344,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 1585.6236786469344,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "GALAUSDT": {
+      "trade_id": 25,
+      "symbol": "GALAUSDT",
+      "direction": "short",
+      "candle_time": "2026-08-10 00:00:00",
+      "entry_price": 0.001786,
+      "sl_price": 0.0017991939199989173,
+      "tp1_price": 0.0017662091200016242,
+      "tp2_price": 0.0017464182400032484,
+      "qty_total": 8398.6562150056,
+      "notional": 15.000000000000002,
+      "lot_a": {
+        "qty": 4199.3281075028,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 4199.3281075028,
         "target": "tp2",
         "status": "open"
       }
     }
   },
-  "next_trade_id": 17
+  "next_trade_id": 26
 }
