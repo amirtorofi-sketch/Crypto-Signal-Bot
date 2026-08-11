@@ -1,5 +1,5 @@
 {
-  "balance": 997.0638813356557,
+  "balance": 997.1853051941407,
   "positions": {
     "DOGEUSDT__ST": {
       "trade_id": 133,
@@ -215,7 +215,7 @@
       "candle_time": "2026-08-11 11:45:00",
       "direction": "short",
       "entry_price": 0.00572,
-      "sl_price": 0.0057817372862697634,
+      "sl_price": 0.00572,
       "tp1_price": 0.005627394070595355,
       "tp2_price": 0.005534788141190711,
       "qty_total": 2622.377622377622,
@@ -223,7 +223,7 @@
       "lot_a": {
         "qty": 1311.188811188811,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 1311.188811188811,
@@ -276,7 +276,30 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "VETUSDT__SMC": {
+      "trade_id": 211,
+      "symbol": "VETUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-11 13:45:00",
+      "direction": "long",
+      "entry_price": 0.004683,
+      "sl_price": 0.004660624355985358,
+      "tp1_price": 0.004716563466021962,
+      "tp2_price": 0.004750126932043925,
+      "qty_total": 3203.074951953876,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 1601.537475976938,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 1601.537475976938,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 211
+  "next_trade_id": 212
 }
