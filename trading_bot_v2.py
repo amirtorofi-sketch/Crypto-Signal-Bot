@@ -7,7 +7,8 @@ import os
 import json
 import time
 
-from signal_bot import SYMBOLS, TIMEFRAME, KLINES_LIMIT, get_klines
+from signal_bot import TIMEFRAME, KLINES_LIMIT, get_klines
+from signal_bot_v2 import SYMBOLS
 from signal_bot_v2 import check_strategy_smc_v2, get_htf_bias_v2, SL_ATR_MULT, TP1_RR, TP2_RR, send_telegram_message_v2
 
 FIXED_TRADE_AMOUNT = 15.0
@@ -86,11 +87,13 @@ def open_notional_sum(state: dict) -> float:
     return total
 
 
-def check_open_position(state: dict, symbol: str, pos: dict, last_high: float, last_low: float):
+def check_open_position(state: dict, symbol: str, pos: dict, last_high: float, last_low: float,
+                         last_open: float, last_close: float):
     is_long = pos.get("direction", "long") == "long"
     entry = pos["entry_price"]
     sl_price = pos["sl_price"]
     sign = 1 if is_long else -1
+    candle_bullish = last_close >= last_open
 
     if pos["phase"] == "before_tp1":
         target_price = pos["tp1_price"]
@@ -98,6 +101,15 @@ def check_open_position(state: dict, symbol: str, pos: dict, last_high: float, l
             hit_sl, hit_tp = last_low <= sl_price, last_high >= target_price
         else:
             hit_sl, hit_tp = last_high >= sl_price, last_low <= target_price
+
+        # اگر هر دو در یک کندل برخورد کرده باشند، بر اساس جهت کندل تشخیص می‌دهیم کدام زودتر لمس شده
+        # Long: کندل صعودی -> احتمالاً TP زودتر لمس شده | کندل نزولی -> احتمالاً SL زودتر لمس شده
+        # Short: برعکس
+        if hit_sl and hit_tp:
+            if is_long:
+                hit_tp, hit_sl = (True, False) if candle_bullish else (False, True)
+            else:
+                hit_tp, hit_sl = (True, False) if not candle_bullish else (False, True)
 
         if hit_sl:
             # کل پوزیشن یک‌جا با یک پیام بسته می‌شود (نه دوتا)
@@ -131,6 +143,12 @@ def check_open_position(state: dict, symbol: str, pos: dict, last_high: float, l
         else:
             hit_sl, hit_tp = last_high >= sl_price, last_low <= target_price
 
+        if hit_sl and hit_tp:
+            if is_long:
+                hit_tp, hit_sl = (True, False) if candle_bullish else (False, True)
+            else:
+                hit_tp, hit_sl = (True, False) if not candle_bullish else (False, True)
+
         if hit_sl or hit_tp:
             exit_price = sl_price if hit_sl else target_price
             pnl = pos["qty_open"] * (exit_price - entry) * sign
@@ -158,10 +176,12 @@ def main():
 
         last_high = df["high"].iloc[-2]
         last_low = df["low"].iloc[-2]
+        last_open = df["open"].iloc[-2]
+        last_close = df["close"].iloc[-2]
 
         if symbol in state["positions"]:
             print(f"[{symbol}] پوزیشن باز v2 موجود است -> بررسی SL/TP...")
-            check_open_position(state, symbol, state["positions"][symbol], last_high, last_low)
+            check_open_position(state, symbol, state["positions"][symbol], last_high, last_low, last_open, last_close)
             continue
 
         try:
