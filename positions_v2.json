@@ -1,5 +1,5 @@
 {
-  "balance": 998.7973992088328,
+  "balance": 998.9048345865209,
   "positions": {
     "ONEUSDT": {
       "trade_id": 54,
@@ -29,7 +29,7 @@
       "direction": "long",
       "candle_time": "2026-08-10 23:30:00",
       "entry_price": 0.2637,
-      "sl_price": 0.2604163451074584,
+      "sl_price": 0.2637,
       "tp1_price": 0.26862548233881234,
       "tp2_price": 0.2735509646776247,
       "qty_total": 56.882821387940844,
@@ -37,32 +37,10 @@
       "lot_a": {
         "qty": 28.441410693970422,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 28.441410693970422,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "VETUSDT": {
-      "trade_id": 58,
-      "symbol": "VETUSDT",
-      "direction": "short",
-      "candle_time": "2026-08-11 01:00:00",
-      "entry_price": 0.004646,
-      "sl_price": 0.00465611350211962,
-      "tp1_price": 0.00463082974682057,
-      "tp2_price": 0.0046156594936411395,
-      "qty_total": 3228.583727938011,
-      "notional": 15.0,
-      "lot_a": {
-        "qty": 1614.2918639690056,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 1614.2918639690056,
         "target": "tp2",
         "status": "open"
       }
