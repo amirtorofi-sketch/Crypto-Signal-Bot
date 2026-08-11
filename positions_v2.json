@@ -1,28 +1,6 @@
 {
-  "balance": 998.7768278022984,
+  "balance": 998.8602317109348,
   "positions": {
-    "GALAUSDT": {
-      "trade_id": 53,
-      "symbol": "GALAUSDT",
-      "direction": "short",
-      "candle_time": "2026-08-10 20:30:00",
-      "entry_price": 0.001804,
-      "sl_price": 0.001804,
-      "tp1_price": 0.0017939692899213238,
-      "tp2_price": 0.0017839385798426477,
-      "qty_total": 8314.855875831485,
-      "notional": 14.999999999999998,
-      "lot_a": {
-        "qty": 4157.427937915742,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 4157.427937915742,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "ONEUSDT": {
       "trade_id": 54,
       "symbol": "ONEUSDT",
@@ -66,7 +44,29 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "BNBUSDT": {
+      "trade_id": 56,
+      "symbol": "BNBUSDT",
+      "direction": "short",
+      "candle_time": "2026-08-11 00:00:00",
+      "entry_price": 599.39,
+      "sl_price": 600.2602236095294,
+      "tp1_price": 598.0846645857059,
+      "tp2_price": 596.7793291714119,
+      "qty_total": 0.02502544253324213,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 0.012512721266621065,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.012512721266621065,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 56
+  "next_trade_id": 57
 }
