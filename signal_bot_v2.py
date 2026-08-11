@@ -16,8 +16,15 @@ import requests
 
 from signal_bot import (
     get_klines, ema, rsi, atr, find_pivots, shift_confirm,
-    SYMBOLS, TIMEFRAME, KLINES_LIMIT, HTF_TIMEFRAME, HTF_EMA_LEN,
+    TIMEFRAME, KLINES_LIMIT, HTF_TIMEFRAME, HTF_EMA_LEN,
 )
+
+# نمادهای مخصوص استراتژی سوم (v2) - کاملاً مستقل از لیست استراتژی اول و دوم
+SYMBOLS = [
+    "BTCUSDT", "ETHUSDT", "SOLUSDT", "BNBUSDT", "DOGEUSDT",
+    "EURUSDT",   # یورو (Forex) - جفت‌ارز مستقیم روی بایننس
+    "PAXGUSDT",  # طلا (Gold) - توکن PAX Gold، ۱ به ۱ به طلای واقعی گره خورده
+]
 
 # =====================================================================
 # تنظیمات (دقیقاً طبق Pine Script جدید)
@@ -40,7 +47,7 @@ USE_TREND_FILTER = True
 ADX_TREND_THRESHOLD = 22
 COOLDOWN_BARS = 6
 
-SL_ATR_MULT = 1.0
+SL_ATR_MULT = 2.0           # <-- طبق درخواست از ۱.۰ به ۲.۰ افزایش یافت
 TP1_RR = 1.5
 TP2_RR = 3.0
 
