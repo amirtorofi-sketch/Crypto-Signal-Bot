@@ -35,16 +35,6 @@ def save_state(state: dict):
         json.dump(state, f, ensure_ascii=False, indent=2)
 
 
-def open_notional_sum(state: dict) -> float:
-    total = 0.0
-    for pos in state["positions"].values():
-        for lot_key in ("lot_a", "lot_b"):
-            lot = pos[lot_key]
-            if lot["status"] == "open":
-                total += lot["qty"] * pos["entry_price"]
-    return total
-
-
 def open_position(state: dict, symbol: str, direction: str, entry_price: float, sl_price: float,
                    tp1_price: float, tp2_price: float, candle_time=None):
     if symbol in state["positions"]:
@@ -60,7 +50,6 @@ def open_position(state: dict, symbol: str, direction: str, entry_price: float, 
         print(f"[{symbol}] حجم/ارزش نامعتبر، رد شد.")
         return
 
-    qty_half = qty_total / 2
     trade_id = state.get("next_trade_id", 1)
     state["next_trade_id"] = trade_id + 1
     direction_label = "خرید (Long)" if direction == "long" else "فروش (Short)"
@@ -68,11 +57,13 @@ def open_position(state: dict, symbol: str, direction: str, entry_price: float, 
     state["positions"][symbol] = {
         "trade_id": trade_id, "symbol": symbol, "direction": direction,
         "candle_time": str(candle_time) if candle_time is not None else None,
-        "entry_price": entry_price, "sl_price": sl_price,
+        "entry_price": entry_price,
+        "initial_sl_price": sl_price,
+        "sl_price": sl_price,          # همیشه فقط یک SL فعال (نه دو تا)
         "tp1_price": tp1_price, "tp2_price": tp2_price,
         "qty_total": qty_total, "notional": notional,
-        "lot_a": {"qty": qty_half, "target": "tp1", "status": "open"},
-        "lot_b": {"qty": qty_total - qty_half, "target": "tp2", "status": "open"},
+        "qty_open": qty_total,          # حجم فعلاً باز (کل، تا قبل از TP1)
+        "phase": "before_tp1",          # before_tp1 -> after_tp1
     }
     save_state(state)
 
@@ -88,47 +79,70 @@ def open_position(state: dict, symbol: str, direction: str, entry_price: float, 
     )
 
 
+def open_notional_sum(state: dict) -> float:
+    total = 0.0
+    for pos in state["positions"].values():
+        total += pos["qty_open"] * pos["entry_price"]
+    return total
+
+
 def check_open_position(state: dict, symbol: str, pos: dict, last_high: float, last_low: float):
-    changed = False
     is_long = pos.get("direction", "long") == "long"
+    entry = pos["entry_price"]
+    sl_price = pos["sl_price"]
+    sign = 1 if is_long else -1
 
-    for lot_key in ("lot_a", "lot_b"):
-        lot = pos[lot_key]
-        if lot["status"] != "open":
-            continue
-        sl_price = pos["sl_price"]
-        target_price = pos["tp1_price"] if lot["target"] == "tp1" else pos["tp2_price"]
-
+    if pos["phase"] == "before_tp1":
+        target_price = pos["tp1_price"]
         if is_long:
             hit_sl, hit_tp = last_low <= sl_price, last_high >= target_price
         else:
             hit_sl, hit_tp = last_high >= sl_price, last_low <= target_price
 
         if hit_sl:
-            pnl = lot["qty"] * (sl_price - pos["entry_price"]) * (1 if is_long else -1)
+            # کل پوزیشن یک‌جا با یک پیام بسته می‌شود (نه دوتا)
+            pnl = pos["qty_open"] * (sl_price - entry) * sign
             state["balance"] += pnl
-            lot["status"] = "closed_sl"
-            changed = True
-            send_telegram_message_v2(f"🔴 <b>#{pos.get('trade_id','?')} | {lot_key}</b> برای <b>{symbol}</b> با حد ضرر بسته شد. (سود/ضرر: {pnl:+.2f}$)")
-        elif hit_tp:
-            pnl = lot["qty"] * (target_price - pos["entry_price"]) * (1 if is_long else -1)
-            state["balance"] += pnl
-            lot["status"] = "closed_tp"
-            changed = True
-            send_telegram_message_v2(f"🟢 <b>#{pos.get('trade_id','?')} | {lot_key}</b> برای <b>{symbol}</b> با حد سود بسته شد. (سود/ضرر: {pnl:+.2f}$)")
-            if lot_key == "lot_a" and pos["lot_b"]["status"] == "open":
-                pos["sl_price"] = pos["entry_price"]
-                send_telegram_message_v2(f"🛡 <b>#{pos.get('trade_id','?')} | حد ضرر {symbol} به نقطه ورود منتقل شد (Risk-Free).</b>")
-
-    if changed:
-        if pos["lot_a"]["status"] != "open" and pos["lot_b"]["status"] != "open":
             del state["positions"][symbol]
             exposure = open_notional_sum(state)
             send_telegram_message_v2(
-                f"✅ <b>#{pos.get('trade_id','?')}</b> | پوزیشن <b>{symbol}</b> کاملاً بسته شد.\n"
+                f"🔴 <b>#{pos.get('trade_id','?')}</b> | پوزیشن <b>{symbol}</b> با حد ضرر کامل بسته شد. (سود/ضرر: {pnl:+.2f}$)\n"
                 f"موجودی نقدی: {state['balance']:.2f}$  |  سرمایه‌ی درگیر باقی‌مانده: {exposure:.2f}$"
             )
-        save_state(state)
+            save_state(state)
+
+        elif hit_tp:
+            qty_tp1 = pos["qty_total"] / 2
+            pnl = qty_tp1 * (target_price - entry) * sign
+            state["balance"] += pnl
+            pos["qty_open"] = pos["qty_total"] - qty_tp1
+            pos["phase"] = "after_tp1"
+            pos["sl_price"] = entry  # انتقال حد ضرر به نقطه ورود (Risk-Free)
+            save_state(state)
+            send_telegram_message_v2(
+                f"🟢 <b>#{pos.get('trade_id','?')}</b> | TP1 برای <b>{symbol}</b> خورد. (سود/ضرر این بخش: {pnl:+.2f}$)\n"
+                f"🛡 حد ضرر باقی‌مانده به نقطه ورود ({entry:.6f}) منتقل شد؛ منتظر TP2 می‌مانیم."
+            )
+
+    else:  # phase == "after_tp1"
+        target_price = pos["tp2_price"]
+        if is_long:
+            hit_sl, hit_tp = last_low <= sl_price, last_high >= target_price
+        else:
+            hit_sl, hit_tp = last_high >= sl_price, last_low <= target_price
+
+        if hit_sl or hit_tp:
+            exit_price = sl_price if hit_sl else target_price
+            pnl = pos["qty_open"] * (exit_price - entry) * sign
+            state["balance"] += pnl
+            del state["positions"][symbol]
+            exposure = open_notional_sum(state)
+            label = "حد ضرر (Risk-Free)" if hit_sl else "حد سود TP2"
+            send_telegram_message_v2(
+                f"{'⚪' if hit_sl else '🟢'} <b>#{pos.get('trade_id','?')}</b> | پوزیشن <b>{symbol}</b> با {label} کامل بسته شد. (سود/ضرر این بخش: {pnl:+.2f}$)\n"
+                f"موجودی نقدی: {state['balance']:.2f}$  |  سرمایه‌ی درگیر باقی‌مانده: {exposure:.2f}$"
+            )
+            save_state(state)
 
 
 def main():
