@@ -1,5 +1,5 @@
 {
-  "balance": 999.607527628619,
+  "balance": 999.7280923739457,
   "positions": {
     "GALAUSDT__ST": {
       "trade_id": 140,
@@ -146,7 +146,7 @@
       "candle_time": "2026-08-11 14:45:00",
       "direction": "short",
       "entry_price": 0.001718,
-      "sl_price": 0.0017364115762196857,
+      "sl_price": 0.001718,
       "tp1_price": 0.0016903826356704714,
       "tp2_price": 0.0016627652713409426,
       "qty_total": 8731.082654249127,
@@ -154,7 +154,7 @@
       "lot_a": {
         "qty": 4365.541327124563,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 4365.541327124563,
@@ -253,7 +253,30 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "MANAUSDT__SMC": {
+      "trade_id": 243,
+      "symbol": "MANAUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-12 08:00:00",
+      "direction": "short",
+      "entry_price": 0.066,
+      "sl_price": 0.06624612144977685,
+      "tp1_price": 0.06563081782533474,
+      "tp2_price": 0.06526163565066948,
+      "qty_total": 227.27272727272725,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 113.63636363636363,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 113.63636363636363,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 243
+  "next_trade_id": 244
 }
