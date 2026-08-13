@@ -1,5 +1,5 @@
 {
-  "balance": 999.2870553871348,
+  "balance": 999.2085476952195,
   "positions": {
     "ONEUSDT__ST": {
       "trade_id": 241,
@@ -162,29 +162,6 @@
         "status": "open"
       }
     },
-    "CHZUSDT__SMC": {
-      "trade_id": 293,
-      "symbol": "CHZUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-13 08:00:00",
-      "direction": "short",
-      "entry_price": 0.01247,
-      "sl_price": 0.01253526606121233,
-      "tp1_price": 0.012372100908181506,
-      "tp2_price": 0.01227420181636301,
-      "qty_total": 1202.8869286287088,
-      "notional": 14.999999999999998,
-      "lot_a": {
-        "qty": 601.4434643143544,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 601.4434643143544,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "ETHUSDT__ST": {
       "trade_id": 294,
       "symbol": "ETHUSDT",
@@ -207,7 +184,30 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CHZUSDT__SMC": {
+      "trade_id": 295,
+      "symbol": "CHZUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-13 09:15:00",
+      "direction": "short",
+      "entry_price": 0.01259,
+      "sl_price": 0.0126638959541942,
+      "tp1_price": 0.0124791560687087,
+      "tp2_price": 0.0123683121374174,
+      "qty_total": 1191.4217633042097,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 595.7108816521048,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 595.7108816521048,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 295
+  "next_trade_id": 296
 }
