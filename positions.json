@@ -1,5 +1,29 @@
 {
   "balance": 1000.0,
-  "positions": {},
-  "next_trade_id": 1
+  "positions": {
+    "BNBUSDT__SMC": {
+      "trade_id": 1,
+      "symbol": "BNBUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-22 09:00:00",
+      "direction": "long",
+      "entry_price": 698.58,
+      "sl_price": 687.0263560786947,
+      "tp1_price": 715.9104658819581,
+      "tp2_price": 733.2409317639161,
+      "qty_total": 0.021472129176329124,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 0.010736064588164562,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.010736064588164562,
+        "target": "tp2",
+        "status": "open"
+      }
+    }
+  },
+  "next_trade_id": 2
 }
