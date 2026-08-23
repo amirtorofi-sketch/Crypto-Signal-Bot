@@ -1,5 +1,5 @@
 {
-  "balance": 997.2408078905573,
+  "balance": 997.3374357940264,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 29,
@@ -192,7 +192,7 @@
       "candle_time": "2026-08-23 11:15:00",
       "direction": "long",
       "entry_price": 0.0753,
-      "sl_price": 0.07465323723277999,
+      "sl_price": 0.0753,
       "tp1_price": 0.07627014415083003,
       "tp2_price": 0.07724028830166006,
       "qty_total": 199.203187250996,
@@ -200,7 +200,7 @@
       "lot_a": {
         "qty": 99.601593625498,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 99.601593625498,
@@ -299,7 +299,30 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ETHUSDT__SMC": {
+      "trade_id": 42,
+      "symbol": "ETHUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-23 13:30:00",
+      "direction": "long",
+      "entry_price": 2456.04,
+      "sl_price": 2435.3645028949177,
+      "tp1_price": 2487.0532456576234,
+      "tp2_price": 2518.066491315247,
+      "qty_total": 0.006107392387746128,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 0.003053696193873064,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.003053696193873064,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 42
+  "next_trade_id": 43
 }
