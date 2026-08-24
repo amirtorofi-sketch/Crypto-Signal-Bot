@@ -1,5 +1,5 @@
 {
-  "balance": 999.8508866762087,
+  "balance": 999.7275899757728,
   "positions": {
     "EURUSDT": {
       "trade_id": 15,
@@ -31,21 +31,6 @@
       "qty_open": 0.0016202623528801783,
       "phase": "after_tp1"
     },
-    "BNBUSDT": {
-      "trade_id": 30,
-      "symbol": "BNBUSDT",
-      "direction": "long",
-      "candle_time": "2026-08-24 12:15:00",
-      "entry_price": 703.5,
-      "initial_sl_price": 697.7173847495587,
-      "sl_price": 697.7173847495587,
-      "tp1_price": 712.1739228756619,
-      "tp2_price": 720.8478457513238,
-      "qty_total": 0.021321961620469083,
-      "notional": 15.0,
-      "qty_open": 0.021321961620469083,
-      "phase": "before_tp1"
-    },
     "ETHUSDT": {
       "trade_id": 32,
       "symbol": "ETHUSDT",
@@ -60,7 +45,37 @@
       "notional": 15.0,
       "qty_open": 0.006032333306522963,
       "phase": "before_tp1"
+    },
+    "BTCUSDT": {
+      "trade_id": 33,
+      "symbol": "BTCUSDT",
+      "direction": "long",
+      "candle_time": "2026-08-24 13:45:00",
+      "entry_price": 78597.99,
+      "initial_sl_price": 77754.23146970426,
+      "sl_price": 77754.23146970426,
+      "tp1_price": 79863.62779544362,
+      "tp2_price": 81129.26559088724,
+      "qty_total": 0.00019084457503302564,
+      "notional": 15.0,
+      "qty_open": 0.00019084457503302564,
+      "phase": "before_tp1"
+    },
+    "SOLUSDT": {
+      "trade_id": 34,
+      "symbol": "SOLUSDT",
+      "direction": "long",
+      "candle_time": "2026-08-24 13:45:00",
+      "entry_price": 95.02,
+      "initial_sl_price": 93.58899896360418,
+      "sl_price": 93.58899896360418,
+      "tp1_price": 97.16650155459371,
+      "tp2_price": 99.31300310918743,
+      "qty_total": 0.15786150284150705,
+      "notional": 14.999999999999998,
+      "qty_open": 0.15786150284150705,
+      "phase": "before_tp1"
     }
   },
-  "next_trade_id": 33
+  "next_trade_id": 35
 }
