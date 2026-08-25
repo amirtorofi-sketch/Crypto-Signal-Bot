@@ -1,5 +1,5 @@
 {
-  "balance": 985.4436565399188,
+  "balance": 985.5773754479526,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 29,
@@ -139,29 +139,6 @@
         "status": "open"
       }
     },
-    "VETUSDT__SMC": {
-      "trade_id": 157,
-      "symbol": "VETUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-25 13:15:00",
-      "direction": "long",
-      "entry_price": 0.005725,
-      "sl_price": 0.005725,
-      "tp1_price": 0.005844499562621994,
-      "tp2_price": 0.005963999125243986,
-      "qty_total": 2620.0873362445413,
-      "notional": 15.0,
-      "lot_a": {
-        "qty": 1310.0436681222707,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 1310.0436681222707,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "MANAUSDT__SMC": {
       "trade_id": 158,
       "symbol": "MANAUSDT",
@@ -169,7 +146,7 @@
       "candle_time": "2026-08-25 14:15:00",
       "direction": "short",
       "entry_price": 0.0747,
-      "sl_price": 0.07558789354934442,
+      "sl_price": 0.0747,
       "tp1_price": 0.07336815967598337,
       "tp2_price": 0.07203631935196675,
       "qty_total": 200.80321285140562,
@@ -177,7 +154,7 @@
       "lot_a": {
         "qty": 100.40160642570281,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 100.40160642570281,
@@ -276,7 +253,30 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "MASKUSDT__SMC": {
+      "trade_id": 163,
+      "symbol": "MASKUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-25 20:00:00",
+      "direction": "short",
+      "entry_price": 0.417,
+      "sl_price": 0.4213945927677915,
+      "tp1_price": 0.4104081108483127,
+      "tp2_price": 0.4038162216966254,
+      "qty_total": 35.97122302158274,
+      "notional": 15.000000000000002,
+      "lot_a": {
+        "qty": 17.98561151079137,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 17.98561151079137,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 163
+  "next_trade_id": 164
 }
