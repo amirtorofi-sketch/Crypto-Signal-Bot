@@ -1,5 +1,5 @@
 {
-  "balance": 985.8616620205554,
+  "balance": 986.3176133080289,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 29,
@@ -43,29 +43,6 @@
       },
       "lot_b": {
         "qty": 1200.0,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "ROSEUSDT__SMC": {
-      "trade_id": 123,
-      "symbol": "ROSEUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-24 15:30:00",
-      "direction": "short",
-      "entry_price": 0.00619,
-      "sl_price": 0.00619,
-      "tp1_price": 0.00604604927770391,
-      "tp2_price": 0.00590209855540782,
-      "qty_total": 2423.263327948304,
-      "notional": 15.000000000000002,
-      "lot_a": {
-        "qty": 1211.631663974152,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 1211.631663974152,
         "target": "tp2",
         "status": "open"
       }
@@ -169,7 +146,7 @@
       "candle_time": "2026-08-25 14:30:00",
       "direction": "short",
       "entry_price": 2474.58,
-      "sl_price": 2498.142572666532,
+      "sl_price": 2474.58,
       "tp1_price": 2439.2361410002018,
       "tp2_price": 2403.8922820004036,
       "qty_total": 0.00606163470164634,
@@ -177,7 +154,7 @@
       "lot_a": {
         "qty": 0.00303081735082317,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.00303081735082317,
@@ -276,7 +253,99 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "BTCUSDT__SMC": {
+      "trade_id": 164,
+      "symbol": "BTCUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-25 20:45:00",
+      "direction": "short",
+      "entry_price": 78206.13,
+      "sl_price": 78699.35309590501,
+      "tp1_price": 77466.2953561425,
+      "tp2_price": 76726.46071228498,
+      "qty_total": 0.0001918008217514407,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 9.590041087572036e-05,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 9.590041087572036e-05,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "BNBUSDT__SMC": {
+      "trade_id": 165,
+      "symbol": "BNBUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-25 20:45:00",
+      "direction": "short",
+      "entry_price": 692.29,
+      "sl_price": 696.0437638770289,
+      "tp1_price": 686.6593541844566,
+      "tp2_price": 681.028708368913,
+      "qty_total": 0.02166722038452094,
+      "notional": 15.000000000000002,
+      "lot_a": {
+        "qty": 0.01083361019226047,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.01083361019226047,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "ROSEUSDT__SMC": {
+      "trade_id": 166,
+      "symbol": "ROSEUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-25 20:45:00",
+      "direction": "short",
+      "entry_price": 0.0059,
+      "sl_price": 0.005984290439124966,
+      "tp1_price": 0.00577356434131255,
+      "tp2_price": 0.005647128682625101,
+      "qty_total": 2542.3728813559323,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 1271.1864406779662,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 1271.1864406779662,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "VETUSDT__SMC": {
+      "trade_id": 167,
+      "symbol": "VETUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-25 20:45:00",
+      "direction": "short",
+      "entry_price": 0.005669,
+      "sl_price": 0.0057476990008115516,
+      "tp1_price": 0.005550951498782673,
+      "tp2_price": 0.005432902997565347,
+      "qty_total": 2645.9693067560415,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 1322.9846533780208,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 1322.9846533780208,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 164
+  "next_trade_id": 168
 }
