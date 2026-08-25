@@ -1,5 +1,5 @@
 {
-  "balance": 988.160133418715,
+  "balance": 988.1133725152113,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 29,
@@ -284,7 +284,7 @@
       "candle_time": "2026-08-24 23:00:00",
       "direction": "long",
       "entry_price": 0.005619,
-      "sl_price": 0.005557255001632188,
+      "sl_price": 0.005619,
       "tp1_price": 0.005711617497551717,
       "tp2_price": 0.0058042349951034355,
       "qty_total": 2669.5141484249866,
@@ -292,7 +292,7 @@
       "lot_a": {
         "qty": 1334.7570742124933,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 1334.7570742124933,
@@ -300,29 +300,52 @@
         "status": "open"
       }
     },
-    "CHZUSDT__SMC": {
-      "trade_id": 136,
-      "symbol": "CHZUSDT",
+    "BTCUSDT__SMC": {
+      "trade_id": 137,
+      "symbol": "BTCUSDT",
       "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-25 00:15:00",
-      "direction": "short",
-      "entry_price": 0.01439,
-      "sl_price": 0.014553453864505538,
-      "tp1_price": 0.014144819203241694,
-      "tp2_price": 0.013899638406483387,
-      "qty_total": 1042.390548992356,
-      "notional": 15.000000000000002,
+      "candle_time": "2026-08-25 00:30:00",
+      "direction": "long",
+      "entry_price": 79372.0,
+      "sl_price": 78889.78785060321,
+      "tp1_price": 80095.31822409519,
+      "tp2_price": 80818.63644819036,
+      "qty_total": 0.00018898352063700046,
+      "notional": 15.0,
       "lot_a": {
-        "qty": 521.195274496178,
+        "qty": 9.449176031850023e-05,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 521.195274496178,
+        "qty": 9.449176031850023e-05,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "ETHUSDT__SMC": {
+      "trade_id": 138,
+      "symbol": "ETHUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-25 00:30:00",
+      "direction": "long",
+      "entry_price": 2492.67,
+      "sl_price": 2474.660903343041,
+      "tp1_price": 2519.683644985439,
+      "tp2_price": 2546.6972899708776,
+      "qty_total": 0.0060176437314205244,
+      "notional": 14.999999999999998,
+      "lot_a": {
+        "qty": 0.0030088218657102622,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0030088218657102622,
         "target": "tp2",
         "status": "open"
       }
     }
   },
-  "next_trade_id": 137
+  "next_trade_id": 139
 }
