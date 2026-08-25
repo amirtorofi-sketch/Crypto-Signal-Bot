@@ -1,5 +1,5 @@
 {
-  "balance": 985.1208976555333,
+  "balance": 985.2774473008897,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 29,
@@ -169,7 +169,7 @@
       "candle_time": "2026-08-25 13:15:00",
       "direction": "long",
       "entry_price": 0.005725,
-      "sl_price": 0.005645333624918671,
+      "sl_price": 0.005725,
       "tp1_price": 0.005844499562621994,
       "tp2_price": 0.005963999125243986,
       "qty_total": 2620.0873362445413,
@@ -177,7 +177,7 @@
       "lot_a": {
         "qty": 1310.0436681222707,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 1310.0436681222707,
@@ -276,7 +276,30 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "DOGEUSDT__SMC": {
+      "trade_id": 162,
+      "symbol": "DOGEUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-25 17:15:00",
+      "direction": "short",
+      "entry_price": 0.0883,
+      "sl_price": 0.08938800381586431,
+      "tp1_price": 0.08666799427620353,
+      "tp2_price": 0.08503598855240707,
+      "qty_total": 169.8754246885617,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 84.93771234428085,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 84.93771234428085,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 162
+  "next_trade_id": 163
 }
