@@ -1,5 +1,5 @@
 {
-  "balance": 987.0973316245183,
+  "balance": 987.054129143459,
   "positions": {
     "GALAUSDT__ST": {
       "trade_id": 148,
@@ -215,7 +215,7 @@
       "candle_time": "2026-08-26 13:15:00",
       "direction": "short",
       "entry_price": 0.08539,
-      "sl_price": 0.08632578427368821,
+      "sl_price": 0.08539,
       "tp1_price": 0.08398632358946767,
       "tp2_price": 0.08258264717893533,
       "qty_total": 175.66459772807121,
@@ -223,33 +223,10 @@
       "lot_a": {
         "qty": 87.83229886403561,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 87.83229886403561,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "VETUSDT__SMC": {
-      "trade_id": 203,
-      "symbol": "VETUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-26 13:15:00",
-      "direction": "short",
-      "entry_price": 0.005614,
-      "sl_price": 0.005676311884534775,
-      "tp1_price": 0.005520532173197838,
-      "tp2_price": 0.005427064346395675,
-      "qty_total": 2671.8916993231205,
-      "notional": 14.999999999999998,
-      "lot_a": {
-        "qty": 1335.9458496615603,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 1335.9458496615603,
         "target": "tp2",
         "status": "open"
       }
@@ -368,7 +345,30 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "VETUSDT__ST": {
+      "trade_id": 209,
+      "symbol": "VETUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-08-26 16:15:00",
+      "direction": "long",
+      "entry_price": 0.00573,
+      "sl_price": 0.00556770877110714,
+      "tp1_price": 0.005973436843339289,
+      "tp2_price": 0.006216873686678579,
+      "qty_total": 2617.801047120419,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 1308.9005235602094,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 1308.9005235602094,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 209
+  "next_trade_id": 210
 }
