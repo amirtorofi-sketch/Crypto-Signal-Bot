@@ -1,5 +1,5 @@
 {
-  "balance": 987.9134893145633,
+  "balance": 987.6392052009257,
   "positions": {
     "GALAUSDT__ST": {
       "trade_id": 148,
@@ -43,29 +43,6 @@
       },
       "lot_b": {
         "qty": 0.0030387993906194287,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "CHZUSDT__ST": {
-      "trade_id": 186,
-      "symbol": "CHZUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-08-26 09:15:00",
-      "direction": "short",
-      "entry_price": 0.01395,
-      "sl_price": 0.014205084225683014,
-      "tp1_price": 0.013567373661475481,
-      "tp2_price": 0.013184747322950961,
-      "qty_total": 1075.268817204301,
-      "notional": 15.0,
-      "lot_a": {
-        "qty": 537.6344086021505,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 537.6344086021505,
         "target": "tp2",
         "status": "open"
       }
@@ -299,7 +276,53 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "BNBUSDT__SMC": {
+      "trade_id": 221,
+      "symbol": "BNBUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-26 23:15:00",
+      "direction": "long",
+      "entry_price": 706.13,
+      "sl_price": 702.589251739829,
+      "tp1_price": 711.4411223902564,
+      "tp2_price": 716.7522447805129,
+      "qty_total": 0.02124254740628496,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 0.01062127370314248,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.01062127370314248,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "VETUSDT__SMC": {
+      "trade_id": 222,
+      "symbol": "VETUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-26 23:15:00",
+      "direction": "long",
+      "entry_price": 0.006549,
+      "sl_price": 0.0063902113948074634,
+      "tp1_price": 0.006787182907788805,
+      "tp2_price": 0.00702536581557761,
+      "qty_total": 2290.4260192395786,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 1145.2130096197893,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 1145.2130096197893,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 221
+  "next_trade_id": 223
 }
