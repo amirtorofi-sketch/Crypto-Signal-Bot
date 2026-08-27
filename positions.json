@@ -1,5 +1,5 @@
 {
-  "balance": 988.5462037664856,
+  "balance": 988.4742347908634,
   "positions": {
     "GALAUSDT__ST": {
       "trade_id": 148,
@@ -116,52 +116,6 @@
         "status": "open"
       }
     },
-    "ROSEUSDT__SMC": {
-      "trade_id": 228,
-      "symbol": "ROSEUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-27 07:30:00",
-      "direction": "long",
-      "entry_price": 0.00605,
-      "sl_price": 0.00605,
-      "tp1_price": 0.006124428644275117,
-      "tp2_price": 0.006198857288550235,
-      "qty_total": 2479.3388429752067,
-      "notional": 15.0,
-      "lot_a": {
-        "qty": 1239.6694214876034,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 1239.6694214876034,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "CHZUSDT__SMC": {
-      "trade_id": 229,
-      "symbol": "CHZUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-27 08:00:00",
-      "direction": "long",
-      "entry_price": 0.01426,
-      "sl_price": 0.01426,
-      "tp1_price": 0.014469085837329945,
-      "tp2_price": 0.014678171674659889,
-      "qty_total": 1051.8934081346424,
-      "notional": 15.000000000000002,
-      "lot_a": {
-        "qty": 525.9467040673212,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 525.9467040673212,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "VETUSDT__SMC": {
       "trade_id": 230,
       "symbol": "VETUSDT",
@@ -231,29 +185,6 @@
         "status": "open"
       }
     },
-    "BNBUSDT__SMC": {
-      "trade_id": 233,
-      "symbol": "BNBUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-27 08:15:00",
-      "direction": "long",
-      "entry_price": 711.77,
-      "sl_price": 708.3549761480895,
-      "tp1_price": 716.8925357778658,
-      "tp2_price": 722.0150715557315,
-      "qty_total": 0.02107422341486716,
-      "notional": 14.999999999999998,
-      "lot_a": {
-        "qty": 0.01053711170743358,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.01053711170743358,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "GALAUSDT__SMC": {
       "trade_id": 235,
       "symbol": "GALAUSDT",
@@ -276,7 +207,53 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ROSEUSDT__ST": {
+      "trade_id": 237,
+      "symbol": "ROSEUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-08-27 10:15:00",
+      "direction": "short",
+      "entry_price": 0.00603,
+      "sl_price": 0.006193201215905903,
+      "tp1_price": 0.005785198176141145,
+      "tp2_price": 0.00554039635228229,
+      "qty_total": 2487.5621890547263,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 1243.7810945273632,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 1243.7810945273632,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "ROSEUSDT__SMC": {
+      "trade_id": 238,
+      "symbol": "ROSEUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-27 10:15:00",
+      "direction": "long",
+      "entry_price": 0.00603,
+      "sl_price": 0.005963347122126728,
+      "tp1_price": 0.006129979316809907,
+      "tp2_price": 0.006229958633619815,
+      "qty_total": 2487.5621890547263,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 1243.7810945273632,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 1243.7810945273632,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 237
+  "next_trade_id": 239
 }
