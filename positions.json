@@ -1,5 +1,5 @@
 {
-  "balance": 988.566581617845,
+  "balance": 988.6360299953665,
   "positions": {
     "GALAUSDT__ST": {
       "trade_id": 148,
@@ -192,7 +192,7 @@
       "candle_time": "2026-08-27 13:45:00",
       "direction": "long",
       "entry_price": 79533.15,
-      "sl_price": 79042.17682429585,
+      "sl_price": 79533.15,
       "tp1_price": 80269.60976355622,
       "tp2_price": 81006.06952711243,
       "qty_total": 0.00018860060239032404,
@@ -200,7 +200,7 @@
       "lot_a": {
         "qty": 9.430030119516202e-05,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 9.430030119516202e-05,
@@ -345,7 +345,53 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "BTCUSDT__ST": {
+      "trade_id": 248,
+      "symbol": "BTCUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-08-27 14:30:00",
+      "direction": "long",
+      "entry_price": 80365.08,
+      "sl_price": 78888.25139910061,
+      "tp1_price": 82580.32290134908,
+      "tp2_price": 84795.56580269817,
+      "qty_total": 0.0001866482307987499,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 9.332411539937495e-05,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 9.332411539937495e-05,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "CHZUSDT__ST": {
+      "trade_id": 249,
+      "symbol": "CHZUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-08-27 14:30:00",
+      "direction": "long",
+      "entry_price": 0.01448,
+      "sl_price": 0.01407744616057532,
+      "tp1_price": 0.015083830759137018,
+      "tp2_price": 0.015687661518274037,
+      "qty_total": 1035.9116022099447,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 517.9558011049724,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 517.9558011049724,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 248
+  "next_trade_id": 250
 }
