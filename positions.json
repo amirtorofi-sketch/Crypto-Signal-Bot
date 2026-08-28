@@ -1,5 +1,5 @@
 {
-  "balance": 988.4845900058191,
+  "balance": 988.6638495487034,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 175,
@@ -54,7 +54,7 @@
       "candle_time": "2026-08-26 22:15:00",
       "direction": "long",
       "entry_price": 706.01,
-      "sl_price": 699.1567906577372,
+      "sl_price": 706.01,
       "tp1_price": 716.2898140133941,
       "tp2_price": 726.5696280267882,
       "qty_total": 0.021246157986430786,
@@ -62,7 +62,7 @@
       "lot_a": {
         "qty": 0.010623078993215393,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.010623078993215393,
@@ -192,7 +192,7 @@
       "candle_time": "2026-08-27 14:15:00",
       "direction": "long",
       "entry_price": 708.5,
-      "sl_price": 704.0880120110992,
+      "sl_price": 708.5,
       "tp1_price": 715.1179819833512,
       "tp2_price": 721.7359639667025,
       "qty_total": 0.02117148906139732,
@@ -200,7 +200,7 @@
       "lot_a": {
         "qty": 0.01058574453069866,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.01058574453069866,
@@ -345,7 +345,30 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "GALAUSDT__SMC": {
+      "trade_id": 259,
+      "symbol": "GALAUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-28 01:00:00",
+      "direction": "long",
+      "entry_price": 0.001881,
+      "sl_price": 0.0018557270528064055,
+      "tp1_price": 0.001918909420790392,
+      "tp2_price": 0.001956818841580784,
+      "qty_total": 7974.481658692184,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 3987.240829346092,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 3987.240829346092,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 259
+  "next_trade_id": 260
 }
