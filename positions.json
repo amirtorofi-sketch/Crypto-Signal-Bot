@@ -1,5 +1,5 @@
 {
-  "balance": 984.8553045199179,
+  "balance": 984.5081925391673,
   "positions": {
     "ONEUSDT__ST": {
       "trade_id": 255,
@@ -20,29 +20,6 @@
       },
       "lot_b": {
         "qty": 9702.457956015523,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "BTCUSDT__SMC": {
-      "trade_id": 262,
-      "symbol": "BTCUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-28 02:15:00",
-      "direction": "short",
-      "entry_price": 79917.89,
-      "sl_price": 79917.89,
-      "tp1_price": 79168.11072649452,
-      "tp2_price": 78418.33145298903,
-      "qty_total": 0.00018769264303649657,
-      "notional": 14.999999999999998,
-      "lot_a": {
-        "qty": 9.384632151824829e-05,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 9.384632151824829e-05,
         "target": "tp2",
         "status": "open"
       }
@@ -139,52 +116,6 @@
         "status": "open"
       }
     },
-    "MASKUSDT__SMC": {
-      "trade_id": 288,
-      "symbol": "MASKUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-28 14:15:00",
-      "direction": "long",
-      "entry_price": 0.437,
-      "sl_price": 0.4322576698518771,
-      "tp1_price": 0.44411349522218435,
-      "tp2_price": 0.45122699044436876,
-      "qty_total": 34.32494279176201,
-      "notional": 15.0,
-      "lot_a": {
-        "qty": 17.162471395881006,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 17.162471395881006,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "ETHUSDT__SMC": {
-      "trade_id": 289,
-      "symbol": "ETHUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-28 14:30:00",
-      "direction": "long",
-      "entry_price": 2510.0,
-      "sl_price": 2485.160278554684,
-      "tp1_price": 2547.2595821679743,
-      "tp2_price": 2584.5191643359485,
-      "qty_total": 0.00597609561752988,
-      "notional": 15.0,
-      "lot_a": {
-        "qty": 0.00298804780876494,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.00298804780876494,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "MANAUSDT__SMC": {
       "trade_id": 291,
       "symbol": "MANAUSDT",
@@ -204,29 +135,6 @@
       },
       "lot_b": {
         "qty": 100.53619302949062,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "ROSEUSDT__SMC": {
-      "trade_id": 292,
-      "symbol": "ROSEUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-28 14:45:00",
-      "direction": "long",
-      "entry_price": 0.00611,
-      "sl_price": 0.006038058712218938,
-      "tp1_price": 0.006217911931671593,
-      "tp2_price": 0.0063258238633431855,
-      "qty_total": 2454.991816693944,
-      "notional": 14.999999999999998,
-      "lot_a": {
-        "qty": 1227.495908346972,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 1227.495908346972,
         "target": "tp2",
         "status": "open"
       }
@@ -276,7 +184,76 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "BTCUSDT__SMC": {
+      "trade_id": 295,
+      "symbol": "BTCUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-28 15:45:00",
+      "direction": "short",
+      "entry_price": 78331.13,
+      "sl_price": 79041.394982291,
+      "tp1_price": 77265.7325265635,
+      "tp2_price": 76200.335053127,
+      "qty_total": 0.00019149474800120973,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 9.574737400060486e-05,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 9.574737400060486e-05,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "DOGEUSDT__ST": {
+      "trade_id": 296,
+      "symbol": "DOGEUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-08-28 15:45:00",
+      "direction": "short",
+      "entry_price": 0.08589,
+      "sl_price": 0.0888007985111851,
+      "tp1_price": 0.08152380223322234,
+      "tp2_price": 0.07715760446644469,
+      "qty_total": 174.64198393293748,
+      "notional": 14.999999999999998,
+      "lot_a": {
+        "qty": 87.32099196646874,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 87.32099196646874,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "VETUSDT__SMC": {
+      "trade_id": 297,
+      "symbol": "VETUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-28 15:45:00",
+      "direction": "short",
+      "entry_price": 0.0068,
+      "sl_price": 0.006953514330177179,
+      "tp1_price": 0.0065697285047342305,
+      "tp2_price": 0.006339457009468461,
+      "qty_total": 2205.8823529411766,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 1102.9411764705883,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 1102.9411764705883,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 295
+  "next_trade_id": 298
 }
