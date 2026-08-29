@@ -1,5 +1,5 @@
 {
-  "balance": 983.7426381128091,
+  "balance": 983.4178225118444,
   "positions": {
     "CRVUSDT__ST": {
       "trade_id": 264,
@@ -231,29 +231,6 @@
         "status": "open"
       }
     },
-    "ROSEUSDT__SMC": {
-      "trade_id": 310,
-      "symbol": "ROSEUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-28 18:00:00",
-      "direction": "short",
-      "entry_price": 0.00593,
-      "sl_price": 0.0060170199990870615,
-      "tp1_price": 0.005799470001369409,
-      "tp2_price": 0.005668940002738817,
-      "qty_total": 2529.510961214165,
-      "notional": 15.0,
-      "lot_a": {
-        "qty": 1264.7554806070825,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 1264.7554806070825,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "BNBUSDT__SMC": {
       "trade_id": 311,
       "symbol": "BNBUSDT",
@@ -296,29 +273,6 @@
       },
       "lot_b": {
         "qty": 17.084282460136674,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "CHZUSDT__SMC": {
-      "trade_id": 315,
-      "symbol": "CHZUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-29 03:00:00",
-      "direction": "short",
-      "entry_price": 0.01368,
-      "sl_price": 0.013775484174199215,
-      "tp1_price": 0.013536773738701175,
-      "tp2_price": 0.013393547477402352,
-      "qty_total": 1096.4912280701756,
-      "notional": 15.000000000000002,
-      "lot_a": {
-        "qty": 548.2456140350878,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 548.2456140350878,
         "target": "tp2",
         "status": "open"
       }
@@ -368,7 +322,30 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ROSEUSDT__SMC": {
+      "trade_id": 318,
+      "symbol": "ROSEUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-29 04:45:00",
+      "direction": "long",
+      "entry_price": 0.00603,
+      "sl_price": 0.005995899266853441,
+      "tp1_price": 0.006081151099719838,
+      "tp2_price": 0.006132302199439676,
+      "qty_total": 2487.5621890547263,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 1243.7810945273632,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 1243.7810945273632,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 318
+  "next_trade_id": 319
 }
