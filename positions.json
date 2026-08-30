@@ -1,5 +1,5 @@
 {
-  "balance": 981.3728841888876,
+  "balance": 981.3342141600685,
   "positions": {
     "CRVUSDT__ST": {
       "trade_id": 264,
@@ -208,29 +208,6 @@
         "status": "open"
       }
     },
-    "BNBUSDT__SMC": {
-      "trade_id": 338,
-      "symbol": "BNBUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-30 02:30:00",
-      "direction": "long",
-      "entry_price": 693.58,
-      "sl_price": 691.7919494274477,
-      "tp1_price": 696.2620758588287,
-      "tp2_price": 698.9441517176572,
-      "qty_total": 0.021626921191499178,
-      "notional": 15.0,
-      "lot_a": {
-        "qty": 0.010813460595749589,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.010813460595749589,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "BNBUSDT__ST": {
       "trade_id": 339,
       "symbol": "BNBUSDT",
@@ -368,7 +345,30 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "BNBUSDT__SMC": {
+      "trade_id": 351,
+      "symbol": "BNBUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-30 09:30:00",
+      "direction": "short",
+      "entry_price": 692.14,
+      "sl_price": 694.3026626891095,
+      "tp1_price": 688.8960059663357,
+      "tp2_price": 685.6520119326714,
+      "qty_total": 0.021671916086340913,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 0.010835958043170456,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.010835958043170456,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 351
+  "next_trade_id": 352
 }
