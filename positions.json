@@ -1,5 +1,5 @@
 {
-  "balance": 980.9995719193265,
+  "balance": 981.894661962817,
   "positions": {
     "CRVUSDT__ST": {
       "trade_id": 264,
@@ -116,52 +116,6 @@
         "status": "open"
       }
     },
-    "GALAUSDT__ST": {
-      "trade_id": 367,
-      "symbol": "GALAUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-08-30 19:30:00",
-      "direction": "short",
-      "entry_price": 0.00176,
-      "sl_price": 0.00176,
-      "tp1_price": 0.001703114668439028,
-      "tp2_price": 0.0016462293368780558,
-      "qty_total": 8522.727272727272,
-      "notional": 15.0,
-      "lot_a": {
-        "qty": 4261.363636363636,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 4261.363636363636,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "MASKUSDT__SMC": {
-      "trade_id": 370,
-      "symbol": "MASKUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-30 20:30:00",
-      "direction": "short",
-      "entry_price": 0.423,
-      "sl_price": 0.423,
-      "tp1_price": 0.4184201734212637,
-      "tp2_price": 0.41384034684252746,
-      "qty_total": 35.46099290780142,
-      "notional": 15.0,
-      "lot_a": {
-        "qty": 17.73049645390071,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 17.73049645390071,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "MANAUSDT__ST": {
       "trade_id": 371,
       "symbol": "MANAUSDT",
@@ -169,7 +123,7 @@
       "candle_time": "2026-08-30 20:30:00",
       "direction": "short",
       "entry_price": 0.0743,
-      "sl_price": 0.0759370217107561,
+      "sl_price": 0.0743,
       "tp1_price": 0.07184446743386586,
       "tp2_price": 0.06938893486773172,
       "qty_total": 201.88425302826377,
@@ -177,7 +131,7 @@
       "lot_a": {
         "qty": 100.94212651413189,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 100.94212651413189,
@@ -345,7 +299,76 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "BNBUSDT__SMC": {
+      "trade_id": 381,
+      "symbol": "BNBUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-30 23:30:00",
+      "direction": "short",
+      "entry_price": 683.57,
+      "sl_price": 687.6707153673813,
+      "tp1_price": 677.4189269489282,
+      "tp2_price": 671.2678538978564,
+      "qty_total": 0.021943619526895563,
+      "notional": 15.000000000000002,
+      "lot_a": {
+        "qty": 0.010971809763447781,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.010971809763447781,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "ONEUSDT__SMC": {
+      "trade_id": 382,
+      "symbol": "ONEUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-30 23:30:00",
+      "direction": "short",
+      "entry_price": 0.000736,
+      "sl_price": 0.0007454631630883057,
+      "tp1_price": 0.0007218052553675414,
+      "tp2_price": 0.0007076105107350829,
+      "qty_total": 20380.434782608696,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 10190.217391304348,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 10190.217391304348,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "MASKUSDT__SMC": {
+      "trade_id": 383,
+      "symbol": "MASKUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-30 23:30:00",
+      "direction": "short",
+      "entry_price": 0.413,
+      "sl_price": 0.4173676169192354,
+      "tp1_price": 0.4064485746211468,
+      "tp2_price": 0.3998971492422937,
+      "qty_total": 36.31961259079903,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 18.159806295399516,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 18.159806295399516,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 381
+  "next_trade_id": 384
 }
