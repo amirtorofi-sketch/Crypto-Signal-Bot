@@ -1,5 +1,5 @@
 {
-  "balance": 982.2343918195708,
+  "balance": 982.1325897195871,
   "positions": {
     "DOGEUSDT__ST": {
       "trade_id": 296,
@@ -116,29 +116,6 @@
         "status": "open"
       }
     },
-    "BTCUSDT__SMC": {
-      "trade_id": 386,
-      "symbol": "BTCUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-31 01:00:00",
-      "direction": "short",
-      "entry_price": 77660.16,
-      "sl_price": 78187.22449153713,
-      "tp1_price": 76869.56326269431,
-      "tp2_price": 76078.96652538863,
-      "qty_total": 0.0001931492286392405,
-      "notional": 15.0,
-      "lot_a": {
-        "qty": 9.657461431962025e-05,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 9.657461431962025e-05,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "SOLUSDT__SMC": {
       "trade_id": 388,
       "symbol": "SOLUSDT",
@@ -207,7 +184,30 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ROSEUSDT__SMC": {
+      "trade_id": 391,
+      "symbol": "ROSEUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-31 07:15:00",
+      "direction": "long",
+      "entry_price": 0.00611,
+      "sl_price": 0.006032402802153118,
+      "tp1_price": 0.0062263957967703225,
+      "tp2_price": 0.006342791593540645,
+      "qty_total": 2454.991816693944,
+      "notional": 14.999999999999998,
+      "lot_a": {
+        "qty": 1227.495908346972,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 1227.495908346972,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 391
+  "next_trade_id": 392
 }
