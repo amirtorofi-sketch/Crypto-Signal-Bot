@@ -1,5 +1,5 @@
 {
-  "balance": 981.1371480687196,
+  "balance": 980.8824845167368,
   "positions": {
     "DOGEUSDT__ST": {
       "trade_id": 296,
@@ -116,29 +116,6 @@
         "status": "open"
       }
     },
-    "VETUSDT__ST": {
-      "trade_id": 389,
-      "symbol": "VETUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-08-31 06:00:00",
-      "direction": "long",
-      "entry_price": 0.006923,
-      "sl_price": 0.006712971202794958,
-      "tp1_price": 0.007238043195807564,
-      "tp2_price": 0.007553086391615128,
-      "qty_total": 2166.6907410082335,
-      "notional": 15.000000000000002,
-      "lot_a": {
-        "qty": 1083.3453705041168,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 1083.3453705041168,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "BTCUSDT__ST": {
       "trade_id": 393,
       "symbol": "BTCUSDT",
@@ -158,29 +135,6 @@
       },
       "lot_b": {
         "qty": 9.575609008732956e-05,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "ROSEUSDT__SMC": {
-      "trade_id": 396,
-      "symbol": "ROSEUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-08-31 08:45:00",
-      "direction": "long",
-      "entry_price": 0.00609,
-      "sl_price": 0.00609,
-      "tp1_price": 0.006204445510508756,
-      "tp2_price": 0.006318891021017512,
-      "qty_total": 2463.054187192118,
-      "notional": 15.0,
-      "lot_a": {
-        "qty": 1231.527093596059,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 1231.527093596059,
         "target": "tp2",
         "status": "open"
       }
@@ -238,7 +192,7 @@
       "candle_time": "2026-08-31 12:15:00",
       "direction": "short",
       "entry_price": 0.01334,
-      "sl_price": 0.013436539678460875,
+      "sl_price": 0.01334,
       "tp1_price": 0.013195190482308685,
       "tp2_price": 0.013050380964617372,
       "qty_total": 1124.4377811094453,
@@ -246,7 +200,7 @@
       "lot_a": {
         "qty": 562.2188905547226,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 562.2188905547226,
@@ -261,7 +215,7 @@
       "candle_time": "2026-08-31 12:15:00",
       "direction": "short",
       "entry_price": 0.006841,
-      "sl_price": 0.006913356041970481,
+      "sl_price": 0.006841,
       "tp1_price": 0.006732465937044279,
       "tp2_price": 0.006623931874088557,
       "qty_total": 2192.661891536325,
@@ -269,7 +223,7 @@
       "lot_a": {
         "qty": 1096.3309457681626,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 1096.3309457681626,
@@ -391,7 +345,122 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ETHUSDT__SMC": {
+      "trade_id": 408,
+      "symbol": "ETHUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-31 13:45:00",
+      "direction": "short",
+      "entry_price": 2440.28,
+      "sl_price": 2456.660719548121,
+      "tp1_price": 2415.708920677819,
+      "tp2_price": 2391.1378413556376,
+      "qty_total": 0.0061468356090284716,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 0.0030734178045142358,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0030734178045142358,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "SOLUSDT__ST": {
+      "trade_id": 409,
+      "symbol": "SOLUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-08-31 13:45:00",
+      "direction": "short",
+      "entry_price": 102.36,
+      "sl_price": 104.09601458926247,
+      "tp1_price": 99.75597811610629,
+      "tp2_price": 97.1519562322126,
+      "qty_total": 0.14654161781946073,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 0.07327080890973037,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.07327080890973037,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "CRVUSDT__ST": {
+      "trade_id": 410,
+      "symbol": "CRVUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-08-31 13:45:00",
+      "direction": "short",
+      "entry_price": 0.3014,
+      "sl_price": 0.311483231016379,
+      "tp1_price": 0.28627515347543153,
+      "tp2_price": 0.27115030695086306,
+      "qty_total": 49.767750497677504,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 24.883875248838752,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 24.883875248838752,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "CRVUSDT__SMC": {
+      "trade_id": 411,
+      "symbol": "CRVUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-31 13:45:00",
+      "direction": "short",
+      "entry_price": 0.3014,
+      "sl_price": 0.3057384476995452,
+      "tp1_price": 0.29489232845068214,
+      "tp2_price": 0.28838465690136433,
+      "qty_total": 49.767750497677504,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 24.883875248838752,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 24.883875248838752,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "ROSEUSDT__SMC": {
+      "trade_id": 412,
+      "symbol": "ROSEUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-08-31 13:45:00",
+      "direction": "short",
+      "entry_price": 0.00608,
+      "sl_price": 0.006196532146580166,
+      "tp1_price": 0.005905201780129752,
+      "tp2_price": 0.005730403560259504,
+      "qty_total": 2467.1052631578946,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 1233.5526315789473,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 1233.5526315789473,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 408
+  "next_trade_id": 413
 }
