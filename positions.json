@@ -1,5 +1,5 @@
 {
-  "balance": 980.2566841099496,
+  "balance": 979.754864384516,
   "positions": {
     "DOGEUSDT__ST": {
       "trade_id": 296,
@@ -254,29 +254,6 @@
         "status": "open"
       }
     },
-    "CRVUSDT__ST": {
-      "trade_id": 410,
-      "symbol": "CRVUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-08-31 13:45:00",
-      "direction": "short",
-      "entry_price": 0.3014,
-      "sl_price": 0.311483231016379,
-      "tp1_price": 0.28627515347543153,
-      "tp2_price": 0.27115030695086306,
-      "qty_total": 49.767750497677504,
-      "notional": 15.0,
-      "lot_a": {
-        "qty": 24.883875248838752,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 24.883875248838752,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "ROSEUSDT__SMC": {
       "trade_id": 412,
       "symbol": "ROSEUSDT",
@@ -391,7 +368,30 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CRVUSDT__ST": {
+      "trade_id": 417,
+      "symbol": "CRVUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-08-31 15:00:00",
+      "direction": "long",
+      "entry_price": 0.3155,
+      "sl_price": 0.3006254084171383,
+      "tp1_price": 0.3378118873742926,
+      "tp2_price": 0.3601237747485851,
+      "qty_total": 47.543581616481774,
+      "notional": 15.0,
+      "lot_a": {
+        "qty": 23.771790808240887,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 23.771790808240887,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 417
+  "next_trade_id": 418
 }
