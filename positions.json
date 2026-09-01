@@ -93,29 +93,6 @@
         "status": "open"
       }
     },
-    "GALAUSDT__SMC": {
-      "trade_id": 15,
-      "symbol": "GALAUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-01 17:15:00",
-      "direction": "short",
-      "entry_price": 0.001784,
-      "sl_price": 0.001784,
-      "tp1_price": 0.00173828687883308,
-      "tp2_price": 0.0016925737576661598,
-      "qty_total": 56053.81165919283,
-      "notional": 100.0,
-      "lot_a": {
-        "qty": 28026.905829596413,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 28026.905829596413,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "CHZUSDT__SMC": {
       "trade_id": 20,
       "symbol": "CHZUSDT",
@@ -253,7 +230,30 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CRVUSDT__SMC": {
+      "trade_id": 26,
+      "symbol": "CRVUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-01 19:30:00",
+      "direction": "short",
+      "entry_price": 0.3771,
+      "sl_price": 0.3874356185518515,
+      "tp1_price": 0.36159657217222274,
+      "tp2_price": 0.3460931443444455,
+      "qty_total": 265.1816494298595,
+      "notional": 100.0,
+      "lot_a": {
+        "qty": 132.59082471492974,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 132.59082471492974,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 26
+  "next_trade_id": 27
 }
