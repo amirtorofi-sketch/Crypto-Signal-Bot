@@ -1,5 +1,5 @@
 {
-  "balance": 1001.9288456655847,
+  "balance": 1003.2509291929192,
   "positions": {
     "ROSEUSDT__ST": {
       "trade_id": 4,
@@ -146,7 +146,7 @@
       "candle_time": "2026-09-01 18:30:00",
       "direction": "long",
       "entry_price": 76577.01,
-      "sl_price": 76074.84463835067,
+      "sl_price": 76577.01,
       "tp1_price": 77330.25804247399,
       "tp2_price": 78083.50608494798,
       "qty_total": 0.0013058749616888935,
@@ -154,7 +154,7 @@
       "lot_a": {
         "qty": 0.0006529374808444468,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.0006529374808444468,
@@ -169,7 +169,7 @@
       "candle_time": "2026-09-01 18:30:00",
       "direction": "long",
       "entry_price": 98.6,
-      "sl_price": 97.50848531605588,
+      "sl_price": 98.6,
       "tp1_price": 100.23727202591616,
       "tp2_price": 101.87454405183233,
       "qty_total": 1.0141987829614605,
@@ -177,7 +177,7 @@
       "lot_a": {
         "qty": 0.5070993914807302,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.5070993914807302,
@@ -230,7 +230,30 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CRVUSDT__ST": {
+      "trade_id": 25,
+      "symbol": "CRVUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-09-01 19:15:00",
+      "direction": "short",
+      "entry_price": 0.3733,
+      "sl_price": 0.3969500793913376,
+      "tp1_price": 0.3378248809129937,
+      "tp2_price": 0.30234976182598733,
+      "qty_total": 267.8810608090008,
+      "notional": 100.00000000000001,
+      "lot_a": {
+        "qty": 133.9405304045004,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 133.9405304045004,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 25
+  "next_trade_id": 26
 }
