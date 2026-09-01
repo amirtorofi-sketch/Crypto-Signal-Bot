@@ -1,5 +1,5 @@
 {
-  "balance": 1001.3833007585638,
+  "balance": 1001.4971469795998,
   "positions": {
     "EURUSDT": {
       "trade_id": 15,
@@ -23,13 +23,13 @@
       "candle_time": "2026-09-01 09:15:00",
       "entry_price": 4378.42,
       "initial_sl_price": 4396.481329147987,
-      "sl_price": 4396.481329147987,
+      "sl_price": 4378.42,
       "tp1_price": 4351.3280062780195,
       "tp2_price": 4324.23601255604,
       "qty_total": 0.0034258933587915275,
       "notional": 15.0,
-      "qty_open": 0.0034258933587915275,
-      "phase": "before_tp1"
+      "qty_open": 0.0017129466793957637,
+      "phase": "after_tp1"
     },
     "BTCUSDT": {
       "trade_id": 115,
@@ -53,14 +53,29 @@
       "candle_time": "2026-09-01 10:15:00",
       "entry_price": 2458.02,
       "initial_sl_price": 2472.7548096254436,
-      "sl_price": 2472.7548096254436,
+      "sl_price": 2458.02,
       "tp1_price": 2435.9177855618345,
       "tp2_price": 2413.815571123669,
       "qty_total": 0.006102472721946933,
       "notional": 15.0,
-      "qty_open": 0.006102472721946933,
+      "qty_open": 0.0030512363609734665,
+      "phase": "after_tp1"
+    },
+    "DOGEUSDT": {
+      "trade_id": 117,
+      "symbol": "DOGEUSDT",
+      "direction": "long",
+      "candle_time": "2026-09-01 13:00:00",
+      "entry_price": 0.08244,
+      "initial_sl_price": 0.08172002438362928,
+      "sl_price": 0.08172002438362928,
+      "tp1_price": 0.08351996342455607,
+      "tp2_price": 0.08459992684911215,
+      "qty_total": 181.9505094614265,
+      "notional": 15.0,
+      "qty_open": 181.9505094614265,
       "phase": "before_tp1"
     }
   },
-  "next_trade_id": 117
+  "next_trade_id": 118
 }
