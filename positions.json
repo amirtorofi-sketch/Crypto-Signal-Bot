@@ -1,5 +1,5 @@
 {
-  "balance": 998.0842273121854,
+  "balance": 999.8960165250456,
   "positions": {
     "CRVUSDT__SMC": {
       "trade_id": 2,
@@ -8,7 +8,7 @@
       "candle_time": "2026-09-01 11:45:00",
       "direction": "short",
       "entry_price": 0.369,
-      "sl_price": 0.3775344396456869,
+      "sl_price": 0.369,
       "tp1_price": 0.35619834053146965,
       "tp2_price": 0.3433966810629393,
       "qty_total": 271.00271002710025,
@@ -16,7 +16,7 @@
       "lot_a": {
         "qty": 135.50135501355012,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 135.50135501355012,
@@ -54,7 +54,7 @@
       "candle_time": "2026-09-01 13:30:00",
       "direction": "short",
       "entry_price": 0.00607,
-      "sl_price": 0.006141736796736701,
+      "sl_price": 0.00607,
       "tp1_price": 0.005962394804894949,
       "tp2_price": 0.0058547896097898965,
       "qty_total": 16474.464579901152,
@@ -62,7 +62,7 @@
       "lot_a": {
         "qty": 8237.232289950576,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 8237.232289950576,
@@ -146,7 +146,7 @@
       "candle_time": "2026-09-01 17:15:00",
       "direction": "short",
       "entry_price": 0.001784,
-      "sl_price": 0.00181447541411128,
+      "sl_price": 0.001784,
       "tp1_price": 0.00173828687883308,
       "tp2_price": 0.0016925737576661598,
       "qty_total": 56053.81165919283,
@@ -154,7 +154,7 @@
       "lot_a": {
         "qty": 28026.905829596413,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 28026.905829596413,
@@ -185,52 +185,52 @@
         "status": "open"
       }
     },
-    "CHZUSDT__SMC": {
-      "trade_id": 17,
-      "symbol": "CHZUSDT",
+    "BNBUSDT__SMC": {
+      "trade_id": 19,
+      "symbol": "BNBUSDT",
       "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-01 17:45:00",
+      "candle_time": "2026-09-01 18:15:00",
       "direction": "long",
-      "entry_price": 0.01341,
-      "sl_price": 0.013257263699351565,
-      "tp1_price": 0.013639104450972654,
-      "tp2_price": 0.013868208901945307,
-      "qty_total": 7457.121551081283,
+      "entry_price": 679.65,
+      "sl_price": 676.5879445720884,
+      "tp1_price": 684.2430831418674,
+      "tp2_price": 688.8361662837347,
+      "qty_total": 0.1471345545501361,
       "notional": 100.0,
       "lot_a": {
-        "qty": 3728.5607755406413,
+        "qty": 0.07356727727506805,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 3728.5607755406413,
+        "qty": 0.07356727727506805,
         "target": "tp2",
         "status": "open"
       }
     },
-    "SOLUSDT__SMC": {
-      "trade_id": 18,
-      "symbol": "SOLUSDT",
+    "CHZUSDT__SMC": {
+      "trade_id": 20,
+      "symbol": "CHZUSDT",
       "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-01 18:00:00",
+      "candle_time": "2026-09-01 18:15:00",
       "direction": "long",
-      "entry_price": 100.06,
-      "sl_price": 99.10798297014504,
-      "tp1_price": 101.48802554478243,
-      "tp2_price": 102.91605108956487,
-      "qty_total": 0.9994003597841296,
+      "entry_price": 0.01336,
+      "sl_price": 0.013203324312209157,
+      "tp1_price": 0.013595013531686266,
+      "tp2_price": 0.013830027063372531,
+      "qty_total": 7485.02994011976,
       "notional": 100.0,
       "lot_a": {
-        "qty": 0.4997001798920648,
+        "qty": 3742.51497005988,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 0.4997001798920648,
+        "qty": 3742.51497005988,
         "target": "tp2",
         "status": "open"
       }
     }
   },
-  "next_trade_id": 19
+  "next_trade_id": 21
 }
