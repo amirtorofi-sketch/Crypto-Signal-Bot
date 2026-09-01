@@ -1,29 +1,6 @@
 {
-  "balance": 1001.5482087847549,
+  "balance": 1001.9288456655847,
   "positions": {
-    "CRVUSDT__SMC": {
-      "trade_id": 2,
-      "symbol": "CRVUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-01 11:45:00",
-      "direction": "short",
-      "entry_price": 0.369,
-      "sl_price": 0.369,
-      "tp1_price": 0.35619834053146965,
-      "tp2_price": 0.3433966810629393,
-      "qty_total": 271.00271002710025,
-      "notional": 99.99999999999999,
-      "lot_a": {
-        "qty": 135.50135501355012,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 135.50135501355012,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "ROSEUSDT__ST": {
       "trade_id": 4,
       "symbol": "ROSEUSDT",
@@ -215,7 +192,7 @@
       "candle_time": "2026-09-01 18:30:00",
       "direction": "long",
       "entry_price": 675.26,
-      "sl_price": 671.832948531345,
+      "sl_price": 675.26,
       "tp1_price": 680.4005772029825,
       "tp2_price": 685.541154405965,
       "qty_total": 0.14809110564819478,
@@ -223,14 +200,37 @@
       "lot_a": {
         "qty": 0.07404555282409739,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.07404555282409739,
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ONEUSDT__SMC": {
+      "trade_id": 24,
+      "symbol": "ONEUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-01 19:00:00",
+      "direction": "long",
+      "entry_price": 0.000746,
+      "sl_price": 0.0007384653996986708,
+      "tp1_price": 0.0007573019004519939,
+      "tp2_price": 0.0007686038009039879,
+      "qty_total": 134048.25737265416,
+      "notional": 100.0,
+      "lot_a": {
+        "qty": 67024.12868632708,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 67024.12868632708,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 24
+  "next_trade_id": 25
 }
