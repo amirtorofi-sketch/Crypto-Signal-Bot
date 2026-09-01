@@ -23,12 +23,29 @@ from signal_bot import atr as calc_atr
 # =====================================================================
 # تنظیمات
 # =====================================================================
-FIXED_TRADE_AMOUNT = 15.0      # مبلغ ثابت ورودی به هر معامله (دلار مجازی)
+FIXED_TRADE_AMOUNT = 100.0     # مبلغ ثابت ورودی به هر معامله (دلار مجازی)
 STARTING_BALANCE = 1000.0      # موجودی فرضی اولیه (دلار مجازی)
 
 POSITIONS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "positions.json")
 
 SOURCE_TAG = {"Supertrend+ADX": "ST", "ICT/SMC Scalp Pro": "SMC"}
+
+
+def resolve_direction_and_levels(raw_direction: str, entry: float, raw_sl: float, rr1: float, rr2: float):
+    """
+    جهت سیگنال خام استراتژی همیشه معکوس اجرا می‌شود (تست فرضیه‌ی Bias منفی
+    استراتژی). raw_sl سطحی است که خودِ استراتژی برای جهت خام (نه جهت نهایی)
+    حساب کرده (خط Supertrend یا ورود ± ATR*ضریب)، و از آن فقط "فاصله‌ی ریسک"
+    استخراج می‌شود؛ SL/TP نهایی با همان فاصله و به‌صورت آینه‌ای حول قیمت
+    ورود، در سمت مخالف بازتعریف می‌شوند (چون خط خام برای جهت مخالف بی‌معنی است).
+    """
+    risk = abs(entry - raw_sl)
+    if raw_direction == "long":
+        # سیگنال خام Long بود -> حالا Short می‌گیریم
+        return "short", entry + risk, entry - risk * rr1, entry - risk * rr2
+    else:
+        # سیگنال خام Short بود -> حالا Long می‌گیریم
+        return "long", entry - risk, entry + risk * rr1, entry + risk * rr2
 
 
 def position_key(symbol: str, source: str) -> str:
@@ -227,19 +244,13 @@ def main():
         # --- استراتژی ۱: Supertrend + ADX ---
         buy1, sell1, ct1, price1, st_line = check_strategy_supertrend(df)
         if buy1:
-            print(f"[{symbol}] سیگنال خرید Supertrend+ADX فعال شد -> تلاش برای باز کردن پوزیشن Long...")
-            sl = st_line
-            risk = abs(price1 - sl)
-            tp1 = price1 + risk * ST_TP1_RR
-            tp2 = price1 + risk * ST_TP2_RR
-            open_position(state, symbol, "long", price1, sl, tp1, tp2, source="Supertrend+ADX", candle_time=ct1)
+            direction, sl, tp1, tp2 = resolve_direction_and_levels("long", price1, st_line, ST_TP1_RR, ST_TP2_RR)
+            print(f"[{symbol}] سیگنال خرید Supertrend+ADX فعال شد -> تلاش برای باز کردن پوزیشن {direction} (معکوس)...")
+            open_position(state, symbol, direction, price1, sl, tp1, tp2, source="Supertrend+ADX", candle_time=ct1)
         elif sell1:
-            print(f"[{symbol}] سیگنال فروش Supertrend+ADX فعال شد -> تلاش برای باز کردن پوزیشن Short...")
-            sl = st_line
-            risk = abs(sl - price1)
-            tp1 = price1 - risk * ST_TP1_RR
-            tp2 = price1 - risk * ST_TP2_RR
-            open_position(state, symbol, "short", price1, sl, tp1, tp2, source="Supertrend+ADX", candle_time=ct1)
+            direction, sl, tp1, tp2 = resolve_direction_and_levels("short", price1, st_line, ST_TP1_RR, ST_TP2_RR)
+            print(f"[{symbol}] سیگنال فروش Supertrend+ADX فعال شد -> تلاش برای باز کردن پوزیشن {direction} (معکوس)...")
+            open_position(state, symbol, direction, price1, sl, tp1, tp2, source="Supertrend+ADX", candle_time=ct1)
 
         # --- استراتژی ۲: ICT/SMC Scalp Pro ---
         try:
@@ -249,23 +260,19 @@ def main():
 
         res = check_strategy_smc(df, htf_bullish, htf_bearish)
         if res is not None and res["buy"]:
-            print(f"[{symbol}] سیگنال خرید ICT/SMC فعال شد (امتیاز={res['bull_score']}/7) -> تلاش برای باز کردن پوزیشن Long...")
             price2 = res["price"]
             atr2 = res["atr"]
-            sl = price2 - atr2 * SL_ATR_MULT
-            risk = price2 - sl
-            tp1 = price2 + risk * TP1_RR
-            tp2 = price2 + risk * TP2_RR
-            open_position(state, symbol, "long", price2, sl, tp1, tp2, source="ICT/SMC Scalp Pro", candle_time=res["candle_time"])
+            raw_sl = price2 - atr2 * SL_ATR_MULT
+            direction, sl, tp1, tp2 = resolve_direction_and_levels("long", price2, raw_sl, TP1_RR, TP2_RR)
+            print(f"[{symbol}] سیگنال خرید ICT/SMC فعال شد (امتیاز={res['bull_score']}/7) -> تلاش برای باز کردن پوزیشن {direction} (معکوس)...")
+            open_position(state, symbol, direction, price2, sl, tp1, tp2, source="ICT/SMC Scalp Pro", candle_time=res["candle_time"])
         elif res is not None and res["sell"]:
-            print(f"[{symbol}] سیگنال فروش ICT/SMC فعال شد (امتیاز={res['bear_score']}/7) -> تلاش برای باز کردن پوزیشن Short...")
             price2 = res["price"]
             atr2 = res["atr"]
-            sl = price2 + atr2 * SL_ATR_MULT
-            risk = sl - price2
-            tp1 = price2 - risk * TP1_RR
-            tp2 = price2 - risk * TP2_RR
-            open_position(state, symbol, "short", price2, sl, tp1, tp2, source="ICT/SMC Scalp Pro", candle_time=res["candle_time"])
+            raw_sl = price2 + atr2 * SL_ATR_MULT
+            direction, sl, tp1, tp2 = resolve_direction_and_levels("short", price2, raw_sl, TP1_RR, TP2_RR)
+            print(f"[{symbol}] سیگنال فروش ICT/SMC فعال شد (امتیاز={res['bear_score']}/7) -> تلاش برای باز کردن پوزیشن {direction} (معکوس)...")
+            open_position(state, symbol, direction, price2, sl, tp1, tp2, source="ICT/SMC Scalp Pro", candle_time=res["candle_time"])
         elif res is not None:
             print(f"[{symbol}] بدون سیگنال SMC جدید (امتیاز خرید={res['bull_score']}/7, امتیاز فروش={res['bear_score']}/7)")
 
