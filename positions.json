@@ -1,5 +1,5 @@
 {
-  "balance": 1002.5507321075712,
+  "balance": 1002.8824669348189,
   "positions": {
     "VETUSDT__ST": {
       "trade_id": 10,
@@ -66,29 +66,6 @@
       },
       "lot_b": {
         "qty": 133.9405304045004,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "ETHUSDT__SMC": {
-      "trade_id": 30,
-      "symbol": "ETHUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-02 01:30:00",
-      "direction": "long",
-      "entry_price": 2395.15,
-      "sl_price": 2395.15,
-      "tp1_price": 2419.730410027223,
-      "tp2_price": 2444.3108200544466,
-      "qty_total": 0.041751038557084105,
-      "notional": 100.0,
-      "lot_a": {
-        "qty": 0.020875519278542053,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 0.020875519278542053,
         "target": "tp2",
         "status": "open"
       }
@@ -215,7 +192,7 @@
       "candle_time": "2026-09-02 05:00:00",
       "direction": "short",
       "entry_price": 687.93,
-      "sl_price": 690.972804529447,
+      "sl_price": 687.93,
       "tp1_price": 683.3657932058294,
       "tp2_price": 678.8015864116588,
       "qty_total": 0.14536362711322373,
@@ -223,7 +200,7 @@
       "lot_a": {
         "qty": 0.07268181355661187,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.07268181355661187,
@@ -299,7 +276,53 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ETHUSDT__SMC": {
+      "trade_id": 45,
+      "symbol": "ETHUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-02 08:45:00",
+      "direction": "long",
+      "entry_price": 2393.16,
+      "sl_price": 2379.082840228865,
+      "tp1_price": 2414.275739656702,
+      "tp2_price": 2435.391479313405,
+      "qty_total": 0.04178575607147036,
+      "notional": 100.0,
+      "lot_a": {
+        "qty": 0.02089287803573518,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.02089287803573518,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "BNBUSDT__ST": {
+      "trade_id": 46,
+      "symbol": "BNBUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-09-02 08:45:00",
+      "direction": "long",
+      "entry_price": 683.57,
+      "sl_price": 678.4286650911066,
+      "tp1_price": 691.2820023633402,
+      "tp2_price": 698.9940047266804,
+      "qty_total": 0.1462907968459704,
+      "notional": 100.0,
+      "lot_a": {
+        "qty": 0.0731453984229852,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0731453984229852,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 45
+  "next_trade_id": 47
 }
