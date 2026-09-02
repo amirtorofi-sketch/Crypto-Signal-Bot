@@ -1,5 +1,5 @@
 {
-  "balance": 1005.5681342706243,
+  "balance": 1006.3796156796624,
   "positions": {
     "VETUSDT__ST": {
       "trade_id": 10,
@@ -146,7 +146,7 @@
       "candle_time": "2026-09-02 06:30:00",
       "direction": "short",
       "entry_price": 0.000778,
-      "sl_price": 0.0007864177671497545,
+      "sl_price": 0.000778,
       "tp1_price": 0.0007653733492753684,
       "tp2_price": 0.0007527466985507367,
       "qty_total": 128534.70437017994,
@@ -154,7 +154,7 @@
       "lot_a": {
         "qty": 64267.35218508997,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 64267.35218508997,
@@ -253,7 +253,30 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "GALAUSDT__ST": {
+      "trade_id": 49,
+      "symbol": "GALAUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-09-02 10:00:00",
+      "direction": "long",
+      "entry_price": 0.00175,
+      "sl_price": 0.001698641014581862,
+      "tp1_price": 0.0018270384781272071,
+      "tp2_price": 0.001904076956254414,
+      "qty_total": 57142.857142857145,
+      "notional": 100.0,
+      "lot_a": {
+        "qty": 28571.428571428572,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 28571.428571428572,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 49
+  "next_trade_id": 50
 }
