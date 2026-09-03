@@ -1,5 +1,5 @@
 {
-  "balance": 1026.5734036391877,
+  "balance": 1026.6240254508687,
   "positions": {
     "CRVUSDT__ST": {
       "trade_id": 25,
@@ -31,7 +31,7 @@
       "candle_time": "2026-09-02 10:00:00",
       "direction": "long",
       "entry_price": 0.00175,
-      "sl_price": 0.001698641014581862,
+      "sl_price": 0.00175,
       "tp1_price": 0.0018270384781272071,
       "tp2_price": 0.001904076956254414,
       "qty_total": 57142.857142857145,
@@ -39,7 +39,7 @@
       "lot_a": {
         "qty": 28571.428571428572,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 28571.428571428572,
@@ -162,29 +162,6 @@
         "status": "open"
       }
     },
-    "MASKUSDT__SMC": {
-      "trade_id": 98,
-      "symbol": "MASKUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-03 15:00:00",
-      "direction": "short",
-      "entry_price": 0.442,
-      "sl_price": 0.4456939121946571,
-      "tp1_price": 0.43645913170801437,
-      "tp2_price": 0.43091826341602874,
-      "qty_total": 226.2443438914027,
-      "notional": 100.0,
-      "lot_a": {
-        "qty": 113.12217194570135,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 113.12217194570135,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "ROSEUSDT__SMC": {
       "trade_id": 99,
       "symbol": "ROSEUSDT",
@@ -204,29 +181,6 @@
       },
       "lot_b": {
         "qty": 7788.1619937694695,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "GALAUSDT__SMC": {
-      "trade_id": 100,
-      "symbol": "GALAUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-03 15:15:00",
-      "direction": "short",
-      "entry_price": 0.001806,
-      "sl_price": 0.0018297443998545175,
-      "tp1_price": 0.001770383400218224,
-      "tp2_price": 0.001734766800436448,
-      "qty_total": 55370.98560354374,
-      "notional": 100.0,
-      "lot_a": {
-        "qty": 27685.49280177187,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 27685.49280177187,
         "target": "tp2",
         "status": "open"
       }
