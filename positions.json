@@ -1,5 +1,5 @@
 {
-  "balance": 1022.4167253930583,
+  "balance": 1023.5449203640693,
   "positions": {
     "VETUSDT__ST": {
       "trade_id": 10,
@@ -66,29 +66,6 @@
       },
       "lot_b": {
         "qty": 0.5054589567327133,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "BNBUSDT__ST": {
-      "trade_id": 46,
-      "symbol": "BNBUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-09-02 08:45:00",
-      "direction": "long",
-      "entry_price": 683.57,
-      "sl_price": 683.57,
-      "tp1_price": 691.2820023633402,
-      "tp2_price": 698.9940047266804,
-      "qty_total": 0.1462907968459704,
-      "notional": 100.0,
-      "lot_a": {
-        "qty": 0.0731453984229852,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 0.0731453984229852,
         "target": "tp2",
         "status": "open"
       }
@@ -391,7 +368,30 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "BTCUSDT__SMC": {
+      "trade_id": 78,
+      "symbol": "BTCUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-03 07:00:00",
+      "direction": "short",
+      "entry_price": 78061.84,
+      "sl_price": 78439.98870451956,
+      "tp1_price": 77494.61694322064,
+      "tp2_price": 76927.39388644129,
+      "qty_total": 0.001281035650709745,
+      "notional": 100.0,
+      "lot_a": {
+        "qty": 0.0006405178253548725,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0006405178253548725,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 78
+  "next_trade_id": 79
 }
