@@ -1,5 +1,5 @@
 {
-  "balance": 1022.7605494956771,
+  "balance": 1022.6096921691479,
   "positions": {
     "VETUSDT__ST": {
       "trade_id": 10,
@@ -231,29 +231,6 @@
         "status": "open"
       }
     },
-    "VETUSDT__SMC": {
-      "trade_id": 66,
-      "symbol": "VETUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-03 01:45:00",
-      "direction": "long",
-      "entry_price": 0.006488,
-      "sl_price": 0.006488,
-      "tp1_price": 0.006574015884381845,
-      "tp2_price": 0.006660031768763691,
-      "qty_total": 15413.070283600493,
-      "notional": 100.0,
-      "lot_a": {
-        "qty": 7706.5351418002465,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 7706.5351418002465,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "DOGEUSDT__SMC": {
       "trade_id": 68,
       "symbol": "DOGEUSDT",
@@ -273,29 +250,6 @@
       },
       "lot_b": {
         "qty": 601.684717208183,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "CRVUSDT__SMC": {
-      "trade_id": 72,
-      "symbol": "CRVUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-03 04:15:00",
-      "direction": "short",
-      "entry_price": 0.3637,
-      "sl_price": 0.36907048948217186,
-      "tp1_price": 0.35564426577674224,
-      "tp2_price": 0.3475885315534845,
-      "qty_total": 274.95188342040143,
-      "notional": 100.0,
-      "lot_a": {
-        "qty": 137.47594171020071,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 137.47594171020071,
         "target": "tp2",
         "status": "open"
       }
@@ -368,7 +322,30 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CRVUSDT__SMC": {
+      "trade_id": 82,
+      "symbol": "CRVUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-03 11:30:00",
+      "direction": "short",
+      "entry_price": 0.3692,
+      "sl_price": 0.373894394566426,
+      "tp1_price": 0.36215840815036093,
+      "tp2_price": 0.35511681630072195,
+      "qty_total": 270.85590465872156,
+      "notional": 99.99999999999999,
+      "lot_a": {
+        "qty": 135.42795232936078,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 135.42795232936078,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 82
+  "next_trade_id": 83
 }
