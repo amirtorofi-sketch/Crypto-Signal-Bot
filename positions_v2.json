@@ -1,5 +1,5 @@
 {
-  "balance": 1002.9488753288363,
+  "balance": 1003.045810047444,
   "positions": {
     "EURUSDT": {
       "trade_id": 15,
@@ -23,13 +23,13 @@
       "candle_time": "2026-09-03 21:45:00",
       "entry_price": 2511.19,
       "initial_sl_price": 2489.552533687064,
-      "sl_price": 2489.552533687064,
+      "sl_price": 2511.19,
       "tp1_price": 2543.6461994694037,
       "tp2_price": 2576.1023989388077,
       "qty_total": 0.005973263671805001,
       "notional": 15.0,
-      "qty_open": 0.005973263671805001,
-      "phase": "before_tp1"
+      "qty_open": 0.0029866318359025004,
+      "phase": "after_tp1"
     },
     "SOLUSDT": {
       "trade_id": 144,
@@ -60,7 +60,37 @@
       "notional": 15.0,
       "qty_open": 171.11567419575633,
       "phase": "before_tp1"
+    },
+    "BTCUSDT": {
+      "trade_id": 148,
+      "symbol": "BTCUSDT",
+      "direction": "long",
+      "candle_time": "2026-09-04 09:15:00",
+      "entry_price": 81037.65,
+      "initial_sl_price": 80619.37366818906,
+      "sl_price": 80619.37366818906,
+      "tp1_price": 81665.0644977164,
+      "tp2_price": 82292.4789954328,
+      "qty_total": 0.0001850991483588184,
+      "notional": 15.0,
+      "qty_open": 0.0001850991483588184,
+      "phase": "before_tp1"
+    },
+    "PAXGUSDT": {
+      "trade_id": 149,
+      "symbol": "PAXGUSDT",
+      "direction": "long",
+      "candle_time": "2026-09-04 09:15:00",
+      "entry_price": 4466.99,
+      "initial_sl_price": 4454.506048661095,
+      "sl_price": 4454.506048661095,
+      "tp1_price": 4485.7159270083575,
+      "tp2_price": 4504.441854016715,
+      "qty_total": 0.003357965878589386,
+      "notional": 15.0,
+      "qty_open": 0.003357965878589386,
+      "phase": "before_tp1"
     }
   },
-  "next_trade_id": 148
+  "next_trade_id": 150
 }
