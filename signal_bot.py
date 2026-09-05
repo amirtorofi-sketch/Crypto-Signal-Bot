@@ -501,7 +501,7 @@ def main():
             continue
 
         # --- استراتژی ۱: Supertrend + ADX ---
-        buy1, sell1, ct1, price1, _st_line1 = check_strategy_supertrend(df)
+        buy1, sell1, ct1, price1, _st_line1, _adx_val1 = check_strategy_supertrend(df)
         st_dbg = df.copy()
         st_val_dbg, st_dir_dbg = supertrend(st_dbg, ATR_PERIOD, ST_FACTOR)
         _, _, adx_dbg = adx_dmi(st_dbg, DI_LEN, ADX_LEN)
