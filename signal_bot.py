@@ -254,7 +254,8 @@ def check_strategy_supertrend(df: pd.DataFrame):
     candle_time = df["open_time"].iloc[i]
     price = df["close"].iloc[i]
     st_line = st_val.iloc[i]
-    return buy, sell, candle_time, price, st_line
+    adx_value = float(df["adx"].iloc[i])
+    return buy, sell, candle_time, price, st_line, adx_value
 
 
 # =====================================================================
