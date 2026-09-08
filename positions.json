@@ -1,5 +1,5 @@
 {
-  "balance": 1051.1687245400906,
+  "balance": 1059.9310673743985,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 128,
@@ -20,29 +20,6 @@
       },
       "lot_b": {
         "qty": 0.020397839460844308,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "MANAUSDT__ST": {
-      "trade_id": 131,
-      "symbol": "MANAUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-09-04 12:30:00",
-      "direction": "long",
-      "entry_price": 0.0743,
-      "sl_price": 0.0743,
-      "tp1_price": 0.07734201430320042,
-      "tp2_price": 0.08038402860640084,
-      "qty_total": 1345.8950201884252,
-      "notional": 100.0,
-      "lot_a": {
-        "qty": 672.9475100942126,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 672.9475100942126,
         "target": "tp2",
         "status": "open"
       }
@@ -134,7 +111,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.0914,
-      "sl_price": 0.09358850304011684,
+      "sl_price": 0.0914,
       "tp1_price": 0.08811724543982472,
       "tp2_price": 0.08483449087964945,
       "qty_total": 3282.2757111597375,
@@ -143,36 +120,10 @@
       "lot_a": {
         "qty": 1641.1378555798688,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 1641.1378555798688,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "BTCUSDT__ST": {
-      "trade_id": 167,
-      "symbol": "BTCUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-09-08 03:15:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 78773.36,
-      "sl_price": 78126.98225878784,
-      "tp1_price": 79742.92661181823,
-      "tp2_price": 80712.49322363647,
-      "qty_total": 0.0038083941068401805,
-      "notional": 300.0,
-      "leverage": 3.0,
-      "lot_a": {
-        "qty": 0.0019041970534200902,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0019041970534200902,
         "target": "tp2",
         "status": "open"
       }
@@ -186,7 +137,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.001932,
-      "sl_price": 0.001982116519941745,
+      "sl_price": 0.001932,
       "tp1_price": 0.0018568252200873827,
       "tp2_price": 0.0017816504401747654,
       "qty_total": 155279.50310559006,
@@ -195,14 +146,40 @@
       "lot_a": {
         "qty": 77639.75155279503,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 77639.75155279503,
         "target": "tp2",
         "status": "open"
       }
+    },
+    "BNBUSDT__ST": {
+      "trade_id": 169,
+      "symbol": "BNBUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-09-08 13:30:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 743.91,
+      "sl_price": 729.3921981608146,
+      "tp1_price": 765.686702758778,
+      "tp2_price": 787.4634055175561,
+      "qty_total": 0.40327458966810503,
+      "notional": 300.0,
+      "leverage": 3.0,
+      "lot_a": {
+        "qty": 0.20163729483405252,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.20163729483405252,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 169
+  "next_trade_id": 170
 }
