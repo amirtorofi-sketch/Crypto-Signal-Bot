@@ -128,32 +128,6 @@
         "status": "open"
       }
     },
-    "GALAUSDT__ST": {
-      "trade_id": 168,
-      "symbol": "GALAUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-09-08 10:00:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.001932,
-      "sl_price": 0.001932,
-      "tp1_price": 0.0018568252200873827,
-      "tp2_price": 0.0017816504401747654,
-      "qty_total": 155279.50310559006,
-      "notional": 300.0,
-      "leverage": 3.0,
-      "lot_a": {
-        "qty": 77639.75155279503,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 77639.75155279503,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "BNBUSDT__ST": {
       "trade_id": 169,
       "symbol": "BNBUSDT",
@@ -179,7 +153,59 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "MANAUSDT__ST": {
+      "trade_id": 170,
+      "symbol": "MANAUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-09-08 15:15:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.0763,
+      "sl_price": 0.07767003759425169,
+      "tp1_price": 0.0742449436086225,
+      "tp2_price": 0.07218988721724497,
+      "qty_total": 3931.8479685452157,
+      "notional": 300.0,
+      "leverage": 3.0,
+      "lot_a": {
+        "qty": 1965.9239842726079,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 1965.9239842726079,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "GALAUSDT__ST": {
+      "trade_id": 171,
+      "symbol": "GALAUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-09-08 15:15:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.00193,
+      "sl_price": 0.0020018591312971146,
+      "tp1_price": 0.0018222113030543284,
+      "tp2_price": 0.0017144226061086565,
+      "qty_total": 155440.41450777202,
+      "notional": 300.0,
+      "leverage": 3.0,
+      "lot_a": {
+        "qty": 77720.20725388601,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 77720.20725388601,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 170
+  "next_trade_id": 172
 }
