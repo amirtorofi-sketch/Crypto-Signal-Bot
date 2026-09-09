@@ -1,5 +1,5 @@
 {
-  "balance": 1063.5429045744731,
+  "balance": 1092.1931557357748,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 128,
@@ -33,7 +33,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.00744,
-      "sl_price": 0.007882259530936669,
+      "sl_price": 0.00744,
       "tp1_price": 0.006776610703594999,
       "tp2_price": 0.006113221407189998,
       "qty_total": 40322.58064516129,
@@ -42,36 +42,10 @@
       "lot_a": {
         "qty": 20161.290322580644,
         "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 20161.290322580644,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "SOLUSDT__ST": {
-      "trade_id": 162,
-      "symbol": "SOLUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-09-07 02:30:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 106.79,
-      "sl_price": 106.79,
-      "tp1_price": 104.22871387561747,
-      "tp2_price": 101.66742775123492,
-      "qty_total": 2.80925180260324,
-      "notional": 300.0,
-      "leverage": 3.0,
-      "lot_a": {
-        "qty": 1.40462590130162,
-        "target": "tp1",
         "status": "closed_tp"
       },
       "lot_b": {
-        "qty": 1.40462590130162,
+        "qty": 20161.290322580644,
         "target": "tp2",
         "status": "open"
       }
@@ -98,32 +72,6 @@
       },
       "lot_b": {
         "qty": 10533.70786516854,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "MANAUSDT__ST": {
-      "trade_id": 170,
-      "symbol": "MANAUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-09-08 15:15:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.0763,
-      "sl_price": 0.0763,
-      "tp1_price": 0.0742449436086225,
-      "tp2_price": 0.07218988721724497,
-      "qty_total": 3931.8479685452157,
-      "notional": 300.0,
-      "leverage": 3.0,
-      "lot_a": {
-        "qty": 1965.9239842726079,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 1965.9239842726079,
         "target": "tp2",
         "status": "open"
       }
