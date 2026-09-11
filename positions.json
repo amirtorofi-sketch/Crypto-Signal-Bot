@@ -1,5 +1,5 @@
 {
-  "balance": 1101.5828883137337,
+  "balance": 1107.6135352868225,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 128,
@@ -102,84 +102,6 @@
         "status": "open"
       }
     },
-    "CRVUSDT__ST": {
-      "trade_id": 178,
-      "symbol": "CRVUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-09-10 22:30:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.3374,
-      "sl_price": 0.3290208208843639,
-      "tp1_price": 0.34996876867345406,
-      "tp2_price": 0.3625375373469082,
-      "qty_total": 889.1523414344991,
-      "notional": 300.0,
-      "leverage": 3.0,
-      "lot_a": {
-        "qty": 444.57617071724957,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 444.57617071724957,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "BNBUSDT__ST": {
-      "trade_id": 179,
-      "symbol": "BNBUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-09-10 23:00:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 709.13,
-      "sl_price": 700.8566549623711,
-      "tp1_price": 721.5400175564434,
-      "tp2_price": 733.9500351128868,
-      "qty_total": 0.4230536008912329,
-      "notional": 300.0,
-      "leverage": 3.0,
-      "lot_a": {
-        "qty": 0.21152680044561645,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.21152680044561645,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "BTCUSDT__ST": {
-      "trade_id": 180,
-      "symbol": "BTCUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-09-11 09:30:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 76964.22,
-      "sl_price": 76404.38755332335,
-      "tp1_price": 77803.96867001498,
-      "tp2_price": 78643.71734002995,
-      "qty_total": 0.0038979151610969358,
-      "notional": 300.0,
-      "leverage": 3.0,
-      "lot_a": {
-        "qty": 0.0019489575805484679,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0019489575805484679,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "VETUSDT__ST": {
       "trade_id": 182,
       "symbol": "VETUSDT",
@@ -205,7 +127,33 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "MASKUSDT__ST": {
+      "trade_id": 183,
+      "symbol": "MASKUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-09-11 12:30:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.442,
+      "sl_price": 0.45410093238841687,
+      "tp1_price": 0.4238486014173747,
+      "tp2_price": 0.4056972028347494,
+      "qty_total": 678.7330316742082,
+      "notional": 300.0,
+      "leverage": 3.0,
+      "lot_a": {
+        "qty": 339.3665158371041,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 339.3665158371041,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 183
+  "next_trade_id": 184
 }
