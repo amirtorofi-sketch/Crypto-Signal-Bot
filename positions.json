@@ -1,5 +1,5 @@
 {
-  "balance": 1128.4566498072234,
+  "balance": 1128.833970914052,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 128,
@@ -206,32 +206,6 @@
         "status": "open"
       }
     },
-    "BTCUSDT__SMC": {
-      "trade_id": 195,
-      "symbol": "BTCUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-13 13:15:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 76584.67,
-      "sl_price": 76584.67,
-      "tp1_price": 76873.64012450518,
-      "tp2_price": 77162.61024901037,
-      "qty_total": 0.0013057443480529458,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "lot_a": {
-        "qty": 0.0006528721740264729,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 0.0006528721740264729,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "ETHUSDT__SMC": {
       "trade_id": 196,
       "symbol": "ETHUSDT",
@@ -361,7 +335,33 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "VETUSDT__SMC": {
+      "trade_id": 201,
+      "symbol": "VETUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-13 14:30:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.007776,
+      "sl_price": 0.007901151653471782,
+      "tp1_price": 0.007588272519792326,
+      "tp2_price": 0.00740054503958465,
+      "qty_total": 12860.08230452675,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 6430.041152263375,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 6430.041152263375,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 201
+  "next_trade_id": 202
 }
