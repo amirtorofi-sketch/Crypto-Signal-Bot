@@ -1,5 +1,5 @@
 {
-  "balance": 1116.113507559327,
+  "balance": 1125.7404498302362,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 128,
@@ -189,7 +189,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.3417,
-      "sl_price": 0.3489479179502772,
+      "sl_price": 0.3417,
       "tp1_price": 0.3308281230745842,
       "tp2_price": 0.31995624614916846,
       "qty_total": 877.9631255487269,
@@ -198,62 +198,10 @@
       "lot_a": {
         "qty": 438.98156277436345,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 438.98156277436345,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "SOLUSDT__ST": {
-      "trade_id": 189,
-      "symbol": "SOLUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-09-13 01:15:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 102.0,
-      "sl_price": 102.0,
-      "tp1_price": 101.06296212767249,
-      "tp2_price": 100.12592425534498,
-      "qty_total": 2.9411764705882355,
-      "notional": 300.0,
-      "leverage": 3.0,
-      "lot_a": {
-        "qty": 1.4705882352941178,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 1.4705882352941178,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "BNBUSDT__ST": {
-      "trade_id": 190,
-      "symbol": "BNBUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-09-13 01:30:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 729.25,
-      "sl_price": 729.25,
-      "tp1_price": 724.1491514734985,
-      "tp2_price": 719.0483029469971,
-      "qty_total": 0.411381556393555,
-      "notional": 300.0,
-      "leverage": 3.0,
-      "lot_a": {
-        "qty": 0.2056907781967775,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 0.2056907781967775,
         "target": "tp2",
         "status": "open"
       }
