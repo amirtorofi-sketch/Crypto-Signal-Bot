@@ -17,6 +17,8 @@ import requests
 from signal_bot import (
     get_klines, ema, rsi, atr, find_pivots, shift_confirm,
     TIMEFRAME, KLINES_LIMIT, HTF_TIMEFRAME, HTF_EMA_LEN,
+    check_strategy_supertrend, ATR_PERIOD, ST_FACTOR, ADX_THRESHOLD,
+    ST_TP1_RR, ST_TP2_RR,
 )
 
 # نمادهای مخصوص استراتژی سوم (v2) - کاملاً مستقل از لیست استراتژی اول و دوم
@@ -305,6 +307,34 @@ def main():
         if len(df) < 210:
             continue
 
+        # --- استراتژی Supertrend+ADX (جهت عادی، بدون معکوس‌سازی) ---
+        buy_st, sell_st, ct_st, price_st, st_line, adx_val = check_strategy_supertrend(df)
+        print(f"[{symbol}] Supertrend+ADX -> ADX={adx_val:.1f} (آستانه={ADX_THRESHOLD}) | buy={buy_st} sell={sell_st}")
+
+        key_st_buy = f"{symbol}_v2_st_buy"
+        key_st_sell = f"{symbol}_v2_st_sell"
+
+        if buy_st and state.get(key_st_buy) != str(ct_st):
+            risk = abs(price_st - st_line)
+            tp1 = price_st + risk * ST_TP1_RR
+            tp2 = price_st + risk * ST_TP2_RR
+            msg = (f"🟢 <b>سیگنال خرید</b> | Supertrend+ADX (ADX={adx_val:.1f})\n"
+                   f"نماد: <b>{symbol}</b>\nتایم‌فریم: {TIMEFRAME}\nقیمت: {price_st:.6f}\n"
+                   f"SL: {st_line:.6f}\nTP1: {tp1:.6f}\nTP2: {tp2:.6f}\nزمان کندل: {ct_st}")
+            send_telegram_message_v2(msg)
+            state[key_st_buy] = str(ct_st)
+
+        if sell_st and state.get(key_st_sell) != str(ct_st):
+            risk = abs(st_line - price_st)
+            tp1 = price_st - risk * ST_TP1_RR
+            tp2 = price_st - risk * ST_TP2_RR
+            msg = (f"🔴 <b>سیگنال فروش</b> | Supertrend+ADX (ADX={adx_val:.1f})\n"
+                   f"نماد: <b>{symbol}</b>\nتایم‌فریم: {TIMEFRAME}\nقیمت: {price_st:.6f}\n"
+                   f"SL: {st_line:.6f}\nTP1: {tp1:.6f}\nTP2: {tp2:.6f}\nزمان کندل: {ct_st}")
+            send_telegram_message_v2(msg)
+            state[key_st_sell] = str(ct_st)
+
+        # --- استراتژی ICT/SMC Scalp Pro v2 ---
         try:
             htf_bullish, htf_bearish = get_htf_bias_v2(symbol)
         except Exception:
@@ -312,6 +342,7 @@ def main():
 
         res = check_strategy_smc_v2(df, htf_bullish, htf_bearish)
         if res is None:
+            time.sleep(0.3)
             continue
 
         print(f"[{symbol}] SMC-v2 -> امتیاز خرید={res['bull_score']}/7 امتیاز فروش={res['bear_score']}/7 | buy={res['buy']} sell={res['sell']}")
