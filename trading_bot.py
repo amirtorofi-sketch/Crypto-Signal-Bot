@@ -28,7 +28,8 @@ from signal_bot import atr as calc_atr
 STARTING_BALANCE = 1000.0      # موجودی فرضی اولیه (دلار مجازی)
 
 # فعلاً فقط Supertrend+ADX فعاله (به‌خاطر نیاز به داده‌ی بیشتر برای ICT/SMC خاموش شد)
-ENABLE_SMC = False
+# هر دو استراتژی فعالن: Supertrend+ADX (با لوریج 3x) و ICT/SMC Scalp Pro (بدون لوریج، عادی)
+ENABLE_SMC = True
 
 # حجم هر معامله به تفکیک استراتژی (چون Win Rate بالای Supertrend+ADX توجیه‌کننده‌ی حجم بیشتره)
 TRADE_AMOUNT_BY_SOURCE = {
