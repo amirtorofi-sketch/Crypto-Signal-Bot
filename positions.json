@@ -1,5 +1,5 @@
 {
-  "balance": 1130.9634948267578,
+  "balance": 1131.7309487629338,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 128,
@@ -154,32 +154,6 @@
         "status": "open"
       }
     },
-    "DOGEUSDT__SMC": {
-      "trade_id": 197,
-      "symbol": "DOGEUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-13 13:15:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.08292,
-      "sl_price": 0.08292,
-      "tp1_price": 0.08355637280387712,
-      "tp2_price": 0.08419274560775426,
-      "qty_total": 1205.9816690786301,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "lot_a": {
-        "qty": 602.9908345393151,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 602.9908345393151,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "GALAUSDT__SMC": {
       "trade_id": 199,
       "symbol": "GALAUSDT",
@@ -309,7 +283,33 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "DOGEUSDT__ST": {
+      "trade_id": 204,
+      "symbol": "DOGEUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-09-13 17:00:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.0844,
+      "sl_price": 0.08547359586259755,
+      "tp1_price": 0.08278960620610368,
+      "tp2_price": 0.08117921241220737,
+      "qty_total": 3554.5023696682465,
+      "notional": 300.0,
+      "leverage": 3.0,
+      "lot_a": {
+        "qty": 1777.2511848341233,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 1777.2511848341233,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 204
+  "next_trade_id": 205
 }
