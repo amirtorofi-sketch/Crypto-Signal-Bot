@@ -1,5 +1,5 @@
 {
-  "balance": 1128.873854824091,
+  "balance": 1127.6366218778023,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 128,
@@ -154,32 +154,58 @@
         "status": "open"
       }
     },
-    "CHZUSDT__SMC": {
-      "trade_id": 191,
-      "symbol": "CHZUSDT",
+    "ONEUSDT__SMC": {
+      "trade_id": 192,
+      "symbol": "ONEUSDT",
       "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-13 12:00:00",
+      "candle_time": "2026-09-13 12:45:00",
       "session": "لندن",
       "raw_direction": "long",
       "direction": "short",
-      "entry_price": 0.01497,
-      "sl_price": 0.015155213772059441,
-      "tp1_price": 0.01469217934191084,
-      "tp2_price": 0.014414358683821678,
-      "qty_total": 6680.02672010688,
+      "entry_price": 0.000707,
+      "sl_price": 0.0007135600273118178,
+      "tp1_price": 0.0006971599590322732,
+      "tp2_price": 0.0006873199180645465,
+      "qty_total": 141442.71570014145,
       "notional": 100.0,
       "leverage": 1.0,
       "lot_a": {
-        "qty": 3340.01336005344,
+        "qty": 70721.35785007072,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 3340.01336005344,
+        "qty": 70721.35785007072,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "MASKUSDT__SMC": {
+      "trade_id": 193,
+      "symbol": "MASKUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-13 12:45:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.47,
+      "sl_price": 0.4737976218080358,
+      "tp1_price": 0.4643035672879462,
+      "tp2_price": 0.45860713457589247,
+      "qty_total": 212.76595744680853,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 106.38297872340426,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 106.38297872340426,
         "target": "tp2",
         "status": "open"
       }
     }
   },
-  "next_trade_id": 192
+  "next_trade_id": 194
 }
