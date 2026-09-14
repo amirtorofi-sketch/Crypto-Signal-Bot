@@ -1,5 +1,5 @@
 {
-  "balance": 1166.4022771855687,
+  "balance": 1172.036044761536,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 128,
@@ -85,7 +85,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 77088.01,
-      "sl_price": 75551.53268360288,
+      "sl_price": 77088.01,
       "tp1_price": 79392.72597459567,
       "tp2_price": 81697.44194919133,
       "qty_total": 0.003891655784083673,
@@ -94,7 +94,7 @@
       "lot_a": {
         "qty": 0.0019458278920418365,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.0019458278920418365,
@@ -232,32 +232,6 @@
         "status": "open"
       }
     },
-    "MASKUSDT__SMC": {
-      "trade_id": 231,
-      "symbol": "MASKUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-14 12:45:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.459,
-      "sl_price": 0.459,
-      "tp1_price": 0.4642747680975846,
-      "tp2_price": 0.46954953619516915,
-      "qty_total": 217.8649237472767,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "lot_a": {
-        "qty": 108.93246187363835,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 108.93246187363835,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "DOGEUSDT__ST": {
       "trade_id": 232,
       "symbol": "DOGEUSDT",
@@ -309,7 +283,85 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ETHUSDT__SMC": {
+      "trade_id": 234,
+      "symbol": "ETHUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-14 20:15:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 2599.05,
+      "sl_price": 2624.3248483317543,
+      "tp1_price": 2561.1377275023688,
+      "tp2_price": 2523.225455004738,
+      "qty_total": 0.03847559685269617,
+      "notional": 99.99999999999999,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 0.019237798426348086,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.019237798426348086,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "SOLUSDT__SMC": {
+      "trade_id": 235,
+      "symbol": "SOLUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-14 20:15:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 104.56,
+      "sl_price": 105.43804598506148,
+      "tp1_price": 103.24293102240779,
+      "tp2_price": 101.92586204481557,
+      "qty_total": 0.9563886763580719,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 0.47819433817903595,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.47819433817903595,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "CHZUSDT__SMC": {
+      "trade_id": 236,
+      "symbol": "CHZUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-14 20:15:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.01467,
+      "sl_price": 0.014812369059127415,
+      "tp1_price": 0.014456446411308879,
+      "tp2_price": 0.014242892822617757,
+      "qty_total": 6816.632583503749,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 3408.3162917518744,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 3408.3162917518744,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 234
+  "next_trade_id": 237
 }
