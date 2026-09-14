@@ -1,5 +1,5 @@
 {
-  "balance": 1175.0335695752067,
+  "balance": 1174.4366004787032,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 128,
@@ -232,32 +232,6 @@
         "status": "open"
       }
     },
-    "ROSEUSDT__SMC": {
-      "trade_id": 233,
-      "symbol": "ROSEUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-14 19:45:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.0068,
-      "sl_price": 0.0068,
-      "tp1_price": 0.006901392058935695,
-      "tp2_price": 0.00700278411787139,
-      "qty_total": 14705.882352941177,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "lot_a": {
-        "qty": 7352.941176470588,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 7352.941176470588,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "ETHUSDT__SMC": {
       "trade_id": 234,
       "symbol": "ETHUSDT",
@@ -336,32 +310,6 @@
         "status": "open"
       }
     },
-    "BNBUSDT__SMC": {
-      "trade_id": 237,
-      "symbol": "BNBUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-14 21:00:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 724.09,
-      "sl_price": 719.767406469129,
-      "tp1_price": 730.5738902963066,
-      "tp2_price": 737.0577805926131,
-      "qty_total": 0.13810437928986727,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "lot_a": {
-        "qty": 0.06905218964493363,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.06905218964493363,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "CRVUSDT__SMC": {
       "trade_id": 238,
       "symbol": "CRVUSDT",
@@ -413,7 +361,33 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "BNBUSDT__ST": {
+      "trade_id": 242,
+      "symbol": "BNBUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-09-14 22:45:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 722.6,
+      "sl_price": 715.4337039142105,
+      "tp1_price": 733.3494441286844,
+      "tp2_price": 744.0988882573687,
+      "qty_total": 0.41516745087185164,
+      "notional": 300.0,
+      "leverage": 3.0,
+      "lot_a": {
+        "qty": 0.20758372543592582,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.20758372543592582,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 242
+  "next_trade_id": 243
 }
