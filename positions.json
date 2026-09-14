@@ -1,5 +1,5 @@
 {
-  "balance": 1157.0289267676642,
+  "balance": 1158.0718875293742,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 128,
@@ -189,7 +189,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 2518.45,
-      "sl_price": 2536.198053465243,
+      "sl_price": 2518.45,
       "tp1_price": 2491.827919802135,
       "tp2_price": 2465.2058396042703,
       "qty_total": 0.0397069626158947,
@@ -198,7 +198,7 @@
       "lot_a": {
         "qty": 0.01985348130794735,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.01985348130794735,
@@ -215,7 +215,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 101.75,
-      "sl_price": 102.4478961819335,
+      "sl_price": 101.75,
       "tp1_price": 100.70315572709976,
       "tp2_price": 99.6563114541995,
       "qty_total": 0.9828009828009828,
@@ -224,7 +224,7 @@
       "lot_a": {
         "qty": 0.4914004914004914,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.4914004914004914,
@@ -361,7 +361,33 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "DOGEUSDT__ST": {
+      "trade_id": 232,
+      "symbol": "DOGEUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-09-14 13:00:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.08348,
+      "sl_price": 0.08229313099512589,
+      "tp1_price": 0.08526030350731116,
+      "tp2_price": 0.08704060701462232,
+      "qty_total": 3593.6751317680882,
+      "notional": 300.0,
+      "leverage": 3.0,
+      "lot_a": {
+        "qty": 1796.8375658840441,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 1796.8375658840441,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 232
+  "next_trade_id": 233
 }
