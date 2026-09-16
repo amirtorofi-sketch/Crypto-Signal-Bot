@@ -1,5 +1,5 @@
 {
-  "balance": 1001.4643428279511,
+  "balance": 1001.5801270536715,
   "positions": {
     "BNBUSDT": {
       "trade_id": 263,
@@ -38,13 +38,13 @@
       "candle_time": "2026-09-16 02:30:00",
       "entry_price": 0.08018,
       "initial_sl_price": 0.0810052070416229,
-      "sl_price": 0.0810052070416229,
+      "sl_price": 0.08018,
       "tp1_price": 0.07894218943756566,
       "tp2_price": 0.07770437887513132,
       "qty_total": 187.07907208780244,
       "notional": 15.0,
-      "qty_open": 187.07907208780244,
-      "phase": "before_tp1"
+      "qty_open": 93.53953604390122,
+      "phase": "after_tp1"
     },
     "EURUSDT": {
       "trade_id": 272,
@@ -60,7 +60,22 @@
       "notional": 15.0,
       "qty_open": 12.998266897746968,
       "phase": "before_tp1"
+    },
+    "ETHUSDT": {
+      "trade_id": 273,
+      "symbol": "ETHUSDT",
+      "direction": "long",
+      "candle_time": "2026-09-16 13:00:00",
+      "entry_price": 2401.88,
+      "initial_sl_price": 2385.4304239919525,
+      "sl_price": 2385.4304239919525,
+      "tp1_price": 2426.5543640120713,
+      "tp2_price": 2451.228728024143,
+      "qty_total": 0.006245107998734324,
+      "notional": 15.0,
+      "qty_open": 0.006245107998734324,
+      "phase": "before_tp1"
     }
   },
-  "next_trade_id": 273
+  "next_trade_id": 274
 }
