@@ -1,5 +1,5 @@
 {
-  "balance": 1118.887259606194,
+  "balance": 1119.9024108790984,
   "positions": {
     "ROSEUSDT__ST": {
       "trade_id": 157,
@@ -114,7 +114,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.0071,
-      "sl_price": 0.007003899012831711,
+      "sl_price": 0.0071,
       "tp1_price": 0.007244151480752435,
       "tp2_price": 0.00738830296150487,
       "qty_total": 14084.507042253521,
@@ -123,7 +123,7 @@
       "lot_a": {
         "qty": 7042.2535211267605,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 7042.2535211267605,
@@ -260,7 +260,33 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CHZUSDT__SMC": {
+      "trade_id": 318,
+      "symbol": "CHZUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-16 10:00:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.01362,
+      "sl_price": 0.0135100643425116,
+      "tp1_price": 0.0137849034862326,
+      "tp2_price": 0.013949806972465202,
+      "qty_total": 7342.143906020558,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 3671.071953010279,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 3671.071953010279,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 318
+  "next_trade_id": 319
 }
