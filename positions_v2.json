@@ -1,5 +1,5 @@
 {
-  "balance": 1001.7003109243344,
+  "balance": 1001.8755529589391,
   "positions": {
     "DOGEUSDT": {
       "trade_id": 276,
@@ -8,13 +8,13 @@
       "candle_time": "2026-09-16 18:30:00",
       "entry_price": 0.08016,
       "initial_sl_price": 0.07891134208943003,
-      "sl_price": 0.07891134208943003,
+      "sl_price": 0.08016,
       "tp1_price": 0.08203298686585495,
       "tp2_price": 0.0839059737317099,
       "qty_total": 187.125748502994,
       "notional": 15.0,
-      "qty_open": 187.125748502994,
-      "phase": "before_tp1"
+      "qty_open": 93.562874251497,
+      "phase": "after_tp1"
     },
     "ETHUSDT": {
       "trade_id": 277,
@@ -47,7 +47,24 @@
       "margin_usd": 15.0,
       "qty_open": 0.0017212928515855403,
       "phase": "after_tp1"
+    },
+    "BTCUSDT": {
+      "trade_id": 284,
+      "symbol": "BTCUSDT",
+      "direction": "short",
+      "candle_time": "2026-09-17 14:00:00",
+      "entry_price": 76965.72,
+      "initial_sl_price": 77517.00007358605,
+      "sl_price": 77517.00007358605,
+      "tp1_price": 76138.79988962092,
+      "tp2_price": 75311.87977924185,
+      "qty_total": 0.00019489195969322445,
+      "notional": 15.0,
+      "leverage": 1.0,
+      "margin_usd": 15.0,
+      "qty_open": 0.00019489195969322445,
+      "phase": "before_tp1"
     }
   },
-  "next_trade_id": 284
+  "next_trade_id": 285
 }

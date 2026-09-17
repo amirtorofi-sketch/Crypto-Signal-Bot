@@ -1,5 +1,5 @@
 {
-  "balance": 1122.4725504806054,
+  "balance": 1122.865085212095,
   "positions": {
     "BTCUSDT__ST": {
       "trade_id": 289,
@@ -183,32 +183,6 @@
         "status": "open"
       }
     },
-    "MASKUSDT__SMC": {
-      "trade_id": 359,
-      "symbol": "MASKUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-17 12:00:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.434,
-      "sl_price": 0.434,
-      "tp1_price": 0.4290926284989952,
-      "tp2_price": 0.42418525699799037,
-      "qty_total": 230.4147465437788,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "lot_a": {
-        "qty": 115.2073732718894,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 115.2073732718894,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "BNBUSDT__SMC": {
       "trade_id": 361,
       "symbol": "BNBUSDT",
@@ -270,7 +244,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 76152.0,
-      "sl_price": 75753.43593503477,
+      "sl_price": 76152.0,
       "tp1_price": 76749.84609744785,
       "tp2_price": 77347.6921948957,
       "qty_total": 0.0013131631473894316,
@@ -279,7 +253,7 @@
       "lot_a": {
         "qty": 0.0006565815736947158,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.0006565815736947158,
@@ -312,7 +286,33 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "DOGEUSDT__SMC": {
+      "trade_id": 365,
+      "symbol": "DOGEUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-17 14:00:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.08202,
+      "sl_price": 0.08272419153269428,
+      "tp1_price": 0.08096371270095856,
+      "tp2_price": 0.07990742540191714,
+      "qty_total": 1219.21482565228,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 609.60741282614,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 609.60741282614,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 365
+  "next_trade_id": 366
 }
