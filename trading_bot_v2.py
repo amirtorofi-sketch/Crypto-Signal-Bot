@@ -14,6 +14,15 @@ from signal_bot_v2 import check_strategy_smc_v2, get_htf_bias_v2, get_sl_atr_mul
 FIXED_TRADE_AMOUNT = 15.0
 STARTING_BALANCE = 1000.0
 
+# لوریج مخصوص هر نماد. نمادهایی که اینجا نیستن با لوریج پیش‌فرض (بدون اهرم) باز می‌شن.
+LEVERAGE_OVERRIDES = {"ETHUSDT": 10.0}
+DEFAULT_LEVERAGE = 1.0
+
+
+def get_leverage(symbol: str) -> float:
+    """لوریج مناسب برای هر نماد؛ اگه توی LEVERAGE_OVERRIDES نبود، پیش‌فرض ۱x برمی‌گرده."""
+    return LEVERAGE_OVERRIDES.get(symbol, DEFAULT_LEVERAGE)
+
 POSITIONS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "positions_v2.json")
 
 
@@ -45,8 +54,10 @@ def open_position(state: dict, symbol: str, direction: str, entry_price: float, 
         )
         return
 
-    qty_total = FIXED_TRADE_AMOUNT / entry_price if entry_price > 0 else 0
-    notional = qty_total * entry_price
+    leverage = get_leverage(symbol)
+    margin_usd = FIXED_TRADE_AMOUNT
+    notional = margin_usd * leverage
+    qty_total = notional / entry_price if entry_price > 0 else 0
     if qty_total <= 0 or notional < 5:
         print(f"[{symbol}] حجم/ارزش نامعتبر، رد شد.")
         return
@@ -63,6 +74,7 @@ def open_position(state: dict, symbol: str, direction: str, entry_price: float, 
         "sl_price": sl_price,          # همیشه فقط یک SL فعال (نه دو تا)
         "tp1_price": tp1_price, "tp2_price": tp2_price,
         "qty_total": qty_total, "notional": notional,
+        "leverage": leverage, "margin_usd": margin_usd,
         "qty_open": qty_total,          # حجم فعلاً باز (کل، تا قبل از TP1)
         "phase": "before_tp1",          # before_tp1 -> after_tp1
     }
@@ -73,7 +85,7 @@ def open_position(state: dict, symbol: str, direction: str, entry_price: float, 
     candle_line = f"زمان کندل: {candle_time}\n" if candle_time is not None else ""
     send_telegram_message_v2(
         f"{emoji} <b>#{trade_id} | پوزیشن فرضی {direction_label} باز شد (Paper Trading)</b> | ICT/SMC v2\n"
-        f"نماد: <b>{symbol}</b>\n{candle_line}حجم: {qty_total:.6f}\nارزش ورودی: {notional:.2f}$\n"
+        f"نماد: <b>{symbol}</b>\n{candle_line}حجم: {qty_total:.6f}\nارزش معامله: {notional:.2f}$ (لوریج {leverage:g}x)\n"
         f"ورود: {entry_price:.6f}\nSL: {sl_price:.6f}\nTP1: {tp1_price:.6f}\nTP2: {tp2_price:.6f}\n"
         f"—\nموجودی نقدی: {state['balance']:.2f}$\nسرمایه‌ی درگیر: {exposure:.2f}$\n"
         f"ارزش کل حساب: {state['balance'] + exposure:.2f}$"
