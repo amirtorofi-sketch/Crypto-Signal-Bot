@@ -1,5 +1,5 @@
 {
-  "balance": 1083.813711719163,
+  "balance": 1083.3641523520093,
   "positions": {
     "BTCUSDT__ST": {
       "trade_id": 289,
@@ -235,32 +235,6 @@
         "status": "open"
       }
     },
-    "MASKUSDT__SMC": {
-      "trade_id": 381,
-      "symbol": "MASKUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-17 23:15:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.435,
-      "sl_price": 0.43695558324711736,
-      "tp1_price": 0.4320666251293239,
-      "tp2_price": 0.4291332502586479,
-      "qty_total": 229.88505747126436,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "lot_a": {
-        "qty": 114.94252873563218,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 114.94252873563218,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "MANAUSDT__SMC": {
       "trade_id": 382,
       "symbol": "MANAUSDT",
@@ -312,7 +286,33 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ROSEUSDT__SMC": {
+      "trade_id": 384,
+      "symbol": "ROSEUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-18 00:00:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.00698,
+      "sl_price": 0.006737046209137399,
+      "tp1_price": 0.007344430686293901,
+      "tp2_price": 0.007708861372587803,
+      "qty_total": 14326.647564469913,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 7163.3237822349565,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 7163.3237822349565,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 384
+  "next_trade_id": 385
 }
