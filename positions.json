@@ -1,5 +1,5 @@
 {
-  "balance": 1079.5136016591853,
+  "balance": 1078.6550409024255,
   "positions": {
     "BTCUSDT__ST": {
       "trade_id": 289,
@@ -101,32 +101,6 @@
       },
       "lot_b": {
         "qty": 0.0006565815736947158,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "DOGEUSDT__SMC": {
-      "trade_id": 365,
-      "symbol": "DOGEUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-17 14:00:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.08202,
-      "sl_price": 0.08272419153269428,
-      "tp1_price": 0.08096371270095856,
-      "tp2_price": 0.07990742540191714,
-      "qty_total": 1219.21482565228,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "lot_a": {
-        "qty": 609.60741282614,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 609.60741282614,
         "target": "tp2",
         "status": "open"
       }
@@ -260,7 +234,33 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "BNBUSDT__SMC": {
+      "trade_id": 389,
+      "symbol": "BNBUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-18 02:15:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 749.57,
+      "sl_price": 753.5925209383702,
+      "tp1_price": 743.5362185924448,
+      "tp2_price": 737.5024371848897,
+      "qty_total": 0.13340982163106846,
+      "notional": 99.99999999999999,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 0.06670491081553423,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.06670491081553423,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 389
+  "next_trade_id": 390
 }
