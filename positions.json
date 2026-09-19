@@ -1,5 +1,5 @@
 {
-  "balance": 954.7071991957969,
+  "balance": 945.3343758663891,
   "positions": {
     "BTCUSDT__ST": {
       "trade_id": 289,
@@ -210,31 +210,57 @@
       }
     },
     "ONEUSDT__SMC": {
-      "trade_id": 450,
+      "trade_id": 451,
       "symbol": "ONEUSDT",
       "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-19 18:00:00",
+      "candle_time": "2026-09-19 18:15:00",
       "session": "نیویورک",
       "raw_direction": "long",
       "direction": "short",
-      "entry_price": 0.003588,
-      "sl_price": 0.003924296901059154,
-      "tp1_price": 0.0030835546484112688,
-      "tp2_price": 0.0025791092968225375,
-      "qty_total": 27870.68004459309,
+      "entry_price": 0.00418,
+      "sl_price": 0.004594489979556214,
+      "tp1_price": 0.003558265030665677,
+      "tp2_price": 0.002936530061331355,
+      "qty_total": 23923.444976076556,
       "notional": 100.0,
       "leverage": 1.0,
       "lot_a": {
-        "qty": 13935.340022296545,
+        "qty": 11961.722488038278,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 13935.340022296545,
+        "qty": 11961.722488038278,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "MASKUSDT__SMC": {
+      "trade_id": 452,
+      "symbol": "MASKUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-19 18:15:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.471,
+      "sl_price": 0.47434576477402673,
+      "tp1_price": 0.4659813528389598,
+      "tp2_price": 0.4609627056779197,
+      "qty_total": 212.31422505307856,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 106.15711252653928,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 106.15711252653928,
         "target": "tp2",
         "status": "open"
       }
     }
   },
-  "next_trade_id": 451
+  "next_trade_id": 453
 }
