@@ -1,5 +1,5 @@
 {
-  "balance": 955.5024051933269,
+  "balance": 959.1119007843715,
   "positions": {
     "BTCUSDT__ST": {
       "trade_id": 289,
@@ -49,32 +49,6 @@
       },
       "lot_b": {
         "qty": 78905.83903208838,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "CRVUSDT__ST": {
-      "trade_id": 423,
-      "symbol": "CRVUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-09-18 20:30:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.3468,
-      "sl_price": 0.3468,
-      "tp1_price": 0.3277001188141202,
-      "tp2_price": 0.30860023762824046,
-      "qty_total": 865.0519031141869,
-      "notional": 300.0,
-      "leverage": 3.0,
-      "lot_a": {
-        "qty": 432.52595155709344,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 432.52595155709344,
         "target": "tp2",
         "status": "open"
       }
@@ -192,7 +166,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.001864,
-      "sl_price": 0.0018293275427059017,
+      "sl_price": 0.001864,
       "tp1_price": 0.0019160086859411475,
       "tp2_price": 0.0019680173718822948,
       "qty_total": 53648.0686695279,
@@ -201,7 +175,7 @@
       "lot_a": {
         "qty": 26824.03433476395,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 26824.03433476395,
@@ -231,32 +205,6 @@
       },
       "lot_b": {
         "qty": 1783.5909631391203,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "CRVUSDT__SMC": {
-      "trade_id": 464,
-      "symbol": "CRVUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-20 11:15:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.3313,
-      "sl_price": 0.3313,
-      "tp1_price": 0.33863634965163325,
-      "tp2_price": 0.3459726993032666,
-      "qty_total": 301.84123151222457,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "lot_a": {
-        "qty": 150.92061575611228,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 150.92061575611228,
         "target": "tp2",
         "status": "open"
       }
@@ -312,7 +260,33 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ROSEUSDT__ST": {
+      "trade_id": 468,
+      "symbol": "ROSEUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-09-20 16:15:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.00744,
+      "sl_price": 0.007634636978459965,
+      "tp1_price": 0.007148044532310053,
+      "tp2_price": 0.006856089064620106,
+      "qty_total": 40322.58064516129,
+      "notional": 300.0,
+      "leverage": 3.0,
+      "lot_a": {
+        "qty": 20161.290322580644,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 20161.290322580644,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 468
+  "next_trade_id": 469
 }
