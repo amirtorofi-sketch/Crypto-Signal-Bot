@@ -1,5 +1,5 @@
 {
-  "balance": 955.509367779107,
+  "balance": 956.5373179449057,
   "positions": {
     "BTCUSDT__ST": {
       "trade_id": 289,
@@ -166,7 +166,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 2574.23,
-      "sl_price": 2556.4203110756603,
+      "sl_price": 2574.23,
       "tp1_price": 2600.9445333865096,
       "tp2_price": 2627.6590667730193,
       "qty_total": 0.03884656771150985,
@@ -175,7 +175,7 @@
       "lot_a": {
         "qty": 0.019423283855754925,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.019423283855754925,
@@ -192,7 +192,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 747.83,
-      "sl_price": 742.7540669744913,
+      "sl_price": 747.83,
       "tp1_price": 755.4438995382632,
       "tp2_price": 763.0577990765264,
       "qty_total": 0.13372023053367743,
@@ -201,7 +201,7 @@
       "lot_a": {
         "qty": 0.06686011526683872,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.06686011526683872,
@@ -286,7 +286,33 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ETHUSDT__ST": {
+      "trade_id": 465,
+      "symbol": "ETHUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-09-20 15:00:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 2596.66,
+      "sl_price": 2624.1836186906253,
+      "tp1_price": 2555.374571964062,
+      "tp2_price": 2514.0891439281236,
+      "qty_total": 0.11553303089353247,
+      "notional": 300.0,
+      "leverage": 3.0,
+      "lot_a": {
+        "qty": 0.05776651544676623,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.05776651544676623,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 465
+  "next_trade_id": 466
 }
