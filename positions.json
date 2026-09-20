@@ -183,32 +183,6 @@
         "status": "open"
       }
     },
-    "DOGEUSDT__SMC": {
-      "trade_id": 470,
-      "symbol": "DOGEUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-20 16:45:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.08754,
-      "sl_price": 0.08754,
-      "tp1_price": 0.08637832842659077,
-      "tp2_price": 0.08521665685318154,
-      "qty_total": 1142.334932602239,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "lot_a": {
-        "qty": 571.1674663011195,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 571.1674663011195,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "ROSEUSDT__SMC": {
       "trade_id": 472,
       "symbol": "ROSEUSDT",
@@ -286,7 +260,33 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CRVUSDT__SMC": {
+      "trade_id": 475,
+      "symbol": "CRVUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-20 22:15:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.363,
+      "sl_price": 0.3705193565269433,
+      "tp1_price": 0.35172096520958507,
+      "tp2_price": 0.3404419304191701,
+      "qty_total": 275.4820936639118,
+      "notional": 99.99999999999999,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 137.7410468319559,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 137.7410468319559,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 475
+  "next_trade_id": 476
 }
