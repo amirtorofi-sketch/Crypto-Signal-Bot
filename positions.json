@@ -1,32 +1,6 @@
 {
-  "balance": 936.9539712327846,
+  "balance": 950.3437376504991,
   "positions": {
-    "BTCUSDT__ST": {
-      "trade_id": 289,
-      "symbol": "BTCUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-09-15 18:30:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 75773.02,
-      "sl_price": 75773.02,
-      "tp1_price": 78880.15199519755,
-      "tp2_price": 81987.28399039508,
-      "qty_total": 0.003959192863106155,
-      "notional": 300.0,
-      "leverage": 3.0,
-      "lot_a": {
-        "qty": 0.0019795964315530777,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 0.0019795964315530777,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "ONEUSDT__SMC": {
       "trade_id": 456,
       "symbol": "ONEUSDT",
@@ -114,7 +88,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.363,
-      "sl_price": 0.3705193565269433,
+      "sl_price": 0.363,
       "tp1_price": 0.35172096520958507,
       "tp2_price": 0.3404419304191701,
       "qty_total": 275.4820936639118,
@@ -123,36 +97,10 @@
       "lot_a": {
         "qty": 137.7410468319559,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 137.7410468319559,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "BTCUSDT__SMC": {
-      "trade_id": 476,
-      "symbol": "BTCUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-21 00:00:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 81683.96,
-      "sl_price": 82064.24332026209,
-      "tp1_price": 81113.53501960688,
-      "tp2_price": 80543.11003921376,
-      "qty_total": 0.0012242305588514562,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "lot_a": {
-        "qty": 0.0006121152794257281,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0006121152794257281,
         "target": "tp2",
         "status": "open"
       }
