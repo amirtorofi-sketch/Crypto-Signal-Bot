@@ -1,5 +1,5 @@
 {
-  "balance": 1008.1376051482828,
+  "balance": 1008.252756309157,
   "positions": {
     "SOLUSDT": {
       "trade_id": 321,
@@ -8,15 +8,15 @@
       "candle_time": "2026-09-20 21:00:00",
       "entry_price": 109.66,
       "initial_sl_price": 108.53755766209206,
-      "sl_price": 108.53755766209206,
+      "sl_price": 109.66,
       "tp1_price": 111.3436635068619,
       "tp2_price": 113.02732701372382,
       "qty_total": 0.13678643078606603,
       "notional": 15.0,
       "leverage": 1.0,
       "margin_usd": 15.0,
-      "qty_open": 0.13678643078606603,
-      "phase": "before_tp1"
+      "qty_open": 0.06839321539303302,
+      "phase": "after_tp1"
     },
     "BNBUSDT": {
       "trade_id": 322,
@@ -68,7 +68,24 @@
       "margin_usd": 15.0,
       "qty_open": 0.05682593080874665,
       "phase": "before_tp1"
+    },
+    "PAXGUSDT": {
+      "trade_id": 325,
+      "symbol": "PAXGUSDT",
+      "direction": "long",
+      "candle_time": "2026-09-20 23:45:00",
+      "entry_price": 4364.26,
+      "initial_sl_price": 4361.724989092765,
+      "sl_price": 4361.724989092765,
+      "tp1_price": 4368.062516360853,
+      "tp2_price": 4371.865032721706,
+      "qty_total": 0.0034370087941598343,
+      "notional": 15.0,
+      "leverage": 1.0,
+      "margin_usd": 15.0,
+      "qty_open": 0.0034370087941598343,
+      "phase": "before_tp1"
     }
   },
-  "next_trade_id": 325
+  "next_trade_id": 326
 }
