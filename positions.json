@@ -1,5 +1,5 @@
 {
-  "balance": 982.0235249571364,
+  "balance": 980.271197040552,
   "positions": {
     "MANAUSDT__ST": {
       "trade_id": 462,
@@ -157,32 +157,6 @@
         "status": "open"
       }
     },
-    "VETUSDT__SMC": {
-      "trade_id": 509,
-      "symbol": "VETUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-21 19:00:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.009053,
-      "sl_price": 0.009211638246288388,
-      "tp1_price": 0.008815042630567418,
-      "tp2_price": 0.008577085261134836,
-      "qty_total": 11046.062078868883,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "lot_a": {
-        "qty": 5523.0310394344415,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 5523.0310394344415,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "CRVUSDT__ST": {
       "trade_id": 510,
       "symbol": "CRVUSDT",
@@ -208,7 +182,111 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "BTCUSDT__SMC": {
+      "trade_id": 511,
+      "symbol": "BTCUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-21 20:15:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 87278.42,
+      "sl_price": 87875.17591029253,
+      "tp1_price": 86383.2861345612,
+      "tp2_price": 85488.15226912241,
+      "qty_total": 0.0011457585964548855,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 0.0005728792982274427,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0005728792982274427,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "ETHUSDT__SMC": {
+      "trade_id": 512,
+      "symbol": "ETHUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-21 20:15:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 2804.69,
+      "sl_price": 2831.036950057702,
+      "tp1_price": 2765.169574913447,
+      "tp2_price": 2725.649149826894,
+      "qty_total": 0.035654564319051306,
+      "notional": 100.00000000000001,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 0.017827282159525653,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.017827282159525653,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "CRVUSDT__SMC": {
+      "trade_id": 513,
+      "symbol": "CRVUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-21 20:15:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.3677,
+      "sl_price": 0.3753659957182249,
+      "tp1_price": 0.3562010064226627,
+      "tp2_price": 0.3447020128453255,
+      "qty_total": 271.9608376393799,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 135.98041881968996,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 135.98041881968996,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "GALAUSDT__SMC": {
+      "trade_id": 514,
+      "symbol": "GALAUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-21 20:15:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.002123,
+      "sl_price": 0.0021666252350073345,
+      "tp1_price": 0.002057562147488998,
+      "tp2_price": 0.001992124294977996,
+      "qty_total": 47103.15591144607,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 23551.577955723034,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 23551.577955723034,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 511
+  "next_trade_id": 515
 }
