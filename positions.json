@@ -1,5 +1,5 @@
 {
-  "balance": 967.0783764453498,
+  "balance": 961.2255861291891,
   "positions": {
     "CRVUSDT__ST": {
       "trade_id": 510,
@@ -49,32 +49,6 @@
       },
       "lot_b": {
         "qty": 477.190303493033,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "MASKUSDT__ST": {
-      "trade_id": 525,
-      "symbol": "MASKUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-09-22 07:30:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.489,
-      "sl_price": 0.4985400482153421,
-      "tp1_price": 0.4746899276769868,
-      "tp2_price": 0.4603798553539737,
-      "qty_total": 613.4969325153374,
-      "notional": 300.0,
-      "leverage": 3.0,
-      "lot_a": {
-        "qty": 306.7484662576687,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 306.7484662576687,
         "target": "tp2",
         "status": "open"
       }
@@ -157,32 +131,6 @@
         "status": "open"
       }
     },
-    "VETUSDT__SMC": {
-      "trade_id": 536,
-      "symbol": "VETUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-22 19:15:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.009346,
-      "sl_price": 0.009346,
-      "tp1_price": 0.009152339310911178,
-      "tp2_price": 0.008958678621822355,
-      "qty_total": 10699.764605178685,
-      "notional": 99.99999999999999,
-      "leverage": 1.0,
-      "lot_a": {
-        "qty": 5349.8823025893425,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 5349.8823025893425,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "CRVUSDT__SMC": {
       "trade_id": 537,
       "symbol": "CRVUSDT",
@@ -260,7 +208,33 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "GALAUSDT__SMC": {
+      "trade_id": 540,
+      "symbol": "GALAUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-22 23:15:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.002158,
+      "sl_price": 0.0021941484611411773,
+      "tp1_price": 0.0021037773082882346,
+      "tp2_price": 0.002049554616576469,
+      "qty_total": 46339.20296570899,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 23169.601482854494,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 23169.601482854494,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 540
+  "next_trade_id": 541
 }
