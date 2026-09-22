@@ -1,5 +1,40 @@
 {
   "balance": 1012.6079645063745,
-  "positions": {},
-  "next_trade_id": 339
+  "positions": {
+    "ETHUSDT": {
+      "trade_id": 339,
+      "symbol": "ETHUSDT",
+      "direction": "short",
+      "candle_time": "2026-09-22 05:45:00",
+      "entry_price": 2733.54,
+      "initial_sl_price": 2754.5764791326756,
+      "sl_price": 2754.5764791326756,
+      "tp1_price": 2701.9852813009866,
+      "tp2_price": 2670.430562601973,
+      "qty_total": 0.05487389977830945,
+      "notional": 150.0,
+      "leverage": 10.0,
+      "margin_usd": 15.0,
+      "qty_open": 0.05487389977830945,
+      "phase": "before_tp1"
+    },
+    "SOLUSDT": {
+      "trade_id": 340,
+      "symbol": "SOLUSDT",
+      "direction": "short",
+      "candle_time": "2026-09-22 05:45:00",
+      "entry_price": 116.86,
+      "initial_sl_price": 118.16950757286337,
+      "sl_price": 118.16950757286337,
+      "tp1_price": 114.89573864070495,
+      "tp2_price": 112.9314772814099,
+      "qty_total": 0.12835871983570085,
+      "notional": 15.0,
+      "leverage": 1.0,
+      "margin_usd": 15.0,
+      "qty_open": 0.12835871983570085,
+      "phase": "before_tp1"
+    }
+  },
+  "next_trade_id": 341
 }
