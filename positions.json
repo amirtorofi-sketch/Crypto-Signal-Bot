@@ -1,5 +1,5 @@
 {
-  "balance": 956.4997161309772,
+  "balance": 958.2558189557064,
   "positions": {
     "CRVUSDT__ST": {
       "trade_id": 510,
@@ -209,32 +209,6 @@
         "status": "open"
       }
     },
-    "ETHUSDT__SMC": {
-      "trade_id": 549,
-      "symbol": "ETHUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-23 06:00:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 2759.99,
-      "sl_price": 2759.99,
-      "tp1_price": 2734.4400763108633,
-      "tp2_price": 2708.890152621727,
-      "qty_total": 0.03623201533338889,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "lot_a": {
-        "qty": 0.018116007666694446,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 0.018116007666694446,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "MASKUSDT__SMC": {
       "trade_id": 550,
       "symbol": "MASKUSDT",
@@ -244,7 +218,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.499,
-      "sl_price": 0.5045247789510792,
+      "sl_price": 0.499,
       "tp1_price": 0.49071283157338125,
       "tp2_price": 0.4824256631467625,
       "qty_total": 200.40080160320642,
@@ -253,14 +227,40 @@
       "lot_a": {
         "qty": 100.20040080160321,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 100.20040080160321,
         "target": "tp2",
         "status": "open"
       }
+    },
+    "SOLUSDT__SMC": {
+      "trade_id": 551,
+      "symbol": "SOLUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-23 13:00:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 116.17,
+      "sl_price": 115.21110297351942,
+      "tp1_price": 117.60834553972089,
+      "tp2_price": 119.04669107944176,
+      "qty_total": 0.8608074373762589,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 0.43040371868812943,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.43040371868812943,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 551
+  "next_trade_id": 552
 }
