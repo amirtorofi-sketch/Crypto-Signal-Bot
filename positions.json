@@ -1,5 +1,5 @@
 {
-  "balance": 951.3493790572232,
+  "balance": 949.9545381435013,
   "positions": {
     "CRVUSDT__ST": {
       "trade_id": 510,
@@ -131,32 +131,6 @@
         "status": "open"
       }
     },
-    "ETHUSDT__SMC": {
-      "trade_id": 539,
-      "symbol": "ETHUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-22 23:00:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 2766.49,
-      "sl_price": 2784.0086545772033,
-      "tp1_price": 2740.2120181341943,
-      "tp2_price": 2713.9340362683893,
-      "qty_total": 0.036146886487932364,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "lot_a": {
-        "qty": 0.018073443243966182,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.018073443243966182,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "GALAUSDT__SMC": {
       "trade_id": 540,
       "symbol": "GALAUSDT",
@@ -179,32 +153,6 @@
       },
       "lot_b": {
         "qty": 23169.601482854494,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "SOLUSDT__SMC": {
-      "trade_id": 541,
-      "symbol": "SOLUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-22 23:45:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 118.57,
-      "sl_price": 119.4730244901954,
-      "tp1_price": 117.21546326470688,
-      "tp2_price": 115.86092652941377,
-      "qty_total": 0.8433836552247618,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "lot_a": {
-        "qty": 0.4216918276123809,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.4216918276123809,
         "target": "tp2",
         "status": "open"
       }
@@ -260,7 +208,59 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ETHUSDT__ST": {
+      "trade_id": 544,
+      "symbol": "ETHUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-09-23 03:30:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 2783.11,
+      "sl_price": 2825.0987604282273,
+      "tp1_price": 2720.1268593576597,
+      "tp2_price": 2657.1437187153188,
+      "qty_total": 0.10779308040285866,
+      "notional": 300.0,
+      "leverage": 3.0,
+      "lot_a": {
+        "qty": 0.05389654020142933,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.05389654020142933,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "SOLUSDT__SMC": {
+      "trade_id": 545,
+      "symbol": "SOLUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-23 03:30:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 119.65,
+      "sl_price": 120.55478480941923,
+      "tp1_price": 118.29282278587117,
+      "tp2_price": 116.93564557174233,
+      "qty_total": 0.8357709987463434,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 0.4178854993731717,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.4178854993731717,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 544
+  "next_trade_id": 546
 }
