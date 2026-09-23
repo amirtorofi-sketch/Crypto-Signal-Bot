@@ -1,5 +1,5 @@
 {
-  "balance": 948.2604849565661,
+  "balance": 947.3135469908824,
   "positions": {
     "CRVUSDT__ST": {
       "trade_id": 510,
@@ -131,58 +131,6 @@
         "status": "open"
       }
     },
-    "BTCUSDT__SMC": {
-      "trade_id": 542,
-      "symbol": "BTCUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-23 01:00:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 86721.43,
-      "sl_price": 87095.50104011643,
-      "tp1_price": 86160.32343982533,
-      "tp2_price": 85599.21687965067,
-      "qty_total": 0.0011531175166276664,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "lot_a": {
-        "qty": 0.0005765587583138332,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0005765587583138332,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "BNBUSDT__SMC": {
-      "trade_id": 543,
-      "symbol": "BNBUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-23 03:00:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 794.81,
-      "sl_price": 798.9079616488704,
-      "tp1_price": 788.6630575266943,
-      "tp2_price": 782.5161150533887,
-      "qty_total": 0.1258162328103572,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "lot_a": {
-        "qty": 0.0629081164051786,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0629081164051786,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "ETHUSDT__ST": {
       "trade_id": 544,
       "symbol": "ETHUSDT",
@@ -260,7 +208,33 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "MASKUSDT__ST": {
+      "trade_id": 547,
+      "symbol": "MASKUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-09-23 04:15:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.499,
+      "sl_price": 0.5080711097508913,
+      "tp1_price": 0.485393335373663,
+      "tp2_price": 0.47178667074732605,
+      "qty_total": 601.2024048096192,
+      "notional": 300.0,
+      "leverage": 3.0,
+      "lot_a": {
+        "qty": 300.6012024048096,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 300.6012024048096,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 547
+  "next_trade_id": 548
 }
