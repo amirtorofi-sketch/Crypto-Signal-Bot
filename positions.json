@@ -1,5 +1,5 @@
 {
-  "balance": 989.2104050823775,
+  "balance": 988.8567169945087,
   "positions": {
     "CRVUSDT__ST": {
       "trade_id": 510,
@@ -88,7 +88,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 760.19,
-      "sl_price": 752.1746009639198,
+      "sl_price": 760.19,
       "tp1_price": 772.2130985541204,
       "tp2_price": 784.2361971082407,
       "qty_total": 0.13154606085320775,
@@ -97,7 +97,7 @@
       "lot_a": {
         "qty": 0.06577303042660387,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.06577303042660387,
@@ -205,32 +205,6 @@
       },
       "lot_b": {
         "qty": 153.9408866995074,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "DOGEUSDT__SMC": {
-      "trade_id": 565,
-      "symbol": "DOGEUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-23 23:00:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.0927,
-      "sl_price": 0.09376093640370393,
-      "tp1_price": 0.0911085953944441,
-      "tp2_price": 0.08951719078888822,
-      "qty_total": 1078.7486515641856,
-      "notional": 100.00000000000001,
-      "leverage": 1.0,
-      "lot_a": {
-        "qty": 539.3743257820928,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 539.3743257820928,
         "target": "tp2",
         "status": "open"
       }
