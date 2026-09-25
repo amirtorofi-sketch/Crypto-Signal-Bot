@@ -1,5 +1,5 @@
 {
-  "balance": 1046.5095925246433,
+  "balance": 1045.1418347077738,
   "positions": {
     "CRVUSDT__ST": {
       "trade_id": 510,
@@ -183,32 +183,6 @@
         "status": "open"
       }
     },
-    "SOLUSDT__SMC": {
-      "trade_id": 613,
-      "symbol": "SOLUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-25 12:15:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 120.17,
-      "sl_price": 121.8136345685321,
-      "tp1_price": 117.70454814720186,
-      "tp2_price": 115.23909629440372,
-      "qty_total": 0.8321544478655238,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "lot_a": {
-        "qty": 0.4160772239327619,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.4160772239327619,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "BNBUSDT__SMC": {
       "trade_id": 614,
       "symbol": "BNBUSDT",
@@ -338,7 +312,33 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CRVUSDT__SMC": {
+      "trade_id": 621,
+      "symbol": "CRVUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-25 16:30:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.3441,
+      "sl_price": 0.33725067890432836,
+      "tp1_price": 0.35437398164350753,
+      "tp2_price": 0.364647963287015,
+      "qty_total": 290.6131938390003,
+      "notional": 100.00000000000001,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 145.30659691950015,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 145.30659691950015,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 621
+  "next_trade_id": 622
 }
