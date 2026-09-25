@@ -1,5 +1,5 @@
 {
-  "balance": 1043.2586730884489,
+  "balance": 1043.5286298697608,
   "positions": {
     "CRVUSDT__ST": {
       "trade_id": 510,
@@ -218,7 +218,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.0985,
-      "sl_price": 0.0995678147383967,
+      "sl_price": 0.0985,
       "tp1_price": 0.09689827789240496,
       "tp2_price": 0.09529655578480993,
       "qty_total": 1015.2284263959391,
@@ -227,7 +227,7 @@
       "lot_a": {
         "qty": 507.61421319796955,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 507.61421319796955,
@@ -261,32 +261,84 @@
         "status": "open"
       }
     },
-    "BTCUSDT__SMC": {
-      "trade_id": 612,
-      "symbol": "BTCUSDT",
+    "SOLUSDT__SMC": {
+      "trade_id": 613,
+      "symbol": "SOLUSDT",
       "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-25 12:00:00",
+      "candle_time": "2026-09-25 12:15:00",
       "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 84368.41,
-      "sl_price": 83910.20505890412,
-      "tp1_price": 85055.71741164383,
-      "tp2_price": 85743.02482328766,
-      "qty_total": 0.0011852777597681408,
-      "notional": 100.00000000000001,
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 120.17,
+      "sl_price": 121.8136345685321,
+      "tp1_price": 117.70454814720186,
+      "tp2_price": 115.23909629440372,
+      "qty_total": 0.8321544478655238,
+      "notional": 100.0,
       "leverage": 1.0,
       "lot_a": {
-        "qty": 0.0005926388798840704,
+        "qty": 0.4160772239327619,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 0.0005926388798840704,
+        "qty": 0.4160772239327619,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "BNBUSDT__SMC": {
+      "trade_id": 614,
+      "symbol": "BNBUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-25 12:15:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 778.65,
+      "sl_price": 784.0895387815264,
+      "tp1_price": 770.4906918277104,
+      "tp2_price": 762.3313836554208,
+      "qty_total": 0.1284274064085276,
+      "notional": 100.00000000000001,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 0.0642137032042638,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0642137032042638,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "CHZUSDT__SMC": {
+      "trade_id": 615,
+      "symbol": "CHZUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-25 12:15:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.0166,
+      "sl_price": 0.016810147748283023,
+      "tp1_price": 0.016284778377575464,
+      "tp2_price": 0.01596955675515093,
+      "qty_total": 6024.096385542169,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 3012.0481927710844,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 3012.0481927710844,
         "target": "tp2",
         "status": "open"
       }
     }
   },
-  "next_trade_id": 613
+  "next_trade_id": 616
 }
