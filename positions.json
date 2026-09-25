@@ -1,5 +1,5 @@
 {
-  "balance": 1043.5286298697608,
+  "balance": 1044.836622891169,
   "positions": {
     "CRVUSDT__ST": {
       "trade_id": 510,
@@ -101,32 +101,6 @@
       },
       "lot_b": {
         "qty": 9609.224855861627,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "MASKUSDT__SMC": {
-      "trade_id": 599,
-      "symbol": "MASKUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-25 02:30:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.458,
-      "sl_price": 0.458,
-      "tp1_price": 0.46399060803804937,
-      "tp2_price": 0.4699812160760987,
-      "qty_total": 218.34061135371178,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "lot_a": {
-        "qty": 109.17030567685589,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 109.17030567685589,
         "target": "tp2",
         "status": "open"
       }
@@ -312,7 +286,33 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "MASKUSDT__SMC": {
+      "trade_id": 616,
+      "symbol": "MASKUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-25 12:45:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.47,
+      "sl_price": 0.47382336510240813,
+      "tp1_price": 0.46426495234638776,
+      "tp2_price": 0.4585299046927755,
+      "qty_total": 212.76595744680853,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 106.38297872340426,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 106.38297872340426,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 616
+  "next_trade_id": 617
 }
