@@ -183,32 +183,6 @@
         "status": "open"
       }
     },
-    "GALAUSDT__SMC": {
-      "trade_id": 611,
-      "symbol": "GALAUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-25 11:00:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.002119,
-      "sl_price": 0.002119,
-      "tp1_price": 0.0020652168515678066,
-      "tp2_price": 0.002011433703135613,
-      "qty_total": 47192.071731949036,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "lot_a": {
-        "qty": 23596.035865974518,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 23596.035865974518,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "SOLUSDT__SMC": {
       "trade_id": 613,
       "symbol": "SOLUSDT",
@@ -338,7 +312,33 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "GALAUSDT__SMC": {
+      "trade_id": 620,
+      "symbol": "GALAUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-25 15:00:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.002122,
+      "sl_price": 0.0021679352883948702,
+      "tp1_price": 0.002053097067407695,
+      "tp2_price": 0.00198419413481539,
+      "qty_total": 47125.3534401508,
+      "notional": 100.00000000000001,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 23562.6767200754,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 23562.6767200754,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 620
+  "next_trade_id": 621
 }
