@@ -1,5 +1,5 @@
 {
-  "balance": 1046.7158034430722,
+  "balance": 1048.1892055545459,
   "positions": {
     "CRVUSDT__ST": {
       "trade_id": 510,
@@ -244,7 +244,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 778.65,
-      "sl_price": 784.0895387815264,
+      "sl_price": 778.65,
       "tp1_price": 770.4906918277104,
       "tp2_price": 762.3313836554208,
       "qty_total": 0.1284274064085276,
@@ -253,7 +253,7 @@
       "lot_a": {
         "qty": 0.0642137032042638,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.0642137032042638,
@@ -270,7 +270,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.0166,
-      "sl_price": 0.016810147748283023,
+      "sl_price": 0.0166,
       "tp1_price": 0.016284778377575464,
       "tp2_price": 0.01596955675515093,
       "qty_total": 6024.096385542169,
@@ -279,7 +279,7 @@
       "lot_a": {
         "qty": 3012.0481927710844,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 3012.0481927710844,
@@ -312,7 +312,33 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "BNBUSDT__ST": {
+      "trade_id": 617,
+      "symbol": "BNBUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-09-25 14:00:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 772.47,
+      "sl_price": 760.7803636949695,
+      "tp1_price": 790.0044544575458,
+      "tp2_price": 807.5389089150915,
+      "qty_total": 0.3883645966833663,
+      "notional": 300.0,
+      "leverage": 3.0,
+      "lot_a": {
+        "qty": 0.19418229834168316,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.19418229834168316,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 617
+  "next_trade_id": 618
 }
