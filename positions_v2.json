@@ -1,5 +1,5 @@
 {
-  "balance": 1012.9979549728703,
+  "balance": 1013.0024310909657,
   "positions": {
     "ETHUSDT": {
       "trade_id": 374,
@@ -25,15 +25,15 @@
       "candle_time": "2026-09-25 08:30:00",
       "entry_price": 1.1391,
       "initial_sl_price": 1.138646778122444,
-      "sl_price": 1.138646778122444,
+      "sl_price": 1.1391,
       "tp1_price": 1.139779832816334,
       "tp2_price": 1.1404596656326678,
       "qty_total": 13.16829075585989,
       "notional": 15.0,
       "leverage": 1.0,
       "margin_usd": 15.0,
-      "qty_open": 13.16829075585989,
-      "phase": "before_tp1"
+      "qty_open": 6.584145377929945,
+      "phase": "after_tp1"
     },
     "BNBUSDT": {
       "trade_id": 380,
@@ -51,7 +51,24 @@
       "margin_usd": 15.0,
       "qty_open": 0.01930700715646399,
       "phase": "before_tp1"
+    },
+    "SOLUSDT": {
+      "trade_id": 381,
+      "symbol": "SOLUSDT",
+      "direction": "long",
+      "candle_time": "2026-09-25 10:00:00",
+      "entry_price": 118.14,
+      "initial_sl_price": 117.08100748921089,
+      "sl_price": 117.08100748921089,
+      "tp1_price": 119.72848876618366,
+      "tp2_price": 121.31697753236733,
+      "qty_total": 0.12696800406297612,
+      "notional": 15.0,
+      "leverage": 1.0,
+      "margin_usd": 15.0,
+      "qty_open": 0.12696800406297612,
+      "phase": "before_tp1"
     }
   },
-  "next_trade_id": 381
+  "next_trade_id": 382
 }
