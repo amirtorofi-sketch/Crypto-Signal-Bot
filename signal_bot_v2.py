@@ -279,6 +279,18 @@ def check_strategy_smc_v2(df: pd.DataFrame, htf_bullish: bool, htf_bearish: bool
                 "buy": buy, "sell": sell,
                 "bull_score": bull_score, "bear_score": bear_score,
                 "candle_time": df["open_time"].iloc[j], "price": close[j], "atr": cur_atr,
+                "confluence": {
+                    "recent_bull_sweep": bool(recent_bull_sweep), "recent_bear_sweep": bool(recent_bear_sweep),
+                    "vol_spike": bool(vol_spike),
+                    "strong_bull_rej": bool(strong_bull_rej), "strong_bear_rej": bool(strong_bear_rej),
+                    "htf_bullish": bool(htf_bullish), "htf_bearish": bool(htf_bearish),
+                    "discount_zone": bool(discount_zone), "premium_zone": bool(premium_zone),
+                    "rsi_value": round(float(cur_rsi), 2) if cur_rsi == cur_rsi else None,
+                    "rsi_bull_ok": bool(rsi_bull_ok), "rsi_bear_ok": bool(rsi_bear_ok),
+                    "trend_strong": bool(trend_strong), "trend": trend,
+                    "bull_fvg_count": len(bull_fvgs), "bear_fvg_count": len(bear_fvgs),
+                    "bull_ob_count": len(bull_obs), "bear_ob_count": len(bear_obs),
+                },
             }
 
     return result
