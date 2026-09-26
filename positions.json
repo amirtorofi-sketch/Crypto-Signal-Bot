@@ -1,5 +1,5 @@
 {
-  "balance": 1040.7084222478488,
+  "balance": 1039.0780845960376,
   "positions": {
     "CRVUSDT__ST": {
       "trade_id": 510,
@@ -287,32 +287,58 @@
         "status": "open"
       }
     },
-    "GALAUSDT__SMC": {
-      "trade_id": 637,
-      "symbol": "GALAUSDT",
+    "DOGEUSDT__SMC": {
+      "trade_id": 638,
+      "symbol": "DOGEUSDT",
       "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-26 10:30:00",
+      "candle_time": "2026-09-26 11:00:00",
       "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.002226,
-      "sl_price": 0.0022622913161293233,
-      "tp1_price": 0.0021715630258060154,
-      "tp2_price": 0.0021171260516120306,
-      "qty_total": 44923.62982929021,
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.09779,
+      "sl_price": 0.0970737193859977,
+      "tp1_price": 0.09886442092100346,
+      "tp2_price": 0.09993884184200692,
+      "qty_total": 1022.5994477962981,
       "notional": 100.0,
       "leverage": 1.0,
       "lot_a": {
-        "qty": 22461.814914645103,
+        "qty": 511.29972389814907,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 22461.814914645103,
+        "qty": 511.29972389814907,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "GALAUSDT__SMC": {
+      "trade_id": 639,
+      "symbol": "GALAUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-26 11:00:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.002256,
+      "sl_price": 0.002293546083797273,
+      "tp1_price": 0.002199680874304091,
+      "tp2_price": 0.002143361748608182,
+      "qty_total": 44326.24113475177,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "lot_a": {
+        "qty": 22163.120567375885,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 22163.120567375885,
         "target": "tp2",
         "status": "open"
       }
     }
   },
-  "next_trade_id": 638
+  "next_trade_id": 640
 }
