@@ -55,7 +55,8 @@ TRADES_LOG_FIELDS = [
     "event_time_utc", "event_type", "trade_id", "symbol", "source", "timeframe", "session",
     "raw_direction", "final_direction", "candle_time",
     "entry_price", "sl_price", "tp1_price", "tp2_price", "notional_usd", "leverage", "margin_usd",
-    "adx_value", "lot", "exit_reason", "exit_price", "pnl", "balance_after",
+    "adx_value", "signal_score", "market_snapshot",
+    "lot", "exit_reason", "exit_price", "pnl", "balance_after",
 ]
 
 
@@ -176,7 +177,7 @@ def calculate_position_size(entry_price: float, source: str):
 # =====================================================================
 def open_position(state: dict, symbol: str, direction: str, entry_price: float, sl_price: float,
                   tp1_price: float, tp2_price: float, source: str, candle_time=None,
-                  raw_direction: str = "", adx_value=None):
+                  raw_direction: str = "", adx_value=None, signal_score=None, market_snapshot=None):
     key = position_key(symbol, source)
 
     if key in state["positions"]:
@@ -237,6 +238,8 @@ def open_position(state: dict, symbol: str, direction: str, entry_price: float, 
         "qty_total": qty_total,
         "notional": notional,
         "leverage": leverage,
+        "signal_score": signal_score,
+        "market_snapshot": market_snapshot,
         "lot_a": {"qty": qty_half, "target": "tp1", "status": "open"},
         "lot_b": {"qty": qty_total - qty_half, "target": "tp2", "status": "open"},
     }
@@ -275,6 +278,8 @@ def open_position(state: dict, symbol: str, direction: str, entry_price: float, 
         "leverage": leverage,
         "margin_usd": round(margin_needed, 4),
         "adx_value": round(adx_value, 3) if adx_value is not None else "",
+        "signal_score": signal_score if signal_score is not None else "",
+        "market_snapshot": json.dumps(market_snapshot, ensure_ascii=False) if market_snapshot is not None else "",
         "balance_after": round(state["balance"], 4),
     })
 
@@ -401,17 +406,17 @@ def main():
         current_atr = atr_series.iloc[-2]
 
         # --- استراتژی ۱: Supertrend + ADX (تنها استراتژی فعال فعلاً) ---
-        buy1, sell1, ct1, price1, st_line, adx_val1 = check_strategy_supertrend(df)
+        buy1, sell1, ct1, price1, st_line, adx_val1, snap1 = check_strategy_supertrend(df)
         if buy1:
             direction, sl, tp1, tp2 = resolve_direction_and_levels("long", price1, st_line, ST_TP1_RR, ST_TP2_RR)
             print(f"[{symbol}] سیگنال خرید Supertrend+ADX فعال شد -> تلاش برای باز کردن پوزیشن {direction} (معکوس)...")
             open_position(state, symbol, direction, price1, sl, tp1, tp2, source="Supertrend+ADX",
-                          candle_time=ct1, raw_direction="long", adx_value=adx_val1)
+                          candle_time=ct1, raw_direction="long", adx_value=adx_val1, market_snapshot=snap1)
         elif sell1:
             direction, sl, tp1, tp2 = resolve_direction_and_levels("short", price1, st_line, ST_TP1_RR, ST_TP2_RR)
             print(f"[{symbol}] سیگنال فروش Supertrend+ADX فعال شد -> تلاش برای باز کردن پوزیشن {direction} (معکوس)...")
             open_position(state, symbol, direction, price1, sl, tp1, tp2, source="Supertrend+ADX",
-                          candle_time=ct1, raw_direction="short", adx_value=adx_val1)
+                          candle_time=ct1, raw_direction="short", adx_value=adx_val1, market_snapshot=snap1)
 
         # --- استراتژی ۲: ICT/SMC Scalp Pro (فعلاً خاموش - نیاز به داده‌ی بیشتر) ---
         if ENABLE_SMC:
@@ -428,7 +433,8 @@ def main():
                 direction, sl, tp1, tp2 = resolve_direction_and_levels("long", price2, raw_sl, TP1_RR, TP2_RR)
                 print(f"[{symbol}] سیگنال خرید ICT/SMC فعال شد (امتیاز={res['bull_score']}/7) -> تلاش برای باز کردن پوزیشن {direction} (معکوس)...")
                 open_position(state, symbol, direction, price2, sl, tp1, tp2, source="ICT/SMC Scalp Pro",
-                              candle_time=res["candle_time"], raw_direction="long")
+                              candle_time=res["candle_time"], raw_direction="long",
+                              signal_score=res["bull_score"], market_snapshot=res.get("confluence"))
             elif res is not None and res["sell"]:
                 price2 = res["price"]
                 atr2 = res["atr"]
@@ -436,7 +442,8 @@ def main():
                 direction, sl, tp1, tp2 = resolve_direction_and_levels("short", price2, raw_sl, TP1_RR, TP2_RR)
                 print(f"[{symbol}] سیگنال فروش ICT/SMC فعال شد (امتیاز={res['bear_score']}/7) -> تلاش برای باز کردن پوزیشن {direction} (معکوس)...")
                 open_position(state, symbol, direction, price2, sl, tp1, tp2, source="ICT/SMC Scalp Pro",
-                              candle_time=res["candle_time"], raw_direction="short")
+                              candle_time=res["candle_time"], raw_direction="short",
+                              signal_score=res["bear_score"], market_snapshot=res.get("confluence"))
             elif res is not None:
                 print(f"[{symbol}] بدون سیگنال SMC جدید (امتیاز خرید={res['bull_score']}/7, امتیاز فروش={res['bear_score']}/7)")
 
