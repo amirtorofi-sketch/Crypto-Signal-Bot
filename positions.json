@@ -1,5 +1,5 @@
 {
-  "balance": 1049.8458234284017,
+  "balance": 1052.0663884861235,
   "positions": {
     "CRVUSDT__ST": {
       "trade_id": 510,
@@ -183,32 +183,6 @@
         "status": "open"
       }
     },
-    "VETUSDT__SMC": {
-      "trade_id": 631,
-      "symbol": "VETUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-26 04:45:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.009808,
-      "sl_price": 0.009808,
-      "tp1_price": 0.009590206979138642,
-      "tp2_price": 0.009372413958277285,
-      "qty_total": 10195.758564437194,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "lot_a": {
-        "qty": 5097.879282218597,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 5097.879282218597,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "BTCUSDT__SMC": {
       "trade_id": 640,
       "symbol": "BTCUSDT",
@@ -312,7 +286,90 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CHZUSDT__ST": {
+      "trade_id": 647,
+      "symbol": "CHZUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-09-26 20:00:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.01651,
+      "sl_price": 0.016052585244873296,
+      "tp1_price": 0.017196122132690055,
+      "tp2_price": 0.017882244265380112,
+      "qty_total": 18170.805572380374,
+      "notional": 300.0,
+      "leverage": 3.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 28.069,
+        "di_plus": 15.757,
+        "di_minus": 41.277,
+        "ema_trend": 0.016553,
+        "close_vs_ema": "below",
+        "volume": 13095258.0,
+        "vol_ma": 2149712.15,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 9085.402786190187,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 9085.402786190187,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "VETUSDT__SMC": {
+      "trade_id": 648,
+      "symbol": "VETUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-26 20:00:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.00937,
+      "sl_price": 0.009277977681682788,
+      "tp1_price": 0.009508033477475818,
+      "tp2_price": 0.009646066954951635,
+      "qty_total": 10672.358591248667,
+      "notional": 100.00000000000001,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 25.86,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "bull_fvg_count": 1,
+        "bear_fvg_count": 5,
+        "bull_ob_count": 2,
+        "bear_ob_count": 1,
+        "trend": -1
+      },
+      "lot_a": {
+        "qty": 5336.1792956243335,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 5336.1792956243335,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 647
+  "next_trade_id": 649
 }
