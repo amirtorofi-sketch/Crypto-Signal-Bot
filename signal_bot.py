@@ -255,7 +255,17 @@ def check_strategy_supertrend(df: pd.DataFrame):
     price = df["close"].iloc[i]
     st_line = st_val.iloc[i]
     adx_value = float(df["adx"].iloc[i])
-    return buy, sell, candle_time, price, st_line, adx_value
+    snapshot = {
+        "adx": round(adx_value, 3),
+        "di_plus": round(float(df["di_plus"].iloc[i]), 3),
+        "di_minus": round(float(df["di_minus"].iloc[i]), 3),
+        "ema_trend": round(float(df["ema_trend"].iloc[i]), 6) if df["ema_trend"].iloc[i] == df["ema_trend"].iloc[i] else None,
+        "close_vs_ema": "above" if df["close"].iloc[i] > df["ema_trend"].iloc[i] else "below",
+        "volume": round(float(df["volume"].iloc[i]), 4),
+        "vol_ma": round(float(df["vol_ma"].iloc[i]), 4) if df["vol_ma"].iloc[i] == df["vol_ma"].iloc[i] else None,
+        "vol_above_ma": bool(df["volume"].iloc[i] > df["vol_ma"].iloc[i]) if df["vol_ma"].iloc[i] == df["vol_ma"].iloc[i] else None,
+    }
+    return buy, sell, candle_time, price, st_line, adx_value, snapshot
 
 
 # =====================================================================
@@ -441,6 +451,19 @@ def check_strategy_smc(df: pd.DataFrame, htf_bullish: bool, htf_bearish: bool):
                 "bull_score": bull_score, "bear_score": bear_score,
                 "candle_time": df["open_time"].iloc[j], "price": close[j],
                 "atr": cur_atr,
+                # ریزجزئیات هر مؤلفه‌ی امتیاز - برای ثبت در لاگ و تحلیل بعدی
+                "confluence": {
+                    "recent_bull_sweep": bool(recent_bull_sweep), "recent_bear_sweep": bool(recent_bear_sweep),
+                    "vol_spike": bool(vol_spike),
+                    "strong_bull_rej": bool(strong_bull_rej), "strong_bear_rej": bool(strong_bear_rej),
+                    "htf_bullish": bool(htf_bullish), "htf_bearish": bool(htf_bearish),
+                    "discount_zone": bool(discount_zone), "premium_zone": bool(premium_zone),
+                    "rsi_value": round(float(cur_rsi), 2) if cur_rsi == cur_rsi else None,  # NaN-safe
+                    "rsi_bull_ok": bool(rsi_bull_ok), "rsi_bear_ok": bool(rsi_bear_ok),
+                    "bull_fvg_count": len(bull_fvgs), "bear_fvg_count": len(bear_fvgs),
+                    "bull_ob_count": len(bull_obs), "bear_ob_count": len(bear_obs),
+                    "trend": trend,
+                },
             }
 
     return result
@@ -501,7 +524,7 @@ def main():
             continue
 
         # --- استراتژی ۱: Supertrend + ADX ---
-        buy1, sell1, ct1, price1, _st_line1, _adx_val1 = check_strategy_supertrend(df)
+        buy1, sell1, ct1, price1, _st_line1, _adx_val1, _snap1 = check_strategy_supertrend(df)
         st_dbg = df.copy()
         st_val_dbg, st_dir_dbg = supertrend(st_dbg, ATR_PERIOD, ST_FACTOR)
         _, _, adx_dbg = adx_dmi(st_dbg, DI_LEN, ADX_LEN)
