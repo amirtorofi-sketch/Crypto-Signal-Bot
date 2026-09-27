@@ -18,6 +18,40 @@ from signal_bot import (
     get_klines, ema, rsi, atr, find_pivots, shift_confirm,
     TIMEFRAME, KLINES_LIMIT, HTF_TIMEFRAME, HTF_EMA_LEN,
 )
+from poc_retest_strategy import POCRetestStrategy
+
+_poc_strategy = POCRetestStrategy()
+
+
+def check_strategy_poc_retest(df: pd.DataFrame):
+    """
+    Wrapper روی POCRetestStrategy برای استفاده‌ی زنده (نه بک‌تست):
+    generate_signals() کل تاریخچه رو اسکن می‌کنه و هر ستاپ معتبری که پیدا
+    کنه برمی‌گردونه - از جمله ستاپ‌های قدیمی که کندل ردکننده‌شون هفته‌ها
+    پیشه. اگه همون‌طوری استفاده بشه، هر بار که بات اجرا می‌شه دوباره همون
+    سیگنال قدیمی رو پیدا می‌کنه و می‌خواد یه پوزیشن جدید روش باز کنه.
+
+    برای همین اینجا فقط زمانی سیگنال برمی‌گردونیم که کندل ردکننده‌ی آخرین
+    سیگنالِ پیداشده، دقیقاً همون آخرین کندلِ بسته‌شده‌ی این اجرا باشه (یعنی
+    سیگنال «تازه»ست) - وگرنه None برمی‌گردونیم.
+    """
+    df2 = df.copy()
+    df2["time"] = df2["open_time"]  # POCRetestStrategy انتظار ستون "time" داره
+    try:
+        signals = _poc_strategy.generate_signals(df2)
+    except Exception as e:
+        print(f"خطا در استراتژی POC Retest: {e}")
+        return None
+    if not signals:
+        return None
+
+    last_signal = signals[-1]
+    last_closed_time = df2["time"].iloc[-2]  # آخرین کندل کاملاً بسته‌شده
+    if pd.Timestamp(last_signal.time) != pd.Timestamp(last_closed_time):
+        return None  # سیگنال قدیمیه، تازه نیست -> نادیده گرفته می‌شه
+
+    return last_signal
+
 
 # نمادهای مخصوص استراتژی سوم (v2) - کاملاً مستقل از لیست استراتژی اول و دوم
 SYMBOLS = [
