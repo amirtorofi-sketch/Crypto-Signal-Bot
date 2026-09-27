@@ -1,5 +1,5 @@
 {
-  "balance": 1067.6517749316258,
+  "balance": 1067.3098579183932,
   "positions": {
     "CRVUSDT__ST": {
       "trade_id": 510,
@@ -194,98 +194,6 @@
         "status": "open"
       }
     },
-    "ETHUSDT__SMC": {
-      "trade_id": 653,
-      "symbol": "ETHUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-26 21:30:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 2686.27,
-      "sl_price": 2686.27,
-      "tp1_price": 2699.286736823886,
-      "tp2_price": 2712.303473647772,
-      "qty_total": 0.037226339869037735,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 5,
-      "market_snapshot": {
-        "recent_bull_sweep": true,
-        "recent_bear_sweep": true,
-        "vol_spike": true,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 51.38,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": true,
-        "bull_fvg_count": 3,
-        "bear_fvg_count": 0,
-        "bull_ob_count": 1,
-        "bear_ob_count": 3,
-        "trend": -1
-      },
-      "lot_a": {
-        "qty": 0.018613169934518867,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 0.018613169934518867,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "SOLUSDT__SMC": {
-      "trade_id": 655,
-      "symbol": "SOLUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-26 22:00:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 121.73,
-      "sl_price": 121.73,
-      "tp1_price": 120.47217236064175,
-      "tp2_price": 119.2143447212835,
-      "qty_total": 0.8214901831923108,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 6,
-      "market_snapshot": {
-        "recent_bull_sweep": true,
-        "recent_bear_sweep": true,
-        "vol_spike": true,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": true,
-        "htf_bearish": false,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 58.25,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "bull_fvg_count": 4,
-        "bear_fvg_count": 0,
-        "bull_ob_count": 3,
-        "bear_ob_count": 0,
-        "trend": 1
-      },
-      "lot_a": {
-        "qty": 0.4107450915961554,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 0.4107450915961554,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "ROSEUSDT__ST": {
       "trade_id": 656,
       "symbol": "ROSEUSDT",
@@ -406,25 +314,25 @@
         "status": "open"
       }
     },
-    "MANAUSDT__SMC": {
-      "trade_id": 660,
-      "symbol": "MANAUSDT",
+    "SOLUSDT__SMC": {
+      "trade_id": 661,
+      "symbol": "SOLUSDT",
       "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-27 06:15:00",
+      "candle_time": "2026-09-27 07:30:00",
       "session": "آسیا",
       "raw_direction": "long",
       "direction": "short",
-      "entry_price": 0.0918,
-      "sl_price": 0.09255871091868191,
-      "tp1_price": 0.09066193362197715,
-      "tp2_price": 0.0895238672439543,
-      "qty_total": 1089.3246187363834,
+      "entry_price": 122.29,
+      "sl_price": 122.95057441150006,
+      "tp1_price": 121.29913838274993,
+      "tp2_price": 120.30827676549985,
+      "qty_total": 0.8177283506419167,
       "notional": 100.0,
       "leverage": 1.0,
-      "signal_score": 6,
+      "signal_score": 5,
       "market_snapshot": {
-        "recent_bull_sweep": true,
-        "recent_bear_sweep": true,
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
         "vol_spike": true,
         "strong_bull_rej": true,
         "strong_bear_rej": false,
@@ -432,26 +340,72 @@
         "htf_bearish": false,
         "discount_zone": false,
         "premium_zone": true,
-        "rsi_value": 65.73,
+        "rsi_value": 68.93,
         "rsi_bull_ok": true,
         "rsi_bear_ok": false,
-        "bull_fvg_count": 3,
-        "bear_fvg_count": 4,
+        "bull_fvg_count": 5,
+        "bear_fvg_count": 0,
+        "bull_ob_count": 2,
+        "bear_ob_count": 0,
+        "trend": 1
+      },
+      "lot_a": {
+        "qty": 0.40886417532095837,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.40886417532095837,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "MANAUSDT__SMC": {
+      "trade_id": 662,
+      "symbol": "MANAUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-27 07:30:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.0929,
+      "sl_price": 0.09366544295751425,
+      "tp1_price": 0.09175183556372862,
+      "tp2_price": 0.09060367112745724,
+      "qty_total": 1076.4262648008612,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 76.69,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "bull_fvg_count": 6,
+        "bear_fvg_count": 1,
         "bull_ob_count": 1,
         "bear_ob_count": 1,
         "trend": 1
       },
       "lot_a": {
-        "qty": 544.6623093681917,
+        "qty": 538.2131324004306,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 544.6623093681917,
+        "qty": 538.2131324004306,
         "target": "tp2",
         "status": "open"
       }
     }
   },
-  "next_trade_id": 661
+  "next_trade_id": 663
 }
