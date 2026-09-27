@@ -333,7 +333,44 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "MASKUSDT__ST": {
+      "trade_id": 668,
+      "symbol": "MASKUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-09-27 16:30:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.483,
+      "sl_price": 0.4937695564016054,
+      "tp1_price": 0.46684566539759187,
+      "tp2_price": 0.4506913307951837,
+      "qty_total": 621.1180124223603,
+      "notional": 300.0,
+      "leverage": 3.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 30.547,
+        "di_plus": 29.058,
+        "di_minus": 24.89,
+        "ema_trend": 0.478074,
+        "close_vs_ema": "above",
+        "volume": 47486.0,
+        "vol_ma": 21333.64,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 310.55900621118013,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 310.55900621118013,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 668
+  "next_trade_id": 669
 }
