@@ -1,5 +1,5 @@
 {
-  "balance": 1011.2570894207404,
+  "balance": 1011.629631517087,
   "positions": {
     "BNBUSDT": {
       "trade_id": 389,
@@ -25,15 +25,15 @@
       "candle_time": "2026-09-25 23:15:00",
       "entry_price": 84097.04,
       "initial_sl_price": 83779.55207318123,
-      "sl_price": 83779.55207318123,
+      "sl_price": 84097.04,
       "tp1_price": 84573.27189022815,
       "tp2_price": 85049.50378045629,
       "qty_total": 0.00017836537409640104,
       "notional": 15.0,
       "leverage": 1.0,
       "margin_usd": 15.0,
-      "qty_open": 0.00017836537409640104,
-      "phase": "before_tp1"
+      "qty_open": 8.918268704820052e-05,
+      "phase": "after_tp1"
     },
     "ETHUSDT": {
       "trade_id": 401,
@@ -43,7 +43,7 @@
       "session": "آسیا",
       "entry_price": 2695.45,
       "initial_sl_price": 2687.5416585550183,
-      "sl_price": 2687.5416585550183,
+      "sl_price": 2695.45,
       "tp1_price": 2707.312512167472,
       "tp2_price": 2719.1750243349443,
       "qty_total": 0.055649334990446865,
@@ -71,9 +71,48 @@
         "bull_ob_count": 1,
         "bear_ob_count": 2
       },
-      "qty_open": 0.055649334990446865,
+      "qty_open": 0.027824667495223433,
+      "phase": "after_tp1"
+    },
+    "DOGEUSDT": {
+      "trade_id": 402,
+      "symbol": "DOGEUSDT",
+      "direction": "short",
+      "candle_time": "2026-09-27 05:30:00",
+      "session": "آسیا",
+      "entry_price": 0.09632,
+      "initial_sl_price": 0.0970265842684709,
+      "sl_price": 0.0970265842684709,
+      "tp1_price": 0.09526012359729366,
+      "tp2_price": 0.09420024719458732,
+      "qty_total": 155.73089700996678,
+      "notional": 15.0,
+      "leverage": 1.0,
+      "margin_usd": 15.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 51.05,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 2,
+        "bear_fvg_count": 5,
+        "bull_ob_count": 0,
+        "bear_ob_count": 2
+      },
+      "qty_open": 155.73089700996678,
       "phase": "before_tp1"
     }
   },
-  "next_trade_id": 402
+  "next_trade_id": 403
 }
