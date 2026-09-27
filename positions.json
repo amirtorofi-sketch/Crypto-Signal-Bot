@@ -157,32 +157,6 @@
         "status": "open"
       }
     },
-    "MASKUSDT__ST": {
-      "trade_id": 646,
-      "symbol": "MASKUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-09-26 15:30:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.488,
-      "sl_price": 0.488,
-      "tp1_price": 0.47384416907374793,
-      "tp2_price": 0.45968833814749593,
-      "qty_total": 614.7540983606558,
-      "notional": 300.0,
-      "leverage": 3.0,
-      "lot_a": {
-        "qty": 307.3770491803279,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 307.3770491803279,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "CHZUSDT__ST": {
       "trade_id": 647,
       "symbol": "CHZUSDT",
@@ -394,7 +368,90 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ONEUSDT__ST": {
+      "trade_id": 658,
+      "symbol": "ONEUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-09-27 05:00:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.002166,
+      "sl_price": 0.0020216420919226055,
+      "tp1_price": 0.0023825368621160914,
+      "tp2_price": 0.0025990737242321833,
+      "qty_total": 138504.15512465374,
+      "notional": 300.0,
+      "leverage": 3.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 21.069,
+        "di_plus": 10.969,
+        "di_minus": 24.707,
+        "ema_trend": 0.002357,
+        "close_vs_ema": "below",
+        "volume": 31518341.2,
+        "vol_ma": 20059449.4,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 69252.07756232687,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 69252.07756232687,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "MASKUSDT__SMC": {
+      "trade_id": 659,
+      "symbol": "MASKUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-27 05:00:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.489,
+      "sl_price": 0.4936596772204879,
+      "tp1_price": 0.48201048416926806,
+      "tp2_price": 0.4750209683385362,
+      "qty_total": 204.4989775051125,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": true,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 74.9,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "bull_fvg_count": 3,
+        "bear_fvg_count": 0,
+        "bull_ob_count": 3,
+        "bear_ob_count": 0,
+        "trend": 1
+      },
+      "lot_a": {
+        "qty": 102.24948875255625,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 102.24948875255625,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 658
+  "next_trade_id": 660
 }
