@@ -373,54 +373,6 @@
         "status": "open"
       }
     },
-    "GALAUSDT__SMC": {
-      "trade_id": 686,
-      "symbol": "GALAUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-28 14:15:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.002126,
-      "sl_price": 0.002126,
-      "sl_initial": 0.00208204875296393,
-      "tp1_price": 0.002191926870554105,
-      "tp2_price": 0.0022578537411082097,
-      "adx_value": null,
-      "qty_total": 47036.688617121355,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 5,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": true,
-        "vol_spike": false,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 36.95,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": true,
-        "bull_fvg_count": 0,
-        "bear_fvg_count": 5,
-        "bull_ob_count": 0,
-        "bear_ob_count": 0,
-        "trend": -1
-      },
-      "lot_a": {
-        "qty": 23518.344308560678,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 23518.344308560678,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "ETHUSDT__SMC": {
       "trade_id": 688,
       "symbol": "ETHUSDT",
@@ -564,7 +516,46 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ONEUSDT__ST": {
+      "trade_id": 692,
+      "symbol": "ONEUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-09-28 19:00:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.002679,
+      "sl_price": 0.002970451331112332,
+      "sl_initial": 0.002970451331112332,
+      "tp1_price": 0.002241823003331502,
+      "tp2_price": 0.0018046460066630044,
+      "adx_value": 30.37536439287412,
+      "qty_total": 111982.08286674133,
+      "notional": 300.0,
+      "leverage": 3.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 30.375,
+        "di_plus": 29.726,
+        "di_minus": 6.543,
+        "ema_trend": 0.002449,
+        "close_vs_ema": "above",
+        "volume": 118274381.2,
+        "vol_ma": 53928550.465,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 55991.041433370665,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 55991.041433370665,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 692
+  "next_trade_id": 693
 }
