@@ -77,8 +77,47 @@ def get_session(dt) -> str:
         return "نیویورک"
 
 
+def _migrate_log_if_needed():
+    """
+    اگه هدر فایل با TRADES_LOG_FIELDS فعلی فرق داشته باشه (مثلاً وقتی ستون جدیدی
+    اضافه شده)، کل فایل یک‌بار بازنویسی می‌شه: هر ردیف قدیمی (با تعداد ستون هدر قدیمی)
+    بر اساس همون هدر قدیمی به ستون‌های درست جدید نگاشته می‌شه و ستون‌های تازه برای
+    اون‌ها خالی می‌مونه؛ ردیف‌های جدید (که از قبل با ترتیب جدید نوشته شدن) دست‌نخورده
+    می‌مونن. بدون این کار، ردیف‌های جدید زیر هدر قدیمی جابه‌جا و نامرتب نشون داده می‌شن.
+    """
+    if not os.path.exists(TRADES_LOG_FILE):
+        return
+    try:
+        with open(TRADES_LOG_FILE, "r", newline="", encoding="utf-8") as f:
+            rows = list(csv.reader(f))
+        if not rows or rows[0] == TRADES_LOG_FIELDS:
+            return
+        old_header = rows[0]
+        migrated = []
+        for r in rows[1:]:
+            if not r:
+                continue
+            if len(r) == len(TRADES_LOG_FIELDS):
+                d = dict(zip(TRADES_LOG_FIELDS, r))       # ردیف جدید
+            elif len(r) == len(old_header):
+                d = dict(zip(old_header, r))              # ردیف قدیمی
+            else:
+                d = dict(zip(old_header, r))              # حالت غیرمنتظره: بهترین تلاش
+            migrated.append([d.get(field, "") for field in TRADES_LOG_FIELDS])
+        tmp = TRADES_LOG_FILE + ".tmp"
+        with open(tmp, "w", newline="", encoding="utf-8") as f:
+            w = csv.writer(f)
+            w.writerow(TRADES_LOG_FIELDS)
+            w.writerows(migrated)
+        os.replace(tmp, TRADES_LOG_FILE)
+        print(f"trades_log.csv به هدر جدید مهاجرت داده شد ({len(migrated)} ردیف).")
+    except Exception as e:
+        print(f"خطا در مهاجرت هدر trades_log.csv: {e}")
+
+
 def log_trade_event(row: dict):
     """یک ردیف جدید به trades_log.csv اضافه می‌کند (append-only، تاریخچه‌ی کامل و دائمی)."""
+    _migrate_log_if_needed()
     file_exists = os.path.exists(TRADES_LOG_FILE)
     full_row = {field: row.get(field, "") for field in TRADES_LOG_FIELDS}
     try:
