@@ -1,5 +1,5 @@
 {
-  "balance": 1001.342760536716,
+  "balance": 1001.5596373080272,
   "positions": {
     "APTUSDT__SMC": {
       "trade_id": 430,
@@ -1346,46 +1346,6 @@
       "qty_open": 64.8228176318064,
       "phase": "before_tp1"
     },
-    "FILUSDT__SMC": {
-      "trade_id": 557,
-      "symbol": "FILUSDT",
-      "source": "ICT/SMC Scalp Pro v2",
-      "direction": "short",
-      "candle_time": "2026-09-28 08:15:00",
-      "session": "لندن",
-      "entry_price": 1.07,
-      "initial_sl_price": 1.0906098318610429,
-      "sl_price": 1.07,
-      "tp1_price": 1.039085252208436,
-      "tp2_price": 1.0081705044168716,
-      "qty_total": 14.018691588785046,
-      "notional": 15.0,
-      "leverage": 1.0,
-      "margin_usd": 15.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": true,
-        "recent_bear_sweep": false,
-        "vol_spike": false,
-        "strong_bull_rej": false,
-        "strong_bear_rej": false,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 32.76,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": true,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 0,
-        "bear_fvg_count": 6,
-        "bull_ob_count": 0,
-        "bear_ob_count": 1
-      },
-      "qty_open": 7.009345794392523,
-      "phase": "after_tp1"
-    },
     "IMXUSDT__SMC": {
       "trade_id": 560,
       "symbol": "IMXUSDT",
@@ -2060,7 +2020,7 @@
       "session": "لندن",
       "entry_price": 118.73,
       "initial_sl_price": 117.74029752920045,
-      "sl_price": 117.74029752920045,
+      "sl_price": 118.73,
       "tp1_price": 120.21455370619934,
       "tp2_price": 121.69910741239867,
       "qty_total": 0.1263370672955445,
@@ -2088,8 +2048,8 @@
         "bull_ob_count": 0,
         "bear_ob_count": 2
       },
-      "qty_open": 0.1263370672955445,
-      "phase": "before_tp1"
+      "qty_open": 0.06316853364777225,
+      "phase": "after_tp1"
     },
     "AXLUSDT__SMC": {
       "trade_id": 720,
@@ -2130,31 +2090,6 @@
       },
       "qty_open": 285.7142857142857,
       "phase": "before_tp1"
-    },
-    "INJUSDT__POC": {
-      "trade_id": 722,
-      "symbol": "INJUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-09-28 12:00:00",
-      "session": "لندن",
-      "entry_price": 7.433,
-      "sl_price": 7.314678,
-      "tp1_price": 7.494,
-      "tp2_price": null,
-      "qty_total": 2.0180277142472756,
-      "notional": 15.0,
-      "leverage": 1.0,
-      "margin_usd": 15.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 7.430666666666666,
-        "leg_start": "2026-09-28 07:30:00",
-        "leg_end": "2026-09-28 08:45:00",
-        "rr": 0.516,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 2.0180277142472756
     },
     "JASMYUSDT__POC": {
       "trade_id": 723,
@@ -2475,7 +2410,97 @@
         "reason": "poc_retest_rejection"
       },
       "qty_open": 1.3876040703052728
+    },
+    "ARUSDT__SMC": {
+      "trade_id": 735,
+      "symbol": "ARUSDT",
+      "source": "ICT/SMC Scalp Pro v2",
+      "direction": "long",
+      "candle_time": "2026-09-28 12:45:00",
+      "session": "لندن",
+      "entry_price": 4.388,
+      "initial_sl_price": 4.297124740397458,
+      "sl_price": 4.297124740397458,
+      "tp1_price": 4.524312889403813,
+      "tp2_price": 4.660625778807625,
+      "qty_total": 3.4184138559708295,
+      "notional": 15.0,
+      "leverage": 1.0,
+      "margin_usd": 15.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 58.7,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": 1,
+        "bull_fvg_count": 1,
+        "bear_fvg_count": 4,
+        "bull_ob_count": 1,
+        "bear_ob_count": 2
+      },
+      "qty_open": 3.4184138559708295,
+      "phase": "before_tp1"
+    },
+    "DOTUSDT__POC": {
+      "trade_id": 736,
+      "symbol": "DOTUSDT",
+      "source": "POC Retest v2",
+      "direction": "long",
+      "candle_time": "2026-09-28 12:45:00",
+      "session": "لندن",
+      "entry_price": 1.194,
+      "sl_price": 1.1828159999999999,
+      "tp1_price": 1.203,
+      "tp2_price": null,
+      "qty_total": 12.56281407035176,
+      "notional": 15.0,
+      "leverage": 1.0,
+      "margin_usd": 15.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 1.19175,
+        "leg_start": "2026-09-28 09:30:00",
+        "leg_end": "2026-09-28 10:30:00",
+        "rr": 0.805,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 12.56281407035176
+    },
+    "SEIUSDT__POC": {
+      "trade_id": 737,
+      "symbol": "SEIUSDT",
+      "source": "POC Retest v2",
+      "direction": "long",
+      "candle_time": "2026-09-28 12:45:00",
+      "session": "لندن",
+      "entry_price": 0.08103,
+      "sl_price": 0.07985007,
+      "tp1_price": 0.08294,
+      "tp2_price": null,
+      "qty_total": 185.11662347278784,
+      "notional": 15.0,
+      "leverage": 1.0,
+      "margin_usd": 15.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0806825,
+        "leg_start": "2026-09-28 10:00:00",
+        "leg_end": "2026-09-28 12:15:00",
+        "rr": 1.619,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 185.11662347278784
     }
   },
-  "next_trade_id": 735
+  "next_trade_id": 738
 }
