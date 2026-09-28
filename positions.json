@@ -1,5 +1,5 @@
 {
-  "balance": 1115.9535248322738,
+  "balance": 1124.0144699737566,
   "positions": {
     "CRVUSDT__ST": {
       "trade_id": 510,
@@ -116,89 +116,6 @@
         "status": "open"
       }
     },
-    "MASKUSDT__ST": {
-      "trade_id": 668,
-      "symbol": "MASKUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-09-27 16:30:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.483,
-      "sl_price": 0.483,
-      "tp1_price": 0.46684566539759187,
-      "tp2_price": 0.4506913307951837,
-      "qty_total": 621.1180124223603,
-      "notional": 300.0,
-      "leverage": 3.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "adx": 30.547,
-        "di_plus": 29.058,
-        "di_minus": 24.89,
-        "ema_trend": 0.478074,
-        "close_vs_ema": "above",
-        "volume": 47486.0,
-        "vol_ma": 21333.64,
-        "vol_above_ma": true
-      },
-      "lot_a": {
-        "qty": 310.55900621118013,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 310.55900621118013,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "CRVUSDT__SMC": {
-      "trade_id": 673,
-      "symbol": "CRVUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-28 05:15:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.3308,
-      "sl_price": 0.324273967481587,
-      "tp1_price": 0.3405890487776195,
-      "tp2_price": 0.35037809755523897,
-      "qty_total": 302.2974607013301,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 5,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 29.05,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": true,
-        "bull_fvg_count": 0,
-        "bear_fvg_count": 4,
-        "bull_ob_count": 0,
-        "bear_ob_count": 0,
-        "trend": -1
-      },
-      "lot_a": {
-        "qty": 151.14873035066506,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 151.14873035066506,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "ROSEUSDT__SMC": {
       "trade_id": 676,
       "symbol": "ROSEUSDT",
@@ -290,7 +207,53 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CHZUSDT__SMC": {
+      "trade_id": 678,
+      "symbol": "CHZUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-28 09:45:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.01554,
+      "sl_price": 0.015336160569454842,
+      "tp1_price": 0.015845759145817737,
+      "tp2_price": 0.016151518291635473,
+      "qty_total": 6435.006435006435,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 30.27,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "bull_fvg_count": 0,
+        "bear_fvg_count": 6,
+        "bull_ob_count": 0,
+        "bear_ob_count": 1,
+        "trend": -1
+      },
+      "lot_a": {
+        "qty": 3217.5032175032175,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 3217.5032175032175,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 678
+  "next_trade_id": 679
 }
