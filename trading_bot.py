@@ -130,6 +130,34 @@ def log_trade_event(row: dict):
         print(f"خطا در ثبت trades_log.csv: {e}")
 
 
+def _entry_details(pos: dict) -> dict:
+    """
+    جزئیات ورودِ پوزیشن (همون چیزی که روی ردیف open ثبت شده) برای تکرار روی ردیف‌های
+    lot_close / sl_to_be / full_close، تا هر ردیف به‌تنهایی قابل تحلیل باشه.
+    sl_price همیشه SL اولیه است (بعد از TP1، SL پوزیشن به نقطه ورود می‌رود)؛ برای
+    پوزیشن‌های قدیمی که sl_initial ندارن همون sl_price فعلی استفاده می‌شه.
+    notional_usd / margin_usd مقدار کل پوزیشن‌اند (نه فقط یک لات)؛ سهم لات از ستون lot
+    و pnl همون ردیف مشخصه.
+    """
+    lev = pos.get("leverage", 1.0) or 1.0
+    notional = pos.get("notional")
+    snap = pos.get("market_snapshot")
+    score = pos.get("signal_score")
+    adx = pos.get("adx_value")
+    return {
+        "entry_price": pos.get("entry_price", ""),
+        "sl_price": pos.get("sl_initial", pos.get("sl_price", "")),
+        "tp1_price": pos.get("tp1_price", ""),
+        "tp2_price": pos.get("tp2_price", ""),
+        "notional_usd": round(notional, 4) if notional is not None else "",
+        "leverage": pos.get("leverage", ""),
+        "margin_usd": round(notional / lev, 4) if notional is not None else "",
+        "adx_value": round(adx, 3) if adx is not None else "",
+        "signal_score": score if score is not None else "",
+        "market_snapshot": json.dumps(snap, ensure_ascii=False) if snap is not None else "",
+    }
+
+
 def resolve_direction_and_levels(raw_direction: str, entry: float, raw_sl: float, rr1: float, rr2: float):
     """
     جهت سیگنال خام استراتژی همیشه معکوس اجرا می‌شود (تست فرضیه‌ی Bias منفی
@@ -272,8 +300,10 @@ def open_position(state: dict, symbol: str, direction: str, entry_price: float, 
         "direction": direction,
         "entry_price": entry_price,
         "sl_price": sl_price,
+        "sl_initial": sl_price,          # SL اولیه (بعد از TP1، sl_price به نقطه ورود می‌رود)
         "tp1_price": tp1_price,
         "tp2_price": tp2_price,
+        "adx_value": adx_value,
         "qty_total": qty_total,
         "notional": notional,
         "leverage": leverage,
@@ -354,7 +384,7 @@ def check_open_position(state: dict, key: str, pos: dict, last_high: float, last
             lot["status"] = "closed_sl"
             changed = True
             send_telegram_message(f"🔴 <b>#{pos.get('trade_id','?')} | {lot_key}</b> برای <b>{symbol}</b> ({pos['source']}) با حد ضرر بسته شد. (سود/ضرر: {pnl:+.2f}$)")
-            log_trade_event({
+            log_trade_event({**_entry_details(pos),
                 "event_time_utc": datetime.now(timezone.utc).isoformat(),
                 "event_type": "lot_close", "trade_id": pos.get("trade_id", ""), "symbol": symbol,
                 "source": pos["source"], "timeframe": TIMEFRAME, "session": pos.get("session", ""),
@@ -362,8 +392,6 @@ def check_open_position(state: dict, key: str, pos: dict, last_high: float, last
                 "candle_time": pos.get("candle_time", ""),
                 "lot": lot_key, "exit_reason": "sl", "exit_price": exit_price,
                 "pnl": round(pnl, 4), "balance_after": round(state["balance"], 4),
-                "leverage": pos.get("leverage", 1.0),
-                "margin_usd": round((lot["qty"] * pos["entry_price"]) / (pos.get("leverage", 1.0) or 1.0), 4),
             })
         elif hit_tp:
             exit_price = target_price
@@ -372,7 +400,7 @@ def check_open_position(state: dict, key: str, pos: dict, last_high: float, last
             lot["status"] = "closed_tp"
             changed = True
             send_telegram_message(f"🟢 <b>#{pos.get('trade_id','?')} | {lot_key}</b> برای <b>{symbol}</b> ({pos['source']}) با حد سود بسته شد. (سود/ضرر: {pnl:+.2f}$)")
-            log_trade_event({
+            log_trade_event({**_entry_details(pos),
                 "event_time_utc": datetime.now(timezone.utc).isoformat(),
                 "event_type": "lot_close", "trade_id": pos.get("trade_id", ""), "symbol": symbol,
                 "source": pos["source"], "timeframe": TIMEFRAME, "session": pos.get("session", ""),
@@ -380,8 +408,6 @@ def check_open_position(state: dict, key: str, pos: dict, last_high: float, last
                 "candle_time": pos.get("candle_time", ""),
                 "lot": lot_key, "exit_reason": lot["target"], "exit_price": exit_price,
                 "pnl": round(pnl, 4), "balance_after": round(state["balance"], 4),
-                "leverage": pos.get("leverage", 1.0),
-                "margin_usd": round((lot["qty"] * pos["entry_price"]) / (pos.get("leverage", 1.0) or 1.0), 4),
             })
 
             if lot_key == "lot_a" and pos["lot_b"]["status"] == "open":
@@ -389,7 +415,7 @@ def check_open_position(state: dict, key: str, pos: dict, last_high: float, last
                 send_telegram_message(
                     f"🛡 <b>#{pos.get('trade_id','?')} | حد ضرر پوزیشن {symbol} ({pos['source']}) به نقطه ورود ({pos['entry_price']:.6f}) منتقل شد (Risk-Free).</b>"
                 )
-                log_trade_event({
+                log_trade_event({**_entry_details(pos),
                     "event_time_utc": datetime.now(timezone.utc).isoformat(),
                     "event_type": "sl_to_be", "trade_id": pos.get("trade_id", ""), "symbol": symbol,
                     "source": pos["source"], "timeframe": TIMEFRAME, "session": pos.get("session", ""),
@@ -405,7 +431,7 @@ def check_open_position(state: dict, key: str, pos: dict, last_high: float, last
                 f"✅ <b>#{pos.get('trade_id','?')}</b> | پوزیشن <b>{symbol}</b> ({pos['source']}) کاملاً بسته شد.\n"
                 f"موجودی نقدی: {state['balance']:.2f}$  |  مارجین درگیر باقی‌مانده: {exposure:.2f}$"
             )
-            log_trade_event({
+            log_trade_event({**_entry_details(pos),
                 "event_time_utc": datetime.now(timezone.utc).isoformat(),
                 "event_type": "full_close", "trade_id": pos.get("trade_id", ""), "symbol": symbol,
                 "source": pos["source"], "timeframe": TIMEFRAME, "session": pos.get("session", ""),
