@@ -1,5 +1,5 @@
 {
-  "balance": 1123.2191229061693,
+  "balance": 1118.021645452028,
   "positions": {
     "CRVUSDT__ST": {
       "trade_id": 510,
@@ -75,32 +75,6 @@
       },
       "lot_b": {
         "qty": 0.0553393222777665,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "BNBUSDT__ST": {
-      "trade_id": 617,
-      "symbol": "BNBUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-09-25 14:00:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 772.47,
-      "sl_price": 760.7803636949695,
-      "tp1_price": 790.0044544575458,
-      "tp2_price": 807.5389089150915,
-      "qty_total": 0.3883645966833663,
-      "notional": 300.0,
-      "leverage": 3.0,
-      "lot_a": {
-        "qty": 0.19418229834168316,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.19418229834168316,
         "target": "tp2",
         "status": "open"
       }
@@ -221,52 +195,6 @@
       },
       "lot_b": {
         "qty": 0.0006019238932244798,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "BNBUSDT__SMC": {
-      "trade_id": 672,
-      "symbol": "BNBUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-28 05:15:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 765.48,
-      "sl_price": 760.4459236209899,
-      "tp1_price": 773.0311145685152,
-      "tp2_price": 780.5822291370304,
-      "qty_total": 0.13063698594346032,
-      "notional": 100.00000000000001,
-      "leverage": 1.0,
-      "signal_score": 5,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 31.14,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": true,
-        "bull_fvg_count": 0,
-        "bear_fvg_count": 3,
-        "bull_ob_count": 0,
-        "bear_ob_count": 2,
-        "trend": -1
-      },
-      "lot_a": {
-        "qty": 0.06531849297173016,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.06531849297173016,
         "target": "tp2",
         "status": "open"
       }
@@ -408,7 +336,53 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "VETUSDT__SMC": {
+      "trade_id": 677,
+      "symbol": "VETUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-28 07:30:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.008738,
+      "sl_price": 0.008555531674508137,
+      "tp1_price": 0.009011702488237794,
+      "tp2_price": 0.009285404976475587,
+      "qty_total": 11444.266422522318,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": true,
+        "vol_spike": false,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 33.3,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "bull_fvg_count": 0,
+        "bear_fvg_count": 6,
+        "bull_ob_count": 0,
+        "bear_ob_count": 3,
+        "trend": -1
+      },
+      "lot_a": {
+        "qty": 5722.133211261159,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 5722.133211261159,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 677
+  "next_trade_id": 678
 }

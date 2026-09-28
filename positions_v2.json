@@ -1,5 +1,5 @@
 {
-  "balance": 1011.118168801646,
+  "balance": 1011.2642705835912,
   "positions": {
     "ARKUSDT__POC": {
       "trade_id": 415,
@@ -805,7 +805,7 @@
       "session": "آسیا",
       "entry_price": 0.08724,
       "initial_sl_price": 0.08837297061839107,
-      "sl_price": 0.08837297061839107,
+      "sl_price": 0.08724,
       "tp1_price": 0.08554054407241339,
       "tp2_price": 0.08384108814482678,
       "qty_total": 171.939477303989,
@@ -833,8 +833,8 @@
         "bull_ob_count": 0,
         "bear_ob_count": 3
       },
-      "qty_open": 171.939477303989,
-      "phase": "before_tp1"
+      "qty_open": 85.9697386519945,
+      "phase": "after_tp1"
     },
     "IMXUSDT__POC": {
       "trade_id": 459,
@@ -2605,7 +2605,72 @@
       },
       "qty_open": 123.76237623762376,
       "phase": "before_tp1"
+    },
+    "SEIUSDT__POC": {
+      "trade_id": 526,
+      "symbol": "SEIUSDT",
+      "source": "POC Retest v2",
+      "direction": "short",
+      "candle_time": "2026-09-28 07:30:00",
+      "session": "آسیا",
+      "entry_price": 0.08039,
+      "sl_price": 0.08112103999999999,
+      "tp1_price": 0.07992,
+      "tp2_price": null,
+      "qty_total": 186.59037193680805,
+      "notional": 15.0,
+      "leverage": 1.0,
+      "margin_usd": 15.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.08076562500000001,
+        "leg_start": "2026-09-28 04:45:00",
+        "leg_end": "2026-09-28 05:30:00",
+        "rr": 0.643,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 186.59037193680805
+    },
+    "TRXUSDT__SMC": {
+      "trade_id": 527,
+      "symbol": "TRXUSDT",
+      "source": "ICT/SMC Scalp Pro v2",
+      "direction": "long",
+      "candle_time": "2026-09-28 07:30:00",
+      "session": "آسیا",
+      "entry_price": 0.3337,
+      "initial_sl_price": 0.33302614275643533,
+      "sl_price": 0.33302614275643533,
+      "tp1_price": 0.33471078586534697,
+      "tp2_price": 0.335721571730694,
+      "qty_total": 44.950554390170815,
+      "notional": 15.0,
+      "leverage": 1.0,
+      "margin_usd": 15.0,
+      "signal_score": 4,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 47.02,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": false,
+        "trend": 1,
+        "bull_fvg_count": 2,
+        "bear_fvg_count": 3,
+        "bull_ob_count": 0,
+        "bear_ob_count": 2
+      },
+      "qty_open": 44.950554390170815,
+      "phase": "before_tp1"
     }
   },
-  "next_trade_id": 526
+  "next_trade_id": 528
 }
