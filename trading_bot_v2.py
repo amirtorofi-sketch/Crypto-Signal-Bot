@@ -29,6 +29,9 @@ STARTING_BALANCE = 1000.0
 LEVERAGE_OVERRIDES = {"ETHUSDT": 10.0}
 DEFAULT_LEVERAGE = 1.0
 
+# لوریج ثابت استراتژی POC Retest روی همه‌ی نمادها (SMC همچنان از LEVERAGE_OVERRIDES پیروی می‌کنه)
+POC_LEVERAGE = 10.0
+
 
 def get_leverage(symbol: str) -> float:
     """لوریج مناسب برای هر نماد؛ اگه توی LEVERAGE_OVERRIDES نبود، پیش‌فرض ۱x برمی‌گرده."""
@@ -279,7 +282,7 @@ def open_position_poc(state: dict, symbol: str, direction: str, entry_price: flo
         )
         return
 
-    leverage = get_leverage(symbol)
+    leverage = POC_LEVERAGE
     margin_usd = FIXED_TRADE_AMOUNT
     notional = margin_usd * leverage
     qty_total = notional / entry_price if entry_price > 0 else 0
