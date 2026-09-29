@@ -1,5 +1,5 @@
 {
-  "balance": 1134.3144761219435,
+  "balance": 1137.2362403187258,
   "positions": {
     "BTCUSDT__ST": {
       "trade_id": 527,
@@ -186,54 +186,6 @@
       },
       "lot_b": {
         "qty": 541.4771496642842,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "CHZUSDT__SMC": {
-      "trade_id": 682,
-      "symbol": "CHZUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-28 14:15:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.01547,
-      "sl_price": 0.01547,
-      "sl_initial": 0.015242080661631154,
-      "tp1_price": 0.015811879007553268,
-      "tp2_price": 0.016153758015106535,
-      "adx_value": null,
-      "qty_total": 6464.124111182935,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 5,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 33.66,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": true,
-        "bull_fvg_count": 0,
-        "bear_fvg_count": 4,
-        "bull_ob_count": 0,
-        "bear_ob_count": 1,
-        "trend": -1
-      },
-      "lot_a": {
-        "qty": 3232.0620555914675,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 3232.0620555914675,
         "target": "tp2",
         "status": "open"
       }
@@ -517,7 +469,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.3843,
-      "sl_price": 0.3943788948242076,
+      "sl_price": 0.3843,
       "sl_initial": 0.3943788948242076,
       "tp1_price": 0.3691816577636885,
       "tp2_price": 0.354063315527377,
@@ -548,7 +500,7 @@
       "lot_a": {
         "qty": 130.10668748373666,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 130.10668748373666,
@@ -565,7 +517,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.0901,
-      "sl_price": 0.0912469931441622,
+      "sl_price": 0.0901,
       "sl_initial": 0.0912469931441622,
       "tp1_price": 0.08837951028375671,
       "tp2_price": 0.08665902056751341,
@@ -596,14 +548,53 @@
       "lot_a": {
         "qty": 554.9389567147614,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 554.9389567147614,
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CHZUSDT__ST": {
+      "trade_id": 697,
+      "symbol": "CHZUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-09-29 01:15:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.01546,
+      "sl_price": 0.015034788070419837,
+      "sl_initial": 0.015034788070419837,
+      "tp1_price": 0.016097817894370245,
+      "tp2_price": 0.01673563578874049,
+      "adx_value": 15.184036822346783,
+      "qty_total": 19404.915912031047,
+      "notional": 300.0,
+      "leverage": 3.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 15.184,
+        "di_plus": 20.652,
+        "di_minus": 36.076,
+        "ema_trend": 0.016095,
+        "close_vs_ema": "below",
+        "volume": 3665922.0,
+        "vol_ma": 919779.6,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 9702.457956015523,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 9702.457956015523,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 697
+  "next_trade_id": 698
 }
