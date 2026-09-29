@@ -1,5 +1,5 @@
 {
-  "balance": 1162.4937346363884,
+  "balance": 1153.913913456093,
   "positions": {
     "BTCUSDT__ST": {
       "trade_id": 527,
@@ -366,45 +366,6 @@
         "status": "open"
       }
     },
-    "MASKUSDT__ST": {
-      "trade_id": 722,
-      "symbol": "MASKUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-09-29 15:15:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.459,
-      "sl_price": 0.44729825082183794,
-      "sl_initial": 0.44729825082183794,
-      "tp1_price": 0.47655262376724317,
-      "tp2_price": 0.49410524753448626,
-      "adx_value": 22.71426723596059,
-      "qty_total": 653.59477124183,
-      "notional": 300.0,
-      "leverage": 3.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "adx": 22.714,
-        "di_plus": 21.812,
-        "di_minus": 38.572,
-        "ema_trend": 0.46498,
-        "close_vs_ema": "below",
-        "volume": 9060.3,
-        "vol_ma": 5203.585,
-        "vol_above_ma": true
-      },
-      "lot_a": {
-        "qty": 326.797385620915,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 326.797385620915,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "VETUSDT__SMC": {
       "trade_id": 724,
       "symbol": "VETUSDT",
@@ -501,21 +462,59 @@
         "status": "open"
       }
     },
-    "MASKUSDT__SMC": {
-      "trade_id": 729,
-      "symbol": "MASKUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-29 21:15:00",
+    "ROSEUSDT__POC": {
+      "trade_id": 730,
+      "symbol": "ROSEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-09-29 23:30:00",
       "session": "نیویورک",
       "raw_direction": "short",
       "direction": "long",
-      "entry_price": 0.45,
-      "sl_price": 0.445807714036206,
-      "sl_initial": 0.445807714036206,
-      "tp1_price": 0.456288428945691,
-      "tp2_price": 0.46257685789138203,
+      "entry_price": 0.00895,
+      "sl_price": 0.00891102,
+      "sl_initial": 0.00891102,
+      "tp1_price": 0.00907,
+      "tp2_price": null,
       "adx_value": null,
-      "qty_total": 222.22222222222223,
+      "qty_total": 11173.1843575419,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.008975,
+        "leg_start": "2026-09-29 18:30:00",
+        "leg_end": "2026-09-29 20:00:00",
+        "rr": 3.079,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.008988979999999999,
+        "raw_tp": 0.00883
+      },
+      "lot_a": {
+        "qty": 11173.1843575419,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "MASKUSDT__SMC": {
+      "trade_id": 731,
+      "symbol": "MASKUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-29 23:30:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.445,
+      "sl_price": 0.4407305827478162,
+      "sl_initial": 0.4407305827478162,
+      "tp1_price": 0.4514041258782757,
+      "tp2_price": 0.4578082517565515,
+      "adx_value": null,
+      "qty_total": 224.7191011235955,
       "notional": 100.0,
       "leverage": 1.0,
       "signal_score": 5,
@@ -529,26 +528,26 @@
         "htf_bearish": true,
         "discount_zone": true,
         "premium_zone": false,
-        "rsi_value": 40.26,
+        "rsi_value": 33.11,
         "rsi_bull_ok": false,
         "rsi_bear_ok": true,
         "bull_fvg_count": 0,
-        "bear_fvg_count": 5,
+        "bear_fvg_count": 6,
         "bull_ob_count": 0,
         "bear_ob_count": 1,
         "trend": -1
       },
       "lot_a": {
-        "qty": 111.11111111111111,
+        "qty": 112.35955056179775,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 111.11111111111111,
+        "qty": 112.35955056179775,
         "target": "tp2",
         "status": "open"
       }
     }
   },
-  "next_trade_id": 730
+  "next_trade_id": 732
 }
