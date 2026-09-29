@@ -1,5 +1,5 @@
 {
-  "balance": 1145.031368729057,
+  "balance": 1152.7084091368124,
   "positions": {
     "BTCUSDT__ST": {
       "trade_id": 527,
@@ -114,7 +114,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.0877,
-      "sl_price": 0.08470766024995488,
+      "sl_price": 0.0877,
       "sl_initial": 0.08470766024995488,
       "tp1_price": 0.09218850962506768,
       "tp2_price": 0.09667701925013536,
@@ -136,7 +136,7 @@
       "lot_a": {
         "qty": 1710.376282782212,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 1710.376282782212,
@@ -461,7 +461,55 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "MANAUSDT__SMC": {
+      "trade_id": 711,
+      "symbol": "MANAUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-29 12:00:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.0922,
+      "sl_price": 0.0933119276137997,
+      "sl_initial": 0.0933119276137997,
+      "tp1_price": 0.09053210857930047,
+      "tp2_price": 0.08886421715860093,
+      "adx_value": null,
+      "qty_total": 1084.5986984815618,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": true,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 73.09,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "bull_fvg_count": 6,
+        "bear_fvg_count": 0,
+        "bull_ob_count": 0,
+        "bear_ob_count": 0,
+        "trend": 1
+      },
+      "lot_a": {
+        "qty": 542.2993492407809,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 542.2993492407809,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 711
+  "next_trade_id": 712
 }
