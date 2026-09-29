@@ -21,6 +21,7 @@ from signal_bot import (
     send_telegram_message,
 )
 from signal_bot import atr as calc_atr
+from signal_bot_v2 import check_strategy_poc_retest
 
 # =====================================================================
 # تنظیمات
@@ -30,11 +31,13 @@ STARTING_BALANCE = 1000.0      # موجودی فرضی اولیه (دلار مج
 # فعلاً فقط Supertrend+ADX فعاله (به‌خاطر نیاز به داده‌ی بیشتر برای ICT/SMC خاموش شد)
 # هر دو استراتژی فعالن: Supertrend+ADX (با لوریج 3x) و ICT/SMC Scalp Pro (بدون لوریج، عادی)
 ENABLE_SMC = True
+ENABLE_POC = True   # POC Retest معکوس و بدون لوریج (همون استراتژی dasttrade2 ولی جهت برعکس)
 
 # حجم هر معامله به تفکیک استراتژی (چون Win Rate بالای Supertrend+ADX توجیه‌کننده‌ی حجم بیشتره)
 TRADE_AMOUNT_BY_SOURCE = {
     "Supertrend+ADX": 300.0,
     "ICT/SMC Scalp Pro": 100.0,
+    "POC Retest (Reversed)": 100.0,
 }
 DEFAULT_TRADE_AMOUNT = 100.0
 
@@ -43,13 +46,14 @@ DEFAULT_TRADE_AMOUNT = 100.0
 LEVERAGE_BY_SOURCE = {
     "Supertrend+ADX": 3.0,
     "ICT/SMC Scalp Pro": 1.0,
+    "POC Retest (Reversed)": 1.0,
 }
 DEFAULT_LEVERAGE = 1.0
 
 POSITIONS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "positions.json")
 TRADES_LOG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "trades_log.csv")
 
-SOURCE_TAG = {"Supertrend+ADX": "ST", "ICT/SMC Scalp Pro": "SMC"}
+SOURCE_TAG = {"Supertrend+ADX": "ST", "ICT/SMC Scalp Pro": "SMC", "POC Retest (Reversed)": "POC"}
 
 TRADES_LOG_FIELDS = [
     "event_time_utc", "event_type", "trade_id", "symbol", "source", "timeframe", "session",
@@ -175,6 +179,19 @@ def resolve_direction_and_levels(raw_direction: str, entry: float, raw_sl: float
         return "long", entry - risk, entry + risk * rr1, entry + risk * rr2
 
 
+def resolve_poc_reversed(raw_direction: str, entry: float, raw_sl: float, raw_tp: float):
+    """
+    POC Retest معکوس: جهت سیگنال برعکس می‌شه و فاصله‌ی ریسک (تا SL) و فاصله‌ی سود (تا TP)
+    عیناً به‌صورت آینه‌ای حول قیمت ورود در سمت مخالف بازتعریف می‌شن (RR ثابت می‌مونه).
+    تک‌هدفیه: فقط یک SL و یک TP.
+    """
+    risk = abs(entry - raw_sl)
+    reward = abs(raw_tp - entry)
+    if raw_direction == "long":
+        return "short", entry + risk, entry - reward
+    return "long", entry - risk, entry + reward
+
+
 def position_key(symbol: str, source: str) -> str:
     """کلید پوزیشن = نماد + استراتژی، تا دو استراتژی روی یک نماد مزاحم هم نشوند."""
     return f"{symbol}__{SOURCE_TAG.get(source, source)}"
@@ -284,7 +301,8 @@ def open_position(state: dict, symbol: str, direction: str, entry_price: float, 
         })
         return
 
-    qty_half = qty_total / 2
+    single_target = (source == "POC Retest (Reversed)")   # تک‌هدفی: کل حجم روی lot_a، بدون TP2 و بدون Risk-Free
+    qty_half = qty_total if single_target else qty_total / 2
     direction_label = "خرید (Long)" if direction == "long" else "فروش (Short)"
 
     trade_id = state.get("next_trade_id", 1)
@@ -310,7 +328,8 @@ def open_position(state: dict, symbol: str, direction: str, entry_price: float, 
         "signal_score": signal_score,
         "market_snapshot": market_snapshot,
         "lot_a": {"qty": qty_half, "target": "tp1", "status": "open"},
-        "lot_b": {"qty": qty_total - qty_half, "target": "tp2", "status": "open"},
+        "lot_b": ({"qty": 0.0, "target": "tp2", "status": "none"} if single_target
+                  else {"qty": qty_total - qty_half, "target": "tp2", "status": "open"}),
     }
     save_state(state)
 
@@ -322,7 +341,8 @@ def open_position(state: dict, symbol: str, direction: str, entry_price: float, 
         f"{emoji} <b>#{trade_id} | پوزیشن فرضی {direction_label} باز شد (Paper Trading)</b> | {source}\n"
         f"نماد: <b>{symbol}</b>\n{candle_line}حجم: {qty_total:.6f}\nارزش معامله: {notional:.2f}$ (لوریج {leverage:g}x)\n"
         f"مارجین این معامله: {margin_needed:.2f}$\n"
-        f"ورود: {entry_price:.6f}\nSL: {sl_price:.6f}\nTP1: {tp1_price:.6f}\nTP2: {tp2_price:.6f}\n"
+        f"ورود: {entry_price:.6f}\nSL: {sl_price:.6f}\n"
+        + (f"TP: {tp1_price:.6f}\n" if tp2_price is None else f"TP1: {tp1_price:.6f}\nTP2: {tp2_price:.6f}\n") +
         f"—\nموجودی نقدی: {state['balance']:.2f}$\n"
         f"مارجین درگیر در پوزیشن‌های باز: {margin_used:.2f}$\n"
         f"ارزش کل پوزیشن‌های باز (اسمی): {exposure:.2f}$"
@@ -511,6 +531,20 @@ def main():
                               signal_score=res["bear_score"], market_snapshot=res.get("confluence"))
             elif res is not None:
                 print(f"[{symbol}] بدون سیگنال SMC جدید (امتیاز خرید={res['bull_score']}/7, امتیاز فروش={res['bear_score']}/7)")
+
+        # --- استراتژی ۳: POC Retest (معکوس، بدون لوریج، تک‌هدفی) ---
+        if ENABLE_POC and f"{symbol}__POC" not in state["positions"]:
+            sig = check_strategy_poc_retest(df)
+            if sig is not None:
+                direction, sl, tp = resolve_poc_reversed(sig.direction, sig.entry, sig.stop_loss, sig.take_profit)
+                snap = {
+                    "poc": sig.poc, "leg_start": str(sig.leg_start), "leg_end": str(sig.leg_end),
+                    "rr": round(sig.rr, 3) if sig.rr == sig.rr else None, "reason": sig.reason,
+                    "raw_sl": sig.stop_loss, "raw_tp": sig.take_profit,
+                }
+                print(f"[{symbol}] سیگنال POC Retest ({sig.direction}) -> باز کردن پوزیشن {direction} (معکوس)...")
+                open_position(state, symbol, direction, sig.entry, sl, tp, None, source="POC Retest (Reversed)",
+                              candle_time=sig.time, raw_direction=sig.direction, market_snapshot=snap)
 
         time.sleep(0.3)
 
