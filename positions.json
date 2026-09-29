@@ -452,7 +452,93 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "DOGEUSDT__SMC": {
+      "trade_id": 725,
+      "symbol": "DOGEUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-29 19:00:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.09414,
+      "sl_price": 0.09313695770831901,
+      "sl_initial": 0.09313695770831901,
+      "tp1_price": 0.0956445634375215,
+      "tp2_price": 0.09714912687504298,
+      "adx_value": null,
+      "qty_total": 1062.2477161674103,
+      "notional": 100.00000000000001,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": true,
+        "vol_spike": false,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 48.4,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "bull_fvg_count": 3,
+        "bear_fvg_count": 2,
+        "bull_ob_count": 1,
+        "bear_ob_count": 2,
+        "trend": -1
+      },
+      "lot_a": {
+        "qty": 531.1238580837052,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 531.1238580837052,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "ONEUSDT__POC": {
+      "trade_id": 726,
+      "symbol": "ONEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-09-29 19:00:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.002435,
+      "sl_price": 0.0024175500000000005,
+      "sl_initial": 0.0024175500000000005,
+      "tp1_price": 0.0024700000000000004,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 41067.761806981514,
+      "notional": 99.99999999999999,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.002442645833333333,
+        "leg_start": "2026-09-29 15:45:00",
+        "leg_end": "2026-09-29 17:45:00",
+        "rr": 2.006,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.0024524499999999997,
+        "raw_tp": 0.0024
+      },
+      "lot_a": {
+        "qty": 41067.761806981514,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 725
+  "next_trade_id": 727
 }
