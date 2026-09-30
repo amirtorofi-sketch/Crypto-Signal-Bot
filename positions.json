@@ -1,5 +1,5 @@
 {
-  "balance": 1180.5823413683004,
+  "balance": 1180.259673863925,
   "positions": {
     "BTCUSDT__ST": {
       "trade_id": 527,
@@ -444,44 +444,45 @@
         "status": "open"
       }
     },
-    "ETHUSDT__POC": {
-      "trade_id": 765,
-      "symbol": "ETHUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-09-30 14:30:00",
+    "VETUSDT__ST": {
+      "trade_id": 766,
+      "symbol": "VETUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-09-30 14:45:00",
       "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 2673.96,
-      "sl_price": 2682.588,
-      "sl_initial": 2682.588,
-      "tp1_price": 2648.07,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.037397717243339464,
-      "notional": 100.0,
-      "leverage": 10.0,
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.008887,
+      "sl_price": 0.00852079887201992,
+      "sl_initial": 0.00852079887201992,
+      "tp1_price": 0.009436301691970123,
+      "tp2_price": 0.009985603383940245,
+      "adx_value": 22.477713528142257,
+      "qty_total": 33757.17339934736,
+      "notional": 300.0,
+      "leverage": 3.0,
       "signal_score": null,
       "market_snapshot": {
-        "poc": 2670.0822916666666,
-        "leg_start": "2026-09-30 08:30:00",
-        "leg_end": "2026-09-30 09:30:00",
-        "rr": 3.001,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 2665.332,
-        "raw_tp": 2699.85
+        "adx": 22.478,
+        "di_plus": 16.098,
+        "di_minus": 23.81,
+        "ema_trend": 0.008911,
+        "close_vs_ema": "below",
+        "volume": 3009710.7,
+        "vol_ma": 2416174.89,
+        "vol_above_ma": true
       },
       "lot_a": {
-        "qty": 0.037397717243339464,
+        "qty": 16878.58669967368,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 0.0,
+        "qty": 16878.58669967368,
         "target": "tp2",
-        "status": "none"
+        "status": "open"
       }
     }
   },
-  "next_trade_id": 766
+  "next_trade_id": 767
 }
