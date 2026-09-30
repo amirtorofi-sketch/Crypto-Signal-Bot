@@ -1,5 +1,5 @@
 {
-  "balance": 1172.446175512727,
+  "balance": 1177.022268794946,
   "positions": {
     "BTCUSDT__ST": {
       "trade_id": 527,
@@ -36,7 +36,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 760.44,
-      "sl_price": 748.3170054095693,
+      "sl_price": 760.44,
       "sl_initial": 748.3170054095693,
       "tp1_price": 778.6244918856462,
       "tp2_price": 796.8089837712922,
@@ -58,7 +58,7 @@
       "lot_a": {
         "qty": 0.19725422124033454,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.19725422124033454,
@@ -309,54 +309,6 @@
         "status": "open"
       }
     },
-    "VETUSDT__SMC": {
-      "trade_id": 746,
-      "symbol": "VETUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-30 08:45:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.008867,
-      "sl_price": 0.008867,
-      "sl_initial": 0.008754784679638417,
-      "tp1_price": 0.009035322980542375,
-      "tp2_price": 0.00920364596108475,
-      "adx_value": null,
-      "qty_total": 11277.77151234916,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 5,
-      "market_snapshot": {
-        "recent_bull_sweep": true,
-        "recent_bear_sweep": true,
-        "vol_spike": true,
-        "strong_bull_rej": false,
-        "strong_bear_rej": false,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 55.68,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "bull_fvg_count": 1,
-        "bear_fvg_count": 4,
-        "bull_ob_count": 0,
-        "bear_ob_count": 2,
-        "trend": -1
-      },
-      "lot_a": {
-        "qty": 5638.88575617458,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 5638.88575617458,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "ETHUSDT__SMC": {
       "trade_id": 755,
       "symbol": "ETHUSDT",
@@ -401,54 +353,6 @@
       },
       "lot_b": {
         "qty": 0.018316829869620806,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "SOLUSDT__SMC": {
-      "trade_id": 756,
-      "symbol": "SOLUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-30 12:30:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 121.47,
-      "sl_price": 122.57438412629074,
-      "sl_initial": 122.57438412629074,
-      "tp1_price": 119.81342381056389,
-      "tp2_price": 118.15684762112778,
-      "adx_value": null,
-      "qty_total": 0.8232485387338437,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 5,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": true,
-        "vol_spike": true,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": true,
-        "htf_bearish": false,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 73.79,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "bull_fvg_count": 5,
-        "bear_fvg_count": 0,
-        "bull_ob_count": 1,
-        "bear_ob_count": 2,
-        "trend": 1
-      },
-      "lot_a": {
-        "qty": 0.41162426936692187,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.41162426936692187,
         "target": "tp2",
         "status": "open"
       }
