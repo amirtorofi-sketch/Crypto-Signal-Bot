@@ -442,7 +442,83 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "ROSEUSDT__POC": {
+      "trade_id": 750,
+      "symbol": "ROSEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-09-30 12:00:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.00912,
+      "sl_price": 0.00904081,
+      "sl_initial": 0.00904081,
+      "tp1_price": 0.00917,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 10964.912280701756,
+      "notional": 100.00000000000001,
+      "leverage": 10.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.009145,
+        "leg_start": "2026-09-30 09:15:00",
+        "leg_end": "2026-09-30 11:00:00",
+        "rr": 0.631,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.00919919,
+        "raw_tp": 0.00907
+      },
+      "lot_a": {
+        "qty": 10964.912280701756,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "GALAUSDT__POC": {
+      "trade_id": 751,
+      "symbol": "GALAUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-09-30 12:00:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.002277,
+      "sl_price": 0.00226171,
+      "sl_initial": 0.00226171,
+      "tp1_price": 0.0022919999999999998,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 43917.435221783046,
+      "notional": 99.99999999999999,
+      "leverage": 10.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0022805625,
+        "leg_start": "2026-09-30 09:30:00",
+        "leg_end": "2026-09-30 11:15:00",
+        "rr": 0.981,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.0022922899999999998,
+        "raw_tp": 0.002262
+      },
+      "lot_a": {
+        "qty": 43917.435221783046,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 750
+  "next_trade_id": 752
 }
