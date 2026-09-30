@@ -1,5 +1,5 @@
 {
-  "balance": 1211.7609687373133,
+  "balance": 1211.426175930433,
   "positions": {
     "BTCUSDT__ST": {
       "trade_id": 527,
@@ -387,44 +387,6 @@
         "status": "open"
       }
     },
-    "VETUSDT__POC": {
-      "trade_id": 774,
-      "symbol": "VETUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-09-30 17:15:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.008953,
-      "sl_price": 0.008923026,
-      "sl_initial": 0.008923026,
-      "tp1_price": 0.009073999999999999,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 11169.440411035408,
-      "notional": 100.0,
-      "leverage": 10.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.008957937499999999,
-        "leg_start": "2026-09-30 13:00:00",
-        "leg_end": "2026-09-30 15:15:00",
-        "rr": 4.037,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.008982973999999998,
-        "raw_tp": 0.008832
-      },
-      "lot_a": {
-        "qty": 11169.440411035408,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "GALAUSDT__SMC": {
       "trade_id": 775,
       "symbol": "GALAUSDT",
@@ -472,7 +434,45 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CHZUSDT__POC": {
+      "trade_id": 776,
+      "symbol": "CHZUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-09-30 17:30:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.01625,
+      "sl_price": 0.016336180000000002,
+      "sl_initial": 0.016336180000000002,
+      "tp1_price": 0.016050000000000002,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 6153.846153846153,
+      "notional": 100.0,
+      "leverage": 10.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.016216666666666664,
+        "leg_start": "2026-09-30 15:15:00",
+        "leg_end": "2026-09-30 16:00:00",
+        "rr": 2.321,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.01616382,
+        "raw_tp": 0.01645
+      },
+      "lot_a": {
+        "qty": 6153.846153846153,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 776
+  "next_trade_id": 777
 }
