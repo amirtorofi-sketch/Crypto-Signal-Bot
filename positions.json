@@ -1,5 +1,5 @@
 {
-  "balance": 1174.3614087377025,
+  "balance": 1172.446175512727,
   "positions": {
     "BTCUSDT__ST": {
       "trade_id": 527,
@@ -357,102 +357,6 @@
         "status": "open"
       }
     },
-    "ROSEUSDT__SMC": {
-      "trade_id": 752,
-      "symbol": "ROSEUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-30 12:15:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.00913,
-      "sl_price": 0.009256153296559625,
-      "sl_initial": 0.009256153296559625,
-      "tp1_price": 0.00894077005516056,
-      "tp2_price": 0.00875154011032112,
-      "adx_value": null,
-      "qty_total": 10952.902519167581,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 5,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": false,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": true,
-        "htf_bearish": false,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 49.21,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "bull_fvg_count": 4,
-        "bear_fvg_count": 2,
-        "bull_ob_count": 3,
-        "bear_ob_count": 0,
-        "trend": 1
-      },
-      "lot_a": {
-        "qty": 5476.4512595837905,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 5476.4512595837905,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "BTCUSDT__SMC": {
-      "trade_id": 754,
-      "symbol": "BTCUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-09-30 12:30:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 84828.16,
-      "sl_price": 85280.70844891449,
-      "sl_initial": 85280.70844891449,
-      "tp1_price": 84149.33732662827,
-      "tp2_price": 83470.51465325654,
-      "adx_value": null,
-      "qty_total": 0.0011788538145823273,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 5,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": true,
-        "htf_bearish": false,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 83.06,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "bull_fvg_count": 4,
-        "bear_fvg_count": 0,
-        "bull_ob_count": 3,
-        "bear_ob_count": 0,
-        "trend": 1
-      },
-      "lot_a": {
-        "qty": 0.0005894269072911636,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0005894269072911636,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "ETHUSDT__SMC": {
       "trade_id": 755,
       "symbol": "ETHUSDT",
@@ -596,7 +500,55 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "BTCUSDT__SMC": {
+      "trade_id": 758,
+      "symbol": "BTCUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-09-30 12:45:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 85290.32,
+      "sl_price": 85809.89713116016,
+      "sl_initial": 85809.89713116016,
+      "tp1_price": 84510.95430325977,
+      "tp2_price": 83731.58860651954,
+      "adx_value": null,
+      "qty_total": 0.0011724659961411799,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 86.67,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "bull_fvg_count": 5,
+        "bear_fvg_count": 0,
+        "bull_ob_count": 3,
+        "bear_ob_count": 0,
+        "trend": 1
+      },
+      "lot_a": {
+        "qty": 0.0005862329980705899,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0005862329980705899,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 758
+  "next_trade_id": 759
 }
