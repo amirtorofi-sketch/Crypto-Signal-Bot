@@ -1,5 +1,5 @@
 {
-  "balance": 1005.5486935517796,
+  "balance": 1005.852883458544,
   "positions": {
     "CETUSUSDT__SMC": {
       "trade_id": 548,
@@ -744,46 +744,6 @@
         "bear_ob_count": 2
       },
       "qty_open": 464.3962848297213,
-      "phase": "after_tp1"
-    },
-    "LQTYUSDT__SMC": {
-      "trade_id": 2236,
-      "symbol": "LQTYUSDT",
-      "source": "ICT/SMC Scalp Pro v2",
-      "direction": "long",
-      "candle_time": "2026-09-29 22:30:00",
-      "session": "نیویورک",
-      "entry_price": 0.2334,
-      "initial_sl_price": 0.23024453670049655,
-      "sl_price": 0.2334,
-      "tp1_price": 0.23813319494925517,
-      "tp2_price": 0.24286638989851034,
-      "qty_total": 64.26735218508998,
-      "notional": 15.0,
-      "leverage": 1.0,
-      "margin_usd": 15.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": true,
-        "vol_spike": true,
-        "strong_bull_rej": false,
-        "strong_bear_rej": false,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 48.45,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": 1,
-        "bull_fvg_count": 4,
-        "bear_fvg_count": 3,
-        "bull_ob_count": 1,
-        "bear_ob_count": 3
-      },
-      "qty_open": 32.13367609254499,
       "phase": "after_tp1"
     },
     "BANANAUSDT__SMC": {
@@ -3180,7 +3140,97 @@
       },
       "qty_open": 1219.5121951219512,
       "phase": "before_tp1"
+    },
+    "MOVRUSDT__SMC": {
+      "trade_id": 2764,
+      "symbol": "MOVRUSDT",
+      "source": "ICT/SMC Scalp Pro v2",
+      "direction": "long",
+      "candle_time": "2026-09-30 09:45:00",
+      "session": "لندن",
+      "entry_price": 1.841,
+      "initial_sl_price": 1.6325139297234414,
+      "sl_price": 1.6325139297234414,
+      "tp1_price": 2.153729105414838,
+      "tp2_price": 2.4664582108296758,
+      "qty_total": 8.147745790331342,
+      "notional": 15.0,
+      "leverage": 1.0,
+      "margin_usd": 15.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 65.28,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": 1,
+        "bull_fvg_count": 6,
+        "bear_fvg_count": 0,
+        "bull_ob_count": 3,
+        "bear_ob_count": 0
+      },
+      "qty_open": 8.147745790331342,
+      "phase": "before_tp1"
+    },
+    "SEIUSDT__POC": {
+      "trade_id": 2765,
+      "symbol": "SEIUSDT",
+      "source": "POC Retest v2",
+      "direction": "short",
+      "candle_time": "2026-09-30 09:45:00",
+      "session": "لندن",
+      "entry_price": 0.0741,
+      "sl_price": 0.07458450999999999,
+      "tp1_price": 0.07335,
+      "tp2_price": null,
+      "qty_total": 2024.2914979757086,
+      "notional": 150.0,
+      "leverage": 10.0,
+      "margin_usd": 15.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.074144375,
+        "leg_start": "2026-09-30 07:45:00",
+        "leg_end": "2026-09-30 08:30:00",
+        "rr": 1.548,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 2024.2914979757086
+    },
+    "SUIUSDT__POC": {
+      "trade_id": 2766,
+      "symbol": "SUIUSDT",
+      "source": "POC Retest v2",
+      "direction": "short",
+      "candle_time": "2026-09-30 09:45:00",
+      "session": "لندن",
+      "entry_price": 1.1607,
+      "sl_price": 1.1696685,
+      "tp1_price": 1.152,
+      "tp2_price": null,
+      "qty_total": 129.23235978288963,
+      "notional": 150.0,
+      "leverage": 10.0,
+      "margin_usd": 15.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 1.1642625,
+        "leg_start": "2026-09-30 07:45:00",
+        "leg_end": "2026-09-30 08:30:00",
+        "rr": 0.97,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 129.23235978288963
     }
   },
-  "next_trade_id": 2764
+  "next_trade_id": 2767
 }
