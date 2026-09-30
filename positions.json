@@ -1,5 +1,5 @@
 {
-  "balance": 1157.298094670337,
+  "balance": 1157.8588378332568,
   "positions": {
     "BTCUSDT__ST": {
       "trade_id": 527,
@@ -510,44 +510,6 @@
         "status": "open"
       }
     },
-    "CHZUSDT__POC": {
-      "trade_id": 735,
-      "symbol": "CHZUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-09-30 02:15:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.01616,
-      "sl_price": 0.016013710000000004,
-      "sl_initial": 0.016013710000000004,
-      "tp1_price": 0.016300000000000002,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 6188.118811881188,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.016171875,
-        "leg_start": "2026-09-29 23:00:00",
-        "leg_end": "2026-09-30 00:15:00",
-        "rr": 0.957,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.016306289999999998,
-        "raw_tp": 0.01602
-      },
-      "lot_a": {
-        "qty": 6188.118811881188,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "MANAUSDT__SMC": {
       "trade_id": 736,
       "symbol": "MANAUSDT",
@@ -557,7 +519,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.0881,
-      "sl_price": 0.0872457575986563,
+      "sl_price": 0.0881,
       "sl_initial": 0.0872457575986563,
       "tp1_price": 0.08938136360201554,
       "tp2_price": 0.0906627272040311,
@@ -588,7 +550,7 @@
       "lot_a": {
         "qty": 567.5368898978434,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 567.5368898978434,
@@ -596,44 +558,45 @@
         "status": "open"
       }
     },
-    "GALAUSDT__POC": {
-      "trade_id": 738,
+    "GALAUSDT__ST": {
+      "trade_id": 739,
       "symbol": "GALAUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-09-30 04:00:00",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-09-30 04:15:00",
       "session": "آسیا",
       "raw_direction": "long",
       "direction": "short",
-      "entry_price": 0.002249,
-      "sl_price": 0.0022722280000000003,
-      "sl_initial": 0.0022722280000000003,
-      "tp1_price": 0.002233,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 44464.2063139173,
-      "notional": 100.0,
-      "leverage": 1.0,
+      "entry_price": 0.002271,
+      "sl_price": 0.002344621073992594,
+      "sl_initial": 0.002344621073992594,
+      "tp1_price": 0.0021605683890111088,
+      "tp2_price": 0.002050136778022218,
+      "adx_value": 16.18498187217541,
+      "qty_total": 132100.3963011889,
+      "notional": 300.0,
+      "leverage": 3.0,
       "signal_score": null,
       "market_snapshot": {
-        "poc": 0.0022489583333333333,
-        "leg_start": "2026-09-30 00:15:00",
-        "leg_end": "2026-09-30 01:45:00",
-        "rr": 0.689,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.002225772,
-        "raw_tp": 0.002265
+        "adx": 16.185,
+        "di_plus": 29.791,
+        "di_minus": 19.918,
+        "ema_trend": 0.002232,
+        "close_vs_ema": "above",
+        "volume": 16166799.0,
+        "vol_ma": 8061014.75,
+        "vol_above_ma": true
       },
       "lot_a": {
-        "qty": 44464.2063139173,
+        "qty": 66050.19815059446,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 0.0,
+        "qty": 66050.19815059446,
         "target": "tp2",
-        "status": "none"
+        "status": "open"
       }
     }
   },
-  "next_trade_id": 739
+  "next_trade_id": 740
 }
