@@ -31,7 +31,7 @@ STARTING_BALANCE = 1000.0      # موجودی فرضی اولیه (دلار مج
 # فعلاً فقط Supertrend+ADX فعاله (به‌خاطر نیاز به داده‌ی بیشتر برای ICT/SMC خاموش شد)
 # هر دو استراتژی فعالن: Supertrend+ADX (با لوریج 3x) و ICT/SMC Scalp Pro (بدون لوریج، عادی)
 ENABLE_SMC = True
-ENABLE_POC = True   # POC Retest معکوس و بدون لوریج (همون استراتژی dasttrade2 ولی جهت برعکس)
+ENABLE_POC = True   # POC Retest معکوس با لوریج ۱۰ و مارجین ۱۰$ (همون استراتژی dasttrade2 ولی جهت برعکس)
 
 # حجم هر معامله به تفکیک استراتژی (چون Win Rate بالای Supertrend+ADX توجیه‌کننده‌ی حجم بیشتره)
 TRADE_AMOUNT_BY_SOURCE = {
@@ -46,7 +46,7 @@ DEFAULT_TRADE_AMOUNT = 100.0
 LEVERAGE_BY_SOURCE = {
     "Supertrend+ADX": 3.0,
     "ICT/SMC Scalp Pro": 1.0,
-    "POC Retest (Reversed)": 1.0,
+    "POC Retest (Reversed)": 10.0,   # مارجین هر معامله = 100 / 10 = 10$
 }
 DEFAULT_LEVERAGE = 1.0
 
