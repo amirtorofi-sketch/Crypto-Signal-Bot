@@ -682,7 +682,55 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "SOLUSDT__SMC": {
+      "trade_id": 800,
+      "symbol": "SOLUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-10-01 03:45:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 118.7,
+      "sl_price": 119.40408431189837,
+      "sl_initial": 119.40408431189837,
+      "tp1_price": 117.64387353215244,
+      "tp2_price": 116.58774706430489,
+      "adx_value": null,
+      "qty_total": 0.8424599831508003,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 59.61,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "bull_fvg_count": 2,
+        "bear_fvg_count": 3,
+        "bull_ob_count": 0,
+        "bear_ob_count": 1,
+        "trend": 1
+      },
+      "lot_a": {
+        "qty": 0.42122999157540014,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.42122999157540014,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 800
+  "next_trade_id": 801
 }
