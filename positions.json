@@ -702,7 +702,121 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "SOLUSDT__POC": {
+      "trade_id": 843,
+      "symbol": "SOLUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-01 17:00:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 117.73,
+      "sl_price": 118.43714000000001,
+      "sl_initial": 118.43714000000001,
+      "tp1_price": 117.23,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.8494011721736175,
+      "notional": 100.0,
+      "leverage": 10.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 117.63625,
+        "leg_start": "2026-10-01 13:00:00",
+        "leg_end": "2026-10-01 14:30:00",
+        "rr": 0.707,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 117.02286,
+        "raw_tp": 118.23
+      },
+      "lot_a": {
+        "qty": 0.8494011721736175,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "CRVUSDT__POC": {
+      "trade_id": 844,
+      "symbol": "CRVUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-01 17:00:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.38,
+      "sl_price": 0.3837766,
+      "sl_initial": 0.3837766,
+      "tp1_price": 0.3779,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 263.1578947368421,
+      "notional": 99.99999999999999,
+      "leverage": 10.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.37879375,
+        "leg_start": "2026-10-01 14:45:00",
+        "leg_end": "2026-10-01 16:30:00",
+        "rr": 0.556,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.3762234,
+        "raw_tp": 0.3821
+      },
+      "lot_a": {
+        "qty": 263.1578947368421,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "ROSEUSDT__POC": {
+      "trade_id": 845,
+      "symbol": "ROSEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-01 17:00:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.00844,
+      "sl_price": 0.008518369999999999,
+      "sl_initial": 0.008518369999999999,
+      "tp1_price": 0.008369999999999999,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 11848.341232227489,
+      "notional": 100.0,
+      "leverage": 10.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.008431250000000001,
+        "leg_start": "2026-10-01 15:00:00",
+        "leg_end": "2026-10-01 16:30:00",
+        "rr": 0.893,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.00836163,
+        "raw_tp": 0.00851
+      },
+      "lot_a": {
+        "qty": 11848.341232227489,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 843
+  "next_trade_id": 846
 }
