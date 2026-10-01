@@ -81,6 +81,31 @@ def get_session(dt) -> str:
         return "نیویورک"
 
 
+# ---------------------------------------------------------------------
+# فیلترهای ICT/SMC (بر پایه‌ی تحلیل دیتا): نماد حذف‌شده، سشن‌های حذف‌شده، و لوریج سشن آسیا
+# سشن‌ها همان تعریف تحلیل (ساعت UTC کندل سیگنال): Asia <7 | London <12 | London-NY Overlap <16 | New York <21 | Off-hours
+# ---------------------------------------------------------------------
+SMC_EXCLUDED_SYMBOLS = {"ONEUSDT"}
+SMC_EXCLUDED_SESSIONS = {"New York", "London-NY Overlap"}
+SMC_ASIA_LEVERAGE = 3.0   # مارجین هر معامله مثل قبل (۱۰۰$) می‌ماند؛ ارزش معامله = ۱۰۰ × ۳ = ۳۰۰$
+
+
+def analysis_session(dt) -> str:
+    try:
+        h = dt.hour if hasattr(dt, "hour") else datetime.fromisoformat(str(dt)).hour
+    except Exception:
+        return ""
+    if h < 7:
+        return "Asia"
+    if h < 12:
+        return "London"
+    if h < 16:
+        return "London-NY Overlap"
+    if h < 21:
+        return "New York"
+    return "Off-hours"
+
+
 def _migrate_log_if_needed():
     """
     اگه هدر فایل با TRADES_LOG_FIELDS فعلی فرق داشته باشه (مثلاً وقتی ستون جدیدی
@@ -249,10 +274,10 @@ def open_notional_sum(state: dict) -> float:
 # =====================================================================
 # محاسبه حجم معامله بر پایه مبلغ ثابت ورودی (به تفکیک استراتژی)
 # =====================================================================
-def calculate_position_size(entry_price: float, source: str):
+def calculate_position_size(entry_price: float, source: str, amount_override=None):
     if entry_price <= 0:
         return 0.0
-    amount = TRADE_AMOUNT_BY_SOURCE.get(source, DEFAULT_TRADE_AMOUNT)
+    amount = amount_override if amount_override else TRADE_AMOUNT_BY_SOURCE.get(source, DEFAULT_TRADE_AMOUNT)
     return amount / entry_price
 
 
@@ -261,7 +286,8 @@ def calculate_position_size(entry_price: float, source: str):
 # =====================================================================
 def open_position(state: dict, symbol: str, direction: str, entry_price: float, sl_price: float,
                   tp1_price: float, tp2_price: float, source: str, candle_time=None,
-                  raw_direction: str = "", adx_value=None, signal_score=None, market_snapshot=None):
+                  raw_direction: str = "", adx_value=None, signal_score=None, market_snapshot=None,
+                  amount_override=None, leverage_override=None):
     key = position_key(symbol, source)
 
     if key in state["positions"]:
@@ -272,14 +298,14 @@ def open_position(state: dict, symbol: str, direction: str, entry_price: float, 
         )
         return
 
-    qty_total = calculate_position_size(entry_price, source)
+    qty_total = calculate_position_size(entry_price, source, amount_override)
     notional = qty_total * entry_price
 
     if qty_total <= 0 or notional < 5:
         print(f"[{symbol}] حجم/ارزش معامله نامعتبر (qty={qty_total:.6f}, notional={notional:.2f}), رد شد.")
         return
 
-    leverage = LEVERAGE_BY_SOURCE.get(source, DEFAULT_LEVERAGE) or DEFAULT_LEVERAGE
+    leverage = leverage_override or LEVERAGE_BY_SOURCE.get(source, DEFAULT_LEVERAGE) or DEFAULT_LEVERAGE
     margin_needed = notional / leverage
 
     used_margin = open_margin_sum(state)
@@ -504,13 +530,22 @@ def main():
                           candle_time=ct1, raw_direction="short", adx_value=adx_val1, market_snapshot=snap1)
 
         # --- استراتژی ۲: ICT/SMC Scalp Pro (فعلاً خاموش - نیاز به داده‌ی بیشتر) ---
-        if ENABLE_SMC:
+        if ENABLE_SMC and symbol not in SMC_EXCLUDED_SYMBOLS:
             try:
                 htf_bullish, htf_bearish = get_htf_bias(symbol)
             except Exception:
                 htf_bullish, htf_bearish = True, True
 
             res = check_strategy_smc(df, htf_bullish, htf_bearish)
+            smc_ov = {}
+            if res is not None and (res["buy"] or res["sell"]):
+                smc_session = analysis_session(res["candle_time"])
+                if smc_session in SMC_EXCLUDED_SESSIONS:
+                    print(f"[{symbol}] سیگنال ICT/SMC در سشن {smc_session} نادیده گرفته شد (سشن حذف‌شده).")
+                    res = None
+                elif smc_session == "Asia":
+                    smc_ov = {"leverage_override": SMC_ASIA_LEVERAGE,
+                              "amount_override": TRADE_AMOUNT_BY_SOURCE["ICT/SMC Scalp Pro"] * SMC_ASIA_LEVERAGE}
             if res is not None and res["buy"]:
                 price2 = res["price"]
                 atr2 = res["atr"]
@@ -519,7 +554,7 @@ def main():
                 print(f"[{symbol}] سیگنال خرید ICT/SMC فعال شد (امتیاز={res['bull_score']}/7) -> تلاش برای باز کردن پوزیشن {direction} (معکوس)...")
                 open_position(state, symbol, direction, price2, sl, tp1, tp2, source="ICT/SMC Scalp Pro",
                               candle_time=res["candle_time"], raw_direction="long",
-                              signal_score=res["bull_score"], market_snapshot=res.get("confluence"))
+                              signal_score=res["bull_score"], market_snapshot=res.get("confluence"), **smc_ov)
             elif res is not None and res["sell"]:
                 price2 = res["price"]
                 atr2 = res["atr"]
@@ -528,7 +563,7 @@ def main():
                 print(f"[{symbol}] سیگنال فروش ICT/SMC فعال شد (امتیاز={res['bear_score']}/7) -> تلاش برای باز کردن پوزیشن {direction} (معکوس)...")
                 open_position(state, symbol, direction, price2, sl, tp1, tp2, source="ICT/SMC Scalp Pro",
                               candle_time=res["candle_time"], raw_direction="short",
-                              signal_score=res["bear_score"], market_snapshot=res.get("confluence"))
+                              signal_score=res["bear_score"], market_snapshot=res.get("confluence"), **smc_ov)
             elif res is not None:
                 print(f"[{symbol}] بدون سیگنال SMC جدید (امتیاز خرید={res['bull_score']}/7, امتیاز فروش={res['bear_score']}/7)")
 
