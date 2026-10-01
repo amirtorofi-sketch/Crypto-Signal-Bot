@@ -692,7 +692,45 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "MANAUSDT__POC": {
+      "trade_id": 799,
+      "symbol": "MANAUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-01 03:00:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.0898,
+      "sl_price": 0.08951000000000002,
+      "sl_initial": 0.08951000000000002,
+      "tp1_price": 0.0907,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 1113.5857461024498,
+      "notional": 100.0,
+      "leverage": 10.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.08992083333333334,
+        "leg_start": "2026-10-01 01:00:00",
+        "leg_end": "2026-10-01 02:00:00",
+        "rr": 3.103,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.09008999999999999,
+        "raw_tp": 0.0889
+      },
+      "lot_a": {
+        "qty": 1113.5857461024498,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 799
+  "next_trade_id": 800
 }
