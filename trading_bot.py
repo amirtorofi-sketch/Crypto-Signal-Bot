@@ -106,6 +106,12 @@ def analysis_session(dt) -> str:
     return "Off-hours"
 
 
+# بستن دستیِ پوزیشن‌های قدیمی: هر پوزیشن بازی که کندل ورودش (UTC) قبل از این زمان باشد
+# در اولین اجرا با قیمت لحظه‌ای بسته می‌شود. پوزیشن‌های جدید همیشه بعد از این زمان‌اند، پس بعد از
+# بسته شدن قدیمی‌ها این بخش دیگر کاری نمی‌کند و می‌شود نگهش داشت یا بعداً حذفش کرد.
+FORCE_CLOSE_IF_CANDLE_BEFORE = "2026-09-23 00:00:00"
+
+
 def _migrate_log_if_needed():
     """
     اگه هدر فایل با TRADES_LOG_FIELDS فعلی فرق داشته باشه (مثلاً وقتی ستون جدیدی
@@ -402,6 +408,47 @@ def open_position(state: dict, symbol: str, direction: str, entry_price: float, 
 # =====================================================================
 # بررسی پوزیشن باز نسبت به کندل تازه بسته‌شده (شبیه‌سازی اصابت SL/TP)
 # =====================================================================
+def force_close_old_position(state: dict, key: str, pos: dict, price: float):
+    """بستن دستی تمام لات‌های بازِ یک پوزیشن با قیمت لحظه‌ای (همان حسابداری check_open_position)."""
+    symbol = pos["symbol"]
+    direction = pos.get("direction", "long")
+    sign = 1 if direction == "long" else -1
+    closed_any = False
+    for lot_key in ("lot_a", "lot_b"):
+        lot = pos[lot_key]
+        if lot["status"] != "open":
+            continue
+        pnl = lot["qty"] * (price - pos["entry_price"]) * sign
+        state["balance"] += pnl
+        lot["status"] = "closed_manual"
+        closed_any = True
+        send_telegram_message(f"⏹ <b>#{pos.get('trade_id','?')} | {lot_key}</b> برای <b>{symbol}</b> ({pos['source']}) با بستن دستی بسته شد. (سود/ضرر: {pnl:+.2f}$)")
+        log_trade_event({**_entry_details(pos),
+            "event_time_utc": datetime.now(timezone.utc).isoformat(),
+            "event_type": "lot_close", "trade_id": pos.get("trade_id", ""), "symbol": symbol,
+            "source": pos["source"], "timeframe": TIMEFRAME, "session": pos.get("session", ""),
+            "raw_direction": pos.get("raw_direction", ""), "final_direction": direction,
+            "candle_time": pos.get("candle_time", ""),
+            "lot": lot_key, "exit_reason": "manual_close", "exit_price": price,
+            "pnl": round(pnl, 4), "balance_after": round(state["balance"], 4),
+        })
+    if closed_any:
+        del state["positions"][key]
+        exposure = open_margin_sum(state)
+        send_telegram_message(
+            f"✅ <b>#{pos.get('trade_id','?')}</b> | پوزیشن <b>{symbol}</b> ({pos['source']}) کاملاً بسته شد.\n"
+            f"موجودی نقدی: {state['balance']:.2f}$  |  مارجین درگیر باقی‌مانده: {exposure:.2f}$"
+        )
+        log_trade_event({**_entry_details(pos),
+            "event_time_utc": datetime.now(timezone.utc).isoformat(),
+            "event_type": "full_close", "trade_id": pos.get("trade_id", ""), "symbol": symbol,
+            "source": pos["source"], "timeframe": TIMEFRAME, "session": pos.get("session", ""),
+            "raw_direction": pos.get("raw_direction", ""), "final_direction": direction,
+            "candle_time": pos.get("candle_time", ""), "balance_after": round(state["balance"], 4),
+        })
+        save_state(state)
+
+
 def check_open_position(state: dict, key: str, pos: dict, last_high: float, last_low: float):
     changed = False
     symbol = pos["symbol"]
@@ -505,6 +552,14 @@ def main():
 
         last_high = df["high"].iloc[-2]
         last_low = df["low"].iloc[-2]
+
+        # --- بستن دستیِ پوزیشن‌های قدیمی (کندل ورود قبل از FORCE_CLOSE_IF_CANDLE_BEFORE) ---
+        for _src, _tag in SOURCE_TAG.items():
+            _k = f"{symbol}__{_tag}"
+            _p = state["positions"].get(_k)
+            if _p and _p.get("candle_time") and str(_p["candle_time"]) < FORCE_CLOSE_IF_CANDLE_BEFORE:
+                print(f"[{_k}] پوزیشن قدیمی (کندل ورود {_p['candle_time']}) -> بستن دستی با قیمت {df['close'].iloc[-1]}")
+                force_close_old_position(state, _k, _p, float(df["close"].iloc[-1]))
 
         # --- بررسی پوزیشن‌های باز موجود برای این نماد (هر استراتژی جدا) ---
         for src_name, tag in SOURCE_TAG.items():
