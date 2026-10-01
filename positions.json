@@ -1,5 +1,5 @@
 {
-  "balance": 1200.6061760225853,
+  "balance": 1200.911260768348,
   "positions": {
     "BTCUSDT__ST": {
       "trade_id": 527,
@@ -655,35 +655,35 @@
         "status": "open"
       }
     },
-    "SOLUSDT__POC": {
-      "trade_id": 794,
-      "symbol": "SOLUSDT",
+    "ONEUSDT__POC": {
+      "trade_id": 795,
+      "symbol": "ONEUSDT",
       "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-01 00:45:00",
+      "candle_time": "2026-10-01 01:15:00",
       "session": "آسیا",
       "raw_direction": "short",
       "direction": "long",
-      "entry_price": 118.0,
-      "sl_price": 117.70182000000001,
-      "sl_initial": 117.70182000000001,
-      "tp1_price": 118.36,
+      "entry_price": 0.002219,
+      "sl_price": 0.0022047690000000005,
+      "sl_initial": 0.0022047690000000005,
+      "tp1_price": 0.002232,
       "tp2_price": null,
       "adx_value": null,
-      "qty_total": 0.847457627118644,
+      "qty_total": 45065.344749887336,
       "notional": 100.0,
       "leverage": 10.0,
       "signal_score": null,
       "market_snapshot": {
-        "poc": 118.01125,
-        "leg_start": "2026-09-30 21:00:00",
-        "leg_end": "2026-09-30 22:00:00",
-        "rr": 1.207,
+        "poc": 0.0022226249999999998,
+        "leg_start": "2026-10-01 00:00:00",
+        "leg_end": "2026-10-01 00:45:00",
+        "rr": 0.913,
         "reason": "poc_retest_rejection",
-        "raw_sl": 118.29817999999999,
-        "raw_tp": 117.64
+        "raw_sl": 0.0022332309999999996,
+        "raw_tp": 0.002206
       },
       "lot_a": {
-        "qty": 0.847457627118644,
+        "qty": 45065.344749887336,
         "target": "tp1",
         "status": "open"
       },
@@ -694,5 +694,5 @@
       }
     }
   },
-  "next_trade_id": 795
+  "next_trade_id": 796
 }
