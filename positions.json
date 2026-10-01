@@ -1,5 +1,5 @@
 {
-  "balance": 1198.1783435420452,
+  "balance": 1197.5960515785384,
   "positions": {
     "BTCUSDT__ST": {
       "trade_id": 527,
@@ -386,44 +386,6 @@
         "status": "open"
       }
     },
-    "BTCUSDT__POC": {
-      "trade_id": 781,
-      "symbol": "BTCUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-09-30 19:15:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 83749.24,
-      "sl_price": 83968.29380000001,
-      "sl_initial": 83968.29380000001,
-      "tp1_price": 83008.47000000002,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.0011940406862199584,
-      "notional": 100.0,
-      "leverage": 10.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 83722.065625,
-        "leg_start": "2026-09-30 14:30:00",
-        "leg_end": "2026-09-30 16:15:00",
-        "rr": 3.382,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 83530.1862,
-        "raw_tp": 84490.01
-      },
-      "lot_a": {
-        "qty": 0.0011940406862199584,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "CRVUSDT__ST": {
       "trade_id": 788,
       "symbol": "CRVUSDT",
@@ -568,7 +530,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 83509.05,
-      "sl_price": 83205.71167811884,
+      "sl_price": 83509.05,
       "sl_initial": 83205.71167811884,
       "tp1_price": 83964.05748282175,
       "tp2_price": 84419.0649656435,
@@ -599,7 +561,7 @@
       "lot_a": {
         "qty": 0.0005987375021030654,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.0005987375021030654,
@@ -683,54 +645,44 @@
         "status": "none"
       }
     },
-    "SOLUSDT__SMC": {
-      "trade_id": 800,
-      "symbol": "SOLUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-10-01 03:45:00",
+    "BNBUSDT__POC": {
+      "trade_id": 801,
+      "symbol": "BNBUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-01 04:45:00",
       "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 118.7,
-      "sl_price": 119.40408431189837,
-      "sl_initial": 119.40408431189837,
-      "tp1_price": 117.64387353215244,
-      "tp2_price": 116.58774706430489,
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 769.62,
+      "sl_price": 767.7092400000001,
+      "sl_initial": 767.7092400000001,
+      "tp1_price": 772.51,
+      "tp2_price": null,
       "adx_value": null,
-      "qty_total": 0.8424599831508003,
+      "qty_total": 0.12993425326784647,
       "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 5,
+      "leverage": 10.0,
+      "signal_score": null,
       "market_snapshot": {
-        "recent_bull_sweep": true,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 59.61,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "bull_fvg_count": 2,
-        "bear_fvg_count": 3,
-        "bull_ob_count": 0,
-        "bear_ob_count": 1,
-        "trend": 1
+        "poc": 770.0550000000001,
+        "leg_start": "2026-10-01 01:00:00",
+        "leg_end": "2026-10-01 02:15:00",
+        "rr": 1.512,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 771.5307599999999,
+        "raw_tp": 766.73
       },
       "lot_a": {
-        "qty": 0.42122999157540014,
+        "qty": 0.12993425326784647,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 0.42122999157540014,
+        "qty": 0.0,
         "target": "tp2",
-        "status": "open"
+        "status": "none"
       }
     }
   },
-  "next_trade_id": 801
+  "next_trade_id": 802
 }
