@@ -1,5 +1,5 @@
 {
-  "balance": 1203.0298185141064,
+  "balance": 1203.4075092581531,
   "positions": {
     "BTCUSDT__ST": {
       "trade_id": 527,
@@ -492,7 +492,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 116.89,
-      "sl_price": 116.11903614480936,
+      "sl_price": 116.89,
       "sl_initial": 116.11903614480936,
       "tp1_price": 118.04644578278597,
       "tp2_price": 119.20289156557193,
@@ -523,7 +523,7 @@
       "lot_a": {
         "qty": 0.4277525879031568,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.4277525879031568,
@@ -579,35 +579,35 @@
         "status": "open"
       }
     },
-    "SOLUSDT__POC": {
-      "trade_id": 822,
-      "symbol": "SOLUSDT",
+    "DOGEUSDT__POC": {
+      "trade_id": 823,
+      "symbol": "DOGEUSDT",
       "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-01 13:30:00",
+      "candle_time": "2026-10-01 13:45:00",
       "session": "لندن",
       "raw_direction": "short",
       "direction": "long",
-      "entry_price": 117.89,
-      "sl_price": 117.75209000000002,
-      "sl_initial": 117.75209000000002,
-      "tp1_price": 119.05,
+      "entry_price": 0.09471,
+      "sl_price": 0.09439507000000001,
+      "sl_initial": 0.09439507000000001,
+      "tp1_price": 0.09567,
       "tp2_price": null,
       "adx_value": null,
-      "qty_total": 0.8482483671218933,
+      "qty_total": 1055.8547143912997,
       "notional": 100.0,
       "leverage": 10.0,
       "signal_score": null,
       "market_snapshot": {
-        "poc": 117.891875,
+        "poc": 0.09492020833333334,
         "leg_start": "2026-10-01 11:45:00",
-        "leg_end": "2026-10-01 13:00:00",
-        "rr": 8.411,
+        "leg_end": "2026-10-01 13:15:00",
+        "rr": 3.048,
         "reason": "poc_retest_rejection",
-        "raw_sl": 118.02790999999998,
-        "raw_tp": 116.73
+        "raw_sl": 0.09502493,
+        "raw_tp": 0.09375
       },
       "lot_a": {
-        "qty": 0.8482483671218933,
+        "qty": 1055.8547143912997,
         "target": "tp1",
         "status": "open"
       },
@@ -618,5 +618,5 @@
       }
     }
   },
-  "next_trade_id": 823
+  "next_trade_id": 824
 }
