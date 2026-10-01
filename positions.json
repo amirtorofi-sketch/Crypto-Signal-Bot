@@ -1,32 +1,6 @@
 {
-  "balance": 1211.068552440612,
+  "balance": 1213.504660276295,
   "positions": {
-    "BTCUSDT__ST": {
-      "trade_id": 527,
-      "symbol": "BTCUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-09-22 08:30:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 86149.66,
-      "sl_price": 86149.66,
-      "tp1_price": 84148.79296303348,
-      "tp2_price": 82147.92592606698,
-      "qty_total": 0.0034823120601984964,
-      "notional": 300.0,
-      "leverage": 3.0,
-      "lot_a": {
-        "qty": 0.0017411560300992482,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 0.0017411560300992482,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "BNBUSDT__ST": {
       "trade_id": 679,
       "symbol": "BNBUSDT",
@@ -529,44 +503,6 @@
         "qty": 131.71759747102212,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "SOLUSDT__POC": {
-      "trade_id": 853,
-      "symbol": "SOLUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-01 20:15:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 118.25,
-      "sl_price": 117.88150000000002,
-      "sl_initial": 117.88150000000002,
-      "tp1_price": 118.94,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.8456659619450317,
-      "notional": 100.0,
-      "leverage": 10.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 118.29791666666667,
-        "leg_start": "2026-10-01 18:30:00",
-        "leg_end": "2026-10-01 19:30:00",
-        "rr": 1.872,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 118.61849999999998,
-        "raw_tp": 117.56
-      },
-      "lot_a": {
-        "qty": 0.8456659619450317,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     },
     "MANAUSDT__POC": {
