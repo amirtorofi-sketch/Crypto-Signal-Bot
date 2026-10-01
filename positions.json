@@ -568,7 +568,45 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "MASKUSDT__POC": {
+      "trade_id": 812,
+      "symbol": "MASKUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-01 10:30:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.467,
+      "sl_price": 0.46553200000000006,
+      "sl_initial": 0.46553200000000006,
+      "tp1_price": 0.47300000000000003,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 214.13276231263382,
+      "notional": 100.0,
+      "leverage": 10.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.4671875,
+        "leg_start": "2026-10-01 09:00:00",
+        "leg_end": "2026-10-01 10:00:00",
+        "rr": 4.087,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.468468,
+        "raw_tp": 0.461
+      },
+      "lot_a": {
+        "qty": 214.13276231263382,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 812
+  "next_trade_id": 813
 }
