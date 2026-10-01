@@ -1,5 +1,5 @@
 {
-  "balance": 1204.0583315061856,
+  "balance": 1204.3729025411521,
   "positions": {
     "BTCUSDT__ST": {
       "trade_id": 527,
@@ -492,7 +492,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 764.18,
-      "sl_price": 760.9748147533244,
+      "sl_price": 764.18,
       "sl_initial": 760.9748147533244,
       "tp1_price": 768.9877778700134,
       "tp2_price": 773.7955557400267,
@@ -523,7 +523,7 @@
       "lot_a": {
         "qty": 0.06542961082467481,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.06542961082467481,
@@ -655,7 +655,45 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ROSEUSDT__POC": {
+      "trade_id": 810,
+      "symbol": "ROSEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-01 09:30:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.00875,
+      "sl_price": 0.008681190000000002,
+      "sl_initial": 0.008681190000000002,
+      "tp1_price": 0.008790000000000001,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 11428.571428571428,
+      "notional": 100.0,
+      "leverage": 10.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.008756666666666668,
+        "leg_start": "2026-10-01 06:00:00",
+        "leg_end": "2026-10-01 08:00:00",
+        "rr": 0.581,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.00881881,
+        "raw_tp": 0.00871
+      },
+      "lot_a": {
+        "qty": 11428.571428571428,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 810
+  "next_trade_id": 811
 }
