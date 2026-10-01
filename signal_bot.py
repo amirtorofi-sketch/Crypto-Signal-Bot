@@ -472,6 +472,19 @@ def check_strategy_smc(df: pd.DataFrame, htf_bullish: bool, htf_bearish: bool):
 # =====================================================================
 # ارسال پیام تلگرام
 # =====================================================================
+SMC_EXCLUDED_SYMBOLS = {"ONEUSDT"}
+SMC_EXCLUDED_SESSIONS = {"New York", "London-NY Overlap"}
+
+
+def _smc_session(dt) -> str:
+    """سشن بر پایه‌ی ساعت UTC کندل سیگنال (Asia <7 | London <12 | London-NY Overlap <16 | New York <21 | Off-hours)."""
+    try:
+        h = dt.hour if hasattr(dt, "hour") else pd.Timestamp(str(dt)).hour
+    except Exception:
+        return ""
+    return "Asia" if h < 7 else "London" if h < 12 else "London-NY Overlap" if h < 16 else "New York" if h < 21 else "Off-hours"
+
+
 def send_telegram_message(text: str):
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
         print("توکن یا چت‌آیدی تلگرام تنظیم نشده. پیام ارسال نشد:\n", text)
@@ -555,6 +568,10 @@ def main():
             htf_bullish, htf_bearish = True, True  # در صورت خطا، فیلتر HTF را خنثی می‌کند
 
         res = check_strategy_smc(df, htf_bullish, htf_bearish)
+        # فیلتر اعلان‌های ICT/SMC (همسو با trading_bot.py): نماد حذف‌شده و سشن‌های حذف‌شده
+        if res is not None and (symbol in SMC_EXCLUDED_SYMBOLS or _smc_session(res["candle_time"]) in SMC_EXCLUDED_SESSIONS):
+            print(f"[{symbol}] ICT/SMC -> نماد یا سشن حذف‌شده، اعلان ارسال نمی‌شود.")
+            res = None
         if res is not None:
             print(f"[{symbol}] ICT/SMC -> امتیاز خرید={res['bull_score']}/7  امتیاز فروش={res['bear_score']}/7 "
                   f"(آستانه لازم={MIN_SCORE}) | buy={res['buy']} sell={res['sell']}")
