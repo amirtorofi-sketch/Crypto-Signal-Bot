@@ -600,7 +600,45 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "SOLUSDT__POC": {
+      "trade_id": 861,
+      "symbol": "SOLUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-01 22:30:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 118.14,
+      "sl_price": 117.83167000000002,
+      "sl_initial": 117.83167000000002,
+      "tp1_price": 118.87,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.8464533604198409,
+      "notional": 100.0,
+      "leverage": 10.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 118.31187499999999,
+        "leg_start": "2026-10-01 20:00:00",
+        "leg_end": "2026-10-01 21:30:00",
+        "rr": 2.368,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 118.44832999999998,
+        "raw_tp": 117.41
+      },
+      "lot_a": {
+        "qty": 0.8464533604198409,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 861
+  "next_trade_id": 862
 }
