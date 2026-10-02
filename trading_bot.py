@@ -87,6 +87,15 @@ def get_session(dt) -> str:
 # ---------------------------------------------------------------------
 SMC_EXCLUDED_SYMBOLS = {"ONEUSDT"}
 SMC_EXCLUDED_SESSIONS = {"New York", "London-NY Overlap"}
+SMC_MIN_SL_PCT = 0.8   # حداقل فاصله‌ی SL (درصد قیمت). سیگنال ICT/SMC با SL تنگ‌تر رد می‌شود؛ ۰ = غیرفعال
+
+def smc_sl_too_tight(res) -> bool:
+    """SL استراتژی ICT/SMC = ATR × SL_ATR_MULT؛ اگر کمتر از SMC_MIN_SL_PCT درصدِ قیمت باشد True."""
+    try:
+        return SMC_MIN_SL_PCT > 0 and (res["atr"] * SL_ATR_MULT / res["price"] * 100) < SMC_MIN_SL_PCT
+    except Exception:
+        return False
+
 SMC_ASIA_LEVERAGE = 3.0   # مارجین هر معامله مثل قبل (۱۰۰$) می‌ماند؛ ارزش معامله = ۱۰۰ × ۳ = ۳۰۰$
 
 
@@ -597,6 +606,9 @@ def main():
                 smc_session = analysis_session(res["candle_time"])
                 if smc_session in SMC_EXCLUDED_SESSIONS:
                     print(f"[{symbol}] سیگنال ICT/SMC در سشن {smc_session} نادیده گرفته شد (سشن حذف‌شده).")
+                    res = None
+                elif smc_sl_too_tight(res):
+                    print(f"[{symbol}] سیگنال ICT/SMC نادیده گرفته شد (SL کمتر از {SMC_MIN_SL_PCT}٪ قیمت).")
                     res = None
                 elif smc_session == "Asia":
                     smc_ov = {"leverage_override": SMC_ASIA_LEVERAGE,
