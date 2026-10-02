@@ -1,5 +1,5 @@
 {
-  "balance": 850.0946115243787,
+  "balance": 849.7891968471843,
   "positions": {
     "CELOUSDT__SMC": {
       "trade_id": 1982,
@@ -239,46 +239,6 @@
         "bear_ob_count": 3
       },
       "qty_open": 7.072135785007072,
-      "phase": "before_tp1"
-    },
-    "NMRUSDT__SMC": {
-      "trade_id": 5046,
-      "symbol": "NMRUSDT",
-      "source": "ICT/SMC Scalp Pro v2",
-      "direction": "short",
-      "candle_time": "2026-10-02 10:15:00",
-      "session": "لندن",
-      "entry_price": 11.45,
-      "initial_sl_price": 11.683133203591764,
-      "sl_price": 11.683133203591764,
-      "tp1_price": 11.100300194612352,
-      "tp2_price": 10.750600389224706,
-      "qty_total": 1.310043668122271,
-      "notional": 15.0,
-      "leverage": 1.0,
-      "margin_usd": 15.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": true,
-        "vol_spike": true,
-        "strong_bull_rej": false,
-        "strong_bear_rej": false,
-        "htf_bullish": true,
-        "htf_bearish": false,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 56.04,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 3,
-        "bear_fvg_count": 2,
-        "bull_ob_count": 0,
-        "bear_ob_count": 0
-      },
-      "qty_open": 1.310043668122271,
       "phase": "before_tp1"
     },
     "AEROUSDT__SMC": {
@@ -1275,7 +1235,47 @@
       },
       "qty_open": 41.736227045075125,
       "phase": "before_tp1"
+    },
+    "BOMEUSDT__SMC": {
+      "trade_id": 5413,
+      "symbol": "BOMEUSDT",
+      "source": "ICT/SMC Scalp Pro v2",
+      "direction": "short",
+      "candle_time": "2026-10-02 19:45:00",
+      "session": "نیویورک",
+      "entry_price": 0.0010253,
+      "initial_sl_price": 0.001048922043376355,
+      "sl_price": 0.001048922043376355,
+      "tp1_price": 0.0009898669349354679,
+      "tp2_price": 0.0009544338698709355,
+      "qty_total": 14629.864429922949,
+      "notional": 15.0,
+      "leverage": 1.0,
+      "margin_usd": 15.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": false,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 47.58,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 3,
+        "bear_fvg_count": 1,
+        "bull_ob_count": 2,
+        "bear_ob_count": 1
+      },
+      "qty_open": 14629.864429922949,
+      "phase": "before_tp1"
     }
   },
-  "next_trade_id": 5413
+  "next_trade_id": 5414
 }
