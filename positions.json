@@ -704,7 +704,217 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "SOLUSDT__SMC": {
+      "trade_id": 904,
+      "symbol": "SOLUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-10-02 10:15:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 121.79,
+      "sl_price": 122.71585878326671,
+      "sl_initial": 122.71585878326671,
+      "tp1_price": 120.40121182509995,
+      "tp2_price": 119.01242365019989,
+      "adx_value": null,
+      "qty_total": 0.8210854749979473,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": true,
+        "vol_spike": false,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 54.4,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "bull_fvg_count": 4,
+        "bear_fvg_count": 3,
+        "bull_ob_count": 3,
+        "bear_ob_count": 0,
+        "trend": 1
+      },
+      "lot_a": {
+        "qty": 0.41054273749897363,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.41054273749897363,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "DOGEUSDT__POC": {
+      "trade_id": 905,
+      "symbol": "DOGEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-02 10:15:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.0968,
+      "sl_price": 0.09734634999999998,
+      "sl_initial": 0.09734634999999998,
+      "tp1_price": 0.09563999999999999,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 1033.0578512396694,
+      "notional": 100.0,
+      "leverage": 10.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.09642541666666667,
+        "leg_start": "2026-10-02 07:30:00",
+        "leg_end": "2026-10-02 08:15:00",
+        "rr": 2.123,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.09625365000000001,
+        "raw_tp": 0.09796
+      },
+      "lot_a": {
+        "qty": 1033.0578512396694,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "ONEUSDT__POC": {
+      "trade_id": 906,
+      "symbol": "ONEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-02 10:15:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.002192,
+      "sl_price": 0.002184803,
+      "sl_initial": 0.002184803,
+      "tp1_price": 0.0022519999999999997,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 45620.43795620438,
+      "notional": 100.0,
+      "leverage": 10.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0021939999999999998,
+        "leg_start": "2026-10-02 06:15:00",
+        "leg_end": "2026-10-02 07:45:00",
+        "rr": 8.337,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.002199197,
+        "raw_tp": 0.002132
+      },
+      "lot_a": {
+        "qty": 45620.43795620438,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "VETUSDT__POC": {
+      "trade_id": 907,
+      "symbol": "VETUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-02 10:15:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.008923,
+      "sl_price": 0.008887050000000002,
+      "sl_initial": 0.008887050000000002,
+      "tp1_price": 0.008955000000000001,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 11206.993163734169,
+      "notional": 99.99999999999999,
+      "leverage": 10.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.008943770833333333,
+        "leg_start": "2026-10-02 07:00:00",
+        "leg_end": "2026-10-02 07:45:00",
+        "rr": 0.89,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.008958949999999999,
+        "raw_tp": 0.008891
+      },
+      "lot_a": {
+        "qty": 11206.993163734169,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "MASKUSDT__SMC": {
+      "trade_id": 908,
+      "symbol": "MASKUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-10-02 10:15:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.476,
+      "sl_price": 0.4801880256750812,
+      "sl_initial": 0.4801880256750812,
+      "tp1_price": 0.4697179614873782,
+      "tp2_price": 0.4634359229747564,
+      "adx_value": null,
+      "qty_total": 210.0840336134454,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 58.97,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "bull_fvg_count": 6,
+        "bear_fvg_count": 0,
+        "bull_ob_count": 2,
+        "bear_ob_count": 0,
+        "trend": 1
+      },
+      "lot_a": {
+        "qty": 105.0420168067227,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 105.0420168067227,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 904
+  "next_trade_id": 909
 }
