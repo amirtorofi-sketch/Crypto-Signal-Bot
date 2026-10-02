@@ -474,6 +474,15 @@ def check_strategy_smc(df: pd.DataFrame, htf_bullish: bool, htf_bearish: bool):
 # =====================================================================
 SMC_EXCLUDED_SYMBOLS = {"ONEUSDT"}
 SMC_EXCLUDED_SESSIONS = {"New York", "London-NY Overlap"}
+SMC_MIN_SL_PCT = 0.8   # حداقل فاصله‌ی SL (درصد قیمت). سیگنال ICT/SMC با SL تنگ‌تر رد می‌شود؛ ۰ = غیرفعال
+
+def smc_sl_too_tight(res) -> bool:
+    """SL استراتژی ICT/SMC = ATR × SL_ATR_MULT؛ اگر کمتر از SMC_MIN_SL_PCT درصدِ قیمت باشد True."""
+    try:
+        return SMC_MIN_SL_PCT > 0 and (res["atr"] * SL_ATR_MULT / res["price"] * 100) < SMC_MIN_SL_PCT
+    except Exception:
+        return False
+
 
 
 def _smc_session(dt) -> str:
@@ -569,8 +578,9 @@ def main():
 
         res = check_strategy_smc(df, htf_bullish, htf_bearish)
         # فیلتر اعلان‌های ICT/SMC (همسو با trading_bot.py): نماد حذف‌شده و سشن‌های حذف‌شده
-        if res is not None and (symbol in SMC_EXCLUDED_SYMBOLS or _smc_session(res["candle_time"]) in SMC_EXCLUDED_SESSIONS):
-            print(f"[{symbol}] ICT/SMC -> نماد یا سشن حذف‌شده، اعلان ارسال نمی‌شود.")
+        if res is not None and (symbol in SMC_EXCLUDED_SYMBOLS or _smc_session(res["candle_time"]) in SMC_EXCLUDED_SESSIONS
+                                or ((res["buy"] or res["sell"]) and smc_sl_too_tight(res))):
+            print(f"[{symbol}] ICT/SMC -> نماد، سشن یا SL تنگ حذف‌شده، اعلان ارسال نمی‌شود.")
             res = None
         if res is not None:
             print(f"[{symbol}] ICT/SMC -> امتیاز خرید={res['bull_score']}/7  امتیاز فروش={res['bear_score']}/7 "
