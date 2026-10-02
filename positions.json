@@ -1,5 +1,5 @@
 {
-  "balance": 1212.0601036951327,
+  "balance": 1210.2010547073016,
   "positions": {
     "BNBUSDT__ST": {
       "trade_id": 679,
@@ -649,21 +649,59 @@
         "status": "open"
       }
     },
-    "GALAUSDT__SMC": {
-      "trade_id": 891,
-      "symbol": "GALAUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-10-02 07:15:00",
+    "BNBUSDT__POC": {
+      "trade_id": 892,
+      "symbol": "BNBUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-02 07:30:00",
       "session": "آسیا",
       "raw_direction": "long",
       "direction": "short",
-      "entry_price": 0.00245,
-      "sl_price": 0.0024955467002018565,
-      "sl_initial": 0.0024955467002018565,
-      "tp1_price": 0.0023816799496972152,
-      "tp2_price": 0.00231335989939443,
+      "entry_price": 774.97,
+      "sl_price": 775.9547600000001,
+      "sl_initial": 775.9547600000001,
+      "tp1_price": 766.6500000000001,
+      "tp2_price": null,
       "adx_value": null,
-      "qty_total": 40816.32653061225,
+      "qty_total": 0.12903725305495697,
+      "notional": 100.00000000000001,
+      "leverage": 10.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 774.858125,
+        "leg_start": "2026-10-02 01:15:00",
+        "leg_end": "2026-10-02 04:45:00",
+        "rr": 8.449,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 773.98524,
+        "raw_tp": 783.29
+      },
+      "lot_a": {
+        "qty": 0.12903725305495697,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "GALAUSDT__SMC": {
+      "trade_id": 893,
+      "symbol": "GALAUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-10-02 07:30:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.00249,
+      "sl_price": 0.002540779078762724,
+      "sl_initial": 0.002540779078762724,
+      "tp1_price": 0.002413831381855914,
+      "tp2_price": 0.0023376627637118276,
+      "adx_value": null,
+      "qty_total": 40160.642570281125,
       "notional": 100.0,
       "leverage": 1.0,
       "signal_score": 5,
@@ -677,7 +715,7 @@
         "htf_bearish": false,
         "discount_zone": false,
         "premium_zone": true,
-        "rsi_value": 78.66,
+        "rsi_value": 82.11,
         "rsi_bull_ok": true,
         "rsi_bear_ok": false,
         "bull_fvg_count": 6,
@@ -687,16 +725,16 @@
         "trend": 1
       },
       "lot_a": {
-        "qty": 20408.163265306124,
+        "qty": 20080.321285140562,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 20408.163265306124,
+        "qty": 20080.321285140562,
         "target": "tp2",
         "status": "open"
       }
     }
   },
-  "next_trade_id": 892
+  "next_trade_id": 894
 }
