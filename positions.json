@@ -117,7 +117,121 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CHZUSDT__POC": {
+      "trade_id": 926,
+      "symbol": "CHZUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-02 21:00:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.01612,
+      "sl_price": 0.01622603,
+      "sl_initial": 0.01622603,
+      "tp1_price": 0.016069999999999997,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 6203.47394540943,
+      "notional": 100.0,
+      "leverage": 10.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.016076041666666666,
+        "leg_start": "2026-10-02 18:45:00",
+        "leg_end": "2026-10-02 20:30:00",
+        "rr": 0.472,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.01601397,
+        "raw_tp": 0.01617
+      },
+      "lot_a": {
+        "qty": 6203.47394540943,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "VETUSDT__POC": {
+      "trade_id": 927,
+      "symbol": "VETUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-02 21:00:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.008415,
+      "sl_price": 0.008453385,
+      "sl_initial": 0.008453385,
+      "tp1_price": 0.008359000000000002,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 11883.541295306,
+      "notional": 100.0,
+      "leverage": 10.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.008391041666666666,
+        "leg_start": "2026-10-02 18:45:00",
+        "leg_end": "2026-10-02 20:15:00",
+        "rr": 1.459,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.008376615,
+        "raw_tp": 0.008471
+      },
+      "lot_a": {
+        "qty": 11883.541295306,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "GALAUSDT__POC": {
+      "trade_id": 928,
+      "symbol": "GALAUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-02 21:00:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.002528,
+      "sl_price": 0.002573485,
+      "sl_initial": 0.002573485,
+      "tp1_price": 0.0024899999999999996,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 39556.96202531646,
+      "notional": 100.00000000000001,
+      "leverage": 10.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0025275416666666667,
+        "leg_start": "2026-10-02 18:45:00",
+        "leg_end": "2026-10-02 20:15:00",
+        "rr": 0.835,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.002482515,
+        "raw_tp": 0.002566
+      },
+      "lot_a": {
+        "qty": 39556.96202531646,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 926
+  "next_trade_id": 929
 }
