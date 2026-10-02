@@ -446,7 +446,83 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "VETUSDT__POC": {
+      "trade_id": 915,
+      "symbol": "VETUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-02 13:30:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.008982,
+      "sl_price": 0.008945991000000002,
+      "sl_initial": 0.008945991000000002,
+      "tp1_price": 0.009068000000000001,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 11133.3778668448,
+      "notional": 100.0,
+      "leverage": 10.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.009008979166666667,
+        "leg_start": "2026-10-02 08:15:00",
+        "leg_end": "2026-10-02 10:15:00",
+        "rr": 2.388,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.009018008999999999,
+        "raw_tp": 0.008896
+      },
+      "lot_a": {
+        "qty": 11133.3778668448,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "MANAUSDT__POC": {
+      "trade_id": 916,
+      "symbol": "MANAUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-02 13:30:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.1046,
+      "sl_price": 0.10399490000000002,
+      "sl_initial": 0.10399490000000002,
+      "tp1_price": 0.1075,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 956.0229445506692,
+      "notional": 100.0,
+      "leverage": 10.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.10481458333333334,
+        "leg_start": "2026-10-02 12:00:00",
+        "leg_end": "2026-10-02 13:00:00",
+        "rr": 4.793,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.10520509999999998,
+        "raw_tp": 0.1017
+      },
+      "lot_a": {
+        "qty": 956.0229445506692,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 915
+  "next_trade_id": 917
 }
