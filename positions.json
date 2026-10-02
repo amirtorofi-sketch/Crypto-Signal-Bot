@@ -1,5 +1,5 @@
 {
-  "balance": 1212.9978541043888,
+  "balance": 1215.0847479951724,
   "positions": {
     "BNBUSDT__ST": {
       "trade_id": 679,
@@ -504,7 +504,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.002594,
-      "sl_price": 0.0026661787033692356,
+      "sl_price": 0.002594,
       "sl_initial": 0.0026661787033692356,
       "tp1_price": 0.002485731944946146,
       "tp2_price": 0.002377463889892293,
@@ -535,7 +535,7 @@
       "lot_a": {
         "qty": 19275.250578257517,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 19275.250578257517,
@@ -666,7 +666,45 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "MASKUSDT__POC": {
+      "trade_id": 903,
+      "symbol": "MASKUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-02 10:00:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.474,
+      "sl_price": 0.47152400000000005,
+      "sl_initial": 0.47152400000000005,
+      "tp1_price": 0.479,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 210.9704641350211,
+      "notional": 100.0,
+      "leverage": 10.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.47410416666666666,
+        "leg_start": "2026-10-02 04:45:00",
+        "leg_end": "2026-10-02 06:30:00",
+        "rr": 2.019,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.4764759999999999,
+        "raw_tp": 0.469
+      },
+      "lot_a": {
+        "qty": 210.9704641350211,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 903
+  "next_trade_id": 904
 }
