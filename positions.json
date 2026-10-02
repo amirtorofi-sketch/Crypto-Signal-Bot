@@ -1,5 +1,5 @@
 {
-  "balance": 1212.1597228007106,
+  "balance": 1212.3335023000966,
   "positions": {
     "BNBUSDT__ST": {
       "trade_id": 679,
@@ -370,7 +370,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.09378,
-      "sl_price": 0.09298010215792361,
+      "sl_price": 0.09378,
       "sl_initial": 0.09298010215792361,
       "tp1_price": 0.09497984676311458,
       "tp2_price": 0.09617969352622917,
@@ -401,7 +401,7 @@
       "lot_a": {
         "qty": 533.1627212625293,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 533.1627212625293,
@@ -754,44 +754,6 @@
       },
       "lot_a": {
         "qty": 0.03677957997719666,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
-    "ONEUSDT__POC": {
-      "trade_id": 881,
-      "symbol": "ONEUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-02 03:45:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.002184,
-      "sl_price": 0.0021941760000000004,
-      "sl_initial": 0.0021941760000000004,
-      "tp1_price": 0.0021400000000000004,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 45787.54578754579,
-      "notional": 100.0,
-      "leverage": 10.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.0021833125000000004,
-        "leg_start": "2026-10-02 01:15:00",
-        "leg_end": "2026-10-02 02:45:00",
-        "rr": 4.324,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.002173824,
-        "raw_tp": 0.002228
-      },
-      "lot_a": {
-        "qty": 45787.54578754579,
         "target": "tp1",
         "status": "open"
       },
