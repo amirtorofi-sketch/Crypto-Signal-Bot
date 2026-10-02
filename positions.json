@@ -638,7 +638,45 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "CHZUSDT__POC": {
+      "trade_id": 862,
+      "symbol": "CHZUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-01 23:45:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.01617,
+      "sl_price": 0.01620615,
+      "sl_initial": 0.01620615,
+      "tp1_price": 0.01609,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 6184.291898577612,
+      "notional": 100.0,
+      "leverage": 10.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.016168541666666668,
+        "leg_start": "2026-10-01 19:30:00",
+        "leg_end": "2026-10-01 20:45:00",
+        "rr": 2.213,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.01613385,
+        "raw_tp": 0.01625
+      },
+      "lot_a": {
+        "qty": 6184.291898577612,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 862
+  "next_trade_id": 863
 }
