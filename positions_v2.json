@@ -1,5 +1,5 @@
 {
-  "balance": 816.6142175395146,
+  "balance": 813.8759379174279,
   "positions": {
     "CELOUSDT__SMC": {
       "trade_id": 1982,
@@ -439,46 +439,6 @@
         "bear_ob_count": 0
       },
       "qty_open": 67.23442402510085,
-      "phase": "before_tp1"
-    },
-    "PUMPUSDT__SMC": {
-      "trade_id": 5427,
-      "symbol": "PUMPUSDT",
-      "source": "ICT/SMC Scalp Pro v2",
-      "direction": "short",
-      "candle_time": "2026-10-02 20:00:00",
-      "session": "نیویورک",
-      "entry_price": 0.005344,
-      "initial_sl_price": 0.005585566104132908,
-      "sl_price": 0.005585566104132908,
-      "tp1_price": 0.004981650843800638,
-      "tp2_price": 0.004619301687601275,
-      "qty_total": 2806.88622754491,
-      "notional": 15.0,
-      "leverage": 1.0,
-      "margin_usd": 15.0,
-      "signal_score": 4,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": false,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 27.84,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": true,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 0,
-        "bear_fvg_count": 4,
-        "bull_ob_count": 0,
-        "bear_ob_count": 1
-      },
-      "qty_open": 2806.88622754491,
       "phase": "before_tp1"
     },
     "SOLUSDT__SMC": {
@@ -956,46 +916,6 @@
       },
       "qty_open": 48200.514138817474
     },
-    "DYDXUSDT__SMC": {
-      "trade_id": 5554,
-      "symbol": "DYDXUSDT",
-      "source": "ICT/SMC Scalp Pro v2",
-      "direction": "short",
-      "candle_time": "2026-10-02 23:15:00",
-      "session": "نیویورک",
-      "entry_price": 0.14777,
-      "initial_sl_price": 0.1507668090817942,
-      "sl_price": 0.1507668090817942,
-      "tp1_price": 0.14327478637730873,
-      "tp2_price": 0.13877957275461741,
-      "qty_total": 101.50910198281112,
-      "notional": 15.0,
-      "leverage": 1.0,
-      "margin_usd": 15.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": true,
-        "vol_spike": false,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 52.61,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 5,
-        "bear_fvg_count": 2,
-        "bull_ob_count": 1,
-        "bear_ob_count": 1
-      },
-      "qty_open": 101.50910198281112,
-      "phase": "before_tp1"
-    },
     "INITUSDT__SMC": {
       "trade_id": 5560,
       "symbol": "INITUSDT",
@@ -1035,31 +955,6 @@
       },
       "qty_open": 135.68521031207598,
       "phase": "before_tp1"
-    },
-    "MAGICUSDT__POC": {
-      "trade_id": 5561,
-      "symbol": "MAGICUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-02 23:30:00",
-      "session": "نیویورک",
-      "entry_price": 0.0587,
-      "sl_price": 0.0583416,
-      "tp1_price": 0.0596,
-      "tp2_price": null,
-      "qty_total": 2555.366269165247,
-      "notional": 150.0,
-      "leverage": 10.0,
-      "margin_usd": 15.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.058681250000000004,
-        "leg_start": "2026-10-02 18:30:00",
-        "leg_end": "2026-10-02 19:15:00",
-        "rr": 2.511,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 2555.366269165247
     },
     "STGUSDT__POC": {
       "trade_id": 5564,
@@ -1536,31 +1431,6 @@
       "qty_open": 301.56815440289506,
       "phase": "before_tp1"
     },
-    "RAYUSDT__POC": {
-      "trade_id": 5580,
-      "symbol": "RAYUSDT",
-      "source": "POC Retest v2",
-      "direction": "short",
-      "candle_time": "2026-10-03 00:15:00",
-      "session": "آسیا",
-      "entry_price": 1.9362,
-      "sl_price": 1.9470450999999998,
-      "tp1_price": 1.84,
-      "tp2_price": null,
-      "qty_total": 77.47133560582584,
-      "notional": 150.0,
-      "leverage": 10.0,
-      "margin_usd": 15.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 1.9425979166666667,
-        "leg_start": "2026-10-02 14:45:00",
-        "leg_end": "2026-10-02 19:15:00",
-        "rr": 8.87,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 77.47133560582584
-    },
     "UNIUSDT__SMC": {
       "trade_id": 5581,
       "symbol": "UNIUSDT",
@@ -1625,7 +1495,47 @@
         "reason": "poc_retest_rejection"
       },
       "qty_open": 85.1305334846765
+    },
+    "CATIUSDT__SMC": {
+      "trade_id": 5583,
+      "symbol": "CATIUSDT",
+      "source": "ICT/SMC Scalp Pro v2",
+      "direction": "long",
+      "candle_time": "2026-10-03 00:30:00",
+      "session": "آسیا",
+      "entry_price": 0.06296,
+      "initial_sl_price": 0.06208149995109362,
+      "sl_price": 0.06208149995109362,
+      "tp1_price": 0.06427775007335958,
+      "tp2_price": 0.06559550014671915,
+      "qty_total": 238.24650571791614,
+      "notional": 15.0,
+      "leverage": 1.0,
+      "margin_usd": 15.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 44.54,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "trend_strong": false,
+        "trend": 1,
+        "bull_fvg_count": 2,
+        "bear_fvg_count": 0,
+        "bull_ob_count": 3,
+        "bear_ob_count": 0
+      },
+      "qty_open": 238.24650571791614,
+      "phase": "before_tp1"
     }
   },
-  "next_trade_id": 5583
+  "next_trade_id": 5584
 }
