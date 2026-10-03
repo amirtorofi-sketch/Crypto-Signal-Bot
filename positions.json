@@ -1,5 +1,5 @@
 {
-  "balance": 1181.3495157057987,
+  "balance": 1181.9647217417823,
   "positions": {
     "ONEUSDT__ST": {
       "trade_id": 692,
@@ -321,35 +321,131 @@
         "status": "none"
       }
     },
-    "VETUSDT__POC": {
-      "trade_id": 949,
-      "symbol": "VETUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-03 04:00:00",
+    "CRVUSDT__SMC": {
+      "trade_id": 950,
+      "symbol": "CRVUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-10-03 04:15:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.3689,
+      "sl_price": 0.36416759684862526,
+      "sl_initial": 0.36416759684862526,
+      "tp1_price": 0.37599860472706215,
+      "tp2_price": 0.38309720945412423,
+      "adx_value": null,
+      "qty_total": 813.2285172133369,
+      "notional": 300.0,
+      "leverage": 3.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": true,
+        "vol_spike": false,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 46.96,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "bull_fvg_count": 4,
+        "bear_fvg_count": 4,
+        "bull_ob_count": 0,
+        "bear_ob_count": 3,
+        "trend": -1
+      },
+      "lot_a": {
+        "qty": 406.61425860666844,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 406.61425860666844,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "MANAUSDT__SMC": {
+      "trade_id": 951,
+      "symbol": "MANAUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-10-03 04:15:00",
       "session": "آسیا",
       "raw_direction": "long",
       "direction": "short",
-      "entry_price": 0.008615,
-      "sl_price": 0.008657581,
-      "sl_initial": 0.008657581,
-      "tp1_price": 0.008561999999999998,
+      "entry_price": 0.1081,
+      "sl_price": 0.11222799037421168,
+      "sl_initial": 0.11222799037421168,
+      "tp1_price": 0.1019080144386825,
+      "tp2_price": 0.09571602887736498,
+      "adx_value": null,
+      "qty_total": 2775.208140610546,
+      "notional": 300.0,
+      "leverage": 3.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 70.71,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "bull_fvg_count": 6,
+        "bear_fvg_count": 0,
+        "bull_ob_count": 3,
+        "bear_ob_count": 0,
+        "trend": 1
+      },
+      "lot_a": {
+        "qty": 1387.604070305273,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 1387.604070305273,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "MANAUSDT__POC": {
+      "trade_id": 952,
+      "symbol": "MANAUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-03 04:15:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.1081,
+      "sl_price": 0.1107056,
+      "sl_initial": 0.1107056,
+      "tp1_price": 0.10690000000000001,
       "tp2_price": null,
       "adx_value": null,
-      "qty_total": 11607.661056297156,
+      "qty_total": 925.0693802035153,
       "notional": 100.0,
       "leverage": 10.0,
       "signal_score": null,
       "market_snapshot": {
-        "poc": 0.008604458333333334,
+        "poc": 0.10654999999999999,
         "leg_start": "2026-10-03 01:45:00",
-        "leg_end": "2026-10-03 03:15:00",
-        "rr": 1.245,
+        "leg_end": "2026-10-03 03:30:00",
+        "rr": 0.461,
         "reason": "poc_retest_rejection",
-        "raw_sl": 0.008572419,
-        "raw_tp": 0.008668
+        "raw_sl": 0.1054944,
+        "raw_tp": 0.1093
       },
       "lot_a": {
-        "qty": 11607.661056297156,
+        "qty": 925.0693802035153,
         "target": "tp1",
         "status": "open"
       },
@@ -360,5 +456,5 @@
       }
     }
   },
-  "next_trade_id": 950
+  "next_trade_id": 953
 }
