@@ -1,5 +1,5 @@
 {
-  "balance": 1195.442731422831,
+  "balance": 1180.3841472444278,
   "positions": {
     "ONEUSDT__ST": {
       "trade_id": 692,
@@ -235,54 +235,6 @@
         "status": "open"
       }
     },
-    "MANAUSDT__SMC": {
-      "trade_id": 942,
-      "symbol": "MANAUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-10-03 02:45:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.1044,
-      "sl_price": 0.10783794974484301,
-      "sl_initial": 0.10783794974484301,
-      "tp1_price": 0.0992430753827355,
-      "tp2_price": 0.094086150765471,
-      "adx_value": null,
-      "qty_total": 2873.563218390804,
-      "notional": 300.0,
-      "leverage": 3.0,
-      "signal_score": 5,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": true,
-        "htf_bearish": false,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 66.91,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "bull_fvg_count": 4,
-        "bear_fvg_count": 0,
-        "bull_ob_count": 3,
-        "bear_ob_count": 0,
-        "trend": 1
-      },
-      "lot_a": {
-        "qty": 1436.781609195402,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 1436.781609195402,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "MASKUSDT__POC": {
       "trade_id": 944,
       "symbol": "MASKUSDT",
@@ -321,21 +273,59 @@
         "status": "none"
       }
     },
+    "CRVUSDT__POC": {
+      "trade_id": 946,
+      "symbol": "CRVUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-03 03:30:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.3716,
+      "sl_price": 0.37062780000000006,
+      "sl_initial": 0.37062780000000006,
+      "tp1_price": 0.374,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 269.1065662002153,
+      "notional": 100.0,
+      "leverage": 10.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.3719,
+        "leg_start": "2026-10-03 00:45:00",
+        "leg_end": "2026-10-03 02:00:00",
+        "rr": 2.469,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.3725721999999999,
+        "raw_tp": 0.3692
+      },
+      "lot_a": {
+        "qty": 269.1065662002153,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
     "CHZUSDT__SMC": {
-      "trade_id": 945,
+      "trade_id": 947,
       "symbol": "CHZUSDT",
       "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-10-03 03:15:00",
+      "candle_time": "2026-10-03 03:30:00",
       "session": "آسیا",
       "raw_direction": "long",
       "direction": "short",
-      "entry_price": 0.01746,
-      "sl_price": 0.017761442141855877,
-      "sl_initial": 0.017761442141855877,
-      "tp1_price": 0.017007836787216186,
-      "tp2_price": 0.01655567357443237,
+      "entry_price": 0.01788,
+      "sl_price": 0.01821776770319903,
+      "sl_initial": 0.01821776770319903,
+      "tp1_price": 0.017373348445201456,
+      "tp2_price": 0.01686669689040291,
       "adx_value": null,
-      "qty_total": 17182.13058419244,
+      "qty_total": 16778.523489932886,
       "notional": 300.0,
       "leverage": 3.0,
       "signal_score": 6,
@@ -349,7 +339,7 @@
         "htf_bearish": false,
         "discount_zone": false,
         "premium_zone": true,
-        "rsi_value": 75.17,
+        "rsi_value": 80.9,
         "rsi_bull_ok": true,
         "rsi_bear_ok": false,
         "bull_fvg_count": 6,
@@ -359,16 +349,16 @@
         "trend": 1
       },
       "lot_a": {
-        "qty": 8591.06529209622,
+        "qty": 8389.261744966443,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 8591.06529209622,
+        "qty": 8389.261744966443,
         "target": "tp2",
         "status": "open"
       }
     }
   },
-  "next_trade_id": 946
+  "next_trade_id": 948
 }
