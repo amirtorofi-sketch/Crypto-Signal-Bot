@@ -1,5 +1,5 @@
 {
-  "balance": 1159.8176531969525,
+  "balance": 1161.2974193297694,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 762,
@@ -223,7 +223,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.00822,
-      "sl_price": 0.008137336892906097,
+      "sl_price": 0.00822,
       "sl_initial": 0.008137336892906097,
       "tp1_price": 0.008343994660640855,
       "tp2_price": 0.00846798932128171,
@@ -254,7 +254,7 @@
       "lot_a": {
         "qty": 18248.17518248175,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 18248.17518248175,
@@ -330,44 +330,6 @@
       },
       "lot_a": {
         "qty": 38624.95171881035,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
-    "MANAUSDT__POC": {
-      "trade_id": 965,
-      "symbol": "MANAUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-03 10:45:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.1024,
-      "sl_price": 0.10320170000000001,
-      "sl_initial": 0.10320170000000001,
-      "tp1_price": 0.09980000000000001,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 976.5625,
-      "notional": 100.0,
-      "leverage": 10.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.10222291666666666,
-        "leg_start": "2026-10-03 08:30:00",
-        "leg_end": "2026-10-03 10:00:00",
-        "rr": 3.243,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.1015983,
-        "raw_tp": 0.105
-      },
-      "lot_a": {
-        "qty": 976.5625,
         "target": "tp1",
         "status": "open"
       },
