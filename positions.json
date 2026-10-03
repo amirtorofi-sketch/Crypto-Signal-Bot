@@ -1,5 +1,5 @@
 {
-  "balance": 1168.7085965686738,
+  "balance": 1168.3723332655597,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 762,
@@ -311,35 +311,35 @@
         "status": "open"
       }
     },
-    "ONEUSDT__POC": {
-      "trade_id": 979,
-      "symbol": "ONEUSDT",
+    "CRVUSDT__POC": {
+      "trade_id": 980,
+      "symbol": "CRVUSDT",
       "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-03 15:00:00",
+      "candle_time": "2026-10-03 15:15:00",
       "session": "لندن",
       "raw_direction": "long",
       "direction": "short",
-      "entry_price": 0.002537,
-      "sl_price": 0.0025455310000000006,
-      "sl_initial": 0.0025455310000000006,
-      "tp1_price": 0.0023430000000000005,
+      "entry_price": 0.3812,
+      "sl_price": 0.3855772,
+      "sl_initial": 0.3855772,
+      "tp1_price": 0.3787,
       "tp2_price": null,
       "adx_value": null,
-      "qty_total": 39416.63381947181,
+      "qty_total": 262.3294858342078,
       "notional": 100.0,
       "leverage": 10.0,
       "signal_score": null,
       "market_snapshot": {
-        "poc": 0.002531625,
-        "leg_start": "2026-10-03 13:15:00",
-        "leg_end": "2026-10-03 14:15:00",
-        "rr": 22.741,
+        "poc": 0.3796270833333333,
+        "leg_start": "2026-10-03 12:30:00",
+        "leg_end": "2026-10-03 14:30:00",
+        "rr": 0.571,
         "reason": "poc_retest_rejection",
-        "raw_sl": 0.0025284689999999998,
-        "raw_tp": 0.002731
+        "raw_sl": 0.37682279999999996,
+        "raw_tp": 0.3837
       },
       "lot_a": {
-        "qty": 39416.63381947181,
+        "qty": 262.3294858342078,
         "target": "tp1",
         "status": "open"
       },
@@ -350,5 +350,5 @@
       }
     }
   },
-  "next_trade_id": 980
+  "next_trade_id": 981
 }
