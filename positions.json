@@ -424,7 +424,46 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "VETUSDT__ST": {
+      "trade_id": 962,
+      "symbol": "VETUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-03 07:30:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.008487,
+      "sl_price": 0.008360757457691924,
+      "sl_initial": 0.008360757457691924,
+      "tp1_price": 0.008676363813462113,
+      "tp2_price": 0.008865727626924226,
+      "adx_value": 16.700476826644437,
+      "qty_total": 35348.17956875221,
+      "notional": 300.0,
+      "leverage": 3.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 16.7,
+        "di_plus": 14.077,
+        "di_minus": 32.471,
+        "ema_trend": 0.008717,
+        "close_vs_ema": "below",
+        "volume": 2973743.4,
+        "vol_ma": 812752.695,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 17674.089784376105,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 17674.089784376105,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 962
+  "next_trade_id": 963
 }
