@@ -1,5 +1,5 @@
 {
-  "balance": 1196.2801179233793,
+  "balance": 1198.6728151958805,
   "positions": {
     "ONEUSDT__ST": {
       "trade_id": 692,
@@ -214,7 +214,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.493,
-      "sl_price": 0.4995802167511622,
+      "sl_price": 0.493,
       "sl_initial": 0.4995802167511622,
       "tp1_price": 0.48312967487325664,
       "tp2_price": 0.47325934974651335,
@@ -245,7 +245,7 @@
       "lot_a": {
         "qty": 101.41987829614605,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 101.41987829614605,
@@ -338,44 +338,6 @@
         "qty": 18796.992481203008,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "MANAUSDT__POC": {
-      "trade_id": 937,
-      "symbol": "MANAUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-03 01:00:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.1006,
-      "sl_price": 0.10249879999999999,
-      "sl_initial": 0.10249879999999999,
-      "tp1_price": 0.0992,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 994.0357852882704,
-      "notional": 100.0,
-      "leverage": 10.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.0992,
-        "leg_start": "2026-10-02 20:45:00",
-        "leg_end": "2026-10-03 00:15:00",
-        "rr": 0.737,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.0987012,
-        "raw_tp": 0.102
-      },
-      "lot_a": {
-        "qty": 994.0357852882704,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     }
   },
