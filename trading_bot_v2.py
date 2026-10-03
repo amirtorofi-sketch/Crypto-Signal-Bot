@@ -22,15 +22,19 @@ from signal_bot_v2 import (
     get_sl_atr_mult, TP1_RR, TP2_RR, send_telegram_message_v2,
 )
 
-FIXED_TRADE_AMOUNT = 15.0
-STARTING_BALANCE = 1000.0
+FIXED_TRADE_AMOUNT = 100.0   # مارجین = ارزش معامله (بدون لوریج)
+STARTING_BALANCE = 10000.0
+
+# ریست یک‌باره‌ی موجودی (نشانه‌اش داخل positions_v2.json ذخیره می‌شود؛ پوزیشن‌های باز دست‌نخورده می‌مانند)
+BALANCE_RESET_TO = 10000.0
+BALANCE_RESET_MARKER = "reset_10000_2026-10-03"
 
 # لوریج مخصوص هر نماد. نمادهایی که اینجا نیستن با لوریج پیش‌فرض (بدون اهرم) باز می‌شن.
-LEVERAGE_OVERRIDES = {"ETHUSDT": 10.0}
+LEVERAGE_OVERRIDES = {}   # طبق درخواست لوریج ویژه‌ی ETH حذف شد
 DEFAULT_LEVERAGE = 1.0
 
 # لوریج ثابت استراتژی POC Retest روی همه‌ی نمادها (SMC همچنان از LEVERAGE_OVERRIDES پیروی می‌کنه)
-POC_LEVERAGE = 10.0
+POC_LEVERAGE = 1.0
 
 
 def get_leverage(symbol: str) -> float:
@@ -374,6 +378,13 @@ def check_open_position_poc(state: dict, key: str, pos: dict, last_high: float, 
 
 def main():
     state = load_state()
+
+    if state.get("balance_reset_marker") != BALANCE_RESET_MARKER:
+        old_balance = state["balance"]
+        state["balance"] = BALANCE_RESET_TO
+        state["balance_reset_marker"] = BALANCE_RESET_MARKER
+        send_telegram_message_v2(f"🔄 موجودی نقدی دست‌ترید۲ از {old_balance:.2f}$ به {BALANCE_RESET_TO:.2f}$ تنظیم شد.")
+        save_state(state)
     for symbol in SYMBOLS:
         try:
             df = get_klines(symbol, TIMEFRAME, KLINES_LIMIT)
