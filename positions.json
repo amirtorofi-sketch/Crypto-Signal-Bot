@@ -1,5 +1,5 @@
 {
-  "balance": 10001.979759615026,
+  "balance": 10003.89104517892,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 762,
@@ -244,7 +244,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.01744,
-      "sl_price": 0.017680097504396062,
+      "sl_price": 0.01744,
       "sl_initial": 0.017680097504396062,
       "tp1_price": 0.01707985374340591,
       "tp2_price": 0.016719707486811817,
@@ -276,7 +276,7 @@
       "lot_a": {
         "qty": 2866.97247706422,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 2866.97247706422,
@@ -576,7 +576,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.002555,
-      "sl_price": 0.0025849362931335985,
+      "sl_price": 0.002555,
       "sl_initial": 0.0025849362931335985,
       "tp1_price": 0.0025100955602996022,
       "tp2_price": 0.0024651911205992045,
@@ -607,7 +607,7 @@
       "lot_a": {
         "qty": 19569.471624266145,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 19569.471624266145,
@@ -653,8 +653,84 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "MANAUSDT__POC": {
+      "trade_id": 994,
+      "symbol": "MANAUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-03 22:00:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.1047,
+      "sl_price": 0.1054041,
+      "sl_initial": 0.1054041,
+      "tp1_price": 0.1016,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 955.1098376313275,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.10455416666666667,
+        "leg_start": "2026-10-03 18:45:00",
+        "leg_end": "2026-10-03 21:30:00",
+        "rr": 4.403,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.1039959,
+        "raw_tp": 0.1078
+      },
+      "lot_a": {
+        "qty": 955.1098376313275,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "GALAUSDT__POC": {
+      "trade_id": 995,
+      "symbol": "GALAUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-03 22:00:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.002512,
+      "sl_price": 0.0024904690000000004,
+      "sl_initial": 0.0024904690000000004,
+      "tp1_price": 0.0025229999999999996,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 39808.91719745223,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.002527583333333333,
+        "leg_start": "2026-10-03 16:15:00",
+        "leg_end": "2026-10-03 17:30:00",
+        "rr": 0.511,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.0025335309999999995,
+        "raw_tp": 0.002501
+      },
+      "lot_a": {
+        "qty": 39808.91719745223,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 994,
+  "next_trade_id": 996,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
