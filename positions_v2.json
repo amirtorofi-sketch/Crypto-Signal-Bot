@@ -1,5 +1,5 @@
 {
-  "balance": 813.8759379174279,
+  "balance": 812.7438651682709,
   "positions": {
     "CELOUSDT__SMC": {
       "trade_id": 1982,
@@ -916,46 +916,6 @@
       },
       "qty_open": 48200.514138817474
     },
-    "INITUSDT__SMC": {
-      "trade_id": 5560,
-      "symbol": "INITUSDT",
-      "source": "ICT/SMC Scalp Pro v2",
-      "direction": "long",
-      "candle_time": "2026-10-02 23:30:00",
-      "session": "نیویورک",
-      "entry_price": 0.11055,
-      "initial_sl_price": 0.10770839994540929,
-      "sl_price": 0.10770839994540929,
-      "tp1_price": 0.11481240008188606,
-      "tp2_price": 0.11907480016377212,
-      "qty_total": 135.68521031207598,
-      "notional": 15.0,
-      "leverage": 1.0,
-      "margin_usd": 15.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": true,
-        "htf_bearish": false,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 65.22,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": 1,
-        "bull_fvg_count": 5,
-        "bear_fvg_count": 0,
-        "bull_ob_count": 3,
-        "bear_ob_count": 0
-      },
-      "qty_open": 135.68521031207598,
-      "phase": "before_tp1"
-    },
     "STGUSDT__POC": {
       "trade_id": 5564,
       "symbol": "STGUSDT",
@@ -1471,31 +1431,6 @@
       "qty_open": 1.6580081795070187,
       "phase": "before_tp1"
     },
-    "ZROUSDT__POC": {
-      "trade_id": 5582,
-      "symbol": "ZROUSDT",
-      "source": "POC Retest v2",
-      "direction": "short",
-      "candle_time": "2026-10-03 00:15:00",
-      "session": "آسیا",
-      "entry_price": 1.762,
-      "sl_price": 1.7707689999999998,
-      "tp1_price": 1.734,
-      "tp2_price": null,
-      "qty_total": 85.1305334846765,
-      "notional": 150.0,
-      "leverage": 10.0,
-      "margin_usd": 15.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 1.767,
-        "leg_start": "2026-10-02 21:30:00",
-        "leg_end": "2026-10-02 23:30:00",
-        "rr": 3.193,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 85.1305334846765
-    },
     "CATIUSDT__SMC": {
       "trade_id": 5583,
       "symbol": "CATIUSDT",
@@ -1535,7 +1470,82 @@
       },
       "qty_open": 238.24650571791614,
       "phase": "before_tp1"
+    },
+    "IMXUSDT__POC": {
+      "trade_id": 5584,
+      "symbol": "IMXUSDT",
+      "source": "POC Retest v2",
+      "direction": "short",
+      "candle_time": "2026-10-03 00:45:00",
+      "session": "آسیا",
+      "entry_price": 0.1802,
+      "sl_price": 0.18148129999999996,
+      "tp1_price": 0.1711,
+      "tp2_price": null,
+      "qty_total": 832.4084350721421,
+      "notional": 150.0,
+      "leverage": 10.0,
+      "margin_usd": 15.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.18106875,
+        "leg_start": "2026-10-02 16:15:00",
+        "leg_end": "2026-10-02 18:45:00",
+        "rr": 7.102,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 832.4084350721421
+    },
+    "LPTUSDT__POC": {
+      "trade_id": 5585,
+      "symbol": "LPTUSDT",
+      "source": "POC Retest v2",
+      "direction": "short",
+      "candle_time": "2026-10-03 00:45:00",
+      "session": "آسیا",
+      "entry_price": 1.726,
+      "sl_price": 1.7327309999999998,
+      "tp1_price": 1.605,
+      "tp2_price": null,
+      "qty_total": 86.90614136732329,
+      "notional": 150.0,
+      "leverage": 10.0,
+      "margin_usd": 15.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 1.730125,
+        "leg_start": "2026-10-02 16:15:00",
+        "leg_end": "2026-10-02 18:30:00",
+        "rr": 17.977,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 86.90614136732329
+    },
+    "SYNUSDT__POC": {
+      "trade_id": 5586,
+      "symbol": "SYNUSDT",
+      "source": "POC Retest v2",
+      "direction": "short",
+      "candle_time": "2026-10-03 00:45:00",
+      "session": "آسیا",
+      "entry_price": 0.17358,
+      "sl_price": 0.17469452,
+      "tp1_price": 0.17154,
+      "tp2_price": null,
+      "qty_total": 864.1548565502937,
+      "notional": 150.0,
+      "leverage": 10.0,
+      "margin_usd": 15.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.174461875,
+        "leg_start": "2026-10-02 19:15:00",
+        "leg_end": "2026-10-02 21:30:00",
+        "rr": 1.83,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 864.1548565502937
     }
   },
-  "next_trade_id": 5584
+  "next_trade_id": 5587
 }
