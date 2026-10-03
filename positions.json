@@ -614,8 +614,47 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "MANAUSDT__ST": {
+      "trade_id": 993,
+      "symbol": "MANAUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-03 21:15:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.1076,
+      "sl_price": 0.11207619799606655,
+      "sl_initial": 0.11207619799606655,
+      "tp1_price": 0.10088570300590018,
+      "tp2_price": 0.09417140601180035,
+      "adx_value": 22.990614510224265,
+      "qty_total": 929.368029739777,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 22.991,
+        "di_plus": 30.422,
+        "di_minus": 11.531,
+        "ema_trend": 0.100081,
+        "close_vs_ema": "above",
+        "volume": 493033.0,
+        "vol_ma": 344169.95,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 464.6840148698885,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 464.6840148698885,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 993,
+  "next_trade_id": 994,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
