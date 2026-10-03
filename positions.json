@@ -370,8 +370,46 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "CRVUSDT__POC": {
+      "trade_id": 985,
+      "symbol": "CRVUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-03 19:15:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.3799,
+      "sl_price": 0.37801860000000004,
+      "sl_initial": 0.37801860000000004,
+      "tp1_price": 0.383,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 263.2271650434325,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.3799625,
+        "leg_start": "2026-10-03 17:00:00",
+        "leg_end": "2026-10-03 18:15:00",
+        "rr": 1.648,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.3817814,
+        "raw_tp": 0.3768
+      },
+      "lot_a": {
+        "qty": 263.2271650434325,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 985,
+  "next_trade_id": 986,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
