@@ -366,7 +366,46 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "BTCUSDT__ST": {
+      "trade_id": 968,
+      "symbol": "BTCUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-03 12:15:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 84861.4,
+      "sl_price": 85107.19225893084,
+      "sl_initial": 85107.19225893084,
+      "tp1_price": 84492.71161160374,
+      "tp2_price": 84124.02322320746,
+      "adx_value": 19.48938290973887,
+      "qty_total": 0.0035351761813969605,
+      "notional": 300.0,
+      "leverage": 3.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 19.489,
+        "di_plus": 48.758,
+        "di_minus": 9.587,
+        "ema_trend": 84758.545373,
+        "close_vs_ema": "above",
+        "volume": 181.2543,
+        "vol_ma": 67.4673,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 0.0017675880906984803,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0017675880906984803,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 968
+  "next_trade_id": 969
 }
