@@ -21,39 +21,51 @@ from signal_bot import (
     send_telegram_message,
 )
 from signal_bot import atr as calc_atr
-from signal_bot_v2 import check_strategy_poc_retest
+from signal_bot_v2 import (
+    check_strategy_poc_retest, check_strategy_smc_v2, get_htf_bias_v2,
+    get_sl_atr_mult as v2_sl_atr_mult, TP1_RR as V2_TP1_RR, TP2_RR as V2_TP2_RR,
+)
 
 # =====================================================================
 # تنظیمات
 # =====================================================================
-STARTING_BALANCE = 1000.0      # موجودی فرضی اولیه (دلار مجازی)
+STARTING_BALANCE = 10000.0     # موجودی فرضی اولیه (دلار مجازی)
+
+# ریست یک‌باره‌ی موجودی: در اولین اجرا موجودی نقدی روی BALANCE_RESET_TO تنظیم می‌شود و نشانه‌ی ریست
+# داخل positions.json ذخیره می‌شود تا دوباره تکرار نشود. (پوزیشن‌های باز دست‌نخورده می‌مانند.)
+BALANCE_RESET_TO = 10000.0
+BALANCE_RESET_MARKER = "reset_10000_2026-10-03"
 
 # فعلاً فقط Supertrend+ADX فعاله (به‌خاطر نیاز به داده‌ی بیشتر برای ICT/SMC خاموش شد)
 # هر دو استراتژی فعالن: Supertrend+ADX (با لوریج 3x) و ICT/SMC Scalp Pro (بدون لوریج، عادی)
 ENABLE_SMC = True
-ENABLE_POC = True   # POC Retest معکوس با لوریج ۱۰ و مارجین ۱۰$ (همون استراتژی dasttrade2 ولی جهت برعکس)
+ENABLE_POC = True   # POC Retest معکوس (همون استراتژی dasttrade2 ولی جهت برعکس)
+ENABLE_SMC_V2 = True  # ICT/SMC Scalp Pro v2 (همون استراتژی dasttrade2) به‌صورت معکوس
 
 # حجم هر معامله به تفکیک استراتژی (چون Win Rate بالای Supertrend+ADX توجیه‌کننده‌ی حجم بیشتره)
 TRADE_AMOUNT_BY_SOURCE = {
-    "Supertrend+ADX": 300.0,
+    "Supertrend+ADX": 100.0,
     "ICT/SMC Scalp Pro": 100.0,
     "POC Retest (Reversed)": 100.0,
+    "ICT/SMC v2 (Reversed)": 100.0,
 }
 DEFAULT_TRADE_AMOUNT = 100.0
 
 # لوریج به تفکیک استراتژی: مارجین واقعی کم‌شده از موجودی = حجم معامله / لوریج
 # (سود/ضرر همچنان بر مبنای کل حجم معامله محاسبه می‌شود، چون خودِ لوریج یعنی همین)
 LEVERAGE_BY_SOURCE = {
-    "Supertrend+ADX": 3.0,
+    "Supertrend+ADX": 1.0,
     "ICT/SMC Scalp Pro": 1.0,
-    "POC Retest (Reversed)": 10.0,   # مارجین هر معامله = 100 / 10 = 10$
+    "POC Retest (Reversed)": 1.0,
+    "ICT/SMC v2 (Reversed)": 1.0,
 }
 DEFAULT_LEVERAGE = 1.0
 
 POSITIONS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "positions.json")
 TRADES_LOG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "trades_log.csv")
 
-SOURCE_TAG = {"Supertrend+ADX": "ST", "ICT/SMC Scalp Pro": "SMC", "POC Retest (Reversed)": "POC"}
+SOURCE_TAG = {"Supertrend+ADX": "ST", "ICT/SMC Scalp Pro": "SMC", "POC Retest (Reversed)": "POC",
+              "ICT/SMC v2 (Reversed)": "SMC2"}
 
 TRADES_LOG_FIELDS = [
     "event_time_utc", "event_type", "trade_id", "symbol", "source", "timeframe", "session",
@@ -96,7 +108,7 @@ def smc_sl_too_tight(res) -> bool:
     except Exception:
         return False
 
-SMC_ASIA_LEVERAGE = 3.0   # مارجین هر معامله مثل قبل (۱۰۰$) می‌ماند؛ ارزش معامله = ۱۰۰ × ۳ = ۳۰۰$
+SMC_ASIA_LEVERAGE = 1.0   # طبق درخواست همه‌ی استراتژی‌ها ۱۰۰$ بدون لوریج‌اند؛ ۱٫۰ یعنی لوریج ویژه‌ی Asia غیرفعال
 
 
 def analysis_session(dt) -> str:
@@ -549,6 +561,13 @@ def check_open_position(state: dict, key: str, pos: dict, last_high: float, last
 def main():
     state = load_state()
 
+    if state.get("balance_reset_marker") != BALANCE_RESET_MARKER:
+        old_balance = state["balance"]
+        state["balance"] = BALANCE_RESET_TO
+        state["balance_reset_marker"] = BALANCE_RESET_MARKER
+        send_telegram_message(f"🔄 موجودی نقدی دست‌ترید۱ از {old_balance:.2f}$ به {BALANCE_RESET_TO:.2f}$ تنظیم شد.")
+        save_state(state)
+
     for symbol in SYMBOLS:
         try:
             df = get_klines(symbol, TIMEFRAME, KLINES_LIMIT)
@@ -633,6 +652,26 @@ def main():
                               signal_score=res["bear_score"], market_snapshot=res.get("confluence"), **smc_ov)
             elif res is not None:
                 print(f"[{symbol}] بدون سیگنال SMC جدید (امتیاز خرید={res['bull_score']}/7, امتیاز فروش={res['bear_score']}/7)")
+
+        # --- استراتژی ۴: ICT/SMC Scalp Pro v2 (معکوس، بدون فیلتر سشن/نماد/SL) ---
+        if ENABLE_SMC_V2:
+            try:
+                htf_b2, htf_s2 = get_htf_bias_v2(symbol)
+            except Exception:
+                htf_b2, htf_s2 = True, True
+            res_v2 = check_strategy_smc_v2(df, htf_b2, htf_s2)
+            if res_v2 is not None and (res_v2["buy"] or res_v2["sell"]):
+                is_buy = bool(res_v2["buy"])
+                raw_dir = "long" if is_buy else "short"
+                price_v2 = res_v2["price"]
+                atr_v2 = res_v2["atr"]
+                raw_sl_v2 = price_v2 - atr_v2 * v2_sl_atr_mult(symbol) if is_buy else price_v2 + atr_v2 * v2_sl_atr_mult(symbol)
+                direction, sl, tp1, tp2 = resolve_direction_and_levels(raw_dir, price_v2, raw_sl_v2, V2_TP1_RR, V2_TP2_RR)
+                score_v2 = res_v2["bull_score"] if is_buy else res_v2["bear_score"]
+                print(f"[{symbol}] سیگنال {'خرید' if is_buy else 'فروش'} ICT/SMC v2 (امتیاز={score_v2}/7) -> باز کردن پوزیشن {direction} (معکوس)...")
+                open_position(state, symbol, direction, price_v2, sl, tp1, tp2, source="ICT/SMC v2 (Reversed)",
+                              candle_time=res_v2["candle_time"], raw_direction=raw_dir,
+                              signal_score=score_v2, market_snapshot=res_v2.get("confluence"))
 
         # --- استراتژی ۳: POC Retest (معکوس، بدون لوریج، تک‌هدفی) ---
         if ENABLE_POC and f"{symbol}__POC" not in state["positions"]:
