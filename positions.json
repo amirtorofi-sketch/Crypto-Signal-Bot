@@ -271,7 +271,46 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "SOLUSDT__ST": {
+      "trade_id": 978,
+      "symbol": "SOLUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-03 14:45:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 119.78,
+      "sl_price": 120.70037868700703,
+      "sl_initial": 120.70037868700703,
+      "tp1_price": 118.39943196948946,
+      "tp2_price": 117.01886393897891,
+      "adx_value": 23.12126949002221,
+      "qty_total": 2.504591751544498,
+      "notional": 300.0,
+      "leverage": 3.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 23.121,
+        "di_plus": 28.933,
+        "di_minus": 14.368,
+        "ema_trend": 119.445451,
+        "close_vs_ema": "above",
+        "volume": 22137.601,
+        "vol_ma": 8491.6863,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 1.252295875772249,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 1.252295875772249,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 978
+  "next_trade_id": 979
 }
