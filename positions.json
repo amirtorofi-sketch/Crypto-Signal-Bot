@@ -1,5 +1,5 @@
 {
-  "balance": 10005.678168650778,
+  "balance": 10004.748383521503,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 762,
@@ -294,45 +294,6 @@
         "status": "open"
       }
     },
-    "DOGEUSDT__ST": {
-      "trade_id": 1034,
-      "symbol": "DOGEUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-10-04 07:45:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.09347,
-      "sl_price": 0.09433907016033516,
-      "sl_initial": 0.09433907016033516,
-      "tp1_price": 0.09216639475949726,
-      "tp2_price": 0.09086278951899451,
-      "adx_value": 28.118716832230547,
-      "qty_total": 1069.8619878035734,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "adx": 28.119,
-        "di_plus": 35.432,
-        "di_minus": 9.891,
-        "ema_trend": 0.093445,
-        "close_vs_ema": "above",
-        "volume": 3744657.0,
-        "vol_ma": 2754985.85,
-        "vol_above_ma": true
-      },
-      "lot_a": {
-        "qty": 534.9309939017867,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 534.9309939017867,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "MASKUSDT__SMC": {
       "trade_id": 1035,
       "symbol": "MASKUSDT",
@@ -377,55 +338,6 @@
       },
       "lot_b": {
         "qty": 99.60159362549801,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "ROSEUSDT__SMC2": {
-      "trade_id": 1036,
-      "symbol": "ROSEUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-04 08:00:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.00856,
-      "sl_price": 0.00856,
-      "sl_initial": 0.008621701646806545,
-      "tp1_price": 0.008467447529790183,
-      "tp2_price": 0.008374895059580365,
-      "adx_value": null,
-      "qty_total": 11682.242990654206,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 4,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": true,
-        "vol_spike": false,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": true,
-        "htf_bearish": false,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 68.96,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": 1,
-        "bull_fvg_count": 6,
-        "bear_fvg_count": 0,
-        "bull_ob_count": 2,
-        "bear_ob_count": 1
-      },
-      "lot_a": {
-        "qty": 5841.121495327103,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 5841.121495327103,
         "target": "tp2",
         "status": "open"
       }
