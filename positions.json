@@ -896,8 +896,57 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "BTCUSDT__SMC2": {
+      "trade_id": 1005,
+      "symbol": "BTCUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-04 00:15:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 84808.93,
+      "sl_price": 84674.33260036042,
+      "sl_initial": 84674.33260036042,
+      "tp1_price": 85010.82609945936,
+      "tp2_price": 85212.72219891872,
+      "adx_value": null,
+      "qty_total": 0.0011791211137789383,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": false,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 51.33,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 3,
+        "bear_fvg_count": 5,
+        "bull_ob_count": 0,
+        "bear_ob_count": 2
+      },
+      "lot_a": {
+        "qty": 0.0005895605568894691,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0005895605568894691,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1005,
+  "next_trade_id": 1006,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
