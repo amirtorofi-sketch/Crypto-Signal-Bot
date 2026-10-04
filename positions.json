@@ -1,5 +1,5 @@
 {
-  "balance": 10003.215323455686,
+  "balance": 10004.107750657518,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 762,
@@ -488,7 +488,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.1076,
-      "sl_price": 0.11207619799606655,
+      "sl_price": 0.1076,
       "sl_initial": 0.11207619799606655,
       "tp1_price": 0.10088570300590018,
       "tp2_price": 0.09417140601180035,
@@ -510,7 +510,7 @@
       "lot_a": {
         "qty": 464.6840148698885,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 464.6840148698885,
@@ -796,55 +796,6 @@
       },
       "lot_b": {
         "qty": 5973.715651135006,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "MANAUSDT__SMC2": {
-      "trade_id": 1009,
-      "symbol": "MANAUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-04 01:00:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.1036,
-      "sl_price": 0.10129220714342028,
-      "sl_initial": 0.10129220714342028,
-      "tp1_price": 0.10706168928486956,
-      "tp2_price": 0.11052337856973914,
-      "adx_value": null,
-      "qty_total": 965.2509652509652,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": true,
-        "htf_bearish": false,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 43.44,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": true,
-        "trend_strong": false,
-        "trend": -1,
-        "bull_fvg_count": 3,
-        "bear_fvg_count": 2,
-        "bull_ob_count": 3,
-        "bear_ob_count": 1
-      },
-      "lot_a": {
-        "qty": 482.6254826254826,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 482.6254826254826,
         "target": "tp2",
         "status": "open"
       }
