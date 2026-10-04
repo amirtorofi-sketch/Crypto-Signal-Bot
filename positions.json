@@ -1,5 +1,5 @@
 {
-  "balance": 10001.599449450625,
+  "balance": 10000.37091426362,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 762,
@@ -751,54 +751,6 @@
         "status": "open"
       }
     },
-    "GALAUSDT__SMC": {
-      "trade_id": 1020,
-      "symbol": "GALAUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-10-04 04:15:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.002575,
-      "sl_price": 0.0026066347810654138,
-      "sl_initial": 0.0026066347810654138,
-      "tp1_price": 0.0025275478284018794,
-      "tp2_price": 0.002480095656803759,
-      "adx_value": null,
-      "qty_total": 38834.95145631068,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 5,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": true,
-        "htf_bearish": false,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 67.91,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "bull_fvg_count": 4,
-        "bear_fvg_count": 1,
-        "bull_ob_count": 2,
-        "bear_ob_count": 0,
-        "trend": 1
-      },
-      "lot_a": {
-        "qty": 19417.47572815534,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 19417.47572815534,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "BNBUSDT__POC": {
       "trade_id": 1022,
       "symbol": "BNBUSDT",
@@ -874,8 +826,95 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "MASKUSDT__SMC2": {
+      "trade_id": 1024,
+      "symbol": "MASKUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-04 05:15:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.491,
+      "sl_price": 0.49467310115012975,
+      "sl_initial": 0.49467310115012975,
+      "tp1_price": 0.48549034827480536,
+      "tp2_price": 0.47998069654961073,
+      "adx_value": null,
+      "qty_total": 203.66598778004072,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 4,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 71.8,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": false,
+        "trend": 1,
+        "bull_fvg_count": 6,
+        "bear_fvg_count": 3,
+        "bull_ob_count": 3,
+        "bear_ob_count": 1
+      },
+      "lot_a": {
+        "qty": 101.83299389002036,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 101.83299389002036,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "MANAUSDT__POC": {
+      "trade_id": 1025,
+      "symbol": "MANAUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-04 05:15:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.107,
+      "sl_price": 0.1085056,
+      "sl_initial": 0.1085056,
+      "tp1_price": 0.1049,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 934.5794392523364,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.106475,
+        "leg_start": "2026-10-04 02:30:00",
+        "leg_end": "2026-10-04 04:45:00",
+        "rr": 1.395,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.1054944,
+        "raw_tp": 0.1091
+      },
+      "lot_a": {
+        "qty": 934.5794392523364,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 1024,
+  "next_trade_id": 1026,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
