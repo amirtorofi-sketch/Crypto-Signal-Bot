@@ -1,5 +1,5 @@
 {
-  "balance": 10000.679596164526,
+  "balance": 10000.533411847464,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 762,
@@ -196,55 +196,6 @@
         "status": "open"
       }
     },
-    "CHZUSDT__SMC2": {
-      "trade_id": 982,
-      "symbol": "CHZUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-03 18:00:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.01744,
-      "sl_price": 0.01744,
-      "sl_initial": 0.017680097504396062,
-      "tp1_price": 0.01707985374340591,
-      "tp2_price": 0.016719707486811817,
-      "adx_value": null,
-      "qty_total": 5733.94495412844,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 4,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": false,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": true,
-        "htf_bearish": false,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 60.87,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": 1,
-        "bull_fvg_count": 5,
-        "bear_fvg_count": 0,
-        "bull_ob_count": 2,
-        "bear_ob_count": 0
-      },
-      "lot_a": {
-        "qty": 2866.97247706422,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 2866.97247706422,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "ONEUSDT__SMC2": {
       "trade_id": 983,
       "symbol": "ONEUSDT",
@@ -400,7 +351,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 84808.93,
-      "sl_price": 84674.33260036042,
+      "sl_price": 84808.93,
       "sl_initial": 84674.33260036042,
       "tp1_price": 85010.82609945936,
       "tp2_price": 85212.72219891872,
@@ -432,7 +383,7 @@
       "lot_a": {
         "qty": 0.0005895605568894691,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.0005895605568894691,
@@ -751,44 +702,6 @@
         "status": "open"
       }
     },
-    "BNBUSDT__POC": {
-      "trade_id": 1022,
-      "symbol": "BNBUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-04 05:00:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 786.07,
-      "sl_price": 788.1547700000001,
-      "sl_initial": 788.1547700000001,
-      "tp1_price": 782.2100000000002,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.1272151335122826,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 785.441875,
-        "leg_start": "2026-10-03 21:15:00",
-        "leg_end": "2026-10-03 22:45:00",
-        "rr": 1.852,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 783.98523,
-        "raw_tp": 789.93
-      },
-      "lot_a": {
-        "qty": 0.1272151335122826,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "MANAUSDT__POC": {
       "trade_id": 1025,
       "symbol": "MANAUSDT",
@@ -826,8 +739,96 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "SOLUSDT__SMC2": {
+      "trade_id": 1027,
+      "symbol": "SOLUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-04 06:15:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 120.73,
+      "sl_price": 121.22916766885919,
+      "sl_initial": 121.22916766885919,
+      "tp1_price": 119.98124849671123,
+      "tp2_price": 119.23249699342244,
+      "adx_value": null,
+      "qty_total": 0.8282945415389712,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 58.3,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": 1,
+        "bull_fvg_count": 6,
+        "bear_fvg_count": 3,
+        "bull_ob_count": 3,
+        "bear_ob_count": 0
+      },
+      "lot_a": {
+        "qty": 0.4141472707694856,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.4141472707694856,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "BNBUSDT__ST": {
+      "trade_id": 1028,
+      "symbol": "BNBUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-04 06:15:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 788.01,
+      "sl_price": 793.0103892559268,
+      "sl_initial": 793.0103892559268,
+      "tp1_price": 780.5094161161097,
+      "tp2_price": 773.0088322322194,
+      "adx_value": 18.06463947529185,
+      "qty_total": 0.12690194286874532,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 18.065,
+        "di_plus": 31.988,
+        "di_minus": 15.197,
+        "ema_trend": 777.483178,
+        "close_vs_ema": "above",
+        "volume": 1576.742,
+        "vol_ma": 528.2656,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 0.06345097143437266,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.06345097143437266,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1027,
+  "next_trade_id": 1029,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
