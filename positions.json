@@ -673,8 +673,46 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "BNBUSDT__POC": {
+      "trade_id": 1042,
+      "symbol": "BNBUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-04 11:15:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 788.75,
+      "sl_price": 790.6076800000001,
+      "sl_initial": 790.6076800000001,
+      "tp1_price": 782.38,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.12678288431061807,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 788.465625,
+        "leg_start": "2026-10-04 07:15:00",
+        "leg_end": "2026-10-04 09:30:00",
+        "rr": 3.429,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 786.8923199999999,
+        "raw_tp": 795.12
+      },
+      "lot_a": {
+        "qty": 0.12678288431061807,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 1042,
+  "next_trade_id": 1043,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
