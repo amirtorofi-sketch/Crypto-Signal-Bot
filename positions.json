@@ -1,5 +1,5 @@
 {
-  "balance": 10009.594791176913,
+  "balance": 10011.506166865027,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 762,
@@ -488,7 +488,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.1074,
-      "sl_price": 0.11013708998537897,
+      "sl_price": 0.1074,
       "sl_initial": 0.11013708998537897,
       "tp1_price": 0.10329436502193154,
       "tp2_price": 0.09918873004386308,
@@ -520,7 +520,7 @@
       "lot_a": {
         "qty": 465.54934823091247,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 465.54934823091247,
@@ -712,8 +712,46 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ONEUSDT__POC": {
+      "trade_id": 1056,
+      "symbol": "ONEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-04 17:30:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.002391,
+      "sl_price": 0.002374595,
+      "sl_initial": 0.002374595,
+      "tp1_price": 0.0024319999999999997,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 41823.50480970305,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0024003749999999997,
+        "leg_start": "2026-10-04 15:15:00",
+        "leg_end": "2026-10-04 16:00:00",
+        "rr": 2.499,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.0024074049999999996,
+        "raw_tp": 0.00235
+      },
+      "lot_a": {
+        "qty": 41823.50480970305,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 1056,
+  "next_trade_id": 1057,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
