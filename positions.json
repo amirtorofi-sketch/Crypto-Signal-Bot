@@ -1,5 +1,5 @@
 {
-  "balance": 9999.93370805947,
+  "balance": 10000.879176582253,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 762,
@@ -584,7 +584,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.00856,
-      "sl_price": 0.008621701646806545,
+      "sl_price": 0.00856,
       "sl_initial": 0.008621701646806545,
       "tp1_price": 0.008467447529790183,
       "tp2_price": 0.008374895059580365,
@@ -616,7 +616,7 @@
       "lot_a": {
         "qty": 5841.121495327103,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 5841.121495327103,
@@ -720,44 +720,6 @@
         "qty": 100.40160642570281,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "MASKUSDT__POC": {
-      "trade_id": 1041,
-      "symbol": "MASKUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-04 09:30:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.494,
-      "sl_price": 0.490503,
-      "sl_initial": 0.490503,
-      "tp1_price": 0.496,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 202.42914979757086,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.494125,
-        "leg_start": "2026-10-04 06:00:00",
-        "leg_end": "2026-10-04 07:30:00",
-        "rr": 0.572,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.49749699999999997,
-        "raw_tp": 0.492
-      },
-      "lot_a": {
-        "qty": 202.42914979757086,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     }
   },
