@@ -1,5 +1,5 @@
 {
-  "balance": 10019.30363144326,
+  "balance": 10020.003015714372,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 762,
@@ -163,45 +163,6 @@
       },
       "lot_b": {
         "qty": 19105.846388995033,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "ROSEUSDT__ST": {
-      "trade_id": 1007,
-      "symbol": "ROSEUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-10-04 00:45:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.00837,
-      "sl_price": 0.00837,
-      "sl_initial": 0.008258365392231048,
-      "tp1_price": 0.00853745191165343,
-      "tp2_price": 0.008704903823306858,
-      "adx_value": 20.972703524769102,
-      "qty_total": 11947.431302270012,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "adx": 20.973,
-        "di_plus": 19.902,
-        "di_minus": 28.82,
-        "ema_trend": 0.008453,
-        "close_vs_ema": "below",
-        "volume": 994262.8,
-        "vol_ma": 491193.545,
-        "vol_above_ma": true
-      },
-      "lot_a": {
-        "qty": 5973.715651135006,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 5973.715651135006,
         "target": "tp2",
         "status": "open"
       }
@@ -498,7 +459,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.00847,
-      "sl_price": 0.008540369849626056,
+      "sl_price": 0.00847,
       "sl_initial": 0.008540369849626056,
       "tp1_price": 0.008364445225560915,
       "tp2_price": 0.008258890451121832,
@@ -530,7 +491,7 @@
       "lot_a": {
         "qty": 5903.18772136954,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 5903.18772136954,
@@ -626,44 +587,6 @@
         "status": "open"
       }
     },
-    "BNBUSDT__POC": {
-      "trade_id": 1060,
-      "symbol": "BNBUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-04 19:30:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 789.24,
-      "sl_price": 787.9102200000001,
-      "sl_initial": 787.9102200000001,
-      "tp1_price": 793.0600000000001,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.12670417110131266,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 789.71,
-        "leg_start": "2026-10-04 13:15:00",
-        "leg_end": "2026-10-04 14:15:00",
-        "rr": 2.873,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 790.5697799999999,
-        "raw_tp": 785.42
-      },
-      "lot_a": {
-        "qty": 0.12670417110131266,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "CHZUSDT__POC": {
       "trade_id": 1061,
       "symbol": "CHZUSDT",
@@ -749,44 +672,6 @@
         "qty": 5704.5065601825445,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "VETUSDT__POC": {
-      "trade_id": 1063,
-      "symbol": "VETUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-04 20:45:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.008765,
-      "sl_price": 0.008800738,
-      "sl_initial": 0.008800738,
-      "tp1_price": 0.008664,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 11409.013120365089,
-      "notional": 100.00000000000001,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.008743333333333332,
-        "leg_start": "2026-10-04 15:15:00",
-        "leg_end": "2026-10-04 19:00:00",
-        "rr": 2.826,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.008729262,
-        "raw_tp": 0.008866
-      },
-      "lot_a": {
-        "qty": 11409.013120365089,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     }
   },
