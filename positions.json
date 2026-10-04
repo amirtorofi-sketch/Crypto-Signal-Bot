@@ -758,8 +758,56 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "CRVUSDT__SMC": {
+      "trade_id": 1075,
+      "symbol": "CRVUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-10-04 23:30:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.3792,
+      "sl_price": 0.383022594098771,
+      "sl_initial": 0.383022594098771,
+      "tp1_price": 0.3734661088518435,
+      "tp2_price": 0.36773221770368697,
+      "adx_value": null,
+      "qty_total": 263.7130801687764,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": true,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 67.32,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "bull_fvg_count": 5,
+        "bear_fvg_count": 0,
+        "bull_ob_count": 2,
+        "bear_ob_count": 0,
+        "trend": 1
+      },
+      "lot_a": {
+        "qty": 131.8565400843882,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 131.8565400843882,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1075,
+  "next_trade_id": 1076,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
