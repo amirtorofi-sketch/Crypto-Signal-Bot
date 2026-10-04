@@ -1,5 +1,5 @@
 {
-  "balance": 10011.506166865027,
+  "balance": 10013.220930562225,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 762,
@@ -713,35 +713,35 @@
         "status": "open"
       }
     },
-    "ONEUSDT__POC": {
-      "trade_id": 1056,
-      "symbol": "ONEUSDT",
+    "ROSEUSDT__POC": {
+      "trade_id": 1057,
+      "symbol": "ROSEUSDT",
       "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-04 17:30:00",
+      "candle_time": "2026-10-04 18:00:00",
       "session": "نیویورک",
       "raw_direction": "short",
       "direction": "long",
-      "entry_price": 0.002391,
-      "sl_price": 0.002374595,
-      "sl_initial": 0.002374595,
-      "tp1_price": 0.0024319999999999997,
+      "entry_price": 0.00844,
+      "sl_price": 0.00841154,
+      "sl_initial": 0.00841154,
+      "tp1_price": 0.008469999999999998,
       "tp2_price": null,
       "adx_value": null,
-      "qty_total": 41823.50480970305,
+      "qty_total": 11848.341232227489,
       "notional": 100.0,
       "leverage": 1.0,
       "signal_score": null,
       "market_snapshot": {
-        "poc": 0.0024003749999999997,
-        "leg_start": "2026-10-04 15:15:00",
-        "leg_end": "2026-10-04 16:00:00",
-        "rr": 2.499,
+        "poc": 0.008446666666666668,
+        "leg_start": "2026-10-04 15:00:00",
+        "leg_end": "2026-10-04 17:15:00",
+        "rr": 1.054,
         "reason": "poc_retest_rejection",
-        "raw_sl": 0.0024074049999999996,
-        "raw_tp": 0.00235
+        "raw_sl": 0.008468459999999999,
+        "raw_tp": 0.00841
       },
       "lot_a": {
-        "qty": 41823.50480970305,
+        "qty": 11848.341232227489,
         "target": "tp1",
         "status": "open"
       },
@@ -750,8 +750,47 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "ONEUSDT__ST": {
+      "trade_id": 1058,
+      "symbol": "ONEUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-04 18:00:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.002457,
+      "sl_price": 0.0025774040822172666,
+      "sl_initial": 0.0025774040822172666,
+      "tp1_price": 0.0022763938766741003,
+      "tp2_price": 0.0020957877533482002,
+      "adx_value": 16.3007363730513,
+      "qty_total": 40700.0407000407,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 16.301,
+        "di_plus": 34.06,
+        "di_minus": 13.178,
+        "ema_trend": 0.002413,
+        "close_vs_ema": "above",
+        "volume": 43623098.0,
+        "vol_ma": 22299114.4,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 20350.02035002035,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 20350.02035002035,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1057,
+  "next_trade_id": 1059,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
