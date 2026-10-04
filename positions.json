@@ -1,5 +1,5 @@
 {
-  "balance": 9992.954620955159,
+  "balance": 9994.7154504542,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 762,
@@ -489,44 +489,6 @@
         "status": "open"
       }
     },
-    "BTCUSDT__POC": {
-      "trade_id": 1017,
-      "symbol": "BTCUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-04 03:45:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 84840.87,
-      "sl_price": 84711.88503,
-      "sl_initial": 84711.88503,
-      "tp1_price": 85123.73999999999,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.0011786772106415222,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 84878.39479166665,
-        "leg_start": "2026-10-03 20:15:00",
-        "leg_end": "2026-10-03 21:00:00",
-        "rr": 2.193,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 84969.85496999999,
-        "raw_tp": 84558.0
-      },
-      "lot_a": {
-        "qty": 0.0011786772106415222,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "MANAUSDT__SMC": {
       "trade_id": 1019,
       "symbol": "MANAUSDT",
@@ -623,7 +585,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.002737,
-      "sl_price": 0.0027890912071771496,
+      "sl_price": 0.002737,
       "sl_initial": 0.0027890912071771496,
       "tp1_price": 0.002658863189234275,
       "tp2_price": 0.0025807263784685505,
@@ -654,7 +616,7 @@
       "lot_a": {
         "qty": 18268.176835951774,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 18268.176835951774,
@@ -846,8 +808,57 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ROSEUSDT__SMC2": {
+      "trade_id": 1036,
+      "symbol": "ROSEUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-04 08:00:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.00856,
+      "sl_price": 0.008621701646806545,
+      "sl_initial": 0.008621701646806545,
+      "tp1_price": 0.008467447529790183,
+      "tp2_price": 0.008374895059580365,
+      "adx_value": null,
+      "qty_total": 11682.242990654206,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 4,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": true,
+        "vol_spike": false,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 68.96,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": 1,
+        "bull_fvg_count": 6,
+        "bear_fvg_count": 0,
+        "bull_ob_count": 2,
+        "bear_ob_count": 1
+      },
+      "lot_a": {
+        "qty": 5841.121495327103,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 5841.121495327103,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1036,
+  "next_trade_id": 1037,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
