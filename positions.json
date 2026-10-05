@@ -982,8 +982,95 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ROSEUSDT__SMC": {
+      "trade_id": 1100,
+      "symbol": "ROSEUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-10-05 04:15:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.00839,
+      "sl_price": 0.008316031960390909,
+      "sl_initial": 0.008316031960390909,
+      "tp1_price": 0.008500952059413636,
+      "tp2_price": 0.008611904118827273,
+      "adx_value": null,
+      "qty_total": 11918.951132300357,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 6,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": true,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 41.1,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "bull_fvg_count": 2,
+        "bear_fvg_count": 4,
+        "bull_ob_count": 1,
+        "bear_ob_count": 1,
+        "trend": -1
+      },
+      "lot_a": {
+        "qty": 5959.475566150179,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 5959.475566150179,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "VETUSDT__ST": {
+      "trade_id": 1101,
+      "symbol": "VETUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-05 04:15:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.008711,
+      "sl_price": 0.008526463998033406,
+      "sl_initial": 0.008526463998033406,
+      "tp1_price": 0.008987804002949892,
+      "tp2_price": 0.009264608005899783,
+      "adx_value": 23.617976188345704,
+      "qty_total": 11479.738261967626,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 23.618,
+        "di_plus": 13.878,
+        "di_minus": 33.756,
+        "ema_trend": 0.008718,
+        "close_vs_ema": "below",
+        "volume": 3374445.0,
+        "vol_ma": 1721159.255,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 5739.869130983813,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 5739.869130983813,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1100,
+  "next_trade_id": 1102,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
