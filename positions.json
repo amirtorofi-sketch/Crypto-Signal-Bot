@@ -1,5 +1,5 @@
 {
-  "balance": 10041.58285337761,
+  "balance": 10042.017350750846,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 762,
@@ -665,7 +665,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 120.11,
-      "sl_price": 119.41416694000634,
+      "sl_price": 120.11,
       "sl_initial": 119.41416694000634,
       "tp1_price": 121.1537495899905,
       "tp2_price": 122.19749917998098,
@@ -697,7 +697,7 @@
       "lot_a": {
         "qty": 0.41628507201731746,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.41628507201731746,
@@ -790,8 +790,85 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "SOLUSDT__ST": {
+      "trade_id": 1148,
+      "symbol": "SOLUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-05 22:00:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 121.48,
+      "sl_price": 122.83073271945675,
+      "sl_initial": 122.83073271945675,
+      "tp1_price": 119.45390092081489,
+      "tp2_price": 117.42780184162977,
+      "adx_value": 24.35440219888892,
+      "qty_total": 0.8231807704972012,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 24.354,
+        "di_plus": 37.394,
+        "di_minus": 9.869,
+        "ema_trend": 120.471953,
+        "close_vs_ema": "above",
+        "volume": 33965.29,
+        "vol_ma": 9453.3641,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 0.4115903852486006,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.4115903852486006,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "MASKUSDT__POC": {
+      "trade_id": 1149,
+      "symbol": "MASKUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-05 22:00:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.492,
+      "sl_price": 0.490507,
+      "sl_initial": 0.490507,
+      "tp1_price": 0.505,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 203.2520325203252,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.49212500000000003,
+        "leg_start": "2026-10-05 12:15:00",
+        "leg_end": "2026-10-05 14:45:00",
+        "rr": 8.707,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.49349299999999996,
+        "raw_tp": 0.479
+      },
+      "lot_a": {
+        "qty": 203.2520325203252,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 1148,
+  "next_trade_id": 1150,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
