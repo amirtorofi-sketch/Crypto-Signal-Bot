@@ -1,5 +1,5 @@
 {
-  "balance": 10066.576560169846,
+  "balance": 10066.475094844189,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 762,
@@ -1012,82 +1012,6 @@
         "qty": 2941.176470588235,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "GALAUSDT__POC": {
-      "trade_id": 1195,
-      "symbol": "GALAUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-06 11:45:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.002477,
-      "sl_price": 0.002484472,
-      "sl_initial": 0.002484472,
-      "tp1_price": 0.002465,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 40371.41703673799,
-      "notional": 100.00000000000001,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.0024749374999999997,
-        "leg_start": "2026-10-06 09:15:00",
-        "leg_end": "2026-10-06 11:15:00",
-        "rr": 1.606,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.002469528,
-        "raw_tp": 0.002489
-      },
-      "lot_a": {
-        "qty": 40371.41703673799,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
-    "MANAUSDT__POC": {
-      "trade_id": 1196,
-      "symbol": "MANAUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-06 12:00:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.103,
-      "sl_price": 0.1023965,
-      "sl_initial": 0.1023965,
-      "tp1_price": 0.10429999999999999,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 970.873786407767,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.10308958333333333,
-        "leg_start": "2026-10-06 07:30:00",
-        "leg_end": "2026-10-06 09:15:00",
-        "rr": 2.154,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.10360349999999999,
-        "raw_tp": 0.1017
-      },
-      "lot_a": {
-        "qty": 970.873786407767,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     }
   },
