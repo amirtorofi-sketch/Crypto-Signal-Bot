@@ -1,5 +1,5 @@
 {
-  "balance": 10075.804719422631,
+  "balance": 10075.429486766117,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 762,
@@ -811,44 +811,6 @@
         "status": "open"
       }
     },
-    "DOGEUSDT__POC": {
-      "trade_id": 1214,
-      "symbol": "DOGEUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-06 18:15:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.09456,
-      "sl_price": 0.09420518000000001,
-      "sl_initial": 0.09420518000000001,
-      "tp1_price": 0.09511000000000001,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 1057.5296108291031,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.09475375,
-        "leg_start": "2026-10-06 15:00:00",
-        "leg_end": "2026-10-06 17:30:00",
-        "rr": 1.55,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.09491482,
-        "raw_tp": 0.09401
-      },
-      "lot_a": {
-        "qty": 1057.5296108291031,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "ONEUSDT__POC": {
       "trade_id": 1216,
       "symbol": "ONEUSDT",
@@ -924,8 +886,95 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "BNBUSDT__POC": {
+      "trade_id": 1218,
+      "symbol": "BNBUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-06 19:00:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 779.88,
+      "sl_price": 780.7997399999999,
+      "sl_initial": 780.7997399999999,
+      "tp1_price": 776.51,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.12822485510591372,
+      "notional": 99.99999999999999,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 779.7831249999999,
+        "leg_start": "2026-10-06 17:15:00",
+        "leg_end": "2026-10-06 18:00:00",
+        "rr": 3.664,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 778.9602600000001,
+        "raw_tp": 783.25
+      },
+      "lot_a": {
+        "qty": 0.12822485510591372,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "CHZUSDT__SMC2": {
+      "trade_id": 1219,
+      "symbol": "CHZUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-06 19:00:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.01655,
+      "sl_price": 0.016411598700712033,
+      "sl_initial": 0.016411598700712033,
+      "tp1_price": 0.016757601948931947,
+      "tp2_price": 0.016965203897863896,
+      "adx_value": null,
+      "qty_total": 6042.296072507554,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 4,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 33.34,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 0,
+        "bear_fvg_count": 6,
+        "bull_ob_count": 0,
+        "bear_ob_count": 3
+      },
+      "lot_a": {
+        "qty": 3021.148036253777,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 3021.148036253777,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1218,
+  "next_trade_id": 1220,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
