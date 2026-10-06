@@ -1,5 +1,5 @@
 {
-  "balance": 10071.839510482541,
+  "balance": 10073.522899786796,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 762,
@@ -411,55 +411,6 @@
         "status": "open"
       }
     },
-    "BNBUSDT__SMC2": {
-      "trade_id": 1179,
-      "symbol": "BNBUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-06 08:00:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 780.57,
-      "sl_price": 780.57,
-      "sl_initial": 777.7807867526288,
-      "tp1_price": 784.7538198710569,
-      "tp2_price": 788.9376397421137,
-      "adx_value": null,
-      "qty_total": 0.1281115082567867,
-      "notional": 99.99999999999999,
-      "leverage": 1.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": true,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": false,
-        "strong_bear_rej": false,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 46.3,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 1,
-        "bear_fvg_count": 6,
-        "bull_ob_count": 0,
-        "bear_ob_count": 2
-      },
-      "lot_a": {
-        "qty": 0.06405575412839334,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 0.06405575412839334,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "MANAUSDT__SMC2": {
       "trade_id": 1182,
       "symbol": "MANAUSDT",
@@ -607,54 +558,6 @@
         "status": "open"
       }
     },
-    "MASKUSDT__SMC": {
-      "trade_id": 1193,
-      "symbol": "MASKUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-10-06 11:15:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.496,
-      "sl_price": 0.496,
-      "sl_initial": 0.5001204528245582,
-      "tp1_price": 0.4898193207631626,
-      "tp2_price": 0.48363864152632524,
-      "adx_value": null,
-      "qty_total": 201.61290322580646,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 6,
-      "market_snapshot": {
-        "recent_bull_sweep": true,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": true,
-        "htf_bearish": false,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 63.76,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "bull_fvg_count": 3,
-        "bear_fvg_count": 0,
-        "bull_ob_count": 1,
-        "bear_ob_count": 0,
-        "trend": 1
-      },
-      "lot_a": {
-        "qty": 100.80645161290323,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 100.80645161290323,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "CHZUSDT__ST": {
       "trade_id": 1201,
       "symbol": "CHZUSDT",
@@ -703,7 +606,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 86272.11,
-      "sl_price": 86775.11622382728,
+      "sl_price": 86272.11,
       "sl_initial": 86775.11622382728,
       "tp1_price": 85517.60066425908,
       "tp2_price": 84763.09132851816,
@@ -735,7 +638,7 @@
       "lot_a": {
         "qty": 0.0005795615755775534,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.0005795615755775534,
@@ -818,8 +721,86 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "BNBUSDT__ST": {
+      "trade_id": 1208,
+      "symbol": "BNBUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-06 17:00:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 780.17,
+      "sl_price": 772.5724694143983,
+      "sl_initial": 772.5724694143983,
+      "tp1_price": 791.5662958784026,
+      "tp2_price": 802.9625917568051,
+      "adx_value": 17.904455988561782,
+      "qty_total": 0.12817719215042875,
+      "notional": 99.99999999999999,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 17.904,
+        "di_plus": 13.999,
+        "di_minus": 27.77,
+        "ema_trend": 785.639913,
+        "close_vs_ema": "below",
+        "volume": 4546.225,
+        "vol_ma": 1142.0703,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 0.06408859607521437,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.06408859607521437,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "DOGEUSDT__ST": {
+      "trade_id": 1209,
+      "symbol": "DOGEUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-06 17:00:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.09482,
+      "sl_price": 0.09331217460454516,
+      "sl_initial": 0.09331217460454516,
+      "tp1_price": 0.09708173809318227,
+      "tp2_price": 0.09934347618636452,
+      "adx_value": 19.95953369990556,
+      "qty_total": 1054.629824931449,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 19.96,
+        "di_plus": 14.041,
+        "di_minus": 28.304,
+        "ema_trend": 0.095089,
+        "close_vs_ema": "below",
+        "volume": 11168461.0,
+        "vol_ma": 8804169.15,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 527.3149124657245,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 527.3149124657245,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1208,
+  "next_trade_id": 1210,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
