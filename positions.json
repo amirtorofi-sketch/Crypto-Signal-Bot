@@ -1,5 +1,5 @@
 {
-  "balance": 10057.34546767969,
+  "balance": 10058.751997762087,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 762,
@@ -556,7 +556,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.008704,
-      "sl_price": 0.008622210459395445,
+      "sl_price": 0.008704,
       "sl_initial": 0.008622210459395445,
       "tp1_price": 0.008826684310906833,
       "tp2_price": 0.008949368621813664,
@@ -587,7 +587,7 @@
       "lot_a": {
         "qty": 5744.485294117647,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 5744.485294117647,
@@ -653,7 +653,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.3591,
-      "sl_price": 0.3547126522194435,
+      "sl_price": 0.3591,
       "sl_initial": 0.3547126522194435,
       "tp1_price": 0.3656810216708347,
       "tp2_price": 0.37226204334166946,
@@ -684,7 +684,7 @@
       "lot_a": {
         "qty": 139.23698134224452,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 139.23698134224452,
@@ -701,7 +701,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.102,
-      "sl_price": 0.10083799907666428,
+      "sl_price": 0.102,
       "sl_initial": 0.10083799907666428,
       "tp1_price": 0.10374300138500356,
       "tp2_price": 0.10548600277000712,
@@ -732,7 +732,7 @@
       "lot_a": {
         "qty": 490.1960784313726,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 490.1960784313726,
@@ -786,44 +786,6 @@
         "qty": 20911.752404851526,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "MANAUSDT__POC": {
-      "trade_id": 1172,
-      "symbol": "MANAUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-06 06:30:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.1031,
-      "sl_price": 0.10420209999999999,
-      "sl_initial": 0.10420209999999999,
-      "tp1_price": 0.10239999999999999,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 969.9321047526673,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.10258124999999998,
-        "leg_start": "2026-10-06 03:45:00",
-        "leg_end": "2026-10-06 04:30:00",
-        "rr": 0.635,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.1019979,
-        "raw_tp": 0.1038
-      },
-      "lot_a": {
-        "qty": 969.9321047526673,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     },
     "GALAUSDT__SMC2": {
