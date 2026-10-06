@@ -874,8 +874,46 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "GALAUSDT__POC": {
+      "trade_id": 1174,
+      "symbol": "GALAUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-06 06:45:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.002412,
+      "sl_price": 0.0024015800000000004,
+      "sl_initial": 0.0024015800000000004,
+      "tp1_price": 0.002434,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 41459.36981757877,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0024195625,
+        "leg_start": "2026-10-06 05:15:00",
+        "leg_end": "2026-10-06 06:00:00",
+        "rr": 2.111,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.0024224199999999998,
+        "raw_tp": 0.00239
+      },
+      "lot_a": {
+        "qty": 41459.36981757877,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 1174,
+  "next_trade_id": 1175,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
