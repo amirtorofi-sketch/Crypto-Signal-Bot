@@ -1,5 +1,5 @@
 {
-  "balance": 10067.104162277874,
+  "balance": 10068.912797253462,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 762,
@@ -411,45 +411,6 @@
         "status": "open"
       }
     },
-    "SOLUSDT__ST": {
-      "trade_id": 1148,
-      "symbol": "SOLUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-10-05 22:00:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 121.48,
-      "sl_price": 121.48,
-      "sl_initial": 122.83073271945675,
-      "tp1_price": 119.45390092081489,
-      "tp2_price": 117.42780184162977,
-      "adx_value": 24.35440219888892,
-      "qty_total": 0.8231807704972012,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "adx": 24.354,
-        "di_plus": 37.394,
-        "di_minus": 9.869,
-        "ema_trend": 120.471953,
-        "close_vs_ema": "above",
-        "volume": 33965.29,
-        "vol_ma": 9453.3641,
-        "vol_above_ma": true
-      },
-      "lot_a": {
-        "qty": 0.4115903852486006,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 0.4115903852486006,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "CRVUSDT__SMC": {
       "trade_id": 1169,
       "symbol": "CRVUSDT",
@@ -752,7 +713,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 120.07,
-      "sl_price": 119.1870185326821,
+      "sl_price": 120.07,
       "sl_initial": 119.1870185326821,
       "tp1_price": 121.39447220097682,
       "tp2_price": 122.71894440195366,
@@ -784,7 +745,7 @@
       "lot_a": {
         "qty": 0.41642375281086036,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.41642375281086036,
@@ -887,82 +848,6 @@
         "qty": 2941.176470588235,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "DOGEUSDT__POC": {
-      "trade_id": 1199,
-      "symbol": "DOGEUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-06 14:15:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.09564,
-      "sl_price": 0.09487369000000001,
-      "sl_initial": 0.09487369000000001,
-      "tp1_price": 0.09605000000000001,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 1045.5876202425763,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.09568479166666666,
-        "leg_start": "2026-10-06 11:45:00",
-        "leg_end": "2026-10-06 13:00:00",
-        "rr": 0.535,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.09640631,
-        "raw_tp": 0.09523
-      },
-      "lot_a": {
-        "qty": 1045.5876202425763,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
-    "ROSEUSDT__POC": {
-      "trade_id": 1200,
-      "symbol": "ROSEUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-06 14:15:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.00845,
-      "sl_price": 0.00841152,
-      "sl_initial": 0.00841152,
-      "tp1_price": 0.008519999999999998,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 11834.31952662722,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.008451041666666666,
-        "leg_start": "2026-10-06 11:15:00",
-        "leg_end": "2026-10-06 12:30:00",
-        "rr": 1.819,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.008488479999999998,
-        "raw_tp": 0.00838
-      },
-      "lot_a": {
-        "qty": 11834.31952662722,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     },
     "CHZUSDT__ST": {
