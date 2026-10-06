@@ -1,5 +1,5 @@
 {
-  "balance": 10066.48110993545,
+  "balance": 10067.104162277874,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 762,
@@ -801,7 +801,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.496,
-      "sl_price": 0.5001204528245582,
+      "sl_price": 0.496,
       "sl_initial": 0.5001204528245582,
       "tp1_price": 0.4898193207631626,
       "tp2_price": 0.48363864152632524,
@@ -832,7 +832,7 @@
       "lot_a": {
         "qty": 100.80645161290323,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 100.80645161290323,
@@ -888,8 +888,123 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "DOGEUSDT__POC": {
+      "trade_id": 1199,
+      "symbol": "DOGEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-06 14:15:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.09564,
+      "sl_price": 0.09487369000000001,
+      "sl_initial": 0.09487369000000001,
+      "tp1_price": 0.09605000000000001,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 1045.5876202425763,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.09568479166666666,
+        "leg_start": "2026-10-06 11:45:00",
+        "leg_end": "2026-10-06 13:00:00",
+        "rr": 0.535,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.09640631,
+        "raw_tp": 0.09523
+      },
+      "lot_a": {
+        "qty": 1045.5876202425763,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "ROSEUSDT__POC": {
+      "trade_id": 1200,
+      "symbol": "ROSEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-06 14:15:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.00845,
+      "sl_price": 0.00841152,
+      "sl_initial": 0.00841152,
+      "tp1_price": 0.008519999999999998,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 11834.31952662722,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.008451041666666666,
+        "leg_start": "2026-10-06 11:15:00",
+        "leg_end": "2026-10-06 12:30:00",
+        "rr": 1.819,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.008488479999999998,
+        "raw_tp": 0.00838
+      },
+      "lot_a": {
+        "qty": 11834.31952662722,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "CHZUSDT__ST": {
+      "trade_id": 1201,
+      "symbol": "CHZUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-06 14:15:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.01673,
+      "sl_price": 0.016448645068054116,
+      "sl_initial": 0.016448645068054116,
+      "tp1_price": 0.01715203239791882,
+      "tp2_price": 0.017574064795837646,
+      "adx_value": 21.043536159187298,
+      "qty_total": 5977.286312014346,
+      "notional": 99.99999999999999,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 21.044,
+        "di_plus": 18.298,
+        "di_minus": 28.221,
+        "ema_trend": 0.016935,
+        "close_vs_ema": "below",
+        "volume": 1500107.0,
+        "vol_ma": 759432.0,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 2988.643156007173,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 2988.643156007173,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1199,
+  "next_trade_id": 1202,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
