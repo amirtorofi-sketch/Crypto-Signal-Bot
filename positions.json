@@ -1,5 +1,5 @@
 {
-  "balance": 10059.236947483292,
+  "balance": 10061.092529950072,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 762,
@@ -508,7 +508,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.00817,
-      "sl_price": 0.008095339925224751,
+      "sl_price": 0.00817,
       "sl_initial": 0.008095339925224751,
       "tp1_price": 0.008281990112162874,
       "tp2_price": 0.008393980224325748,
@@ -539,7 +539,7 @@
       "lot_a": {
         "qty": 6119.9510403916765,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 6119.9510403916765,
@@ -749,7 +749,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.002413,
-      "sl_price": 0.0023851861516096147,
+      "sl_price": 0.002413,
       "sl_initial": 0.0023851861516096147,
       "tp1_price": 0.0024547207725855785,
       "tp2_price": 0.0024964415451711568,
@@ -781,7 +781,7 @@
       "lot_a": {
         "qty": 20721.094073767094,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 20721.094073767094,
@@ -984,44 +984,6 @@
         "status": "open"
       }
     },
-    "ETHUSDT__POC": {
-      "trade_id": 1183,
-      "symbol": "ETHUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-06 09:15:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 2698.65,
-      "sl_price": 2676.6420600000006,
-      "sl_initial": 2676.6420600000006,
-      "tp1_price": 2706.9,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.03705556481944676,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 2701.3175,
-        "leg_start": "2026-10-06 05:00:00",
-        "leg_end": "2026-10-06 06:00:00",
-        "rr": 0.375,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 2720.6579399999996,
-        "raw_tp": 2690.4
-      },
-      "lot_a": {
-        "qty": 0.03705556481944676,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "VETUSDT__SMC2": {
       "trade_id": 1186,
       "symbol": "VETUSDT",
@@ -1070,8 +1032,46 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CRVUSDT__POC": {
+      "trade_id": 1187,
+      "symbol": "CRVUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-06 09:45:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.3641,
+      "sl_price": 0.3624346,
+      "sl_initial": 0.3624346,
+      "tp1_price": 0.36649999999999994,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 274.64982147761606,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.36534375,
+        "leg_start": "2026-10-06 07:45:00",
+        "leg_end": "2026-10-06 09:15:00",
+        "rr": 1.441,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.36576539999999996,
+        "raw_tp": 0.3617
+      },
+      "lot_a": {
+        "qty": 274.64982147761606,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 1187,
+  "next_trade_id": 1188,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
