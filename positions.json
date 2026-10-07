@@ -1,5 +1,5 @@
 {
-  "balance": 10071.510663606237,
+  "balance": 10071.255304178583,
   "positions": {
     "GALAUSDT__ST": {
       "trade_id": 934,
@@ -494,93 +494,6 @@
         "qty": 108.93246187363835,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "ETHUSDT__SMC2": {
-      "trade_id": 1277,
-      "symbol": "ETHUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-07 12:15:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 2573.42,
-      "sl_price": 2556.578324171667,
-      "sl_initial": 2556.578324171667,
-      "tp1_price": 2598.6825137424994,
-      "tp2_price": 2623.9450274849987,
-      "adx_value": null,
-      "qty_total": 0.038858794911052215,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 4,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": false,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 27.12,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": true,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 0,
-        "bear_fvg_count": 6,
-        "bull_ob_count": 0,
-        "bear_ob_count": 2
-      },
-      "lot_a": {
-        "qty": 0.019429397455526107,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.019429397455526107,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "CRVUSDT__POC": {
-      "trade_id": 1278,
-      "symbol": "CRVUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-07 12:30:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.3508,
-      "sl_price": 0.3526493,
-      "sl_initial": 0.3526493,
-      "tp1_price": 0.3494,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 285.06271379703537,
-      "notional": 100.00000000000001,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.35057499999999997,
-        "leg_start": "2026-10-07 10:00:00",
-        "leg_end": "2026-10-07 10:45:00",
-        "rr": 0.757,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.3489507,
-        "raw_tp": 0.3522
-      },
-      "lot_a": {
-        "qty": 285.06271379703537,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     },
     "ROSEUSDT__POC": {
