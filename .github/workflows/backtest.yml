@@ -1,0 +1,61 @@
+name: Backtest (manual)
+
+# فقط دستی اجرا می‌شود (Actions → Backtest → Run workflow). هیچ زمان‌بندی ندارد
+# و هیچ فایلی را در ریپو commit نمی‌کند؛ نتیجه فقط به‌صورت Artifact قابل دانلود است.
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "تعداد روز تاریخچه"
+        default: "365"
+      only:
+        description: "استراتژی‌ها: st,smc,smc2,poc"
+        default: "st,smc,smc2,poc"
+      fee_bps:
+        description: "کارمزد رفت‌وبرگشت (bps)"
+        default: "10"
+      symbols:
+        description: "نمادها (خالی = همه‌ی نمادهای ربات؛ مثال: BTCUSDT ETHUSDT)"
+        default: ""
+
+concurrency:
+  group: backtest
+  cancel-in-progress: false
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pandas numpy requests
+
+      - name: Download klines (Binance public archive)
+        run: |
+          if [ -n "${{ inputs.symbols }}" ]; then
+            python download_klines.py --days "${{ inputs.days }}" --symbols ${{ inputs.symbols }} 2>&1 | tee download_report.txt
+          else
+            python download_klines.py --days "${{ inputs.days }}" 2>&1 | tee download_report.txt
+          fi
+
+      - name: Run backtest
+        run: |
+          WORKERS=$(nproc)
+          python backtest.py --data data --only "${{ inputs.only }}" --fee-bps "${{ inputs.fee_bps }}" --workers "$WORKERS" 2>&1 | tee backtest_summary.txt
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: backtest-results
+          path: |
+            trades_log_backtest.csv
+            backtest_summary.txt
+            download_report.txt
+          if-no-files-found: warn
