@@ -1,5 +1,5 @@
 {
-  "balance": 10068.250532294605,
+  "balance": 10070.556098286004,
   "positions": {
     "GALAUSDT__ST": {
       "trade_id": 934,
@@ -226,55 +226,6 @@
         "status": "open"
       }
     },
-    "MASKUSDT__SMC2": {
-      "trade_id": 1284,
-      "symbol": "MASKUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-07 13:45:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.456,
-      "sl_price": 0.456,
-      "sl_initial": 0.4514970535161906,
-      "tp1_price": 0.4627544197257141,
-      "tp2_price": 0.4695088394514282,
-      "adx_value": null,
-      "qty_total": 219.29824561403507,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 37.65,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 0,
-        "bear_fvg_count": 6,
-        "bull_ob_count": 0,
-        "bear_ob_count": 1
-      },
-      "lot_a": {
-        "qty": 109.64912280701753,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 109.64912280701753,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "ROSEUSDT__SMC2": {
       "trade_id": 1285,
       "symbol": "ROSEUSDT",
@@ -449,44 +400,6 @@
         "status": "open"
       }
     },
-    "ETHUSDT__POC": {
-      "trade_id": 1296,
-      "symbol": "ETHUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-07 18:00:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 2559.72,
-      "sl_price": 2570.37162,
-      "sl_initial": 2570.37162,
-      "tp1_price": 2542.4399999999996,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.039066772928289036,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 2556.8987500000003,
-        "leg_start": "2026-10-07 13:00:00",
-        "leg_end": "2026-10-07 13:45:00",
-        "rr": 1.622,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 2549.0683799999997,
-        "raw_tp": 2577.0
-      },
-      "lot_a": {
-        "qty": 0.039066772928289036,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "DOGEUSDT__SMC2": {
       "trade_id": 1297,
       "symbol": "DOGEUSDT",
@@ -565,44 +478,6 @@
       },
       "lot_a": {
         "qty": 13003.901170351106,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
-    "MANAUSDT__POC": {
-      "trade_id": 1301,
-      "symbol": "MANAUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-07 19:15:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.1048,
-      "sl_price": 0.10359410000000002,
-      "sl_initial": 0.10359410000000002,
-      "tp1_price": 0.10610000000000001,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 954.1984732824427,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.10498958333333333,
-        "leg_start": "2026-10-07 16:15:00",
-        "leg_end": "2026-10-07 17:30:00",
-        "rr": 1.078,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.10600589999999999,
-        "raw_tp": 0.1035
-      },
-      "lot_a": {
-        "qty": 954.1984732824427,
         "target": "tp1",
         "status": "open"
       },
