@@ -1,5 +1,5 @@
 {
-  "balance": 10071.564077506779,
+  "balance": 10069.488771308914,
   "positions": {
     "GALAUSDT__ST": {
       "trade_id": 934,
@@ -226,55 +226,6 @@
         "status": "open"
       }
     },
-    "ETHUSDT__SMC2": {
-      "trade_id": 1281,
-      "symbol": "ETHUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-07 13:45:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 2569.44,
-      "sl_price": 2547.902869451941,
-      "sl_initial": 2547.902869451941,
-      "tp1_price": 2601.7456958220882,
-      "tp2_price": 2634.051391644177,
-      "adx_value": null,
-      "qty_total": 0.03891898623824647,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": true,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 36.56,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 0,
-        "bear_fvg_count": 5,
-        "bull_ob_count": 0,
-        "bear_ob_count": 3
-      },
-      "lot_a": {
-        "qty": 0.019459493119123233,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.019459493119123233,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "MASKUSDT__SMC2": {
       "trade_id": 1284,
       "symbol": "MASKUSDT",
@@ -422,55 +373,6 @@
         "status": "open"
       }
     },
-    "VETUSDT__SMC2": {
-      "trade_id": 1289,
-      "symbol": "VETUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-07 16:00:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.008096,
-      "sl_price": 0.007995844148369746,
-      "sl_initial": 0.007995844148369746,
-      "tp1_price": 0.008246233777445384,
-      "tp2_price": 0.008396467554890766,
-      "adx_value": null,
-      "qty_total": 12351.77865612648,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": true,
-        "recent_bear_sweep": false,
-        "vol_spike": false,
-        "strong_bull_rej": false,
-        "strong_bear_rej": false,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 44.31,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": true,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 1,
-        "bear_fvg_count": 5,
-        "bull_ob_count": 0,
-        "bear_ob_count": 2
-      },
-      "lot_a": {
-        "qty": 6175.88932806324,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 6175.88932806324,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "SOLUSDT__POC": {
       "trade_id": 1291,
       "symbol": "SOLUSDT",
@@ -508,8 +410,84 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "CRVUSDT__POC": {
+      "trade_id": 1292,
+      "symbol": "CRVUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-07 17:30:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.3495,
+      "sl_price": 0.3509484,
+      "sl_initial": 0.3509484,
+      "tp1_price": 0.34319999999999995,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 286.12303290414883,
+      "notional": 100.00000000000001,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.34892500000000004,
+        "leg_start": "2026-10-07 15:00:00",
+        "leg_end": "2026-10-07 15:45:00",
+        "rr": 4.35,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.34805159999999996,
+        "raw_tp": 0.3558
+      },
+      "lot_a": {
+        "qty": 286.12303290414883,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "ROSEUSDT__POC": {
+      "trade_id": 1293,
+      "symbol": "ROSEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-07 17:30:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.00766,
+      "sl_price": 0.007602290000000001,
+      "sl_initial": 0.007602290000000001,
+      "tp1_price": 0.007690000000000001,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 13054.830287206267,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0076972916666666665,
+        "leg_start": "2026-10-07 14:00:00",
+        "leg_end": "2026-10-07 15:15:00",
+        "rr": 0.52,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.007717709999999999,
+        "raw_tp": 0.00763
+      },
+      "lot_a": {
+        "qty": 13054.830287206267,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 1292,
+  "next_trade_id": 1294,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
