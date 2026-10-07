@@ -1,5 +1,5 @@
 {
-  "balance": 10068.200933384844,
+  "balance": 10069.090532294606,
   "positions": {
     "GALAUSDT__ST": {
       "trade_id": 934,
@@ -137,7 +137,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.3505,
-      "sl_price": 0.34634260776171555,
+      "sl_price": 0.3505,
       "sl_initial": 0.34634260776171555,
       "tp1_price": 0.35673608835742665,
       "tp2_price": 0.36297217671485327,
@@ -169,7 +169,7 @@
       "lot_a": {
         "qty": 142.65335235378032,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 142.65335235378032,
@@ -573,8 +573,46 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "ROSEUSDT__POC": {
+      "trade_id": 1300,
+      "symbol": "ROSEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-07 19:00:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.00769,
+      "sl_price": 0.0076422700000000005,
+      "sl_initial": 0.0076422700000000005,
+      "tp1_price": 0.00773,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 13003.901170351106,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.007693333333333333,
+        "leg_start": "2026-10-07 16:00:00",
+        "leg_end": "2026-10-07 17:45:00",
+        "rr": 0.838,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.007737729999999999,
+        "raw_tp": 0.00765
+      },
+      "lot_a": {
+        "qty": 13003.901170351106,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 1300,
+  "next_trade_id": 1301,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
