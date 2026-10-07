@@ -1,5 +1,5 @@
 {
-  "balance": 10071.085189565225,
+  "balance": 10070.728468043531,
   "positions": {
     "ETHUSDT__ST": {
       "trade_id": 762,
@@ -896,44 +896,6 @@
         "status": "open"
       }
     },
-    "DOGEUSDT__POC": {
-      "trade_id": 1227,
-      "symbol": "DOGEUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-07 00:15:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.09358,
-      "sl_price": 0.09324618,
-      "sl_initial": 0.09324618,
-      "tp1_price": 0.09394,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 1068.604402650139,
-      "notional": 100.00000000000001,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.09368125,
-        "leg_start": "2026-10-06 20:15:00",
-        "leg_end": "2026-10-06 21:45:00",
-        "rr": 1.078,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.09391382,
-        "raw_tp": 0.09322
-      },
-      "lot_a": {
-        "qty": 1068.604402650139,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "CRVUSDT__POC": {
       "trade_id": 1229,
       "symbol": "CRVUSDT",
@@ -1193,8 +1155,46 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "DOGEUSDT__POC": {
+      "trade_id": 1237,
+      "symbol": "DOGEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-07 01:30:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.09342,
+      "sl_price": 0.09379314000000001,
+      "sl_initial": 0.09379314000000001,
+      "tp1_price": 0.09296,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 1070.434596446157,
+      "notional": 99.99999999999999,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.09337625,
+        "leg_start": "2026-10-06 22:45:00",
+        "leg_end": "2026-10-06 23:45:00",
+        "rr": 1.233,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.09304686,
+        "raw_tp": 0.09388
+      },
+      "lot_a": {
+        "qty": 1070.434596446157,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 1237,
+  "next_trade_id": 1238,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
