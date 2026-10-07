@@ -546,8 +546,57 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ROSEUSDT__SMC2": {
+      "trade_id": 1285,
+      "symbol": "ROSEUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-07 14:00:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.00771,
+      "sl_price": 0.007591941219584343,
+      "sl_initial": 0.007591941219584343,
+      "tp1_price": 0.007887088170623485,
+      "tp2_price": 0.00806417634124697,
+      "adx_value": null,
+      "qty_total": 12970.16861219196,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 4,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": true,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 40.55,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 0,
+        "bear_fvg_count": 6,
+        "bull_ob_count": 0,
+        "bear_ob_count": 1
+      },
+      "lot_a": {
+        "qty": 6485.08430609598,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 6485.08430609598,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1285,
+  "next_trade_id": 1286,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
