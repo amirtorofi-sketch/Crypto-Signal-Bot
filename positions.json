@@ -330,8 +330,57 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "MANAUSDT__SMC2": {
+      "trade_id": 1359,
+      "symbol": "MANAUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-08 13:00:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.0984,
+      "sl_price": 0.09699442406383928,
+      "sl_initial": 0.09699442406383928,
+      "tp1_price": 0.10050836390424109,
+      "tp2_price": 0.10261672780848217,
+      "adx_value": null,
+      "qty_total": 1016.260162601626,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 42.12,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 1,
+        "bear_fvg_count": 5,
+        "bull_ob_count": 1,
+        "bear_ob_count": 1
+      },
+      "lot_a": {
+        "qty": 508.130081300813,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 508.130081300813,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1359,
+  "next_trade_id": 1360,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
