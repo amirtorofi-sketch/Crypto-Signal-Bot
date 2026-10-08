@@ -127,8 +127,47 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ONEUSDT__ST": {
+      "trade_id": 1371,
+      "symbol": "ONEUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-08 15:30:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.00205,
+      "sl_price": 0.001911784262458709,
+      "sl_initial": 0.001911784262458709,
+      "tp1_price": 0.0022573236063119367,
+      "tp2_price": 0.0024646472126238737,
+      "adx_value": 20.17843337669978,
+      "qty_total": 48780.487804878045,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 20.178,
+        "di_plus": 20.795,
+        "di_minus": 27.75,
+        "ema_trend": 0.002185,
+        "close_vs_ema": "below",
+        "volume": 60811299.9,
+        "vol_ma": 21275166.86,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 24390.243902439022,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 24390.243902439022,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1371,
+  "next_trade_id": 1372,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
