@@ -1,5 +1,5 @@
 {
-  "balance": 10074.94469261583,
+  "balance": 10076.345679155416,
   "positions": {
     "GALAUSDT__ST": {
       "trade_id": 934,
@@ -487,7 +487,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.007836,
-      "sl_price": 0.007742180258336014,
+      "sl_price": 0.007836,
       "sl_initial": 0.007742180258336014,
       "tp1_price": 0.007976729612495978,
       "tp2_price": 0.008117459224991956,
@@ -518,7 +518,7 @@
       "lot_a": {
         "qty": 6380.806533945892,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 6380.806533945892,
@@ -881,44 +881,6 @@
         "qty": 503.01810865191146,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "MANAUSDT__POC": {
-      "trade_id": 1347,
-      "symbol": "MANAUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-08 08:45:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.0994,
-      "sl_price": 0.09890020000000002,
-      "sl_initial": 0.09890020000000002,
-      "tp1_price": 0.0999,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 1006.0362173038229,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.09941458333333333,
-        "leg_start": "2026-10-08 07:15:00",
-        "leg_end": "2026-10-08 08:00:00",
-        "rr": 1.0,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.09989979999999998,
-        "raw_tp": 0.0989
-      },
-      "lot_a": {
-        "qty": 1006.0362173038229,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     }
   },
