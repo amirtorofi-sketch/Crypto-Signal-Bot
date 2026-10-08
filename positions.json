@@ -1,5 +1,5 @@
 {
-  "balance": 10063.629598351848,
+  "balance": 10061.279289792797,
   "positions": {
     "GALAUSDT__ST": {
       "trade_id": 934,
@@ -275,54 +275,6 @@
         "status": "open"
       }
     },
-    "CRVUSDT__SMC": {
-      "trade_id": 1311,
-      "symbol": "CRVUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-10-08 00:00:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.3921,
-      "sl_price": 0.3994099941788082,
-      "sl_initial": 0.3994099941788082,
-      "tp1_price": 0.38113500873178774,
-      "tp2_price": 0.3701700174635755,
-      "adx_value": null,
-      "qty_total": 255.03698036215252,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 5,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": true,
-        "htf_bearish": false,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 87.58,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "bull_fvg_count": 6,
-        "bear_fvg_count": 0,
-        "bull_ob_count": 2,
-        "bear_ob_count": 0,
-        "trend": 1
-      },
-      "lot_a": {
-        "qty": 127.51849018107626,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 127.51849018107626,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "SOLUSDT__SMC2": {
       "trade_id": 1313,
       "symbol": "SOLUSDT",
@@ -370,44 +322,6 @@
         "qty": 0.42988565041698906,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "ROSEUSDT__POC": {
-      "trade_id": 1316,
-      "symbol": "ROSEUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-08 01:30:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.00778,
-      "sl_price": 0.0077421899999999995,
-      "sl_initial": 0.0077421899999999995,
-      "tp1_price": 0.00783,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 12853.470437017995,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.007781041666666666,
-        "leg_start": "2026-10-07 20:30:00",
-        "leg_end": "2026-10-07 21:45:00",
-        "rr": 1.322,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.00781781,
-        "raw_tp": 0.00773
-      },
-      "lot_a": {
-        "qty": 12853.470437017995,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     }
   },
