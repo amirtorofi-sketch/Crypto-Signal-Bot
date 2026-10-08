@@ -456,8 +456,84 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "BNBUSDT__POC": {
+      "trade_id": 1326,
+      "symbol": "BNBUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-08 05:15:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 770.51,
+      "sl_price": 768.97873,
+      "sl_initial": 768.97873,
+      "tp1_price": 778.63,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.12978416892707428,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 770.8325,
+        "leg_start": "2026-10-08 02:45:00",
+        "leg_end": "2026-10-08 04:15:00",
+        "rr": 5.303,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 772.0412699999999,
+        "raw_tp": 762.39
+      },
+      "lot_a": {
+        "qty": 0.12978416892707428,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "ONEUSDT__POC": {
+      "trade_id": 1327,
+      "symbol": "ONEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-08 05:15:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.002137,
+      "sl_price": 0.0021258540000000004,
+      "sl_initial": 0.0021258540000000004,
+      "tp1_price": 0.002149,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 46794.57182966776,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0021443750000000004,
+        "leg_start": "2026-10-08 03:45:00",
+        "leg_end": "2026-10-08 04:45:00",
+        "rr": 1.077,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.0021481459999999996,
+        "raw_tp": 0.002125
+      },
+      "lot_a": {
+        "qty": 46794.57182966776,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 1326,
+  "next_trade_id": 1328,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
