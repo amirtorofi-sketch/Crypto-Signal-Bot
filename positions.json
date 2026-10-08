@@ -166,8 +166,57 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "VETUSDT__SMC2": {
+      "trade_id": 1372,
+      "symbol": "VETUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-08 16:00:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.007366,
+      "sl_price": 0.007162130934486321,
+      "sl_initial": 0.007162130934486321,
+      "tp1_price": 0.0076718035982705195,
+      "tp2_price": 0.007977607196541038,
+      "adx_value": null,
+      "qty_total": 13575.889220743959,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 4,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": true,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 22.04,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 0,
+        "bear_fvg_count": 6,
+        "bull_ob_count": 0,
+        "bear_ob_count": 3
+      },
+      "lot_a": {
+        "qty": 6787.944610371979,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 6787.944610371979,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1372,
+  "next_trade_id": 1373,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
