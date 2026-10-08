@@ -551,8 +551,84 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "MASKUSDT__POC": {
+      "trade_id": 1357,
+      "symbol": "MASKUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-08 11:30:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.463,
+      "sl_price": 0.46153600000000006,
+      "sl_initial": 0.46153600000000006,
+      "tp1_price": 0.467,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 215.9827213822894,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.463125,
+        "leg_start": "2026-10-08 09:30:00",
+        "leg_end": "2026-10-08 11:00:00",
+        "rr": 2.732,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.464464,
+        "raw_tp": 0.459
+      },
+      "lot_a": {
+        "qty": 215.9827213822894,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "MANAUSDT__POC": {
+      "trade_id": 1358,
+      "symbol": "MANAUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-08 11:30:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.0983,
+      "sl_price": 0.09780130000000001,
+      "sl_initial": 0.09780130000000001,
+      "tp1_price": 0.09899999999999999,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 1017.293997965412,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.09837916666666667,
+        "leg_start": "2026-10-08 10:00:00",
+        "leg_end": "2026-10-08 11:00:00",
+        "rr": 1.404,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.09879869999999999,
+        "raw_tp": 0.0976
+      },
+      "lot_a": {
+        "qty": 1017.293997965412,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 1357,
+  "next_trade_id": 1359,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
