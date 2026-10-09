@@ -1,5 +1,5 @@
 {
-  "balance": 10111.89204322163,
+  "balance": 10112.889170015631,
   "positions": {
     "ROSEUSDT__ST": {
       "trade_id": 1368,
@@ -514,7 +514,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.0948,
-      "sl_price": 0.09606036826761821,
+      "sl_price": 0.0948,
       "sl_initial": 0.09606036826761821,
       "tp1_price": 0.09290944759857267,
       "tp2_price": 0.09101889519714534,
@@ -546,7 +546,7 @@
       "lot_a": {
         "qty": 527.4261603375528,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 527.4261603375528,
@@ -727,8 +727,46 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ONEUSDT__POC": {
+      "trade_id": 1411,
+      "symbol": "ONEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-09 09:30:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.002199,
+      "sl_price": 0.00223017,
+      "sl_initial": 0.00223017,
+      "tp1_price": 0.002171,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 45475.21600727604,
+      "notional": 100.00000000000001,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0021931458333333334,
+        "leg_start": "2026-10-09 02:45:00",
+        "leg_end": "2026-10-09 03:45:00",
+        "rr": 0.898,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.00216783,
+        "raw_tp": 0.002227
+      },
+      "lot_a": {
+        "qty": 45475.21600727604,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 1411,
+  "next_trade_id": 1412,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
