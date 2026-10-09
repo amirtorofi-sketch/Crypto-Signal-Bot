@@ -738,8 +738,56 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ROSEUSDT__SMC": {
+      "trade_id": 1407,
+      "symbol": "ROSEUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-10-09 06:15:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.0078,
+      "sl_price": 0.00787082209506982,
+      "sl_initial": 0.00787082209506982,
+      "tp1_price": 0.00769376685739527,
+      "tp2_price": 0.00758753371479054,
+      "adx_value": null,
+      "qty_total": 12820.51282051282,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 73.45,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "bull_fvg_count": 6,
+        "bear_fvg_count": 1,
+        "bull_ob_count": 0,
+        "bear_ob_count": 1,
+        "trend": 1
+      },
+      "lot_a": {
+        "qty": 6410.25641025641,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 6410.25641025641,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1407,
+  "next_trade_id": 1408,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
