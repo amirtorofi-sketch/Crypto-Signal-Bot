@@ -1029,8 +1029,144 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "ETHUSDT__SMC2": {
+      "trade_id": 1451,
+      "symbol": "ETHUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-09 14:30:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 2492.82,
+      "sl_price": 2474.267073188586,
+      "sl_initial": 2474.267073188586,
+      "tp1_price": 2520.6493902171214,
+      "tp2_price": 2548.4787804342427,
+      "adx_value": null,
+      "qty_total": 0.040115210885663624,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": false,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 47.38,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 3,
+        "bear_fvg_count": 4,
+        "bull_ob_count": 0,
+        "bear_ob_count": 3
+      },
+      "lot_a": {
+        "qty": 0.020057605442831812,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.020057605442831812,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "BNBUSDT__POC": {
+      "trade_id": 1452,
+      "symbol": "BNBUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-09 14:30:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 741.3,
+      "sl_price": 738.57672,
+      "sl_initial": 738.57672,
+      "tp1_price": 745.9499999999999,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.13489815189531904,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 742.3050000000001,
+        "leg_start": "2026-10-09 11:45:00",
+        "leg_end": "2026-10-09 14:00:00",
+        "rr": 1.707,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 744.0232799999999,
+        "raw_tp": 736.65
+      },
+      "lot_a": {
+        "qty": 0.13489815189531904,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "MASKUSDT__SMC2": {
+      "trade_id": 1453,
+      "symbol": "MASKUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-09 14:30:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.446,
+      "sl_price": 0.4422074859318808,
+      "sl_initial": 0.4422074859318808,
+      "tp1_price": 0.4516887711021788,
+      "tp2_price": 0.4573775422043576,
+      "adx_value": null,
+      "qty_total": 224.2152466367713,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": false,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 34.1,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "trend_strong": false,
+        "trend": -1,
+        "bull_fvg_count": 2,
+        "bear_fvg_count": 6,
+        "bull_ob_count": 1,
+        "bear_ob_count": 3
+      },
+      "lot_a": {
+        "qty": 112.10762331838565,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 112.10762331838565,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1451,
+  "next_trade_id": 1454,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
