@@ -1,5 +1,5 @@
 {
-  "balance": 10107.713963979526,
+  "balance": 10109.026692626854,
   "positions": {
     "ROSEUSDT__ST": {
       "trade_id": 1368,
@@ -904,7 +904,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.446,
-      "sl_price": 0.4422074859318808,
+      "sl_price": 0.446,
       "sl_initial": 0.4422074859318808,
       "tp1_price": 0.4516887711021788,
       "tp2_price": 0.4573775422043576,
@@ -936,7 +936,7 @@
       "lot_a": {
         "qty": 112.10762331838565,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 112.10762331838565,
@@ -991,44 +991,6 @@
         "qty": 547.6451259583789,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "VETUSDT__POC": {
-      "trade_id": 1460,
-      "symbol": "VETUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-09 15:45:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.007704,
-      "sl_price": 0.007687287,
-      "sl_initial": 0.007687287,
-      "tp1_price": 0.007756,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 12980.269989615785,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.0077062499999999996,
-        "leg_start": "2026-10-09 14:30:00",
-        "leg_end": "2026-10-09 15:15:00",
-        "rr": 3.111,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.007720713,
-        "raw_tp": 0.007652
-      },
-      "lot_a": {
-        "qty": 12980.269989615785,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     },
     "MASKUSDT__POC": {
