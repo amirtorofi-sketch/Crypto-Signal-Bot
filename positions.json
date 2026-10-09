@@ -1,5 +1,5 @@
 {
-  "balance": 10112.660099827905,
+  "balance": 10111.722559073363,
   "positions": {
     "ROSEUSDT__ST": {
       "trade_id": 1368,
@@ -555,44 +555,6 @@
         "status": "open"
       }
     },
-    "ONEUSDT__POC": {
-      "trade_id": 1415,
-      "symbol": "ONEUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-09 10:15:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.002147,
-      "sl_price": 0.0021671290000000003,
-      "sl_initial": 0.0021671290000000003,
-      "tp1_price": 0.0020770000000000003,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 46576.61853749418,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.00214175,
-        "leg_start": "2026-10-09 08:15:00",
-        "leg_end": "2026-10-09 09:30:00",
-        "rr": 3.478,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.002126871,
-        "raw_tp": 0.002217
-      },
-      "lot_a": {
-        "qty": 46576.61853749418,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "DOGEUSDT__ST": {
       "trade_id": 1419,
       "symbol": "DOGEUSDT",
@@ -1117,8 +1079,57 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "ETHUSDT__SMC2": {
+      "trade_id": 1439,
+      "symbol": "ETHUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-09 13:00:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 2498.96,
+      "sl_price": 2484.5099633363307,
+      "sl_initial": 2484.5099633363307,
+      "tp1_price": 2520.635054995504,
+      "tp2_price": 2542.310109991008,
+      "adx_value": null,
+      "qty_total": 0.04001664692512085,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": true,
+        "vol_spike": false,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 50.85,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 5,
+        "bear_fvg_count": 4,
+        "bull_ob_count": 0,
+        "bear_ob_count": 3
+      },
+      "lot_a": {
+        "qty": 0.020008323462560425,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.020008323462560425,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1439,
+  "next_trade_id": 1440,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
