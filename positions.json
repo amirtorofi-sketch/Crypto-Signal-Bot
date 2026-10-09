@@ -1,5 +1,5 @@
 {
-  "balance": 10123.787578738997,
+  "balance": 10127.833059678911,
   "positions": {
     "ROSEUSDT__ST": {
       "trade_id": 1368,
@@ -254,7 +254,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.0022,
-      "sl_price": 0.0021354320153674855,
+      "sl_price": 0.0022,
       "sl_initial": 0.0021354320153674855,
       "tp1_price": 0.002296851976948772,
       "tp2_price": 0.002393703953897544,
@@ -276,7 +276,7 @@
       "lot_a": {
         "qty": 22727.272727272724,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 22727.272727272724,
@@ -583,55 +583,6 @@
       },
       "lot_b": {
         "qty": 0.020057605442831812,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "MANAUSDT__SMC2": {
-      "trade_id": 1458,
-      "symbol": "MANAUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-09 15:30:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.0913,
-      "sl_price": 0.0913,
-      "sl_initial": 0.09017743628236438,
-      "tp1_price": 0.09298384557645345,
-      "tp2_price": 0.09466769115290688,
-      "adx_value": null,
-      "qty_total": 1095.2902519167578,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": true,
-        "recent_bear_sweep": true,
-        "vol_spike": false,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 42.58,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 0,
-        "bear_fvg_count": 6,
-        "bull_ob_count": 0,
-        "bear_ob_count": 3
-      },
-      "lot_a": {
-        "qty": 547.6451259583789,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 547.6451259583789,
         "target": "tp2",
         "status": "open"
       }
