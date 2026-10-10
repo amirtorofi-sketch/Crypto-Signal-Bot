@@ -1,5 +1,5 @@
 {
-  "balance": 10123.965546814725,
+  "balance": 10124.240174827682,
   "positions": {
     "ROSEUSDT__ST": {
       "trade_id": 1368,
@@ -973,7 +973,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.482,
-      "sl_price": 0.4870992802140446,
+      "sl_price": 0.482,
       "sl_initial": 0.4870992802140446,
       "tp1_price": 0.4743510796789331,
       "tp2_price": 0.4667021593578662,
@@ -1004,7 +1004,7 @@
       "lot_a": {
         "qty": 103.7344398340249,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 103.7344398340249,
@@ -1224,44 +1224,6 @@
       },
       "lot_a": {
         "qty": 41067.761806981514,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
-    "MASKUSDT__POC": {
-      "trade_id": 1513,
-      "symbol": "MASKUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-10 04:30:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.478,
-      "sl_price": 0.47552000000000005,
-      "sl_initial": 0.47552000000000005,
-      "tp1_price": 0.481,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 209.2050209205021,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.47816666666666663,
-        "leg_start": "2026-10-10 02:45:00",
-        "leg_end": "2026-10-10 04:00:00",
-        "rr": 1.21,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.4804799999999999,
-        "raw_tp": 0.475
-      },
-      "lot_a": {
-        "qty": 209.2050209205021,
         "target": "tp1",
         "status": "open"
       },
