@@ -1059,8 +1059,57 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "GALAUSDT__SMC2": {
+      "trade_id": 1519,
+      "symbol": "GALAUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-10 08:45:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.002442,
+      "sl_price": 0.00238245302774989,
+      "sl_initial": 0.00238245302774989,
+      "tp1_price": 0.002531320458375165,
+      "tp2_price": 0.00262064091675033,
+      "adx_value": null,
+      "qty_total": 40950.040950040944,
+      "notional": 99.99999999999999,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": true,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 55.45,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 4,
+        "bear_fvg_count": 2,
+        "bull_ob_count": 2,
+        "bear_ob_count": 0
+      },
+      "lot_a": {
+        "qty": 20475.020475020472,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 20475.020475020472,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1519,
+  "next_trade_id": 1520,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
