@@ -1157,8 +1157,84 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CRVUSDT__POC": {
+      "trade_id": 1507,
+      "symbol": "CRVUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-10 03:15:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.3593,
+      "sl_price": 0.3601588,
+      "sl_initial": 0.3601588,
+      "tp1_price": 0.3509,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 278.31895352073474,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.35916875,
+        "leg_start": "2026-10-09 23:30:00",
+        "leg_end": "2026-10-10 00:45:00",
+        "rr": 9.781,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.3584412,
+        "raw_tp": 0.3677
+      },
+      "lot_a": {
+        "qty": 278.31895352073474,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "GALAUSDT__POC": {
+      "trade_id": 1508,
+      "symbol": "GALAUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-10 03:15:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.002443,
+      "sl_price": 0.0024774109999999997,
+      "sl_initial": 0.0024774109999999997,
+      "tp1_price": 0.0024239999999999995,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 40933.27875562833,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0024324375,
+        "leg_start": "2026-10-10 01:00:00",
+        "leg_end": "2026-10-10 02:30:00",
+        "rr": 0.552,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.002408589,
+        "raw_tp": 0.002462
+      },
+      "lot_a": {
+        "qty": 40933.27875562833,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 1507,
+  "next_trade_id": 1509,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
