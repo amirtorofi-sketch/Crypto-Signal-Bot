@@ -1,5 +1,5 @@
 {
-  "balance": 10132.062818032919,
+  "balance": 10129.719436529493,
   "positions": {
     "ROSEUSDT__ST": {
       "trade_id": 1368,
@@ -868,55 +868,6 @@
         "status": "open"
       }
     },
-    "ROSEUSDT__SMC2": {
-      "trade_id": 1540,
-      "symbol": "ROSEUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-10 19:45:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.0087,
-      "sl_price": 0.008891055257040158,
-      "sl_initial": 0.008891055257040158,
-      "tp1_price": 0.008413417114439761,
-      "tp2_price": 0.008126834228879522,
-      "adx_value": null,
-      "qty_total": 11494.252873563219,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": true,
-        "htf_bearish": false,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 80.04,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": 1,
-        "bull_fvg_count": 6,
-        "bear_fvg_count": 0,
-        "bull_ob_count": 1,
-        "bear_ob_count": 0
-      },
-      "lot_a": {
-        "qty": 5747.126436781609,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 5747.126436781609,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "BTCUSDT__SMC2": {
       "trade_id": 1548,
       "symbol": "BTCUSDT",
@@ -1052,44 +1003,6 @@
         "status": "none"
       }
     },
-    "MASKUSDT__POC": {
-      "trade_id": 1556,
-      "symbol": "MASKUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-11 02:00:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.477,
-      "sl_price": 0.474521,
-      "sl_initial": 0.474521,
-      "tp1_price": 0.48,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 209.64360587002096,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.4770833333333333,
-        "leg_start": "2026-10-10 22:30:00",
-        "leg_end": "2026-10-10 23:15:00",
-        "rr": 1.21,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.47947899999999993,
-        "raw_tp": 0.474
-      },
-      "lot_a": {
-        "qty": 209.64360587002096,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "ONEUSDT__POC": {
       "trade_id": 1559,
       "symbol": "ONEUSDT",
@@ -1119,44 +1032,6 @@
       },
       "lot_a": {
         "qty": 48076.92307692308,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
-    "GALAUSDT__POC": {
-      "trade_id": 1560,
-      "symbol": "GALAUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-11 02:30:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.002417,
-      "sl_price": 0.002432404,
-      "sl_initial": 0.002432404,
-      "tp1_price": 0.0024079999999999996,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 41373.603640877125,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.0024135000000000003,
-        "leg_start": "2026-10-10 19:45:00",
-        "leg_end": "2026-10-10 20:45:00",
-        "rr": 0.584,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.0024015959999999998,
-        "raw_tp": 0.002426
-      },
-      "lot_a": {
-        "qty": 41373.603640877125,
         "target": "tp1",
         "status": "open"
       },
