@@ -1,5 +1,5 @@
 {
-  "balance": 10155.4076117784,
+  "balance": 10155.811652182441,
   "positions": {
     "MASKUSDT__ST": {
       "trade_id": 1370,
@@ -721,44 +721,6 @@
         "status": "none"
       }
     },
-    "MASKUSDT__POC": {
-      "trade_id": 1613,
-      "symbol": "MASKUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-11 22:15:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.495,
-      "sl_price": 0.492503,
-      "sl_initial": 0.492503,
-      "tp1_price": 0.497,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 202.02020202020202,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.49516666666666664,
-        "leg_start": "2026-10-11 20:30:00",
-        "leg_end": "2026-10-11 21:15:00",
-        "rr": 0.801,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.49749699999999997,
-        "raw_tp": 0.493
-      },
-      "lot_a": {
-        "qty": 202.02020202020202,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "ROSEUSDT__SMC2": {
       "trade_id": 1614,
       "symbol": "ROSEUSDT",
@@ -855,8 +817,46 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ETHUSDT__POC": {
+      "trade_id": 1616,
+      "symbol": "ETHUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-11 23:00:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 2535.33,
+      "sl_price": 2529.11099,
+      "sl_initial": 2529.11099,
+      "tp1_price": 2554.8199999999997,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.03944259721614149,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 2536.135,
+        "leg_start": "2026-10-11 20:00:00",
+        "leg_end": "2026-10-11 21:15:00",
+        "rr": 3.134,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 2541.5490099999997,
+        "raw_tp": 2515.84
+      },
+      "lot_a": {
+        "qty": 0.03944259721614149,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 1616,
+  "next_trade_id": 1617,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
