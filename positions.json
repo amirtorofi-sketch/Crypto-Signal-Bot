@@ -1,5 +1,5 @@
 {
-  "balance": 10136.687264349965,
+  "balance": 10136.355819263259,
   "positions": {
     "ROSEUSDT__ST": {
       "trade_id": 1368,
@@ -1236,44 +1236,6 @@
         "qty": 582.3433496389471,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "ROSEUSDT__POC": {
-      "trade_id": 1550,
-      "symbol": "ROSEUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-10 23:15:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.00865,
-      "sl_price": 0.00862133,
-      "sl_initial": 0.00862133,
-      "tp1_price": 0.00877,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 11560.693641618498,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.00865375,
-        "leg_start": "2026-10-10 21:45:00",
-        "leg_end": "2026-10-10 22:45:00",
-        "rr": 4.186,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.00867867,
-        "raw_tp": 0.00853
-      },
-      "lot_a": {
-        "qty": 11560.693641618498,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     }
   },
