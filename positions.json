@@ -1,5 +1,5 @@
 {
-  "balance": 10146.629475115622,
+  "balance": 10148.486099096097,
   "positions": {
     "MASKUSDT__ST": {
       "trade_id": 1370,
@@ -254,7 +254,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 2484.93,
-      "sl_price": 2458.4415952013273,
+      "sl_price": 2484.93,
       "sl_initial": 2458.4415952013273,
       "tp1_price": 2524.6626071980086,
       "tp2_price": 2564.3952143960173,
@@ -276,7 +276,7 @@
       "lot_a": {
         "qty": 0.020121291143010065,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.020121291143010065,
@@ -371,7 +371,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 2492.82,
-      "sl_price": 2474.267073188586,
+      "sl_price": 2492.82,
       "sl_initial": 2474.267073188586,
       "tp1_price": 2520.6493902171214,
       "tp2_price": 2548.4787804342427,
@@ -403,7 +403,7 @@
       "lot_a": {
         "qty": 0.020057605442831812,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.020057605442831812,
@@ -583,104 +583,6 @@
       },
       "lot_b": {
         "qty": 21240.441801189463,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "DOGEUSDT__SMC2": {
-      "trade_id": 1578,
-      "symbol": "DOGEUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-11 08:15:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.08525,
-      "sl_price": 0.08525,
-      "sl_initial": 0.08488534288549845,
-      "tp1_price": 0.08579698567175234,
-      "tp2_price": 0.08634397134350466,
-      "adx_value": null,
-      "qty_total": 1173.0205278592375,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": false,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 41.38,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": true,
-        "trend_strong": false,
-        "trend": -1,
-        "bull_fvg_count": 1,
-        "bear_fvg_count": 6,
-        "bull_ob_count": 0,
-        "bear_ob_count": 2
-      },
-      "lot_a": {
-        "qty": 586.5102639296188,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 586.5102639296188,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "BTCUSDT__SMC2": {
-      "trade_id": 1593,
-      "symbol": "BTCUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-11 14:15:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 83102.0,
-      "sl_price": 83220.55641035356,
-      "sl_initial": 83220.55641035356,
-      "tp1_price": 82924.16538446967,
-      "tp2_price": 82746.33076893933,
-      "adx_value": null,
-      "qty_total": 0.001203340473153474,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 4,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": true,
-        "htf_bearish": false,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 52.77,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "trend_strong": false,
-        "trend": 1,
-        "bull_fvg_count": 4,
-        "bear_fvg_count": 0,
-        "bull_ob_count": 3,
-        "bear_ob_count": 0
-      },
-      "lot_a": {
-        "qty": 0.000601670236576737,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.000601670236576737,
         "target": "tp2",
         "status": "open"
       }
