@@ -1,5 +1,5 @@
 {
-  "balance": 10133.454869549618,
+  "balance": 10132.934768624471,
   "positions": {
     "ROSEUSDT__ST": {
       "trade_id": 1368,
@@ -966,44 +966,6 @@
         "status": "open"
       }
     },
-    "GALAUSDT__POC": {
-      "trade_id": 1565,
-      "symbol": "GALAUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-11 03:30:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.002378,
-      "sl_price": 0.002390368,
-      "sl_initial": 0.002390368,
-      "tp1_price": 0.002336,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 42052.14465937763,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.0023689375,
-        "leg_start": "2026-10-11 01:00:00",
-        "leg_end": "2026-10-11 02:45:00",
-        "rr": 3.396,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.002365632,
-        "raw_tp": 0.00242
-      },
-      "lot_a": {
-        "qty": 42052.14465937763,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "GALAUSDT__ST": {
       "trade_id": 1566,
       "symbol": "GALAUSDT",
@@ -1042,8 +1004,57 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ROSEUSDT__SMC2": {
+      "trade_id": 1569,
+      "symbol": "ROSEUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-11 05:00:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.00865,
+      "sl_price": 0.008894924046052686,
+      "sl_initial": 0.008894924046052686,
+      "tp1_price": 0.00828261393092097,
+      "tp2_price": 0.00791522786184194,
+      "adx_value": null,
+      "qty_total": 11560.693641618498,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": true,
+        "vol_spike": false,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 48.87,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": 1,
+        "bull_fvg_count": 5,
+        "bear_fvg_count": 0,
+        "bull_ob_count": 1,
+        "bear_ob_count": 0
+      },
+      "lot_a": {
+        "qty": 5780.346820809249,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 5780.346820809249,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1569,
+  "next_trade_id": 1570,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
