@@ -1,5 +1,5 @@
 {
-  "balance": 10150.570558782954,
+  "balance": 10149.912426425548,
   "positions": {
     "MASKUSDT__ST": {
       "trade_id": 1370,
@@ -215,7 +215,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 82564.01,
-      "sl_price": 81512.88979605564,
+      "sl_price": 82564.01,
       "sl_initial": 81512.88979605564,
       "tp1_price": 84140.69030591653,
       "tp2_price": 85717.37061183307,
@@ -237,7 +237,7 @@
       "lot_a": {
         "qty": 0.0006055907410504892,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.0006055907410504892,
@@ -485,104 +485,6 @@
       },
       "lot_b": {
         "qty": 20333.4688897926,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "MASKUSDT__SMC2": {
-      "trade_id": 1596,
-      "symbol": "MASKUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-11 16:45:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.489,
-      "sl_price": 0.4935522845293906,
-      "sl_initial": 0.4935522845293906,
-      "tp1_price": 0.4821715732059141,
-      "tp2_price": 0.4753431464118282,
-      "adx_value": null,
-      "qty_total": 204.4989775051125,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 4,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": true,
-        "htf_bearish": false,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 72.59,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": 1,
-        "bull_fvg_count": 6,
-        "bear_fvg_count": 0,
-        "bull_ob_count": 2,
-        "bear_ob_count": 0
-      },
-      "lot_a": {
-        "qty": 102.24948875255625,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 102.24948875255625,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "DOGEUSDT__SMC2": {
-      "trade_id": 1597,
-      "symbol": "DOGEUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-11 17:00:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.08698,
-      "sl_price": 0.08757321910044083,
-      "sl_initial": 0.08757321910044083,
-      "tp1_price": 0.08609017134933876,
-      "tp2_price": 0.08520034269867752,
-      "adx_value": null,
-      "qty_total": 1149.6895838123705,
-      "notional": 99.99999999999999,
-      "leverage": 1.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": true,
-        "htf_bearish": false,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 67.64,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": 1,
-        "bull_fvg_count": 5,
-        "bear_fvg_count": 0,
-        "bull_ob_count": 1,
-        "bear_ob_count": 0
-      },
-      "lot_a": {
-        "qty": 574.8447919061853,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 574.8447919061853,
         "target": "tp2",
         "status": "open"
       }
