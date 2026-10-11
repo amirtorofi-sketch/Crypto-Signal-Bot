@@ -1,5 +1,5 @@
 {
-  "balance": 10132.779087680141,
+  "balance": 10130.811470616725,
   "positions": {
     "ROSEUSDT__ST": {
       "trade_id": 1368,
@@ -597,45 +597,6 @@
         "status": "open"
       }
     },
-    "CRVUSDT__ST": {
-      "trade_id": 1531,
-      "symbol": "CRVUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-10-10 14:30:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.3607,
-      "sl_price": 0.3661813590582878,
-      "sl_initial": 0.3661813590582878,
-      "tp1_price": 0.3524779614125684,
-      "tp2_price": 0.3442559228251367,
-      "adx_value": 19.157676745873893,
-      "qty_total": 277.2387025228722,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "adx": 19.158,
-        "di_plus": 34.402,
-        "di_minus": 14.438,
-        "ema_trend": 0.356252,
-        "close_vs_ema": "above",
-        "volume": 119405.3,
-        "vol_ma": 58347.975,
-        "vol_above_ma": true
-      },
-      "lot_a": {
-        "qty": 138.6193512614361,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 138.6193512614361,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "BNBUSDT__SMC2": {
       "trade_id": 1535,
       "symbol": "BNBUSDT",
@@ -992,44 +953,6 @@
         "qty": 20593.08072487644,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "ROSEUSDT__POC": {
-      "trade_id": 1576,
-      "symbol": "ROSEUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-11 07:00:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.00863,
-      "sl_price": 0.008591340000000003,
-      "sl_initial": 0.008591340000000003,
-      "tp1_price": 0.00876,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 11587.485515643104,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.0086375,
-        "leg_start": "2026-10-11 04:00:00",
-        "leg_end": "2026-10-11 06:00:00",
-        "rr": 3.363,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.008668659999999998,
-        "raw_tp": 0.0085
-      },
-      "lot_a": {
-        "qty": 11587.485515643104,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     }
   },
