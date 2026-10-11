@@ -488,8 +488,57 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "MASKUSDT__SMC2": {
+      "trade_id": 1596,
+      "symbol": "MASKUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-11 16:45:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.489,
+      "sl_price": 0.4935522845293906,
+      "sl_initial": 0.4935522845293906,
+      "tp1_price": 0.4821715732059141,
+      "tp2_price": 0.4753431464118282,
+      "adx_value": null,
+      "qty_total": 204.4989775051125,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 4,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 72.59,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": 1,
+        "bull_fvg_count": 6,
+        "bear_fvg_count": 0,
+        "bull_ob_count": 2,
+        "bear_ob_count": 0
+      },
+      "lot_a": {
+        "qty": 102.24948875255625,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 102.24948875255625,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1596,
+  "next_trade_id": 1597,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
