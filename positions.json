@@ -1,5 +1,5 @@
 {
-  "balance": 10154.64136271677,
+  "balance": 10155.969831918248,
   "positions": {
     "MASKUSDT__ST": {
       "trade_id": 1370,
@@ -449,7 +449,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.3753,
-      "sl_price": 0.3819476598841994,
+      "sl_price": 0.3753,
       "sl_initial": 0.3819476598841994,
       "tp1_price": 0.365328510173701,
       "tp2_price": 0.35535702034740196,
@@ -481,7 +481,7 @@
       "lot_a": {
         "qty": 133.2267519317879,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 133.2267519317879,
@@ -817,8 +817,95 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "SOLUSDT__SMC2": {
+      "trade_id": 1623,
+      "symbol": "SOLUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-12 01:45:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 111.61,
+      "sl_price": 112.3826916908164,
+      "sl_initial": 112.3826916908164,
+      "tp1_price": 110.4509624637754,
+      "tp2_price": 109.2919249275508,
+      "adx_value": null,
+      "qty_total": 0.8959770629871875,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 4,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": true,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 56.81,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": false,
+        "trend": 1,
+        "bull_fvg_count": 4,
+        "bear_fvg_count": 2,
+        "bull_ob_count": 2,
+        "bear_ob_count": 0
+      },
+      "lot_a": {
+        "qty": 0.44798853149359374,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.44798853149359374,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "SOLUSDT__POC": {
+      "trade_id": 1624,
+      "symbol": "SOLUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-12 01:45:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 111.61,
+      "sl_price": 112.4309,
+      "sl_initial": 112.4309,
+      "tp1_price": 111.22,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.8959770629871875,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 111.20833333333334,
+        "leg_start": "2026-10-11 21:15:00",
+        "leg_end": "2026-10-12 01:00:00",
+        "rr": 0.475,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 110.7891,
+        "raw_tp": 112.0
+      },
+      "lot_a": {
+        "qty": 0.8959770629871875,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 1623,
+  "next_trade_id": 1625,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
