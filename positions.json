@@ -1,5 +1,5 @@
 {
-  "balance": 10159.72046299655,
+  "balance": 10160.222390470875,
   "positions": {
     "MASKUSDT__ST": {
       "trade_id": 1370,
@@ -594,7 +594,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 2564.19,
-      "sl_price": 2581.350498805192,
+      "sl_price": 2564.19,
       "sl_initial": 2581.350498805192,
       "tp1_price": 2538.4492517922126,
       "tp2_price": 2512.7085035844248,
@@ -626,7 +626,7 @@
       "lot_a": {
         "qty": 0.019499335072674023,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.019499335072674023,
@@ -818,8 +818,46 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "DOGEUSDT__POC": {
+      "trade_id": 1660,
+      "symbol": "DOGEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-12 12:15:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.08697,
+      "sl_price": 0.08643258000000002,
+      "sl_initial": 0.08643258000000002,
+      "tp1_price": 0.08731000000000001,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 1149.821777624468,
+      "notional": 99.99999999999999,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.08706312499999999,
+        "leg_start": "2026-10-12 10:45:00",
+        "leg_end": "2026-10-12 11:45:00",
+        "rr": 0.633,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.08750741999999999,
+        "raw_tp": 0.08663
+      },
+      "lot_a": {
+        "qty": 1149.821777624468,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 1660,
+  "next_trade_id": 1661,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
