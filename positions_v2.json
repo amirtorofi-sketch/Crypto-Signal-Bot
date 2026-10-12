@@ -1,5 +1,5 @@
 {
-  "balance": 9807.703454315506,
+  "balance": 9806.976067042797,
   "positions": {
     "STGUSDT__SMC": {
       "trade_id": 8434,
@@ -2851,46 +2851,6 @@
       "qty_open": 39.80891719745223,
       "phase": "before_tp1"
     },
-    "BANANAUSDT__SMC": {
-      "trade_id": 15070,
-      "symbol": "BANANAUSDT",
-      "source": "ICT/SMC Scalp Pro v2",
-      "direction": "short",
-      "candle_time": "2026-10-12 17:45:00",
-      "session": "نیویورک",
-      "entry_price": 3.748,
-      "initial_sl_price": 3.77406037111683,
-      "sl_price": 3.77406037111683,
-      "tp1_price": 3.7089094433247554,
-      "tp2_price": 3.6698188866495105,
-      "qty_total": 26.680896478121664,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": false,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 32.89,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 0,
-        "bear_fvg_count": 6,
-        "bull_ob_count": 0,
-        "bear_ob_count": 3
-      },
-      "qty_open": 26.680896478121664,
-      "phase": "before_tp1"
-    },
     "TURBOUSDT__SMC": {
       "trade_id": 15074,
       "symbol": "TURBOUSDT",
@@ -3906,56 +3866,6 @@
       },
       "qty_open": 32425.421530479896
     },
-    "DUSKUSDT__POC": {
-      "trade_id": 15124,
-      "symbol": "DUSKUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-12 19:15:00",
-      "session": "نیویورک",
-      "entry_price": 0.0887,
-      "sl_price": 0.0881118,
-      "tp1_price": 0.0893,
-      "tp2_price": null,
-      "qty_total": 1127.3957158962796,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.088425,
-        "leg_start": "2026-10-12 16:45:00",
-        "leg_end": "2026-10-12 18:00:00",
-        "rr": 1.02,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 1127.3957158962796
-    },
-    "DYMUSDT__POC": {
-      "trade_id": 15125,
-      "symbol": "DYMUSDT",
-      "source": "POC Retest v2",
-      "direction": "short",
-      "candle_time": "2026-10-12 19:15:00",
-      "session": "نیویورک",
-      "entry_price": 0.01974,
-      "sl_price": 0.019879859999999996,
-      "tp1_price": 0.01918,
-      "tp2_price": null,
-      "qty_total": 5065.856129685917,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.019797500000000003,
-        "leg_start": "2026-10-12 16:45:00",
-        "leg_end": "2026-10-12 17:30:00",
-        "rr": 4.004,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 5065.856129685917
-    },
     "FLOWUSDT__SMC": {
       "trade_id": 15126,
       "symbol": "FLOWUSDT",
@@ -4855,8 +4765,58 @@
       },
       "qty_open": 0.08044599258287949,
       "phase": "before_tp1"
+    },
+    "CHRUSDT__POC": {
+      "trade_id": 15156,
+      "symbol": "CHRUSDT",
+      "source": "POC Retest v2",
+      "direction": "short",
+      "candle_time": "2026-10-12 19:45:00",
+      "session": "نیویورک",
+      "entry_price": 0.02174,
+      "sl_price": 0.02188186,
+      "tp1_price": 0.02161,
+      "tp2_price": null,
+      "qty_total": 4599.8160073597055,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0218275,
+        "leg_start": "2026-10-12 16:30:00",
+        "leg_end": "2026-10-12 17:30:00",
+        "rr": 0.916,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 4599.8160073597055
+    },
+    "CYBERUSDT__POC": {
+      "trade_id": 15157,
+      "symbol": "CYBERUSDT",
+      "source": "POC Retest v2",
+      "direction": "long",
+      "candle_time": "2026-10-12 19:45:00",
+      "session": "نیویورک",
+      "entry_price": 0.379,
+      "sl_price": 0.375624,
+      "tp1_price": 0.382,
+      "tp2_price": null,
+      "qty_total": 263.85224274406335,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.37893750000000004,
+        "leg_start": "2026-10-12 18:30:00",
+        "leg_end": "2026-10-12 19:15:00",
+        "rr": 0.889,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 263.85224274406335
     }
   },
-  "next_trade_id": 15156,
+  "next_trade_id": 15158,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
