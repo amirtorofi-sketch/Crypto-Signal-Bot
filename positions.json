@@ -1136,8 +1136,94 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "CHZUSDT__POC": {
+      "trade_id": 1641,
+      "symbol": "CHZUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-12 04:15:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.01589,
+      "sl_price": 0.015965830000000004,
+      "sl_initial": 0.015965830000000004,
+      "tp1_price": 0.015820000000000004,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 6293.2662051604775,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.015886666666666667,
+        "leg_start": "2026-10-12 01:30:00",
+        "leg_end": "2026-10-12 03:15:00",
+        "rr": 0.923,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.01581417,
+        "raw_tp": 0.01596
+      },
+      "lot_a": {
+        "qty": 6293.2662051604775,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "MANAUSDT__SMC": {
+      "trade_id": 1642,
+      "symbol": "MANAUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-10-12 04:15:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.0984,
+      "sl_price": 0.09939926044349276,
+      "sl_initial": 0.09939926044349276,
+      "tp1_price": 0.09690110933476087,
+      "tp2_price": 0.09540221866952173,
+      "adx_value": null,
+      "qty_total": 1016.260162601626,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": true,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 60.15,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "bull_fvg_count": 6,
+        "bear_fvg_count": 1,
+        "bull_ob_count": 3,
+        "bear_ob_count": 0,
+        "trend": 1
+      },
+      "lot_a": {
+        "qty": 508.130081300813,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 508.130081300813,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1641,
+  "next_trade_id": 1643,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
