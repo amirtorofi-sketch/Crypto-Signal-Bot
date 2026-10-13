@@ -1,5 +1,5 @@
 {
-  "balance": 10153.25425795079,
+  "balance": 10153.922597144754,
   "positions": {
     "GALAUSDT__SMC": {
       "trade_id": 1702,
@@ -107,7 +107,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 731.95,
-      "sl_price": 725.4274550263667,
+      "sl_price": 731.95,
       "sl_initial": 725.4274550263667,
       "tp1_price": 741.73381746045,
       "tp2_price": 751.5176349209,
@@ -139,7 +139,7 @@
       "lot_a": {
         "qty": 0.06831067695880866,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.06831067695880866,
@@ -428,8 +428,57 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "BTCUSDT__SMC2": {
+      "trade_id": 1712,
+      "symbol": "BTCUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-13 02:45:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 82930.0,
+      "sl_price": 82367.94742965476,
+      "sl_initial": 82367.94742965476,
+      "tp1_price": 83773.07885551787,
+      "tp2_price": 84616.15771103573,
+      "adx_value": null,
+      "qty_total": 0.001205836247437598,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": false,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 64.72,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 5,
+        "bear_fvg_count": 2,
+        "bull_ob_count": 0,
+        "bear_ob_count": 2
+      },
+      "lot_a": {
+        "qty": 0.000602918123718799,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.000602918123718799,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1712,
+  "next_trade_id": 1713,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
