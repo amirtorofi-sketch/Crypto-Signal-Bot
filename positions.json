@@ -1,5 +1,5 @@
 {
-  "balance": 10128.597287579974,
+  "balance": 10130.414845833297,
   "positions": {
     "BNBUSDT__SMC2": {
       "trade_id": 1704,
@@ -292,7 +292,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.0914,
-      "sl_price": 0.08976949474802684,
+      "sl_price": 0.0914,
       "sl_initial": 0.08976949474802684,
       "tp1_price": 0.09384575787795973,
       "tp2_price": 0.09629151575591946,
@@ -314,7 +314,7 @@
       "lot_a": {
         "qty": 547.0459518599563,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 547.0459518599563,
@@ -654,35 +654,35 @@
         "status": "none"
       }
     },
-    "ROSEUSDT__POC": {
-      "trade_id": 1775,
-      "symbol": "ROSEUSDT",
+    "SOLUSDT__POC": {
+      "trade_id": 1776,
+      "symbol": "SOLUSDT",
       "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-13 19:15:00",
+      "candle_time": "2026-10-13 20:00:00",
       "session": "نیویورک",
       "raw_direction": "short",
       "direction": "long",
-      "entry_price": 0.00834,
-      "sl_price": 0.008291620000000001,
-      "sl_initial": 0.008291620000000001,
-      "tp1_price": 0.00838,
+      "entry_price": 107.35,
+      "sl_price": 106.91232,
+      "sl_initial": 106.91232,
+      "tp1_price": 107.75999999999999,
       "tp2_price": null,
       "adx_value": null,
-      "qty_total": 11990.407673860911,
+      "qty_total": 0.9315323707498836,
       "notional": 100.0,
       "leverage": 1.0,
       "signal_score": null,
       "market_snapshot": {
-        "poc": 0.008353125,
-        "leg_start": "2026-10-13 18:00:00",
-        "leg_end": "2026-10-13 18:45:00",
-        "rr": 0.827,
+        "poc": 107.40375,
+        "leg_start": "2026-10-13 16:15:00",
+        "leg_end": "2026-10-13 17:45:00",
+        "rr": 0.937,
         "reason": "poc_retest_rejection",
-        "raw_sl": 0.008388379999999999,
-        "raw_tp": 0.0083
+        "raw_sl": 107.78768,
+        "raw_tp": 106.94
       },
       "lot_a": {
-        "qty": 11990.407673860911,
+        "qty": 0.9315323707498836,
         "target": "tp1",
         "status": "open"
       },
@@ -693,6 +693,6 @@
       }
     }
   },
-  "next_trade_id": 1776,
+  "next_trade_id": 1777,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
