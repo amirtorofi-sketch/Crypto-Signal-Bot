@@ -834,8 +834,47 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CHZUSDT__ST": {
+      "trade_id": 1733,
+      "symbol": "CHZUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-13 09:30:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.0147,
+      "sl_price": 0.014414490793127408,
+      "sl_initial": 0.014414490793127408,
+      "tp1_price": 0.015128263810308887,
+      "tp2_price": 0.015556527620617775,
+      "adx_value": 17.24749676279853,
+      "qty_total": 6802.721088435374,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 17.247,
+        "di_plus": 17.936,
+        "di_minus": 31.68,
+        "ema_trend": 0.015237,
+        "close_vs_ema": "below",
+        "volume": 1695976.0,
+        "vol_ma": 710791.1,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 3401.360544217687,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 3401.360544217687,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1733,
+  "next_trade_id": 1734,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
