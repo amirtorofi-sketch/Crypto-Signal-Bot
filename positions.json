@@ -1,5 +1,5 @@
 {
-  "balance": 10131.985874016531,
+  "balance": 10129.598117778269,
   "positions": {
     "BNBUSDT__SMC2": {
       "trade_id": 1704,
@@ -470,55 +470,6 @@
         "status": "open"
       }
     },
-    "CRVUSDT__SMC2": {
-      "trade_id": 1767,
-      "symbol": "CRVUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-13 16:15:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.3435,
-      "sl_price": 0.33624585169766513,
-      "sl_initial": 0.33624585169766513,
-      "tp1_price": 0.35438122245350234,
-      "tp2_price": 0.3652624449070047,
-      "adx_value": null,
-      "qty_total": 291.12081513828235,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": true,
-        "vol_spike": false,
-        "strong_bull_rej": false,
-        "strong_bear_rej": false,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 50.94,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 1,
-        "bear_fvg_count": 5,
-        "bull_ob_count": 0,
-        "bear_ob_count": 2
-      },
-      "lot_a": {
-        "qty": 145.56040756914118,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 145.56040756914118,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "BNBUSDT__POC": {
       "trade_id": 1772,
       "symbol": "BNBUSDT",
@@ -548,44 +499,6 @@
       },
       "lot_a": {
         "qty": 0.13485812924803106,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
-    "ONEUSDT__POC": {
-      "trade_id": 1780,
-      "symbol": "ONEUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-13 21:30:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.001707,
-      "sl_price": 0.0017022900000000002,
-      "sl_initial": 0.0017022900000000002,
-      "tp1_price": 0.0017209999999999999,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 58582.308142940834,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.0017078750000000002,
-        "leg_start": "2026-10-13 19:15:00",
-        "leg_end": "2026-10-13 21:00:00",
-        "rr": 2.972,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.0017117099999999998,
-        "raw_tp": 0.001693
-      },
-      "lot_a": {
-        "qty": 58582.308142940834,
         "target": "tp1",
         "status": "open"
       },
