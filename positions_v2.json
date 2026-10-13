@@ -1,5 +1,5 @@
 {
-  "balance": 9816.339082307624,
+  "balance": 9818.359714332872,
   "positions": {
     "STGUSDT__SMC": {
       "trade_id": 8434,
@@ -290,7 +290,7 @@
       "session": "آسیا",
       "entry_price": 0.01132,
       "initial_sl_price": 0.01154567854594515,
-      "sl_price": 0.01154567854594515,
+      "sl_price": 0.01132,
       "tp1_price": 0.010981482181082275,
       "tp2_price": 0.01064296436216455,
       "qty_total": 8833.922261484098,
@@ -318,8 +318,8 @@
         "bull_ob_count": 0,
         "bear_ob_count": 3
       },
-      "qty_open": 8833.922261484098,
-      "phase": "before_tp1"
+      "qty_open": 4416.961130742049,
+      "phase": "after_tp1"
     },
     "GTCUSDT__SMC": {
       "trade_id": 15339,
@@ -560,31 +560,6 @@
       },
       "qty_open": 491.0144358244132,
       "phase": "after_tp1"
-    },
-    "NEWTUSDT__POC": {
-      "trade_id": 15397,
-      "symbol": "NEWTUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-13 03:15:00",
-      "session": "آسیا",
-      "entry_price": 0.0458,
-      "sl_price": 0.04538457,
-      "tp1_price": 0.04822,
-      "tp2_price": null,
-      "qty_total": 2183.406113537118,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.045696875,
-        "leg_start": "2026-10-12 21:45:00",
-        "leg_end": "2026-10-13 00:00:00",
-        "rr": 5.825,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 2183.406113537118
     },
     "DOGEUSDT__SMC": {
       "trade_id": 15406,
@@ -1100,7 +1075,7 @@
       "session": "آسیا",
       "entry_price": 0.00855,
       "initial_sl_price": 0.008704177895587115,
-      "sl_price": 0.008704177895587115,
+      "sl_price": 0.00855,
       "tp1_price": 0.008318733156619327,
       "tp2_price": 0.008087466313238655,
       "qty_total": 11695.906432748538,
@@ -1128,8 +1103,8 @@
         "bull_ob_count": 0,
         "bear_ob_count": 2
       },
-      "qty_open": 11695.906432748538,
-      "phase": "before_tp1"
+      "qty_open": 5847.953216374269,
+      "phase": "after_tp1"
     },
     "DOTUSDT__SMC": {
       "trade_id": 15467,
@@ -2236,46 +2211,6 @@
       "qty_open": 9980.039920159681,
       "phase": "after_tp1"
     },
-    "SSVUSDT__SMC": {
-      "trade_id": 15596,
-      "symbol": "SSVUSDT",
-      "source": "ICT/SMC Scalp Pro v2",
-      "direction": "short",
-      "candle_time": "2026-10-13 08:00:00",
-      "session": "لندن",
-      "entry_price": 2.829,
-      "initial_sl_price": 2.863464321195534,
-      "sl_price": 2.829,
-      "tp1_price": 2.777303518206699,
-      "tp2_price": 2.725607036413398,
-      "qty_total": 35.34817956875221,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": true,
-        "recent_bear_sweep": false,
-        "vol_spike": false,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 56.28,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 5,
-        "bear_fvg_count": 3,
-        "bull_ob_count": 0,
-        "bear_ob_count": 2
-      },
-      "qty_open": 17.674089784376104,
-      "phase": "after_tp1"
-    },
     "KSMUSDT__SMC": {
       "trade_id": 15602,
       "symbol": "KSMUSDT",
@@ -2596,31 +2531,6 @@
       "qty_open": 1095.7703265395573,
       "phase": "before_tp1"
     },
-    "DOGSUSDT__POC": {
-      "trade_id": 15654,
-      "symbol": "DOGSUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-13 10:00:00",
-      "session": "لندن",
-      "entry_price": 4.245e-05,
-      "sl_price": 4.170825e-05,
-      "tp1_price": 4.322e-05,
-      "tp2_price": null,
-      "qty_total": 2355712.603062426,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 4.221375e-05,
-        "leg_start": "2026-10-13 02:30:00",
-        "leg_end": "2026-10-13 05:00:00",
-        "rr": 1.038,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 2355712.603062426
-    },
     "EGLDUSDT__SMC": {
       "trade_id": 15655,
       "symbol": "EGLDUSDT",
@@ -2895,8 +2805,83 @@
         "reason": "poc_retest_rejection"
       },
       "qty_open": 6587.615283267457
+    },
+    "IOTAUSDT__POC": {
+      "trade_id": 15665,
+      "symbol": "IOTAUSDT",
+      "source": "POC Retest v2",
+      "direction": "long",
+      "candle_time": "2026-10-13 10:45:00",
+      "session": "لندن",
+      "entry_price": 0.0489,
+      "sl_price": 0.0486513,
+      "tp1_price": 0.0507,
+      "tp2_price": null,
+      "qty_total": 2044.9897750511248,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.048775,
+        "leg_start": "2026-10-13 02:30:00",
+        "leg_end": "2026-10-13 05:15:00",
+        "rr": 7.238,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 2044.9897750511248
+    },
+    "IOUSDT__POC": {
+      "trade_id": 15666,
+      "symbol": "IOUSDT",
+      "source": "POC Retest v2",
+      "direction": "long",
+      "candle_time": "2026-10-13 10:45:00",
+      "session": "لندن",
+      "entry_price": 0.1645,
+      "sl_price": 0.1631367,
+      "tp1_price": 0.169,
+      "tp2_price": null,
+      "qty_total": 607.90273556231,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.16384375,
+        "leg_start": "2026-10-13 02:30:00",
+        "leg_end": "2026-10-13 05:00:00",
+        "rr": 3.301,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 607.90273556231
+    },
+    "RUNEUSDT__POC": {
+      "trade_id": 15667,
+      "symbol": "RUNEUSDT",
+      "source": "POC Retest v2",
+      "direction": "long",
+      "candle_time": "2026-10-13 10:45:00",
+      "session": "لندن",
+      "entry_price": 0.66,
+      "sl_price": 0.657342,
+      "tp1_price": 0.666,
+      "tp2_price": null,
+      "qty_total": 151.5151515151515,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.65825,
+        "leg_start": "2026-10-13 02:30:00",
+        "leg_end": "2026-10-13 03:30:00",
+        "rr": 2.257,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 151.5151515151515
     }
   },
-  "next_trade_id": 15665,
+  "next_trade_id": 15668,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
