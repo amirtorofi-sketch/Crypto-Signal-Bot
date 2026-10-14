@@ -1,5 +1,5 @@
 {
-  "balance": 10124.352484287918,
+  "balance": 10124.096560832984,
   "positions": {
     "ONEUSDT__SMC2": {
       "trade_id": 1827,
@@ -246,44 +246,6 @@
         "status": "open"
       }
     },
-    "BTCUSDT__POC": {
-      "trade_id": 1849,
-      "symbol": "BTCUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-14 17:00:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 81955.38,
-      "sl_price": 81745.63696000002,
-      "sl_initial": 81745.63696000002,
-      "tp1_price": 82321.88,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.0012201761495096478,
-      "notional": 100.00000000000001,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 81998.88104166667,
-        "leg_start": "2026-10-14 13:45:00",
-        "leg_end": "2026-10-14 15:45:00",
-        "rr": 1.747,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 82165.12303999999,
-        "raw_tp": 81588.88
-      },
-      "lot_a": {
-        "qty": 0.0012201761495096478,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "BNBUSDT__POC": {
       "trade_id": 1850,
       "symbol": "BNBUSDT",
@@ -359,8 +321,46 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "DOGEUSDT__POC": {
+      "trade_id": 1852,
+      "symbol": "DOGEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-14 17:30:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.08225,
+      "sl_price": 0.08245213000000001,
+      "sl_initial": 0.08245213000000001,
+      "tp1_price": 0.08128,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 1215.80547112462,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.08221375,
+        "leg_start": "2026-10-14 15:45:00",
+        "leg_end": "2026-10-14 17:00:00",
+        "rr": 4.799,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.08204787,
+        "raw_tp": 0.08322
+      },
+      "lot_a": {
+        "qty": 1215.80547112462,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 1852,
+  "next_trade_id": 1853,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
