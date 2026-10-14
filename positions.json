@@ -1,5 +1,5 @@
 {
-  "balance": 10131.462258413549,
+  "balance": 10131.868762478589,
   "positions": {
     "BNBUSDT__SMC2": {
       "trade_id": 1704,
@@ -752,35 +752,35 @@
         "status": "open"
       }
     },
-    "ONEUSDT__POC": {
-      "trade_id": 1812,
-      "symbol": "ONEUSDT",
+    "CHZUSDT__POC": {
+      "trade_id": 1813,
+      "symbol": "CHZUSDT",
       "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-14 08:00:00",
+      "candle_time": "2026-10-14 08:15:00",
       "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.001722,
-      "sl_price": 0.001737708,
-      "sl_initial": 0.001737708,
-      "tp1_price": 0.001715,
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.01464,
+      "sl_price": 0.014535270000000003,
+      "sl_initial": 0.014535270000000003,
+      "tp1_price": 0.014750000000000001,
       "tp2_price": null,
       "adx_value": null,
-      "qty_total": 58072.009291521485,
+      "qty_total": 6830.601092896175,
       "notional": 100.0,
       "leverage": 1.0,
       "signal_score": null,
       "market_snapshot": {
-        "poc": 0.0017154583333333334,
-        "leg_start": "2026-10-14 06:00:00",
-        "leg_end": "2026-10-14 07:30:00",
-        "rr": 0.446,
+        "poc": 0.014660208333333334,
+        "leg_start": "2026-10-14 04:45:00",
+        "leg_end": "2026-10-14 06:00:00",
+        "rr": 1.05,
         "reason": "poc_retest_rejection",
-        "raw_sl": 0.001706292,
-        "raw_tp": 0.001729
+        "raw_sl": 0.014744729999999998,
+        "raw_tp": 0.01453
       },
       "lot_a": {
-        "qty": 58072.009291521485,
+        "qty": 6830.601092896175,
         "target": "tp1",
         "status": "open"
       },
@@ -791,6 +791,6 @@
       }
     }
   },
-  "next_trade_id": 1813,
+  "next_trade_id": 1814,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
