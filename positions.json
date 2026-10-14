@@ -1,5 +1,5 @@
 {
-  "balance": 10130.721273302996,
+  "balance": 10130.416560188241,
   "positions": {
     "BNBUSDT__SMC2": {
       "trade_id": 1704,
@@ -913,45 +913,56 @@
         "status": "open"
       }
     },
-    "CHZUSDT__POC": {
-      "trade_id": 1794,
-      "symbol": "CHZUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-14 01:30:00",
+    "CRVUSDT__SMC2": {
+      "trade_id": 1795,
+      "symbol": "CRVUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-14 02:00:00",
       "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.01464,
-      "sl_price": 0.01468461,
-      "sl_initial": 0.01468461,
-      "tp1_price": 0.014490000000000001,
-      "tp2_price": null,
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.3422,
+      "sl_price": 0.3379716466526404,
+      "sl_initial": 0.3379716466526404,
+      "tp1_price": 0.3485425300210394,
+      "tp2_price": 0.3548850600420788,
       "adx_value": null,
-      "qty_total": 6830.601092896175,
+      "qty_total": 292.22676797194623,
       "notional": 100.0,
       "leverage": 1.0,
-      "signal_score": null,
+      "signal_score": 3,
       "market_snapshot": {
-        "poc": 0.014619166666666666,
-        "leg_start": "2026-10-13 23:15:00",
-        "leg_end": "2026-10-14 00:45:00",
-        "rr": 3.362,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.01459539,
-        "raw_tp": 0.01479
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": true,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 55.13,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": false,
+        "trend": -1,
+        "bull_fvg_count": 0,
+        "bear_fvg_count": 4,
+        "bull_ob_count": 0,
+        "bear_ob_count": 2
       },
       "lot_a": {
-        "qty": 6830.601092896175,
+        "qty": 146.11338398597312,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 0.0,
+        "qty": 146.11338398597312,
         "target": "tp2",
-        "status": "none"
+        "status": "open"
       }
     }
   },
-  "next_trade_id": 1795,
+  "next_trade_id": 1796,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
