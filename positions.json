@@ -1,5 +1,5 @@
 {
-  "balance": 10120.025262583966,
+  "balance": 10119.312722366707,
   "positions": {
     "ONEUSDT__SMC2": {
       "trade_id": 1827,
@@ -233,82 +233,6 @@
         "qty": 114.6788990825688,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "VETUSDT__POC": {
-      "trade_id": 1860,
-      "symbol": "VETUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-14 19:00:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.007041,
-      "sl_price": 0.007078011000000001,
-      "sl_initial": 0.007078011000000001,
-      "tp1_price": 0.006922000000000001,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 14202.528049992898,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.0070336875,
-        "leg_start": "2026-10-14 16:15:00",
-        "leg_end": "2026-10-14 17:00:00",
-        "rr": 3.215,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.0070039889999999995,
-        "raw_tp": 0.00716
-      },
-      "lot_a": {
-        "qty": 14202.528049992898,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
-    "BTCUSDT__POC": {
-      "trade_id": 1862,
-      "symbol": "BTCUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-14 20:15:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 81909.0,
-      "sl_price": 81755.91990000001,
-      "sl_initial": 81755.91990000001,
-      "tp1_price": 82303.72,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.00122086705978586,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 81929.00083333332,
-        "leg_start": "2026-10-14 17:00:00",
-        "leg_end": "2026-10-14 17:45:00",
-        "rr": 2.579,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 82062.08009999999,
-        "raw_tp": 81514.28
-      },
-      "lot_a": {
-        "qty": 0.00122086705978586,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     }
   },
