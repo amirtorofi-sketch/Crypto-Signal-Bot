@@ -1,5 +1,5 @@
 {
-  "balance": 10132.036032472626,
+  "balance": 10131.593147500456,
   "positions": {
     "BNBUSDT__SMC2": {
       "trade_id": 1704,
@@ -848,35 +848,35 @@
         "status": "open"
       }
     },
-    "SOLUSDT__POC": {
-      "trade_id": 1799,
-      "symbol": "SOLUSDT",
+    "GALAUSDT__POC": {
+      "trade_id": 1800,
+      "symbol": "GALAUSDT",
       "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-14 04:15:00",
+      "candle_time": "2026-10-14 04:30:00",
       "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 107.8,
-      "sl_price": 108.27742999999998,
-      "sl_initial": 108.27742999999998,
-      "tp1_price": 107.3,
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.002159,
+      "sl_price": 0.002151836,
+      "sl_initial": 0.002151836,
+      "tp1_price": 0.0021739999999999997,
       "tp2_price": null,
       "adx_value": null,
-      "qty_total": 0.927643784786642,
+      "qty_total": 46317.73969430292,
       "notional": 100.0,
       "leverage": 1.0,
       "signal_score": null,
       "market_snapshot": {
-        "poc": 107.79249999999999,
-        "leg_start": "2026-10-14 02:30:00",
-        "leg_end": "2026-10-14 03:30:00",
-        "rr": 1.047,
+        "poc": 0.0021615208333333334,
+        "leg_start": "2026-10-14 02:45:00",
+        "leg_end": "2026-10-14 04:00:00",
+        "rr": 2.094,
         "reason": "poc_retest_rejection",
-        "raw_sl": 107.32257000000001,
-        "raw_tp": 108.3
+        "raw_sl": 0.002166164,
+        "raw_tp": 0.002144
       },
       "lot_a": {
-        "qty": 0.927643784786642,
+        "qty": 46317.73969430292,
         "target": "tp1",
         "status": "open"
       },
@@ -887,6 +887,6 @@
       }
     }
   },
-  "next_trade_id": 1800,
+  "next_trade_id": 1801,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
