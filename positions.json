@@ -185,8 +185,106 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "VETUSDT__SMC2": {
+      "trade_id": 1847,
+      "symbol": "VETUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-14 16:45:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.007122,
+      "sl_price": 0.007023037780043648,
+      "sl_initial": 0.007023037780043648,
+      "tp1_price": 0.007270443329934527,
+      "tp2_price": 0.007418886659869056,
+      "adx_value": null,
+      "qty_total": 14040.999719180007,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 4,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 47.21,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 1,
+        "bear_fvg_count": 5,
+        "bull_ob_count": 0,
+        "bear_ob_count": 3
+      },
+      "lot_a": {
+        "qty": 7020.499859590003,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 7020.499859590003,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "MASKUSDT__SMC2": {
+      "trade_id": 1848,
+      "symbol": "MASKUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-14 16:45:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.441,
+      "sl_price": 0.4359891389382688,
+      "sl_initial": 0.4359891389382688,
+      "tp1_price": 0.4485162915925968,
+      "tp2_price": 0.45603258318519363,
+      "adx_value": null,
+      "qty_total": 226.75736961451247,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": false,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 44.56,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 1,
+        "bear_fvg_count": 4,
+        "bull_ob_count": 0,
+        "bear_ob_count": 3
+      },
+      "lot_a": {
+        "qty": 113.37868480725623,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 113.37868480725623,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1847,
+  "next_trade_id": 1849,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
