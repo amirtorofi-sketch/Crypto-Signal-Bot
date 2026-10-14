@@ -712,8 +712,47 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "VETUSDT__ST": {
+      "trade_id": 1804,
+      "symbol": "VETUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-14 06:15:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.007284,
+      "sl_price": 0.007162698518228304,
+      "sl_initial": 0.007162698518228304,
+      "tp1_price": 0.007465952222657543,
+      "tp2_price": 0.007647904445315086,
+      "adx_value": 20.269377566233086,
+      "qty_total": 13728.720483250961,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 20.269,
+        "di_plus": 20.479,
+        "di_minus": 29.283,
+        "ema_trend": 0.007448,
+        "close_vs_ema": "below",
+        "volume": 1696266.1,
+        "vol_ma": 1159321.685,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 6864.360241625481,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 6864.360241625481,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1804,
+  "next_trade_id": 1805,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
