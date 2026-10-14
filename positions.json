@@ -701,8 +701,132 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ETHUSDT__POC": {
+      "trade_id": 1787,
+      "symbol": "ETHUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-14 00:30:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 2517.07,
+      "sl_price": 2511.1094900000003,
+      "sl_initial": 2511.1094900000003,
+      "tp1_price": 2538.9700000000003,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.03972873221642624,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 2518.05,
+        "leg_start": "2026-10-13 16:15:00",
+        "leg_end": "2026-10-13 17:45:00",
+        "rr": 3.674,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 2523.03051,
+        "raw_tp": 2495.17
+      },
+      "lot_a": {
+        "qty": 0.03972873221642624,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "SOLUSDT__POC": {
+      "trade_id": 1788,
+      "symbol": "SOLUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-14 00:30:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 107.87,
+      "sl_price": 108.30754,
+      "sl_initial": 108.30754,
+      "tp1_price": 107.47000000000001,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.9270418095856122,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 107.74354166666666,
+        "leg_start": "2026-10-13 17:45:00",
+        "leg_end": "2026-10-13 19:00:00",
+        "rr": 0.914,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 107.43246,
+        "raw_tp": 108.27
+      },
+      "lot_a": {
+        "qty": 0.9270418095856122,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "VETUSDT__SMC": {
+      "trade_id": 1789,
+      "symbol": "VETUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-10-14 00:30:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.00743,
+      "sl_price": 0.007493989568422373,
+      "sl_initial": 0.007493989568422373,
+      "tp1_price": 0.007334015647366441,
+      "tp2_price": 0.007238031294732881,
+      "adx_value": null,
+      "qty_total": 13458.950201884252,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 69.58,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "bull_fvg_count": 6,
+        "bear_fvg_count": 1,
+        "bull_ob_count": 1,
+        "bear_ob_count": 2,
+        "trend": 1
+      },
+      "lot_a": {
+        "qty": 6729.475100942126,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 6729.475100942126,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1787,
+  "next_trade_id": 1790,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
