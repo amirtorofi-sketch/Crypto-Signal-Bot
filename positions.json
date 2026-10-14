@@ -1,5 +1,5 @@
 {
-  "balance": 10124.060444694342,
+  "balance": 10123.71740856735,
   "positions": {
     "ONEUSDT__SMC2": {
       "trade_id": 1827,
@@ -137,45 +137,56 @@
         "status": "none"
       }
     },
-    "DOGEUSDT__POC": {
-      "trade_id": 1845,
-      "symbol": "DOGEUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-14 16:00:00",
+    "GALAUSDT__SMC2": {
+      "trade_id": 1846,
+      "symbol": "GALAUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-14 16:30:00",
       "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.08221,
-      "sl_price": 0.08249201,
-      "sl_initial": 0.08249201,
-      "tp1_price": 0.08172000000000001,
-      "tp2_price": null,
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.002044,
+      "sl_price": 0.002008779498329007,
+      "sl_initial": 0.002008779498329007,
+      "tp1_price": 0.002096830752506489,
+      "tp2_price": 0.0021496615050129782,
       "adx_value": null,
-      "qty_total": 1216.3970319912419,
+      "qty_total": 48923.67906066537,
       "notional": 100.0,
       "leverage": 1.0,
-      "signal_score": null,
+      "signal_score": 3,
       "market_snapshot": {
-        "poc": 0.08216833333333334,
-        "leg_start": "2026-10-14 14:15:00",
-        "leg_end": "2026-10-14 15:15:00",
-        "rr": 1.738,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.08192799,
-        "raw_tp": 0.0827
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
+        "vol_spike": false,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 44.2,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 0,
+        "bear_fvg_count": 6,
+        "bull_ob_count": 0,
+        "bear_ob_count": 3
       },
       "lot_a": {
-        "qty": 1216.3970319912419,
+        "qty": 24461.839530332683,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 0.0,
+        "qty": 24461.839530332683,
         "target": "tp2",
-        "status": "none"
+        "status": "open"
       }
     }
   },
-  "next_trade_id": 1846,
+  "next_trade_id": 1847,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
