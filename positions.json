@@ -1,5 +1,5 @@
 {
-  "balance": 10120.261149920661,
+  "balance": 10120.478016821255,
   "positions": {
     "ONEUSDT__SMC2": {
       "trade_id": 1827,
@@ -224,44 +224,6 @@
         "status": "none"
       }
     },
-    "BTCUSDT__POC": {
-      "trade_id": 1857,
-      "symbol": "BTCUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-14 18:45:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 81724.0,
-      "sl_price": 81947.57201,
-      "sl_initial": 81947.57201,
-      "tp1_price": 81364.96,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.0012236307571827124,
-      "notional": 99.99999999999999,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 81681.535,
-        "leg_start": "2026-10-14 15:45:00",
-        "leg_end": "2026-10-14 17:00:00",
-        "rr": 1.606,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 81500.42799,
-        "raw_tp": 82083.04
-      },
-      "lot_a": {
-        "qty": 0.0012236307571827124,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "MASKUSDT__SMC2": {
       "trade_id": 1858,
       "symbol": "MASKUSDT",
@@ -340,44 +302,6 @@
       },
       "lot_a": {
         "qty": 14202.528049992898,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
-    "GALAUSDT__POC": {
-      "trade_id": 1861,
-      "symbol": "GALAUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-14 19:30:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.002039,
-      "sl_price": 0.0020249490000000003,
-      "sl_initial": 0.0020249490000000003,
-      "tp1_price": 0.002049,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 49043.64884747425,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.0020413958333333334,
-        "leg_start": "2026-10-14 17:00:00",
-        "leg_end": "2026-10-14 19:00:00",
-        "rr": 0.712,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.0020530509999999997,
-        "raw_tp": 0.002029
-      },
-      "lot_a": {
-        "qty": 49043.64884747425,
         "target": "tp1",
         "status": "open"
       },
