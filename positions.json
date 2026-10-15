@@ -1,5 +1,5 @@
 {
-  "balance": 10118.998397682291,
+  "balance": 10119.668489148327,
   "positions": {
     "ONEUSDT__SMC2": {
       "trade_id": 1827,
@@ -341,7 +341,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.0901,
-      "sl_price": 0.09090500321453104,
+      "sl_price": 0.0901,
       "sl_initial": 0.09090500321453104,
       "tp1_price": 0.08889249517820344,
       "tp2_price": 0.08768499035640687,
@@ -372,7 +372,7 @@
       "lot_a": {
         "qty": 554.9389567147614,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 554.9389567147614,
@@ -427,8 +427,95 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ROSEUSDT__SMC2": {
+      "trade_id": 1875,
+      "symbol": "ROSEUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-15 01:00:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.00801,
+      "sl_price": 0.007926194229653374,
+      "sl_initial": 0.007926194229653374,
+      "tp1_price": 0.008135708655519939,
+      "tp2_price": 0.008261417311039878,
+      "adx_value": null,
+      "qty_total": 12484.394506866418,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 4,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": true,
+        "vol_spike": false,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 44.43,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "trend_strong": false,
+        "trend": -1,
+        "bull_fvg_count": 3,
+        "bear_fvg_count": 5,
+        "bull_ob_count": 0,
+        "bear_ob_count": 3
+      },
+      "lot_a": {
+        "qty": 6242.197253433209,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 6242.197253433209,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "ONEUSDT__POC": {
+      "trade_id": 1876,
+      "symbol": "ONEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-15 01:00:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.00157,
+      "sl_price": 0.001576565,
+      "sl_initial": 0.001576565,
+      "tp1_price": 0.001563,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 63694.267515923566,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0015679583333333333,
+        "leg_start": "2026-10-14 23:00:00",
+        "leg_end": "2026-10-15 00:00:00",
+        "rr": 1.066,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.001563435,
+        "raw_tp": 0.001577
+      },
+      "lot_a": {
+        "qty": 63694.267515923566,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 1875,
+  "next_trade_id": 1877,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
