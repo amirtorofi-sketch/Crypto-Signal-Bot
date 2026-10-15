@@ -1,5 +1,5 @@
 {
-  "balance": 9840.785171857638,
+  "balance": 9838.701658871545,
   "positions": {
     "STGUSDT__SMC": {
       "trade_id": 8434,
@@ -240,46 +240,6 @@
       },
       "qty_open": 2525.252525252525,
       "phase": "after_tp1"
-    },
-    "DOGEUSDT__SMC": {
-      "trade_id": 17302,
-      "symbol": "DOGEUSDT",
-      "source": "ICT/SMC Scalp Pro v2",
-      "direction": "short",
-      "candle_time": "2026-10-15 03:15:00",
-      "session": "آسیا",
-      "entry_price": 0.07984,
-      "initial_sl_price": 0.08128216566189554,
-      "sl_price": 0.08128216566189554,
-      "tp1_price": 0.07767675150715667,
-      "tp2_price": 0.07551350301431335,
-      "qty_total": 1252.5050100200401,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": 4,
-      "market_snapshot": {
-        "recent_bull_sweep": true,
-        "recent_bear_sweep": false,
-        "vol_spike": false,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 35.29,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": true,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 0,
-        "bear_fvg_count": 6,
-        "bull_ob_count": 0,
-        "bear_ob_count": 3
-      },
-      "qty_open": 1252.5050100200401,
-      "phase": "before_tp1"
     },
     "CKBUSDT__SMC": {
       "trade_id": 17448,
@@ -624,46 +584,6 @@
         "bear_ob_count": 2
       },
       "qty_open": 67249.49562878278,
-      "phase": "before_tp1"
-    },
-    "TRXUSDT__SMC": {
-      "trade_id": 17837,
-      "symbol": "TRXUSDT",
-      "source": "ICT/SMC Scalp Pro v2",
-      "direction": "short",
-      "candle_time": "2026-10-15 14:00:00",
-      "session": "لندن",
-      "entry_price": 0.3304,
-      "initial_sl_price": 0.33131584656173807,
-      "sl_price": 0.33131584656173807,
-      "tp1_price": 0.32902623015739296,
-      "tp2_price": 0.3276524603147859,
-      "qty_total": 302.6634382566586,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 42.22,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 0,
-        "bear_fvg_count": 6,
-        "bull_ob_count": 1,
-        "bear_ob_count": 2
-      },
-      "qty_open": 302.6634382566586,
       "phase": "before_tp1"
     },
     "SKLUSDT__SMC": {
@@ -1045,8 +965,83 @@
         "reason": "poc_retest_rejection"
       },
       "qty_open": 5724.098454493417
+    },
+    "MANTAUSDT__POC": {
+      "trade_id": 17865,
+      "symbol": "MANTAUSDT",
+      "source": "POC Retest v2",
+      "direction": "long",
+      "candle_time": "2026-10-15 15:30:00",
+      "session": "لندن",
+      "entry_price": 0.0715,
+      "sl_price": 0.0708291,
+      "tp1_price": 0.07245,
+      "tp2_price": null,
+      "qty_total": 1398.6013986013986,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.07108229166666666,
+        "leg_start": "2026-10-15 13:45:00",
+        "leg_end": "2026-10-15 15:00:00",
+        "rr": 1.416,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 1398.6013986013986
+    },
+    "RLCUSDT__POC": {
+      "trade_id": 17866,
+      "symbol": "RLCUSDT",
+      "source": "POC Retest v2",
+      "direction": "long",
+      "candle_time": "2026-10-15 15:30:00",
+      "session": "لندن",
+      "entry_price": 0.933,
+      "sl_price": 0.9052938,
+      "tp1_price": 0.993,
+      "tp2_price": null,
+      "qty_total": 107.18113612004286,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.9295875,
+        "leg_start": "2026-10-15 11:45:00",
+        "leg_end": "2026-10-15 14:15:00",
+        "rr": 2.166,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 107.18113612004286
+    },
+    "TRXUSDT__POC": {
+      "trade_id": 17867,
+      "symbol": "TRXUSDT",
+      "source": "POC Retest v2",
+      "direction": "long",
+      "candle_time": "2026-10-15 15:30:00",
+      "session": "لندن",
+      "entry_price": 0.3317,
+      "sl_price": 0.33046919999999996,
+      "tp1_price": 0.3327,
+      "tp2_price": null,
+      "qty_total": 301.4772384684956,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.33100416666666665,
+        "leg_start": "2026-10-15 05:00:00",
+        "leg_end": "2026-10-15 08:30:00",
+        "rr": 0.812,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 301.4772384684956
     }
   },
-  "next_trade_id": 17865,
+  "next_trade_id": 17868,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
