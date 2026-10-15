@@ -1,5 +1,5 @@
 {
-  "balance": 10144.58220676624,
+  "balance": 10144.509952164897,
   "positions": {
     "BNBUSDT__SMC": {
       "trade_id": 1889,
@@ -343,44 +343,6 @@
         "status": "open"
       }
     },
-    "BTCUSDT__POC": {
-      "trade_id": 1947,
-      "symbol": "BTCUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-15 17:00:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 82310.0,
-      "sl_price": 82644.058,
-      "sl_initial": 82644.058,
-      "tp1_price": 81989.0,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.0012149192078726764,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 82218.14583333334,
-        "leg_start": "2026-10-15 13:45:00",
-        "leg_end": "2026-10-15 15:30:00",
-        "rr": 0.961,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 81975.942,
-        "raw_tp": 82631.0
-      },
-      "lot_a": {
-        "qty": 0.0012149192078726764,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "CRVUSDT__POC": {
       "trade_id": 1950,
       "symbol": "CRVUSDT",
@@ -564,44 +526,6 @@
         "qty": 24189.646831156268,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "ROSEUSDT__POC": {
-      "trade_id": 1958,
-      "symbol": "ROSEUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-15 20:30:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.00829,
-      "sl_price": 0.008251680000000003,
-      "sl_initial": 0.008251680000000003,
-      "tp1_price": 0.008360000000000001,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 12062.7261761158,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.008301458333333334,
-        "leg_start": "2026-10-15 18:30:00",
-        "leg_end": "2026-10-15 19:45:00",
-        "rr": 1.827,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.008328319999999998,
-        "raw_tp": 0.00822
-      },
-      "lot_a": {
-        "qty": 12062.7261761158,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     },
     "ONEUSDT__POC": {
