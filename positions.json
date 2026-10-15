@@ -483,8 +483,122 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CRVUSDT__POC": {
+      "trade_id": 1893,
+      "symbol": "CRVUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-15 03:45:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.3245,
+      "sl_price": 0.3276217,
+      "sl_initial": 0.3276217,
+      "tp1_price": 0.3224,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 308.1664098613251,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.3229791666666667,
+        "leg_start": "2026-10-15 02:15:00",
+        "leg_end": "2026-10-15 03:15:00",
+        "rr": 0.673,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.3213783,
+        "raw_tp": 0.3266
+      },
+      "lot_a": {
+        "qty": 308.1664098613251,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "CHZUSDT__POC": {
+      "trade_id": 1894,
+      "symbol": "CHZUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-15 03:45:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.01367,
+      "sl_price": 0.01374361,
+      "sl_initial": 0.01374361,
+      "tp1_price": 0.01356,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 7315.2889539136795,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.013651875,
+        "leg_start": "2026-10-15 02:15:00",
+        "leg_end": "2026-10-15 03:15:00",
+        "rr": 1.494,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.01359639,
+        "raw_tp": 0.01378
+      },
+      "lot_a": {
+        "qty": 7315.2889539136795,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "GALAUSDT__POC": {
+      "trade_id": 1895,
+      "symbol": "GALAUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-15 03:45:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.001959,
+      "sl_price": 0.0019769429999999992,
+      "sl_initial": 0.0019769429999999992,
+      "tp1_price": 0.0019409999999999996,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 51046.452271567134,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0019537708333333334,
+        "leg_start": "2026-10-15 02:15:00",
+        "leg_end": "2026-10-15 03:15:00",
+        "rr": 1.003,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.0019410570000000002,
+        "raw_tp": 0.001977
+      },
+      "lot_a": {
+        "qty": 51046.452271567134,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 1893,
+  "next_trade_id": 1896,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
