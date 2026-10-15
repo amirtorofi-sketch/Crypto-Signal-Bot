@@ -1,5 +1,5 @@
 {
-  "balance": 10145.77114262988,
+  "balance": 10145.411830494902,
   "positions": {
     "BNBUSDT__SMC": {
       "trade_id": 1889,
@@ -565,44 +565,6 @@
         "status": "none"
       }
     },
-    "ONEUSDT__POC": {
-      "trade_id": 1967,
-      "symbol": "ONEUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-15 23:00:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.001541,
-      "sl_price": 0.0015465370000000002,
-      "sl_initial": 0.0015465370000000002,
-      "tp1_price": 0.001497,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 64892.926670992856,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.0015393124999999999,
-        "leg_start": "2026-10-15 19:15:00",
-        "leg_end": "2026-10-15 21:30:00",
-        "rr": 7.947,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.001535463,
-        "raw_tp": 0.001585
-      },
-      "lot_a": {
-        "qty": 64892.926670992856,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "VETUSDT__SMC2": {
       "trade_id": 1968,
       "symbol": "VETUSDT",
@@ -700,8 +662,46 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "MASKUSDT__POC": {
+      "trade_id": 1970,
+      "symbol": "MASKUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-15 23:30:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.429,
+      "sl_price": 0.430428,
+      "sl_initial": 0.430428,
+      "tp1_price": 0.425,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 233.1002331002331,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.428125,
+        "leg_start": "2026-10-15 13:45:00",
+        "leg_end": "2026-10-15 16:45:00",
+        "rr": 2.801,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.427572,
+        "raw_tp": 0.433
+      },
+      "lot_a": {
+        "qty": 233.1002331002331,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 1970,
+  "next_trade_id": 1971,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
