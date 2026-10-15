@@ -1,5 +1,5 @@
 {
-  "balance": 9836.360907241386,
+  "balance": 9834.948988211283,
   "positions": {
     "STGUSDT__SMC": {
       "trade_id": 8434,
@@ -545,31 +545,6 @@
       },
       "qty_open": 108.40108401084011,
       "phase": "before_tp1"
-    },
-    "DUSKUSDT__POC": {
-      "trade_id": 17861,
-      "symbol": "DUSKUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-15 15:15:00",
-      "session": "لندن",
-      "entry_price": 0.1147,
-      "sl_price": 0.111888,
-      "tp1_price": 0.1206,
-      "tp2_price": null,
-      "qty_total": 871.8395815170009,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.112075,
-        "leg_start": "2026-10-15 13:30:00",
-        "leg_end": "2026-10-15 14:30:00",
-        "rr": 2.098,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 871.8395815170009
     },
     "MTLUSDT__SMC": {
       "trade_id": 17862,
@@ -2811,31 +2786,6 @@
       },
       "qty_open": 502.00803212851406
     },
-    "IMXUSDT__POC": {
-      "trade_id": 17967,
-      "symbol": "IMXUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-15 17:30:00",
-      "session": "نیویورک",
-      "entry_price": 0.1661,
-      "sl_price": 0.1654344,
-      "tp1_price": 0.1666,
-      "tp2_price": null,
-      "qty_total": 602.0469596628537,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.1659,
-        "leg_start": "2026-10-15 13:45:00",
-        "leg_end": "2026-10-15 16:45:00",
-        "rr": 0.751,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 602.0469596628537
-    },
     "MEMEUSDT__SMC": {
       "trade_id": 17968,
       "symbol": "MEMEUSDT",
@@ -2941,32 +2891,57 @@
       "qty_open": 169204.7377326565,
       "phase": "before_tp1"
     },
-    "WLDUSDT__POC": {
-      "trade_id": 17971,
-      "symbol": "WLDUSDT",
+    "DIAUSDT__POC": {
+      "trade_id": 17972,
+      "symbol": "DIAUSDT",
       "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-15 17:30:00",
+      "direction": "short",
+      "candle_time": "2026-10-15 17:45:00",
       "session": "نیویورک",
-      "entry_price": 0.5009,
-      "sl_price": 0.4967028,
-      "tp1_price": 0.5046,
+      "entry_price": 0.1677,
+      "sl_price": 0.16816799999999998,
+      "tp1_price": 0.1671,
       "tp2_price": null,
-      "qty_total": 199.64064683569575,
+      "qty_total": 596.3029218843172,
       "notional": 100.0,
       "leverage": 1.0,
       "margin_usd": 100.0,
       "signal_score": null,
       "market_snapshot": {
-        "poc": 0.5002145833333334,
-        "leg_start": "2026-10-15 13:45:00",
-        "leg_end": "2026-10-15 15:45:00",
-        "rr": 0.882,
+        "poc": 0.16797499999999999,
+        "leg_start": "2026-10-15 16:15:00",
+        "leg_end": "2026-10-15 17:00:00",
+        "rr": 1.282,
         "reason": "poc_retest_rejection"
       },
-      "qty_open": 199.64064683569575
+      "qty_open": 596.3029218843172
+    },
+    "OGNUSDT__POC": {
+      "trade_id": 17973,
+      "symbol": "OGNUSDT",
+      "source": "POC Retest v2",
+      "direction": "short",
+      "candle_time": "2026-10-15 17:45:00",
+      "session": "نیویورک",
+      "entry_price": 0.03111,
+      "sl_price": 0.03131128,
+      "tp1_price": 0.03078,
+      "tp2_price": null,
+      "qty_total": 3214.400514304082,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.031259166666666664,
+        "leg_start": "2026-10-15 14:45:00",
+        "leg_end": "2026-10-15 17:00:00",
+        "rr": 1.64,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 3214.400514304082
     }
   },
-  "next_trade_id": 17972,
+  "next_trade_id": 17974,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
