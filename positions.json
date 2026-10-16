@@ -1,5 +1,5 @@
 {
-  "balance": 10146.345066819767,
+  "balance": 10146.896752611807,
   "positions": {
     "BNBUSDT__SMC": {
       "trade_id": 1889,
@@ -303,7 +303,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.3593,
-      "sl_price": 0.3677366059587996,
+      "sl_price": 0.3593,
       "sl_initial": 0.3677366059587996,
       "tp1_price": 0.34664509106180064,
       "tp2_price": 0.33399018212360126,
@@ -335,7 +335,7 @@
       "lot_a": {
         "qty": 139.15947676036737,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 139.15947676036737,
@@ -475,55 +475,6 @@
       },
       "lot_b": {
         "qty": 607.0908207867897,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "ONEUSDT__SMC2": {
-      "trade_id": 1985,
-      "symbol": "ONEUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-16 05:00:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.001532,
-      "sl_price": 0.0015134725325776852,
-      "sl_initial": 0.0015134725325776852,
-      "tp1_price": 0.0015597912011334721,
-      "tp2_price": 0.0015875824022669443,
-      "adx_value": null,
-      "qty_total": 65274.15143603134,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": false,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 45.62,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": true,
-        "trend_strong": false,
-        "trend": -1,
-        "bull_fvg_count": 1,
-        "bear_fvg_count": 5,
-        "bull_ob_count": 1,
-        "bear_ob_count": 2
-      },
-      "lot_a": {
-        "qty": 32637.07571801567,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 32637.07571801567,
         "target": "tp2",
         "status": "open"
       }
