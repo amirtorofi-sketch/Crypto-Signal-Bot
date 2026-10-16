@@ -847,8 +847,47 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "DOGEUSDT__ST": {
+      "trade_id": 2020,
+      "symbol": "DOGEUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-16 13:45:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.08158,
+      "sl_price": 0.08047937313237263,
+      "sl_initial": 0.08047937313237263,
+      "tp1_price": 0.08323094030144104,
+      "tp2_price": 0.0848818806028821,
+      "adx_value": 21.818924611780545,
+      "qty_total": 1225.790634959549,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 21.819,
+        "di_plus": 14.503,
+        "di_minus": 30.953,
+        "ema_trend": 0.081862,
+        "close_vs_ema": "below",
+        "volume": 9710539.0,
+        "vol_ma": 7730051.15,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 612.8953174797745,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 612.8953174797745,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 2020,
+  "next_trade_id": 2021,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
