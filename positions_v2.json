@@ -1,5 +1,5 @@
 {
-  "balance": 9713.348080295498,
+  "balance": 9717.072499204029,
   "positions": {
     "STGUSDT__SMC": {
       "trade_id": 8434,
@@ -770,7 +770,7 @@
       "session": "لندن",
       "entry_price": 0.1798,
       "initial_sl_price": 0.18127276926188515,
-      "sl_price": 0.18127276926188515,
+      "sl_price": 0.1798,
       "tp1_price": 0.17759084610717224,
       "tp2_price": 0.1753816922143445,
       "qty_total": 556.1735261401558,
@@ -798,8 +798,8 @@
         "bull_ob_count": 1,
         "bear_ob_count": 2
       },
-      "qty_open": 556.1735261401558,
-      "phase": "before_tp1"
+      "qty_open": 278.0867630700779,
+      "phase": "after_tp1"
     },
     "ASTERUSDT__SMC": {
       "trade_id": 18919,
@@ -3741,31 +3741,6 @@
       },
       "qty_open": 488.99755501222495
     },
-    "TIAUSDT__POC": {
-      "trade_id": 19038,
-      "symbol": "TIAUSDT",
-      "source": "POC Retest v2",
-      "direction": "short",
-      "candle_time": "2026-10-16 17:45:00",
-      "session": "نیویورک",
-      "entry_price": 0.6913,
-      "sl_price": 0.7027019999999998,
-      "tp1_price": 0.6698,
-      "tp2_price": null,
-      "qty_total": 144.65499783017503,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.6976645833333334,
-        "leg_start": "2026-10-16 14:15:00",
-        "leg_end": "2026-10-16 17:15:00",
-        "rr": 1.886,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 144.65499783017503
-    },
     "APEUSDT__POC": {
       "trade_id": 19040,
       "symbol": "APEUSDT",
@@ -3985,8 +3960,88 @@
         "reason": "poc_retest_rejection"
       },
       "qty_open": 12610.340479192939
+    },
+    "API3USDT__SMC": {
+      "trade_id": 19048,
+      "symbol": "API3USDT",
+      "source": "ICT/SMC Scalp Pro v2",
+      "direction": "short",
+      "candle_time": "2026-10-16 18:45:00",
+      "session": "نیویورک",
+      "entry_price": 0.2861,
+      "initial_sl_price": 0.2904363359160977,
+      "sl_price": 0.2904363359160977,
+      "tp1_price": 0.27959549612585355,
+      "tp2_price": 0.273090992251707,
+      "qty_total": 349.5281370150297,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": 4,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 46.26,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 1,
+        "bear_fvg_count": 5,
+        "bull_ob_count": 1,
+        "bear_ob_count": 3
+      },
+      "qty_open": 349.5281370150297,
+      "phase": "before_tp1"
+    },
+    "INITUSDT__SMC": {
+      "trade_id": 19049,
+      "symbol": "INITUSDT",
+      "source": "ICT/SMC Scalp Pro v2",
+      "direction": "short",
+      "candle_time": "2026-10-16 18:45:00",
+      "session": "نیویورک",
+      "entry_price": 0.12591,
+      "initial_sl_price": 0.12977559535653058,
+      "sl_price": 0.12977559535653058,
+      "tp1_price": 0.12011160696520412,
+      "tp2_price": 0.11431321393040825,
+      "qty_total": 794.2180922881423,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": 4,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
+        "vol_spike": false,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 32.83,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 0,
+        "bear_fvg_count": 6,
+        "bull_ob_count": 1,
+        "bear_ob_count": 1
+      },
+      "qty_open": 794.2180922881423,
+      "phase": "before_tp1"
     }
   },
-  "next_trade_id": 19048,
+  "next_trade_id": 19050,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
