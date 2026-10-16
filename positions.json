@@ -1,5 +1,5 @@
 {
-  "balance": 10154.857826651498,
+  "balance": 10154.559086598447,
   "positions": {
     "CRVUSDT__SMC2": {
       "trade_id": 1953,
@@ -585,45 +585,94 @@
         "status": "open"
       }
     },
-    "ONEUSDT__POC": {
-      "trade_id": 2056,
-      "symbol": "ONEUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-16 23:15:00",
+    "CRVUSDT__ST": {
+      "trade_id": 2057,
+      "symbol": "CRVUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-16 23:30:00",
       "session": "نیویورک",
       "raw_direction": "long",
       "direction": "short",
-      "entry_price": 0.001508,
-      "sl_price": 0.001512505,
-      "sl_initial": 0.001512505,
-      "tp1_price": 0.0014810000000000001,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 66312.99734748011,
+      "entry_price": 0.3529,
+      "sl_price": 0.3611589101280978,
+      "sl_initial": 0.3611589101280978,
+      "tp1_price": 0.3405116348078533,
+      "tp2_price": 0.32812326961570654,
+      "adx_value": 23.28694753378766,
+      "qty_total": 283.36639274582035,
       "notional": 100.0,
       "leverage": 1.0,
       "signal_score": null,
       "market_snapshot": {
-        "poc": 0.0015064791666666666,
-        "leg_start": "2026-10-16 20:15:00",
-        "leg_end": "2026-10-16 21:30:00",
-        "rr": 5.993,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.001503495,
-        "raw_tp": 0.001535
+        "adx": 23.287,
+        "di_plus": 30.02,
+        "di_minus": 11.989,
+        "ema_trend": 0.346706,
+        "close_vs_ema": "above",
+        "volume": 77025.4,
+        "vol_ma": 63499.31,
+        "vol_above_ma": true
       },
       "lot_a": {
-        "qty": 66312.99734748011,
+        "qty": 141.68319637291017,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 0.0,
+        "qty": 141.68319637291017,
         "target": "tp2",
-        "status": "none"
+        "status": "open"
+      }
+    },
+    "CRVUSDT__SMC": {
+      "trade_id": 2058,
+      "symbol": "CRVUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-10-16 23:30:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.3529,
+      "sl_price": 0.35672252235847,
+      "sl_initial": 0.35672252235847,
+      "tp1_price": 0.34716621646229495,
+      "tp2_price": 0.3414324329245899,
+      "adx_value": null,
+      "qty_total": 283.36639274582035,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 67.86,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "bull_fvg_count": 5,
+        "bear_fvg_count": 1,
+        "bull_ob_count": 2,
+        "bear_ob_count": 3,
+        "trend": 1
+      },
+      "lot_a": {
+        "qty": 141.68319637291017,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 141.68319637291017,
+        "target": "tp2",
+        "status": "open"
       }
     }
   },
-  "next_trade_id": 2057,
+  "next_trade_id": 2059,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
