@@ -1,5 +1,5 @@
 {
-  "balance": 10146.414811810364,
+  "balance": 10147.10894977278,
   "positions": {
     "BNBUSDT__SMC": {
       "trade_id": 1889,
@@ -392,55 +392,6 @@
         "status": "open"
       }
     },
-    "GALAUSDT__SMC2": {
-      "trade_id": 1957,
-      "symbol": "GALAUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-15 20:00:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.002067,
-      "sl_price": 0.0020958929316979655,
-      "sl_initial": 0.0020958929316979655,
-      "tp1_price": 0.002023660602453051,
-      "tp2_price": 0.0019803212049061027,
-      "adx_value": null,
-      "qty_total": 48379.293662312535,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": false,
-        "strong_bear_rej": false,
-        "htf_bullish": true,
-        "htf_bearish": false,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 68.03,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": 1,
-        "bull_fvg_count": 6,
-        "bear_fvg_count": 0,
-        "bull_ob_count": 2,
-        "bear_ob_count": 1
-      },
-      "lot_a": {
-        "qty": 24189.646831156268,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 24189.646831156268,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "ETHUSDT__ST": {
       "trade_id": 1974,
       "symbol": "ETHUSDT",
@@ -476,54 +427,6 @@
       },
       "lot_b": {
         "qty": 0.020558111614099574,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "GALAUSDT__SMC": {
-      "trade_id": 1978,
-      "symbol": "GALAUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-10-16 02:45:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.002043,
-      "sl_price": 0.002043,
-      "sl_initial": 0.0020250046474535382,
-      "tp1_price": 0.002069993028819693,
-      "tp2_price": 0.002096986057639386,
-      "adx_value": null,
-      "qty_total": 48947.62604013705,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 6,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": true,
-        "vol_spike": true,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 46.45,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": true,
-        "bull_fvg_count": 4,
-        "bear_fvg_count": 2,
-        "bull_ob_count": 2,
-        "bear_ob_count": 1,
-        "trend": -1
-      },
-      "lot_a": {
-        "qty": 24473.813020068526,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 24473.813020068526,
         "target": "tp2",
         "status": "open"
       }
@@ -759,45 +662,55 @@
         "status": "none"
       }
     },
-    "GALAUSDT__POC": {
-      "trade_id": 1992,
+    "GALAUSDT__SMC": {
+      "trade_id": 1993,
       "symbol": "GALAUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-16 06:45:00",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-10-16 07:00:00",
       "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.002076,
-      "sl_price": 0.0020659160000000005,
-      "sl_initial": 0.0020659160000000005,
-      "tp1_price": 0.002092,
-      "tp2_price": null,
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.002095,
+      "sl_price": 0.002119975492651161,
+      "sl_initial": 0.002119975492651161,
+      "tp1_price": 0.0020575367610232587,
+      "tp2_price": 0.002020073522046518,
       "adx_value": null,
-      "qty_total": 48169.556840077064,
+      "qty_total": 47732.6968973747,
       "notional": 100.0,
       "leverage": 1.0,
-      "signal_score": null,
+      "signal_score": 5,
       "market_snapshot": {
-        "poc": 0.0020774375000000003,
-        "leg_start": "2026-10-16 05:00:00",
-        "leg_end": "2026-10-16 06:00:00",
-        "rr": 1.587,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.0020860839999999998,
-        "raw_tp": 0.00206
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 62.64,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "bull_fvg_count": 6,
+        "bear_fvg_count": 0,
+        "bull_ob_count": 3,
+        "bear_ob_count": 1,
+        "trend": 1
       },
       "lot_a": {
-        "qty": 48169.556840077064,
+        "qty": 23866.34844868735,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 0.0,
+        "qty": 23866.34844868735,
         "target": "tp2",
-        "status": "none"
+        "status": "open"
       }
     }
   },
-  "next_trade_id": 1993,
+  "next_trade_id": 1994,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
