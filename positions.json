@@ -738,8 +738,56 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "MANAUSDT__SMC": {
+      "trade_id": 1983,
+      "symbol": "MANAUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-10-16 04:15:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.0907,
+      "sl_price": 0.09155208786590309,
+      "sl_initial": 0.09155208786590309,
+      "tp1_price": 0.08942186820114537,
+      "tp2_price": 0.08814373640229074,
+      "adx_value": null,
+      "qty_total": 1102.5358324145534,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 6,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 62.76,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "bull_fvg_count": 3,
+        "bear_fvg_count": 0,
+        "bull_ob_count": 2,
+        "bear_ob_count": 1,
+        "trend": 1
+      },
+      "lot_a": {
+        "qty": 551.2679162072767,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 551.2679162072767,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 1983,
+  "next_trade_id": 1984,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
