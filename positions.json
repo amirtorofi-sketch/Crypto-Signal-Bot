@@ -1,5 +1,5 @@
 {
-  "balance": 10157.895997453978,
+  "balance": 10157.264142040493,
   "positions": {
     "BNBUSDT__SMC": {
       "trade_id": 1889,
@@ -241,45 +241,6 @@
       },
       "lot_b": {
         "qty": 139.15947676036737,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "ETHUSDT__ST": {
-      "trade_id": 1974,
-      "symbol": "ETHUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-10-16 01:15:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 2432.13,
-      "sl_price": 2432.13,
-      "sl_initial": 2399.577333913954,
-      "tp1_price": 2480.958999129069,
-      "tp2_price": 2529.787998258138,
-      "adx_value": 19.833174261524647,
-      "qty_total": 0.04111622322819915,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "adx": 19.833,
-        "di_plus": 18.322,
-        "di_minus": 28.777,
-        "ema_trend": 2434.569589,
-        "close_vs_ema": "below",
-        "volume": 2623.6912,
-        "vol_ma": 1497.9715,
-        "vol_above_ma": true
-      },
-      "lot_a": {
-        "qty": 0.020558111614099574,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 0.020558111614099574,
         "target": "tp2",
         "status": "open"
       }
@@ -568,44 +529,6 @@
         "status": "open"
       }
     },
-    "BTCUSDT__POC": {
-      "trade_id": 2023,
-      "symbol": "BTCUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-16 14:45:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 81974.45,
-      "sl_price": 81456.49,
-      "sl_initial": 81456.49,
-      "tp1_price": 82259.14,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.0012198922957092119,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 82028.58604166665,
-        "leg_start": "2026-10-16 11:15:00",
-        "leg_end": "2026-10-16 13:45:00",
-        "rr": 0.55,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 82492.40999999999,
-        "raw_tp": 81689.76
-      },
-      "lot_a": {
-        "qty": 0.0012198922957092119,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "SOLUSDT__ST": {
       "trade_id": 2027,
       "symbol": "SOLUSDT",
@@ -810,8 +733,46 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "VETUSDT__POC": {
+      "trade_id": 2032,
+      "symbol": "VETUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-16 15:45:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.006932,
+      "sl_price": 0.006867010000000001,
+      "sl_initial": 0.006867010000000001,
+      "tp1_price": 0.006958,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 14425.851125216388,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.00695475,
+        "leg_start": "2026-10-16 14:30:00",
+        "leg_end": "2026-10-16 15:15:00",
+        "rr": 0.4,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.006996989999999999,
+        "raw_tp": 0.006906
+      },
+      "lot_a": {
+        "qty": 14425.851125216388,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2032,
+  "next_trade_id": 2033,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
