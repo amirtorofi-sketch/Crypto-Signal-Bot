@@ -1,5 +1,5 @@
 {
-  "balance": 10147.12289197572,
+  "balance": 10147.783514315897,
   "positions": {
     "BNBUSDT__SMC": {
       "trade_id": 1889,
@@ -586,7 +586,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.002043,
-      "sl_price": 0.0020250046474535382,
+      "sl_price": 0.002043,
       "sl_initial": 0.0020250046474535382,
       "tp1_price": 0.002069993028819693,
       "tp2_price": 0.002096986057639386,
@@ -617,7 +617,7 @@
       "lot_a": {
         "qty": 24473.813020068526,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 24473.813020068526,
@@ -662,8 +662,84 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "BTCUSDT__POC": {
+      "trade_id": 1981,
+      "symbol": "BTCUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-16 04:00:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 82039.64,
+      "sl_price": 81871.14399000001,
+      "sl_initial": 81871.14399000001,
+      "tp1_price": 82391.28,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.0012189229499300581,
+      "notional": 99.99999999999999,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 82044.50645833333,
+        "leg_start": "2026-10-16 02:30:00",
+        "leg_end": "2026-10-16 03:30:00",
+        "rr": 2.087,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 82208.13600999999,
+        "raw_tp": 81688.0
+      },
+      "lot_a": {
+        "qty": 0.0012189229499300581,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "GALAUSDT__POC": {
+      "trade_id": 1982,
+      "symbol": "GALAUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-16 04:00:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.002067,
+      "sl_price": 0.00206193,
+      "sl_initial": 0.00206193,
+      "tp1_price": 0.0020879999999999996,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 48379.293662312535,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0020686875,
+        "leg_start": "2026-10-15 19:15:00",
+        "leg_end": "2026-10-15 20:45:00",
+        "rr": 4.142,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.0020720699999999996,
+        "raw_tp": 0.002046
+      },
+      "lot_a": {
+        "qty": 48379.293662312535,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 1981,
+  "next_trade_id": 1983,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
