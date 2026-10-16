@@ -782,8 +782,46 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "BTCUSDT__POC": {
+      "trade_id": 2034,
+      "symbol": "BTCUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-16 16:30:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 81549.73,
+      "sl_price": 81355.70791,
+      "sl_initial": 81355.70791,
+      "tp1_price": 81856.90999999999,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.0012262456295072958,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 81579.86208333334,
+        "leg_start": "2026-10-16 14:15:00",
+        "leg_end": "2026-10-16 16:00:00",
+        "rr": 1.583,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 81743.75209,
+        "raw_tp": 81242.55
+      },
+      "lot_a": {
+        "qty": 0.0012262456295072958,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2034,
+  "next_trade_id": 2035,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
