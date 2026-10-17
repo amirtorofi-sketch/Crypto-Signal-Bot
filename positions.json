@@ -1,5 +1,5 @@
 {
-  "balance": 10146.496260763917,
+  "balance": 10147.758425997057,
   "positions": {
     "CRVUSDT__SMC2": {
       "trade_id": 1953,
@@ -274,7 +274,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.408,
-      "sl_price": 0.40511430893659567,
+      "sl_price": 0.408,
       "sl_initial": 0.40511430893659567,
       "tp1_price": 0.41232853659510643,
       "tp2_price": 0.4166570731902129,
@@ -306,7 +306,7 @@
       "lot_a": {
         "qty": 122.54901960784315,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 122.54901960784315,
@@ -430,44 +430,6 @@
       },
       "lot_a": {
         "qty": 0.13990905911157747,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
-    "MASKUSDT__POC": {
-      "trade_id": 2100,
-      "symbol": "MASKUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-17 17:30:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.41,
-      "sl_price": 0.40858900000000004,
-      "sl_initial": 0.40858900000000004,
-      "tp1_price": 0.413,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 243.90243902439025,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.4101666666666667,
-        "leg_start": "2026-10-17 14:15:00",
-        "leg_end": "2026-10-17 15:45:00",
-        "rr": 2.126,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.4114109999999999,
-        "raw_tp": 0.407
-      },
-      "lot_a": {
-        "qty": 243.90243902439025,
         "target": "tp1",
         "status": "open"
       },
