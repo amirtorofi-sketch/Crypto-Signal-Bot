@@ -650,8 +650,144 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "SOLUSDT__SMC2": {
+      "trade_id": 2127,
+      "symbol": "SOLUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-17 22:30:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 103.12,
+      "sl_price": 102.18158600316974,
+      "sl_initial": 102.18158600316974,
+      "tp1_price": 104.5276209952454,
+      "tp2_price": 105.9352419904908,
+      "adx_value": null,
+      "qty_total": 0.9697439875872769,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 42.87,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 1,
+        "bear_fvg_count": 5,
+        "bull_ob_count": 1,
+        "bear_ob_count": 3
+      },
+      "lot_a": {
+        "qty": 0.48487199379363843,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.48487199379363843,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "ONEUSDT__SMC2": {
+      "trade_id": 2128,
+      "symbol": "ONEUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-17 22:30:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.001478,
+      "sl_price": 0.001448030064253392,
+      "sl_initial": 0.001448030064253392,
+      "tp1_price": 0.001522954903619912,
+      "tp2_price": 0.0015679098072398237,
+      "adx_value": null,
+      "qty_total": 67658.99864682004,
+      "notional": 100.00000000000001,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": true,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 57.21,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 1,
+        "bear_fvg_count": 4,
+        "bull_ob_count": 0,
+        "bear_ob_count": 3
+      },
+      "lot_a": {
+        "qty": 33829.49932341002,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 33829.49932341002,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "ONEUSDT__POC": {
+      "trade_id": 2129,
+      "symbol": "ONEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-17 22:30:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.001478,
+      "sl_price": 0.0015044529999999998,
+      "sl_initial": 0.0015044529999999998,
+      "tp1_price": 0.0014719999999999998,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 67658.99864682004,
+      "notional": 100.00000000000001,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0014718125,
+        "leg_start": "2026-10-17 19:30:00",
+        "leg_end": "2026-10-17 21:00:00",
+        "rr": 0.227,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.001451547,
+        "raw_tp": 0.001484
+      },
+      "lot_a": {
+        "qty": 67658.99864682004,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2127,
+  "next_trade_id": 2130,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
