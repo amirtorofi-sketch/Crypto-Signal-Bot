@@ -1,5 +1,5 @@
 {
-  "balance": 10146.603034057332,
+  "balance": 10146.24404311296,
   "positions": {
     "CRVUSDT__SMC2": {
       "trade_id": 1953,
@@ -450,35 +450,35 @@
         "status": "open"
       }
     },
-    "ROSEUSDT__POC": {
-      "trade_id": 2108,
-      "symbol": "ROSEUSDT",
+    "ONEUSDT__POC": {
+      "trade_id": 2109,
+      "symbol": "ONEUSDT",
       "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-17 19:45:00",
+      "candle_time": "2026-10-17 20:00:00",
       "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.00773,
-      "sl_price": 0.007702250000000001,
-      "sl_initial": 0.007702250000000001,
-      "tp1_price": 0.00783,
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.001459,
+      "sl_price": 0.001471448,
+      "sl_initial": 0.001471448,
+      "tp1_price": 0.001453,
       "tp2_price": null,
       "adx_value": null,
-      "qty_total": 12936.6106080207,
+      "qty_total": 68540.09595613433,
       "notional": 100.0,
       "leverage": 1.0,
       "signal_score": null,
       "market_snapshot": {
-        "poc": 0.007742499999999999,
-        "leg_start": "2026-10-17 14:15:00",
-        "leg_end": "2026-10-17 15:45:00",
-        "rr": 3.604,
+        "poc": 0.0014519791666666665,
+        "leg_start": "2026-10-17 16:30:00",
+        "leg_end": "2026-10-17 18:15:00",
+        "rr": 0.482,
         "reason": "poc_retest_rejection",
-        "raw_sl": 0.007757749999999999,
-        "raw_tp": 0.00763
+        "raw_sl": 0.001446552,
+        "raw_tp": 0.001465
       },
       "lot_a": {
-        "qty": 12936.6106080207,
+        "qty": 68540.09595613433,
         "target": "tp1",
         "status": "open"
       },
@@ -489,6 +489,6 @@
       }
     }
   },
-  "next_trade_id": 2109,
+  "next_trade_id": 2110,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
