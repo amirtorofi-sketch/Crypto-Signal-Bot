@@ -1,5 +1,5 @@
 {
-  "balance": 10147.612968767085,
+  "balance": 10143.862817426127,
   "positions": {
     "CRVUSDT__SMC2": {
       "trade_id": 1953,
@@ -46,45 +46,6 @@
       },
       "lot_b": {
         "qty": 139.15947676036737,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "GALAUSDT__ST": {
-      "trade_id": 2029,
-      "symbol": "GALAUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-10-16 15:00:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.002037,
-      "sl_price": 0.001970781600254654,
-      "sl_initial": 0.001970781600254654,
-      "tp1_price": 0.0021363275996180192,
-      "tp2_price": 0.0022356551992360383,
-      "adx_value": 21.844954243206143,
-      "qty_total": 49091.801669121254,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "adx": 21.845,
-        "di_plus": 12.587,
-        "di_minus": 32.011,
-        "ema_trend": 0.00206,
-        "close_vs_ema": "below",
-        "volume": 16942715.0,
-        "vol_ma": 9214651.0,
-        "vol_above_ma": true
-      },
-      "lot_a": {
-        "qty": 24545.900834560627,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 24545.900834560627,
         "target": "tp2",
         "status": "open"
       }
@@ -294,55 +255,6 @@
         "status": "open"
       }
     },
-    "SOLUSDT__SMC2": {
-      "trade_id": 2085,
-      "symbol": "SOLUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-17 14:30:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 104.26,
-      "sl_price": 103.73935601037131,
-      "sl_initial": 103.73935601037131,
-      "tp1_price": 105.04096598444305,
-      "tp2_price": 105.82193196888609,
-      "adx_value": null,
-      "qty_total": 0.9591406100134279,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 4,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": false,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 45.16,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": true,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 2,
-        "bear_fvg_count": 5,
-        "bull_ob_count": 1,
-        "bear_ob_count": 2
-      },
-      "lot_a": {
-        "qty": 0.47957030500671394,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.47957030500671394,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "MANAUSDT__SMC2": {
       "trade_id": 2091,
       "symbol": "MANAUSDT",
@@ -468,8 +380,46 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "MANAUSDT__POC": {
+      "trade_id": 2095,
+      "symbol": "MANAUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-17 15:45:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.0892,
+      "sl_price": 0.08800970000000001,
+      "sl_initial": 0.08800970000000001,
+      "tp1_price": 0.0911,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 1121.0762331838564,
+      "notional": 99.99999999999999,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.08936250000000001,
+        "leg_start": "2026-10-17 11:15:00",
+        "leg_end": "2026-10-17 13:30:00",
+        "rr": 1.596,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.09039029999999999,
+        "raw_tp": 0.0873
+      },
+      "lot_a": {
+        "qty": 1121.0762331838564,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2095,
+  "next_trade_id": 2096,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
