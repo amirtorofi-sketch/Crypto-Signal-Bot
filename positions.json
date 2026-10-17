@@ -1,5 +1,5 @@
 {
-  "balance": 10155.16780134174,
+  "balance": 10156.42924848271,
   "positions": {
     "CRVUSDT__SMC2": {
       "trade_id": 1953,
@@ -323,7 +323,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.0876,
-      "sl_price": 0.08652345873142031,
+      "sl_price": 0.0876,
       "sl_initial": 0.08652345873142031,
       "tp1_price": 0.08921481190286953,
       "tp2_price": 0.09082962380573906,
@@ -355,7 +355,7 @@
       "lot_a": {
         "qty": 570.7762557077626,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 570.7762557077626,
@@ -731,44 +731,6 @@
         "qty": 7179.781734635268,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "MANAUSDT__POC": {
-      "trade_id": 2070,
-      "symbol": "MANAUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-17 06:15:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.0883,
-      "sl_price": 0.08791140000000001,
-      "sl_initial": 0.08791140000000001,
-      "tp1_price": 0.08860000000000001,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 1132.502831257078,
-      "notional": 99.99999999999999,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.08830625,
-        "leg_start": "2026-10-17 02:00:00",
-        "leg_end": "2026-10-17 03:00:00",
-        "rr": 0.772,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.08868859999999999,
-        "raw_tp": 0.088
-      },
-      "lot_a": {
-        "qty": 1132.502831257078,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     },
     "CRVUSDT__POC": {
