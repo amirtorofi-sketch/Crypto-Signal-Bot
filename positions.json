@@ -796,8 +796,57 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "DOGEUSDT__SMC2": {
+      "trade_id": 2132,
+      "symbol": "DOGEUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-17 23:15:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.07909,
+      "sl_price": 0.07824676996418495,
+      "sl_initial": 0.07824676996418495,
+      "tp1_price": 0.08035484505372256,
+      "tp2_price": 0.08161969010744513,
+      "adx_value": null,
+      "qty_total": 1264.3823492224049,
+      "notional": 99.99999999999999,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": true,
+        "vol_spike": false,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 43.3,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 1,
+        "bear_fvg_count": 5,
+        "bull_ob_count": 0,
+        "bear_ob_count": 2
+      },
+      "lot_a": {
+        "qty": 632.1911746112024,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 632.1911746112024,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 2132,
+  "next_trade_id": 2133,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
