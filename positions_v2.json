@@ -1,5 +1,5 @@
 {
-  "balance": 9647.594187405417,
+  "balance": 9646.069012512397,
   "positions": {
     "STGUSDT__SMC": {
       "trade_id": 8434,
@@ -3430,7 +3430,7 @@
       "session": "آسیا",
       "entry_price": 4.85,
       "initial_sl_price": 4.966220824050334,
-      "sl_price": 4.966220824050334,
+      "sl_price": 4.85,
       "tp1_price": 4.675668763924499,
       "tp2_price": 4.501337527848998,
       "qty_total": 20.61855670103093,
@@ -3458,8 +3458,8 @@
         "bull_ob_count": 1,
         "bear_ob_count": 1
       },
-      "qty_open": 20.61855670103093,
-      "phase": "before_tp1"
+      "qty_open": 10.309278350515465,
+      "phase": "after_tp1"
     },
     "RAREUSDT__POC": {
       "trade_id": 19317,
@@ -3511,31 +3511,6 @@
       },
       "qty_open": 0.36245016310257344
     },
-    "ARKMUSDT__POC": {
-      "trade_id": 19321,
-      "symbol": "ARKMUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-17 04:00:00",
-      "session": "آسیا",
-      "entry_price": 0.1242,
-      "sl_price": 0.1231767,
-      "tp1_price": 0.126,
-      "tp2_price": null,
-      "qty_total": 805.1529790660226,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.1238625,
-        "leg_start": "2026-10-17 01:30:00",
-        "leg_end": "2026-10-17 03:30:00",
-        "rr": 1.759,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 805.1529790660226
-    },
     "CELRUSDT__SMC": {
       "trade_id": 19322,
       "symbol": "CELRUSDT",
@@ -3575,31 +3550,6 @@
       },
       "qty_open": 36603.22108345534,
       "phase": "before_tp1"
-    },
-    "NEARUSDT__POC": {
-      "trade_id": 19324,
-      "symbol": "NEARUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-17 04:00:00",
-      "session": "آسیا",
-      "entry_price": 5.107,
-      "sl_price": 5.060934,
-      "tp1_price": 5.145,
-      "tp2_price": null,
-      "qty_total": 19.580967299784607,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 5.102145833333333,
-        "leg_start": "2026-10-17 02:30:00",
-        "leg_end": "2026-10-17 03:30:00",
-        "rr": 0.825,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 19.580967299784607
     },
     "SKLUSDT__SMC": {
       "trade_id": 19325,
@@ -3720,31 +3670,6 @@
       },
       "qty_open": 11.168192986374804,
       "phase": "before_tp1"
-    },
-    "RVNUSDT__POC": {
-      "trade_id": 19335,
-      "symbol": "RVNUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-17 04:15:00",
-      "session": "آسیا",
-      "entry_price": 0.001502,
-      "sl_price": 0.001496502,
-      "tp1_price": 0.001511,
-      "tp2_price": null,
-      "qty_total": 66577.89613848201,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.0014990416666666668,
-        "leg_start": "2026-10-17 02:45:00",
-        "leg_end": "2026-10-17 03:30:00",
-        "rr": 1.637,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 66577.89613848201
     },
     "WIFUSDT__SMC": {
       "trade_id": 19336,
@@ -3931,31 +3856,6 @@
       },
       "qty_open": 4.504504504504505
     },
-    "CTSIUSDT__POC": {
-      "trade_id": 19346,
-      "symbol": "CTSIUSDT",
-      "source": "POC Retest v2",
-      "direction": "short",
-      "candle_time": "2026-10-17 04:45:00",
-      "session": "آسیا",
-      "entry_price": 0.03253,
-      "sl_price": 0.032702669999999996,
-      "tp1_price": 0.03208,
-      "tp2_price": null,
-      "qty_total": 3074.085459575776,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.032635,
-        "leg_start": "2026-10-17 01:30:00",
-        "leg_end": "2026-10-17 03:00:00",
-        "rr": 2.606,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 3074.085459575776
-    },
     "DYDXUSDT__POC": {
       "trade_id": 19348,
       "symbol": "DYDXUSDT",
@@ -3980,31 +3880,6 @@
         "reason": "poc_retest_rejection"
       },
       "qty_open": 808.3420903726457
-    },
-    "EGLDUSDT__POC": {
-      "trade_id": 19349,
-      "symbol": "EGLDUSDT",
-      "source": "POC Retest v2",
-      "direction": "short",
-      "candle_time": "2026-10-17 04:45:00",
-      "session": "آسیا",
-      "entry_price": 3.703,
-      "sl_price": 3.7257219999999998,
-      "tp1_price": 3.686,
-      "tp2_price": null,
-      "qty_total": 27.00513097488523,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 3.7037291666666663,
-        "leg_start": "2026-10-17 02:00:00",
-        "leg_end": "2026-10-17 03:00:00",
-        "rr": 0.748,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 27.00513097488523
     },
     "PEPEUSDT__POC": {
       "trade_id": 19351,
@@ -4201,31 +4076,6 @@
       "qty_open": 6510.416666666666,
       "phase": "before_tp1"
     },
-    "UNIUSDT__POC": {
-      "trade_id": 19373,
-      "symbol": "UNIUSDT",
-      "source": "POC Retest v2",
-      "direction": "short",
-      "candle_time": "2026-10-17 05:15:00",
-      "session": "آسیا",
-      "entry_price": 7.293,
-      "sl_price": 7.320312999999999,
-      "tp1_price": 7.25,
-      "tp2_price": null,
-      "qty_total": 13.71177841766077,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 7.293270833333334,
-        "leg_start": "2026-10-17 02:00:00",
-        "leg_end": "2026-10-17 03:00:00",
-        "rr": 1.574,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 13.71177841766077
-    },
     "ALTUSDT__POC": {
       "trade_id": 19374,
       "symbol": "ALTUSDT",
@@ -4315,31 +4165,6 @@
       },
       "qty_open": 1287.001287001287,
       "phase": "before_tp1"
-    },
-    "IMXUSDT__POC": {
-      "trade_id": 19377,
-      "symbol": "IMXUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-17 05:30:00",
-      "session": "آسیا",
-      "entry_price": 0.1623,
-      "sl_price": 0.1617381,
-      "tp1_price": 0.1634,
-      "tp2_price": null,
-      "qty_total": 616.1429451632779,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.16203333333333333,
-        "leg_start": "2026-10-17 02:45:00",
-        "leg_end": "2026-10-17 03:30:00",
-        "rr": 1.958,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 616.1429451632779
     },
     "MTLUSDT__POC": {
       "trade_id": 19379,
@@ -4575,31 +4400,6 @@
       },
       "qty_open": 9363.295880149812,
       "phase": "before_tp1"
-    },
-    "LINKUSDT__POC": {
-      "trade_id": 19388,
-      "symbol": "LINKUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-17 05:45:00",
-      "session": "آسیا",
-      "entry_price": 12.296,
-      "sl_price": 12.252735000000001,
-      "tp1_price": 12.393,
-      "tp2_price": null,
-      "qty_total": 8.132726089785297,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 12.29225,
-        "leg_start": "2026-10-17 02:30:00",
-        "leg_end": "2026-10-17 03:30:00",
-        "rr": 2.242,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 8.132726089785297
     },
     "MAGICUSDT__POC": {
       "trade_id": 19389,
@@ -4896,31 +4696,6 @@
       },
       "qty_open": 187.89928598271325
     },
-    "AMPUSDT__POC": {
-      "trade_id": 19401,
-      "symbol": "AMPUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-17 06:15:00",
-      "session": "آسیا",
-      "entry_price": 0.000736,
-      "sl_price": 0.000721278,
-      "tp1_price": 0.000744,
-      "tp2_price": null,
-      "qty_total": 135869.5652173913,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.0007233333333333332,
-        "leg_start": "2026-10-17 04:30:00",
-        "leg_end": "2026-10-17 05:15:00",
-        "rr": 0.543,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 135869.5652173913
-    },
     "ETHFIUSDT__POC": {
       "trade_id": 19402,
       "symbol": "ETHFIUSDT",
@@ -5125,8 +4900,148 @@
         "reason": "poc_retest_rejection"
       },
       "qty_open": 1413.6273678258412
+    },
+    "BEAMXUSDT__POC": {
+      "trade_id": 19409,
+      "symbol": "BEAMXUSDT",
+      "source": "POC Retest v2",
+      "direction": "short",
+      "candle_time": "2026-10-17 06:30:00",
+      "session": "آسیا",
+      "entry_price": 0.002987,
+      "sl_price": 0.003004001,
+      "tp1_price": 0.002969,
+      "tp2_price": null,
+      "qty_total": 33478.40642785403,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.002991520833333333,
+        "leg_start": "2026-10-17 04:15:00",
+        "leg_end": "2026-10-17 06:00:00",
+        "rr": 1.059,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 33478.40642785403
+    },
+    "METISUSDT__POC": {
+      "trade_id": 19410,
+      "symbol": "METISUSDT",
+      "source": "POC Retest v2",
+      "direction": "short",
+      "candle_time": "2026-10-17 06:30:00",
+      "session": "آسیا",
+      "entry_price": 4.1,
+      "sl_price": 4.144139999999999,
+      "tp1_price": 4.05,
+      "tp2_price": null,
+      "qty_total": 24.390243902439025,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 4.12875,
+        "leg_start": "2026-10-17 03:30:00",
+        "leg_end": "2026-10-17 06:00:00",
+        "rr": 1.133,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 24.390243902439025
+    },
+    "MOVRUSDT__SMC": {
+      "trade_id": 19411,
+      "symbol": "MOVRUSDT",
+      "source": "ICT/SMC Scalp Pro v2",
+      "direction": "long",
+      "candle_time": "2026-10-17 06:30:00",
+      "session": "آسیا",
+      "entry_price": 1.433,
+      "initial_sl_price": 1.4021115660197228,
+      "sl_price": 1.4021115660197228,
+      "tp1_price": 1.479332650970416,
+      "tp2_price": 1.525665301940832,
+      "qty_total": 69.78367062107466,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": true,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 54.93,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": false,
+        "trend": 1,
+        "bull_fvg_count": 6,
+        "bear_fvg_count": 0,
+        "bull_ob_count": 3,
+        "bear_ob_count": 1
+      },
+      "qty_open": 69.78367062107466,
+      "phase": "before_tp1"
+    },
+    "PENDLEUSDT__POC": {
+      "trade_id": 19412,
+      "symbol": "PENDLEUSDT",
+      "source": "POC Retest v2",
+      "direction": "short",
+      "candle_time": "2026-10-17 06:30:00",
+      "session": "آسیا",
+      "entry_price": 2.12,
+      "sl_price": 2.127125,
+      "tp1_price": 2.106,
+      "tp2_price": null,
+      "qty_total": 47.16981132075472,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 2.1243749999999997,
+        "leg_start": "2026-10-17 03:30:00",
+        "leg_end": "2026-10-17 05:30:00",
+        "rr": 1.965,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 47.16981132075472
+    },
+    "RSRUSDT__POC": {
+      "trade_id": 19413,
+      "symbol": "RSRUSDT",
+      "source": "POC Retest v2",
+      "direction": "long",
+      "candle_time": "2026-10-17 06:30:00",
+      "session": "آسیا",
+      "entry_price": 0.001982,
+      "sl_price": 0.001963035,
+      "tp1_price": 0.002013,
+      "tp2_price": null,
+      "qty_total": 50454.08678102927,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0019723125,
+        "leg_start": "2026-10-17 05:15:00",
+        "leg_end": "2026-10-17 06:00:00",
+        "rr": 1.635,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 50454.08678102927
     }
   },
-  "next_trade_id": 19409,
+  "next_trade_id": 19414,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
