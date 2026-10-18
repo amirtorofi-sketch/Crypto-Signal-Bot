@@ -1,5 +1,5 @@
 {
-  "balance": 10137.051725113257,
+  "balance": 10136.153086976488,
   "positions": {
     "CRVUSDT__SMC2": {
       "trade_id": 1953,
@@ -1040,44 +1040,6 @@
         "status": "open"
       }
     },
-    "CHZUSDT__POC": {
-      "trade_id": 2173,
-      "symbol": "CHZUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-18 08:45:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.01379,
-      "sl_price": 0.013863730000000001,
-      "sl_initial": 0.013863730000000001,
-      "tp1_price": 0.0137,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 7251.631617113851,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.013779791666666666,
-        "leg_start": "2026-10-18 05:45:00",
-        "leg_end": "2026-10-18 06:30:00",
-        "rr": 1.221,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.01371627,
-        "raw_tp": 0.01388
-      },
-      "lot_a": {
-        "qty": 7251.631617113851,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "ONEUSDT__SMC2": {
       "trade_id": 2174,
       "symbol": "ONEUSDT",
@@ -1125,44 +1087,6 @@
         "qty": 34794.71120389701,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "CRVUSDT__POC": {
-      "trade_id": 2175,
-      "symbol": "CRVUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-18 09:00:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.3406,
-      "sl_price": 0.3418397,
-      "sl_initial": 0.3418397,
-      "tp1_price": 0.3375,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 293.5995302407516,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.34053750000000005,
-        "leg_start": "2026-10-18 05:30:00",
-        "leg_end": "2026-10-18 07:00:00",
-        "rr": 2.501,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.3393603,
-        "raw_tp": 0.3437
-      },
-      "lot_a": {
-        "qty": 293.5995302407516,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     }
   },
