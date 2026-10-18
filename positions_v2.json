@@ -1,5 +1,5 @@
 {
-  "balance": 9804.552416350596,
+  "balance": 9807.609756378555,
   "positions": {
     "STGUSDT__SMC": {
       "trade_id": 8434,
@@ -2560,7 +2560,7 @@
       "session": "آسیا",
       "entry_price": 1.027,
       "initial_sl_price": 1.0397410086671282,
-      "sl_price": 1.0397410086671282,
+      "sl_price": 1.027,
       "tp1_price": 1.0078884869993074,
       "tp2_price": 0.9887769739986152,
       "qty_total": 97.37098344693283,
@@ -2588,8 +2588,8 @@
         "bull_ob_count": 1,
         "bear_ob_count": 2
       },
-      "qty_open": 97.37098344693283,
-      "phase": "before_tp1"
+      "qty_open": 48.68549172346641,
+      "phase": "after_tp1"
     },
     "FIDAUSDT__SMC": {
       "trade_id": 20158,
@@ -3490,7 +3490,7 @@
       "session": "آسیا",
       "entry_price": 3.546,
       "initial_sl_price": 3.5644145677511005,
-      "sl_price": 3.5644145677511005,
+      "sl_price": 3.546,
       "tp1_price": 3.5183781483733485,
       "tp2_price": 3.4907562967466976,
       "qty_total": 28.200789622109422,
@@ -3518,48 +3518,8 @@
         "bull_ob_count": 1,
         "bear_ob_count": 2
       },
-      "qty_open": 28.200789622109422,
-      "phase": "before_tp1"
-    },
-    "BCHUSDT__SMC": {
-      "trade_id": 20282,
-      "symbol": "BCHUSDT",
-      "source": "ICT/SMC Scalp Pro v2",
-      "direction": "long",
-      "candle_time": "2026-10-18 05:15:00",
-      "session": "آسیا",
-      "entry_price": 276.2,
-      "initial_sl_price": 273.81652608051047,
-      "sl_price": 273.81652608051047,
-      "tp1_price": 279.77521087923424,
-      "tp2_price": 283.35042175846854,
-      "qty_total": 0.36205648081100655,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": true,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": true,
-        "htf_bearish": false,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 49.23,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": true,
-        "trend_strong": false,
-        "trend": 1,
-        "bull_fvg_count": 2,
-        "bear_fvg_count": 3,
-        "bull_ob_count": 2,
-        "bear_ob_count": 1
-      },
-      "qty_open": 0.36205648081100655,
-      "phase": "before_tp1"
+      "qty_open": 14.100394811054711,
+      "phase": "after_tp1"
     },
     "CAKEUSDT__SMC": {
       "trade_id": 20284,
@@ -4321,31 +4281,6 @@
       },
       "qty_open": 545.6430403230207
     },
-    "1INCHUSDT__POC": {
-      "trade_id": 20331,
-      "symbol": "1INCHUSDT",
-      "source": "POC Retest v2",
-      "direction": "short",
-      "candle_time": "2026-10-18 06:30:00",
-      "session": "آسیا",
-      "entry_price": 0.0924,
-      "sl_price": 0.09269259999999999,
-      "tp1_price": 0.0919,
-      "tp2_price": null,
-      "qty_total": 1082.2510822510824,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.09242500000000001,
-        "leg_start": "2026-10-18 03:45:00",
-        "leg_end": "2026-10-18 05:30:00",
-        "rr": 1.709,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 1082.2510822510824
-    },
     "ARBUSDT__POC": {
       "trade_id": 20332,
       "symbol": "ARBUSDT",
@@ -4370,56 +4305,6 @@
         "reason": "poc_retest_rejection"
       },
       "qty_open": 544.069640914037
-    },
-    "ARKMUSDT__POC": {
-      "trade_id": 20333,
-      "symbol": "ARKMUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-18 06:30:00",
-      "session": "آسیا",
-      "entry_price": 0.1185,
-      "sl_price": 0.1176822,
-      "tp1_price": 0.1203,
-      "tp2_price": null,
-      "qty_total": 843.8818565400844,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.11795,
-        "leg_start": "2026-10-18 02:00:00",
-        "leg_end": "2026-10-18 03:45:00",
-        "rr": 2.201,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 843.8818565400844
-    },
-    "BONKUSDT__POC": {
-      "trade_id": 20336,
-      "symbol": "BONKUSDT",
-      "source": "POC Retest v2",
-      "direction": "short",
-      "candle_time": "2026-10-18 06:30:00",
-      "session": "آسیا",
-      "entry_price": 2.96e-06,
-      "sl_price": 2.9829799999999995e-06,
-      "tp1_price": 2.94e-06,
-      "tp2_price": null,
-      "qty_total": 33783783.783783786,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 2.9712499999999997e-06,
-        "leg_start": "2026-10-18 03:45:00",
-        "leg_end": "2026-10-18 05:30:00",
-        "rr": 0.87,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 33783783.783783786
     },
     "ENAUSDT__POC": {
       "trade_id": 20338,
@@ -4666,31 +4551,6 @@
       "qty_open": 846.0236886632825,
       "phase": "before_tp1"
     },
-    "CELOUSDT__POC": {
-      "trade_id": 20350,
-      "symbol": "CELOUSDT",
-      "source": "POC Retest v2",
-      "direction": "short",
-      "candle_time": "2026-10-18 06:45:00",
-      "session": "آسیا",
-      "entry_price": 0.08269,
-      "sl_price": 0.08303294999999998,
-      "tp1_price": 0.08199,
-      "tp2_price": null,
-      "qty_total": 1209.3360744951021,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.082773125,
-        "leg_start": "2026-10-18 03:45:00",
-        "leg_end": "2026-10-18 05:45:00",
-        "rr": 2.041,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 1209.3360744951021
-    },
     "GALAUSDT__SMC": {
       "trade_id": 20352,
       "symbol": "GALAUSDT",
@@ -4780,7 +4640,7 @@
       "session": "آسیا",
       "entry_price": 0.01366,
       "initial_sl_price": 0.01377512706016812,
-      "sl_price": 0.01377512706016812,
+      "sl_price": 0.01366,
       "tp1_price": 0.01348730940974782,
       "tp2_price": 0.01331461881949564,
       "qty_total": 7320.644216691068,
@@ -4808,8 +4668,8 @@
         "bull_ob_count": 0,
         "bear_ob_count": 0
       },
-      "qty_open": 7320.644216691068,
-      "phase": "before_tp1"
+      "qty_open": 3660.322108345534,
+      "phase": "after_tp1"
     },
     "RPLUSDT__POC": {
       "trade_id": 20358,
@@ -4886,31 +4746,6 @@
       },
       "qty_open": 14836.795252225518
     },
-    "ALICEUSDT__POC": {
-      "trade_id": 20363,
-      "symbol": "ALICEUSDT",
-      "source": "POC Retest v2",
-      "direction": "short",
-      "candle_time": "2026-10-18 07:00:00",
-      "session": "آسیا",
-      "entry_price": 0.1456,
-      "sl_price": 0.14634619999999998,
-      "tp1_price": 0.1446,
-      "tp2_price": null,
-      "qty_total": 686.8131868131868,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.14560625,
-        "leg_start": "2026-10-18 03:45:00",
-        "leg_end": "2026-10-18 05:30:00",
-        "rr": 1.34,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 686.8131868131868
-    },
     "DYMUSDT__SMC": {
       "trade_id": 20364,
       "symbol": "DYMUSDT",
@@ -4950,31 +4785,6 @@
       },
       "qty_open": 5747.126436781609,
       "phase": "before_tp1"
-    },
-    "DYMUSDT__POC": {
-      "trade_id": 20365,
-      "symbol": "DYMUSDT",
-      "source": "POC Retest v2",
-      "direction": "short",
-      "candle_time": "2026-10-18 07:00:00",
-      "session": "آسیا",
-      "entry_price": 0.0174,
-      "sl_price": 0.0175175,
-      "tp1_price": 0.0173,
-      "tp2_price": null,
-      "qty_total": 5747.126436781609,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.017412499999999997,
-        "leg_start": "2026-10-18 03:45:00",
-        "leg_end": "2026-10-18 05:15:00",
-        "rr": 0.851,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 5747.126436781609
     },
     "LQTYUSDT__POC": {
       "trade_id": 20369,
@@ -5050,31 +4860,6 @@
         "reason": "poc_retest_rejection"
       },
       "qty_open": 67385.44474393531
-    },
-    "ENSUSDT__POC": {
-      "trade_id": 20376,
-      "symbol": "ENSUSDT",
-      "source": "POC Retest v2",
-      "direction": "short",
-      "candle_time": "2026-10-18 07:15:00",
-      "session": "آسیا",
-      "entry_price": 5.51,
-      "sl_price": 5.525519999999999,
-      "tp1_price": 5.48,
-      "tp2_price": null,
-      "qty_total": 18.148820326678766,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 5.5175,
-        "leg_start": "2026-10-18 03:45:00",
-        "leg_end": "2026-10-18 05:30:00",
-        "rr": 1.933,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 18.148820326678766
     },
     "INITUSDT__SMC": {
       "trade_id": 20377,
@@ -5256,31 +5041,6 @@
       },
       "qty_open": 23.752969121140143
     },
-    "EDUUSDT__POC": {
-      "trade_id": 20395,
-      "symbol": "EDUUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-18 07:45:00",
-      "session": "آسیا",
-      "entry_price": 0.078,
-      "sl_price": 0.0775224,
-      "tp1_price": 0.0783,
-      "tp2_price": null,
-      "qty_total": 1282.051282051282,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.07791666666666666,
-        "leg_start": "2026-10-18 05:45:00",
-        "leg_end": "2026-10-18 06:30:00",
-        "rr": 0.628,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 1282.051282051282
-    },
     "FILUSDT__POC": {
       "trade_id": 20396,
       "symbol": "FILUSDT",
@@ -5371,31 +5131,6 @@
       "qty_open": 1692.047377326565,
       "phase": "before_tp1"
     },
-    "CETUSUSDT__POC": {
-      "trade_id": 20401,
-      "symbol": "CETUSUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-18 08:00:00",
-      "session": "لندن",
-      "entry_price": 0.02235,
-      "sl_price": 0.0222777,
-      "tp1_price": 0.02247,
-      "tp2_price": null,
-      "qty_total": 4474.27293064877,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.022311875,
-        "leg_start": "2026-10-18 05:45:00",
-        "leg_end": "2026-10-18 06:30:00",
-        "rr": 1.66,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 4474.27293064877
-    },
     "COMPUSDT__POC": {
       "trade_id": 20402,
       "symbol": "COMPUSDT",
@@ -5445,31 +5180,6 @@
         "reason": "poc_retest_rejection"
       },
       "qty_open": 683526.999316473
-    },
-    "LINKUSDT__POC": {
-      "trade_id": 20405,
-      "symbol": "LINKUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-18 08:00:00",
-      "session": "لندن",
-      "entry_price": 11.978,
-      "sl_price": 11.945043,
-      "tp1_price": 12.04,
-      "tp2_price": null,
-      "qty_total": 8.348639171814995,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 11.962916666666667,
-        "leg_start": "2026-10-18 05:30:00",
-        "leg_end": "2026-10-18 06:45:00",
-        "rr": 1.881,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 8.348639171814995
     },
     "MINAUSDT__SMC": {
       "trade_id": 20406,
@@ -5730,8 +5440,203 @@
         "reason": "poc_retest_rejection"
       },
       "qty_open": 204.24836601307192
+    },
+    "API3USDT__SMC": {
+      "trade_id": 20416,
+      "symbol": "API3USDT",
+      "source": "ICT/SMC Scalp Pro v2",
+      "direction": "short",
+      "candle_time": "2026-10-18 08:30:00",
+      "session": "لندن",
+      "entry_price": 0.2659,
+      "initial_sl_price": 0.26840898622096243,
+      "sl_price": 0.26840898622096243,
+      "tp1_price": 0.2621365206685564,
+      "tp2_price": 0.2583730413371128,
+      "qty_total": 376.081233546446,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": 4,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": false,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 28.49,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 0,
+        "bear_fvg_count": 6,
+        "bull_ob_count": 0,
+        "bear_ob_count": 3
+      },
+      "qty_open": 376.081233546446,
+      "phase": "before_tp1"
+    },
+    "LDOUSDT__POC": {
+      "trade_id": 20417,
+      "symbol": "LDOUSDT",
+      "source": "POC Retest v2",
+      "direction": "short",
+      "candle_time": "2026-10-18 08:30:00",
+      "session": "لندن",
+      "entry_price": 0.3837,
+      "sl_price": 0.38598559999999993,
+      "tp1_price": 0.3819,
+      "tp2_price": null,
+      "qty_total": 260.62027625749283,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.3841125,
+        "leg_start": "2026-10-18 03:45:00",
+        "leg_end": "2026-10-18 05:45:00",
+        "rr": 0.788,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 260.62027625749283
+    },
+    "NMRUSDT__POC": {
+      "trade_id": 20418,
+      "symbol": "NMRUSDT",
+      "source": "POC Retest v2",
+      "direction": "long",
+      "candle_time": "2026-10-18 08:30:00",
+      "session": "لندن",
+      "entry_price": 11.74,
+      "sl_price": 11.67831,
+      "tp1_price": 11.8,
+      "tp2_price": null,
+      "qty_total": 8.517887563884157,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 11.721875,
+        "leg_start": "2026-10-18 05:15:00",
+        "leg_end": "2026-10-18 06:30:00",
+        "rr": 0.973,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 8.517887563884157
+    },
+    "PUMPUSDT__POC": {
+      "trade_id": 20419,
+      "symbol": "PUMPUSDT",
+      "source": "POC Retest v2",
+      "direction": "long",
+      "candle_time": "2026-10-18 08:30:00",
+      "session": "لندن",
+      "entry_price": 0.004267,
+      "sl_price": 0.004260735,
+      "tp1_price": 0.004297,
+      "tp2_price": null,
+      "qty_total": 23435.66908835247,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.004266645833333333,
+        "leg_start": "2026-10-18 07:15:00",
+        "leg_end": "2026-10-18 08:00:00",
+        "rr": 4.789,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 23435.66908835247
+    },
+    "SUNUSDT__SMC": {
+      "trade_id": 20420,
+      "symbol": "SUNUSDT",
+      "source": "ICT/SMC Scalp Pro v2",
+      "direction": "long",
+      "candle_time": "2026-10-18 08:30:00",
+      "session": "لندن",
+      "entry_price": 0.01659,
+      "initial_sl_price": 0.016563873136469655,
+      "sl_price": 0.016563873136469655,
+      "tp1_price": 0.01662919029529552,
+      "tp2_price": 0.016668380590591038,
+      "qty_total": 6027.727546714888,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 46.73,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "trend_strong": false,
+        "trend": 1,
+        "bull_fvg_count": 3,
+        "bear_fvg_count": 4,
+        "bull_ob_count": 0,
+        "bear_ob_count": 2
+      },
+      "qty_open": 6027.727546714888,
+      "phase": "before_tp1"
+    },
+    "PAXGUSDT__SMC": {
+      "trade_id": 20421,
+      "symbol": "PAXGUSDT",
+      "source": "ICT/SMC Scalp Pro v2",
+      "direction": "short",
+      "candle_time": "2026-10-18 08:30:00",
+      "session": "لندن",
+      "entry_price": 4157.91,
+      "initial_sl_price": 4158.470190596759,
+      "sl_price": 4158.470190596759,
+      "tp1_price": 4157.069714104862,
+      "tp2_price": 4156.229428209724,
+      "qty_total": 0.024050544624583024,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": 4,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": true,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 47.99,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 1,
+        "bear_fvg_count": 5,
+        "bull_ob_count": 0,
+        "bear_ob_count": 2
+      },
+      "qty_open": 0.024050544624583024,
+      "phase": "before_tp1"
     }
   },
-  "next_trade_id": 20416,
+  "next_trade_id": 20422,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
