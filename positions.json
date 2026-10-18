@@ -941,8 +941,95 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ETHUSDT__POC": {
+      "trade_id": 2159,
+      "symbol": "ETHUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-18 05:45:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 2411.44,
+      "sl_price": 2418.09719,
+      "sl_initial": 2418.09719,
+      "tp1_price": 2392.88,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.04146899777726172,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 2410.883333333333,
+        "leg_start": "2026-10-18 02:00:00",
+        "leg_end": "2026-10-18 03:45:00",
+        "rr": 2.788,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 2404.78281,
+        "raw_tp": 2430.0
+      },
+      "lot_a": {
+        "qty": 0.04146899777726172,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "MANAUSDT__SMC2": {
+      "trade_id": 2160,
+      "symbol": "MANAUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-18 05:45:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.0871,
+      "sl_price": 0.0857016554664036,
+      "sl_initial": 0.0857016554664036,
+      "tp1_price": 0.08919751680039459,
+      "tp2_price": 0.0912950336007892,
+      "adx_value": null,
+      "qty_total": 1148.105625717566,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": true,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 45.99,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": false,
+        "trend": -1,
+        "bull_fvg_count": 1,
+        "bear_fvg_count": 5,
+        "bull_ob_count": 1,
+        "bear_ob_count": 2
+      },
+      "lot_a": {
+        "qty": 574.052812858783,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 574.052812858783,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 2159,
+  "next_trade_id": 2161,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
