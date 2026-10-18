@@ -1,5 +1,5 @@
 {
-  "balance": 10139.710635894096,
+  "balance": 10140.989676594736,
   "positions": {
     "MANAUSDT__ST": {
       "trade_id": 2082,
@@ -88,7 +88,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.389,
-      "sl_price": 0.3846666207731531,
+      "sl_price": 0.389,
       "sl_initial": 0.3846666207731531,
       "tp1_price": 0.39550006884027034,
       "tp2_price": 0.4020001376805407,
@@ -120,7 +120,7 @@
       "lot_a": {
         "qty": 128.53470437017995,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 128.53470437017995,
@@ -137,7 +137,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.006472,
-      "sl_price": 0.006392207359150695,
+      "sl_price": 0.006472,
       "sl_initial": 0.006392207359150695,
       "tp1_price": 0.006591688961273958,
       "tp2_price": 0.006711377922547917,
@@ -169,59 +169,10 @@
       "lot_a": {
         "qty": 7725.587144622991,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 7725.587144622991,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "BTCUSDT__SMC2": {
-      "trade_id": 2195,
-      "symbol": "BTCUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-18 21:45:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 81222.32,
-      "sl_price": 80924.6604179427,
-      "sl_initial": 80924.6604179427,
-      "tp1_price": 81668.80937308597,
-      "tp2_price": 82115.29874617195,
-      "adx_value": null,
-      "qty_total": 0.0012311886683364867,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": false,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 54.35,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 1,
-        "bear_fvg_count": 5,
-        "bull_ob_count": 0,
-        "bear_ob_count": 1
-      },
-      "lot_a": {
-        "qty": 0.0006155943341682433,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0006155943341682433,
         "target": "tp2",
         "status": "open"
       }
@@ -275,45 +226,46 @@
         "status": "open"
       }
     },
-    "DOGEUSDT__POC": {
-      "trade_id": 2197,
-      "symbol": "DOGEUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-18 21:45:00",
+    "BTCUSDT__ST": {
+      "trade_id": 2198,
+      "symbol": "BTCUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-18 22:00:00",
       "session": "نیویورک",
       "raw_direction": "long",
       "direction": "short",
-      "entry_price": 0.07767,
-      "sl_price": 0.07825716,
-      "sl_initial": 0.07825716,
-      "tp1_price": 0.07731,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 1287.4983906270118,
+      "entry_price": 81591.84,
+      "sl_price": 82372.05403298183,
+      "sl_initial": 82372.05403298183,
+      "tp1_price": 80421.51895052724,
+      "tp2_price": 79251.19790105449,
+      "adx_value": 39.35454173761171,
+      "qty_total": 0.0012256127573541668,
       "notional": 100.0,
       "leverage": 1.0,
       "signal_score": null,
       "market_snapshot": {
-        "poc": 0.07746625,
-        "leg_start": "2026-10-18 15:30:00",
-        "leg_end": "2026-10-18 17:30:00",
-        "rr": 0.613,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.07708284,
-        "raw_tp": 0.07803
+        "adx": 39.355,
+        "di_plus": 32.655,
+        "di_minus": 17.861,
+        "ema_trend": 81590.626931,
+        "close_vs_ema": "above",
+        "volume": 274.3923,
+        "vol_ma": 126.3675,
+        "vol_above_ma": true
       },
       "lot_a": {
-        "qty": 1287.4983906270118,
+        "qty": 0.0006128063786770834,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 0.0,
+        "qty": 0.0006128063786770834,
         "target": "tp2",
-        "status": "none"
+        "status": "open"
       }
     }
   },
-  "next_trade_id": 2198,
+  "next_trade_id": 2199,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
