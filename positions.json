@@ -1,45 +1,6 @@
 {
-  "balance": 10136.582685716552,
+  "balance": 10139.710635894096,
   "positions": {
-    "CRVUSDT__ST": {
-      "trade_id": 2057,
-      "symbol": "CRVUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-10-16 23:30:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.3529,
-      "sl_price": 0.3529,
-      "sl_initial": 0.3611589101280978,
-      "tp1_price": 0.3405116348078533,
-      "tp2_price": 0.32812326961570654,
-      "adx_value": 23.28694753378766,
-      "qty_total": 283.36639274582035,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "adx": 23.287,
-        "di_plus": 30.02,
-        "di_minus": 11.989,
-        "ema_trend": 0.346706,
-        "close_vs_ema": "above",
-        "volume": 77025.4,
-        "vol_ma": 63499.31,
-        "vol_above_ma": true
-      },
-      "lot_a": {
-        "qty": 141.68319637291017,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 141.68319637291017,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "MANAUSDT__ST": {
       "trade_id": 2082,
       "symbol": "MANAUSDT",
@@ -114,55 +75,6 @@
       },
       "lot_b": {
         "qty": 0.47957030500671394,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "BTCUSDT__SMC2": {
-      "trade_id": 2188,
-      "symbol": "BTCUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-18 16:15:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 81131.83,
-      "sl_price": 80821.50385032005,
-      "sl_initial": 80821.50385032005,
-      "tp1_price": 81597.31922451993,
-      "tp2_price": 82062.80844903986,
-      "adx_value": null,
-      "qty_total": 0.0012325618687511425,
-      "notional": 100.00000000000001,
-      "leverage": 1.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": true,
-        "recent_bear_sweep": false,
-        "vol_spike": false,
-        "strong_bull_rej": false,
-        "strong_bear_rej": false,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 31.36,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": true,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 0,
-        "bear_fvg_count": 6,
-        "bull_ob_count": 0,
-        "bear_ob_count": 1
-      },
-      "lot_a": {
-        "qty": 0.0006162809343755712,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0006162809343755712,
         "target": "tp2",
         "status": "open"
       }
