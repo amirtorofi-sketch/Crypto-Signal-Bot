@@ -1,5 +1,5 @@
 {
-  "balance": 10136.302008697912,
+  "balance": 10135.771377492245,
   "positions": {
     "CRVUSDT__SMC2": {
       "trade_id": 1953,
@@ -845,44 +845,6 @@
         "status": "open"
       }
     },
-    "ETHUSDT__POC": {
-      "trade_id": 2159,
-      "symbol": "ETHUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-18 05:45:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 2411.44,
-      "sl_price": 2418.09719,
-      "sl_initial": 2418.09719,
-      "tp1_price": 2392.88,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.04146899777726172,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 2410.883333333333,
-        "leg_start": "2026-10-18 02:00:00",
-        "leg_end": "2026-10-18 03:45:00",
-        "rr": 2.788,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 2404.78281,
-        "raw_tp": 2430.0
-      },
-      "lot_a": {
-        "qty": 0.04146899777726172,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "BNBUSDT__SMC2": {
       "trade_id": 2161,
       "symbol": "BNBUSDT",
@@ -1078,44 +1040,6 @@
         "status": "open"
       }
     },
-    "GALAUSDT__POC": {
-      "trade_id": 2171,
-      "symbol": "GALAUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-18 07:45:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.001939,
-      "sl_price": 0.0019439359999999998,
-      "sl_initial": 0.0019439359999999998,
-      "tp1_price": 0.0019129999999999998,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 51572.975760701396,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.0019385208333333333,
-        "leg_start": "2026-10-18 05:30:00",
-        "leg_end": "2026-10-18 06:45:00",
-        "rr": 5.267,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.001934064,
-        "raw_tp": 0.001965
-      },
-      "lot_a": {
-        "qty": 51572.975760701396,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "CHZUSDT__POC": {
       "trade_id": 2173,
       "symbol": "CHZUSDT",
@@ -1202,8 +1126,46 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CRVUSDT__POC": {
+      "trade_id": 2175,
+      "symbol": "CRVUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-18 09:00:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.3406,
+      "sl_price": 0.3418397,
+      "sl_initial": 0.3418397,
+      "tp1_price": 0.3375,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 293.5995302407516,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.34053750000000005,
+        "leg_start": "2026-10-18 05:30:00",
+        "leg_end": "2026-10-18 07:00:00",
+        "rr": 2.501,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.3393603,
+        "raw_tp": 0.3437
+      },
+      "lot_a": {
+        "qty": 293.5995302407516,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2175,
+  "next_trade_id": 2176,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
