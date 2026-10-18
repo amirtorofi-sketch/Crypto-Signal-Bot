@@ -176,8 +176,144 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "BTCUSDT__SMC2": {
+      "trade_id": 2195,
+      "symbol": "BTCUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-18 21:45:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 81222.32,
+      "sl_price": 80924.6604179427,
+      "sl_initial": 80924.6604179427,
+      "tp1_price": 81668.80937308597,
+      "tp2_price": 82115.29874617195,
+      "adx_value": null,
+      "qty_total": 0.0012311886683364867,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": false,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 54.35,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 1,
+        "bear_fvg_count": 5,
+        "bull_ob_count": 0,
+        "bear_ob_count": 1
+      },
+      "lot_a": {
+        "qty": 0.0006155943341682433,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0006155943341682433,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "DOGEUSDT__SMC2": {
+      "trade_id": 2196,
+      "symbol": "DOGEUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-18 21:45:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.07767,
+      "sl_price": 0.07684445223342,
+      "sl_initial": 0.07684445223342,
+      "tp1_price": 0.07890832164987001,
+      "tp2_price": 0.08014664329974001,
+      "adx_value": null,
+      "qty_total": 1287.4983906270118,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": false,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 55.0,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 2,
+        "bear_fvg_count": 4,
+        "bull_ob_count": 0,
+        "bear_ob_count": 3
+      },
+      "lot_a": {
+        "qty": 643.7491953135059,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 643.7491953135059,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "DOGEUSDT__POC": {
+      "trade_id": 2197,
+      "symbol": "DOGEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-18 21:45:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.07767,
+      "sl_price": 0.07825716,
+      "sl_initial": 0.07825716,
+      "tp1_price": 0.07731,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 1287.4983906270118,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.07746625,
+        "leg_start": "2026-10-18 15:30:00",
+        "leg_end": "2026-10-18 17:30:00",
+        "rr": 0.613,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.07708284,
+        "raw_tp": 0.07803
+      },
+      "lot_a": {
+        "qty": 1287.4983906270118,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2195,
+  "next_trade_id": 2198,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
