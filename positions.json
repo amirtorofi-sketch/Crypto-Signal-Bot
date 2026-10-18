@@ -1,5 +1,5 @@
 {
-  "balance": 10135.531267409235,
+  "balance": 10135.18592427198,
   "positions": {
     "CRVUSDT__SMC2": {
       "trade_id": 1953,
@@ -943,55 +943,6 @@
         "status": "open"
       }
     },
-    "VETUSDT__SMC2": {
-      "trade_id": 2165,
-      "symbol": "VETUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-18 06:45:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.00674,
-      "sl_price": 0.00674,
-      "sl_initial": 0.006681966185076695,
-      "tp1_price": 0.006827050722384958,
-      "tp2_price": 0.006914101444769915,
-      "adx_value": null,
-      "qty_total": 14836.795252225518,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": true,
-        "recent_bear_sweep": false,
-        "vol_spike": false,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 50.74,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": true,
-        "trend_strong": false,
-        "trend": -1,
-        "bull_fvg_count": 3,
-        "bear_fvg_count": 4,
-        "bull_ob_count": 1,
-        "bear_ob_count": 2
-      },
-      "lot_a": {
-        "qty": 7418.397626112759,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 7418.397626112759,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "ONEUSDT__SMC2": {
       "trade_id": 2174,
       "symbol": "ONEUSDT",
@@ -1080,44 +1031,6 @@
         "status": "open"
       }
     },
-    "MASKUSDT__POC": {
-      "trade_id": 2177,
-      "symbol": "MASKUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-18 10:15:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.408,
-      "sl_price": 0.40659100000000004,
-      "sl_initial": 0.40659100000000004,
-      "tp1_price": 0.4099999999999999,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 245.0980392156863,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.408875,
-        "leg_start": "2026-10-18 06:30:00",
-        "leg_end": "2026-10-18 08:45:00",
-        "rr": 1.419,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.4094089999999999,
-        "raw_tp": 0.406
-      },
-      "lot_a": {
-        "qty": 245.0980392156863,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "CHZUSDT__POC": {
       "trade_id": 2178,
       "symbol": "CHZUSDT",
@@ -1155,8 +1068,84 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "ETHUSDT__POC": {
+      "trade_id": 2179,
+      "symbol": "ETHUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-18 11:30:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 2415.3,
+      "sl_price": 2407.2690900000007,
+      "sl_initial": 2407.2690900000007,
+      "tp1_price": 2423.4100000000003,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.04140272429925889,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 2417.169375,
+        "leg_start": "2026-10-18 03:45:00",
+        "leg_end": "2026-10-18 05:45:00",
+        "rr": 1.01,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 2423.3309099999997,
+        "raw_tp": 2407.19
+      },
+      "lot_a": {
+        "qty": 0.04140272429925889,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "ONEUSDT__POC": {
+      "trade_id": 2180,
+      "symbol": "ONEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-18 11:30:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.001459,
+      "sl_price": 0.0014515350000000003,
+      "sl_initial": 0.0014515350000000003,
+      "tp1_price": 0.001465,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 68540.09595613433,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0014600625,
+        "leg_start": "2026-10-18 10:00:00",
+        "leg_end": "2026-10-18 11:00:00",
+        "rr": 0.804,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.0014664649999999997,
+        "raw_tp": 0.001453
+      },
+      "lot_a": {
+        "qty": 68540.09595613433,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2179,
+  "next_trade_id": 2181,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
