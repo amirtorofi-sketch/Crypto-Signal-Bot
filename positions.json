@@ -1,5 +1,5 @@
 {
-  "balance": 10145.028812401919,
+  "balance": 10146.23658826927,
   "positions": {
     "MANAUSDT__ST": {
       "trade_id": 2082,
@@ -49,7 +49,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.3584,
-      "sl_price": 0.3653046914287938,
+      "sl_price": 0.3584,
       "sl_initial": 0.3653046914287938,
       "tp1_price": 0.3480429628568093,
       "tp2_price": 0.3376859257136186,
@@ -81,7 +81,7 @@
       "lot_a": {
         "qty": 139.50892857142858,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 139.50892857142858,
@@ -496,44 +496,6 @@
         "qty": 627.1951831409934,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "ROSEUSDT__POC": {
-      "trade_id": 2235,
-      "symbol": "ROSEUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-19 12:00:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.0073,
-      "sl_price": 0.007282690000000001,
-      "sl_initial": 0.007282690000000001,
-      "tp1_price": 0.00737,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 13698.630136986301,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.007302916666666667,
-        "leg_start": "2026-10-19 09:45:00",
-        "leg_end": "2026-10-19 11:15:00",
-        "rr": 4.044,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.007317309999999999,
-        "raw_tp": 0.00723
-      },
-      "lot_a": {
-        "qty": 13698.630136986301,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     },
     "CHZUSDT__SMC2": {
