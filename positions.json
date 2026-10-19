@@ -1,5 +1,5 @@
 {
-  "balance": 10141.366174983088,
+  "balance": 10139.398644515892,
   "positions": {
     "MANAUSDT__ST": {
       "trade_id": 2082,
@@ -313,44 +313,6 @@
         "status": "open"
       }
     },
-    "GALAUSDT__POC": {
-      "trade_id": 2247,
-      "symbol": "GALAUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-19 14:00:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.001882,
-      "sl_price": 0.0019068590000000001,
-      "sl_initial": 0.0019068590000000001,
-      "tp1_price": 0.001861,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 53134.96280552603,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.0018705416666666666,
-        "leg_start": "2026-10-19 11:30:00",
-        "leg_end": "2026-10-19 13:00:00",
-        "rr": 0.845,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.0018571409999999999,
-        "raw_tp": 0.001903
-      },
-      "lot_a": {
-        "qty": 53134.96280552603,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "ETHUSDT__SMC2": {
       "trade_id": 2250,
       "symbol": "ETHUSDT",
@@ -477,44 +439,6 @@
         "status": "open"
       }
     },
-    "ROSEUSDT__POC": {
-      "trade_id": 2253,
-      "symbol": "ROSEUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-19 14:45:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.00731,
-      "sl_price": 0.007357269999999999,
-      "sl_initial": 0.007357269999999999,
-      "tp1_price": 0.007259999999999999,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 13679.890560875514,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.007308541666666666,
-        "leg_start": "2026-10-19 11:15:00",
-        "leg_end": "2026-10-19 13:00:00",
-        "rr": 1.058,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.00726273,
-        "raw_tp": 0.00736
-      },
-      "lot_a": {
-        "qty": 13679.890560875514,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "MASKUSDT__POC": {
       "trade_id": 2254,
       "symbol": "MASKUSDT",
@@ -590,8 +514,46 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "BNBUSDT__POC": {
+      "trade_id": 2256,
+      "symbol": "BNBUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-19 15:15:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 727.53,
+      "sl_price": 729.0067799999999,
+      "sl_initial": 729.0067799999999,
+      "tp1_price": 724.31,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.1374513765755364,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 726.796875,
+        "leg_start": "2026-10-19 14:00:00",
+        "leg_end": "2026-10-19 14:45:00",
+        "rr": 2.18,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 726.05322,
+        "raw_tp": 730.75
+      },
+      "lot_a": {
+        "qty": 0.1374513765755364,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2256,
+  "next_trade_id": 2257,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
