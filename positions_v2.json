@@ -1,5 +1,5 @@
 {
-  "balance": 9975.610561208021,
+  "balance": 9974.601335978217,
   "positions": {
     "STGUSDT__SMC": {
       "trade_id": 8434,
@@ -401,31 +401,6 @@
       "qty_open": 1651.5276630883568,
       "phase": "before_tp1"
     },
-    "SUPERUSDT__POC": {
-      "trade_id": 20914,
-      "symbol": "SUPERUSDT",
-      "source": "POC Retest v2",
-      "direction": "short",
-      "candle_time": "2026-10-18 22:00:00",
-      "session": "نیویورک",
-      "entry_price": 0.1822,
-      "sl_price": 0.18448429999999996,
-      "tp1_price": 0.1815,
-      "tp2_price": null,
-      "qty_total": 548.847420417124,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.1836375,
-        "leg_start": "2026-10-18 15:30:00",
-        "leg_end": "2026-10-18 17:30:00",
-        "rr": 0.306,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 548.847420417124
-    },
     "IMXUSDT__SMC": {
       "trade_id": 20918,
       "symbol": "IMXUSDT",
@@ -595,31 +570,6 @@
       },
       "qty_open": 465.54934823091247,
       "phase": "before_tp1"
-    },
-    "ERAUSDT__POC": {
-      "trade_id": 20929,
-      "symbol": "ERAUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-18 23:00:00",
-      "session": "نیویورک",
-      "entry_price": 0.0684,
-      "sl_price": 0.06773219999999999,
-      "tp1_price": 0.0696,
-      "tp2_price": null,
-      "qty_total": 1461.9883040935672,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.0681,
-        "leg_start": "2026-10-18 21:30:00",
-        "leg_end": "2026-10-18 22:30:00",
-        "rr": 1.797,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 1461.9883040935672
     },
     "BTCUSDT__SMC": {
       "trade_id": 20931,
@@ -1071,32 +1021,57 @@
       "qty_open": 4237.28813559322,
       "phase": "before_tp1"
     },
-    "MAGICUSDT__POC": {
-      "trade_id": 20944,
-      "symbol": "MAGICUSDT",
+    "RLCUSDT__POC": {
+      "trade_id": 20945,
+      "symbol": "RLCUSDT",
       "source": "POC Retest v2",
       "direction": "long",
-      "candle_time": "2026-10-18 23:30:00",
+      "candle_time": "2026-10-18 23:45:00",
       "session": "نیویورک",
-      "entry_price": 0.0992,
-      "sl_price": 0.0977022,
-      "tp1_price": 0.1015,
+      "entry_price": 0.7449,
+      "sl_price": 0.7413579,
+      "tp1_price": 0.7507,
       "tp2_price": null,
-      "qty_total": 1008.0645161290323,
+      "qty_total": 134.24620754463686,
       "notional": 100.0,
       "leverage": 1.0,
       "margin_usd": 100.0,
       "signal_score": null,
       "market_snapshot": {
-        "poc": 0.09868750000000001,
-        "leg_start": "2026-10-18 17:30:00",
-        "leg_end": "2026-10-18 18:45:00",
-        "rr": 1.536,
+        "poc": 0.7442104166666668,
+        "leg_start": "2026-10-18 18:00:00",
+        "leg_end": "2026-10-18 19:00:00",
+        "rr": 1.637,
         "reason": "poc_retest_rejection"
       },
-      "qty_open": 1008.0645161290323
+      "qty_open": 134.24620754463686
+    },
+    "STXUSDT__POC": {
+      "trade_id": 20946,
+      "symbol": "STXUSDT",
+      "source": "POC Retest v2",
+      "direction": "short",
+      "candle_time": "2026-10-18 23:45:00",
+      "session": "نیویورک",
+      "entry_price": 0.3555,
+      "sl_price": 0.3580577,
+      "tp1_price": 0.3541,
+      "tp2_price": null,
+      "qty_total": 281.29395218002816,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.35674375,
+        "leg_start": "2026-10-18 17:00:00",
+        "leg_end": "2026-10-18 17:45:00",
+        "rr": 0.547,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 281.29395218002816
     }
   },
-  "next_trade_id": 20945,
+  "next_trade_id": 20947,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
