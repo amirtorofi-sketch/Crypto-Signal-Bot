@@ -1,5 +1,5 @@
 {
-  "balance": 10145.272061591557,
+  "balance": 10146.993456657998,
   "positions": {
     "MANAUSDT__ST": {
       "trade_id": 2082,
@@ -196,7 +196,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.006832,
-      "sl_price": 0.006896864913579359,
+      "sl_price": 0.006832,
       "sl_initial": 0.006896864913579359,
       "tp1_price": 0.006734702629630962,
       "tp2_price": 0.006637405259261925,
@@ -227,7 +227,7 @@
       "lot_a": {
         "qty": 7318.501170960187,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 7318.501170960187,
@@ -244,7 +244,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 105.65,
-      "sl_price": 106.31219231888446,
+      "sl_price": 105.65,
       "sl_initial": 106.31219231888446,
       "tp1_price": 104.65671152167333,
       "tp2_price": 103.66342304334665,
@@ -276,7 +276,7 @@
       "lot_a": {
         "qty": 0.473260766682442,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.473260766682442,
@@ -293,7 +293,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.006797,
-      "sl_price": 0.006845869494793951,
+      "sl_price": 0.006797,
       "sl_initial": 0.006845869494793951,
       "tp1_price": 0.006723695757809074,
       "tp2_price": 0.006650391515618148,
@@ -325,7 +325,7 @@
       "lot_a": {
         "qty": 7356.186552890981,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 7356.186552890981,
@@ -487,8 +487,47 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CHZUSDT__ST": {
+      "trade_id": 2232,
+      "symbol": "CHZUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-19 10:30:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.01374,
+      "sl_price": 0.01357893775853441,
+      "sl_initial": 0.01357893775853441,
+      "tp1_price": 0.013981593362198386,
+      "tp2_price": 0.014223186724396772,
+      "adx_value": 23.071310698177943,
+      "qty_total": 7278.020378457059,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 23.071,
+        "di_plus": 18.961,
+        "di_minus": 35.975,
+        "ema_trend": 0.013831,
+        "close_vs_ema": "below",
+        "volume": 783489.0,
+        "vol_ma": 543646.95,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 3639.0101892285297,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 3639.0101892285297,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 2232,
+  "next_trade_id": 2233,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
