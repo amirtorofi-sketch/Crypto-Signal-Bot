@@ -616,8 +616,95 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "BTCUSDT__SMC2": {
+      "trade_id": 2266,
+      "symbol": "BTCUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-19 17:00:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 81937.54,
+      "sl_price": 81490.52093336076,
+      "sl_initial": 81490.52093336076,
+      "tp1_price": 82608.06859995885,
+      "tp2_price": 83278.59719991768,
+      "adx_value": null,
+      "qty_total": 0.0012204418145821806,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
+        "vol_spike": false,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 38.68,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "trend_strong": false,
+        "trend": -1,
+        "bull_fvg_count": 3,
+        "bear_fvg_count": 6,
+        "bull_ob_count": 1,
+        "bear_ob_count": 2
+      },
+      "lot_a": {
+        "qty": 0.0006102209072910903,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0006102209072910903,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "ROSEUSDT__POC": {
+      "trade_id": 2267,
+      "symbol": "ROSEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-19 17:00:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.00729,
+      "sl_price": 0.0072426700000000005,
+      "sl_initial": 0.0072426700000000005,
+      "tp1_price": 0.007319999999999999,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 13717.421124828534,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.007298958333333333,
+        "leg_start": "2026-10-19 15:15:00",
+        "leg_end": "2026-10-19 16:00:00",
+        "rr": 0.634,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.007337329999999999,
+        "raw_tp": 0.00726
+      },
+      "lot_a": {
+        "qty": 13717.421124828534,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2266,
+  "next_trade_id": 2268,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
