@@ -436,8 +436,94 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "VETUSDT__POC": {
+      "trade_id": 2278,
+      "symbol": "VETUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-19 22:45:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.006747,
+      "sl_price": 0.006761739000000001,
+      "sl_initial": 0.006761739000000001,
+      "tp1_price": 0.006690000000000001,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 14821.402104639097,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.006743625,
+        "leg_start": "2026-10-19 21:00:00",
+        "leg_end": "2026-10-19 22:15:00",
+        "rr": 3.867,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.006732261,
+        "raw_tp": 0.006804
+      },
+      "lot_a": {
+        "qty": 14821.402104639097,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "GALAUSDT__SMC": {
+      "trade_id": 2279,
+      "symbol": "GALAUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-10-19 22:45:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.00193,
+      "sl_price": 0.001947049299046727,
+      "sl_initial": 0.001947049299046727,
+      "tp1_price": 0.0019044260514299097,
+      "tp2_price": 0.0018788521028598193,
+      "adx_value": null,
+      "qty_total": 51813.47150259067,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
+        "vol_spike": false,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 68.65,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "bull_fvg_count": 6,
+        "bear_fvg_count": 2,
+        "bull_ob_count": 0,
+        "bear_ob_count": 3,
+        "trend": 1
+      },
+      "lot_a": {
+        "qty": 25906.735751295335,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 25906.735751295335,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 2278,
+  "next_trade_id": 2280,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
