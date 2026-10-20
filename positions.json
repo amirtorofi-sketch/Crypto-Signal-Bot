@@ -1,5 +1,5 @@
 {
-  "balance": 10132.047724518377,
+  "balance": 10130.437268633208,
   "positions": {
     "MANAUSDT__ST": {
       "trade_id": 2082,
@@ -289,92 +289,6 @@
       },
       "lot_b": {
         "qty": 26219.192448872574,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "BNBUSDT__POC": {
-      "trade_id": 2289,
-      "symbol": "BNBUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-20 01:15:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 727.71,
-      "sl_price": 731.0151300000001,
-      "sl_initial": 731.0151300000001,
-      "tp1_price": 722.1,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.1374173778015968,
-      "notional": 100.00000000000001,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 726.9649999999999,
-        "leg_start": "2026-10-19 18:15:00",
-        "leg_end": "2026-10-19 22:15:00",
-        "rr": 1.697,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 724.40487,
-        "raw_tp": 733.32
-      },
-      "lot_a": {
-        "qty": 0.1374173778015968,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
-    "GALAUSDT__SMC": {
-      "trade_id": 2293,
-      "symbol": "GALAUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-10-20 01:30:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.001943,
-      "sl_price": 0.001965466395800748,
-      "sl_initial": 0.001965466395800748,
-      "tp1_price": 0.0019093004062988785,
-      "tp2_price": 0.001875600812597757,
-      "adx_value": null,
-      "qty_total": 51466.803911477095,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 5,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": true,
-        "vol_spike": true,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": true,
-        "htf_bearish": false,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 62.18,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "bull_fvg_count": 2,
-        "bear_fvg_count": 2,
-        "bull_ob_count": 1,
-        "bear_ob_count": 2,
-        "trend": 1
-      },
-      "lot_a": {
-        "qty": 25733.401955738547,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 25733.401955738547,
         "target": "tp2",
         "status": "open"
       }
