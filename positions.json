@@ -601,8 +601,46 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "DOGEUSDT__POC": {
+      "trade_id": 2374,
+      "symbol": "DOGEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-20 23:00:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.08191,
+      "sl_price": 0.08207183,
+      "sl_initial": 0.08207183,
+      "tp1_price": 0.08153999999999999,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 1220.8521548040533,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.08187958333333334,
+        "leg_start": "2026-10-20 21:30:00",
+        "leg_end": "2026-10-20 22:30:00",
+        "rr": 2.286,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.08174817,
+        "raw_tp": 0.08228
+      },
+      "lot_a": {
+        "qty": 1220.8521548040533,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2374,
+  "next_trade_id": 2375,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
