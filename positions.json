@@ -1,5 +1,5 @@
 {
-  "balance": 10128.175926974545,
+  "balance": 10126.806970325553,
   "positions": {
     "MANAUSDT__ST": {
       "trade_id": 2082,
@@ -333,55 +333,6 @@
         "status": "open"
       }
     },
-    "DOGEUSDT__SMC2": {
-      "trade_id": 2344,
-      "symbol": "DOGEUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-20 15:00:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.08039,
-      "sl_price": 0.08149050425012529,
-      "sl_initial": 0.08149050425012529,
-      "tp1_price": 0.07873924362481208,
-      "tp2_price": 0.07708848724962415,
-      "adx_value": null,
-      "qty_total": 1243.9358129120537,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": true,
-        "htf_bearish": false,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 55.11,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": 1,
-        "bull_fvg_count": 5,
-        "bear_fvg_count": 0,
-        "bull_ob_count": 3,
-        "bear_ob_count": 0
-      },
-      "lot_a": {
-        "qty": 621.9679064560269,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 621.9679064560269,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "VETUSDT__SMC2": {
       "trade_id": 2348,
       "symbol": "VETUSDT",
@@ -593,8 +544,46 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "VETUSDT__POC": {
+      "trade_id": 2359,
+      "symbol": "VETUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-20 19:30:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.007013,
+      "sl_price": 0.0070729600000000005,
+      "sl_initial": 0.0070729600000000005,
+      "tp1_price": 0.006954,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 14259.232853272493,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.006980125,
+        "leg_start": "2026-10-20 15:45:00",
+        "leg_end": "2026-10-20 17:00:00",
+        "rr": 0.984,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.00695304,
+        "raw_tp": 0.007072
+      },
+      "lot_a": {
+        "qty": 14259.232853272493,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2359,
+  "next_trade_id": 2360,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
