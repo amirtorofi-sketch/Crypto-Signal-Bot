@@ -1,5 +1,5 @@
 {
-  "balance": 10137.929543779988,
+  "balance": 10136.089663851859,
   "positions": {
     "MANAUSDT__ST": {
       "trade_id": 2082,
@@ -205,7 +205,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.418,
-      "sl_price": 0.4124066987141971,
+      "sl_price": 0.418,
       "sl_initial": 0.4124066987141971,
       "tp1_price": 0.4263899519287043,
       "tp2_price": 0.4347799038574086,
@@ -237,49 +237,10 @@
       "lot_a": {
         "qty": 119.61722488038278,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 119.61722488038278,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "CRVUSDT__ST": {
-      "trade_id": 2336,
-      "symbol": "CRVUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-10-20 13:45:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.3729,
-      "sl_price": 0.38350327238860515,
-      "sl_initial": 0.38350327238860515,
-      "tp1_price": 0.3569950914170923,
-      "tp2_price": 0.3410901828341846,
-      "adx_value": 15.86556023449117,
-      "qty_total": 268.1684097613301,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "adx": 15.866,
-        "di_plus": 26.331,
-        "di_minus": 14.244,
-        "ema_trend": 0.359034,
-        "close_vs_ema": "above",
-        "volume": 264631.0,
-        "vol_ma": 121004.67,
-        "vol_above_ma": true
-      },
-      "lot_a": {
-        "qty": 134.08420488066506,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 134.08420488066506,
         "target": "tp2",
         "status": "open"
       }
