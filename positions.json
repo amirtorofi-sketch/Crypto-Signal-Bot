@@ -1,5 +1,5 @@
 {
-  "balance": 10134.562858436599,
+  "balance": 10134.615328903434,
   "positions": {
     "MANAUSDT__ST": {
       "trade_id": 2082,
@@ -166,44 +166,6 @@
         "status": "open"
       }
     },
-    "BTCUSDT__POC": {
-      "trade_id": 2258,
-      "symbol": "BTCUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-19 16:00:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 82059.26,
-      "sl_price": 82451.41884999999,
-      "sl_initial": 82451.41884999999,
-      "tp1_price": 81568.51999999999,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.0012186315109349024,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 82008.33249999999,
-        "leg_start": "2026-10-19 14:00:00",
-        "leg_end": "2026-10-19 14:45:00",
-        "rr": 1.251,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 81667.10115,
-        "raw_tp": 82550.0
-      },
-      "lot_a": {
-        "qty": 0.0012186315109349024,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "ETHUSDT__POC": {
       "trade_id": 2259,
       "symbol": "ETHUSDT",
@@ -240,55 +202,6 @@
         "qty": 0.0,
         "target": "tp2",
         "status": "none"
-      }
-    },
-    "BTCUSDT__SMC2": {
-      "trade_id": 2266,
-      "symbol": "BTCUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-19 17:00:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 81937.54,
-      "sl_price": 81490.52093336076,
-      "sl_initial": 81490.52093336076,
-      "tp1_price": 82608.06859995885,
-      "tp2_price": 83278.59719991768,
-      "adx_value": null,
-      "qty_total": 0.0012204418145821806,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": true,
-        "recent_bear_sweep": false,
-        "vol_spike": false,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 38.68,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": true,
-        "trend_strong": false,
-        "trend": -1,
-        "bull_fvg_count": 3,
-        "bear_fvg_count": 6,
-        "bull_ob_count": 1,
-        "bear_ob_count": 2
-      },
-      "lot_a": {
-        "qty": 0.0006102209072910903,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0006102209072910903,
-        "target": "tp2",
-        "status": "open"
       }
     },
     "MANAUSDT__SMC2": {
