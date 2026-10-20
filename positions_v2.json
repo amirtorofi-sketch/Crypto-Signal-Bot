@@ -1,5 +1,5 @@
 {
-  "balance": 9785.506192209245,
+  "balance": 9788.876221769287,
   "positions": {
     "STGUSDT__SMC": {
       "trade_id": 8434,
@@ -1450,7 +1450,7 @@
       "session": "لندن",
       "entry_price": 0.001463,
       "initial_sl_price": 0.0014356015598828403,
-      "sl_price": 0.0014356015598828403,
+      "sl_price": 0.001463,
       "tp1_price": 0.0015040976601757398,
       "tp2_price": 0.0015451953203514796,
       "qty_total": 68352.6999316473,
@@ -1478,8 +1478,8 @@
         "bull_ob_count": 1,
         "bear_ob_count": 0
       },
-      "qty_open": 68352.6999316473,
-      "phase": "before_tp1"
+      "qty_open": 34176.34996582365,
+      "phase": "after_tp1"
     },
     "CTSIUSDT__SMC": {
       "trade_id": 22606,
@@ -4250,7 +4250,7 @@
       "session": "لندن",
       "entry_price": 0.5636,
       "initial_sl_price": 0.5463528892831436,
-      "sl_price": 0.5463528892831436,
+      "sl_price": 0.5636,
       "tp1_price": 0.5894706660752845,
       "tp2_price": 0.6153413321505691,
       "qty_total": 177.43080198722498,
@@ -4278,8 +4278,8 @@
         "bull_ob_count": 3,
         "bear_ob_count": 0
       },
-      "qty_open": 177.43080198722498,
-      "phase": "before_tp1"
+      "qty_open": 88.71540099361249,
+      "phase": "after_tp1"
     },
     "WUSDT__SMC": {
       "trade_id": 22694,
@@ -5251,31 +5251,6 @@
       },
       "qty_open": 681.6632583503749
     },
-    "APTUSDT__POC": {
-      "trade_id": 22826,
-      "symbol": "APTUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-20 19:30:00",
-      "session": "نیویورک",
-      "entry_price": 0.828,
-      "sl_price": 0.8165826,
-      "tp1_price": 0.8359,
-      "tp2_price": null,
-      "qty_total": 120.77294685990339,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.81999375,
-        "leg_start": "2026-10-20 15:45:00",
-        "leg_end": "2026-10-20 17:30:00",
-        "rr": 0.692,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 120.77294685990339
-    },
     "ENAUSDT__POC": {
       "trade_id": 22827,
       "symbol": "ENAUSDT",
@@ -5425,31 +5400,6 @@
         "reason": "poc_retest_rejection"
       },
       "qty_open": 14259.232853272493
-    },
-    "ZROUSDT__POC": {
-      "trade_id": 22833,
-      "symbol": "ZROUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-20 19:30:00",
-      "session": "نیویورک",
-      "entry_price": 1.941,
-      "sl_price": 1.9160819999999998,
-      "tp1_price": 1.992,
-      "tp2_price": null,
-      "qty_total": 51.51983513652756,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 1.9354583333333335,
-        "leg_start": "2026-10-20 16:15:00",
-        "leg_end": "2026-10-20 18:00:00",
-        "rr": 2.047,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 51.51983513652756
     },
     "BERAUSDT__SMC": {
       "trade_id": 22834,
@@ -6030,8 +5980,33 @@
         "reason": "poc_retest_rejection"
       },
       "qty_open": 555.247084952804
+    },
+    "NEOUSDT__POC": {
+      "trade_id": 22858,
+      "symbol": "NEOUSDT",
+      "source": "POC Retest v2",
+      "direction": "long",
+      "candle_time": "2026-10-20 20:15:00",
+      "session": "نیویورک",
+      "entry_price": 2.256,
+      "sl_price": 2.246751,
+      "tp1_price": 2.281,
+      "tp2_price": null,
+      "qty_total": 44.326241134751776,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 2.2545625,
+        "leg_start": "2026-10-20 15:00:00",
+        "leg_end": "2026-10-20 17:00:00",
+        "rr": 2.703,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 44.326241134751776
     }
   },
-  "next_trade_id": 22858,
+  "next_trade_id": 22859,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
