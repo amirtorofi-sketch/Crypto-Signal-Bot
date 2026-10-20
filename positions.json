@@ -1,5 +1,5 @@
 {
-  "balance": 10127.896261425449,
+  "balance": 10128.63551052099,
   "positions": {
     "MANAUSDT__ST": {
       "trade_id": 2082,
@@ -622,7 +622,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.001934,
-      "sl_price": 0.0019530627700103445,
+      "sl_price": 0.001934,
       "sl_initial": 0.0019530627700103445,
       "tp1_price": 0.0019054058449844832,
       "tp2_price": 0.0018768116899689662,
@@ -653,7 +653,7 @@
       "lot_a": {
         "qty": 25853.154084798345,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 25853.154084798345,
@@ -748,8 +748,47 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ONEUSDT__ST": {
+      "trade_id": 2324,
+      "symbol": "ONEUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-20 09:30:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.001412,
+      "sl_price": 0.001370084498195648,
+      "sl_initial": 0.001370084498195648,
+      "tp1_price": 0.001474873252706528,
+      "tp2_price": 0.001537746505413056,
+      "adx_value": 25.14293078173865,
+      "qty_total": 70821.52974504248,
+      "notional": 99.99999999999999,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 25.143,
+        "di_plus": 24.824,
+        "di_minus": 25.761,
+        "ema_trend": 0.001424,
+        "close_vs_ema": "below",
+        "volume": 4069747.4,
+        "vol_ma": 3831984.055,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 35410.76487252124,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 35410.76487252124,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 2324,
+  "next_trade_id": 2325,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
