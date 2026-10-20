@@ -1,5 +1,5 @@
 {
-  "balance": 10131.729937830176,
+  "balance": 10131.599814887782,
   "positions": {
     "MANAUSDT__ST": {
       "trade_id": 2082,
@@ -682,44 +682,6 @@
         "status": "open"
       }
     },
-    "BNBUSDT__POC": {
-      "trade_id": 2312,
-      "symbol": "BNBUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-20 05:45:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 729.61,
-      "sl_price": 730.55939,
-      "sl_initial": 730.55939,
-      "tp1_price": 727.25,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.13705952495168652,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 729.5014583333334,
-        "leg_start": "2026-10-20 01:00:00",
-        "leg_end": "2026-10-20 05:00:00",
-        "rr": 2.486,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 728.66061,
-        "raw_tp": 731.97
-      },
-      "lot_a": {
-        "qty": 0.13705952495168652,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "CHZUSDT__SMC2": {
       "trade_id": 2313,
       "symbol": "CHZUSDT",
@@ -844,8 +806,46 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "ONEUSDT__POC": {
+      "trade_id": 2317,
+      "symbol": "ONEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-20 07:00:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.001426,
+      "sl_price": 0.0014115610000000002,
+      "sl_initial": 0.0014115610000000002,
+      "tp1_price": 0.001437,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 70126.22720897615,
+      "notional": 99.99999999999999,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0014380208333333333,
+        "leg_start": "2026-10-20 03:30:00",
+        "leg_end": "2026-10-20 04:45:00",
+        "rr": 0.762,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.0014404389999999997,
+        "raw_tp": 0.001415
+      },
+      "lot_a": {
+        "qty": 70126.22720897615,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2317,
+  "next_trade_id": 2318,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
