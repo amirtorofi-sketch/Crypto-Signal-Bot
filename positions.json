@@ -401,8 +401,84 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ETHUSDT__POC": {
+      "trade_id": 2443,
+      "symbol": "ETHUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-21 19:30:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 2493.93,
+      "sl_price": 2485.36,
+      "sl_initial": 2485.36,
+      "tp1_price": 2504.0099999999998,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.04009735638129378,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 2495.459375,
+        "leg_start": "2026-10-21 18:15:00",
+        "leg_end": "2026-10-21 19:00:00",
+        "rr": 1.176,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 2502.4999999999995,
+        "raw_tp": 2483.85
+      },
+      "lot_a": {
+        "qty": 0.04009735638129378,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "ONEUSDT__POC": {
+      "trade_id": 2444,
+      "symbol": "ONEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-21 19:30:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.001499,
+      "sl_price": 0.001492496,
+      "sl_initial": 0.001492496,
+      "tp1_price": 0.0015099999999999998,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 66711.14076050701,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0015025833333333332,
+        "leg_start": "2026-10-21 18:00:00",
+        "leg_end": "2026-10-21 19:00:00",
+        "rr": 1.691,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.0015055039999999997,
+        "raw_tp": 0.001488
+      },
+      "lot_a": {
+        "qty": 66711.14076050701,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2443,
+  "next_trade_id": 2445,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
