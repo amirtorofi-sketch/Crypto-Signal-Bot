@@ -1,5 +1,5 @@
 {
-  "balance": 10110.5806801824,
+  "balance": 10109.926876586273,
   "positions": {
     "MANAUSDT__ST": {
       "trade_id": 2082,
@@ -763,44 +763,6 @@
         "status": "open"
       }
     },
-    "ONEUSDT__POC": {
-      "trade_id": 2409,
-      "symbol": "ONEUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-21 09:30:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.001446,
-      "sl_price": 0.0014365460000000001,
-      "sl_initial": 0.0014365460000000001,
-      "tp1_price": 0.001453,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 69156.29322268326,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.0014485625,
-        "leg_start": "2026-10-21 03:45:00",
-        "leg_end": "2026-10-21 05:30:00",
-        "rr": 0.74,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.001455454,
-        "raw_tp": 0.001439
-      },
-      "lot_a": {
-        "qty": 69156.29322268326,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "BNBUSDT__SMC2": {
       "trade_id": 2410,
       "symbol": "BNBUSDT",
@@ -984,8 +946,95 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "SOLUSDT__POC": {
+      "trade_id": 2415,
+      "symbol": "SOLUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-21 11:30:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 106.82,
+      "sl_price": 106.50296999999999,
+      "sl_initial": 106.50296999999999,
+      "tp1_price": 107.63999999999999,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.9361542782250516,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 106.86625000000001,
+        "leg_start": "2026-10-21 08:45:00",
+        "leg_end": "2026-10-21 10:15:00",
+        "rr": 2.587,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 107.13703,
+        "raw_tp": 106.0
+      },
+      "lot_a": {
+        "qty": 0.9361542782250516,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "VETUSDT__SMC2": {
+      "trade_id": 2416,
+      "symbol": "VETUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-21 11:30:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.007249,
+      "sl_price": 0.007314528160385628,
+      "sl_initial": 0.007314528160385628,
+      "tp1_price": 0.007150707759421558,
+      "tp2_price": 0.007052415518843116,
+      "adx_value": null,
+      "qty_total": 13795.006207752793,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 4,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 57.56,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": 1,
+        "bull_fvg_count": 5,
+        "bear_fvg_count": 0,
+        "bull_ob_count": 3,
+        "bear_ob_count": 0
+      },
+      "lot_a": {
+        "qty": 6897.503103876396,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 6897.503103876396,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 2415,
+  "next_trade_id": 2417,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
