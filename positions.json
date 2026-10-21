@@ -477,8 +477,84 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "BNBUSDT__POC": {
+      "trade_id": 2446,
+      "symbol": "BNBUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-21 20:00:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 749.42,
+      "sl_price": 751.1484399999998,
+      "sl_initial": 751.1484399999998,
+      "tp1_price": 747.0899999999999,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.13343652424541647,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 749.2864583333333,
+        "leg_start": "2026-10-21 17:00:00",
+        "leg_end": "2026-10-21 18:15:00",
+        "rr": 1.348,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 747.6915600000001,
+        "raw_tp": 751.75
+      },
+      "lot_a": {
+        "qty": 0.13343652424541647,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "ROSEUSDT__POC": {
+      "trade_id": 2447,
+      "symbol": "ROSEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-21 20:00:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.0079,
+      "sl_price": 0.007822030000000002,
+      "sl_initial": 0.007822030000000002,
+      "tp1_price": 0.008060000000000001,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 12658.227848101265,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.007925625,
+        "leg_start": "2026-10-21 16:45:00",
+        "leg_end": "2026-10-21 19:00:00",
+        "rr": 2.052,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.00797797,
+        "raw_tp": 0.00774
+      },
+      "lot_a": {
+        "qty": 12658.227848101265,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2446,
+  "next_trade_id": 2448,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
