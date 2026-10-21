@@ -1,5 +1,5 @@
 {
-  "balance": 10115.04941899953,
+  "balance": 10117.916443240634,
   "positions": {
     "MANAUSDT__ST": {
       "trade_id": 2082,
@@ -166,7 +166,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.001412,
-      "sl_price": 0.001370084498195648,
+      "sl_price": 0.001412,
       "sl_initial": 0.001370084498195648,
       "tp1_price": 0.001474873252706528,
       "tp2_price": 0.001537746505413056,
@@ -188,7 +188,7 @@
       "lot_a": {
         "qty": 35410.76487252124,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 35410.76487252124,
@@ -282,44 +282,6 @@
         "qty": 0.02051324129725738,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "BNBUSDT__POC": {
-      "trade_id": 2353,
-      "symbol": "BNBUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-20 16:45:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 737.29,
-      "sl_price": 735.61177,
-      "sl_initial": 735.61177,
-      "tp1_price": 743.4699999999999,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.13563184093097697,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 737.6833333333334,
-        "leg_start": "2026-10-20 14:15:00",
-        "leg_end": "2026-10-20 15:00:00",
-        "rr": 3.682,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 738.96823,
-        "raw_tp": 731.11
-      },
-      "lot_a": {
-        "qty": 0.13563184093097697,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     },
     "MANAUSDT__SMC": {
@@ -562,44 +524,6 @@
         "qty": 609.6817461285209,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "DOGEUSDT__POC": {
-      "trade_id": 2374,
-      "symbol": "DOGEUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-20 23:00:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.08191,
-      "sl_price": 0.08207183,
-      "sl_initial": 0.08207183,
-      "tp1_price": 0.08153999999999999,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 1220.8521548040533,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.08187958333333334,
-        "leg_start": "2026-10-20 21:30:00",
-        "leg_end": "2026-10-20 22:30:00",
-        "rr": 2.286,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.08174817,
-        "raw_tp": 0.08228
-      },
-      "lot_a": {
-        "qty": 1220.8521548040533,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     },
     "ETHUSDT__POC": {
