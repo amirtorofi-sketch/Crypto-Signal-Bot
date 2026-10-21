@@ -809,8 +809,46 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "VETUSDT__POC": {
+      "trade_id": 2398,
+      "symbol": "VETUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-21 06:30:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.007184,
+      "sl_price": 0.007206169,
+      "sl_initial": 0.007206169,
+      "tp1_price": 0.007049000000000001,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 13919.821826280622,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0071774583333333326,
+        "leg_start": "2026-10-21 01:00:00",
+        "leg_end": "2026-10-21 01:45:00",
+        "rr": 6.09,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.0071618310000000004,
+        "raw_tp": 0.007319
+      },
+      "lot_a": {
+        "qty": 13919.821826280622,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2398,
+  "next_trade_id": 2399,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
