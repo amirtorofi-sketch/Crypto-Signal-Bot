@@ -1,5 +1,5 @@
 {
-  "balance": 10088.691453224688,
+  "balance": 10084.905914964866,
   "positions": {
     "MANAUSDT__ST": {
       "trade_id": 2082,
@@ -403,26 +403,26 @@
       }
     },
     "CRVUSDT__SMC": {
-      "trade_id": 2452,
+      "trade_id": 2456,
       "symbol": "CRVUSDT",
       "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-10-21 22:00:00",
-      "session": "نیویورک",
+      "candle_time": "2026-10-22 00:00:00",
+      "session": "آسیا",
       "raw_direction": "long",
       "direction": "short",
-      "entry_price": 0.4026,
-      "sl_price": 0.4086083342491662,
-      "sl_initial": 0.4086083342491662,
-      "tp1_price": 0.39358749862625075,
-      "tp2_price": 0.38457499725250144,
+      "entry_price": 0.409,
+      "sl_price": 0.41634451652970583,
+      "sl_initial": 0.41634451652970583,
+      "tp1_price": 0.39798322520544116,
+      "tp2_price": 0.3869664504108824,
       "adx_value": null,
-      "qty_total": 248.3854942871336,
+      "qty_total": 244.49877750611248,
       "notional": 100.0,
       "leverage": 1.0,
-      "signal_score": 6,
+      "signal_score": 5,
       "market_snapshot": {
-        "recent_bull_sweep": true,
-        "recent_bear_sweep": false,
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": true,
         "vol_spike": true,
         "strong_bull_rej": true,
         "strong_bear_rej": false,
@@ -430,7 +430,7 @@
         "htf_bearish": false,
         "discount_zone": false,
         "premium_zone": true,
-        "rsi_value": 69.18,
+        "rsi_value": 67.24,
         "rsi_bull_ok": true,
         "rsi_bear_ok": false,
         "bull_fvg_count": 6,
@@ -440,37 +440,37 @@
         "trend": 1
       },
       "lot_a": {
-        "qty": 124.1927471435668,
+        "qty": 122.24938875305624,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 124.1927471435668,
+        "qty": 122.24938875305624,
         "target": "tp2",
         "status": "open"
       }
     },
-    "CRVUSDT__SMC2": {
-      "trade_id": 2454,
-      "symbol": "CRVUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-21 22:45:00",
-      "session": "نیویورک",
+    "ROSEUSDT__SMC": {
+      "trade_id": 2457,
+      "symbol": "ROSEUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-10-22 00:00:00",
+      "session": "آسیا",
       "raw_direction": "long",
       "direction": "short",
-      "entry_price": 0.3996,
-      "sl_price": 0.40655751147768066,
-      "sl_initial": 0.40655751147768066,
-      "tp1_price": 0.38916373278347904,
-      "tp2_price": 0.3787274655669581,
+      "entry_price": 0.00784,
+      "sl_price": 0.007933601287069172,
+      "sl_initial": 0.007933601287069172,
+      "tp1_price": 0.007699598069396242,
+      "tp2_price": 0.007559196138792484,
       "adx_value": null,
-      "qty_total": 250.25025025025025,
+      "qty_total": 12755.102040816328,
       "notional": 100.0,
       "leverage": 1.0,
-      "signal_score": 3,
+      "signal_score": 5,
       "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": true,
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
         "vol_spike": false,
         "strong_bull_rej": true,
         "strong_bear_rej": false,
@@ -478,66 +478,27 @@
         "htf_bearish": false,
         "discount_zone": false,
         "premium_zone": true,
-        "rsi_value": 59.82,
+        "rsi_value": 52.16,
         "rsi_bull_ok": true,
         "rsi_bear_ok": false,
-        "trend_strong": false,
-        "trend": 1,
-        "bull_fvg_count": 6,
-        "bear_fvg_count": 0,
+        "bull_fvg_count": 5,
+        "bear_fvg_count": 2,
         "bull_ob_count": 3,
-        "bear_ob_count": 0
+        "bear_ob_count": 0,
+        "trend": 1
       },
       "lot_a": {
-        "qty": 125.12512512512512,
+        "qty": 6377.551020408164,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 125.12512512512512,
+        "qty": 6377.551020408164,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "MASKUSDT__POC": {
-      "trade_id": 2455,
-      "symbol": "MASKUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-21 22:45:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.442,
-      "sl_price": 0.44444,
-      "sl_initial": 0.44444,
-      "tp1_price": 0.435,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 226.2443438914027,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.4405,
-        "leg_start": "2026-10-21 14:15:00",
-        "leg_end": "2026-10-21 17:15:00",
-        "rr": 2.869,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.43956,
-        "raw_tp": 0.449
-      },
-      "lot_a": {
-        "qty": 226.2443438914027,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     }
   },
-  "next_trade_id": 2456,
+  "next_trade_id": 2458,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
