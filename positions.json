@@ -467,8 +467,46 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ONEUSDT__POC": {
+      "trade_id": 2493,
+      "symbol": "ONEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-22 10:45:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.00142,
+      "sl_price": 0.001425416,
+      "sl_initial": 0.001425416,
+      "tp1_price": 0.001405,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 70422.5352112676,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0014195,
+        "leg_start": "2026-10-22 09:00:00",
+        "leg_end": "2026-10-22 10:15:00",
+        "rr": 2.77,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.001414584,
+        "raw_tp": 0.001435
+      },
+      "lot_a": {
+        "qty": 70422.5352112676,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2493,
+  "next_trade_id": 2494,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
