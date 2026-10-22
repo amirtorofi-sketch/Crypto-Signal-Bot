@@ -186,8 +186,57 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CHZUSDT__SMC2": {
+      "trade_id": 2523,
+      "symbol": "CHZUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-22 19:45:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.01333,
+      "sl_price": 0.013459883525976683,
+      "sl_initial": 0.013459883525976683,
+      "tp1_price": 0.013135174711034975,
+      "tp2_price": 0.01294034942206995,
+      "adx_value": null,
+      "qty_total": 7501.875468867217,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": true,
+        "vol_spike": false,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 46.09,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": 1,
+        "bull_fvg_count": 1,
+        "bear_fvg_count": 4,
+        "bull_ob_count": 0,
+        "bear_ob_count": 3
+      },
+      "lot_a": {
+        "qty": 3750.9377344336085,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 3750.9377344336085,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 2523,
+  "next_trade_id": 2524,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
