@@ -1,5 +1,5 @@
 {
-  "balance": 10091.194600033905,
+  "balance": 10093.485169798787,
   "positions": {
     "MANAUSDT__ST": {
       "trade_id": 2082,
@@ -75,45 +75,6 @@
       },
       "lot_b": {
         "qty": 0.48160277403197843,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "GALAUSDT__ST": {
-      "trade_id": 2288,
-      "symbol": "GALAUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-10-20 01:00:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.001907,
-      "sl_price": 0.001907,
-      "sl_initial": 0.0018583132431137929,
-      "tp1_price": 0.001980030135329311,
-      "tp2_price": 0.0020530602706586216,
-      "adx_value": 21.518864265911834,
-      "qty_total": 52438.38489774515,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "adx": 21.519,
-        "di_plus": 22.351,
-        "di_minus": 28.311,
-        "ema_trend": 0.001919,
-        "close_vs_ema": "below",
-        "volume": 5619231.0,
-        "vol_ma": 4264644.6,
-        "vol_above_ma": true
-      },
-      "lot_a": {
-        "qty": 26219.192448872574,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 26219.192448872574,
         "target": "tp2",
         "status": "open"
       }
@@ -215,7 +176,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.00791,
-      "sl_price": 0.00807791311126405,
+      "sl_price": 0.00791,
       "sl_initial": 0.00807791311126405,
       "tp1_price": 0.007658130333103925,
       "tp2_price": 0.007406260666207849,
@@ -247,7 +208,7 @@
       "lot_a": {
         "qty": 6321.112515802781,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 6321.112515802781,
@@ -264,7 +225,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.001493,
-      "sl_price": 0.0015270128570389104,
+      "sl_price": 0.001493,
       "sl_initial": 0.0015270128570389104,
       "tp1_price": 0.0014419807144416341,
       "tp2_price": 0.0013909614288832685,
@@ -296,7 +257,7 @@
       "lot_a": {
         "qty": 33489.61821835231,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 33489.61821835231,
@@ -586,20 +547,20 @@
       }
     },
     "GALAUSDT__SMC": {
-      "trade_id": 2464,
+      "trade_id": 2465,
       "symbol": "GALAUSDT",
       "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-10-22 01:45:00",
+      "candle_time": "2026-10-22 02:15:00",
       "session": "آسیا",
       "raw_direction": "short",
       "direction": "long",
-      "entry_price": 0.001922,
-      "sl_price": 0.00190258504896439,
-      "sl_initial": 0.00190258504896439,
-      "tp1_price": 0.001951122426553415,
-      "tp2_price": 0.00198024485310683,
+      "entry_price": 0.0019,
+      "sl_price": 0.0018792279248764589,
+      "sl_initial": 0.0018792279248764589,
+      "tp1_price": 0.0019311581126853117,
+      "tp2_price": 0.0019623162253706236,
       "adx_value": null,
-      "qty_total": 52029.13631633715,
+      "qty_total": 52631.57894736842,
       "notional": 100.0,
       "leverage": 1.0,
       "signal_score": 5,
@@ -613,7 +574,7 @@
         "htf_bearish": true,
         "discount_zone": true,
         "premium_zone": false,
-        "rsi_value": 24.18,
+        "rsi_value": 18.3,
         "rsi_bull_ok": false,
         "rsi_bear_ok": true,
         "bull_fvg_count": 0,
@@ -623,17 +584,17 @@
         "trend": -1
       },
       "lot_a": {
-        "qty": 26014.568158168575,
+        "qty": 26315.78947368421,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 26014.568158168575,
+        "qty": 26315.78947368421,
         "target": "tp2",
         "status": "open"
       }
     }
   },
-  "next_trade_id": 2465,
+  "next_trade_id": 2466,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
