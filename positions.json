@@ -546,8 +546,134 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CHZUSDT__ST": {
+      "trade_id": 2460,
+      "symbol": "CHZUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-22 01:00:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.01425,
+      "sl_price": 0.014448047466966582,
+      "sl_initial": 0.014448047466966582,
+      "tp1_price": 0.013952928799550127,
+      "tp2_price": 0.013655857599100256,
+      "adx_value": 29.7292919968171,
+      "qty_total": 7017.543859649122,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 29.729,
+        "di_plus": 38.464,
+        "di_minus": 23.455,
+        "ema_trend": 0.01398,
+        "close_vs_ema": "above",
+        "volume": 10325528.0,
+        "vol_ma": 940682.65,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 3508.771929824561,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 3508.771929824561,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "CHZUSDT__SMC2": {
+      "trade_id": 2461,
+      "symbol": "CHZUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-22 01:00:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.01425,
+      "sl_price": 0.014140209239749024,
+      "sl_initial": 0.014140209239749024,
+      "tp1_price": 0.014414686140376467,
+      "tp2_price": 0.014579372280752931,
+      "adx_value": null,
+      "qty_total": 7017.543859649122,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": true,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 56.87,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 0,
+        "bear_fvg_count": 3,
+        "bull_ob_count": 2,
+        "bear_ob_count": 0
+      },
+      "lot_a": {
+        "qty": 3508.771929824561,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 3508.771929824561,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "VETUSDT__POC": {
+      "trade_id": 2462,
+      "symbol": "VETUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-22 01:00:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.007634,
+      "sl_price": 0.007726549,
+      "sl_initial": 0.007726549,
+      "tp1_price": 0.007573000000000001,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 13099.292638197538,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0075695625,
+        "leg_start": "2026-10-21 19:00:00",
+        "leg_end": "2026-10-21 21:30:00",
+        "rr": 0.659,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.007541451,
+        "raw_tp": 0.007695
+      },
+      "lot_a": {
+        "qty": 13099.292638197538,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2460,
+  "next_trade_id": 2463,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
