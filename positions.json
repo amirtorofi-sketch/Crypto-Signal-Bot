@@ -1,5 +1,5 @@
 {
-  "balance": 10103.47433545104,
+  "balance": 10103.908326771212,
   "positions": {
     "MANAUSDT__ST": {
       "trade_id": 2082,
@@ -235,44 +235,6 @@
         "status": "open"
       }
     },
-    "VETUSDT__POC": {
-      "trade_id": 2485,
-      "symbol": "VETUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-22 09:30:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.007143,
-      "sl_price": 0.007117839000000001,
-      "sl_initial": 0.007117839000000001,
-      "tp1_price": 0.007174,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 13999.720005599887,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.007145312500000001,
-        "leg_start": "2026-10-22 07:45:00",
-        "leg_end": "2026-10-22 09:00:00",
-        "rr": 1.232,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.007168160999999999,
-        "raw_tp": 0.007112
-      },
-      "lot_a": {
-        "qty": 13999.720005599887,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "GALAUSDT__POC": {
       "trade_id": 2486,
       "symbol": "GALAUSDT",
@@ -310,8 +272,154 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "ETHUSDT__SMC2": {
+      "trade_id": 2487,
+      "symbol": "ETHUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-22 10:00:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 2409.91,
+      "sl_price": 2394.2550542005893,
+      "sl_initial": 2394.2550542005893,
+      "tp1_price": 2433.3924186991158,
+      "tp2_price": 2456.8748373982316,
+      "adx_value": null,
+      "qty_total": 0.04149532555157662,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 32.48,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 1,
+        "bear_fvg_count": 5,
+        "bull_ob_count": 0,
+        "bear_ob_count": 3
+      },
+      "lot_a": {
+        "qty": 0.02074766277578831,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.02074766277578831,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "MASKUSDT__SMC": {
+      "trade_id": 2488,
+      "symbol": "MASKUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-10-22 10:00:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.514,
+      "sl_price": 0.5295619629402996,
+      "sl_initial": 0.5295619629402996,
+      "tp1_price": 0.4906570555895507,
+      "tp2_price": 0.4673141111791014,
+      "adx_value": null,
+      "qty_total": 194.55252918287937,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 93.75,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "bull_fvg_count": 5,
+        "bear_fvg_count": 0,
+        "bull_ob_count": 1,
+        "bear_ob_count": 0,
+        "trend": 1
+      },
+      "lot_a": {
+        "qty": 97.27626459143968,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 97.27626459143968,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "MANAUSDT__SMC2": {
+      "trade_id": 2489,
+      "symbol": "MANAUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-22 10:00:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.0842,
+      "sl_price": 0.08350008302058187,
+      "sl_initial": 0.08350008302058187,
+      "tp1_price": 0.08524987546912718,
+      "tp2_price": 0.08629975093825437,
+      "adx_value": null,
+      "qty_total": 1187.6484560570073,
+      "notional": 100.00000000000001,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 38.18,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 1,
+        "bear_fvg_count": 6,
+        "bull_ob_count": 1,
+        "bear_ob_count": 2
+      },
+      "lot_a": {
+        "qty": 593.8242280285036,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 593.8242280285036,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 2487,
+  "next_trade_id": 2490,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
