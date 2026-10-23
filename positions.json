@@ -711,8 +711,47 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ROSEUSDT__ST": {
+      "trade_id": 2567,
+      "symbol": "ROSEUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-23 09:00:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.00733,
+      "sl_price": 0.007240105116114424,
+      "sl_initial": 0.007240105116114424,
+      "tp1_price": 0.007464842325828364,
+      "tp2_price": 0.0075996846516567275,
+      "adx_value": 18.55675936563379,
+      "qty_total": 13642.564802182811,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 18.557,
+        "di_plus": 27.714,
+        "di_minus": 35.812,
+        "ema_trend": 0.007405,
+        "close_vs_ema": "below",
+        "volume": 1088415.1,
+        "vol_ma": 604829.105,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 6821.2824010914055,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 6821.2824010914055,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 2567,
+  "next_trade_id": 2568,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
