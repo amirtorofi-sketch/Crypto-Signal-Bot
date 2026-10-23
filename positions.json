@@ -894,8 +894,57 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "CRVUSDT__SMC2": {
+      "trade_id": 2586,
+      "symbol": "CRVUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-23 12:30:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.3606,
+      "sl_price": 0.35703338042011123,
+      "sl_initial": 0.35703338042011123,
+      "tp1_price": 0.36594992936983306,
+      "tp2_price": 0.3712998587396662,
+      "adx_value": null,
+      "qty_total": 277.31558513588465,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
+        "vol_spike": false,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 40.51,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "trend_strong": false,
+        "trend": -1,
+        "bull_fvg_count": 0,
+        "bear_fvg_count": 6,
+        "bull_ob_count": 0,
+        "bear_ob_count": 3
+      },
+      "lot_a": {
+        "qty": 138.65779256794232,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 138.65779256794232,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 2586,
+  "next_trade_id": 2587,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
