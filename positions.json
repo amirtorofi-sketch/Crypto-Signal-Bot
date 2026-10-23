@@ -1,5 +1,5 @@
 {
-  "balance": 10083.286358254567,
+  "balance": 10084.964230784277,
   "positions": {
     "MANAUSDT__ST": {
       "trade_id": 2082,
@@ -147,7 +147,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.001898,
-      "sl_price": 0.001917137652350344,
+      "sl_price": 0.001898,
       "sl_initial": 0.001917137652350344,
       "tp1_price": 0.0018692935214744838,
       "tp2_price": 0.0018405870429489676,
@@ -179,7 +179,7 @@
       "lot_a": {
         "qty": 26343.519494204425,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 26343.519494204425,
@@ -391,7 +391,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.0839,
-      "sl_price": 0.0845140427321883,
+      "sl_price": 0.0839,
       "sl_initial": 0.0845140427321883,
       "tp1_price": 0.08297893590171757,
       "tp2_price": 0.08205787180343513,
@@ -423,7 +423,7 @@
       "lot_a": {
         "qty": 595.9475566150179,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 595.9475566150179,
@@ -810,44 +810,6 @@
       },
       "lot_a": {
         "qty": 13691.128148959475,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
-    "GALAUSDT__POC": {
-      "trade_id": 2585,
-      "symbol": "GALAUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-23 12:15:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.001878,
-      "sl_price": 0.0018868709999999998,
-      "sl_initial": 0.0018868709999999998,
-      "tp1_price": 0.0018709999999999998,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 53248.13631522897,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.0018759583333333334,
-        "leg_start": "2026-10-23 11:00:00",
-        "leg_end": "2026-10-23 11:45:00",
-        "rr": 0.789,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.001869129,
-        "raw_tp": 0.001885
-      },
-      "lot_a": {
-        "qty": 53248.13631522897,
         "target": "tp1",
         "status": "open"
       },
