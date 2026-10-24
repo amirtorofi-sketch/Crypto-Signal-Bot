@@ -1,5 +1,5 @@
 {
-  "balance": 10531.624739216497,
+  "balance": 10532.416040174072,
   "positions": {
     "STGUSDT__SMC": {
       "trade_id": 8434,
@@ -890,7 +890,7 @@
       "session": "لندن",
       "entry_price": 5.617,
       "initial_sl_price": 5.6762631663826095,
-      "sl_price": 5.6762631663826095,
+      "sl_price": 5.617,
       "tp1_price": 5.528105250426085,
       "tp2_price": 5.439210500852171,
       "qty_total": 17.80309773900659,
@@ -918,8 +918,8 @@
         "bull_ob_count": 1,
         "bear_ob_count": 2
       },
-      "qty_open": 17.80309773900659,
-      "phase": "before_tp1"
+      "qty_open": 8.901548869503294,
+      "phase": "after_tp1"
     },
     "XRPUSDT__SMC": {
       "trade_id": 26257,
@@ -1545,8 +1545,33 @@
         "reason": "poc_retest_rejection"
       },
       "qty_open": 24330.900243309003
+    },
+    "FILUSDT__POC": {
+      "trade_id": 26280,
+      "symbol": "FILUSDT",
+      "source": "POC Retest v2",
+      "direction": "long",
+      "candle_time": "2026-10-24 15:30:00",
+      "session": "لندن",
+      "entry_price": 0.9242,
+      "sl_price": 0.9170820000000001,
+      "tp1_price": 0.9301,
+      "tp2_price": null,
+      "qty_total": 108.20168794633196,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.9230166666666667,
+        "leg_start": "2026-10-24 14:15:00",
+        "leg_end": "2026-10-24 15:00:00",
+        "rr": 0.829,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 108.20168794633196
     }
   },
-  "next_trade_id": 26280,
+  "next_trade_id": 26281,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
