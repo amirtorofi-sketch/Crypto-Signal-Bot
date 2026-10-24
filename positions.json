@@ -1,5 +1,5 @@
 {
-  "balance": 10070.186620178854,
+  "balance": 10070.63991663496,
   "positions": {
     "MANAUSDT__ST": {
       "trade_id": 2082,
@@ -98,7 +98,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 79803.75,
-      "sl_price": 79321.41990587977,
+      "sl_price": 79803.75,
       "sl_initial": 79321.41990587977,
       "tp1_price": 80527.24514118035,
       "tp2_price": 81250.7402823607,
@@ -130,7 +130,7 @@
       "lot_a": {
         "qty": 0.0006265369735131495,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.0006265369735131495,
@@ -224,8 +224,46 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "ETHUSDT__POC": {
+      "trade_id": 2685,
+      "symbol": "ETHUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-24 18:45:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 2338.28,
+      "sl_price": 2331.4272100000007,
+      "sl_initial": 2331.4272100000007,
+      "tp1_price": 2394.1000000000004,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.04276647792394409,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 2341.05,
+        "leg_start": "2026-10-24 12:45:00",
+        "leg_end": "2026-10-24 15:15:00",
+        "rr": 8.146,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 2345.1327899999997,
+        "raw_tp": 2282.46
+      },
+      "lot_a": {
+        "qty": 0.04276647792394409,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2685,
+  "next_trade_id": 2686,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
