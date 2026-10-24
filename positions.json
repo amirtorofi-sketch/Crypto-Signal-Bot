@@ -1,5 +1,5 @@
 {
-  "balance": 10084.500599380537,
+  "balance": 10083.67835357222,
   "positions": {
     "MANAUSDT__ST": {
       "trade_id": 2082,
@@ -186,55 +186,6 @@
         "status": "open"
       }
     },
-    "BNBUSDT__SMC2": {
-      "trade_id": 2623,
-      "symbol": "BNBUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-23 23:45:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 739.59,
-      "sl_price": 735.5512100575886,
-      "sl_initial": 735.5512100575886,
-      "tp1_price": 745.6481849136171,
-      "tp2_price": 751.7063698272343,
-      "adx_value": null,
-      "qty_total": 0.13521004881082763,
-      "notional": 100.00000000000001,
-      "leverage": 1.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 44.27,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 0,
-        "bear_fvg_count": 5,
-        "bull_ob_count": 0,
-        "bear_ob_count": 2
-      },
-      "lot_a": {
-        "qty": 0.06760502440541381,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.06760502440541381,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "ONEUSDT__SMC2": {
       "trade_id": 2624,
       "symbol": "ONEUSDT",
@@ -331,44 +282,6 @@
         "qty": 7059.155724975293,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "BNBUSDT__POC": {
-      "trade_id": 2626,
-      "symbol": "BNBUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-24 00:00:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 738.7,
-      "sl_price": 736.6600000000002,
-      "sl_initial": 736.6600000000002,
-      "tp1_price": 744.3000000000001,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.13537295248409367,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 738.9837499999999,
-        "leg_start": "2026-10-23 20:45:00",
-        "leg_end": "2026-10-23 23:00:00",
-        "rr": 2.745,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 740.7399999999999,
-        "raw_tp": 733.1
-      },
-      "lot_a": {
-        "qty": 0.13537295248409367,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     },
     "MASKUSDT__SMC2": {
@@ -495,8 +408,46 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "MASKUSDT__POC": {
+      "trade_id": 2630,
+      "symbol": "MASKUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-24 00:30:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.395,
+      "sl_price": 0.396394,
+      "sl_initial": 0.396394,
+      "tp1_price": 0.392,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 253.1645569620253,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.3940416666666667,
+        "leg_start": "2026-10-23 22:45:00",
+        "leg_end": "2026-10-24 00:00:00",
+        "rr": 2.152,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.393606,
+        "raw_tp": 0.398
+      },
+      "lot_a": {
+        "qty": 253.1645569620253,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2630,
+  "next_trade_id": 2631,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
