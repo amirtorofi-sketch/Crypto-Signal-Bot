@@ -1,5 +1,5 @@
 {
-  "balance": 10526.02484671535,
+  "balance": 10525.426177830159,
   "positions": {
     "STGUSDT__SMC": {
       "trade_id": 8434,
@@ -559,46 +559,6 @@
         "bear_ob_count": 3
       },
       "qty_open": 777.8469197261978,
-      "phase": "after_tp1"
-    },
-    "GRAMUSDT__SMC": {
-      "trade_id": 26098,
-      "symbol": "GRAMUSDT",
-      "source": "ICT/SMC Scalp Pro v2",
-      "direction": "short",
-      "candle_time": "2026-10-24 10:00:00",
-      "session": "لندن",
-      "entry_price": 1.248,
-      "initial_sl_price": 1.2626439722390892,
-      "sl_price": 1.248,
-      "tp1_price": 1.2260340416413662,
-      "tp2_price": 1.2040680832827324,
-      "qty_total": 80.12820512820512,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": 4,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": false,
-        "strong_bear_rej": false,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 50.88,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": true,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 2,
-        "bear_fvg_count": 6,
-        "bull_ob_count": 0,
-        "bear_ob_count": 3
-      },
-      "qty_open": 40.06410256410256,
       "phase": "after_tp1"
     },
     "AXLUSDT__SMC": {
@@ -3186,31 +3146,6 @@
       "qty_open": 554.6311702717693,
       "phase": "before_tp1"
     },
-    "WIFUSDT__POC": {
-      "trade_id": 26350,
-      "symbol": "WIFUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-24 16:45:00",
-      "session": "نیویورک",
-      "entry_price": 0.1803,
-      "sl_price": 0.1792206,
-      "tp1_price": 0.181,
-      "tp2_price": null,
-      "qty_total": 554.6311702717693,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.17951458333333334,
-        "leg_start": "2026-10-24 15:15:00",
-        "leg_end": "2026-10-24 16:15:00",
-        "rr": 0.649,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 554.6311702717693
-    },
     "XLMUSDT__SMC": {
       "trade_id": 26351,
       "symbol": "XLMUSDT",
@@ -3470,8 +3405,73 @@
       },
       "qty_open": 8149.959250203749,
       "phase": "before_tp1"
+    },
+    "GMXUSDT__SMC": {
+      "trade_id": 26359,
+      "symbol": "GMXUSDT",
+      "source": "ICT/SMC Scalp Pro v2",
+      "direction": "short",
+      "candle_time": "2026-10-24 17:15:00",
+      "session": "نیویورک",
+      "entry_price": 8.18,
+      "initial_sl_price": 8.33787015840607,
+      "sl_price": 8.33787015840607,
+      "tp1_price": 7.943194762390895,
+      "tp2_price": 7.706389524781791,
+      "qty_total": 12.224938875305623,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": 4,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": true,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 42.41,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 0,
+        "bear_fvg_count": 2,
+        "bull_ob_count": 0,
+        "bear_ob_count": 1
+      },
+      "qty_open": 12.224938875305623,
+      "phase": "before_tp1"
+    },
+    "GMXUSDT__POC": {
+      "trade_id": 26360,
+      "symbol": "GMXUSDT",
+      "source": "POC Retest v2",
+      "direction": "long",
+      "candle_time": "2026-10-24 17:15:00",
+      "session": "نیویورک",
+      "entry_price": 8.18,
+      "sl_price": 8.06193,
+      "tp1_price": 8.21,
+      "tp2_price": null,
+      "qty_total": 12.224938875305623,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 8.172291666666666,
+        "leg_start": "2026-10-24 14:15:00",
+        "leg_end": "2026-10-24 16:00:00",
+        "rr": 0.254,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 12.224938875305623
     }
   },
-  "next_trade_id": 26359,
+  "next_trade_id": 26361,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
