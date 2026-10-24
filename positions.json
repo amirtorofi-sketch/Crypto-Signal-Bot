@@ -1,5 +1,5 @@
 {
-  "balance": 10084.391595547086,
+  "balance": 10083.03426206131,
   "positions": {
     "MANAUSDT__ST": {
       "trade_id": 2082,
@@ -613,55 +613,6 @@
         "status": "open"
       }
     },
-    "GALAUSDT__SMC2": {
-      "trade_id": 2641,
-      "symbol": "GALAUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-24 01:15:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.00182,
-      "sl_price": 0.0017952965305588914,
-      "sl_initial": 0.0017952965305588914,
-      "tp1_price": 0.001857055204161663,
-      "tp2_price": 0.001894110408323326,
-      "adx_value": null,
-      "qty_total": 54945.054945054944,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": false,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 41.98,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 2,
-        "bear_fvg_count": 5,
-        "bull_ob_count": 0,
-        "bear_ob_count": 3
-      },
-      "lot_a": {
-        "qty": 27472.527472527472,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 27472.527472527472,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "ONEUSDT__ST": {
       "trade_id": 2651,
       "symbol": "ONEUSDT",
@@ -911,8 +862,155 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "ETHUSDT__SMC2": {
+      "trade_id": 2657,
+      "symbol": "ETHUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-24 07:00:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 2379.65,
+      "sl_price": 2370.4022019864733,
+      "sl_initial": 2370.4022019864733,
+      "tp1_price": 2393.52169702029,
+      "tp2_price": 2407.3933940405805,
+      "adx_value": null,
+      "qty_total": 0.04202298657365579,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 45.83,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 0,
+        "bear_fvg_count": 6,
+        "bull_ob_count": 0,
+        "bear_ob_count": 3
+      },
+      "lot_a": {
+        "qty": 0.021011493286827894,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.021011493286827894,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "DOGEUSDT__SMC2": {
+      "trade_id": 2658,
+      "symbol": "DOGEUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-24 07:00:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.07829,
+      "sl_price": 0.07785746938982291,
+      "sl_initial": 0.07785746938982291,
+      "tp1_price": 0.07893879591526563,
+      "tp2_price": 0.07958759183053127,
+      "adx_value": null,
+      "qty_total": 1277.3023374632776,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 34.84,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 0,
+        "bear_fvg_count": 6,
+        "bull_ob_count": 0,
+        "bear_ob_count": 3
+      },
+      "lot_a": {
+        "qty": 638.6511687316388,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 638.6511687316388,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "ROSEUSDT__SMC2": {
+      "trade_id": 2659,
+      "symbol": "ROSEUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-24 07:00:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.00699,
+      "sl_price": 0.006931269659292321,
+      "sl_initial": 0.006931269659292321,
+      "tp1_price": 0.007078095511061518,
+      "tp2_price": 0.007166191022123037,
+      "adx_value": null,
+      "qty_total": 14306.15164520744,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 28.42,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 0,
+        "bear_fvg_count": 6,
+        "bull_ob_count": 0,
+        "bear_ob_count": 2
+      },
+      "lot_a": {
+        "qty": 7153.07582260372,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 7153.07582260372,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 2657,
+  "next_trade_id": 2660,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
