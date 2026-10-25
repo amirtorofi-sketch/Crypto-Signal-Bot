@@ -1,5 +1,5 @@
 {
-  "balance": 10076.414250631624,
+  "balance": 10076.142019682085,
   "positions": {
     "BTCUSDT__SMC2": {
       "trade_id": 2680,
@@ -284,7 +284,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 2351.7,
-      "sl_price": 2362.6772391614913,
+      "sl_price": 2351.7,
       "sl_initial": 2362.6772391614913,
       "tp1_price": 2335.2341412577625,
       "tp2_price": 2318.7682825155252,
@@ -316,7 +316,7 @@
       "lot_a": {
         "qty": 0.02126121529106604,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.02126121529106604,
@@ -489,56 +489,85 @@
         "status": "open"
       }
     },
-    "MASKUSDT__SMC2": {
-      "trade_id": 2764,
-      "symbol": "MASKUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-25 21:30:00",
+    "ETHUSDT__ST": {
+      "trade_id": 2765,
+      "symbol": "ETHUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-25 21:45:00",
       "session": "نیویورک",
       "raw_direction": "short",
       "direction": "long",
-      "entry_price": 0.398,
-      "sl_price": 0.3955231858335107,
-      "sl_initial": 0.3955231858335107,
-      "tp1_price": 0.401715221249734,
-      "tp2_price": 0.40543044249946797,
-      "adx_value": null,
-      "qty_total": 251.25628140703517,
+      "entry_price": 2332.38,
+      "sl_price": 2312.1952125572825,
+      "sl_initial": 2312.1952125572825,
+      "tp1_price": 2362.6571811640765,
+      "tp2_price": 2392.934362328153,
+      "adx_value": 23.287603674418616,
+      "qty_total": 0.04287466021831777,
       "notional": 100.0,
       "leverage": 1.0,
-      "signal_score": 3,
+      "signal_score": null,
       "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 49.03,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 1,
-        "bear_fvg_count": 5,
-        "bull_ob_count": 0,
-        "bear_ob_count": 2
+        "adx": 23.288,
+        "di_plus": 12.294,
+        "di_minus": 34.894,
+        "ema_trend": 2356.152805,
+        "close_vs_ema": "below",
+        "volume": 1731.1476,
+        "vol_ma": 762.9503,
+        "vol_above_ma": true
       },
       "lot_a": {
-        "qty": 125.62814070351759,
+        "qty": 0.021437330109158884,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 125.62814070351759,
+        "qty": 0.021437330109158884,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "GALAUSDT__ST": {
+      "trade_id": 2766,
+      "symbol": "GALAUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-25 21:45:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.001724,
+      "sl_price": 0.0016992938224766818,
+      "sl_initial": 0.0016992938224766818,
+      "tp1_price": 0.0017610592662849775,
+      "tp2_price": 0.001798118532569955,
+      "adx_value": 17.932613245600063,
+      "qty_total": 58004.640371229696,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 17.933,
+        "di_plus": 15.638,
+        "di_minus": 32.826,
+        "ema_trend": 0.001772,
+        "close_vs_ema": "below",
+        "volume": 26029926.0,
+        "vol_ma": 3075031.15,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 29002.320185614848,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 29002.320185614848,
         "target": "tp2",
         "status": "open"
       }
     }
   },
-  "next_trade_id": 2765,
+  "next_trade_id": 2767,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
