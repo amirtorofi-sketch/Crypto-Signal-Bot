@@ -594,8 +594,144 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CHZUSDT__POC": {
+      "trade_id": 2739,
+      "symbol": "CHZUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-25 14:30:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.01271,
+      "sl_price": 0.012782650000000001,
+      "sl_initial": 0.012782650000000001,
+      "tp1_price": 0.012630000000000002,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 7867.820613690007,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.012689791666666665,
+        "leg_start": "2026-10-25 11:00:00",
+        "leg_end": "2026-10-25 11:45:00",
+        "rr": 1.101,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.01263735,
+        "raw_tp": 0.01279
+      },
+      "lot_a": {
+        "qty": 7867.820613690007,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "ONEUSDT__SMC2": {
+      "trade_id": 2740,
+      "symbol": "ONEUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-25 14:30:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.001299,
+      "sl_price": 0.001313907648976586,
+      "sl_initial": 0.001313907648976586,
+      "tp1_price": 0.0012766385265351211,
+      "tp2_price": 0.001254277053070242,
+      "adx_value": null,
+      "qty_total": 76982.29407236335,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": true,
+        "vol_spike": false,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 47.85,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": 1,
+        "bull_fvg_count": 1,
+        "bear_fvg_count": 4,
+        "bull_ob_count": 0,
+        "bear_ob_count": 2
+      },
+      "lot_a": {
+        "qty": 38491.147036181676,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 38491.147036181676,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "VETUSDT__SMC2": {
+      "trade_id": 2741,
+      "symbol": "VETUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-25 14:30:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.006743,
+      "sl_price": 0.006798126821948442,
+      "sl_initial": 0.006798126821948442,
+      "tp1_price": 0.006660309767077336,
+      "tp2_price": 0.006577619534154673,
+      "adx_value": null,
+      "qty_total": 14830.194275545009,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 50.01,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": false,
+        "trend": 1,
+        "bull_fvg_count": 2,
+        "bear_fvg_count": 4,
+        "bull_ob_count": 0,
+        "bear_ob_count": 2
+      },
+      "lot_a": {
+        "qty": 7415.0971377725045,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 7415.0971377725045,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 2739,
+  "next_trade_id": 2742,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
