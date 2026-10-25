@@ -1,5 +1,5 @@
 {
-  "balance": 10076.365776758686,
+  "balance": 10077.393676905529,
   "positions": {
     "BTCUSDT__SMC2": {
       "trade_id": 2680,
@@ -372,44 +372,6 @@
         "status": "open"
       }
     },
-    "ROSEUSDT__POC": {
-      "trade_id": 2758,
-      "symbol": "ROSEUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-25 20:00:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.00681,
-      "sl_price": 0.00684678,
-      "sl_initial": 0.00684678,
-      "tp1_price": 0.00674,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 14684.287812041115,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.006790416666666667,
-        "leg_start": "2026-10-25 16:15:00",
-        "leg_end": "2026-10-25 17:15:00",
-        "rr": 1.903,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.00677322,
-        "raw_tp": 0.00688
-      },
-      "lot_a": {
-        "qty": 14684.287812041115,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "SOLUSDT__SMC2": {
       "trade_id": 2759,
       "symbol": "SOLUSDT",
@@ -497,8 +459,85 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "SOLUSDT__POC": {
+      "trade_id": 2762,
+      "symbol": "SOLUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-25 21:15:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 101.6,
+      "sl_price": 101.96133999999998,
+      "sl_initial": 101.96133999999998,
+      "tp1_price": 100.92999999999999,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.984251968503937,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 101.39208333333335,
+        "leg_start": "2026-10-25 16:15:00",
+        "leg_end": "2026-10-25 17:15:00",
+        "rr": 1.854,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 101.23866000000001,
+        "raw_tp": 102.27
+      },
+      "lot_a": {
+        "qty": 0.984251968503937,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "ROSEUSDT__ST": {
+      "trade_id": 2763,
+      "symbol": "ROSEUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-25 21:15:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.00674,
+      "sl_price": 0.006661114736888797,
+      "sl_initial": 0.006661114736888797,
+      "tp1_price": 0.006858327894666806,
+      "tp2_price": 0.0069766557893336115,
+      "adx_value": 18.614900557172337,
+      "qty_total": 14836.795252225518,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 18.615,
+        "di_plus": 18.487,
+        "di_minus": 42.915,
+        "ema_trend": 0.006922,
+        "close_vs_ema": "below",
+        "volume": 2664119.6,
+        "vol_ma": 844037.14,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 7418.397626112759,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 7418.397626112759,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 2762,
+  "next_trade_id": 2764,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
