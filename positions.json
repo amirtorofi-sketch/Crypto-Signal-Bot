@@ -1,5 +1,5 @@
 {
-  "balance": 10075.135906301048,
+  "balance": 10075.05709665817,
   "positions": {
     "BTCUSDT__SMC2": {
       "trade_id": 2680,
@@ -146,7 +146,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.01274,
-      "sl_price": 0.012643524968188392,
+      "sl_price": 0.01274,
       "sl_initial": 0.012643524968188392,
       "tp1_price": 0.012884712547717411,
       "tp2_price": 0.013029425095434822,
@@ -178,7 +178,7 @@
       "lot_a": {
         "qty": 3924.646781789639,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 3924.646781789639,
@@ -272,44 +272,6 @@
         "qty": 0.06792924489851371,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "CHZUSDT__POC": {
-      "trade_id": 2748,
-      "symbol": "CHZUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-25 16:45:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.01279,
-      "sl_price": 0.012872719999999999,
-      "sl_initial": 0.012872719999999999,
-      "tp1_price": 0.01275,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 7818.608287724785,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.01275875,
-        "leg_start": "2026-10-25 14:15:00",
-        "leg_end": "2026-10-25 15:30:00",
-        "rr": 0.484,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.01270728,
-        "raw_tp": 0.01283
-      },
-      "lot_a": {
-        "qty": 7818.608287724785,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     },
     "GALAUSDT__POC": {
