@@ -1,45 +1,6 @@
 {
-  "balance": 10073.42754465977,
+  "balance": 10080.474137946738,
   "positions": {
-    "MANAUSDT__ST": {
-      "trade_id": 2082,
-      "symbol": "MANAUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-10-17 14:15:00",
-      "session": "لندن",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.0912,
-      "sl_price": 0.0912,
-      "sl_initial": 0.09580604507247545,
-      "tp1_price": 0.08429093239128684,
-      "tp2_price": 0.07738186478257367,
-      "adx_value": 24.450198355586394,
-      "qty_total": 1096.4912280701753,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "adx": 24.45,
-        "di_plus": 40.127,
-        "di_minus": 16.354,
-        "ema_trend": 0.088925,
-        "close_vs_ema": "above",
-        "volume": 569266.0,
-        "vol_ma": 184594.65,
-        "vol_above_ma": true
-      },
-      "lot_a": {
-        "qty": 548.2456140350877,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 548.2456140350877,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "BTCUSDT__SMC2": {
       "trade_id": 2680,
       "symbol": "BTCUSDT",
@@ -124,45 +85,6 @@
       },
       "lot_b": {
         "qty": 124.06947890818857,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "BTCUSDT__ST": {
-      "trade_id": 2702,
-      "symbol": "BTCUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-10-25 05:30:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 80582.71,
-      "sl_price": 80156.31566354417,
-      "sl_initial": 80156.31566354417,
-      "tp1_price": 81222.30150468377,
-      "tp2_price": 81861.89300936752,
-      "adx_value": 23.04926080353633,
-      "qty_total": 0.0012409609952308627,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "adx": 23.049,
-        "di_plus": 24.807,
-        "di_minus": 40.242,
-        "ema_trend": 80992.627567,
-        "close_vs_ema": "below",
-        "volume": 94.0498,
-        "vol_ma": 54.9557,
-        "vol_above_ma": true
-      },
-      "lot_a": {
-        "qty": 0.0006204804976154314,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0006204804976154314,
         "target": "tp2",
         "status": "open"
       }
