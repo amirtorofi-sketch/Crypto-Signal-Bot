@@ -1,5 +1,5 @@
 {
-  "balance": 10073.975765878211,
+  "balance": 10073.42754465977,
   "positions": {
     "MANAUSDT__ST": {
       "trade_id": 2082,
@@ -89,44 +89,6 @@
         "status": "open"
       }
     },
-    "ETHUSDT__POC": {
-      "trade_id": 2685,
-      "symbol": "ETHUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-24 18:45:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 2338.28,
-      "sl_price": 2331.4272100000007,
-      "sl_initial": 2331.4272100000007,
-      "tp1_price": 2394.1000000000004,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.04276647792394409,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 2341.05,
-        "leg_start": "2026-10-24 12:45:00",
-        "leg_end": "2026-10-24 15:15:00",
-        "rr": 8.146,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 2345.1327899999997,
-        "raw_tp": 2282.46
-      },
-      "lot_a": {
-        "qty": 0.04276647792394409,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "MASKUSDT__ST": {
       "trade_id": 2693,
       "symbol": "MASKUSDT",
@@ -166,55 +128,6 @@
         "status": "open"
       }
     },
-    "BNBUSDT__SMC2": {
-      "trade_id": 2701,
-      "symbol": "BNBUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-25 05:00:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 748.17,
-      "sl_price": 748.17,
-      "sl_initial": 751.4008056473966,
-      "tp1_price": 743.323791528905,
-      "tp2_price": 738.47758305781,
-      "adx_value": null,
-      "qty_total": 0.13365946242164214,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": true,
-        "vol_spike": true,
-        "strong_bull_rej": false,
-        "strong_bear_rej": false,
-        "htf_bullish": true,
-        "htf_bearish": false,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 77.57,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": 1,
-        "bull_fvg_count": 6,
-        "bear_fvg_count": 0,
-        "bull_ob_count": 1,
-        "bear_ob_count": 0
-      },
-      "lot_a": {
-        "qty": 0.06682973121082107,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 0.06682973121082107,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "BTCUSDT__ST": {
       "trade_id": 2702,
       "symbol": "BTCUSDT",
@@ -250,45 +163,6 @@
       },
       "lot_b": {
         "qty": 0.0006204804976154314,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "ETHUSDT__ST": {
-      "trade_id": 2703,
-      "symbol": "ETHUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-10-25 05:30:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 2352.63,
-      "sl_price": 2331.388264997641,
-      "sl_initial": 2331.388264997641,
-      "tp1_price": 2384.4926025035393,
-      "tp2_price": 2416.355205007078,
-      "adx_value": 25.593601720486053,
-      "qty_total": 0.04250562136842597,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "adx": 25.594,
-        "di_plus": 27.57,
-        "di_minus": 37.155,
-        "ema_trend": 2371.438913,
-        "close_vs_ema": "below",
-        "volume": 2142.5879,
-        "vol_ma": 876.4438,
-        "vol_above_ma": true
-      },
-      "lot_a": {
-        "qty": 0.021252810684212985,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.021252810684212985,
         "target": "tp2",
         "status": "open"
       }
