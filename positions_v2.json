@@ -1,5 +1,5 @@
 {
-  "balance": 10425.225500397368,
+  "balance": 10424.868906834281,
   "positions": {
     "STGUSDT__SMC": {
       "trade_id": 8434,
@@ -199,46 +199,6 @@
         "bear_ob_count": 2
       },
       "qty_open": 190.69412662090008,
-      "phase": "after_tp1"
-    },
-    "IDUSDT__SMC": {
-      "trade_id": 25702,
-      "symbol": "IDUSDT",
-      "source": "ICT/SMC Scalp Pro v2",
-      "direction": "short",
-      "candle_time": "2026-10-23 23:45:00",
-      "session": "نیویورک",
-      "entry_price": 0.0317,
-      "initial_sl_price": 0.032333442731230864,
-      "sl_price": 0.0317,
-      "tp1_price": 0.0307498359031537,
-      "tp2_price": 0.029799671806307403,
-      "qty_total": 3154.5741324921137,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 50.52,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 0,
-        "bear_fvg_count": 4,
-        "bull_ob_count": 0,
-        "bear_ob_count": 1
-      },
-      "qty_open": 1577.2870662460568,
       "phase": "after_tp1"
     },
     "INJUSDT__SMC": {
@@ -2566,31 +2526,6 @@
       "qty_open": 77.30962504831851,
       "phase": "before_tp1"
     },
-    "CRVUSDT__POC": {
-      "trade_id": 26552,
-      "symbol": "CRVUSDT",
-      "source": "POC Retest v2",
-      "direction": "short",
-      "candle_time": "2026-10-24 23:30:00",
-      "session": "نیویورک",
-      "entry_price": 0.3511,
-      "sl_price": 0.35235199999999994,
-      "tp1_price": 0.3496,
-      "tp2_price": null,
-      "qty_total": 284.81913984619763,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.35195624999999997,
-        "leg_start": "2026-10-24 20:45:00",
-        "leg_end": "2026-10-24 21:45:00",
-        "rr": 1.198,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 284.81913984619763
-    },
     "EDUUSDT__SMC": {
       "trade_id": 26553,
       "symbol": "EDUUSDT",
@@ -2720,8 +2655,33 @@
         "reason": "poc_retest_rejection"
       },
       "qty_open": 18.570102135561747
+    },
+    "BICOUSDT__POC": {
+      "trade_id": 26557,
+      "symbol": "BICOUSDT",
+      "source": "POC Retest v2",
+      "direction": "short",
+      "candle_time": "2026-10-24 23:45:00",
+      "session": "نیویورک",
+      "entry_price": 0.01547,
+      "sl_price": 0.015505489999999999,
+      "tp1_price": 0.01542,
+      "tp2_price": null,
+      "qty_total": 6464.124111182935,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.015473125,
+        "leg_start": "2026-10-24 21:45:00",
+        "leg_end": "2026-10-24 23:00:00",
+        "rr": 1.409,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 6464.124111182935
     }
   },
-  "next_trade_id": 26557,
+  "next_trade_id": 26558,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
