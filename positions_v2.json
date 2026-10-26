@@ -1,5 +1,5 @@
 {
-  "balance": 10269.887523838252,
+  "balance": 10269.361511045074,
   "positions": {
     "STGUSDT__SMC": {
       "trade_id": 8434,
@@ -4081,31 +4081,6 @@
       },
       "qty_open": 904.1591320072332
     },
-    "PIXELUSDT__POC": {
-      "trade_id": 28625,
-      "symbol": "PIXELUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-26 21:30:00",
-      "session": "نیویورک",
-      "entry_price": 0.00469,
-      "sl_price": 0.00466533,
-      "tp1_price": 0.00474,
-      "tp2_price": null,
-      "qty_total": 21321.961620469083,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.004689375,
-        "leg_start": "2026-10-26 16:15:00",
-        "leg_end": "2026-10-26 17:15:00",
-        "rr": 2.027,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 21321.961620469083
-    },
     "SUSHIUSDT__POC": {
       "trade_id": 28627,
       "symbol": "SUSHIUSDT",
@@ -5075,8 +5050,33 @@
         "reason": "poc_retest_rejection"
       },
       "qty_open": 61.42506142506143
+    },
+    "ATOMUSDT__POC": {
+      "trade_id": 28668,
+      "symbol": "ATOMUSDT",
+      "source": "POC Retest v2",
+      "direction": "short",
+      "candle_time": "2026-10-26 22:45:00",
+      "session": "نیویورک",
+      "entry_price": 1.634,
+      "sl_price": 1.6396379999999997,
+      "tp1_price": 1.627,
+      "tp2_price": null,
+      "qty_total": 61.199510403916776,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 1.634125,
+        "leg_start": "2026-10-26 19:15:00",
+        "leg_end": "2026-10-26 21:15:00",
+        "rr": 1.242,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 61.199510403916776
     }
   },
-  "next_trade_id": 28668,
+  "next_trade_id": 28669,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
