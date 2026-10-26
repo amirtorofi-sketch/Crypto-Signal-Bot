@@ -814,8 +814,144 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "DOGEUSDT__SMC2": {
+      "trade_id": 2798,
+      "symbol": "DOGEUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-26 03:00:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.07648,
+      "sl_price": 0.07569201033790911,
+      "sl_initial": 0.07569201033790911,
+      "tp1_price": 0.07766198449313635,
+      "tp2_price": 0.0788439689862727,
+      "adx_value": null,
+      "qty_total": 1307.531380753138,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 40.55,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 1,
+        "bear_fvg_count": 5,
+        "bull_ob_count": 0,
+        "bear_ob_count": 2
+      },
+      "lot_a": {
+        "qty": 653.765690376569,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 653.765690376569,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "MANAUSDT__POC": {
+      "trade_id": 2799,
+      "symbol": "MANAUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-26 03:00:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.0777,
+      "sl_price": 0.07722190000000001,
+      "sl_initial": 0.07722190000000001,
+      "tp1_price": 0.07840000000000001,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 1287.001287001287,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.07800208333333333,
+        "leg_start": "2026-10-26 00:00:00",
+        "leg_end": "2026-10-26 01:30:00",
+        "rr": 1.464,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.0781781,
+        "raw_tp": 0.077
+      },
+      "lot_a": {
+        "qty": 1287.001287001287,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "GALAUSDT__SMC2": {
+      "trade_id": 2800,
+      "symbol": "GALAUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-26 03:00:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.001725,
+      "sl_price": 0.0017048616119664274,
+      "sl_initial": 0.0017048616119664274,
+      "tp1_price": 0.0017552075820503588,
+      "tp2_price": 0.0017854151641007177,
+      "adx_value": null,
+      "qty_total": 57971.014492753624,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 44.8,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 0,
+        "bear_fvg_count": 2,
+        "bull_ob_count": 2,
+        "bear_ob_count": 2
+      },
+      "lot_a": {
+        "qty": 28985.507246376812,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 28985.507246376812,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 2798,
+  "next_trade_id": 2801,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
