@@ -1,5 +1,5 @@
 {
-  "balance": 10063.971444918063,
+  "balance": 10065.124931413586,
   "positions": {
     "BNBUSDT__ST": {
       "trade_id": 2734,
@@ -808,82 +808,6 @@
         "status": "open"
       }
     },
-    "ROSEUSDT__POC": {
-      "trade_id": 2832,
-      "symbol": "ROSEUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-26 11:00:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.00667,
-      "sl_price": 0.0066333,
-      "sl_initial": 0.0066333,
-      "tp1_price": 0.006719999999999999,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 14992.503748125937,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.006673125,
-        "leg_start": "2026-10-26 05:15:00",
-        "leg_end": "2026-10-26 08:00:00",
-        "rr": 1.362,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.0067066999999999995,
-        "raw_tp": 0.00662
-      },
-      "lot_a": {
-        "qty": 14992.503748125937,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
-    "SOLUSDT__POC": {
-      "trade_id": 2833,
-      "symbol": "SOLUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-26 11:30:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 101.52,
-      "sl_price": 101.28835,
-      "sl_initial": 101.28835,
-      "tp1_price": 101.92999999999999,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.9850275807722617,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 101.54270833333334,
-        "leg_start": "2026-10-26 09:45:00",
-        "leg_end": "2026-10-26 11:00:00",
-        "rr": 1.77,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 101.75165,
-        "raw_tp": 101.11
-      },
-      "lot_a": {
-        "qty": 0.9850275807722617,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "BNBUSDT__POC": {
       "trade_id": 2834,
       "symbol": "BNBUSDT",
@@ -1007,8 +931,46 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ONEUSDT__POC": {
+      "trade_id": 2837,
+      "symbol": "ONEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-26 11:45:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.0013,
+      "sl_price": 0.0013082929999999999,
+      "sl_initial": 0.0013082929999999999,
+      "tp1_price": 0.0012929999999999999,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 76923.07692307692,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0012977916666666667,
+        "leg_start": "2026-10-26 08:00:00",
+        "leg_end": "2026-10-26 09:30:00",
+        "rr": 0.844,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.001291707,
+        "raw_tp": 0.001307
+      },
+      "lot_a": {
+        "qty": 76923.07692307692,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2837,
+  "next_trade_id": 2838,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
