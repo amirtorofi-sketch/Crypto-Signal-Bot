@@ -1,5 +1,5 @@
 {
-  "balance": 10075.86726026715,
+  "balance": 10076.274277622479,
   "positions": {
     "BNBUSDT__ST": {
       "trade_id": 2734,
@@ -36,45 +36,6 @@
       },
       "lot_b": {
         "qty": 0.06792924489851371,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "GALAUSDT__ST": {
-      "trade_id": 2766,
-      "symbol": "GALAUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-10-25 21:45:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.001724,
-      "sl_price": 0.001724,
-      "sl_initial": 0.0016992938224766818,
-      "tp1_price": 0.0017610592662849775,
-      "tp2_price": 0.001798118532569955,
-      "adx_value": 17.932613245600063,
-      "qty_total": 58004.640371229696,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "adx": 17.933,
-        "di_plus": 15.638,
-        "di_minus": 32.826,
-        "ema_trend": 0.001772,
-        "close_vs_ema": "below",
-        "volume": 26029926.0,
-        "vol_ma": 3075031.15,
-        "vol_above_ma": true
-      },
-      "lot_a": {
-        "qty": 29002.320185614848,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 29002.320185614848,
         "target": "tp2",
         "status": "open"
       }
@@ -328,55 +289,6 @@
       },
       "lot_b": {
         "qty": 653.765690376569,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "GALAUSDT__SMC2": {
-      "trade_id": 2800,
-      "symbol": "GALAUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-26 03:00:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.001725,
-      "sl_price": 0.001725,
-      "sl_initial": 0.0017048616119664274,
-      "tp1_price": 0.0017552075820503588,
-      "tp2_price": 0.0017854151641007177,
-      "adx_value": null,
-      "qty_total": 57971.014492753624,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": false,
-        "strong_bear_rej": false,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 44.8,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 0,
-        "bear_fvg_count": 2,
-        "bull_ob_count": 2,
-        "bear_ob_count": 2
-      },
-      "lot_a": {
-        "qty": 28985.507246376812,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 28985.507246376812,
         "target": "tp2",
         "status": "open"
       }
@@ -742,44 +654,6 @@
       },
       "lot_a": {
         "qty": 0.0012463194628363115,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
-    "BNBUSDT__POC": {
-      "trade_id": 2866,
-      "symbol": "BNBUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-26 16:45:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 744.44,
-      "sl_price": 749.29033,
-      "sl_initial": 749.29033,
-      "tp1_price": 741.4100000000001,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.13432916017409058,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 744.079375,
-        "leg_start": "2026-10-26 13:30:00",
-        "leg_end": "2026-10-26 15:15:00",
-        "rr": 0.625,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 739.5896700000001,
-        "raw_tp": 747.47
-      },
-      "lot_a": {
-        "qty": 0.13432916017409058,
         "target": "tp1",
         "status": "open"
       },
