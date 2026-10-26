@@ -939,8 +939,122 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "SOLUSDT__POC": {
+      "trade_id": 2803,
+      "symbol": "SOLUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-26 04:00:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 100.77,
+      "sl_price": 101.45018999999999,
+      "sl_initial": 101.45018999999999,
+      "tp1_price": 100.24999999999999,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.9923588369554431,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 100.76479166666667,
+        "leg_start": "2026-10-26 01:45:00",
+        "leg_end": "2026-10-26 03:00:00",
+        "rr": 0.764,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 100.08981,
+        "raw_tp": 101.29
+      },
+      "lot_a": {
+        "qty": 0.9923588369554431,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "BNBUSDT__POC": {
+      "trade_id": 2804,
+      "symbol": "BNBUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-26 04:00:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 739.83,
+      "sl_price": 744.1362600000001,
+      "sl_initial": 744.1362600000001,
+      "tp1_price": 736.8000000000001,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.13516618682670342,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 739.675,
+        "leg_start": "2026-10-25 23:30:00",
+        "leg_end": "2026-10-26 01:15:00",
+        "rr": 0.704,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 735.52374,
+        "raw_tp": 742.86
+      },
+      "lot_a": {
+        "qty": 0.13516618682670342,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "DOGEUSDT__POC": {
+      "trade_id": 2805,
+      "symbol": "DOGEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-26 04:00:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.07664,
+      "sl_price": 0.07706629000000001,
+      "sl_initial": 0.07706629000000001,
+      "tp1_price": 0.07633,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 1304.801670146138,
+      "notional": 100.00000000000001,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.076460625,
+        "leg_start": "2026-10-26 01:45:00",
+        "leg_end": "2026-10-26 03:00:00",
+        "rr": 0.727,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.07621370999999999,
+        "raw_tp": 0.07695
+      },
+      "lot_a": {
+        "qty": 1304.801670146138,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2803,
+  "next_trade_id": 2806,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
