@@ -496,8 +496,144 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "DOGEUSDT__SMC2": {
+      "trade_id": 2776,
+      "symbol": "DOGEUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-26 00:00:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.07706,
+      "sl_price": 0.0763891268384617,
+      "sl_initial": 0.0763891268384617,
+      "tp1_price": 0.07806630974230745,
+      "tp2_price": 0.0790726194846149,
+      "adx_value": null,
+      "qty_total": 1297.6901116013496,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": true,
+        "vol_spike": true,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 48.61,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": false,
+        "trend": -1,
+        "bull_fvg_count": 3,
+        "bear_fvg_count": 5,
+        "bull_ob_count": 1,
+        "bear_ob_count": 1
+      },
+      "lot_a": {
+        "qty": 648.8450558006748,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 648.8450558006748,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "MANAUSDT__SMC2": {
+      "trade_id": 2777,
+      "symbol": "MANAUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-26 00:00:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.0783,
+      "sl_price": 0.0775786490504598,
+      "sl_initial": 0.0775786490504598,
+      "tp1_price": 0.07938202642431028,
+      "tp2_price": 0.08046405284862057,
+      "adx_value": null,
+      "qty_total": 1277.139208173691,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": true,
+        "vol_spike": false,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 53.39,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": false,
+        "trend": -1,
+        "bull_fvg_count": 0,
+        "bear_fvg_count": 1,
+        "bull_ob_count": 0,
+        "bear_ob_count": 3
+      },
+      "lot_a": {
+        "qty": 638.5696040868455,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 638.5696040868455,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "GALAUSDT__POC": {
+      "trade_id": 2778,
+      "symbol": "GALAUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-26 00:00:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.001737,
+      "sl_price": 0.0017332610000000003,
+      "sl_initial": 0.0017332610000000003,
+      "tp1_price": 0.001763,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 57570.523891767414,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0017383333333333335,
+        "leg_start": "2026-10-25 22:00:00",
+        "leg_end": "2026-10-25 23:30:00",
+        "rr": 6.954,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.0017407389999999998,
+        "raw_tp": 0.001711
+      },
+      "lot_a": {
+        "qty": 57570.523891767414,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2776,
+  "next_trade_id": 2779,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
