@@ -1053,8 +1053,144 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "BTCUSDT__SMC2": {
+      "trade_id": 2806,
+      "symbol": "BTCUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-26 04:15:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 79935.6,
+      "sl_price": 79416.59204001496,
+      "sl_initial": 79416.59204001496,
+      "tp1_price": 80714.11193997756,
+      "tp2_price": 81492.62387995514,
+      "adx_value": null,
+      "qty_total": 0.0012510070606838505,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 4,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
+        "vol_spike": false,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 48.98,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 1,
+        "bear_fvg_count": 4,
+        "bull_ob_count": 0,
+        "bear_ob_count": 2
+      },
+      "lot_a": {
+        "qty": 0.0006255035303419252,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0006255035303419252,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "ETHUSDT__SMC2": {
+      "trade_id": 2807,
+      "symbol": "ETHUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-26 04:15:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 2312.09,
+      "sl_price": 2289.494640563747,
+      "sl_initial": 2289.494640563747,
+      "tp1_price": 2345.98303915438,
+      "tp2_price": 2379.8760783087596,
+      "adx_value": null,
+      "qty_total": 0.043250911512960136,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": true,
+        "vol_spike": false,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 42.77,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 1,
+        "bear_fvg_count": 4,
+        "bull_ob_count": 0,
+        "bear_ob_count": 3
+      },
+      "lot_a": {
+        "qty": 0.021625455756480068,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.021625455756480068,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "MANAUSDT__POC": {
+      "trade_id": 2808,
+      "symbol": "MANAUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-26 04:15:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.0775,
+      "sl_price": 0.07722230000000001,
+      "sl_initial": 0.07722230000000001,
+      "tp1_price": 0.0779,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 1290.3225806451612,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.07762083333333333,
+        "leg_start": "2026-10-26 03:00:00",
+        "leg_end": "2026-10-26 03:45:00",
+        "rr": 1.44,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.07777769999999999,
+        "raw_tp": 0.0771
+      },
+      "lot_a": {
+        "qty": 1290.3225806451612,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2806,
+  "next_trade_id": 2809,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
