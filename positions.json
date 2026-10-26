@@ -1049,8 +1049,46 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "ETHUSDT__POC": {
+      "trade_id": 2879,
+      "symbol": "ETHUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-26 20:15:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 2311.99,
+      "sl_price": 2315.2510399999996,
+      "sl_initial": 2315.2510399999996,
+      "tp1_price": 2287.3199999999997,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.04325278223521729,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 2311.352708333333,
+        "leg_start": "2026-10-26 16:30:00",
+        "leg_end": "2026-10-26 17:15:00",
+        "rr": 7.565,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 2308.72896,
+        "raw_tp": 2336.66
+      },
+      "lot_a": {
+        "qty": 0.04325278223521729,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2879,
+  "next_trade_id": 2880,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
