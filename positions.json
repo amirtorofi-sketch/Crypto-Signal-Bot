@@ -913,8 +913,57 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "SOLUSDT__SMC2": {
+      "trade_id": 2876,
+      "symbol": "SOLUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-26 19:15:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 100.53,
+      "sl_price": 99.63871655515796,
+      "sl_initial": 99.63871655515796,
+      "tp1_price": 101.86692516726308,
+      "tp2_price": 103.20385033452614,
+      "adx_value": null,
+      "qty_total": 0.9947279419078882,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": false,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 38.1,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "trend_strong": false,
+        "trend": -1,
+        "bull_fvg_count": 0,
+        "bear_fvg_count": 6,
+        "bull_ob_count": 0,
+        "bear_ob_count": 1
+      },
+      "lot_a": {
+        "qty": 0.4973639709539441,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.4973639709539441,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 2876,
+  "next_trade_id": 2877,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
