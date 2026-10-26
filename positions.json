@@ -980,8 +980,84 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CHZUSDT__POC": {
+      "trade_id": 2839,
+      "symbol": "CHZUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-26 12:15:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.01295,
+      "sl_price": 0.01305286,
+      "sl_initial": 0.01305286,
+      "tp1_price": 0.01291,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 7722.007722007722,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0129225,
+        "leg_start": "2026-10-26 03:45:00",
+        "leg_end": "2026-10-26 05:30:00",
+        "rr": 0.389,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.01284714,
+        "raw_tp": 0.01299
+      },
+      "lot_a": {
+        "qty": 7722.007722007722,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "VETUSDT__POC": {
+      "trade_id": 2840,
+      "symbol": "VETUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-26 12:15:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.006613,
+      "sl_price": 0.006661571000000001,
+      "sl_initial": 0.006661571000000001,
+      "tp1_price": 0.0065769999999999995,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 15121.729925903523,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.006595437500000001,
+        "leg_start": "2026-10-26 07:30:00",
+        "leg_end": "2026-10-26 09:30:00",
+        "rr": 0.741,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.006564428999999999,
+        "raw_tp": 0.006649
+      },
+      "lot_a": {
+        "qty": 15121.729925903523,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 2839,
+  "next_trade_id": 2841,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
