@@ -1,5 +1,5 @@
 {
-  "balance": 10085.039593568463,
+  "balance": 10085.544963119948,
   "positions": {
     "SOLUSDT__ST": {
       "trade_id": 2787,
@@ -777,45 +777,46 @@
         "status": "none"
       }
     },
-    "VETUSDT__POC": {
-      "trade_id": 2929,
-      "symbol": "VETUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-27 12:00:00",
+    "ETHUSDT__ST": {
+      "trade_id": 2930,
+      "symbol": "ETHUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-27 12:15:00",
       "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.006332,
-      "sl_price": 0.0063056480000000005,
-      "sl_initial": 0.0063056480000000005,
-      "tp1_price": 0.006364,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 15792.798483891345,
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 2327.9,
+      "sl_price": 2359.3455232903634,
+      "sl_initial": 2359.3455232903634,
+      "tp1_price": 2280.731715064455,
+      "tp2_price": 2233.56343012891,
+      "adx_value": 15.092784838522768,
+      "qty_total": 0.042957171699815284,
       "notional": 100.0,
       "leverage": 1.0,
       "signal_score": null,
       "market_snapshot": {
-        "poc": 0.006348375,
-        "leg_start": "2026-10-27 09:15:00",
-        "leg_end": "2026-10-27 10:15:00",
-        "rr": 1.214,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.006358351999999999,
-        "raw_tp": 0.0063
+        "adx": 15.093,
+        "di_plus": 33.046,
+        "di_minus": 16.509,
+        "ema_trend": 2324.759798,
+        "close_vs_ema": "above",
+        "volume": 3550.6197,
+        "vol_ma": 1885.0914,
+        "vol_above_ma": true
       },
       "lot_a": {
-        "qty": 15792.798483891345,
+        "qty": 0.021478585849907642,
         "target": "tp1",
         "status": "open"
       },
       "lot_b": {
-        "qty": 0.0,
+        "qty": 0.021478585849907642,
         "target": "tp2",
-        "status": "none"
+        "status": "open"
       }
     }
   },
-  "next_trade_id": 2930,
+  "next_trade_id": 2931,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
