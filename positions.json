@@ -1,5 +1,5 @@
 {
-  "balance": 10075.56978059212,
+  "balance": 10074.824911412194,
   "positions": {
     "BNBUSDT__ST": {
       "trade_id": 2734,
@@ -526,7 +526,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 745.02,
-      "sl_price": 749.8585787600142,
+      "sl_price": 745.02,
       "sl_initial": 749.8585787600142,
       "tp1_price": 737.7621318599786,
       "tp2_price": 730.5042637199573,
@@ -558,7 +558,7 @@
       "lot_a": {
         "qty": 0.06711229228745537,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.06711229228745537,
@@ -624,7 +624,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.0786,
-      "sl_price": 0.07933299872145237,
+      "sl_price": 0.0786,
       "sl_initial": 0.07933299872145237,
       "tp1_price": 0.07750050191782146,
       "tp2_price": 0.0764010038356429,
@@ -656,58 +656,10 @@
       "lot_a": {
         "qty": 636.1323155216285,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 636.1323155216285,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "CRVUSDT__SMC": {
-      "trade_id": 2894,
-      "symbol": "CRVUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-10-27 02:00:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.3363,
-      "sl_price": 0.3325520542026118,
-      "sl_initial": 0.3325520542026118,
-      "tp1_price": 0.34192191869608224,
-      "tp2_price": 0.34754383739216455,
-      "adx_value": null,
-      "qty_total": 297.3535533749628,
-      "notional": 99.99999999999999,
-      "leverage": 1.0,
-      "signal_score": 5,
-      "market_snapshot": {
-        "recent_bull_sweep": true,
-        "recent_bear_sweep": true,
-        "vol_spike": true,
-        "strong_bull_rej": false,
-        "strong_bear_rej": false,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 31.98,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": true,
-        "bull_fvg_count": 0,
-        "bear_fvg_count": 6,
-        "bull_ob_count": 0,
-        "bear_ob_count": 3,
-        "trend": -1
-      },
-      "lot_a": {
-        "qty": 148.6767766874814,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 148.6767766874814,
         "target": "tp2",
         "status": "open"
       }
@@ -797,54 +749,6 @@
         "qty": 0.0,
         "target": "tp2",
         "status": "none"
-      }
-    },
-    "VETUSDT__SMC": {
-      "trade_id": 2899,
-      "symbol": "VETUSDT",
-      "source": "ICT/SMC Scalp Pro",
-      "candle_time": "2026-10-27 02:30:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.006476,
-      "sl_price": 0.006423096091896783,
-      "sl_initial": 0.006423096091896783,
-      "tp1_price": 0.0065553558621548255,
-      "tp2_price": 0.00663471172430965,
-      "adx_value": null,
-      "qty_total": 15441.630636195183,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 6,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": true,
-        "vol_spike": true,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 33.78,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": true,
-        "bull_fvg_count": 0,
-        "bear_fvg_count": 5,
-        "bull_ob_count": 0,
-        "bear_ob_count": 2,
-        "trend": -1
-      },
-      "lot_a": {
-        "qty": 7720.815318097591,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 7720.815318097591,
-        "target": "tp2",
-        "status": "open"
       }
     },
     "MASKUSDT__POC": {
