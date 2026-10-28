@@ -1,5 +1,5 @@
 {
-  "balance": 10128.505664939032,
+  "balance": 10129.790192880786,
   "positions": {
     "STGUSDT__SMC": {
       "trade_id": 8434,
@@ -2151,31 +2151,6 @@
       },
       "qty_open": 1083.658430862592
     },
-    "ZECUSDT__POC": {
-      "trade_id": 30595,
-      "symbol": "ZECUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-28 20:45:00",
-      "session": "نیویورک",
-      "entry_price": 1299.31,
-      "sl_price": 1282.92579,
-      "tp1_price": 1316.0,
-      "tp2_price": null,
-      "qty_total": 0.07696392700741163,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 1291.9360416666668,
-        "leg_start": "2026-10-28 18:30:00",
-        "leg_end": "2026-10-28 20:00:00",
-        "rr": 1.019,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 0.07696392700741163
-    },
     "ZRXUSDT__POC": {
       "trade_id": 30597,
       "symbol": "ZRXUSDT",
@@ -4290,8 +4265,33 @@
       },
       "qty_open": 8237.232289950576,
       "phase": "before_tp1"
+    },
+    "MANAUSDT__POC": {
+      "trade_id": 30684,
+      "symbol": "MANAUSDT",
+      "source": "POC Retest v2",
+      "direction": "long",
+      "candle_time": "2026-10-28 23:15:00",
+      "session": "نیویورک",
+      "entry_price": 0.0795,
+      "sl_price": 0.0791208,
+      "tp1_price": 0.0806,
+      "tp2_price": null,
+      "qty_total": 1257.8616352201257,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.079425,
+        "leg_start": "2026-10-28 20:15:00",
+        "leg_end": "2026-10-28 21:15:00",
+        "rr": 2.901,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 1257.8616352201257
     }
   },
-  "next_trade_id": 30684,
+  "next_trade_id": 30685,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
