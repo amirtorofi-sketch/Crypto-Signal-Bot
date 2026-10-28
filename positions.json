@@ -553,8 +553,133 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "CRVUSDT__POC": {
+      "trade_id": 3011,
+      "symbol": "CRVUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-28 16:15:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.334,
+      "sl_price": 0.3355328000000001,
+      "sl_initial": 0.3355328000000001,
+      "tp1_price": 0.33220000000000005,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 299.4011976047904,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.33376874999999995,
+        "leg_start": "2026-10-28 14:15:00",
+        "leg_end": "2026-10-28 15:15:00",
+        "rr": 1.174,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.33246719999999996,
+        "raw_tp": 0.3358
+      },
+      "lot_a": {
+        "qty": 299.4011976047904,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "GALAUSDT__SMC2": {
+      "trade_id": 3012,
+      "symbol": "GALAUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-28 16:15:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.001752,
+      "sl_price": 0.0017677352292227062,
+      "sl_initial": 0.0017677352292227062,
+      "tp1_price": 0.0017283971561659409,
+      "tp2_price": 0.0017047943123318816,
+      "adx_value": null,
+      "qty_total": 57077.625570776254,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 44.3,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "trend_strong": false,
+        "trend": 1,
+        "bull_fvg_count": 5,
+        "bear_fvg_count": 3,
+        "bull_ob_count": 2,
+        "bear_ob_count": 1
+      },
+      "lot_a": {
+        "qty": 28538.812785388127,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 28538.812785388127,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "GALAUSDT__POC": {
+      "trade_id": 3013,
+      "symbol": "GALAUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-28 16:15:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.001752,
+      "sl_price": 0.0017557500000000001,
+      "sl_initial": 0.0017557500000000001,
+      "tp1_price": 0.0017380000000000002,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 57077.625570776254,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.001751625,
+        "leg_start": "2026-10-28 14:15:00",
+        "leg_end": "2026-10-28 15:15:00",
+        "rr": 3.733,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.00174825,
+        "raw_tp": 0.001766
+      },
+      "lot_a": {
+        "qty": 57077.625570776254,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 3011,
+  "next_trade_id": 3014,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
