@@ -1,5 +1,5 @@
 {
-  "balance": 10198.089109718943,
+  "balance": 10196.565266311334,
   "positions": {
     "STGUSDT__SMC": {
       "trade_id": 8434,
@@ -1344,46 +1344,6 @@
         "bear_ob_count": 1
       },
       "qty_open": 0.7546030787805613,
-      "phase": "before_tp1"
-    },
-    "ARBUSDT__SMC": {
-      "trade_id": 30224,
-      "symbol": "ARBUSDT",
-      "source": "ICT/SMC Scalp Pro v2",
-      "direction": "short",
-      "candle_time": "2026-10-28 13:30:00",
-      "session": "لندن",
-      "entry_price": 0.1658,
-      "initial_sl_price": 0.16788984151018455,
-      "sl_price": 0.16788984151018455,
-      "tp1_price": 0.1626652377347232,
-      "tp2_price": 0.15953047546944638,
-      "qty_total": 603.1363088057901,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": true,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 39.03,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 0,
-        "bear_fvg_count": 5,
-        "bull_ob_count": 0,
-        "bear_ob_count": 1
-      },
-      "qty_open": 603.1363088057901,
       "phase": "before_tp1"
     },
     "AVAXUSDT__SMC": {
@@ -3131,31 +3091,6 @@
       },
       "qty_open": 61050.06105006106
     },
-    "SAGAUSDT__POC": {
-      "trade_id": 30321,
-      "symbol": "SAGAUSDT",
-      "source": "POC Retest v2",
-      "direction": "short",
-      "candle_time": "2026-10-28 15:30:00",
-      "session": "لندن",
-      "entry_price": 0.01838,
-      "sl_price": 0.018428409999999996,
-      "tp1_price": 0.01823,
-      "tp2_price": null,
-      "qty_total": 5440.69640914037,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.018385,
-        "leg_start": "2026-10-28 13:00:00",
-        "leg_end": "2026-10-28 14:15:00",
-        "rr": 3.099,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 5440.69640914037
-    },
     "SKLUSDT__POC": {
       "trade_id": 30322,
       "symbol": "SKLUSDT",
@@ -3205,8 +3140,33 @@
         "reason": "poc_retest_rejection"
       },
       "qty_open": 572.3443223443223
+    },
+    "BIGTIMEUSDT__POC": {
+      "trade_id": 30324,
+      "symbol": "BIGTIMEUSDT",
+      "source": "POC Retest v2",
+      "direction": "long",
+      "candle_time": "2026-10-28 15:45:00",
+      "session": "لندن",
+      "entry_price": 0.00706,
+      "sl_price": 0.00700299,
+      "tp1_price": 0.0071,
+      "tp2_price": null,
+      "qty_total": 14164.305949008498,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.007045833333333334,
+        "leg_start": "2026-10-28 12:30:00",
+        "leg_end": "2026-10-28 13:45:00",
+        "rr": 0.702,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 14164.305949008498
     }
   },
-  "next_trade_id": 30324,
+  "next_trade_id": 30325,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
