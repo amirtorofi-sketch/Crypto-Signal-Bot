@@ -1,5 +1,5 @@
 {
-  "balance": 10092.17067829766,
+  "balance": 10095.143168485682,
   "positions": {
     "CHZUSDT__ST": {
       "trade_id": 2792,
@@ -127,7 +127,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.0783,
-      "sl_price": 0.07674104707540434,
+      "sl_price": 0.0783,
       "sl_initial": 0.07674104707540434,
       "tp1_price": 0.08063842938689347,
       "tp2_price": 0.08297685877378695,
@@ -149,7 +149,7 @@
       "lot_a": {
         "qty": 638.5696040868455,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 638.5696040868455,
@@ -206,55 +206,6 @@
         "status": "open"
       }
     },
-    "ETHUSDT__SMC2": {
-      "trade_id": 3014,
-      "symbol": "ETHUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-28 16:30:00",
-      "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 2330.12,
-      "sl_price": 2330.12,
-      "sl_initial": 2316.677292562634,
-      "tp1_price": 2350.2840611560487,
-      "tp2_price": 2370.448122312097,
-      "adx_value": null,
-      "qty_total": 0.04291624465692754,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 4,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": false,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": true,
-        "premium_zone": false,
-        "rsi_value": 31.16,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": true,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 0,
-        "bear_fvg_count": 4,
-        "bull_ob_count": 1,
-        "bear_ob_count": 2
-      },
-      "lot_a": {
-        "qty": 0.02145812232846377,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 0.02145812232846377,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "DOGEUSDT__SMC2": {
       "trade_id": 3020,
       "symbol": "DOGEUSDT",
@@ -264,7 +215,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.07922,
-      "sl_price": 0.0785715848509511,
+      "sl_price": 0.07922,
       "sl_initial": 0.0785715848509511,
       "tp1_price": 0.08019262272357335,
       "tp2_price": 0.08116524544714669,
@@ -296,7 +247,7 @@
       "lot_a": {
         "qty": 631.1537490532694,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 631.1537490532694,
