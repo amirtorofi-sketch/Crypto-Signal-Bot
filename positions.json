@@ -1,5 +1,5 @@
 {
-  "balance": 10089.927585721196,
+  "balance": 10090.259422432177,
   "positions": {
     "SOLUSDT__ST": {
       "trade_id": 2787,
@@ -352,7 +352,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.0069,
-      "sl_price": 0.0069552850584913345,
+      "sl_price": 0.0069,
       "sl_initial": 0.0069552850584913345,
       "tp1_price": 0.0068170724122629985,
       "tp2_price": 0.006734144824525996,
@@ -383,7 +383,7 @@
       "lot_a": {
         "qty": 7246.376811594203,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 7246.376811594203,
@@ -615,44 +615,6 @@
         "status": "open"
       }
     },
-    "GALAUSDT__POC": {
-      "trade_id": 2976,
-      "symbol": "GALAUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-28 05:00:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.001776,
-      "sl_price": 0.0017712210000000003,
-      "sl_initial": 0.0017712210000000003,
-      "tp1_price": 0.001786,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 56306.30630630631,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.0017762708333333333,
-        "leg_start": "2026-10-28 03:30:00",
-        "leg_end": "2026-10-28 04:15:00",
-        "rr": 2.092,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.0017807789999999997,
-        "raw_tp": 0.001766
-      },
-      "lot_a": {
-        "qty": 56306.30630630631,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "CHZUSDT__POC": {
       "trade_id": 2977,
       "symbol": "CHZUSDT",
@@ -690,8 +652,47 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "VETUSDT__ST": {
+      "trade_id": 2978,
+      "symbol": "VETUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-28 05:45:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.006396,
+      "sl_price": 0.006299651840206485,
+      "sl_initial": 0.006299651840206485,
+      "tp1_price": 0.006540522239690272,
+      "tp2_price": 0.006685044479380544,
+      "adx_value": 16.467533631287967,
+      "qty_total": 15634.771732332709,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 16.468,
+        "di_plus": 20.684,
+        "di_minus": 33.609,
+        "ema_trend": 0.006513,
+        "close_vs_ema": "below",
+        "volume": 2291015.8,
+        "vol_ma": 778009.565,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 7817.385866166354,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 7817.385866166354,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 2978,
+  "next_trade_id": 2979,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
