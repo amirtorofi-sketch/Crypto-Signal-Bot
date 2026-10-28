@@ -1,45 +1,6 @@
 {
   "balance": 10089.090436243976,
   "positions": {
-    "SOLUSDT__ST": {
-      "trade_id": 2787,
-      "symbol": "SOLUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-10-26 01:30:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 100.63,
-      "sl_price": 100.63,
-      "sl_initial": 99.1464728389037,
-      "tp1_price": 102.85529074164444,
-      "tp2_price": 105.08058148328887,
-      "adx_value": 21.22512776927689,
-      "qty_total": 0.993739441518434,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "adx": 21.225,
-        "di_plus": 11.033,
-        "di_minus": 23.867,
-        "ema_trend": 101.846439,
-        "close_vs_ema": "below",
-        "volume": 42882.514,
-        "vol_ma": 15186.3573,
-        "vol_above_ma": true
-      },
-      "lot_a": {
-        "qty": 0.496869720759217,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 0.496869720759217,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "CHZUSDT__ST": {
       "trade_id": 2792,
       "symbol": "CHZUSDT",
@@ -75,45 +36,6 @@
       },
       "lot_b": {
         "qty": 3946.3299131807416,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
-    "CRVUSDT__ST": {
-      "trade_id": 2919,
-      "symbol": "CRVUSDT",
-      "source": "Supertrend+ADX",
-      "candle_time": "2026-10-27 10:00:00",
-      "session": "لندن",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.3323,
-      "sl_price": 0.3323,
-      "sl_initial": 0.32627744726351415,
-      "tp1_price": 0.34133382910472876,
-      "tp2_price": 0.3503676582094575,
-      "adx_value": 19.04384946371152,
-      "qty_total": 300.9328919650918,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "adx": 19.044,
-        "di_plus": 16.869,
-        "di_minus": 34.279,
-        "ema_trend": 0.342557,
-        "close_vs_ema": "below",
-        "volume": 80211.7,
-        "vol_ma": 58859.14,
-        "vol_above_ma": true
-      },
-      "lot_a": {
-        "qty": 150.4664459825459,
-        "target": "tp1",
-        "status": "closed_tp"
-      },
-      "lot_b": {
-        "qty": 150.4664459825459,
         "target": "tp2",
         "status": "open"
       }
@@ -506,8 +428,57 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "BNBUSDT__SMC2": {
+      "trade_id": 3007,
+      "symbol": "BNBUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-28 14:15:00",
+      "session": "لندن",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 748.15,
+      "sl_price": 752.9563157263052,
+      "sl_initial": 752.9563157263052,
+      "tp1_price": 740.9405264105421,
+      "tp2_price": 733.7310528210843,
+      "adx_value": null,
+      "qty_total": 0.13366303548753591,
+      "notional": 99.99999999999999,
+      "leverage": 1.0,
+      "signal_score": 4,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 34.88,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "trend_strong": true,
+        "trend": 1,
+        "bull_fvg_count": 1,
+        "bear_fvg_count": 3,
+        "bull_ob_count": 2,
+        "bear_ob_count": 0
+      },
+      "lot_a": {
+        "qty": 0.06683151774376796,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.06683151774376796,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 3007,
+  "next_trade_id": 3008,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
