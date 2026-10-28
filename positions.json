@@ -515,8 +515,46 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "ROSEUSDT__POC": {
+      "trade_id": 3009,
+      "symbol": "ROSEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-28 15:30:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.00671,
+      "sl_price": 0.00669328,
+      "sl_initial": 0.00669328,
+      "tp1_price": 0.00678,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 14903.129657228019,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.006717916666666667,
+        "leg_start": "2026-10-28 11:15:00",
+        "leg_end": "2026-10-28 14:15:00",
+        "rr": 4.187,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.006726719999999999,
+        "raw_tp": 0.00664
+      },
+      "lot_a": {
+        "qty": 14903.129657228019,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 3009,
+  "next_trade_id": 3010,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
