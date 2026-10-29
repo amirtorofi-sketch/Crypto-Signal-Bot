@@ -1,5 +1,5 @@
 {
-  "balance": 10152.580960533045,
+  "balance": 10151.904871561776,
   "positions": {
     "BTCUSDT__SMC2": {
       "trade_id": 3120,
@@ -379,44 +379,6 @@
         "status": "none"
       }
     },
-    "SOLUSDT__POC": {
-      "trade_id": 3129,
-      "symbol": "SOLUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-29 22:00:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 97.11,
-      "sl_price": 97.76655,
-      "sl_initial": 97.76655,
-      "tp1_price": 96.11,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 1.0297600659046442,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 96.87895833333333,
-        "leg_start": "2026-10-29 20:45:00",
-        "leg_end": "2026-10-29 21:30:00",
-        "rr": 1.523,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 96.45345,
-        "raw_tp": 98.11
-      },
-      "lot_a": {
-        "qty": 1.0297600659046442,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "DOGEUSDT__POC": {
       "trade_id": 3130,
       "symbol": "DOGEUSDT",
@@ -454,8 +416,106 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "VETUSDT__SMC2": {
+      "trade_id": 3131,
+      "symbol": "VETUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-29 22:30:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.005848,
+      "sl_price": 0.005692969821991162,
+      "sl_initial": 0.005692969821991162,
+      "tp1_price": 0.006080545267013257,
+      "tp2_price": 0.006313090534026514,
+      "adx_value": null,
+      "qty_total": 17099.86320109439,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 32.47,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 0,
+        "bear_fvg_count": 6,
+        "bull_ob_count": 0,
+        "bear_ob_count": 1
+      },
+      "lot_a": {
+        "qty": 8549.931600547196,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 8549.931600547196,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "MANAUSDT__SMC2": {
+      "trade_id": 3132,
+      "symbol": "MANAUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-29 22:30:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.0733,
+      "sl_price": 0.07154133860943353,
+      "sl_initial": 0.07154133860943353,
+      "tp1_price": 0.07593799208584973,
+      "tp2_price": 0.07857598417169943,
+      "adx_value": null,
+      "qty_total": 1364.256480218281,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 31.87,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 0,
+        "bear_fvg_count": 5,
+        "bull_ob_count": 0,
+        "bear_ob_count": 1
+      },
+      "lot_a": {
+        "qty": 682.1282401091405,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 682.1282401091405,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 3131,
+  "next_trade_id": 3133,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
