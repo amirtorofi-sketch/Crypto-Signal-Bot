@@ -1,5 +1,5 @@
 {
-  "balance": 10133.322101554442,
+  "balance": 10133.711711944052,
   "positions": {
     "GALAUSDT__ST": {
       "trade_id": 3025,
@@ -829,35 +829,35 @@
         "status": "none"
       }
     },
-    "MANAUSDT__POC": {
-      "trade_id": 3116,
-      "symbol": "MANAUSDT",
+    "ETHUSDT__POC": {
+      "trade_id": 3117,
+      "symbol": "ETHUSDT",
       "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-29 19:00:00",
+      "candle_time": "2026-10-29 19:30:00",
       "session": "نیویورک",
       "raw_direction": "short",
       "direction": "long",
-      "entry_price": 0.077,
-      "sl_price": 0.07662270000000002,
-      "sl_initial": 0.07662270000000002,
-      "tp1_price": 0.0773,
+      "entry_price": 2334.84,
+      "sl_price": 2329.7524100000005,
+      "sl_initial": 2329.7524100000005,
+      "tp1_price": 2345.3,
       "tp2_price": null,
       "adx_value": null,
-      "qty_total": 1298.7012987012988,
-      "notional": 100.00000000000001,
+      "qty_total": 0.042829487245378696,
+      "notional": 100.0,
       "leverage": 1.0,
       "signal_score": null,
       "market_snapshot": {
-        "poc": 0.07701250000000001,
-        "leg_start": "2026-10-29 10:45:00",
-        "leg_end": "2026-10-29 12:00:00",
-        "rr": 0.795,
+        "poc": 2337.023125,
+        "leg_start": "2026-10-29 16:00:00",
+        "leg_end": "2026-10-29 18:30:00",
+        "rr": 2.056,
         "reason": "poc_retest_rejection",
-        "raw_sl": 0.07737729999999998,
-        "raw_tp": 0.0767
+        "raw_sl": 2339.92759,
+        "raw_tp": 2324.38
       },
       "lot_a": {
-        "qty": 1298.7012987012988,
+        "qty": 0.042829487245378696,
         "target": "tp1",
         "status": "open"
       },
@@ -866,8 +866,57 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "MANAUSDT__SMC2": {
+      "trade_id": 3118,
+      "symbol": "MANAUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-29 19:30:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.0771,
+      "sl_price": 0.07626641426556166,
+      "sl_initial": 0.07626641426556166,
+      "tp1_price": 0.07835037860165751,
+      "tp2_price": 0.07960075720331503,
+      "adx_value": null,
+      "qty_total": 1297.0168612191958,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": false,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 39.99,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 4,
+        "bear_fvg_count": 3,
+        "bull_ob_count": 3,
+        "bear_ob_count": 0
+      },
+      "lot_a": {
+        "qty": 648.5084306095979,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 648.5084306095979,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 3117,
+  "next_trade_id": 3119,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
