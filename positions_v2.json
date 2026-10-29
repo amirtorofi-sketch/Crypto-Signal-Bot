@@ -1,5 +1,5 @@
 {
-  "balance": 10062.079487557796,
+  "balance": 10063.968790060446,
   "positions": {
     "STGUSDT__SMC": {
       "trade_id": 8434,
@@ -401,46 +401,6 @@
       "qty_open": 615.0818058801821,
       "phase": "after_tp1"
     },
-    "ZECUSDT__SMC": {
-      "trade_id": 30548,
-      "symbol": "ZECUSDT",
-      "source": "ICT/SMC Scalp Pro v2",
-      "direction": "short",
-      "candle_time": "2026-10-28 20:00:00",
-      "session": "نیویورک",
-      "entry_price": 1299.09,
-      "initial_sl_price": 1320.2401121892897,
-      "sl_price": 1299.09,
-      "tp1_price": 1267.3648317160653,
-      "tp2_price": 1235.6396634321306,
-      "qty_total": 0.07697696079563388,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": 5,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": true,
-        "vol_spike": true,
-        "strong_bull_rej": false,
-        "strong_bear_rej": true,
-        "htf_bullish": true,
-        "htf_bearish": false,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 62.11,
-        "rsi_bull_ok": false,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": -1,
-        "bull_fvg_count": 6,
-        "bear_fvg_count": 2,
-        "bull_ob_count": 2,
-        "bear_ob_count": 1
-      },
-      "qty_open": 0.03848848039781694,
-      "phase": "after_tp1"
-    },
     "INITUSDT__SMC": {
       "trade_id": 30587,
       "symbol": "INITUSDT",
@@ -610,31 +570,6 @@
         "reason": "poc_retest_rejection"
       },
       "qty_open": 0.024659392145983602
-    },
-    "AGLDUSDT__POC": {
-      "trade_id": 30760,
-      "symbol": "AGLDUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-29 02:00:00",
-      "session": "آسیا",
-      "entry_price": 0.1765,
-      "sl_price": 0.1755243,
-      "tp1_price": 0.1795,
-      "tp2_price": null,
-      "qty_total": 566.57223796034,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.17636666666666667,
-        "leg_start": "2026-10-28 16:45:00",
-        "leg_end": "2026-10-28 18:30:00",
-        "rr": 3.075,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 566.57223796034
     },
     "BICOUSDT__POC": {
       "trade_id": 30761,
@@ -820,8 +755,48 @@
       },
       "qty_open": 6169.031462060457,
       "phase": "before_tp1"
+    },
+    "PROMUSDT__SMC": {
+      "trade_id": 30766,
+      "symbol": "PROMUSDT",
+      "source": "ICT/SMC Scalp Pro v2",
+      "direction": "short",
+      "candle_time": "2026-10-29 02:30:00",
+      "session": "آسیا",
+      "entry_price": 5.522,
+      "initial_sl_price": 5.589142341382918,
+      "sl_price": 5.589142341382918,
+      "tp1_price": 5.421286487925624,
+      "tp2_price": 5.320572975851246,
+      "qty_total": 18.109380659181454,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 35.44,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 2,
+        "bear_fvg_count": 4,
+        "bull_ob_count": 0,
+        "bear_ob_count": 0
+      },
+      "qty_open": 18.109380659181454,
+      "phase": "before_tp1"
     }
   },
-  "next_trade_id": 30766,
+  "next_trade_id": 30767,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
