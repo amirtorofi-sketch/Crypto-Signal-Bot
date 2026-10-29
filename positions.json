@@ -1,5 +1,5 @@
 {
-  "balance": 10108.001549303175,
+  "balance": 10108.345489757325,
   "positions": {
     "BTCUSDT__ST": {
       "trade_id": 3022,
@@ -300,7 +300,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.389,
-      "sl_price": 0.385587012557306,
+      "sl_price": 0.389,
       "sl_initial": 0.385587012557306,
       "tp1_price": 0.39411948116404105,
       "tp2_price": 0.3992389623280821,
@@ -331,7 +331,7 @@
       "lot_a": {
         "qty": 128.53470437017995,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 128.53470437017995,
@@ -435,44 +435,6 @@
         "qty": 127.8772378516624,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "BNBUSDT__POC": {
-      "trade_id": 3061,
-      "symbol": "BNBUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-29 03:30:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 746.6,
-      "sl_price": 748.945,
-      "sl_initial": 748.945,
-      "tp1_price": 742.35,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.1339405304045004,
-      "notional": 100.00000000000001,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 745.8395833333334,
-        "leg_start": "2026-10-29 02:00:00",
-        "leg_end": "2026-10-29 03:00:00",
-        "rr": 1.812,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 744.255,
-        "raw_tp": 750.85
-      },
-      "lot_a": {
-        "qty": 0.1339405304045004,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     }
   },
