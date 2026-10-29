@@ -1,5 +1,5 @@
 {
-  "balance": 10128.813203072626,
+  "balance": 10130.138704031957,
   "positions": {
     "GALAUSDT__ST": {
       "trade_id": 3025,
@@ -127,7 +127,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 2357.66,
-      "sl_price": 2379.211372430295,
+      "sl_price": 2357.66,
       "sl_initial": 2379.211372430295,
       "tp1_price": 2325.332941354557,
       "tp2_price": 2293.0058827091148,
@@ -159,7 +159,7 @@
       "lot_a": {
         "qty": 0.02120746842207952,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.02120746842207952,
@@ -176,7 +176,7 @@
       "raw_direction": "long",
       "direction": "short",
       "entry_price": 0.402,
-      "sl_price": 0.4054300027378566,
+      "sl_price": 0.402,
       "sl_initial": 0.4054300027378566,
       "tp1_price": 0.39685499589321516,
       "tp2_price": 0.39170999178643023,
@@ -208,7 +208,7 @@
       "lot_a": {
         "qty": 124.37810945273631,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 124.37810945273631,
@@ -673,8 +673,125 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ETHUSDT__ST": {
+      "trade_id": 3111,
+      "symbol": "ETHUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-29 18:30:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 2329.27,
+      "sl_price": 2292.839058594243,
+      "sl_initial": 2292.839058594243,
+      "tp1_price": 2383.9164121086355,
+      "tp2_price": 2438.562824217271,
+      "adx_value": 22.44279952828322,
+      "qty_total": 0.04293190570436231,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 22.443,
+        "di_plus": 17.922,
+        "di_minus": 27.802,
+        "ema_trend": 2336.799573,
+        "close_vs_ema": "below",
+        "volume": 7130.8492,
+        "vol_ma": 3998.7804,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 0.021465952852181155,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.021465952852181155,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "CHZUSDT__ST": {
+      "trade_id": 3112,
+      "symbol": "CHZUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-29 18:30:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.01284,
+      "sl_price": 0.012570943905733043,
+      "sl_initial": 0.012570943905733043,
+      "tp1_price": 0.013243584141400436,
+      "tp2_price": 0.013647168282800872,
+      "adx_value": 28.230104839362575,
+      "qty_total": 7788.1619937694695,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 28.23,
+        "di_plus": 21.103,
+        "di_minus": 29.067,
+        "ema_trend": 0.012862,
+        "close_vs_ema": "below",
+        "volume": 837282.0,
+        "vol_ma": 707607.55,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 3894.0809968847348,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 3894.0809968847348,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "VETUSDT__ST": {
+      "trade_id": 3113,
+      "symbol": "VETUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-29 18:30:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.006135,
+      "sl_price": 0.005972224996724922,
+      "sl_initial": 0.005972224996724922,
+      "tp1_price": 0.006379162504912616,
+      "tp2_price": 0.006623325009825233,
+      "adx_value": 26.06673967170855,
+      "qty_total": 16299.918500407499,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 26.067,
+        "di_plus": 17.804,
+        "di_minus": 30.906,
+        "ema_trend": 0.006308,
+        "close_vs_ema": "below",
+        "volume": 2146300.4,
+        "vol_ma": 1926855.385,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 8149.959250203749,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 8149.959250203749,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 3111,
+  "next_trade_id": 3114,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
