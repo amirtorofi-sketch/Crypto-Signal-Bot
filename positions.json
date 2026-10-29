@@ -634,8 +634,47 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "CRVUSDT__ST": {
+      "trade_id": 3110,
+      "symbol": "CRVUSDT",
+      "source": "Supertrend+ADX",
+      "candle_time": "2026-10-29 18:15:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.3258,
+      "sl_price": 0.3158907138387427,
+      "sl_initial": 0.3158907138387427,
+      "tp1_price": 0.34066392924188593,
+      "tp2_price": 0.3555278584837719,
+      "adx_value": 24.463217823154864,
+      "qty_total": 306.9367710251688,
+      "notional": 99.99999999999999,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "adx": 24.463,
+        "di_plus": 19.218,
+        "di_minus": 27.785,
+        "ema_trend": 0.333571,
+        "close_vs_ema": "below",
+        "volume": 234836.7,
+        "vol_ma": 126793.08,
+        "vol_above_ma": true
+      },
+      "lot_a": {
+        "qty": 153.4683855125844,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 153.4683855125844,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 3110,
+  "next_trade_id": 3111,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
