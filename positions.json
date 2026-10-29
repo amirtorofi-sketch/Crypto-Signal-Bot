@@ -1,5 +1,5 @@
 {
-  "balance": 10153.422442014527,
+  "balance": 10152.580960533045,
   "positions": {
     "BTCUSDT__SMC2": {
       "trade_id": 3120,
@@ -379,35 +379,73 @@
         "status": "none"
       }
     },
-    "CHZUSDT__POC": {
-      "trade_id": 3128,
-      "symbol": "CHZUSDT",
+    "SOLUSDT__POC": {
+      "trade_id": 3129,
+      "symbol": "SOLUSDT",
       "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-29 21:45:00",
+      "candle_time": "2026-10-29 22:00:00",
       "session": "نیویورک",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 0.01215,
-      "sl_price": 0.012047760000000001,
-      "sl_initial": 0.012047760000000001,
-      "tp1_price": 0.012329999999999999,
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 97.11,
+      "sl_price": 97.76655,
+      "sl_initial": 97.76655,
+      "tp1_price": 96.11,
       "tp2_price": null,
       "adx_value": null,
-      "qty_total": 8230.45267489712,
+      "qty_total": 1.0297600659046442,
       "notional": 100.0,
       "leverage": 1.0,
       "signal_score": null,
       "market_snapshot": {
-        "poc": 0.012192291666666667,
-        "leg_start": "2026-10-29 19:30:00",
-        "leg_end": "2026-10-29 20:45:00",
-        "rr": 1.761,
+        "poc": 96.87895833333333,
+        "leg_start": "2026-10-29 20:45:00",
+        "leg_end": "2026-10-29 21:30:00",
+        "rr": 1.523,
         "reason": "poc_retest_rejection",
-        "raw_sl": 0.012252239999999998,
-        "raw_tp": 0.01197
+        "raw_sl": 96.45345,
+        "raw_tp": 98.11
       },
       "lot_a": {
-        "qty": 8230.45267489712,
+        "qty": 1.0297600659046442,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
+    },
+    "DOGEUSDT__POC": {
+      "trade_id": 3130,
+      "symbol": "DOGEUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-29 22:00:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.07609,
+      "sl_price": 0.07675550000000002,
+      "sl_initial": 0.07675550000000002,
+      "tp1_price": 0.07518000000000001,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 1314.2331449599158,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.075943125,
+        "leg_start": "2026-10-29 20:45:00",
+        "leg_end": "2026-10-29 21:30:00",
+        "rr": 1.367,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.07542449999999999,
+        "raw_tp": 0.077
+      },
+      "lot_a": {
+        "qty": 1314.2331449599158,
         "target": "tp1",
         "status": "open"
       },
@@ -418,6 +456,6 @@
       }
     }
   },
-  "next_trade_id": 3129,
+  "next_trade_id": 3131,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
