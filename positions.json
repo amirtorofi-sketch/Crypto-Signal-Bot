@@ -585,8 +585,57 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ONEUSDT__SMC2": {
+      "trade_id": 3109,
+      "symbol": "ONEUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-29 18:00:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.001278,
+      "sl_price": 0.001252395651332319,
+      "sl_initial": 0.001252395651332319,
+      "tp1_price": 0.0013164065230015219,
+      "tp2_price": 0.0013548130460030435,
+      "adx_value": null,
+      "qty_total": 78247.2613458529,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": true,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": true,
+        "htf_bearish": false,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 47.23,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 6,
+        "bear_fvg_count": 2,
+        "bull_ob_count": 1,
+        "bear_ob_count": 0
+      },
+      "lot_a": {
+        "qty": 39123.63067292645,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 39123.63067292645,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 3109,
+  "next_trade_id": 3110,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
