@@ -650,8 +650,95 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ROSEUSDT__SMC2": {
+      "trade_id": 3076,
+      "symbol": "ROSEUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-29 07:45:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.00657,
+      "sl_price": 0.006496064066631321,
+      "sl_initial": 0.006496064066631321,
+      "tp1_price": 0.006680903900053018,
+      "tp2_price": 0.006791807800106037,
+      "adx_value": null,
+      "qty_total": 15220.700152207,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 39.87,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": false,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 0,
+        "bear_fvg_count": 6,
+        "bull_ob_count": 0,
+        "bear_ob_count": 0
+      },
+      "lot_a": {
+        "qty": 7610.3500761035,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 7610.3500761035,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "MASKUSDT__POC": {
+      "trade_id": 3077,
+      "symbol": "MASKUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-29 07:45:00",
+      "session": "آسیا",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 0.389,
+      "sl_price": 0.390388,
+      "sl_initial": 0.390388,
+      "tp1_price": 0.384,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 257.0694087403599,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.38889583333333333,
+        "leg_start": "2026-10-29 02:00:00",
+        "leg_end": "2026-10-29 03:00:00",
+        "rr": 3.602,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.387612,
+        "raw_tp": 0.394
+      },
+      "lot_a": {
+        "qty": 257.0694087403599,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 3076,
+  "next_trade_id": 3078,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
