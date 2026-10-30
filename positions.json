@@ -909,8 +909,57 @@
         "target": "tp2",
         "status": "open"
       }
+    },
+    "ETHUSDT__SMC2": {
+      "trade_id": 3197,
+      "symbol": "ETHUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-30 17:00:00",
+      "session": "نیویورک",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 2243.01,
+      "sl_price": 2217.7796245731097,
+      "sl_initial": 2217.7796245731097,
+      "tp1_price": 2280.855563140336,
+      "tp2_price": 2318.701126280672,
+      "adx_value": null,
+      "qty_total": 0.04458294880539988,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": true,
+        "vol_spike": false,
+        "strong_bull_rej": true,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": false,
+        "premium_zone": true,
+        "rsi_value": 55.26,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": false,
+        "trend": -1,
+        "bull_fvg_count": 2,
+        "bear_fvg_count": 4,
+        "bull_ob_count": 0,
+        "bear_ob_count": 3
+      },
+      "lot_a": {
+        "qty": 0.02229147440269994,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.02229147440269994,
+        "target": "tp2",
+        "status": "open"
+      }
     }
   },
-  "next_trade_id": 3197,
+  "next_trade_id": 3198,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
