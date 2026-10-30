@@ -1,5 +1,5 @@
 {
-  "balance": 10099.055238100978,
+  "balance": 10097.116210201282,
   "positions": {
     "STGUSDT__SMC": {
       "trade_id": 8434,
@@ -2196,31 +2196,6 @@
       },
       "qty_open": 907.4410163339383
     },
-    "BNBUSDT__POC": {
-      "trade_id": 31680,
-      "symbol": "BNBUSDT",
-      "source": "POC Retest v2",
-      "direction": "short",
-      "candle_time": "2026-10-30 01:15:00",
-      "session": "آسیا",
-      "entry_price": 695.8,
-      "sl_price": 704.02332,
-      "tp1_price": 682.16,
-      "tp2_price": null,
-      "qty_total": 0.14371945961483185,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 700.6297916666667,
-        "leg_start": "2026-10-29 23:00:00",
-        "leg_end": "2026-10-30 00:15:00",
-        "rr": 1.659,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 0.14371945961483185
-    },
     "HBARUSDT__POC": {
       "trade_id": 31682,
       "symbol": "HBARUSDT",
@@ -2501,31 +2476,6 @@
       },
       "qty_open": 0.3663003663003663
     },
-    "INITUSDT__POC": {
-      "trade_id": 31693,
-      "symbol": "INITUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-30 01:30:00",
-      "session": "آسیا",
-      "entry_price": 0.2189,
-      "sl_price": 0.21724253999999998,
-      "tp1_price": 0.22826,
-      "tp2_price": null,
-      "qty_total": 456.82960255824577,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.21756583333333335,
-        "leg_start": "2026-10-29 23:45:00",
-        "leg_end": "2026-10-30 00:45:00",
-        "rr": 5.647,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 456.82960255824577
-    },
     "LINKUSDT__POC": {
       "trade_id": 31694,
       "symbol": "LINKUSDT",
@@ -2615,8 +2565,33 @@
       },
       "qty_open": 74682.59895444362,
       "phase": "before_tp1"
+    },
+    "ALTUSDT__POC": {
+      "trade_id": 31697,
+      "symbol": "ALTUSDT",
+      "source": "POC Retest v2",
+      "direction": "long",
+      "candle_time": "2026-10-30 01:45:00",
+      "session": "آسیا",
+      "entry_price": 0.00582,
+      "sl_price": 0.005794199999999999,
+      "tp1_price": 0.00593,
+      "tp2_price": null,
+      "qty_total": 17182.13058419244,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.00580625,
+        "leg_start": "2026-10-30 00:15:00",
+        "leg_end": "2026-10-30 01:15:00",
+        "rr": 4.264,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 17182.13058419244
     }
   },
-  "next_trade_id": 31697,
+  "next_trade_id": 31698,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
