@@ -1,5 +1,5 @@
 {
-  "balance": 10133.771143813046,
+  "balance": 10132.394663266357,
   "positions": {
     "BNBUSDT__SMC": {
       "trade_id": 3137,
@@ -633,82 +633,6 @@
         "status": "open"
       }
     },
-    "BNBUSDT__POC": {
-      "trade_id": 3200,
-      "symbol": "BNBUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-30 18:45:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 698.31,
-      "sl_price": 701.3159999999999,
-      "sl_initial": 701.3159999999999,
-      "tp1_price": 690.6399999999999,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.14320287551374034,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 696.24625,
-        "leg_start": "2026-10-30 14:15:00",
-        "leg_end": "2026-10-30 15:15:00",
-        "rr": 2.552,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 695.304,
-        "raw_tp": 705.98
-      },
-      "lot_a": {
-        "qty": 0.14320287551374034,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
-    "CRVUSDT__POC": {
-      "trade_id": 3201,
-      "symbol": "CRVUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-30 18:45:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.2834,
-      "sl_price": 0.2860809999999999,
-      "sl_initial": 0.2860809999999999,
-      "tp1_price": 0.28059999999999996,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 352.85815102328866,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.28284166666666666,
-        "leg_start": "2026-10-30 17:30:00",
-        "leg_end": "2026-10-30 18:15:00",
-        "rr": 1.044,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.28071900000000005,
-        "raw_tp": 0.2862
-      },
-      "lot_a": {
-        "qty": 352.85815102328866,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "SOLUSDT__SMC2": {
       "trade_id": 3204,
       "symbol": "SOLUSDT",
@@ -795,8 +719,46 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "BTCUSDT__POC": {
+      "trade_id": 3206,
+      "symbol": "BTCUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-30 20:00:00",
+      "session": "نیویورک",
+      "raw_direction": "long",
+      "direction": "short",
+      "entry_price": 76982.01,
+      "sl_price": 77140.92998999999,
+      "sl_initial": 77140.92998999999,
+      "tp1_price": 75854.01999999999,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 0.0012990047934575883,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 76970.70833333334,
+        "leg_start": "2026-10-30 13:45:00",
+        "leg_end": "2026-10-30 15:15:00",
+        "rr": 7.098,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 76823.09001,
+        "raw_tp": 78110.0
+      },
+      "lot_a": {
+        "qty": 0.0012990047934575883,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 3206,
+  "next_trade_id": 3207,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
