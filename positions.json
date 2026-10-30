@@ -316,8 +316,143 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "CRVUSDT__SMC": {
+      "trade_id": 3146,
+      "symbol": "CRVUSDT",
+      "source": "ICT/SMC Scalp Pro",
+      "candle_time": "2026-10-30 02:30:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.2724,
+      "sl_price": 0.2602681956319359,
+      "sl_initial": 0.2602681956319359,
+      "tp1_price": 0.29059770655209616,
+      "tp2_price": 0.3087954131041923,
+      "adx_value": null,
+      "qty_total": 367.10719530102796,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 5,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": false,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 25.33,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "bull_fvg_count": 0,
+        "bear_fvg_count": 6,
+        "bull_ob_count": 0,
+        "bear_ob_count": 3,
+        "trend": -1
+      },
+      "lot_a": {
+        "qty": 183.55359765051398,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 183.55359765051398,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "ONEUSDT__SMC2": {
+      "trade_id": 3147,
+      "symbol": "ONEUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-30 02:30:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.001171,
+      "sl_price": 0.00113903830841089,
+      "sl_initial": 0.00113903830841089,
+      "tp1_price": 0.0012189425373836651,
+      "tp2_price": 0.00126688507476733,
+      "adx_value": null,
+      "qty_total": 85397.09649871905,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 4,
+      "market_snapshot": {
+        "recent_bull_sweep": false,
+        "recent_bear_sweep": false,
+        "vol_spike": false,
+        "strong_bull_rej": false,
+        "strong_bear_rej": true,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 40.62,
+        "rsi_bull_ok": false,
+        "rsi_bear_ok": true,
+        "trend_strong": true,
+        "trend": -1,
+        "bull_fvg_count": 1,
+        "bear_fvg_count": 5,
+        "bull_ob_count": 0,
+        "bear_ob_count": 1
+      },
+      "lot_a": {
+        "qty": 42698.54824935953,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 42698.54824935953,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "GALAUSDT__POC": {
+      "trade_id": 3148,
+      "symbol": "GALAUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-30 02:30:00",
+      "session": "آسیا",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.001624,
+      "sl_price": 0.0016173710000000003,
+      "sl_initial": 0.0016173710000000003,
+      "tp1_price": 0.001707,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 61576.35467980296,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0016255833333333335,
+        "leg_start": "2026-10-29 22:30:00",
+        "leg_end": "2026-10-30 00:15:00",
+        "rr": 12.521,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.0016306289999999998,
+        "raw_tp": 0.001541
+      },
+      "lot_a": {
+        "qty": 61576.35467980296,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 3146,
+  "next_trade_id": 3149,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
