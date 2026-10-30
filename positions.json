@@ -1,5 +1,5 @@
 {
-  "balance": 10135.381802302127,
+  "balance": 10132.324051950038,
   "positions": {
     "BNBUSDT__SMC": {
       "trade_id": 3137,
@@ -425,55 +425,6 @@
         "status": "open"
       }
     },
-    "GALAUSDT__SMC2": {
-      "trade_id": 3152,
-      "symbol": "GALAUSDT",
-      "source": "ICT/SMC v2 (Reversed)",
-      "candle_time": "2026-10-30 04:00:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.001643,
-      "sl_price": 0.001682577393229907,
-      "sl_initial": 0.001682577393229907,
-      "tp1_price": 0.0015836339101551393,
-      "tp2_price": 0.0015242678203102788,
-      "adx_value": null,
-      "qty_total": 60864.27267194157,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": 3,
-      "market_snapshot": {
-        "recent_bull_sweep": false,
-        "recent_bear_sweep": false,
-        "vol_spike": false,
-        "strong_bull_rej": true,
-        "strong_bear_rej": false,
-        "htf_bullish": false,
-        "htf_bearish": true,
-        "discount_zone": false,
-        "premium_zone": true,
-        "rsi_value": 51.87,
-        "rsi_bull_ok": true,
-        "rsi_bear_ok": false,
-        "trend_strong": true,
-        "trend": 1,
-        "bull_fvg_count": 4,
-        "bear_fvg_count": 5,
-        "bull_ob_count": 0,
-        "bear_ob_count": 1
-      },
-      "lot_a": {
-        "qty": 30432.136335970787,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 30432.136335970787,
-        "target": "tp2",
-        "status": "open"
-      }
-    },
     "DOGEUSDT__SMC2": {
       "trade_id": 3153,
       "symbol": "DOGEUSDT",
@@ -619,44 +570,6 @@
         "qty": 182.4817518248175,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "MASKUSDT__POC": {
-      "trade_id": 3156,
-      "symbol": "MASKUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-30 05:00:00",
-      "session": "آسیا",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.364,
-      "sl_price": 0.36636199999999997,
-      "sl_initial": 0.36636199999999997,
-      "tp1_price": 0.358,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 274.72527472527474,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.3633333333333333,
-        "leg_start": "2026-10-30 00:15:00",
-        "leg_end": "2026-10-30 02:30:00",
-        "rr": 2.54,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.361638,
-        "raw_tp": 0.37
-      },
-      "lot_a": {
-        "qty": 274.72527472527474,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     },
     "ONEUSDT__POC": {
