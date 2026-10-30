@@ -1,5 +1,5 @@
 {
-  "balance": 9927.141946552867,
+  "balance": 9926.681361820869,
   "positions": {
     "STGUSDT__SMC": {
       "trade_id": 8434,
@@ -4961,31 +4961,6 @@
       },
       "qty_open": 4226542.68808115
     },
-    "LTCUSDT__POC": {
-      "trade_id": 32558,
-      "symbol": "LTCUSDT",
-      "source": "POC Retest v2",
-      "direction": "long",
-      "candle_time": "2026-10-30 21:30:00",
-      "session": "نیویورک",
-      "entry_price": 55.41,
-      "sl_price": 55.15479,
-      "tp1_price": 55.59,
-      "tp2_price": null,
-      "qty_total": 1.8047283883775493,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "margin_usd": 100.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 55.28375,
-        "leg_start": "2026-10-30 18:45:00",
-        "leg_end": "2026-10-30 20:00:00",
-        "rr": 0.705,
-        "reason": "poc_retest_rejection"
-      },
-      "qty_open": 1.8047283883775493
-    },
     "RVNUSDT__POC": {
       "trade_id": 32559,
       "symbol": "RVNUSDT",
@@ -5050,8 +5025,133 @@
       },
       "qty_open": 6157.635467980295,
       "phase": "before_tp1"
+    },
+    "ETHUSDT__POC": {
+      "trade_id": 32561,
+      "symbol": "ETHUSDT",
+      "source": "POC Retest v2",
+      "direction": "short",
+      "candle_time": "2026-10-30 21:45:00",
+      "session": "نیویورک",
+      "entry_price": 2238.93,
+      "sl_price": 2245.4532099999997,
+      "tp1_price": 2220.01,
+      "tp2_price": null,
+      "qty_total": 0.04466419227041489,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 2239.08125,
+        "leg_start": "2026-10-30 17:30:00",
+        "leg_end": "2026-10-30 18:45:00",
+        "rr": 2.9,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 0.04466419227041489
+    },
+    "ARKMUSDT__POC": {
+      "trade_id": 32562,
+      "symbol": "ARKMUSDT",
+      "source": "POC Retest v2",
+      "direction": "long",
+      "candle_time": "2026-10-30 21:45:00",
+      "session": "نیویورک",
+      "entry_price": 0.1129,
+      "sl_price": 0.1121877,
+      "tp1_price": 0.1133,
+      "tp2_price": null,
+      "qty_total": 885.7395925597874,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.11259583333333334,
+        "leg_start": "2026-10-30 20:30:00",
+        "leg_end": "2026-10-30 21:15:00",
+        "rr": 0.562,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 885.7395925597874
+    },
+    "CHRUSDT__POC": {
+      "trade_id": 32563,
+      "symbol": "CHRUSDT",
+      "source": "POC Retest v2",
+      "direction": "short",
+      "candle_time": "2026-10-30 21:45:00",
+      "session": "نیویورک",
+      "entry_price": 0.01612,
+      "sl_price": 0.01618617,
+      "tp1_price": 0.0159,
+      "tp2_price": null,
+      "qty_total": 6203.47394540943,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.016147916666666668,
+        "leg_start": "2026-10-30 15:15:00",
+        "leg_end": "2026-10-30 16:45:00",
+        "rr": 3.325,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 6203.47394540943
+    },
+    "CYBERUSDT__POC": {
+      "trade_id": 32564,
+      "symbol": "CYBERUSDT",
+      "source": "POC Retest v2",
+      "direction": "short",
+      "candle_time": "2026-10-30 21:45:00",
+      "session": "نیویورک",
+      "entry_price": 0.278,
+      "sl_price": 0.279279,
+      "tp1_price": 0.276,
+      "tp2_price": null,
+      "qty_total": 359.71223021582733,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.27808333333333335,
+        "leg_start": "2026-10-30 20:00:00",
+        "leg_end": "2026-10-30 21:00:00",
+        "rr": 1.564,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 359.71223021582733
+    },
+    "ZROUSDT__POC": {
+      "trade_id": 32565,
+      "symbol": "ZROUSDT",
+      "source": "POC Retest v2",
+      "direction": "short",
+      "candle_time": "2026-10-30 21:45:00",
+      "session": "نیویورک",
+      "entry_price": 1.701,
+      "sl_price": 1.714713,
+      "tp1_price": 1.681,
+      "tp2_price": null,
+      "qty_total": 58.78894767783657,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "margin_usd": 100.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 1.7035208333333332,
+        "leg_start": "2026-10-30 19:15:00",
+        "leg_end": "2026-10-30 20:45:00",
+        "rr": 1.458,
+        "reason": "poc_retest_rejection"
+      },
+      "qty_open": 58.78894767783657
     }
   },
-  "next_trade_id": 32561,
+  "next_trade_id": 32566,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
