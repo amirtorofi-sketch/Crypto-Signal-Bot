@@ -1,5 +1,5 @@
 {
-  "balance": 10132.67556200424,
+  "balance": 10132.284919859878,
   "positions": {
     "BNBUSDT__SMC": {
       "trade_id": 3137,
@@ -682,44 +682,6 @@
         "status": "open"
       }
     },
-    "BTCUSDT__POC": {
-      "trade_id": 3206,
-      "symbol": "BTCUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-30 20:00:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 76982.01,
-      "sl_price": 77140.92998999999,
-      "sl_initial": 77140.92998999999,
-      "tp1_price": 75854.01999999999,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.0012990047934575883,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 76970.70833333334,
-        "leg_start": "2026-10-30 13:45:00",
-        "leg_end": "2026-10-30 15:15:00",
-        "rr": 7.098,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 76823.09001,
-        "raw_tp": 78110.0
-      },
-      "lot_a": {
-        "qty": 0.0012990047934575883,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
-      }
-    },
     "SOLUSDT__SMC": {
       "trade_id": 3210,
       "symbol": "SOLUSDT",
@@ -986,44 +948,6 @@
         "qty": 129.5336787564767,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "VETUSDT__POC": {
-      "trade_id": 3216,
-      "symbol": "VETUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-30 22:45:00",
-      "session": "نیویورک",
-      "raw_direction": "long",
-      "direction": "short",
-      "entry_price": 0.005932,
-      "sl_price": 0.005942927,
-      "sl_initial": 0.005942927,
-      "tp1_price": 0.0058969999999999995,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 16857.720836142955,
-      "notional": 100.0,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 0.0059271875,
-        "leg_start": "2026-10-30 20:30:00",
-        "leg_end": "2026-10-30 22:15:00",
-        "rr": 3.203,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 0.005921073,
-        "raw_tp": 0.005967
-      },
-      "lot_a": {
-        "qty": 16857.720836142955,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     }
   },
