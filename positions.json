@@ -1,5 +1,5 @@
 {
-  "balance": 10131.048169490718,
+  "balance": 10132.939003388168,
   "positions": {
     "BNBUSDT__SMC": {
       "trade_id": 3137,
@@ -154,7 +154,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 0.0699,
-      "sl_price": 0.06813774280757627,
+      "sl_price": 0.0699,
       "sl_initial": 0.06813774280757627,
       "tp1_price": 0.0725433857886356,
       "tp2_price": 0.0751867715772712,
@@ -185,7 +185,7 @@
       "lot_a": {
         "qty": 715.3075822603719,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 715.3075822603719,
@@ -988,8 +988,95 @@
         "target": "tp2",
         "status": "none"
       }
+    },
+    "VETUSDT__SMC2": {
+      "trade_id": 3172,
+      "symbol": "VETUSDT",
+      "source": "ICT/SMC v2 (Reversed)",
+      "candle_time": "2026-10-30 10:15:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.005831,
+      "sl_price": 0.005751498699326859,
+      "sl_initial": 0.005751498699326859,
+      "tp1_price": 0.005950251951009712,
+      "tp2_price": 0.006069503902019423,
+      "adx_value": null,
+      "qty_total": 17149.71702966901,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": 3,
+      "market_snapshot": {
+        "recent_bull_sweep": true,
+        "recent_bear_sweep": true,
+        "vol_spike": true,
+        "strong_bull_rej": false,
+        "strong_bear_rej": false,
+        "htf_bullish": false,
+        "htf_bearish": true,
+        "discount_zone": true,
+        "premium_zone": false,
+        "rsi_value": 48.58,
+        "rsi_bull_ok": true,
+        "rsi_bear_ok": false,
+        "trend_strong": false,
+        "trend": -1,
+        "bull_fvg_count": 2,
+        "bear_fvg_count": 6,
+        "bull_ob_count": 0,
+        "bear_ob_count": 1
+      },
+      "lot_a": {
+        "qty": 8574.858514834505,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 8574.858514834505,
+        "target": "tp2",
+        "status": "open"
+      }
+    },
+    "VETUSDT__POC": {
+      "trade_id": 3173,
+      "symbol": "VETUSDT",
+      "source": "POC Retest (Reversed)",
+      "candle_time": "2026-10-30 10:15:00",
+      "session": "لندن",
+      "raw_direction": "short",
+      "direction": "long",
+      "entry_price": 0.005831,
+      "sl_price": 0.005808152000000001,
+      "sl_initial": 0.005808152000000001,
+      "tp1_price": 0.005860000000000001,
+      "tp2_price": null,
+      "adx_value": null,
+      "qty_total": 17149.71702966901,
+      "notional": 100.0,
+      "leverage": 1.0,
+      "signal_score": null,
+      "market_snapshot": {
+        "poc": 0.0058462708333333335,
+        "leg_start": "2026-10-30 08:30:00",
+        "leg_end": "2026-10-30 09:45:00",
+        "rr": 1.269,
+        "reason": "poc_retest_rejection",
+        "raw_sl": 0.005853847999999999,
+        "raw_tp": 0.005802
+      },
+      "lot_a": {
+        "qty": 17149.71702966901,
+        "target": "tp1",
+        "status": "open"
+      },
+      "lot_b": {
+        "qty": 0.0,
+        "target": "tp2",
+        "status": "none"
+      }
     }
   },
-  "next_trade_id": 3172,
+  "next_trade_id": 3174,
   "balance_reset_marker": "reset_10000_2026-10-03"
 }
