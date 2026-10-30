@@ -1,5 +1,5 @@
 {
-  "balance": 10130.809457652336,
+  "balance": 10134.372944538922,
   "positions": {
     "BNBUSDT__SMC": {
       "trade_id": 3137,
@@ -10,7 +10,7 @@
       "raw_direction": "short",
       "direction": "long",
       "entry_price": 684.06,
-      "sl_price": 669.437957945389,
+      "sl_price": 684.06,
       "sl_initial": 669.437957945389,
       "tp1_price": 705.9930630819163,
       "tp2_price": 727.9261261638327,
@@ -41,7 +41,7 @@
       "lot_a": {
         "qty": 0.07309300353770137,
         "target": "tp1",
-        "status": "open"
+        "status": "closed_tp"
       },
       "lot_b": {
         "qty": 0.07309300353770137,
@@ -239,44 +239,6 @@
         "qty": 715.3075822603719,
         "target": "tp2",
         "status": "open"
-      }
-    },
-    "BNBUSDT__POC": {
-      "trade_id": 3143,
-      "symbol": "BNBUSDT",
-      "source": "POC Retest (Reversed)",
-      "candle_time": "2026-10-30 01:15:00",
-      "session": "آسیا",
-      "raw_direction": "short",
-      "direction": "long",
-      "entry_price": 695.8,
-      "sl_price": 687.5766799999999,
-      "sl_initial": 687.5766799999999,
-      "tp1_price": 709.4399999999999,
-      "tp2_price": null,
-      "adx_value": null,
-      "qty_total": 0.14371945961483185,
-      "notional": 99.99999999999999,
-      "leverage": 1.0,
-      "signal_score": null,
-      "market_snapshot": {
-        "poc": 700.6297916666667,
-        "leg_start": "2026-10-29 23:00:00",
-        "leg_end": "2026-10-30 00:15:00",
-        "rr": 1.659,
-        "reason": "poc_retest_rejection",
-        "raw_sl": 704.02332,
-        "raw_tp": 682.16
-      },
-      "lot_a": {
-        "qty": 0.14371945961483185,
-        "target": "tp1",
-        "status": "open"
-      },
-      "lot_b": {
-        "qty": 0.0,
-        "target": "tp2",
-        "status": "none"
       }
     }
   },
